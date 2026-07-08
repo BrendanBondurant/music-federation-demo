@@ -14,14 +14,7 @@ No Apollo packages. Subgraphs are GraphQL Yoga plus a ~70-line hand-rolled
 federation helper (`subgraphs/lib/subgraph.ts`) that serves `_service { sdl }`
 and `_entities`. Composition is `wgc`, routing is the Cosmo Router.
 
-## You must do this by hand
-
-Everything else is scripted.
-
-1. **Cosmo Cloud only:** create an account / log in at
-   https://cosmo.wundergraph.com and create an API key in Studio under
-   Settings -> API Keys. Scripts cannot log in for you.
-2. **Only if the vault changed:** re-run the seeder (see Reseeding below).
+1. **Only if the vault changed:** re-run the seeder (see Reseeding below).
    Seed JSON is committed, so a fresh clone boots without the vault.
 
 ## Prerequisites
@@ -37,9 +30,7 @@ npm install
 npm start
 ```
 
-`npm start` boots the three subgraphs, composes the router execution config
-locally with `wgc router compose`, and starts the Cosmo Router in Docker.
-Open http://localhost:3002 for the playground and run:
+### Test Query
 
 ```graphql
 {
@@ -72,52 +63,6 @@ The acceptance checklist lives in `queries/`, one file per lesson:
 | `05-classical-bwv1001.graphql` | BWV 1001 -> movements -> performers -> their other movements |
 | `06-crossover.graphql` | One person's jazz albums AND Bach recordings. Returns `[]` today: the vault has zero crossover people. That is honest, not broken -- add one Chris Thile jazz album file to the vault and re-seed, and it lights up. |
 
-## Connect to Cosmo Cloud
-
-```bash
-export COSMO_API_KEY=cosmo_...   # manual step 1 above
-npm run connect-cosmo
-```
-
-The script creates the `music-demo` namespace and the `music` federated
-graph, publishes all three subgraph schemas to the registry (in an order
-that keeps every intermediate composition valid), and creates a router
-token. Then:
-
-```bash
-GRAPH_API_TOKEN=<token from the script> npm run start:cloud
-```
-
-Same local subgraphs, but the router now pulls its config from the registry,
-and the graph is visible in Studio: schema, subgraphs, checks, and analytics
-once queries flow. Override names with `COSMO_NAMESPACE` / `COSMO_GRAPH`.
-
-To test schema checks against real usage data, break something on purpose:
-
-```bash
-npx wgc subgraph check catalog --namespace music-demo --schema subgraphs/catalog/schema.graphql
-```
-
-## Reseeding from the vault
-
-```bash
-npm run seed -- /path/to/Personal/Music
-```
-
-Defaults to `~/Documents/Obsidian/Personal/Music` if it exists. The seeder
-reads the vault read-only, writes `seed/*.json`, and fails loudly unless:
-
-- zero dangling references (recording -> artist/album/tune, album ->
-  artist/tune, personnel -> artist, movement recording -> performer/movement)
-- entity counts match the verified numbers (1,060 people incl. 55 ensembles,
-  570 albums, 144 tunes, 693 recordings, 1,949 personnel edges; Bach: 2
-  works, 11 movements, 127 movement recordings)
-- exactly 3 expected warnings: 2 duplicate tune files merged (I Got Rhythm,
-  Ornithology) and 1 junk row dropped ([[Georgie Gershwin]])
-
-If the vault changes (e.g. you add the crossover album), update `EXPECTED`
-in `seeder/seed.ts` to the new numbers the run reports -- after checking
-they moved the way you intended.
 
 ## Repo layout
 
