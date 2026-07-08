@@ -1,0 +1,19 @@
+# Local composition input for `wgc router compose`.
+# routing_url uses host.docker.internal because the router runs in Docker
+# while the subgraphs run on the host. Works out of the box with Docker
+# Desktop on macOS; on Linux, `docker run` needs
+# --add-host=host.docker.internal:host-gateway (scripts/start.sh passes it).
+version: 1
+subgraphs:
+  - name: artists
+    routing_url: http://host.docker.internal:4001/graphql
+    schema:
+      file: ./subgraphs/artists/schema.graphql
+  - name: catalog
+    routing_url: http://host.docker.internal:4002/graphql
+    schema:
+      file: ./subgraphs/catalog/schema.graphql
+  - name: classical
+    routing_url: http://host.docker.internal:4003/graphql
+    schema:
+      file: ./subgraphs/classical/schema.graphql

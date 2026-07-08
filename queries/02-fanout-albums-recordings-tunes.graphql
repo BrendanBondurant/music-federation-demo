@@ -1,0 +1,26 @@
+# Fan-out: albums -> recordings -> tunes -> back to artists, in one query.
+# Recording.artists are entity references resolved back through the artists
+# subgraph, so this query bounces between subgraphs twice.
+{
+  artist(id: "jim-hall") {
+    name
+    albums {
+      title
+      year
+      credits {
+        artist {
+          name
+        }
+        instrument
+      }
+      recordings {
+        tune {
+          title
+          composer
+        }
+        key
+        bpm
+      }
+    }
+  }
+}

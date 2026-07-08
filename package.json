@@ -1,0 +1,27 @@
+{
+  "name": "music-federation-demo",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.11"
+  },
+  "scripts": {
+    "seed": "tsx seeder/seed.ts",
+    "dev:artists": "tsx subgraphs/artists/server.ts",
+    "dev:catalog": "tsx subgraphs/catalog/server.ts",
+    "dev:classical": "tsx subgraphs/classical/server.ts",
+    "compose": "bash scripts/compose.sh",
+    "start": "bash scripts/start.sh",
+    "start:cloud": "bash scripts/start-cloud.sh",
+    "connect-cosmo": "bash scripts/connect-cosmo.sh"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

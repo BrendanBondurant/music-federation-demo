@@ -1,0 +1,47 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+
+"""
+The classical subgraph extends the same Artist entity with Bach performance
+data. A jazz guitarist and a Bach performer with the same name are one person:
+the shared slug @key joins them.
+"""
+type Artist @key(fields: "id") {
+  id: ID!
+  bachRecordings: [MovementRecording!]!
+}
+
+"""
+A work by J.S. Bach. The BWV number is the natural key here: the classical
+world ships with stable public identifiers, so bwv works as a lookup key
+without inventing ids.
+"""
+type Work {
+  bwv: Int!
+  title: String!
+  movements: [Movement!]!
+}
+
+type Movement {
+  id: ID!
+  name: String!
+  key: String
+  work: Work!
+  recordings: [MovementRecording!]!
+}
+
+type MovementRecording {
+  id: ID!
+  movement: Movement!
+  performer: Artist!
+  "Record label or source ('DG/EMI', 'Netherlands Bach Society'). Null when unknown."
+  label: String
+  "One-line interpretive character ('Poised, clear', 'HIP-leaning')."
+  character: String
+  notes: String
+  bpm: Int
+}
+
+type Query {
+  work(bwv: Int!): Work
+  works: [Work!]!
+}

@@ -1,0 +1,28 @@
+# Classical standalone: BWV 1001 -> movements -> performers -> their other
+# movements. performer.name resolves through the artists subgraph (shared
+# person pool); bachRecordings loops back into classical -- nested entity
+# resolution across two subgraphs.
+{
+  work(bwv: 1001) {
+    bwv
+    title
+    movements {
+      name
+      key
+      recordings {
+        performer {
+          name
+          instrument
+          bachRecordings {
+            movement {
+              name
+            }
+          }
+        }
+        label
+        character
+        bpm
+      }
+    }
+  }
+}

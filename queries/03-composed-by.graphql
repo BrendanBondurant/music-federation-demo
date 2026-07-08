@@ -1,0 +1,21 @@
+# composedBy: recordings of tunes Jim Hall wrote.
+# The composer edge is resolved by slug into the shared person pool, so this
+# touches the artists subgraph for identity and catalog for the rest.
+{
+  artist(id: "jim-hall") {
+    name
+    composedTunes {
+      title
+      recordings {
+        artists {
+          name
+          instrument
+        }
+        album {
+          title
+          year
+        }
+      }
+    }
+  }
+}

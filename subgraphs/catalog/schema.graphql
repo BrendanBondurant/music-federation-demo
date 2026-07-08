@@ -1,0 +1,74 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+
+"""
+The catalog subgraph does not own Artist identity. It contributes
+discography fields to the Artist entity owned by the artists subgraph.
+"""
+type Artist @key(fields: "id") {
+  id: ID!
+  "Albums this artist appears on, as principal artist or personnel."
+  albums: [Album!]!
+  recordings: [Recording!]!
+  "Tunes this artist wrote. The composer edge is resolved by slug into the shared person pool."
+  composedTunes: [Tune!]!
+}
+
+type Album {
+  id: ID!
+  title: String!
+  "Release year. Around 40 albums legitimately have no year in the source data."
+  year: Int
+  "Recording year, when it differs from the release year."
+  recordingYear: Int
+  label: String
+  "Principal artists from the album frontmatter. Empty for various-artists compilations."
+  artists: [Artist!]!
+  """
+  Who played what on THIS record. Instrument-per-album lives here, not on the
+  identity record: the same person plays a different role on every record.
+  """
+  credits: [Credit!]!
+  "Tunes on this album, with the key they were played in when noted."
+  tracks: [Track!]!
+  "Recordings on this album, as rows in the per-tune recordings tables."
+  recordings: [Recording!]!
+}
+
+type Credit {
+  artist: Artist
+  instrument: String
+}
+
+type Track {
+  tune: Tune!
+  key: String
+}
+
+type Tune {
+  id: ID!
+  title: String!
+  "Composer display string, e.g. 'Antônio Carlos Jobim'."
+  composer: String
+  "Composer resolved into the shared person pool; null when the composer has no artist record."
+  composedBy: Artist
+  style: String
+  recordings: [Recording!]!
+}
+
+type Recording {
+  id: ID!
+  tune: Tune!
+  artists: [Artist!]!
+  "Null for recordings sourced from placeholder albums (YouTube rips, compilations)."
+  album: Album
+  key: String
+  bpm: Int
+  melody: String
+}
+
+type Query {
+  tune(id: ID!): Tune
+  tunes: [Tune!]!
+  album(id: ID!): Album
+  albums: [Album!]!
+}

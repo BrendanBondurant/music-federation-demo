@@ -1,0 +1,7424 @@
+{
+ "people": [
+  {
+   "id": "aaron-bell",
+   "name": "Aaron Bell",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "acoustic-jazz-quartet",
+   "name": "Acoustic Jazz Quartet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "adam-nussbaum",
+   "name": "Adam Nussbaum",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "adam-rogers",
+   "name": "Adam Rogers",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ahmad-jamal",
+   "name": "Ahmad Jamal",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ahmad-jamal-trio",
+   "name": "Ahmad Jamal Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "ahmed-abdul-malik",
+   "name": "Ahmed Abdul-Malik",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "airto-moreira",
+   "name": "Airto Moreira",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ake-persson",
+   "name": "Åke Persson",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-aarons",
+   "name": "Al Aarons",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-cohn",
+   "name": "Al Cohn",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-foster",
+   "name": "Al Foster",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-grey",
+   "name": "Al Grey",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-haig",
+   "name": "Al Haig",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-harewood",
+   "name": "Al Harewood",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-levitt",
+   "name": "Al Levitt",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-lucas",
+   "name": "Al Lucas",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "al-mckibbon",
+   "name": "Al McKibbon",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alan-broadbent",
+   "name": "Alan Broadbent",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "albert-casey",
+   "name": "Albert Casey",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "albert-heath",
+   "name": "Albert Heath",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "albert-richman",
+   "name": "Albert Richman",
+   "instrument": "French horn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "albert-tootie-heath",
+   "name": "Albert Tootie Heath",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alex-acuna",
+   "name": "Alex Acuña",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alex-brashear",
+   "name": "Alex Brashear",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alex-norris",
+   "name": "Alex Norris",
+   "instrument": "trumpet/flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alex-riel",
+   "name": "Alex Riel",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alexis-cole",
+   "name": "Alexis Cole",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alonzo-johnson",
+   "name": "Alonzo Johnson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "alvin-stoller",
+   "name": "Alvin Stoller",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "amilton-godoy",
+   "name": "Amilton Godoy",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ana-vidovic",
+   "name": "Ana Vidović",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "andrew-ackers",
+   "name": "Andrew Ackers",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "andy-simpkins",
+   "name": "Andy Simpkins",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "andy-watson",
+   "name": "Andy Watson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "anita-oday",
+   "name": "Anita O'Day",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "anthony-cox",
+   "name": "Anthony Cox",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "anthony-ortega",
+   "name": "Anthony Ortega",
+   "instrument": "alto sax / flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "anthony-wilson",
+   "name": "Anthony Wilson",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "antonio-carlos-jobim",
+   "name": "Antônio Carlos Jobim",
+   "instrument": "composer",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ari-hoenig",
+   "name": "Ari Hoenig",
+   "instrument": "drums, vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ariane-salari",
+   "name": "Ariane Salari",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "aristides-rivas",
+   "name": "Aristides Rivas",
+   "instrument": "cello",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "arnold-fishkind",
+   "name": "Arnold Fishkind",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "art-blakey",
+   "name": "Art Blakey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "art-blakey-the-jazz-messengers",
+   "name": "Art Blakey & The Jazz Messengers",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "art-davis",
+   "name": "Art Davis",
+   "instrument": "double bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "art-farmer",
+   "name": "Art Farmer",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "art-pepper",
+   "name": "Art Pepper",
+   "instrument": "alto saxophone/clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "art-ryerson",
+   "name": "Art Ryerson",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "art-tatum",
+   "name": "Art Tatum",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "art-taylor",
+   "name": "Art Taylor",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "arthur-grumiaux",
+   "name": "Arthur Grumiaux",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "arthur-harper",
+   "name": "Arthur Harper",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "artie-shaw",
+   "name": "Artie Shaw",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "astrud-gilberto",
+   "name": "Astrud Gilberto",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "aurelio-de-carolis",
+   "name": "Aurelio de Carolis",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "axel-stordahl",
+   "name": "Axel Stordahl",
+   "instrument": "arranger / conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "baby-dodds",
+   "name": "Baby Dodds",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "baby-face-willette",
+   "name": "Baby Face Willette",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barney-bigard",
+   "name": "Barney Bigard",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barney-kessel",
+   "name": "Barney Kessel",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barney-wilen",
+   "name": "Barney Wilen",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barrett-deems",
+   "name": "Barrett Deems",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barry-harris",
+   "name": "Barry Harris",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "barry-harris-quintet",
+   "name": "Barry Harris Quintet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "barry-harris-trio",
+   "name": "Barry Harris Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "ben-dixon",
+   "name": "Ben Dixon",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ben-riley",
+   "name": "Ben Riley",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ben-tucker",
+   "name": "Ben Tucker",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ben-webster",
+   "name": "Ben Webster",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bengt-hallberg",
+   "name": "Bengt Hallberg",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-aronov",
+   "name": "Benny Aronov",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-bailey",
+   "name": "Benny Bailey",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-barth",
+   "name": "Benny Barth",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-golson",
+   "name": "Benny Golson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-goodman",
+   "name": "Benny Goodman",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-goodman-sextet",
+   "name": "Benny Goodman Sextet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "benny-goodman-trio",
+   "name": "Benny Goodman Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "benny-green",
+   "name": "Benny Green",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "benny-powell",
+   "name": "Benny Powell",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bent-axen",
+   "name": "Bent Axen",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bette-midler",
+   "name": "Bette Midler",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-byrne",
+   "name": "Bill Byrne",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-crow",
+   "name": "Bill Crow",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-dearango",
+   "name": "Bill DeArango",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-evans",
+   "name": "Bill Evans",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "cool jazz"
+  },
+  {
+   "id": "bill-evans-trio",
+   "name": "Bill Evans Trio",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "bill-frisell",
+   "name": "Bill Frisell",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-goodwin",
+   "name": "Bill Goodwin",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-hardman",
+   "name": "Bill Hardman",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "bill-perkins",
+   "name": "Bill Perkins",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-potts",
+   "name": "Bill Potts",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-reichenbach",
+   "name": "Bill Reichenbach",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-ross",
+   "name": "Bill Ross",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-stewart",
+   "name": "Bill Stewart",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bill-takas",
+   "name": "Bill Takas",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billie-holiday",
+   "name": "Billie Holiday",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-bauer",
+   "name": "Billy Bauer",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-butler",
+   "name": "Billy Butler",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-childs",
+   "name": "Billy Childs",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-cobham",
+   "name": "Billy Cobham",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-hart",
+   "name": "Billy Hart",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-higgins",
+   "name": "Billy Higgins",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-james",
+   "name": "Billy James",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-may",
+   "name": "Billy May",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-mitchell",
+   "name": "Billy Mitchell",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "billy-strayhorn",
+   "name": "Billy Strayhorn",
+   "instrument": "composer / arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "birch-johnson",
+   "name": "Birch Johnson",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bireli-lagrene",
+   "name": "Bireli Lagrène",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "blue-mitchell",
+   "name": "Blue Mitchell",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-berg",
+   "name": "Bob Berg",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-brookmeyer",
+   "name": "Bob Brookmeyer",
+   "instrument": "valve trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-cranshaw",
+   "name": "Bob Cranshaw",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-james",
+   "name": "Bob James",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-mclaren",
+   "name": "Bob McLaren",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-mintzer",
+   "name": "Bob Mintzer",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "bob-schwarz",
+   "name": "Bob Schwarz",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-whitlock",
+   "name": "Bob Whitlock",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-wills",
+   "name": "Bob Wills",
+   "instrument": "fiddle / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bob-wills-his-texas-playboys",
+   "name": "Bob Wills & His Texas Playboys",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "bobby-broom",
+   "name": "Bobby Broom",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-darin",
+   "name": "Bobby Darin",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-donaldson",
+   "name": "Bobby Donaldson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-durham",
+   "name": "Bobby Durham",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-hackett",
+   "name": "Bobby Hackett",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-hutcherson",
+   "name": "Bobby Hutcherson",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-jaspar",
+   "name": "Bobby Jaspar",
+   "instrument": "flute/tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-rose",
+   "name": "Bobby Rose",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-scott",
+   "name": "Bobby Scott",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-thomas",
+   "name": "Bobby Thomas",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bobby-timmons",
+   "name": "Bobby Timmons",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "brad-mehldau",
+   "name": "Brad Mehldau",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "branford-marsalis",
+   "name": "Branford Marsalis",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "branford-marsalis-quartet",
+   "name": "Branford Marsalis Quartet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "brian-blade",
+   "name": "Brian Blade",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "britt-woodman",
+   "name": "Britt Woodman",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bruno-nicolai",
+   "name": "Bruno Nicolai",
+   "instrument": "arranger/composer",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buck-clayton",
+   "name": "Buck Clayton",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bucky-pizzarelli",
+   "name": "Bucky Pizzarelli",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bud-powell",
+   "name": "Bud Powell",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "bud-powell-trio",
+   "name": "Bud Powell Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "bud-shank",
+   "name": "Bud Shank",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-bregman",
+   "name": "Buddy Bregman",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-catlett",
+   "name": "Buddy Catlett",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-collette",
+   "name": "Buddy Collette",
+   "instrument": "alto & tenor sax, flute, clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-defranco",
+   "name": "Buddy DeFranco",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-deppenschmidt",
+   "name": "Buddy Deppenschmidt",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-emmons",
+   "name": "Buddy Emmons",
+   "instrument": "steel guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-montgomery",
+   "name": "Buddy Montgomery",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buddy-rich",
+   "name": "Buddy Rich",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "bunny-berigan",
+   "name": "Bunny Berigan",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buster-cooper",
+   "name": "Buster Cooper",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "buster-williams",
+   "name": "Buster Williams",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "butch-warren",
+   "name": "Butch Warren",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cachao-lopez",
+   "name": "Cachao López",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cal-tjader",
+   "name": "Cal Tjader",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cannonball-adderley",
+   "name": "Cannonball Adderley",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "carl-allen",
+   "name": "Carl Allen",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carl-perkins",
+   "name": "Carl Perkins",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carlo-pecori",
+   "name": "Carlo Pecori",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carlos-valdes",
+   "name": "Carlos Valdés",
+   "instrument": "congas",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carmell-jones",
+   "name": "Carmell Jones",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carmelo-garcia",
+   "name": "Carmelo Garcia",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "carson-smith",
+   "name": "Carson Smith",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cat-anderson",
+   "name": "Cat Anderson",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "catherine-russell",
+   "name": "Catherine Russell",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cecil-payne",
+   "name": "Cecil Payne",
+   "instrument": "baritone sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cedar-walton",
+   "name": "Cedar Walton",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cesar-mariano",
+   "name": "César Mariano",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-ables",
+   "name": "Charles Ables",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-mcpherson",
+   "name": "Charles McPherson",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-mingus",
+   "name": "Charles Mingus",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-pillow",
+   "name": "Charles Pillow",
+   "instrument": "English horn / oboe",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-thomas",
+   "name": "Charles Thomas",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-turner",
+   "name": "Charles Turner",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charles-williams",
+   "name": "Charles Williams",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-byrd",
+   "name": "Charlie Byrd",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-christian",
+   "name": "Charlie Christian",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "charlie-fowlkes",
+   "name": "Charlie Fowlkes",
+   "instrument": "baritone sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-haden",
+   "name": "Charlie Haden",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-kennedy",
+   "name": "Charlie Kennedy",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-mariano",
+   "name": "Charlie Mariano",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-parker",
+   "name": "Charlie Parker",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "charlie-parker-and-his-orchestra",
+   "name": "Charlie Parker And His Orchestra",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "charlie-persip",
+   "name": "Charlie Persip",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-rouse",
+   "name": "Charlie Rouse",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charlie-watts",
+   "name": "Charlie Watts",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "charnett-moffett",
+   "name": "Charnett Moffett",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chet-baker",
+   "name": "Chet Baker",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "cool jazz"
+  },
+  {
+   "id": "chick-corea",
+   "name": "Chick Corea",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chick-corea-akoustic-band",
+   "name": "Chick Corea Akoustic Band",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "chico-hamilton",
+   "name": "Chico Hamilton",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chris-byars",
+   "name": "Chris Byars",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chris-layton",
+   "name": "Chris Layton",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chris-thile",
+   "name": "Chris Thile",
+   "instrument": "mandolin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chris-white",
+   "name": "Chris White",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "christian-mcbride",
+   "name": "Christian McBride",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "christian-mcbride-big-band",
+   "name": "Christian McBride Big Band",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "chucho-valdes",
+   "name": "Chucho Valdés",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chuck-connors",
+   "name": "Chuck Connors",
+   "instrument": "bass trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chuck-flores",
+   "name": "Chuck Flores",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chuck-israels",
+   "name": "Chuck Israels",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "chuck-thompson",
+   "name": "Chuck Thompson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clare-fischer",
+   "name": "Clare Fischer",
+   "instrument": "piano/arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clarence-johnston",
+   "name": "Clarence Johnston",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clarence-penn",
+   "name": "Clarence Penn",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "claudio-slon",
+   "name": "Claudio Slon",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "claus-ogerman",
+   "name": "Claus Ogerman",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clayton-hamilton-jazz-orchestra",
+   "name": "Clayton-Hamilton Jazz Orchestra",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "clifford-brown",
+   "name": "Clifford Brown",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clifford-jarvis",
+   "name": "Clifford Jarvis",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "clifford-jordan",
+   "name": "Clifford Jordan",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "coleman-hawkins",
+   "name": "Coleman Hawkins",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "colin-bailey",
+   "name": "Colin Bailey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "colin-stranahan",
+   "name": "Colin Stranahan",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "connie-kay",
+   "name": "Connie Kay",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "conrad-gozzo",
+   "name": "Conrad Gozzo",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "conte-candoli",
+   "name": "Conte Candoli",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cootie-williams",
+   "name": "Cootie Williams",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "corey-gnecco",
+   "name": "Corey Gnecco",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "count-basie",
+   "name": "Count Basie",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "count-basie-orchestra",
+   "name": "Count Basie Orchestra",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "craig-fundyga",
+   "name": "Craig Fundyga",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "craig-weinrib",
+   "name": "Craig Weinrib",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "curley-russell",
+   "name": "Curley Russell",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "curly-russell",
+   "name": "Curly Russell",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "curtis-fuller",
+   "name": "Curtis Fuller",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "curtis-lundy",
+   "name": "Curtis Lundy",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cyrille-aimee",
+   "name": "Cyrille Aimée",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "cyrus-chestnut",
+   "name": "Cyrus Chestnut",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dan-arcamone",
+   "name": "Dan Arcamone",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dan-blake",
+   "name": "Dan Blake",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dan-nimmer",
+   "name": "Dan Nimmer",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dan-parrish",
+   "name": "Dan Parrish",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "daniel-humair",
+   "name": "Daniel Humair",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "danny-resto",
+   "name": "Danny Resto",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "danny-richmond",
+   "name": "Danny Richmond",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-bailey",
+   "name": "Dave Bailey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-baker",
+   "name": "Dave Baker",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-bennett",
+   "name": "Dave Bennett",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-brubeck",
+   "name": "Dave Brubeck",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-kennedy",
+   "name": "Dave Kennedy",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-lalama",
+   "name": "Dave Lalama",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-liebman",
+   "name": "Dave Liebman",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-schildkraut",
+   "name": "Dave Schildkraut",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-stryker",
+   "name": "Dave Stryker",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-weckl",
+   "name": "Dave Weckl",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dave-young",
+   "name": "Dave Young",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-bowler",
+   "name": "David Bowler",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-grisman",
+   "name": "David Grisman",
+   "instrument": "mandolin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-liebman",
+   "name": "David Liebman",
+   "instrument": "soprano saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-russell",
+   "name": "David Russell",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-sanborn",
+   "name": "David Sanborn",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-williams",
+   "name": "David Williams",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "david-wong",
+   "name": "David Wong",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dean-mckinney",
+   "name": "Dean McKinney",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "denis-charles",
+   "name": "Denis Charles",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dennis-carroll",
+   "name": "Dennis Carroll",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dennis-chambers",
+   "name": "Dennis Chambers",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dennis-irwin",
+   "name": "Dennis Irwin",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "derek-trucks",
+   "name": "Derek Trucks",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dexter-gordon",
+   "name": "Dexter Gordon",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "diana-krall",
+   "name": "Diana Krall",
+   "instrument": "piano/vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dianne-reeves",
+   "name": "Dianne Reeves",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dicky-wells",
+   "name": "Dicky Wells",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "diego-figueiredo",
+   "name": "Diego Figueiredo",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dinah-washington",
+   "name": "Dinah Washington",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dizzy-gillespie",
+   "name": "Dizzy Gillespie",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "dizzy-reece",
+   "name": "Dizzy Reece",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "django-reinhardt",
+   "name": "Django Reinhardt",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dmitry-baevsky",
+   "name": "Dmitry Baevsky",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "doc-west",
+   "name": "Doc West",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-alias",
+   "name": "Don Alias",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-costa",
+   "name": "Don Costa",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-ellis",
+   "name": "Don Ellis",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-ewell",
+   "name": "Don Ewell",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-fagerquist",
+   "name": "Don Fagerquist",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "don-grolnick",
+   "name": "Don Grolnick",
+   "instrument": "organ / keys",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-grusin",
+   "name": "Don Grusin",
+   "instrument": "keyboards",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-patterson",
+   "name": "Don Patterson",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-sebesky",
+   "name": "Don Sebesky",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "don-thompson",
+   "name": "Don Thompson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "donald-bailey",
+   "name": "Donald Bailey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "donald-byrd",
+   "name": "Donald Byrd",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "doris-day",
+   "name": "Doris Day",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "doug-sides",
+   "name": "Doug Sides",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "doug-watkins",
+   "name": "Doug Watkins",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "douglas-purviance",
+   "name": "Douglas Purviance",
+   "instrument": "bass trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dr-john",
+   "name": "Dr. John",
+   "instrument": "piano / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "duke-ellington",
+   "name": "Duke Ellington",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "duke-jordan",
+   "name": "Duke Jordan",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "duke-pearson",
+   "name": "Duke Pearson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "dylan-day",
+   "name": "Dylan Day",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eberhard-weber",
+   "name": "Eberhard Weber",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ed-bickert",
+   "name": "Ed Bickert",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ed-shaughnessy",
+   "name": "Ed Shaughnessy",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ed-thigpen",
+   "name": "Ed Thigpen",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-bert",
+   "name": "Eddie Bert",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-calhoun",
+   "name": "Eddie Calhoun",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-costa",
+   "name": "Eddie Costa",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-daniels",
+   "name": "Eddie Daniels",
+   "instrument": "clarinet, tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-gomez",
+   "name": "Eddie Gomez",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-green",
+   "name": "Eddie Green",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-higgins",
+   "name": "Eddie Higgins",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-higgins-trio",
+   "name": "Eddie Higgins Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "eddie-jones",
+   "name": "Eddie Jones",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-locke",
+   "name": "Eddie Locke",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-mcfadden",
+   "name": "Eddie McFadden",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-sauter",
+   "name": "Eddie Sauter",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "edison-machado",
+   "name": "Edison Machado",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "edmund-quint-johnson",
+   "name": "Edmund \"Quint\" Johnson",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eli-marie-helgeland-davidsen",
+   "name": "Eli-Marie Helgeland Davidsen",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eliane-elias",
+   "name": "Eliane Elias",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "elias-frederico",
+   "name": "Elias Frederico",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eliot-zigmund",
+   "name": "Eliot Zigmund",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "elis-regina",
+   "name": "Elis Regina",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ella-fitzgerald",
+   "name": "Ella Fitzgerald",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "elvin-jones",
+   "name": "Elvin Jones",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": "post-bop"
+  },
+  {
+   "id": "emily-remler",
+   "name": "Emily Remler",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "emmet-cohen",
+   "name": "Emmet Cohen",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "enrico-pieranunzi",
+   "name": "Enrico Pieranunzi",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eric-dolphy",
+   "name": "Eric Dolphy",
+   "instrument": "alto saxophone, bass clarinet, flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eric-kloss",
+   "name": "Eric Kloss",
+   "instrument": "soprano saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eric-reed-trio",
+   "name": "Eric Reed Trio",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "eric-revis",
+   "name": "Eric Revis",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "erik-moseholm",
+   "name": "Erik Moseholm",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "erik-nordstrom-or-bjarne-nerem",
+   "name": "Erik Nordström or Bjarne Nerem",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernest-mccarty",
+   "name": "Ernest McCarty",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernest-mccarty-jr",
+   "name": "Ernest McCarty Jr.",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernie-farrow",
+   "name": "Ernie Farrow",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernie-henry",
+   "name": "Ernie Henry",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernie-shepard",
+   "name": "Ernie Shepard",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ernie-wilkins",
+   "name": "Ernie Wilkins",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "erroll-garner",
+   "name": "Erroll Garner",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "esperanca-spalding",
+   "name": "Esperança Spalding",
+   "instrument": "vocals / bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "esperanza-spalding",
+   "name": "Esperanza Spalding",
+   "instrument": "bass/vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "etta-james",
+   "name": "Etta James",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eugene-wright",
+   "name": "Eugene Wright",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "evelyn-mckinney",
+   "name": "Evelyn McKinney",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fats-navarro",
+   "name": "Fats Navarro",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fats-waller",
+   "name": "Fats Waller",
+   "instrument": "piano / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fiorenzo-carpi",
+   "name": "Fiorenzo Carpi",
+   "instrument": "arranger/conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "francesco-lo-castro",
+   "name": "Francesco Lo Castro",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "franco-ambrosetti",
+   "name": "Franco Ambrosetti",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "francy-boland",
+   "name": "Francy Boland",
+   "instrument": "piano/arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-adams",
+   "name": "Frank Adams",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-brown",
+   "name": "Frank Brown",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-butler",
+   "name": "Frank Butler",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-capp",
+   "name": "Frank Capp",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-de-vol",
+   "name": "Frank de Vol",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-flynn",
+   "name": "Frank Flynn",
+   "instrument": "percussion / drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-foster",
+   "name": "Frank Foster",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-gant",
+   "name": "Frank Gant",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-isola",
+   "name": "Frank Isola",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-morgan",
+   "name": "Frank Morgan",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-sinatra",
+   "name": "Frank Sinatra",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-strozier",
+   "name": "Frank Strozier",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-tiberi",
+   "name": "Frank Tiberi",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frank-wess",
+   "name": "Frank Wess",
+   "instrument": "tenor saxophone/flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "frankie-dunlop",
+   "name": "Frankie Dunlop",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fred-guy",
+   "name": "Fred Guy",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fred-katz",
+   "name": "Fred Katz",
+   "instrument": "cello",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "freddie-green",
+   "name": "Freddie Green",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "freddie-hubbard",
+   "name": "Freddie Hubbard",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "fumio-watanabe",
+   "name": "Fumio Watanabe",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gal-costa",
+   "name": "Gal Costa",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "garnett-brown",
+   "name": "Garnett Brown",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gary-burton",
+   "name": "Gary Burton",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gary-mcfarland",
+   "name": "Gary McFarland",
+   "instrument": "arranger/vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gary-peacock",
+   "name": "Gary Peacock",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gary-smith",
+   "name": "Gary Smith",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gary-smulyan",
+   "name": "Gary Smulyan",
+   "instrument": "baritone saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-ammons",
+   "name": "Gene Ammons",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-byrd",
+   "name": "Gene Byrd",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-cherico",
+   "name": "Gene Cherico",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-harris",
+   "name": "Gene Harris",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-krupa",
+   "name": "Gene Krupa",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gene-sedric",
+   "name": "Gene Sedric",
+   "instrument": "tenor saxophone/clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "geoff-keezer",
+   "name": "Geoff Keezer",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-benson",
+   "name": "George Benson",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-coleman",
+   "name": "George Coleman",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-duvivier",
+   "name": "George Duvivier",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-hughes",
+   "name": "George Hughes",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-morrow",
+   "name": "George Morrow",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-mraz",
+   "name": "George Mraz",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-russell",
+   "name": "George Russell",
+   "instrument": "composer / arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-shearing",
+   "name": "George Shearing",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-tucker",
+   "name": "George Tucker",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "george-van-eps",
+   "name": "George Van Eps",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "georges-arvanitas",
+   "name": "Georges Arvanitas",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "georgie-auld",
+   "name": "Georgie Auld",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gerald-wilson",
+   "name": "Gerald Wilson",
+   "instrument": "trumpet/arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gerry-mulligan",
+   "name": "Gerry Mulligan",
+   "instrument": "baritone sax / arranger",
+   "type": "PERSON",
+   "style": "cool jazz"
+  },
+  {
+   "id": "gerry-mulligan-quartet",
+   "name": "Gerry Mulligan Quartet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "gianni-safred",
+   "name": "Gianni Safred",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gidon-kremer",
+   "name": "Gidon Kremer",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gil-evans",
+   "name": "Gil Evans",
+   "instrument": "piano / arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gil-goldstein",
+   "name": "Gil Goldstein",
+   "instrument": "accordion / keys",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gilad-hekselman",
+   "name": "Gilad Hekselman",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gilbert-rovere",
+   "name": "Gilbert Rovere",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "glenn-drewes",
+   "name": "Glenn Drewes",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "goran-sollscher",
+   "name": "Göran Söllscher",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gordon-jenkins",
+   "name": "Gordon Jenkins",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "grachan-moncur-iii",
+   "name": "Grachan Moncur III",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "grady-tate",
+   "name": "Grady Tate",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "graham-harvey",
+   "name": "Graham Harvey",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "grant-green",
+   "name": "Grant Green",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "greg-gisbert",
+   "name": "Greg Gisbert",
+   "instrument": "trumpet/flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "greg-hutchinson",
+   "name": "Greg Hutchinson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "greg-osby",
+   "name": "Greg Osby",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gretchen-parlato",
+   "name": "Gretchen Parlato",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "gunnar-johnson",
+   "name": "Gunnar Johnson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hampton-hawes",
+   "name": "Hampton Hawes",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hank-garland",
+   "name": "Hank Garland",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hank-jones",
+   "name": "Hank Jones",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hank-jones-trio",
+   "name": "Hank Jones Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "hank-mobley",
+   "name": "Hank Mobley",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harold-danko",
+   "name": "Harold Danko",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harold-jones",
+   "name": "Harold Jones",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harold-land",
+   "name": "Harold Land",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harold-mabern",
+   "name": "Harold Mabern",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harold-west",
+   "name": "Harold West",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harry-carney",
+   "name": "Harry Carney",
+   "instrument": "baritone saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harry-dial",
+   "name": "Harry Dial",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harry-edison",
+   "name": "Harry Edison",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harry-james",
+   "name": "Harry James",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "harvey-mason",
+   "name": "Harvey Mason",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hector-costita",
+   "name": "Hector Costita",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "henry-coker",
+   "name": "Henry Coker",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "henry-grimes",
+   "name": "Henry Grimes",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "henry-hall",
+   "name": "Henry Hall",
+   "instrument": "bandleader",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "henryk-szeryng",
+   "name": "Henryk Szeryng",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herb-ellis",
+   "name": "Herb Ellis",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herb-geller",
+   "name": "Herb Geller",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herb-remington",
+   "name": "Herb Remington",
+   "instrument": "steel guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herbie-hancock",
+   "name": "Herbie Hancock",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "herbie-lewis",
+   "name": "Herbie Lewis",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herbie-mann",
+   "name": "Herbie Mann",
+   "instrument": "flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herman-autrey",
+   "name": "Herman Autrey",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herman-wright",
+   "name": "Herman Wright",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "herve-sellin",
+   "name": "Hervé Sellin",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hilary-hahn",
+   "name": "Hilary Hahn",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hopkinson-smith",
+   "name": "Hopkinson Smith",
+   "instrument": "lute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "horace-silver",
+   "name": "Horace Silver",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "houston-person",
+   "name": "Houston Person",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "howard-alden",
+   "name": "Howard Alden",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "howard-gaul",
+   "name": "Howard Gaul",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "howard-johnson",
+   "name": "Howard Johnson",
+   "instrument": "baritone saxophone/tuba",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "howard-mcghee",
+   "name": "Howard McGhee",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "howard-roberts",
+   "name": "Howard Roberts",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "hubert-laws",
+   "name": "Hubert Laws",
+   "instrument": "flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "hugh-lawson",
+   "name": "Hugh Lawson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ike-isaacs",
+   "name": "Ike Isaacs",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "illinois-jacquet",
+   "name": "Illinois Jacquet",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "isabelle-faust",
+   "name": "Isabelle Faust",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "israel-crosby",
+   "name": "Israel Crosby",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "itzhak-perlman",
+   "name": "Itzhak Perlman",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "j-j-johnson",
+   "name": "J J Johnson",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jack-dejohnette",
+   "name": "Jack DeJohnette",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jack-marshall",
+   "name": "Jack Marshall",
+   "instrument": "arranger / conductor",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "jack-sewing",
+   "name": "Jack Sewing",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jack-sheldon",
+   "name": "Jack Sheldon",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jack-teagarden",
+   "name": "Jack Teagarden",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jackie-mclean",
+   "name": "Jackie McLean",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "jaco-pastorius",
+   "name": "Jaco Pastorius",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "james-burton-iii",
+   "name": "James Burton III",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "james-cammack",
+   "name": "James Cammack",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "james-moody",
+   "name": "James Moody",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "james-spaulding",
+   "name": "James Spaulding",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "james-thompson",
+   "name": "James Thompson",
+   "instrument": "organ / clavinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jan-johansson",
+   "name": "Jan Johansson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jane-hall",
+   "name": "Jane Hall",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "janis-hansen",
+   "name": "Janis Hansen",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jared-gold",
+   "name": "Jared Gold",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jason-jackson",
+   "name": "Jason Jackson",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jason-vieaux",
+   "name": "Jason Vieaux",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jay-andersen",
+   "name": "Jay Andersen",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jay-brandford",
+   "name": "Jay Brandford",
+   "instrument": "baritone saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jc-heard",
+   "name": "J.C. Heard",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jean-michel-pilc",
+   "name": "Jean-Michel Pilc",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeb-patton",
+   "name": "Jeb Patton",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-clayton",
+   "name": "Jeff Clayton",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-hamilton",
+   "name": "Jeff Hamilton",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-morton",
+   "name": "Jeff Morton",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-rupert",
+   "name": "Jeff Rupert",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-t-bone-gerard",
+   "name": "Jeff \"T-Bone\" Gerard",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-tain-watts",
+   "name": "Jeff Tain Watts",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeff-watts",
+   "name": "Jeff Watts",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jeremy-brown",
+   "name": "Jeremy Brown",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jerome-richardson",
+   "name": "Jerome Richardson",
+   "instrument": "tenor saxophone, soprano saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jerry-dodgion",
+   "name": "Jerry Dodgion",
+   "instrument": "alto/soprano saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jess-stacy",
+   "name": "Jess Stacy",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jesse-van-ruller",
+   "name": "Jesse Van Ruller",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-atlas",
+   "name": "Jim Atlas",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-hall",
+   "name": "Jim Hall",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-hughart",
+   "name": "Jim Hughart",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-lucht",
+   "name": "Jim Lucht",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-powell",
+   "name": "Jim Powell",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jim-tomlinson",
+   "name": "Jim Tomlinson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmie-smith",
+   "name": "Jimmie Smith",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmie-vaughan",
+   "name": "Jimmie Vaughan",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-blanton",
+   "name": "Jimmy Blanton",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-bruno",
+   "name": "Jimmy Bruno",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-campbell",
+   "name": "Jimmy Campbell",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-carroll",
+   "name": "Jimmy Carroll",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-cleveland",
+   "name": "Jimmy Cleveland",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-cobb",
+   "name": "Jimmy Cobb",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-dorsey",
+   "name": "Jimmy Dorsey",
+   "instrument": "alto sax / clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-dorsey-his-orchestra",
+   "name": "Jimmy Dorsey & His Orchestra",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "jimmy-forrest",
+   "name": "Jimmy Forrest",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-garrison",
+   "name": "Jimmy Garrison",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-giuffre",
+   "name": "Jimmy Giuffre",
+   "instrument": "clarinet / tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-hamilton",
+   "name": "Jimmy Hamilton",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-jones",
+   "name": "Jimmy Jones",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-owens",
+   "name": "Jimmy Owens",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-raney",
+   "name": "Jimmy Raney",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-rosenberg",
+   "name": "Jimmy Rosenberg",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-rosenberg-trio",
+   "name": "Jimmy Rosenberg Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "jimmy-smith",
+   "name": "Jimmy Smith",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jimmy-woode",
+   "name": "Jimmy Woode",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jj-johnson",
+   "name": "J.J. Johnson",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jo-jones",
+   "name": "Jo Jones",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joachim-schoenecker",
+   "name": "Joachim Schoenecker",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joao-gilberto",
+   "name": "João Gilberto",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joao-palma",
+   "name": "João Palma",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-benjamin",
+   "name": "Joe Benjamin",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-bradley",
+   "name": "Joe Bradley",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-chambers",
+   "name": "Joe Chambers",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-cocuzzo",
+   "name": "Joe Cocuzzo",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-comfort",
+   "name": "Joe Comfort",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-coughlin",
+   "name": "Joe Coughlin",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-harnell",
+   "name": "Joe Harnell",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "joe-henderson",
+   "name": "Joe Henderson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-henderson-sextet",
+   "name": "Joe Henderson Sextet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "joe-holley",
+   "name": "Joe Holley",
+   "instrument": "fiddle",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-hunt",
+   "name": "Joe Hunt",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-lipman",
+   "name": "Joe Lipman",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-lovano",
+   "name": "Joe Lovano",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-mondragon",
+   "name": "Joe Mondragon",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "joe-morello",
+   "name": "Joe Morello",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-newman",
+   "name": "Joe Newman",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-pass",
+   "name": "Joe Pass",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-villa",
+   "name": "Joe Villa",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-williams",
+   "name": "Joe Williams",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-zawinul",
+   "name": "Joe Zawinul",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joel-rosenblatt",
+   "name": "Joel Rosenblatt",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joey-baron",
+   "name": "Joey Baron",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joey-calderazzo",
+   "name": "Joey Calderazzo",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joey-de-leon",
+   "name": "Joey De Leon",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joey-defrancesco",
+   "name": "Joey DeFrancesco",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johannes-weidenmueller",
+   "name": "Johannes Weidenmueller",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-abercrombie",
+   "name": "John Abercrombie",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-b-williams",
+   "name": "John B. Williams",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-basile",
+   "name": "John Basile",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-beal",
+   "name": "John Beal",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-clayton",
+   "name": "John Clayton",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-coltrane",
+   "name": "John Coltrane",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "john-coltrane-quartet",
+   "name": "John Coltrane Quartet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "john-gilmore",
+   "name": "John Gilmore",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-guerin",
+   "name": "John Guerin",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-hicks",
+   "name": "John Hicks",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-hilliard",
+   "name": "John Hilliard",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-lewis",
+   "name": "John Lewis",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-mclaughlin",
+   "name": "John McLaughlin",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-ore",
+   "name": "John Ore",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-patitucci",
+   "name": "John Patitucci",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-pisano",
+   "name": "John Pisano",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-pizzarelli",
+   "name": "John Pizzarelli",
+   "instrument": "guitar, vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-poole",
+   "name": "John Poole",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-riley",
+   "name": "John Riley",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-scofield",
+   "name": "John Scofield",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-simmons",
+   "name": "John Simmons",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-stowell",
+   "name": "John Stowell",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-thomas",
+   "name": "John Thomas",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "john-williams",
+   "name": "John Williams",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-coles",
+   "name": "Johnny Coles",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-cuviello",
+   "name": "Johnny Cuviello",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-dodds",
+   "name": "Johnny Dodds",
+   "instrument": "clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-griffin",
+   "name": "Johnny Griffin",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-hodges",
+   "name": "Johnny Hodges",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-lewis",
+   "name": "Johnny Lewis",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-lewis-quartet",
+   "name": "Johnny Lewis Quartet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "johnny-miller",
+   "name": "Johnny Miller",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-rae",
+   "name": "Johnny Rae",
+   "instrument": "drums / timbales",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-rosenberg",
+   "name": "Johnny Rosenberg",
+   "instrument": "violin/vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-st-cyr",
+   "name": "Johnny St. Cyr",
+   "instrument": "banjo/guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "johnny-vidacovich",
+   "name": "Johnny Vidacovich",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jon-faddis",
+   "name": "Jon Faddis",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jon-owens",
+   "name": "Jon Owens",
+   "instrument": "trumpet/flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jonathan-kreisberg",
+   "name": "Jonathan Kreisberg",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jorge-roeder",
+   "name": "Jorge Roeder",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jorge-rossy",
+   "name": "Jorge Rossy",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jorn-elniff",
+   "name": "Jorn Elniff",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jose-mangual",
+   "name": "José Mangual",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joseph-reinhardt",
+   "name": "Joseph Reinhardt",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "josh-mercado",
+   "name": "Josh Mercado",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joshua-redman",
+   "name": "Joshua Redman",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jrn-elniff",
+   "name": "Jørn Elniff",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "juampy-juarez",
+   "name": "Juampy Juarez",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "judy-garland",
+   "name": "Judy Garland",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "julian-bream",
+   "name": "Julian Bream",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "julian-bromberg",
+   "name": "Julian Bromberg",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "julian-lage",
+   "name": "Julian Lage",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "julian-lage-group",
+   "name": "Julian Lage Group",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "juliano-vidal",
+   "name": "Juliano Vidal",
+   "instrument": "bandleader",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "juliano-vidal-band",
+   "name": "Juliano Vidal Band",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "julie-london",
+   "name": "Julie London",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "julio-collazo",
+   "name": "Julio Collazo",
+   "instrument": "bongos",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "justin-gordon",
+   "name": "Justin Gordon",
+   "instrument": "reeds",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kai-winding",
+   "name": "Kai Winding",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kansas-fields",
+   "name": "Kansas Fields",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kazuhito-yamashita",
+   "name": "Kazuhito Yamashita",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "keely-smith",
+   "name": "Keely Smith",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "keith-jarrett",
+   "name": "Keith Jarrett",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kelly-martin",
+   "name": "Kelly Martin",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kendric-mccallister",
+   "name": "Kendric McCallister",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenneth-drake",
+   "name": "Kenneth Drake",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-barron",
+   "name": "Kenny Barron",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-barron-trio",
+   "name": "Kenny Barron Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "kenny-burrell",
+   "name": "Kenny Burrell",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-clare",
+   "name": "Kenny Clare",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-clarke",
+   "name": "Kenny Clarke",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-dorham",
+   "name": "Kenny Dorham",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-drew",
+   "name": "Kenny Drew",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-garrett",
+   "name": "Kenny Garrett",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-garrett-quintet",
+   "name": "Kenny Garrett Quintet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "kenny-kirkland",
+   "name": "Kenny Kirkland",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-napper",
+   "name": "Kenny Napper",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-pancho-hagood",
+   "name": "Kenny Pancho Hagood",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kenny-washington",
+   "name": "Kenny Washington",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "keter-betts",
+   "name": "Keter Betts",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kevin-george",
+   "name": "Kevin George",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kevin-hays",
+   "name": "Kevin Hays",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kid-ory",
+   "name": "Kid Ory",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kieran-overs",
+   "name": "Kieran Overs",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kirk-macdonald",
+   "name": "Kirk MacDonald",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kirk-stuart",
+   "name": "Kirk Stuart",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "knobby-totah",
+   "name": "Knobby Totah",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kobie-watkins",
+   "name": "Kobie Watkins",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kofi-burbridge",
+   "name": "Kofi Burbridge",
+   "instrument": "keyboards/flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "konrad-paszkudzki",
+   "name": "Konrad Paszkudzki",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kunimitsu-inaba",
+   "name": "Kunimitsu Inaba",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "kyle-poole",
+   "name": "Kyle Poole",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lalo-schifrin",
+   "name": "Lalo Schifrin",
+   "instrument": "piano/arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lani-hall",
+   "name": "Lani Hall",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lara-louise",
+   "name": "Lara Louise",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-bunker",
+   "name": "Larry Bunker",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-coryell",
+   "name": "Larry Coryell",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-gales",
+   "name": "Larry Gales",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-grenadier",
+   "name": "Larry Grenadier",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-shunk",
+   "name": "Larry Shunk",
+   "instrument": "bass trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "larry-young",
+   "name": "Larry Young",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lars-gullin",
+   "name": "Lars Gullin",
+   "instrument": "baritone saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lars-jansson",
+   "name": "Lars Jansson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "laurent-cugny",
+   "name": "Laurent Cugny",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lawrence-brown",
+   "name": "Lawrence Brown",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lawrence-marable",
+   "name": "Lawrence Marable",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lee-konitz",
+   "name": "Lee Konitz",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lee-morgan",
+   "name": "Lee Morgan",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "lennie-tristano",
+   "name": "Lennie Tristano",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "cool jazz"
+  },
+  {
+   "id": "leo-genovese",
+   "name": "Leo Genovese",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "leo-wright",
+   "name": "Leo Wright",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "leroy-vinnegar",
+   "name": "Leroy Vinnegar",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "leroy-williams",
+   "name": "Leroy Williams",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "les-paul",
+   "name": "Les Paul",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "les-spann",
+   "name": "Les Spann",
+   "instrument": "guitar/flute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lester-barnard",
+   "name": "Lester Barnard",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lester-junior-barnard",
+   "name": "Lester \"Junior\" Barnard",
+   "instrument": "electric guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lester-young",
+   "name": "Lester Young",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lewis-nash",
+   "name": "Lewis Nash",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lex-humphries",
+   "name": "Lex Humphries",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lil-hardin-armstrong",
+   "name": "Lil Hardin Armstrong",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lincoln-goines",
+   "name": "Lincoln Goines",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lionel-hampton",
+   "name": "Lionel Hampton",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lloyd-davis",
+   "name": "Lloyd Davis",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lonnie-hewitt",
+   "name": "Lonnie Hewitt",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lonnie-hillyer",
+   "name": "Lonnie Hillyer",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lorne-lofsky",
+   "name": "Lorne Lofsky",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lou-donaldson",
+   "name": "Lou Donaldson",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "lou-levy",
+   "name": "Lou Levy",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louie-bellson",
+   "name": "Louie Bellson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louis-armstrong",
+   "name": "Louis Armstrong",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louis-hayes",
+   "name": "Louis Hayes",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louis-prima",
+   "name": "Louis Prima",
+   "instrument": "trumpet/vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louis-tierney",
+   "name": "Louis Tierney",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "louis-vola",
+   "name": "Louis Vola",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "luis-bacalov",
+   "name": "Luis Bacalov",
+   "instrument": "arranger/composer",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "luis-chaves",
+   "name": "Luís Chaves",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "luizao-maia",
+   "name": "Luizão Maia",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "luke-wills",
+   "name": "Luke Wills",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "luther-hughes",
+   "name": "Luther Hughes",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "major-holley",
+   "name": "Major Holley",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "makoto-ozone",
+   "name": "Makoto Ozone",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "malcolm-arnold",
+   "name": "Malcolm Arnold",
+   "instrument": "arranger/conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "malcolm-cecil",
+   "name": "Malcolm Cecil",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "manny-klein",
+   "name": "Manny Klein",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "manuel-barrueco",
+   "name": "Manuel Barrueco",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marc-fosset",
+   "name": "Marc Fosset",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marc-johnson",
+   "name": "Marc Johnson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marcin-dylla",
+   "name": "Marcin Dylla",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mario-rossy",
+   "name": "Mario Rossy",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mark-eisenman",
+   "name": "Mark Eisenman",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marshal-royal",
+   "name": "Marshal Royal",
+   "instrument": "sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marshall-royal",
+   "name": "Marshall Royal",
+   "instrument": "alto sax / clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "martin-taylor",
+   "name": "Martin Taylor",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marty-banks",
+   "name": "Marty Banks",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marty-melanson",
+   "name": "Marty Melanson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marty-morell",
+   "name": "Marty Morell",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "marty-paich",
+   "name": "Marty Paich",
+   "instrument": "arranger, conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mary-ford",
+   "name": "Mary Ford",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mary-stallings",
+   "name": "Mary Stallings",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "massimo-farao-trio",
+   "name": "Massimo Faraò Trio",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "matt-home",
+   "name": "Matt Home",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "matt-perrine",
+   "name": "Matt Perrine",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "maurilio",
+   "name": "Maurilio",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "max-roach",
+   "name": "Max Roach",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "max-roach-quintet",
+   "name": "Max Roach Quintet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "mcclenty-hunter",
+   "name": "McClenty Hunter",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mccoy-tyner",
+   "name": "McCoy Tyner",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "post-bop"
+  },
+  {
+   "id": "mccoy-tyner-trio",
+   "name": "McCoy Tyner Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "med-flory",
+   "name": "Med Flory",
+   "instrument": "baritone saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "meirelles",
+   "name": "Meirelles",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mel-lewis",
+   "name": "Mel Lewis",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "melba-liston",
+   "name": "Melba Liston",
+   "instrument": "trombone, arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "michael-brecker",
+   "name": "Michael Brecker",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "michael-formanek",
+   "name": "Michael Formanek",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "michael-weiss",
+   "name": "Michael Weiss",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "michel-camilo",
+   "name": "Michel Camilo",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mickey-roker",
+   "name": "Mickey Roker",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mickey-tucker",
+   "name": "Mickey Tucker",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mickey-turner",
+   "name": "Mickey Turner",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mik-zander",
+   "name": "Mik Zander",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mike-karn",
+   "name": "Mike Karn",
+   "instrument": "double bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mike-lawrence",
+   "name": "Mike Lawrence",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mike-stern",
+   "name": "Mike Stern",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "miles-davis",
+   "name": "Miles Davis",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "modal jazz"
+  },
+  {
+   "id": "miles-davis-quintet",
+   "name": "Miles Davis Quintet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "millard-kelso",
+   "name": "Millard Kelso",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "milt-bernhart",
+   "name": "Milt Bernhart",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "milt-buckner",
+   "name": "Milt Buckner",
+   "instrument": "piano/organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "milt-hinton",
+   "name": "Milt Hinton",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "milt-jackson",
+   "name": "Milt Jackson",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "milton-banana",
+   "name": "Milton Banana",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "milton-nascimento",
+   "name": "Milton Nascimento",
+   "instrument": "vocals/guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "miroslav-vitous",
+   "name": "Miroslav Vitous",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mitch-fine",
+   "name": "Mitch Fine",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mitch-miller",
+   "name": "Mitch Miller",
+   "instrument": "oboe",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "miucha",
+   "name": "Miúcha",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "modern-jazz-quartet",
+   "name": "Modern Jazz Quartet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "mongo-santamaria",
+   "name": "Mongo Santamaría",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "monk-montgomery",
+   "name": "Monk Montgomery",
+   "instrument": "electric bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "monty-alexander",
+   "name": "Monty Alexander",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "monty-budwig",
+   "name": "Monty Budwig",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "morris-lang",
+   "name": "Morris Lang",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mozes-rosenberg",
+   "name": "Mozes Rosenberg",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "muggsy-spanier",
+   "name": "Muggsy Spanier",
+   "instrument": "cornet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "mulgrew-miller",
+   "name": "Mulgrew Miller",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nah-king-cole-piano",
+   "name": "Nah King Cole (piano)",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nancy-wilson",
+   "name": "Nancy Wilson",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nat-adderley",
+   "name": "Nat Adderley",
+   "instrument": "cornet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nat-king-cole",
+   "name": "Nat King Cole",
+   "instrument": "piano / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nat-king-cole-trio",
+   "name": "Nat King Cole Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "nathan-milstein",
+   "name": "Nathan Milstein",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nathaniel-young",
+   "name": "Nathaniel Young",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "neal-hefti",
+   "name": "Neal Hefti",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nels-cline",
+   "name": "Nels Cline",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nelson-boyd",
+   "name": "Nelson Boyd",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nelson-hinds",
+   "name": "Nelson Hinds",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nelson-riddle",
+   "name": "Nelson Riddle",
+   "instrument": "arranger / conductor",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "nicholas-payton",
+   "name": "Nicholas Payton",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "niels-henning-rsted-pedersen",
+   "name": "Niels-Henning Ørsted Pedersen",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nigel-north",
+   "name": "Nigel North",
+   "instrument": "lute",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nina-simone",
+   "name": "Nina Simone",
+   "instrument": "vocals / piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "noah-charles",
+   "name": "Noah Charles",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nonnie-rosenberg",
+   "name": "Nonnie Rosenberg",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "norbert-durr",
+   "name": "Norbert Dürr",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "nousche-rosenberg",
+   "name": "Nous'che Rosenberg",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "octavio-bailly-jr",
+   "name": "Octavio Bailly, Jr.",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "orlando-le-fleming",
+   "name": "Orlando Le Fleming",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "oscar-castro-neves",
+   "name": "Oscar Castro-Neves",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "oscar-moore",
+   "name": "Oscar Moore",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "oscar-peterson",
+   "name": "Oscar Peterson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "oscar-peterson-trio",
+   "name": "Oscar Peterson Trio",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "oscar-pettiford",
+   "name": "Oscar Pettiford",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "osie-johnson",
+   "name": "Osie Johnson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "oz-noy",
+   "name": "Oz Noy",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pasquale-grasso",
+   "name": "Pasquale Grasso",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pat-martino",
+   "name": "Pat Martino",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pat-metheny",
+   "name": "Pat Metheny",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-bley",
+   "name": "Paul Bley",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-chambers",
+   "name": "Paul Chambers",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-desmond",
+   "name": "Paul Desmond",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-galbraith",
+   "name": "Paul Galbraith",
+   "instrument": "guitar (8-string)",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-gonsalves",
+   "name": "Paul Gonsalves",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-harnell",
+   "name": "Paul Harnell",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "paul-humphrey",
+   "name": "Paul Humphrey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-motian",
+   "name": "Paul Motian",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-parker",
+   "name": "Paul Parker",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-smith",
+   "name": "Paul Smith",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-svanberg",
+   "name": "Paul Svanberg",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paul-van-wormer",
+   "name": "Paul Van Wormer",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paulinho-braga",
+   "name": "Paulinho Braga",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paulinho-da-costa",
+   "name": "Paulinho da Costa",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paulo-moura",
+   "name": "Paulo Moura",
+   "instrument": "alto saxophone/clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "payton-crossley",
+   "name": "Payton Crossley",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peanuts-hucko",
+   "name": "Peanuts Hucko",
+   "instrument": "clarinet/tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peck-morrison",
+   "name": "Peck Morrison",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pedro-paulo",
+   "name": "Pedro Paulo",
+   "instrument": "saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peggy-lee",
+   "name": "Peggy Lee",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "pepper-adams",
+   "name": "Pepper Adams",
+   "instrument": "baritone sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "percy-heath",
+   "name": "Percy Heath",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pete-briggs",
+   "name": "Pete Briggs",
+   "instrument": "tuba/bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pete-candoli",
+   "name": "Pete Candoli",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "pete-la-roca",
+   "name": "Pete La Roca",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pete-van-nostrand",
+   "name": "Pete Van Nostrand",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peter-bernstein",
+   "name": "Peter Bernstein",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peter-erskine",
+   "name": "Peter Erskine",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "peter-ind",
+   "name": "Peter Ind",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "peter-martin",
+   "name": "Peter Martin",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "phil-harper",
+   "name": "Phil Harper",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "phil-markowitz",
+   "name": "Phil Markowitz",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "phil-sunkel",
+   "name": "Phil Sunkel",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "phil-woods",
+   "name": "Phil Woods",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "philip-catherine",
+   "name": "Philip Catherine",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "philippe-combelle",
+   "name": "Philippe Combelle",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "philly-joe-jones",
+   "name": "Philly Joe Jones",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pierre-michelot",
+   "name": "Pierre Michelot",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "plas-johnson",
+   "name": "Plas Johnson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "poncho-sanchez",
+   "name": "Poncho Sanchez",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "preservation-hall-jazz-band",
+   "name": "Preservation Hall Jazz Band",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "quincy-jones",
+   "name": "Quincy Jones",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "quintette-du-hot-club-de-france",
+   "name": "Quintette du Hot Club de France",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "rachel-podger",
+   "name": "Rachel Podger",
+   "instrument": "baroque violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rahsaan-roland-kirk",
+   "name": "Rahsaan Roland Kirk",
+   "instrument": "sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ralph-lalama",
+   "name": "Ralph Lalama",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ralph-pena",
+   "name": "Ralph Peña",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ralph-towner",
+   "name": "Ralph Towner",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ramon-banda",
+   "name": "Ramon Banda",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "randy-brecker",
+   "name": "Randy Brecker",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-barretto",
+   "name": "Ray Barretto",
+   "instrument": "congas",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-brown",
+   "name": "Ray Brown",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-brown-trio",
+   "name": "Ray Brown Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "ray-bryant",
+   "name": "Ray Bryant",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-crawford",
+   "name": "Ray Crawford",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-drummond",
+   "name": "Ray Drummond",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-ellis",
+   "name": "Ray Ellis",
+   "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-leatherwood",
+   "name": "Ray Leatherwood",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-lucas",
+   "name": "Ray Lucas",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-marchica",
+   "name": "Ray Marchica",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-nance",
+   "name": "Ray Nance",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ray-price",
+   "name": "Ray Price",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "red-garland",
+   "name": "Red Garland",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "red-mitchell",
+   "name": "Red Mitchell",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "red-norvo",
+   "name": "Red Norvo",
+   "instrument": "vibes",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "red-norvo-trio",
+   "name": "Red Norvo Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "red-rodney",
+   "name": "Red Rodney",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "reese-wynans",
+   "name": "Reese Wynans",
+   "instrument": "keyboards",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "reggie-johnson",
+   "name": "Reggie Johnson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "reggie-workman",
+   "name": "Reggie Workman",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "reginald-veal",
+   "name": "Reginald Veal",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rein-de-graaf",
+   "name": "Rein de Graaf",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "renaud-capucon",
+   "name": "Renaud Capuçon",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rene-thomas",
+   "name": "René Thomas",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "richard-crabtree",
+   "name": "Richard Crabtree",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "richard-davis",
+   "name": "Richard Davis",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "richard-williams",
+   "name": "Richard Williams",
+   "instrument": "trumpet on album session",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "richie-kamuca",
+   "name": "Richie Kamuca",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "richie-powell",
+   "name": "Richie Powell",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rick-rosato",
+   "name": "Rick Rosato",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "robert-bain",
+   "name": "Robert Bain",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "robert-hurst",
+   "name": "Robert Hurst",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "robert-m-freedman",
+   "name": "Robert M. Freedman",
+   "instrument": "arranger/conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rocky-roberts",
+   "name": "Rocky Roberts",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rod-olivares",
+   "name": "Rod Olivares",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rodgers-grant",
+   "name": "Rodgers Grant",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rodney-whitaker",
+   "name": "Rodney Whitaker",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roger-chaput",
+   "name": "Roger Chaput",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roger-kellaway",
+   "name": "Roger Kellaway",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roger-squitero",
+   "name": "Roger Squitero",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roland-hanna",
+   "name": "Roland Hanna",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "romeo-penque",
+   "name": "Romeo Penque",
+   "instrument": "reeds",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ron-adams",
+   "name": "Ron Adams",
+   "instrument": "electric bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ron-carter",
+   "name": "Ron Carter",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ron-crotty",
+   "name": "Ron Crotty",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ron-eschete",
+   "name": "Ron Escheté",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ron-mcclure",
+   "name": "Ron McClure",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ronnie-ball",
+   "name": "Ronnie Ball",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ronnie-stephenson",
+   "name": "Ronnie Stephenson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roy-brooks",
+   "name": "Roy Brooks",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roy-burrowes",
+   "name": "Roy Burrowes",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roy-hargrove",
+   "name": "Roy Hargrove",
+   "instrument": "trumpet/flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roy-haynes",
+   "name": "Roy Haynes",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "roy-mccurdy",
+   "name": "Roy McCurdy",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rubens-bassini",
+   "name": "Rubens Bassini",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rubinho-barsotti",
+   "name": "Rubinho Barsotti",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rufus-reid",
+   "name": "Rufus Reid",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "russ-freeman",
+   "name": "Russ Freeman",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "russell-hall",
+   "name": "Russell Hall",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "russell-procope",
+   "name": "Russell Procope",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sadik-hakim",
+   "name": "Sadik Hakim",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sahib-shihab",
+   "name": "Sahib Shihab",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sal-cracchiolo",
+   "name": "Sal Cracchiolo",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-brown",
+   "name": "Sam Brown",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-butera",
+   "name": "Sam Butera",
+   "instrument": "sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-cooke",
+   "name": "Sam Cooke",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-dockery",
+   "name": "Sam Dockery",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "sam-jones",
+   "name": "Sam Jones",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-wilkes",
+   "name": "Sam Wilkes",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sam-woodyard",
+   "name": "Sam Woodyard",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "samara-joy",
+   "name": "Samara Joy",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sandro-haick",
+   "name": "Sandro Haick",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sarah-vaughan",
+   "name": "Sarah Vaughan",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "scatman-crothers",
+   "name": "Scatman Crothers",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "scott-colley",
+   "name": "Scott Colley",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "scott-lafaro",
+   "name": "Scott LaFaro",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "scott-robinson",
+   "name": "Scott Robinson",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sebastiao-neto",
+   "name": "Sebastião Neto",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sergio-mendes",
+   "name": "Sérgio Mendes",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sergio-mendes-trio",
+   "name": "Sérgio Mendes Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "shadow-wilson",
+   "name": "Shadow Wilson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sharon-isbin",
+   "name": "Sharon Isbin",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "shelly-manne",
+   "name": "Shelly Manne",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "sherman-ferguson",
+   "name": "Sherman Ferguson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "shirley-horn",
+   "name": "Shirley Horn",
+   "instrument": "piano / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "shunske-sato",
+   "name": "Shunske Sato",
+   "instrument": "baroque violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sidney-bechet",
+   "name": "Sidney Bechet",
+   "instrument": "soprano sax / clarinet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sir-roland-hanna",
+   "name": "Sir Roland Hanna",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "slam-stewart",
+   "name": "Slam Stewart",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "slide-hampton",
+   "name": "Slide Hampton",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "snooky-young",
+   "name": "Snooky Young",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-clark",
+   "name": "Sonny Clark",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-cohn",
+   "name": "Sonny Cohn",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-criss",
+   "name": "Sonny Criss",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-greer",
+   "name": "Sonny Greer",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-payne",
+   "name": "Sonny Payne",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-red",
+   "name": "Sonny Red",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-rollins",
+   "name": "Sonny Rollins",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "sonny-rollins-quartet",
+   "name": "Sonny Rollins Quartet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "sonny-sharrock",
+   "name": "Sonny Sharrock",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sonny-stitt",
+   "name": "Sonny Stitt",
+   "instrument": "alto & tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sophie-milman",
+   "name": "Sophie Milman",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "spanky-debrest",
+   "name": "Spanky DeBrest",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": "hard bop"
+  },
+  {
+   "id": "stacey-kent",
+   "name": "Stacey Kent",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stacy-dillard",
+   "name": "Stacy Dillard",
+   "instrument": "sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stan-getz",
+   "name": "Stan Getz",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": "cool jazz"
+  },
+  {
+   "id": "stan-levey",
+   "name": "Stan Levey",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stan-puls",
+   "name": "Stan Puls",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stanley-turrentine",
+   "name": "Stanley Turrentine",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stephane-grappelli",
+   "name": "Stéphane Grappelli",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stephen-hall-jones",
+   "name": "Stephen Hall-Jones",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stephen-scott",
+   "name": "Stephen Scott",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-davis",
+   "name": "Steve Davis",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-gadd",
+   "name": "Steve Gadd",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-houghton",
+   "name": "Steve Houghton",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-howe",
+   "name": "Steve Howe",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-jordan",
+   "name": "Steve Jordan",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-laspina",
+   "name": "Steve LaSpina",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-swallow",
+   "name": "Steve Swallow",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-williams",
+   "name": "Steve Williams",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "steve-wilson",
+   "name": "Steve Wilson",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stevie-ray-vaughan",
+   "name": "Stevie Ray Vaughan",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stochelo-rosenberg",
+   "name": "Stochelo Rosenberg",
+   "instrument": "lead guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sullivan-fortner",
+   "name": "Sullivan Fortner",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "svein-aarbostad",
+   "name": "Svein Aarbostad",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sy-oliver",
+   "name": "Sy Oliver",
+   "instrument": "arranger / bandleader",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sylvain-luc",
+   "name": "Sylvain Luc",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tal-farlow",
+   "name": "Tal Farlow",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ted-adams",
+   "name": "Ted Adams",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "teddy-charles",
+   "name": "Teddy Charles",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "teddy-kotick",
+   "name": "Teddy Kotick",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "teddy-wilson",
+   "name": "Teddy Wilson",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tenorio-jr",
+   "name": "Tenorio Jr.",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "terence-blanchard",
+   "name": "Terence Blanchard",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "terri-lyne-carrington",
+   "name": "Terri Lyne Carrington",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "terry-clarke",
+   "name": "Terry Clarke",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tete-montoliu",
+   "name": "Tete Montoliu",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tetsujiro-obara",
+   "name": "Tetsujiro Obara",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "thad-jones",
+   "name": "Thad Jones",
+   "instrument": "trumpet / flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "the-andrews-sisters",
+   "name": "The Andrews Sisters",
+   "instrument": "vocals",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-bbc-dance-orchestra",
+   "name": "The BBC Dance Orchestra",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-cannonball-adderley-quintet",
+   "name": "The Cannonball Adderley Quintet",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-dave-brubeck-quartet",
+   "name": "The Dave Brubeck Quartet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-derek-trucks-band",
+   "name": "The Derek Trucks Band",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-flying-horse-big-band",
+   "name": "The flying Horse big band",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-kenny-clarke-francy-boland-big-band",
+   "name": "The Kenny Clarke-Francy Boland Big Band",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-rosenberg-trio",
+   "name": "The Rosenberg Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "thelonious-monk",
+   "name": "Thelonious Monk",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": "bebop"
+  },
+  {
+   "id": "thelonious-monk-quartet",
+   "name": "Thelonious Monk Quartet",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "thomas-fonnesbk",
+   "name": "Thomas Fonnesbæk",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tigran-hamasyan",
+   "name": "Tigran Hamasyan",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tina-brooks",
+   "name": "Tina Brooks",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "todd-smallie",
+   "name": "Todd Smallie",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tom-harrell",
+   "name": "Tom Harrell",
+   "instrument": "flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tom-mcintosh",
+   "name": "Tom McIntosh",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tommy-bryant",
+   "name": "Tommy Bryant",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tommy-duncan",
+   "name": "Tommy Duncan",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tommy-flanagan",
+   "name": "Tommy Flanagan",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tommy-potter",
+   "name": "Tommy Potter",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tommy-shannon",
+   "name": "Tommy Shannon",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ton-kadleck",
+   "name": "Ton Kadleck",
+   "instrument": "trumpet/flugelhorn",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tony-banda",
+   "name": "Tony Banda",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tony-bazley",
+   "name": "Tony Bazley",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tony-bennett",
+   "name": "Tony Bennett",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tony-reedus",
+   "name": "Tony Reedus",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tony-williams",
+   "name": "Tony Williams",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "toots-thielemans",
+   "name": "Toots Thielemans",
+   "instrument": "harmonica",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "toquinho",
+   "name": "Toquinho",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "triste-janero",
+   "name": "Triste Janero",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "trond-davidsen",
+   "name": "Trond Davidsen",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "trudy-pitts",
+   "name": "Trudy Pitts",
+   "instrument": "organ",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tupac-mantilla",
+   "name": "Tupac Mantilla",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "turner-layton",
+   "name": "Turner Layton",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "tyrone-brown",
+   "name": "Tyrone Brown",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "uan-rasey",
+   "name": "Uan Rasey",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": "swing"
+  },
+  {
+   "id": "ugonna-okegwo",
+   "name": "Ugonna Okegwo",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "ulf-wakenius",
+   "name": "Ulf Wakenius",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "urbie-green",
+   "name": "Urbie Green",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vance-anderson",
+   "name": "Vance Anderson",
+   "instrument": "congas",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vernel-fournier",
+   "name": "Vernel Fournier",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vernell-fournier",
+   "name": "Vernell Fournier",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vic-schoen",
+   "name": "Vic Schoen",
+   "instrument": "orchestra leader/arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "victor-feldman",
+   "name": "Victor Feldman",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "victor-lewis",
+   "name": "Victor Lewis",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "victor-pantoja",
+   "name": "Victor Pantoja",
+   "instrument": "percussion",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "viktoria-mullova",
+   "name": "Viktoria Mullova",
+   "instrument": "violin",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vince-guaraldi",
+   "name": "Vince Guaraldi",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "vinnie-burke",
+   "name": "Vinnie Burke",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wade-robinson",
+   "name": "Wade Robinson",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "walter-bishop-jr",
+   "name": "Walter Bishop Jr.",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "walter-booker",
+   "name": "Walter Booker",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "walter-page",
+   "name": "Walter Page",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "warne-marsh",
+   "name": "Warne Marsh",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "waymon-atkinson",
+   "name": "Waymon Atkinson",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wayne-escoffery",
+   "name": "Wayne Escoffery",
+   "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wayne-king",
+   "name": "Wayne King",
+   "instrument": "guitar / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wayne-king-vocals",
+   "name": "Wayne King (vocals)",
+   "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wayne-shorter",
+   "name": "Wayne Shorter",
+   "instrument": "tenor sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wendell-marshall",
+   "name": "Wendell Marshall",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wes-montgomery",
+   "name": "Wes Montgomery",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wesley-prince",
+   "name": "Wesley Prince",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wilbur-ware",
+   "name": "Wilbur Ware",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "will-vinson",
+   "name": "Will Vinson",
+   "instrument": "alto sax",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "william-austin",
+   "name": "William Austin",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "william-schiopffe",
+   "name": "William Schiöpffe",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "willie-smith",
+   "name": "Willie Smith",
+   "instrument": "alto saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wolfgang-lackerschmid",
+   "name": "Wolfgang Lackerschmid",
+   "instrument": "vibraphone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wolfgang-muthspiel",
+   "name": "Wolfgang Muthspiel",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "woody-herman",
+   "name": "Woody Herman",
+   "instrument": "clarinet / alto saxophone / vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "woody-herman-his-orchestra",
+   "name": "Woody Herman & His Orchestra",
+   "instrument": "group",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "woody-shaw",
+   "name": "Woody Shaw",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "woody-theus",
+   "name": "Woody Theus",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wycliffe-gordon",
+   "name": "Wycliffe Gordon",
+   "instrument": "trombone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wynton-kelly",
+   "name": "Wynton Kelly",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "wynton-kelly-trio",
+   "name": "Wynton Kelly Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "wynton-marsalis",
+   "name": "Wynton Marsalis",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "yasushi-nakamura",
+   "name": "Yasushi Nakamura",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "yonrico-scott",
+   "name": "Yonrico Scott",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "yusef-lateef",
+   "name": "Yusef Lateef",
+   "instrument": "tenor saxophone/flute/oboe and other reeds",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "zimbo-trio",
+   "name": "Zimbo Trio",
+   "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  }
+ ]
+}

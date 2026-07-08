@@ -1,0 +1,26 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+
+"""
+A person or ensemble. The id slug is the shared @key: the same person
+resolves across the artists, catalog, and classical subgraphs.
+"""
+type Artist @key(fields: "id") {
+  id: ID!
+  name: String!
+  "Primary instrument, lowercase ('guitar', 'tenor sax'; 'ensemble' for groups)."
+  instrument: String
+  type: ArtistType!
+  "Sparse in the source data; usually null."
+  style: String
+}
+
+enum ArtistType {
+  PERSON
+  ENSEMBLE
+}
+
+type Query {
+  artist(id: ID!): Artist
+  "All artists, optionally filtered by exact instrument string."
+  artists(instrument: String): [Artist!]!
+}
