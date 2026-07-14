@@ -1,0 +1,24 @@
+# Artists + classical (:4001 + :4003)
+# Identity from artists; bachRecordings + movement/work graph from classical.
+# Julian Bream is a pure classical player, so catalog is never fetched.
+query ArtistsClassical {
+  artist(id: "julian-bream") {
+    id
+    name
+    instrument
+    bachRecordings {
+      label
+      character
+      bpm
+      movement {
+        name
+        key
+        work {
+          title
+          composer
+          bwv
+        }
+      }
+    }
+  }
+}

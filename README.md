@@ -52,16 +52,17 @@ shared key. Ctrl-C stops the router and the subgraphs.
 
 ## Concept queries
 
-The acceptance checklist lives in `queries/`, one file per lesson:
+Nine working queries live in `queries/` (see `queries/README.md` for the
+subgraph matrix and seed ids). Start with the headline join:
 
 | File | Shows |
 |---|---|
-| `01-key-resolution.graphql` | The headline query: identity + discography joined on `@key` |
-| `02-fanout-albums-recordings-tunes.graphql` | Albums -> recordings -> tunes -> back to artists in one query |
-| `03-composed-by.graphql` | Recordings of tunes Jim Hall wrote (composer edge into the person pool) |
-| `04-ensemble.graphql` | An ENSEMBLE artist (Modern Jazz Quartet) resolves like any person |
-| `05-classical-bwv1001.graphql` | BWV 1001 -> movements -> performers -> their other movements |
-| `06-crossover.graphql` | One person's jazz albums AND Bach recordings. Returns `[]` today: the vault has zero crossover people. That is honest, not broken -- add one Chris Thile jazz album file to the vault and re-seed, and it lights up. |
+| `04-artists-catalog.graphql` | Identity + discography joined on Artist `@key` |
+| `08-catalog-classical.graphql` | Jazz + classical edges joined on Tune `@key` (Aranjuez) |
+| `09-full-crossover.graphql` | All three subgraphs on one Tune, with performer names |
+
+The full set covers every non-empty subgraph combination, plus ensemble and
+composer-edge examples.
 
 
 ## Repo layout

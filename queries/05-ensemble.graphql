@@ -1,0 +1,14 @@
+# Same Artist @key join as 04, but the root is an ENSEMBLE (not a PERSON).
+# type + instrument come from artists; albums from catalog.
+query Ensemble {
+  artist(id: "modern-jazz-quartet") {
+    name
+    type
+    instrument
+    albums {
+      title
+      year
+      label
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Catalog only (:4002)
+# Tune + album with tracks. Everything selected is catalog-owned, so the plan
+# stays inside catalog. Asking for composedBy.name or credits.artist.name
+# would pull in the artists subgraph.
+query CatalogOnly {
+  tune(id: "alone-together") {
+    id
+    title
+    composer
+    style
+  }
+  album(id: "jazz-guitar-jim-hall") {
+    id
+    title
+    year
+    label
+    tracks {
+      key
+      tune {
+        title
+        composer
+      }
+    }
+  }
+}

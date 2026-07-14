@@ -1,0 +1,11 @@
+# Artists only (:4001)
+# Pure identity lookup. Query plan is a single fetch — no @key joins.
+query ArtistsOnly {
+  artist(id: "jim-hall") {
+    id
+    name
+    instrument
+    type
+    style
+  }
+}

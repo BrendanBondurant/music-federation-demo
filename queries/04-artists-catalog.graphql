@@ -1,0 +1,21 @@
+# Artists + catalog (:4001 + :4002)
+# Headline @key join: name/instrument from artists, discography from catalog.
+# Check the query plan — two fetches joined on Artist id.
+query ArtistsCatalog {
+  artist(id: "jim-hall") {
+    name
+    instrument
+    albums {
+      title
+      year
+      recordings {
+        key
+        bpm
+        tune {
+          title
+          composer
+        }
+      }
+    }
+  }
+}
