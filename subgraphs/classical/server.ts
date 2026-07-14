@@ -33,8 +33,11 @@ startSubgraph({
   name: "classical",
   port: 4003,
   sdl,
-  entityTypes: ["Artist"],
-  resolveEntity: (ref) => ({ __typename: "Artist", id: String(ref.id) }),
+  entityTypes: ["Artist", "Tune"],
+  resolveEntity: (ref) => {
+    if (ref.__typename === "Tune") return { __typename: "Tune", id: String(ref.id) };
+    return { __typename: "Artist", id: String(ref.id) };
+  },
   resolvers: {
     Query: {
       work: (_: unknown, args: { bwv: number }) => workByBwv.get(args.bwv) ?? null,
@@ -43,6 +46,13 @@ startSubgraph({
     Artist: {
       bachRecordings: (a: { id: string }) => recordingsByPerformer.get(a.id) ?? [],
     },
+    // Classical subgraph contributes movementRecordings to the catalog's Tune
+    // entity. For crossover BWV pieces, the movement id and tune id are the
+    // same slug (e.g. "bwv-147-jesu-joy-of-mans-desiring"), so the lookup
+    // resolves naturally. Pure jazz tunes return [].
+    Tune: {
+      movementRecordings: (t: { id: string }) => recordingsByMovement.get(t.id) ?? [],
+    },
     Work: {
       movements: (w: Work) =>
         (movementsByBwv.get(w.bwv) ?? []).slice().sort((a, b) => a.order - b.order),
@@ -50,6 +60,9 @@ startSubgraph({
     Movement: {
       work: (m: Movement) => workByBwv.get(m.bwv)!,
       recordings: (m: Movement) => recordingsByMovement.get(m.id) ?? [],
+      // For crossover movements, returns the catalog Tune entity by the same id.
+      // The router fetches actual Tune data from the catalog subgraph.
+      tune: (m: Movement) => ({ __typename: "Tune", id: m.id }),
     },
     MovementRecording: {
       movement: (r: MovementRecording) => movementById.get(r.movementId)!,

@@ -11,6 +11,18 @@ type Artist @key(fields: "id") {
 }
 
 """
+Crossover join point: when a Tune in the catalog corresponds to a Bach movement
+(BWV crossover pieces like 'Jesu, Joy of Man's Desiring'), the classical
+subgraph contributes movementRecordings — the tracked performances of that
+movement — to the Tune entity owned by the catalog subgraph.
+"""
+type Tune @key(fields: "id") {
+  id: ID!
+  "Classical/crossover performances of this tune. Empty for pure jazz tunes."
+  movementRecordings: [MovementRecording!]!
+}
+
+"""
 A work by J.S. Bach. The BWV number is the natural key here: the classical
 world ships with stable public identifiers, so bwv works as a lookup key
 without inventing ids.
@@ -27,6 +39,12 @@ type Movement {
   key: String
   work: Work!
   recordings: [MovementRecording!]!
+  """
+  The catalog Tune that maps to this movement, when it is a crossover piece
+  (e.g. BWV 147 'Jesu, Joy of Man's Desiring' recorded by jazz musicians).
+  Null when no catalog entry exists for this movement.
+  """
+  tune: Tune
 }
 
 type MovementRecording {

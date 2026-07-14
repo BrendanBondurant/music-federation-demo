@@ -1,15 +1,60 @@
 {
  "works": [
   {
+   "bwv": 147,
+   "title": "Jesu, Joy of Man's Desiring"
+  },
+  {
+   "bwv": 565,
+   "title": "Toccata and Fugue in D minor"
+  },
+  {
+   "bwv": 855,
+   "title": "Prelude and Fugue in E minor (WTC I No. 10)"
+  },
+  {
    "bwv": 996,
    "title": "Lute Suite in E minor"
   },
   {
    "bwv": 1001,
    "title": "Violin Sonata No. 1 in G minor"
+  },
+  {
+   "bwv": 1043,
+   "title": "Concerto for Two Violins in D minor"
+  },
+  {
+   "bwv": 1047,
+   "title": "Brandenburg Concerto No. 2 in F major"
+  },
+  {
+   "bwv": 1068,
+   "title": "Air (from Orchestral Suite No. 3)"
   }
  ],
  "movements": [
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring",
+   "bwv": 147,
+   "name": "Jesu, Joy of Man's Desiring",
+   "key": "G major",
+   "order": 99
+  },
+  {
+   "id": "bwv-565-toccata",
+   "bwv": 565,
+   "name": "Toccata",
+   "key": "D minor",
+   "order": 99
+  },
+  {
+   "id": "bwv-855-prelude",
+   "bwv": 855,
+   "name": "Prelude",
+   "key": "E minor",
+   "order": 99
+  },
   {
    "id": "bwv-996-praeludium",
    "bwv": 996,
@@ -86,6 +131,34 @@
    "name": "Presto",
    "key": "G minor",
    "order": 3
+  },
+  {
+   "id": "bwv-1043-i-vivace",
+   "bwv": 1043,
+   "name": "I. Vivace",
+   "key": "D minor",
+   "order": 99
+  },
+  {
+   "id": "bwv-1047-i-allegro",
+   "bwv": 1047,
+   "name": "I. (Allegro)",
+   "key": "F major",
+   "order": 99
+  },
+  {
+   "id": "bwv-1047-ii-andante",
+   "bwv": 1047,
+   "name": "II. Andante",
+   "key": "D minor",
+   "order": 99
+  },
+  {
+   "id": "bwv-1068-air",
+   "bwv": 1068,
+   "name": "Air",
+   "key": "D major",
+   "order": 99
   }
  ],
  "movementRecordings": [
@@ -309,7 +382,7 @@
    "id": "bwv-1001-presto::ana-vidovic",
    "movementId": "bwv-1001-presto",
    "performerId": "ana-vidovic",
-   "label": "— https://www.youtube.com/watch?v=3yT4B-3W9gQ",
+   "label": "Live at Hampden Hall<br>https://www.youtube.com/watch?v=3yT4B-3W9gQ",
    "character": null,
    "notes": null,
    "bpm": 117
@@ -318,7 +391,7 @@
    "id": "bwv-1001-presto::arthur-grumiaux",
    "movementId": "bwv-1001-presto",
    "performerId": "arthur-grumiaux",
-   "label": null,
+   "label": "Bach: Sonatas & Partitas for Solo Violin",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -327,7 +400,7 @@
    "id": "bwv-1001-presto::chris-thile",
    "movementId": "bwv-1001-presto",
    "performerId": "chris-thile",
-   "label": null,
+   "label": "Bach: Sonatas and Partitas, Vol. 1",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -336,7 +409,7 @@
    "id": "bwv-1001-presto::gidon-kremer",
    "movementId": "bwv-1001-presto",
    "performerId": "gidon-kremer",
-   "label": "Philips",
+   "label": "Bach: Sonatas and Partitas for Violin Solo (Philips)",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -345,7 +418,7 @@
    "id": "bwv-1001-presto::henryk-szeryng",
    "movementId": "bwv-1001-presto",
    "performerId": "henryk-szeryng",
-   "label": null,
+   "label": "Bach: Sonatas and Partitas for Solo Violin",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -354,7 +427,7 @@
    "id": "bwv-1001-presto::hilary-hahn",
    "movementId": "bwv-1001-presto",
    "performerId": "hilary-hahn",
-   "label": null,
+   "label": "Hilary Hahn Plays Bach: Violin Sonatas Nos. 1 & 2; Partita No. 1",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -363,7 +436,7 @@
    "id": "bwv-1001-presto::isabelle-faust",
    "movementId": "bwv-1001-presto",
    "performerId": "isabelle-faust",
-   "label": "Harmonia Mundi",
+   "label": "Bach: Sonatas & Partitas for Solo Violin, Vol. 2",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -372,7 +445,7 @@
    "id": "bwv-1001-presto::itzhak-perlman",
    "movementId": "bwv-1001-presto",
    "performerId": "itzhak-perlman",
-   "label": "Warner",
+   "label": "Bach: Sonatas & Partitas",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -381,7 +454,7 @@
    "id": "bwv-1001-presto::manuel-barrueco",
    "movementId": "bwv-1001-presto",
    "performerId": "manuel-barrueco",
-   "label": null,
+   "label": "Bach: Sonatas BWV 1001, 1003 & 1005",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -390,7 +463,7 @@
    "id": "bwv-1001-presto::nathan-milstein",
    "movementId": "bwv-1001-presto",
    "performerId": "nathan-milstein",
-   "label": "DG/EMI",
+   "label": "Bach: Sonatas and Partitas (DG)",
    "character": null,
    "notes": null,
    "bpm": 123
@@ -399,7 +472,7 @@
    "id": "bwv-1001-presto::rachel-podger",
    "movementId": "bwv-1001-presto",
    "performerId": "rachel-podger",
-   "label": null,
+   "label": "Bach: Sonatas & Partitas, Vol. 1",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -408,7 +481,7 @@
    "id": "bwv-1001-presto::renaud-capucon",
    "movementId": "bwv-1001-presto",
    "performerId": "renaud-capucon",
-   "label": null,
+   "label": "J.S. Bach: Sonatas & Partitas",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -417,7 +490,7 @@
    "id": "bwv-1001-presto::shunske-sato",
    "movementId": "bwv-1001-presto",
    "performerId": "shunske-sato",
-   "label": "Netherlands Bach Society<br><br>https://www.youtube.com/watch?v=MRKy3kX8XUM",
+   "label": "All of Bach<br>https://www.youtube.com/watch?v=MRKy3kX8XUM",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -426,7 +499,7 @@
    "id": "bwv-1001-presto::viktoria-mullova",
    "movementId": "bwv-1001-presto",
    "performerId": "viktoria-mullova",
-   "label": null,
+   "label": "Bach: 6 Solo Sonatas & Partitas",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -540,10 +613,100 @@
    "bpm": null
   },
   {
+   "id": "bwv-1043-i-vivace::eddie-south",
+   "movementId": "bwv-1043-i-vivace",
+   "performerId": "eddie-south",
+   "label": "Swing (Paris), 78 rpm (1937)",
+   "character": "Swing",
+   "notes": "twin violins + guitar",
+   "bpm": null
+  },
+  {
+   "id": "bwv-1047-i-allegro::classical-jazz-quartet",
+   "movementId": "bwv-1047-i-allegro",
+   "performerId": "classical-jazz-quartet",
+   "label": "[[The Classical Jazz Quartet Plays Bach]]",
+   "character": null,
+   "notes": "Jazz quartet",
+   "bpm": null
+  },
+  {
+   "id": "bwv-1047-ii-andante::classical-jazz-quartet",
+   "movementId": "bwv-1047-ii-andante",
+   "performerId": "classical-jazz-quartet",
+   "label": "[[The Classical Jazz Quartet Plays Bach]]",
+   "character": null,
+   "notes": "Jazz quartet",
+   "bpm": null
+  },
+  {
+   "id": "bwv-1068-air::jacques-loussier-trio",
+   "movementId": "bwv-1068-air",
+   "performerId": "jacques-loussier-trio",
+   "label": "[[Play Bach No. 2]]",
+   "character": null,
+   "notes": "Swing trio",
+   "bpm": null
+  },
+  {
+   "id": "bwv-1068-air::the-swingle-singers",
+   "movementId": "bwv-1068-air",
+   "performerId": "the-swingle-singers",
+   "label": "[[Jazz Sebastian Bach]]",
+   "character": null,
+   "notes": "Vocal jazz",
+   "bpm": null
+  },
+  {
+   "id": "bwv-1068-air::the-swingle-singers",
+   "movementId": "bwv-1068-air",
+   "performerId": "the-swingle-singers",
+   "label": "[[Place Vendôme]]",
+   "character": null,
+   "notes": "Vocal jazz + quartet",
+   "bpm": null
+  },
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring::classical-jazz-quartet",
+   "movementId": "bwv-147-jesu-joy-of-mans-desiring",
+   "performerId": "classical-jazz-quartet",
+   "label": "[[The Classical Jazz Quartet Plays Bach]]",
+   "character": null,
+   "notes": "Jazz quartet",
+   "bpm": null
+  },
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring::modern-jazz-quartet",
+   "movementId": "bwv-147-jesu-joy-of-mans-desiring",
+   "performerId": "modern-jazz-quartet",
+   "label": "[[Blues on Bach]]",
+   "character": null,
+   "notes": "Jazz quartet",
+   "bpm": null
+  },
+  {
+   "id": "bwv-565-toccata::jacques-loussier-trio",
+   "movementId": "bwv-565-toccata",
+   "performerId": "jacques-loussier-trio",
+   "label": "[[Play Bach No. 1]]",
+   "character": null,
+   "notes": "Swing trio",
+   "bpm": null
+  },
+  {
+   "id": "bwv-855-prelude::brad-mehldau",
+   "movementId": "bwv-855-prelude",
+   "performerId": "brad-mehldau",
+   "label": "[[After Bach]]",
+   "character": "Solo piano",
+   "notes": "Bach + original response",
+   "bpm": null
+  },
+  {
    "id": "bwv-996-allemande::david-russell",
    "movementId": "bwv-996-allemande",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -552,7 +715,7 @@
    "id": "bwv-996-allemande::goran-sollscher",
    "movementId": "bwv-996-allemande",
    "performerId": "goran-sollscher",
-   "label": null,
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -561,7 +724,7 @@
    "id": "bwv-996-allemande::hopkinson-smith",
    "movementId": "bwv-996-allemande",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -570,7 +733,7 @@
    "id": "bwv-996-allemande::jason-vieaux",
    "movementId": "bwv-996-allemande",
    "performerId": "jason-vieaux",
-   "label": "Azica",
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -579,7 +742,7 @@
    "id": "bwv-996-allemande::john-williams",
    "movementId": "bwv-996-allemande",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -588,7 +751,7 @@
    "id": "bwv-996-allemande::julian-bream",
    "movementId": "bwv-996-allemande",
    "performerId": "julian-bream",
-   "label": "RCA",
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -597,7 +760,7 @@
    "id": "bwv-996-allemande::kazuhito-yamashita",
    "movementId": "bwv-996-allemande",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 108
@@ -606,7 +769,7 @@
    "id": "bwv-996-allemande::marcin-dylla",
    "movementId": "bwv-996-allemande",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -615,7 +778,7 @@
    "id": "bwv-996-allemande::nigel-north",
    "movementId": "bwv-996-allemande",
    "performerId": "nigel-north",
-   "label": "Naxos",
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 108
@@ -624,7 +787,7 @@
    "id": "bwv-996-allemande::paul-galbraith",
    "movementId": "bwv-996-allemande",
    "performerId": "paul-galbraith",
-   "label": null,
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -633,7 +796,7 @@
    "id": "bwv-996-allemande::sharon-isbin",
    "movementId": "bwv-996-allemande",
    "performerId": "sharon-isbin",
-   "label": "Warner/Erato",
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 112
@@ -642,7 +805,7 @@
    "id": "bwv-996-bourree::david-russell",
    "movementId": "bwv-996-bourree",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 172
@@ -651,7 +814,7 @@
    "id": "bwv-996-bourree::goran-sollscher",
    "movementId": "bwv-996-bourree",
    "performerId": "goran-sollscher",
-   "label": "DG",
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -660,7 +823,7 @@
    "id": "bwv-996-bourree::hopkinson-smith",
    "movementId": "bwv-996-bourree",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -669,7 +832,7 @@
    "id": "bwv-996-bourree::jason-vieaux",
    "movementId": "bwv-996-bourree",
    "performerId": "jason-vieaux",
-   "label": null,
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -678,7 +841,7 @@
    "id": "bwv-996-bourree::john-williams",
    "movementId": "bwv-996-bourree",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -687,7 +850,7 @@
    "id": "bwv-996-bourree::julian-bream",
    "movementId": "bwv-996-bourree",
    "performerId": "julian-bream",
-   "label": "RCA",
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -696,7 +859,7 @@
    "id": "bwv-996-bourree::kazuhito-yamashita",
    "movementId": "bwv-996-bourree",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 172
@@ -705,7 +868,7 @@
    "id": "bwv-996-bourree::marcin-dylla",
    "movementId": "bwv-996-bourree",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -714,7 +877,7 @@
    "id": "bwv-996-bourree::nigel-north",
    "movementId": "bwv-996-bourree",
    "performerId": "nigel-north",
-   "label": null,
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -723,7 +886,7 @@
    "id": "bwv-996-bourree::paul-galbraith",
    "movementId": "bwv-996-bourree",
    "performerId": "paul-galbraith",
-   "label": null,
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -732,7 +895,7 @@
    "id": "bwv-996-bourree::sharon-isbin",
    "movementId": "bwv-996-bourree",
    "performerId": "sharon-isbin",
-   "label": "Warner/Erato",
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -741,7 +904,7 @@
    "id": "bwv-996-courante::david-russell",
    "movementId": "bwv-996-courante",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -750,7 +913,7 @@
    "id": "bwv-996-courante::goran-sollscher",
    "movementId": "bwv-996-courante",
    "performerId": "goran-sollscher",
-   "label": null,
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 103
@@ -759,7 +922,7 @@
    "id": "bwv-996-courante::hopkinson-smith",
    "movementId": "bwv-996-courante",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 108
@@ -768,7 +931,7 @@
    "id": "bwv-996-courante::jason-vieaux",
    "movementId": "bwv-996-courante",
    "performerId": "jason-vieaux",
-   "label": "Azica",
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 112
@@ -777,7 +940,7 @@
    "id": "bwv-996-courante::john-williams",
    "movementId": "bwv-996-courante",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 112
@@ -786,7 +949,7 @@
    "id": "bwv-996-courante::julian-bream",
    "movementId": "bwv-996-courante",
    "performerId": "julian-bream",
-   "label": "RCA",
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -795,7 +958,7 @@
    "id": "bwv-996-courante::kazuhito-yamashita",
    "movementId": "bwv-996-courante",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -804,7 +967,7 @@
    "id": "bwv-996-courante::marcin-dylla",
    "movementId": "bwv-996-courante",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -813,7 +976,7 @@
    "id": "bwv-996-courante::nigel-north",
    "movementId": "bwv-996-courante",
    "performerId": "nigel-north",
-   "label": "Naxos",
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 99
@@ -822,7 +985,7 @@
    "id": "bwv-996-courante::paul-galbraith",
    "movementId": "bwv-996-courante",
    "performerId": "paul-galbraith",
-   "label": null,
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -831,7 +994,7 @@
    "id": "bwv-996-courante::sharon-isbin",
    "movementId": "bwv-996-courante",
    "performerId": "sharon-isbin",
-   "label": "Warner/Erato",
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 123
@@ -840,7 +1003,7 @@
    "id": "bwv-996-gigue::david-russell",
    "movementId": "bwv-996-gigue",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 123
@@ -849,7 +1012,7 @@
    "id": "bwv-996-gigue::goran-sollscher",
    "movementId": "bwv-996-gigue",
    "performerId": "goran-sollscher",
-   "label": "DG",
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -858,7 +1021,7 @@
    "id": "bwv-996-gigue::hopkinson-smith",
    "movementId": "bwv-996-gigue",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -867,7 +1030,7 @@
    "id": "bwv-996-gigue::jason-vieaux",
    "movementId": "bwv-996-gigue",
    "performerId": "jason-vieaux",
-   "label": null,
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -876,7 +1039,7 @@
    "id": "bwv-996-gigue::john-williams",
    "movementId": "bwv-996-gigue",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 185
@@ -885,7 +1048,7 @@
    "id": "bwv-996-gigue::julian-bream",
    "movementId": "bwv-996-gigue",
    "performerId": "julian-bream",
-   "label": "RCA",
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -894,7 +1057,7 @@
    "id": "bwv-996-gigue::kazuhito-yamashita",
    "movementId": "bwv-996-gigue",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 108
@@ -903,7 +1066,7 @@
    "id": "bwv-996-gigue::marcin-dylla",
    "movementId": "bwv-996-gigue",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 112
@@ -912,7 +1075,7 @@
    "id": "bwv-996-gigue::nigel-north",
    "movementId": "bwv-996-gigue",
    "performerId": "nigel-north",
-   "label": null,
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -921,7 +1084,7 @@
    "id": "bwv-996-gigue::paul-galbraith",
    "movementId": "bwv-996-gigue",
    "performerId": "paul-galbraith",
-   "label": null,
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -930,7 +1093,7 @@
    "id": "bwv-996-gigue::sharon-isbin",
    "movementId": "bwv-996-gigue",
    "performerId": "sharon-isbin",
-   "label": null,
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 123
@@ -939,7 +1102,7 @@
    "id": "bwv-996-praeludium::david-russell",
    "movementId": "bwv-996-praeludium",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -948,7 +1111,7 @@
    "id": "bwv-996-praeludium::goran-sollscher",
    "movementId": "bwv-996-praeludium",
    "performerId": "goran-sollscher",
-   "label": "DG",
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -957,7 +1120,7 @@
    "id": "bwv-996-praeludium::hopkinson-smith",
    "movementId": "bwv-996-praeludium",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -966,7 +1129,7 @@
    "id": "bwv-996-praeludium::jason-vieaux",
    "movementId": "bwv-996-praeludium",
    "performerId": "jason-vieaux",
-   "label": null,
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 129
@@ -975,7 +1138,7 @@
    "id": "bwv-996-praeludium::john-williams",
    "movementId": "bwv-996-praeludium",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -984,7 +1147,7 @@
    "id": "bwv-996-praeludium::julian-bream",
    "movementId": "bwv-996-praeludium",
    "performerId": "julian-bream",
-   "label": null,
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -993,7 +1156,7 @@
    "id": "bwv-996-praeludium::kazuhito-yamashita",
    "movementId": "bwv-996-praeludium",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 118
@@ -1002,7 +1165,7 @@
    "id": "bwv-996-praeludium::marcin-dylla",
    "movementId": "bwv-996-praeludium",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1011,7 +1174,7 @@
    "id": "bwv-996-praeludium::nigel-north",
    "movementId": "bwv-996-praeludium",
    "performerId": "nigel-north",
-   "label": "Naxos",
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -1020,7 +1183,7 @@
    "id": "bwv-996-praeludium::paul-galbraith",
    "movementId": "bwv-996-praeludium",
    "performerId": "paul-galbraith",
-   "label": null,
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1029,7 +1192,7 @@
    "id": "bwv-996-praeludium::sharon-isbin",
    "movementId": "bwv-996-praeludium",
    "performerId": "sharon-isbin",
-   "label": null,
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1038,7 +1201,7 @@
    "id": "bwv-996-presto::david-russell",
    "movementId": "bwv-996-presto",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": "BPM is per 8th",
    "bpm": 172
@@ -1047,7 +1210,7 @@
    "id": "bwv-996-presto::goran-sollscher",
    "movementId": "bwv-996-presto",
    "performerId": "goran-sollscher",
-   "label": "DG",
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1056,7 +1219,7 @@
    "id": "bwv-996-presto::hopkinson-smith",
    "movementId": "bwv-996-presto",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -1065,7 +1228,7 @@
    "id": "bwv-996-presto::jason-vieaux",
    "movementId": "bwv-996-presto",
    "performerId": "jason-vieaux",
-   "label": null,
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 162
@@ -1074,7 +1237,7 @@
    "id": "bwv-996-presto::john-williams",
    "movementId": "bwv-996-presto",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 196
@@ -1083,7 +1246,7 @@
    "id": "bwv-996-presto::julian-bream",
    "movementId": "bwv-996-presto",
    "performerId": "julian-bream",
-   "label": null,
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1092,7 +1255,7 @@
    "id": "bwv-996-presto::kazuhito-yamashita",
    "movementId": "bwv-996-presto",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 199
@@ -1101,7 +1264,7 @@
    "id": "bwv-996-presto::marcin-dylla",
    "movementId": "bwv-996-presto",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 172
@@ -1110,7 +1273,7 @@
    "id": "bwv-996-presto::nigel-north",
    "movementId": "bwv-996-presto",
    "performerId": "nigel-north",
-   "label": "Naxos",
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -1119,7 +1282,7 @@
    "id": "bwv-996-presto::paul-galbraith",
    "movementId": "bwv-996-presto",
    "performerId": "paul-galbraith",
-   "label": "Live",
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -1128,7 +1291,7 @@
    "id": "bwv-996-presto::sharon-isbin",
    "movementId": "bwv-996-presto",
    "performerId": "sharon-isbin",
-   "label": null,
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 172
@@ -1137,7 +1300,7 @@
    "id": "bwv-996-sarabande::david-russell",
    "movementId": "bwv-996-sarabande",
    "performerId": "david-russell",
-   "label": "Telarc",
+   "label": "David Russell Plays Bach",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -1146,7 +1309,7 @@
    "id": "bwv-996-sarabande::goran-sollscher",
    "movementId": "bwv-996-sarabande",
    "performerId": "goran-sollscher",
-   "label": "DG",
+   "label": "Bach: Lute Suites BWV 996 & 997",
    "character": null,
    "notes": null,
    "bpm": 152
@@ -1155,7 +1318,7 @@
    "id": "bwv-996-sarabande::hopkinson-smith",
    "movementId": "bwv-996-sarabande",
    "performerId": "hopkinson-smith",
-   "label": null,
+   "label": "Bach: L'Œuvre de Luth",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1164,7 +1327,7 @@
    "id": "bwv-996-sarabande::jason-vieaux",
    "movementId": "bwv-996-sarabande",
    "performerId": "jason-vieaux",
-   "label": "Azica",
+   "label": "Bach, Vol. 1: Works for Lute",
    "character": null,
    "notes": null,
    "bpm": 96
@@ -1173,7 +1336,7 @@
    "id": "bwv-996-sarabande::john-williams",
    "movementId": "bwv-996-sarabande",
    "performerId": "john-williams",
-   "label": null,
+   "label": "Bach: Complete Lute Music",
    "character": null,
    "notes": null,
    "bpm": 144
@@ -1182,7 +1345,7 @@
    "id": "bwv-996-sarabande::julian-bream",
    "movementId": "bwv-996-sarabande",
    "performerId": "julian-bream",
-   "label": null,
+   "label": "J.S. Bach: Lute Suites Nos. 1 & 2",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -1191,7 +1354,7 @@
    "id": "bwv-996-sarabande::kazuhito-yamashita",
    "movementId": "bwv-996-sarabande",
    "performerId": "kazuhito-yamashita",
-   "label": null,
+   "label": "J.S. Bach: Suites for Lute",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -1200,7 +1363,7 @@
    "id": "bwv-996-sarabande::marcin-dylla",
    "movementId": "bwv-996-sarabande",
    "performerId": "marcin-dylla",
-   "label": null,
+   "label": "YouTube",
    "character": null,
    "notes": null,
    "bpm": 136
@@ -1209,7 +1372,7 @@
    "id": "bwv-996-sarabande::nigel-north",
    "movementId": "bwv-996-sarabande",
    "performerId": "nigel-north",
-   "label": "Naxos",
+   "label": "Bach on the Lute",
    "character": null,
    "notes": null,
    "bpm": 123
@@ -1218,7 +1381,7 @@
    "id": "bwv-996-sarabande::paul-galbraith",
    "movementId": "bwv-996-sarabande",
    "performerId": "paul-galbraith",
-   "label": "Live",
+   "label": "Paul Galbraith Plays Bach Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 103
@@ -1227,7 +1390,7 @@
    "id": "bwv-996-sarabande::sharon-isbin",
    "movementId": "bwv-996-sarabande",
    "performerId": "sharon-isbin",
-   "label": null,
+   "label": "Bach: Complete Lute Suites",
    "character": null,
    "notes": null,
    "bpm": 144

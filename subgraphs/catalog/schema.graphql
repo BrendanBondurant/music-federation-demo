@@ -44,7 +44,7 @@ type Track {
   key: String
 }
 
-type Tune {
+type Tune @key(fields: "id") {
   id: ID!
   title: String!
   "Composer display string, e.g. 'Antônio Carlos Jobim'."

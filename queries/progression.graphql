@@ -1,0 +1,460 @@
+# Query progression: simplest → hardest.
+# Each operation is named so the playground can run them one at a time.
+# Difficulty tracks how many subgraphs are involved and how deep entity
+# resolution nests (artists :4001, catalog :4002, classical :4003).
+
+# ---------------------------------------------------------------------------
+# 1. Single field, single subgraph (artists)
+# ---------------------------------------------------------------------------
+query ArtistName {
+  artist(id: "jim-hall") {
+    name
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 2. Identity record from artists only
+# ---------------------------------------------------------------------------
+query ArtistIdentity {
+  artist(id: "jim-hall") {
+    id
+    name
+    instrument
+    type
+    style
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 3. List query with optional filter (artists)
+# ---------------------------------------------------------------------------
+query Guitarists {
+  artists(instrument: "guitar") {
+    id
+    name
+    instrument
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 4. Catalog root: one tune by id (catalog only)
+# ---------------------------------------------------------------------------
+query OneTune {
+  tune(id: "alone-together") {
+    id
+    title
+    composer
+    style
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 5. Catalog root: one album by id (catalog only)
+# ---------------------------------------------------------------------------
+query OneAlbum {
+  album(id: "3-dimensional") {
+    id
+    title
+    year
+    recordingYear
+    label
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 6. Classical root: one work by BWV (classical only)
+# ---------------------------------------------------------------------------
+query OneWork {
+  work(bwv: 1001) {
+    bwv
+    title
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 7. Nested within catalog: album → tracks → tunes
+# ---------------------------------------------------------------------------
+query AlbumTracks {
+  album(id: "3-dimensional") {
+    title
+    year
+    tracks {
+      key
+      tune {
+        title
+        composer
+        style
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 8. Nested within catalog: album → credits (artist refs stay as stubs
+#    unless name is requested — then the router hits artists)
+# ---------------------------------------------------------------------------
+query AlbumCredits {
+  album(id: "3-dimensional") {
+    title
+    credits {
+      instrument
+      artist {
+        id
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 9. Nested within classical: work → movements
+# ---------------------------------------------------------------------------
+query WorkMovements {
+  work(bwv: 996) {
+    bwv
+    title
+    movements {
+      id
+      name
+      key
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 10. First federation join: artists identity + catalog discography
+#     Check the query plan — two fetches joined on Artist @key.
+# ---------------------------------------------------------------------------
+query KeyResolution {
+  artist(id: "jim-hall") {
+    name
+    instrument
+    albums {
+      title
+      year
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 11. Ensemble is the same Artist entity (artists + catalog)
+# ---------------------------------------------------------------------------
+query EnsembleDiscography {
+  artist(id: "modern-jazz-quartet") {
+    name
+    type
+    instrument
+    albums {
+      title
+      year
+      label
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 12. Catalog album → credit artists resolved through artists subgraph
+# ---------------------------------------------------------------------------
+query AlbumPersonnel {
+  album(id: "3-dimensional") {
+    title
+    artists {
+      name
+      type
+    }
+    credits {
+      instrument
+      artist {
+        name
+        instrument
+        type
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 13. Tune → recordings → albums + performing artists (catalog ↔ artists)
+# ---------------------------------------------------------------------------
+query TuneRecordings {
+  tune(id: "all-the-things-you-are") {
+    title
+    composer
+    recordings {
+      key
+      bpm
+      artists {
+        name
+        instrument
+      }
+      album {
+        title
+        year
+        label
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 14. Artist fan-out: albums → credits + recordings → tunes
+#     Bounces catalog → artists (credit/performer names) in one query.
+# ---------------------------------------------------------------------------
+query ArtistFanout {
+  artist(id: "jim-hall") {
+    name
+    albums {
+      title
+      year
+      credits {
+        instrument
+        artist {
+          name
+        }
+      }
+      recordings {
+        key
+        bpm
+        tune {
+          title
+          composer
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 15. Composer edge: composedTunes → recordings of those tunes
+#     (Jim Hall wrote "Careful"; composer resolves into the person pool.)
+# ---------------------------------------------------------------------------
+query ComposedBy {
+  artist(id: "jim-hall") {
+    name
+    composedTunes {
+      title
+      composer
+      composedBy {
+        name
+        instrument
+      }
+      recordings {
+        artists {
+          name
+          instrument
+        }
+        album {
+          title
+          year
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 16. Classical + artists: performers resolve through the shared person pool
+# ---------------------------------------------------------------------------
+query ClassicalPerformers {
+  work(bwv: 1001) {
+    bwv
+    title
+    movements {
+      name
+      key
+      recordings {
+        label
+        character
+        bpm
+        notes
+        performer {
+          name
+          instrument
+          type
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 17. Crossover surface: jazz albums AND Bach recordings on one Artist
+#     Three subgraphs in one selection set. albums may be [] for Bach-only
+#     people — honest empty, not a broken join.
+# ---------------------------------------------------------------------------
+query JazzAndBach {
+  artist(id: "chris-thile") {
+    name
+    instrument
+    albums {
+      title
+      year
+    }
+    bachRecordings {
+      label
+      character
+      movement {
+        name
+        key
+        work {
+          bwv
+          title
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 18. Nested entity loop: performer → bachRecordings → movement → work
+#     Classical entity resolution re-enters classical after hitting artists.
+# ---------------------------------------------------------------------------
+query BachPerformerLoop {
+  work(bwv: 1001) {
+    title
+    movements {
+      name
+      recordings {
+        performer {
+          name
+          instrument
+          bachRecordings {
+            character
+            label
+            movement {
+              name
+              work {
+                bwv
+                title
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 19. Deep catalog graph: list albums with full nested graph back to artists
+#     Heavy fan-out; good stress test for the query plan.
+# ---------------------------------------------------------------------------
+query DeepCatalogGraph {
+  albums {
+    title
+    year
+    label
+    artists {
+      name
+      instrument
+    }
+    credits {
+      instrument
+      artist {
+        name
+        type
+      }
+    }
+    tracks {
+      key
+      tune {
+        title
+        composer
+        composedBy {
+          name
+        }
+        recordings {
+          bpm
+          key
+          artists {
+            name
+          }
+          album {
+            title
+          }
+        }
+      }
+    }
+  }
+}
+
+# ---------------------------------------------------------------------------
+# 20. Hardest: full Artist join across all three subgraphs, then drill into
+#     both jazz and classical graphs with reciprocal edges.
+# ---------------------------------------------------------------------------
+query FullFederationMesh {
+  artist(id: "chris-thile") {
+    id
+    name
+    instrument
+    type
+    albums {
+      title
+      year
+      credits {
+        instrument
+        artist {
+          name
+          instrument
+        }
+      }
+      recordings {
+        key
+        bpm
+        tune {
+          title
+          composedBy {
+            name
+            composedTunes {
+              title
+            }
+          }
+        }
+        artists {
+          name
+        }
+      }
+    }
+    recordings {
+      tune {
+        title
+      }
+      album {
+        title
+      }
+    }
+    composedTunes {
+      title
+      recordings {
+        album {
+          title
+        }
+      }
+    }
+    bachRecordings {
+      label
+      character
+      bpm
+      notes
+      movement {
+        name
+        key
+        work {
+          bwv
+          title
+          movements {
+            name
+            recordings {
+              performer {
+                name
+                instrument
+                albums {
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
