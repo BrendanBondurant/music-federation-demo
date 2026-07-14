@@ -1,0 +1,26 @@
+# Combination: ARTISTS + CLASSICAL (:4001 + :4003)
+# name/instrument come from artists; bachRecordings and the movement/work graph
+# come from classical, joined on the shared Artist @key. No catalog field is
+# selected, so catalog is never fetched. Julian Bream is a pure classical
+# player (BWV 996 lute), so this stays a clean two-subgraph join.
+query ArtistsClassical {
+  artist(id: "julian-bream") {
+    id
+    name
+    instrument
+    bachRecordings {
+      label
+      character
+      bpm
+      movement {
+        name
+        key
+        work {
+          title
+          composer
+          bwv
+        }
+      }
+    }
+  }
+}

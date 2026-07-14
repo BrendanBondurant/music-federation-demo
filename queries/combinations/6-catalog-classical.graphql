@@ -1,0 +1,23 @@
+# Combination: CATALOG + CLASSICAL (:4002 + :4003)
+# The crossover Tune, without touching artists. The tune, its recordings and
+# their albums come from catalog (the jazz edge); movementRecordings come from
+# classical (the classical edge), joined because the jazz tune id equals the
+# Aranjuez Adagio movement id. No artist name is selected, so artists is never
+# fetched — the two edges meet on the Tune @key alone.
+query CatalogClassical {
+  tune(id: "concierto-de-aranjuez-ii-adagio") {
+    id
+    title
+    recordings {
+      key
+      album {
+        title
+        year
+      }
+    }
+    movementRecordings {
+      label
+      character
+    }
+  }
+}

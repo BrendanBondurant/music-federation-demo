@@ -5,22 +5,36 @@ A person or ensemble. The id slug is the shared @key: the same person
 resolves across the artists, catalog, and classical subgraphs.
 """
 type Artist @key(fields: "id") {
+  "Slug id derived from the name; the shared @key across all three subgraphs."
   id: ID!
+  "Display name, e.g. 'Jim Hall'."
   name: String!
-  "Primary instrument, lowercase ('guitar', 'tenor sax'; 'ensemble' for groups)."
+  "Primary instrument, lowercase ('guitar', 'tenor sax'; 'ensemble' for groups). Null when unknown."
   instrument: String
+  "Whether this artist is a single person or an ensemble."
   type: ArtistType!
-  "Sparse in the source data; usually null."
+  "Broad stylistic tag. Sparse in the source data; usually null."
   style: String
 }
 
+"Whether an Artist is one individual or a group credited as a single act."
 enum ArtistType {
+  "A single individual."
   PERSON
+  "A group credited as one artist (e.g. the Modern Jazz Quartet)."
   ENSEMBLE
 }
 
+"Root entry points owned by the artists subgraph."
 type Query {
-  artist(id: ID!): Artist
+  "Look up one artist by slug id. Null when no artist has that id."
+  artist(
+    "Slug id of the artist to fetch, e.g. 'jim-hall'."
+    id: ID!
+  ): Artist
   "All artists, optionally filtered by exact instrument string."
-  artists(instrument: String): [Artist!]!
+  artists(
+    "Exact instrument string to filter by ('guitar'); omit to return every artist."
+    instrument: String
+  ): [Artist!]!
 }

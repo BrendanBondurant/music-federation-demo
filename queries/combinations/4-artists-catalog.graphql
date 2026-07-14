@@ -1,0 +1,29 @@
+# Combination: ARTISTS + CATALOG (:4001 + :4002)
+# The headline @key join. name/instrument come from artists; albums,
+# recordings, tunes come from catalog. Recording.artists are entity refs
+# resolved back through artists, so the plan bounces between the two subgraphs.
+# No classical field is selected, so classical is never fetched.
+query ArtistsCatalog {
+  artist(id: "jim-hall") {
+    name
+    instrument
+    albums {
+      title
+      year
+      credits {
+        instrument
+        artist {
+          name
+        }
+      }
+      recordings {
+        key
+        bpm
+        tune {
+          title
+          composer
+        }
+      }
+    }
+  }
+}

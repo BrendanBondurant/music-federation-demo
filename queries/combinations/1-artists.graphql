@@ -1,0 +1,12 @@
+# Combination: ARTISTS only (:4001)
+# Pure identity lookup. No @key resolution to other subgraphs — the query plan
+# is a single fetch to artists.
+query ArtistsOnly {
+  artist(id: "jim-hall") {
+    id
+    name
+    instrument
+    type
+    style
+  }
+}

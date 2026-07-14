@@ -43,13 +43,15 @@ export interface Album {
 }
 
 export interface Work {
-  bwv: number;
+  id: string;
+  composer: string;
   title: string;
+  bwv: number | null;
 }
 
 export interface Movement {
   id: string;
-  bwv: number;
+  workId: string;
   name: string;
   key: string | null;
   order: number;

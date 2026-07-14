@@ -65,7 +65,7 @@ query OneAlbum {
 # 6. Classical root: one work by BWV (classical only)
 # ---------------------------------------------------------------------------
 query OneWork {
-  work(bwv: 1001) {
+  work(id: "bwv-1001") {
     bwv
     title
   }
@@ -109,7 +109,7 @@ query AlbumCredits {
 # 9. Nested within classical: work → movements
 # ---------------------------------------------------------------------------
 query WorkMovements {
-  work(bwv: 996) {
+  work(id: "bwv-996") {
     bwv
     title
     movements {
@@ -255,7 +255,7 @@ query ComposedBy {
 # 16. Classical + artists: performers resolve through the shared person pool
 # ---------------------------------------------------------------------------
 query ClassicalPerformers {
-  work(bwv: 1001) {
+  work(id: "bwv-1001") {
     bwv
     title
     movements {
@@ -309,7 +309,7 @@ query JazzAndBach {
 #     Classical entity resolution re-enters classical after hitting artists.
 # ---------------------------------------------------------------------------
 query BachPerformerLoop {
-  work(bwv: 1001) {
+  work(id: "bwv-1001") {
     title
     movements {
       name

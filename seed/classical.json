@@ -1,164 +1,207 @@
 {
  "works": [
   {
-   "bwv": 147,
-   "title": "Jesu, Joy of Man's Desiring"
+   "id": "bwv-147",
+   "composer": "Bach",
+   "title": "Jesu, Joy of Man's Desiring",
+   "bwv": 147
   },
   {
-   "bwv": 565,
-   "title": "Toccata and Fugue in D minor"
+   "id": "bwv-565",
+   "composer": "Bach",
+   "title": "Toccata and Fugue in D minor",
+   "bwv": 565
   },
   {
-   "bwv": 855,
-   "title": "Prelude and Fugue in E minor (WTC I No. 10)"
+   "id": "bwv-855",
+   "composer": "Bach",
+   "title": "Prelude and Fugue in E minor (WTC I No. 10)",
+   "bwv": 855
   },
   {
-   "bwv": 996,
-   "title": "Lute Suite in E minor"
+   "id": "bwv-996",
+   "composer": "Bach",
+   "title": "Lute Suite in E minor",
+   "bwv": 996
   },
   {
-   "bwv": 1001,
-   "title": "Violin Sonata No. 1 in G minor"
+   "id": "bwv-1001",
+   "composer": "Bach",
+   "title": "Violin Sonata No. 1 in G minor",
+   "bwv": 1001
   },
   {
-   "bwv": 1043,
-   "title": "Concerto for Two Violins in D minor"
+   "id": "bwv-1043",
+   "composer": "Bach",
+   "title": "Concerto for Two Violins in D minor",
+   "bwv": 1043
   },
   {
-   "bwv": 1047,
-   "title": "Brandenburg Concerto No. 2 in F major"
+   "id": "bwv-1047",
+   "composer": "Bach",
+   "title": "Brandenburg Concerto No. 2 in F major",
+   "bwv": 1047
   },
   {
-   "bwv": 1068,
-   "title": "Air (from Orchestral Suite No. 3)"
+   "id": "bwv-1068",
+   "composer": "Bach",
+   "title": "Air (from Orchestral Suite No. 3)",
+   "bwv": 1068
+  },
+  {
+   "id": "concierto-de-aranjuez",
+   "composer": "Rodrigo",
+   "title": "Concierto de Aranjuez",
+   "bwv": null
   }
  ],
  "movements": [
   {
    "id": "bwv-147-jesu-joy-of-mans-desiring",
-   "bwv": 147,
+   "workId": "bwv-147",
    "name": "Jesu, Joy of Man's Desiring",
    "key": "G major",
    "order": 99
   },
   {
    "id": "bwv-565-toccata",
-   "bwv": 565,
+   "workId": "bwv-565",
    "name": "Toccata",
    "key": "D minor",
    "order": 99
   },
   {
    "id": "bwv-855-prelude",
-   "bwv": 855,
+   "workId": "bwv-855",
    "name": "Prelude",
    "key": "E minor",
    "order": 99
   },
   {
    "id": "bwv-996-praeludium",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Praeludium",
    "key": "E minor",
    "order": 0
   },
   {
    "id": "bwv-996-presto",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Presto",
    "key": "E minor",
    "order": 1
   },
   {
    "id": "bwv-996-allemande",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Allemande",
    "key": "E minor",
    "order": 2
   },
   {
    "id": "bwv-996-courante",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Courante",
    "key": "E minor",
    "order": 3
   },
   {
    "id": "bwv-996-sarabande",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Sarabande",
    "key": "E minor",
    "order": 4
   },
   {
    "id": "bwv-996-bourree",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Bourrée",
    "key": "E minor",
    "order": 5
   },
   {
    "id": "bwv-996-gigue",
-   "bwv": 996,
+   "workId": "bwv-996",
    "name": "Gigue",
    "key": "E minor",
    "order": 6
   },
   {
    "id": "bwv-1001-adagio",
-   "bwv": 1001,
+   "workId": "bwv-1001",
    "name": "Adagio",
    "key": "G minor",
    "order": 0
   },
   {
    "id": "bwv-1001-fuga",
-   "bwv": 1001,
+   "workId": "bwv-1001",
    "name": "Fuga",
    "key": "G minor",
    "order": 1
   },
   {
    "id": "bwv-1001-siciliana",
-   "bwv": 1001,
+   "workId": "bwv-1001",
    "name": "Siciliana",
    "key": "G minor",
    "order": 2
   },
   {
    "id": "bwv-1001-presto",
-   "bwv": 1001,
+   "workId": "bwv-1001",
    "name": "Presto",
    "key": "G minor",
    "order": 3
   },
   {
    "id": "bwv-1043-i-vivace",
-   "bwv": 1043,
+   "workId": "bwv-1043",
    "name": "I. Vivace",
    "key": "D minor",
    "order": 99
   },
   {
    "id": "bwv-1047-i-allegro",
-   "bwv": 1047,
+   "workId": "bwv-1047",
    "name": "I. (Allegro)",
    "key": "F major",
    "order": 99
   },
   {
    "id": "bwv-1047-ii-andante",
-   "bwv": 1047,
+   "workId": "bwv-1047",
    "name": "II. Andante",
    "key": "D minor",
    "order": 99
   },
   {
    "id": "bwv-1068-air",
-   "bwv": 1068,
+   "workId": "bwv-1068",
    "name": "Air",
    "key": "D major",
    "order": 99
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "workId": "concierto-de-aranjuez",
+   "name": "I. Allegro con spirito",
+   "key": "D major",
+   "order": 1
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio",
+   "workId": "concierto-de-aranjuez",
+   "name": "II. Adagio",
+   "key": "B minor",
+   "order": 2
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile",
+   "workId": "concierto-de-aranjuez",
+   "name": "III. Allegro gentile",
+   "key": "D major",
+   "order": 3
   }
  ],
  "movementRecordings": [
@@ -610,96 +653,6 @@
    "label": null,
    "character": "Hybrid HIP/modern",
    "notes": "Historically aware phrasing, modern virtuosity",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1043-i-vivace::eddie-south",
-   "movementId": "bwv-1043-i-vivace",
-   "performerId": "eddie-south",
-   "label": "Swing (Paris), 78 rpm (1937)",
-   "character": "Swing",
-   "notes": "twin violins + guitar",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1047-i-allegro::classical-jazz-quartet",
-   "movementId": "bwv-1047-i-allegro",
-   "performerId": "classical-jazz-quartet",
-   "label": "[[The Classical Jazz Quartet Plays Bach]]",
-   "character": null,
-   "notes": "Jazz quartet",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1047-ii-andante::classical-jazz-quartet",
-   "movementId": "bwv-1047-ii-andante",
-   "performerId": "classical-jazz-quartet",
-   "label": "[[The Classical Jazz Quartet Plays Bach]]",
-   "character": null,
-   "notes": "Jazz quartet",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1068-air::jacques-loussier-trio",
-   "movementId": "bwv-1068-air",
-   "performerId": "jacques-loussier-trio",
-   "label": "[[Play Bach No. 2]]",
-   "character": null,
-   "notes": "Swing trio",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1068-air::the-swingle-singers",
-   "movementId": "bwv-1068-air",
-   "performerId": "the-swingle-singers",
-   "label": "[[Jazz Sebastian Bach]]",
-   "character": null,
-   "notes": "Vocal jazz",
-   "bpm": null
-  },
-  {
-   "id": "bwv-1068-air::the-swingle-singers",
-   "movementId": "bwv-1068-air",
-   "performerId": "the-swingle-singers",
-   "label": "[[Place Vendôme]]",
-   "character": null,
-   "notes": "Vocal jazz + quartet",
-   "bpm": null
-  },
-  {
-   "id": "bwv-147-jesu-joy-of-mans-desiring::classical-jazz-quartet",
-   "movementId": "bwv-147-jesu-joy-of-mans-desiring",
-   "performerId": "classical-jazz-quartet",
-   "label": "[[The Classical Jazz Quartet Plays Bach]]",
-   "character": null,
-   "notes": "Jazz quartet",
-   "bpm": null
-  },
-  {
-   "id": "bwv-147-jesu-joy-of-mans-desiring::modern-jazz-quartet",
-   "movementId": "bwv-147-jesu-joy-of-mans-desiring",
-   "performerId": "modern-jazz-quartet",
-   "label": "[[Blues on Bach]]",
-   "character": null,
-   "notes": "Jazz quartet",
-   "bpm": null
-  },
-  {
-   "id": "bwv-565-toccata::jacques-loussier-trio",
-   "movementId": "bwv-565-toccata",
-   "performerId": "jacques-loussier-trio",
-   "label": "[[Play Bach No. 1]]",
-   "character": null,
-   "notes": "Swing trio",
-   "bpm": null
-  },
-  {
-   "id": "bwv-855-prelude::brad-mehldau",
-   "movementId": "bwv-855-prelude",
-   "performerId": "brad-mehldau",
-   "label": "[[After Bach]]",
-   "character": "Solo piano",
-   "notes": "Bach + original response",
    "bpm": null
   },
   {
@@ -1394,6 +1347,141 @@
    "character": null,
    "notes": null,
    "bpm": 144
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito::angel-romero",
+   "movementId": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "performerId": "angel-romero",
+   "label": "LSO / André Previn (EMI, 1977)",
+   "character": null,
+   "notes": "Polished",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito::john-williams",
+   "movementId": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "performerId": "john-williams",
+   "label": "English Chamber Orch. / Daniel Barenboim (CBS, 1974)",
+   "character": "Clear, lyrical",
+   "notes": "One of several JW recordings",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito::paco-de-lucia",
+   "movementId": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "performerId": "paco-de-lucia",
+   "label": "Orquesta de Cadaqués / Edmon Colomer (PolyGram, 1991)",
+   "character": "Flamenco-inflected",
+   "notes": "Live",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito::pepe-romero",
+   "movementId": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "performerId": "pepe-romero",
+   "label": "ASMF / Neville Marriner (Philips, 1978)",
+   "character": null,
+   "notes": "Warm, idiomatic",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-i-allegro-con-spirito::regino-sainz-de-la-maza",
+   "movementId": "concierto-de-aranjuez-i-allegro-con-spirito",
+   "performerId": "regino-sainz-de-la-maza",
+   "label": "Orquesta Nacional de España / Ataúlfo Argenta (1948)",
+   "character": "Premiere",
+   "notes": "Dedicatee; first recording",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::angel-romero",
+   "movementId": "concierto-de-aranjuez-ii-adagio",
+   "performerId": "angel-romero",
+   "label": "LSO / André Previn (EMI, 1977)",
+   "character": null,
+   "notes": "Polished",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::john-williams",
+   "movementId": "concierto-de-aranjuez-ii-adagio",
+   "performerId": "john-williams",
+   "label": "English Chamber Orch. / Daniel Barenboim (CBS, 1974)",
+   "character": "Clear, lyrical",
+   "notes": "One of several JW recordings",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::paco-de-lucia",
+   "movementId": "concierto-de-aranjuez-ii-adagio",
+   "performerId": "paco-de-lucia",
+   "label": "Orquesta de Cadaqués / Edmon Colomer (PolyGram, 1991)",
+   "character": "Flamenco-inflected",
+   "notes": "Live",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::pepe-romero",
+   "movementId": "concierto-de-aranjuez-ii-adagio",
+   "performerId": "pepe-romero",
+   "label": "ASMF / Neville Marriner (Philips, 1978)",
+   "character": null,
+   "notes": "Warm, idiomatic",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::regino-sainz-de-la-maza",
+   "movementId": "concierto-de-aranjuez-ii-adagio",
+   "performerId": "regino-sainz-de-la-maza",
+   "label": "Orquesta Nacional de España / Ataúlfo Argenta (1948)",
+   "character": "Premiere",
+   "notes": "Dedicatee; first recording",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile::angel-romero",
+   "movementId": "concierto-de-aranjuez-iii-allegro-gentile",
+   "performerId": "angel-romero",
+   "label": "LSO / André Previn (EMI, 1977)",
+   "character": null,
+   "notes": "Polished",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile::john-williams",
+   "movementId": "concierto-de-aranjuez-iii-allegro-gentile",
+   "performerId": "john-williams",
+   "label": "English Chamber Orch. / Daniel Barenboim (CBS, 1974)",
+   "character": "Clear, lyrical",
+   "notes": "One of several JW recordings",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile::paco-de-lucia",
+   "movementId": "concierto-de-aranjuez-iii-allegro-gentile",
+   "performerId": "paco-de-lucia",
+   "label": "Orquesta de Cadaqués / Edmon Colomer (PolyGram, 1991)",
+   "character": "Flamenco-inflected",
+   "notes": "Live",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile::pepe-romero",
+   "movementId": "concierto-de-aranjuez-iii-allegro-gentile",
+   "performerId": "pepe-romero",
+   "label": "ASMF / Neville Marriner (Philips, 1978)",
+   "character": null,
+   "notes": "Warm, idiomatic",
+   "bpm": null
+  },
+  {
+   "id": "concierto-de-aranjuez-iii-allegro-gentile::regino-sainz-de-la-maza",
+   "movementId": "concierto-de-aranjuez-iii-allegro-gentile",
+   "performerId": "regino-sainz-de-la-maza",
+   "label": "Orquesta Nacional de España / Ataúlfo Argenta (1948)",
+   "character": "Premiere",
+   "notes": "Dedicatee; first recording",
+   "bpm": null
   }
  ]
 }

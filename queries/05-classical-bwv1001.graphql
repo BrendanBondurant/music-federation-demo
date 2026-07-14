@@ -3,7 +3,7 @@
 # person pool); bachRecordings loops back into classical -- nested entity
 # resolution across two subgraphs.
 {
-  work(bwv: 1001) {
+  work(id: "bwv-1001") {
     bwv
     title
     movements {

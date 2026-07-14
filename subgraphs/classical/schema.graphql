@@ -1,43 +1,59 @@
 extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
 
 """
-The classical subgraph extends the same Artist entity with Bach performance
-data. A jazz guitarist and a Bach performer with the same name are one person:
-the shared slug @key joins them.
+The classical subgraph extends the same Artist entity with classical
+performance data. A jazz guitarist and a Bach performer with the same name are
+one person: the shared slug @key joins them.
 """
 type Artist @key(fields: "id") {
+  "Shared slug @key; identity (name, instrument) lives in the artists subgraph."
   id: ID!
+  "Classical movement performances credited to this artist. Empty for pure jazz players."
   bachRecordings: [MovementRecording!]!
 }
 
 """
-Crossover join point: when a Tune in the catalog corresponds to a Bach movement
-(BWV crossover pieces like 'Jesu, Joy of Man's Desiring'), the classical
-subgraph contributes movementRecordings — the tracked performances of that
-movement — to the Tune entity owned by the catalog subgraph.
+Crossover join point: when a Tune in the catalog corresponds to a classical
+movement (crossover pieces like 'Jesu, Joy of Man's Desiring' or the Aranjuez
+Adagio), the classical subgraph contributes movementRecordings — the tracked
+performances of that movement — to the Tune entity owned by the catalog subgraph.
 """
 type Tune @key(fields: "id") {
+  "Shared slug @key; the tune's own data lives in the catalog subgraph."
   id: ID!
   "Classical/crossover performances of this tune. Empty for pure jazz tunes."
   movementRecordings: [MovementRecording!]!
 }
 
 """
-A work by J.S. Bach. The BWV number is the natural key here: the classical
-world ships with stable public identifiers, so bwv works as a lookup key
-without inventing ids.
+A classical work. Keyed by a generic `id` ("bwv-147", "concierto-de-aranjuez")
+so any composer fits, not just Bach. `bwv` stays as a Bach convenience: set for
+Bach works, null for everything else.
 """
-type Work {
-  bwv: Int!
+type Work @key(fields: "id") {
+  "Generic work id: 'bwv-<n>' for Bach, slug(title) for other composers."
+  id: ID!
+  "Composer name, e.g. 'Bach' or 'Rodrigo'."
+  composer: String!
+  "Work title, e.g. 'Concerto for Two Violins in D minor'."
   title: String!
+  "BWV number, Bach only. Null for other composers."
+  bwv: Int
+  "Movements of this work, in performance order."
   movements: [Movement!]!
 }
 
+"A single movement of a work."
 type Movement {
+  "Movement id: '<workId>-<slug(name)>', e.g. 'concierto-de-aranjuez-ii-adagio'."
   id: ID!
+  "Movement name, e.g. 'II. Adagio' or 'Praeludium'."
   name: String!
+  "Key of the movement. Null when not noted."
   key: String
+  "The work this movement belongs to."
   work: Work!
+  "Tracked classical performances of this movement."
   recordings: [MovementRecording!]!
   """
   The catalog Tune that maps to this movement, when it is a crossover piece
@@ -47,19 +63,34 @@ type Movement {
   tune: Tune
 }
 
+"One tracked performance of a movement: who played it and how."
 type MovementRecording {
+  "Composite id: movement::performer."
   id: ID!
+  "The movement performed."
   movement: Movement!
+  "The performing artist, resolved into the shared person pool."
   performer: Artist!
   "Record label or source ('DG/EMI', 'Netherlands Bach Society'). Null when unknown."
   label: String
-  "One-line interpretive character ('Poised, clear', 'HIP-leaning')."
+  "One-line interpretive character ('Poised, clear', 'HIP-leaning'). Null when absent."
   character: String
+  "Free-text note on the performance. Null when absent."
   notes: String
+  "Tempo in beats per minute. Null when not noted."
   bpm: Int
 }
 
+"Root entry points owned by the classical subgraph."
 type Query {
-  work(bwv: Int!): Work
-  works: [Work!]!
+  "Look up one work by generic id ('bwv-1001', 'concierto-de-aranjuez'). Null when not found."
+  work(
+    "Generic work id to fetch."
+    id: ID!
+  ): Work
+  "All works, optionally filtered by composer name."
+  works(
+    "Exact composer name to filter by ('Bach', 'Rodrigo'); omit to return every work."
+    composer: String
+  ): [Work!]!
 }
