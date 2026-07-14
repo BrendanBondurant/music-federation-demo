@@ -5,21 +5,27 @@ The catalog subgraph does not own Artist identity. It contributes
 discography fields to the Artist entity owned by the artists subgraph.
 """
 type Artist @key(fields: "id") {
+  "Shared slug @key; identity (name, instrument) lives in the artists subgraph."
   id: ID!
   "Albums this artist appears on, as principal artist or personnel."
   albums: [Album!]!
+  "Every recording this artist plays on, across all albums."
   recordings: [Recording!]!
   "Tunes this artist wrote. The composer edge is resolved by slug into the shared person pool."
   composedTunes: [Tune!]!
 }
 
+"A released album: the container for recordings, personnel, and a track list."
 type Album {
+  "Slug id derived from the album title."
   id: ID!
+  "Album title."
   title: String!
   "Release year. Around 40 albums legitimately have no year in the source data."
   year: Int
   "Recording year, when it differs from the release year."
   recordingYear: Int
+  "Record label. Null when unknown."
   label: String
   "Principal artists from the album frontmatter. Empty for various-artists compilations."
   artists: [Artist!]!
@@ -34,41 +40,70 @@ type Album {
   recordings: [Recording!]!
 }
 
+"A single personnel credit on an album: one artist and the instrument they played."
 type Credit {
+  "The credited artist. Null when the credit could not be resolved to a person."
   artist: Artist
+  "Instrument played on this record. Null when unstated."
   instrument: String
 }
 
+"A tune as it appears on an album's track list, with the key it was played in."
 type Track {
+  "The tune played on this track."
   tune: Tune!
+  "Key this track was played in. Null when not noted."
   key: String
 }
 
-type Tune {
+"A composition (jazz standard, original, or crossover piece). Owned by catalog."
+type Tune @key(fields: "id") {
+  "Slug id derived from the tune title; the shared @key with the classical subgraph."
   id: ID!
+  "Tune title."
   title: String!
-  "Composer display string, e.g. 'Antônio Carlos Jobim'."
+  "Composer display string, e.g. 'Antônio Carlos Jobim'. Null when unknown."
   composer: String
   "Composer resolved into the shared person pool; null when the composer has no artist record."
   composedBy: Artist
+  "Broad stylistic tag. Null when untagged."
   style: String
+  "Tracked performances of this tune. This is the jazz edge of a crossover tune."
   recordings: [Recording!]!
 }
 
+"One tracked performance of a tune: who played it, on which album, and how."
 type Recording {
+  "Composite id: tune::album::artists."
   id: ID!
+  "The tune performed."
   tune: Tune!
+  "Performing artists on this recording."
   artists: [Artist!]!
   "Null for recordings sourced from placeholder albums (YouTube rips, compilations)."
   album: Album
+  "Key this recording was played in. Null when not noted."
   key: String
+  "Tempo in beats per minute. Null when not noted."
   bpm: Int
+  "Free-text note on the melody or head. Null when absent."
   melody: String
 }
 
+"Root entry points owned by the catalog subgraph."
 type Query {
-  tune(id: ID!): Tune
+  "Look up one tune by slug id. Null when no tune has that id."
+  tune(
+    "Slug id of the tune to fetch, e.g. 'alone-together'."
+    id: ID!
+  ): Tune
+  "Every tune in the catalog."
   tunes: [Tune!]!
-  album(id: ID!): Album
+  "Look up one album by slug id. Null when no album has that id."
+  album(
+    "Slug id of the album to fetch, e.g. '3-dimensional'."
+    id: ID!
+  ): Album
+  "Every album in the catalog."
   albums: [Album!]!
 }

@@ -53,10 +53,11 @@ startSubgraph({
   name: "catalog",
   port: 4002,
   sdl,
-  entityTypes: ["Artist"],
-  // Catalog holds no identity data, so any reference is "resolvable": the
-  // contributed fields below are computed from the id.
-  resolveEntity: (ref) => ({ __typename: "Artist", id: String(ref.id) }),
+  entityTypes: ["Artist", "Tune"],
+  resolveEntity: (ref) => {
+    if (ref.__typename === "Tune") return tuneById.get(String(ref.id)) ?? null;
+    return { __typename: "Artist", id: String(ref.id) };
+  },
   resolvers: {
     Query: {
       tune: (_: unknown, args: { id: string }) => tuneById.get(args.id) ?? null,

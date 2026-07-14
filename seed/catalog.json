@@ -246,6 +246,55 @@
    "style": "blues"
   },
   {
+   "id": "bwv-1043-i-vivace",
+   "title": "BWV 1043 – I. Vivace",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-1047-i-allegro",
+   "title": "BWV 1047 – I. (Allegro)",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-1047-ii-andante",
+   "title": "BWV 1047 – II. Andante",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-1068-air",
+   "title": "BWV 1068 – Air",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring",
+   "title": "BWV 147 – Jesu, Joy of Man's Desiring",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-565-toccata",
+   "title": "BWV 565 – Toccata",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
+   "id": "bwv-855-prelude",
+   "title": "BWV 855 – Prelude",
+   "composer": "J.S. Bach",
+   "composerId": null,
+   "style": "classical"
+  },
+  {
    "id": "c-jam-blues",
    "title": "C Jam Blues",
    "composer": "Duke Ellington",
@@ -293,6 +342,13 @@
    "composer": "Kenny Burrell",
    "composerId": "kenny-burrell",
    "style": "standard"
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio",
+   "title": "Concierto de Aranjuez – II. Adagio",
+   "composer": "Joaquín Rodrigo",
+   "composerId": null,
+   "style": "classical"
   },
   {
    "id": "cool-blues",
@@ -640,8 +696,8 @@
   {
    "id": "ornithology",
    "title": "Ornithology",
-   "composer": "Charlie Parker",
-   "composerId": "charlie-parker",
+   "composer": "Charlie Parker & Benny Harris",
+   "composerId": null,
    "style": "standard"
   },
   {
@@ -769,6 +825,13 @@
    "composer": "Sonny Rollins",
    "composerId": "sonny-rollins",
    "style": "standard"
+  },
+  {
+   "id": "spain",
+   "title": "Spain",
+   "composer": null,
+   "composerId": null,
+   "style": "jazz"
   },
   {
    "id": "st-louis-blues",
@@ -1013,9 +1076,9 @@
   {
    "id": "100-songs-for-a-centennial",
    "title": "100 Songs For A Centennial",
-   "year": null,
+   "year": 2017,
    "recordingYear": null,
-   "label": "Columbia/Legacy",
+   "label": "Verve",
    "artistIds": [
     "ella-fitzgerald",
     "count-basie"
@@ -1315,6 +1378,28 @@
    ]
   },
   {
+   "id": "after-bach",
+   "title": "After Bach",
+   "year": 2018,
+   "recordingYear": null,
+   "label": "Nonesuch",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "credits": [
+    {
+     "artistId": "brad-mehldau",
+     "instrument": "piano"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-855-prelude",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "after-hours",
    "title": "After Hours",
    "year": 1961,
@@ -1327,6 +1412,14 @@
     {
      "artistId": "sarah-vaughan",
      "instrument": "vocals"
+    },
+    {
+     "artistId": "charlie-christian",
+     "instrument": "guitar"
+    },
+    {
+     "artistId": "dizzy-gillespie",
+     "instrument": "trumpet"
     }
    ],
    "tracks": [
@@ -1341,11 +1434,53 @@
    ]
   },
   {
+   "id": "after-hours-dexter-gordon",
+   "title": "After Hours (Dexter Gordon)",
+   "year": 1977,
+   "recordingYear": 1969,
+   "label": "SteepleChase",
+   "artistIds": [
+    "dexter-gordon"
+   ],
+   "credits": [
+    {
+     "artistId": "dexter-gordon",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "artistId": "rolf-ericson",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "lars-sjosten",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "sture-nordin",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "pelle-hulten",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "all-the-things-you-are",
+     "key": null
+    },
+    {
+     "tuneId": "straight-no-chaser",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "aint-misbehavin",
    "title": "Ain't Misbehavin",
-   "year": null,
+   "year": 1956,
    "recordingYear": null,
-   "label": "Bluebird/RCA",
+   "label": "RCA Victor",
    "artistIds": [
     "fats-waller"
    ],
@@ -1407,7 +1542,7 @@
   {
    "id": "all-time-great-instrumental-hits",
    "title": "All-Time Great Instrumental Hits",
-   "year": null,
+   "year": 1966,
    "recordingYear": null,
    "label": "Capitol",
    "artistIds": [
@@ -1429,9 +1564,9 @@
   {
    "id": "alone-together-catherine-russell",
    "title": "Alone Together (Catherine Russell)",
-   "year": null,
+   "year": 2019,
    "recordingYear": null,
-   "label": null,
+   "label": "Dot Time Records",
    "artistIds": [
     "catherine-russell"
    ],
@@ -1444,7 +1579,7 @@
    "tracks": [
     {
      "tuneId": "alone-together",
-     "key": "Gm"
+     "key": null
     }
    ]
   },
@@ -1511,9 +1646,9 @@
   {
    "id": "alone-together-lara-louise",
    "title": "Alone Together (Lara Louise)",
-   "year": null,
+   "year": 2022,
    "recordingYear": null,
-   "label": null,
+   "label": "self-released (2092515 Records DK)",
    "artistIds": [
     "lara-louise"
    ],
@@ -1526,7 +1661,7 @@
    "tracks": [
     {
      "tuneId": "alone-together",
-     "key": "Fm"
+     "key": null
     }
    ]
   },
@@ -1572,7 +1707,7 @@
   {
    "id": "american-duettists-with-piano",
    "title": "American Duettists With Piano",
-   "year": null,
+   "year": 2013,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -1716,6 +1851,10 @@
     {
      "artistId": "ray-price",
      "instrument": "drums"
+    },
+    {
+     "artistId": "niels-henning-rsted-pedersen",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -1787,11 +1926,49 @@
     {
      "artistId": "jack-dejohnette",
      "instrument": "drums"
+    },
+    {
+     "artistId": "eliot-zigmund",
+     "instrument": "drums"
     }
    ],
    "tracks": [
     {
      "tuneId": "nardis",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "another-workout",
+   "title": "Another Workout",
+   "year": 1985,
+   "recordingYear": 1961,
+   "label": "Blue Note",
+   "artistIds": [
+    "hank-mobley"
+   ],
+   "credits": [
+    {
+     "artistId": "hank-mobley",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "artistId": "wynton-kelly",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "paul-chambers",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "philly-joe-jones",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "i-should-care",
      "key": null
     }
    ]
@@ -1884,6 +2061,66 @@
    ]
   },
   {
+   "id": "art-of-the-trio-vol-4-back-at-the-vanguard",
+   "title": "Art of the Trio, Vol. 4 - Back at the Vanguard",
+   "year": 1999,
+   "recordingYear": null,
+   "label": "Warner Bros.",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "credits": [
+    {
+     "artistId": "brad-mehldau",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "larry-grenadier",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "jorge-rossy",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "all-the-things-you-are",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "art-of-the-trio-vol-5-progression",
+   "title": "Art of the Trio, Vol. 5 - Progression",
+   "year": 2001,
+   "recordingYear": null,
+   "label": "Warner Bros.",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "credits": [
+    {
+     "artistId": "brad-mehldau",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "larry-grenadier",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "jorge-rossy",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "alone-together",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "art-pepper-eleven-modern-jazz-classics",
    "title": "Art Pepper + Eleven Modern Jazz Classics",
    "year": 1960,
@@ -1945,6 +2182,10 @@
     },
     {
      "tuneId": "donna-lee",
+     "key": null
+    },
+    {
+     "tuneId": "round-midnight",
      "key": null
     }
    ]
@@ -2048,6 +2289,10 @@
     {
      "tuneId": "alone-together",
      "key": "Dm"
+    },
+    {
+     "tuneId": "prince-albert",
+     "key": null
     }
    ]
   },
@@ -2086,9 +2331,9 @@
   {
    "id": "at-the-garden-party",
    "title": "At the Garden Party",
-   "year": null,
-   "recordingYear": null,
-   "label": null,
+   "year": 1979,
+   "recordingYear": 1978,
+   "label": "Sackville",
    "artistIds": [
     "ed-bickert"
    ],
@@ -2105,7 +2350,7 @@
    "tracks": [
     {
      "tuneId": "alone-together",
-     "key": "Gm"
+     "key": null
     }
    ]
   },
@@ -2324,6 +2569,22 @@
     {
      "artistId": "buddy-rich",
      "instrument": "drums"
+    },
+    {
+     "artistId": "horace-silver",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "milt-jackson",
+     "instrument": "vibraphone"
+    },
+    {
+     "artistId": "sonny-rollins",
+     "instrument": "tenor sax"
+    },
+    {
+     "artistId": "thelonious-monk",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -2425,8 +2686,8 @@
    ]
   },
   {
-   "id": "benny-goodman-sextet",
-   "title": "Benny Goodman Sextet",
+   "id": "benny-goodman-sextet-album",
+   "title": "Benny Goodman Sextet (album)",
    "year": null,
    "recordingYear": null,
    "label": "Columbia",
@@ -2449,9 +2710,9 @@
   {
    "id": "best-master-qualities",
    "title": "Best Master Qualities",
-   "year": null,
+   "year": 2009,
    "recordingYear": null,
-   "label": null,
+   "label": "M&I (Japan)",
    "artistIds": [
     "eric-reed-trio"
    ],
@@ -2471,9 +2732,9 @@
   {
    "id": "best-of-big-bands-benny-goodman",
    "title": "Best of Big Bands (Benny Goodman)",
-   "year": null,
+   "year": 1990,
    "recordingYear": null,
-   "label": "Columbia",
+   "label": "Columbia/CBS",
    "artistIds": [
     "benny-goodman"
    ],
@@ -2481,14 +2742,25 @@
     {
      "artistId": "benny-goodman",
      "instrument": "clarinet, leader"
+    },
+    {
+     "artistId": "gene-krupa",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "harry-james",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "lionel-hampton",
+     "instrument": "vibraphone"
+    },
+    {
+     "artistId": "nat-king-cole",
+     "instrument": "piano / vocals"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "how-high-the-moon",
-     "key": "C"
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "best-of-duke-ellington",
@@ -2597,6 +2869,10 @@
     {
      "artistId": "eddie-sauter",
      "instrument": "arranger"
+    },
+    {
+     "artistId": "quincy-jones",
+     "instrument": "arranger"
     }
    ],
    "tracks": [
@@ -2631,6 +2907,10 @@
     },
     {
      "artistId": "jack-dejohnette",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "bob-schwarz",
      "instrument": "drums"
     }
    ],
@@ -2670,7 +2950,7 @@
   {
    "id": "binary-code",
    "title": "Binary Code",
-   "year": null,
+   "year": 2019,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -2693,16 +2973,16 @@
     },
     {
      "tuneId": "blue-bossa",
-     "key": "Cm"
+     "key": "C"
     }
    ]
   },
   {
    "id": "bird-after-dark",
    "title": "Bird After Dark",
-   "year": null,
+   "year": 2002,
    "recordingYear": null,
-   "label": "Savoy",
+   "label": "Savoy Jazz",
    "artistIds": [
     "charlie-parker"
    ],
@@ -2755,7 +3035,7 @@
    "tracks": [
     {
      "tuneId": "all-the-things-you-are",
-     "key": "Ab"
+     "key": null
     }
    ]
   },
@@ -2856,6 +3136,10 @@
     {
      "artistId": "frankie-dunlop",
      "instrument": "drums"
+    },
+    {
+     "artistId": "charlie-parker",
+     "instrument": "alto sax"
     }
    ],
    "tracks": [
@@ -2924,6 +3208,14 @@
     {
      "artistId": "wynton-kelly",
      "instrument": "piano"
+    },
+    {
+     "artistId": "ernie-henry",
+     "instrument": "alto sax"
+    },
+    {
+     "artistId": "melba-liston",
+     "instrument": "trombone, arranger"
     }
    ],
    "tracks": [
@@ -3152,6 +3444,10 @@
     {
      "artistId": "charlie-watts",
      "instrument": "drums (some issues)"
+    },
+    {
+     "artistId": "danny-richmond",
+     "instrument": "drums"
     }
    ],
    "tracks": [
@@ -3223,7 +3519,7 @@
   },
   {
    "id": "blue-train-the-complete-masters",
-   "title": "Blue Train The Complete Masters",
+   "title": "Blue Train The Complete Masters",
    "year": 2022,
    "recordingYear": null,
    "label": "Blue Note",
@@ -3286,11 +3582,45 @@
    ]
   },
   {
+   "id": "blues-on-bach",
+   "title": "Blues on Bach",
+   "year": 1974,
+   "recordingYear": 1973,
+   "label": "Atlantic",
+   "artistIds": [
+    "modern-jazz-quartet"
+   ],
+   "credits": [
+    {
+     "artistId": "john-lewis",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "milt-jackson",
+     "instrument": "vibes"
+    },
+    {
+     "artistId": "percy-heath",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "connie-kay",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-147-jesu-joy-of-mans-desiring",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "blues-on-parade",
    "title": "Blues On Parade",
-   "year": null,
+   "year": 1991,
    "recordingYear": null,
-   "label": "Decca",
+   "label": "GRP/Decca Jazz",
    "artistIds": [
     "woody-herman-his-orchestra"
    ],
@@ -3362,12 +3692,12 @@
   {
    "id": "body-and-soul-john-stowell",
    "title": "Body and Soul (John Stowell)",
-   "year": null,
+   "year": 2026,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
     "john-stowell",
-    "norbert-durr"
+    "norbert-domling"
    ],
    "credits": [
     {
@@ -3375,21 +3705,16 @@
      "instrument": "guitar"
     },
     {
-     "artistId": "norbert-durr",
+     "artistId": "norbert-domling",
      "instrument": "unknown instrument"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "isfahan",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "body-soul-erroll-garner",
    "title": "Body & Soul (Erroll Garner)",
-   "year": null,
+   "year": 1991,
    "recordingYear": null,
    "label": "Columbia",
    "artistIds": [
@@ -3595,6 +3920,14 @@
     {
      "artistId": "frank-gant",
      "instrument": "drums"
+    },
+    {
+     "artistId": "elvin-jones",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "joe-benjamin",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -3604,6 +3937,10 @@
     },
     {
      "tuneId": "ornithology",
+     "key": null
+    },
+    {
+     "tuneId": "passport",
      "key": null
     }
    ]
@@ -3819,6 +4156,10 @@
     {
      "artistId": "milton-nascimento",
      "instrument": "guest vocals, track 10"
+    },
+    {
+     "artistId": "esperanca-spalding",
+     "instrument": "vocals / bass"
     }
    ],
    "tracks": [
@@ -3902,8 +4243,8 @@
    ]
   },
   {
-   "id": "chega-de-saudade",
-   "title": "Chega de Saudade",
+   "id": "chega-de-saudade-album",
+   "title": "Chega de Saudade (album)",
    "year": 1959,
    "recordingYear": null,
    "label": "Odeon",
@@ -4179,6 +4520,45 @@
    ]
   },
   {
+   "id": "collaboration",
+   "title": "Collaboration",
+   "year": 1964,
+   "recordingYear": null,
+   "label": "Atlantic",
+   "artistIds": [
+    "modern-jazz-quartet",
+    "laurindo-almeida"
+   ],
+   "credits": [
+    {
+     "artistId": "john-lewis",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "milt-jackson",
+     "instrument": "vibes"
+    },
+    {
+     "artistId": "percy-heath",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "connie-kay",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "laurindo-almeida",
+     "instrument": "guitar"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "concierto-de-aranjuez-ii-adagio",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "collectors-item",
    "title": "Collector’s Item",
    "year": 1956,
@@ -4291,9 +4671,9 @@
   {
    "id": "compassion-the-music-of-john-coltrane",
    "title": "Compassion The Music of John Coltrane",
-   "year": null,
-   "recordingYear": null,
-   "label": "Resonance Records",
+   "year": 2017,
+   "recordingYear": 2007,
+   "label": "Resonance",
    "artistIds": [
     "dave-liebman",
     "joe-lovano"
@@ -4350,11 +4730,53 @@
    ]
   },
   {
-   "id": "cone-s-soup",
-   "title": "Cone S Soup",
-   "year": null,
+   "id": "concierto",
+   "title": "Concierto",
+   "year": 1975,
    "recordingYear": null,
-   "label": null,
+   "label": "CTI",
+   "artistIds": [
+    "jim-hall"
+   ],
+   "credits": [
+    {
+     "artistId": "jim-hall",
+     "instrument": "guitar"
+    },
+    {
+     "artistId": "paul-desmond",
+     "instrument": "alto sax"
+    },
+    {
+     "artistId": "chet-baker",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "roland-hanna",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "ron-carter",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "steve-gadd",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "concierto-de-aranjuez-ii-adagio",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "cones-coup",
+   "title": "Cone's Coup",
+   "year": 2006,
+   "recordingYear": null,
+   "label": "Criss Cross Jazz",
    "artistIds": [
     "wycliffe-gordon",
     "stacy-dillard"
@@ -4435,9 +4857,9 @@
   {
    "id": "contrasts-the-swing-band-era-of-jimmy-dorsey",
    "title": "Contrasts - The Swing Band Era of Jimmy Dorsey",
-   "year": null,
+   "year": 1993,
    "recordingYear": null,
-   "label": "Decca",
+   "label": "GRP/Decca Jazz",
    "artistIds": [
     "jimmy-dorsey"
    ],
@@ -4448,6 +4870,10 @@
     }
    ],
    "tracks": [
+    {
+     "tuneId": "i-got-rhythm",
+     "key": null
+    },
     {
      "tuneId": "i-got-rhythm",
      "key": null
@@ -4475,6 +4901,10 @@
     {
      "artistId": "hank-jones",
      "instrument": "piano (guest on “Alone Together”)"
+    },
+    {
+     "artistId": "ron-carter",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -4729,6 +5159,10 @@
     {
      "artistId": "roy-haynes",
      "instrument": "drums"
+    },
+    {
+     "artistId": "thelonious-monk",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -4851,12 +5285,46 @@
     {
      "artistId": "andy-watson",
      "instrument": "drums"
+    },
+    {
+     "artistId": "thad-jones",
+     "instrument": "trumpet / flugelhorn"
     }
    ],
    "tracks": [
     {
      "tuneId": "all-the-things-you-are",
      "key": "Ab"
+    }
+   ]
+  },
+  {
+   "id": "desmond-blue",
+   "title": "Desmond Blue",
+   "year": 1961,
+   "recordingYear": null,
+   "label": "RCA Victor",
+   "artistIds": [
+    "paul-desmond"
+   ],
+   "credits": [
+    {
+     "artistId": "paul-desmond",
+     "instrument": "alto saxophone"
+    },
+    {
+     "artistId": "jim-hall",
+     "instrument": "guitar"
+    },
+    {
+     "artistId": "bob-prince",
+     "instrument": null
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "i-should-care",
+     "key": null
     }
    ]
   },
@@ -5010,8 +5478,8 @@
   {
    "id": "dinah",
    "title": "Dinah!",
-   "year": null,
-   "recordingYear": null,
+   "year": 1956,
+   "recordingYear": 1955,
    "label": "EmArcy",
    "artistIds": [
     "dinah-washington"
@@ -5060,8 +5528,8 @@
    ]
   },
   {
-   "id": "django-reinhardt",
-   "title": "Django Reinhardt",
+   "id": "django-reinhardt-album",
+   "title": "Django Reinhardt (album)",
    "year": null,
    "recordingYear": null,
    "label": "Various",
@@ -5084,7 +5552,7 @@
   {
    "id": "django-reinhardt-legendary-recordings",
    "title": "Django Reinhardt Legendary Recordings",
-   "year": null,
+   "year": 2014,
    "recordingYear": null,
    "label": "Profil",
    "artistIds": [
@@ -5209,9 +5677,9 @@
   {
    "id": "dont-be-that-way",
    "title": "Don't Be That Way",
-   "year": null,
+   "year": 2013,
    "recordingYear": null,
-   "label": null,
+   "label": "Mack Avenue",
    "artistIds": [
     "dave-bennett"
    ],
@@ -5284,11 +5752,42 @@
     {
      "artistId": "sylvain-luc",
      "instrument": "guitar"
+    },
+    {
+     "artistId": "bireli-lagrene",
+     "instrument": "guitar"
     }
    ],
    "tracks": [
     {
      "tuneId": "stompin-at-the-savoy",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "duet-chick-corea-hiromi",
+   "title": "Duet (Chick Corea & Hiromi)",
+   "year": 2009,
+   "recordingYear": 2007,
+   "label": "Concord",
+   "artistIds": [
+    "chick-corea",
+    "hiromi"
+   ],
+   "credits": [
+    {
+     "artistId": "chick-corea",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "hiromi",
+     "instrument": "piano"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "spain",
      "key": null
     }
    ]
@@ -5343,6 +5842,10 @@
    "tracks": [
     {
      "tuneId": "on-green-dolphin-street",
+     "key": null
+    },
+    {
+     "tuneId": "the-days-of-wine-and-roses",
      "key": null
     }
    ]
@@ -5534,6 +6037,10 @@
     {
      "tuneId": "honeysuckle-rose",
      "key": null
+    },
+    {
+     "tuneId": "tea-for-two",
+     "key": null
     }
    ]
   },
@@ -5661,6 +6168,10 @@
     {
      "artistId": "frank-flynn",
      "instrument": "drums"
+    },
+    {
+     "artistId": "plas-johnson",
+     "instrument": "tenor sax"
     }
    ],
    "tracks": [
@@ -5725,7 +6236,7 @@
   {
    "id": "ella-swings-gently-with-nelson",
    "title": "Ella Swings Gently With Nelson",
-   "year": null,
+   "year": 1962,
    "recordingYear": null,
    "label": "Verve",
    "artistIds": [
@@ -6131,6 +6642,23 @@
    ]
   },
   {
+   "id": "feelin-and-dealin",
+   "title": "Feelin' and Dealin'",
+   "year": 1991,
+   "recordingYear": null,
+   "label": "Criss Cross Jazz",
+   "artistIds": [
+    "ralph-lalama"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "fingerpickin",
    "title": "Fingerpickin'",
    "year": 1958,
@@ -6179,6 +6707,10 @@
     {
      "artistId": "benny-barth",
      "instrument": "drums (tracks 8–10)"
+    },
+    {
+     "artistId": "harold-land",
+     "instrument": "tenor sax"
     }
    ],
    "tracks": [
@@ -6195,9 +6727,9 @@
   {
    "id": "first-class-grits-and-gravy-first-class",
    "title": "First Class! (Grits And Gravy - First Class)",
-   "year": null,
+   "year": 2004,
    "recordingYear": null,
-   "label": null,
+   "label": "Prestige",
    "artistIds": [
     "eric-kloss"
    ],
@@ -6207,12 +6739,7 @@
      "instrument": "alto saxophone"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "chitlins-con-carne",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "first-session",
@@ -6352,8 +6879,8 @@
    ]
   },
   {
-   "id": "footprints",
-   "title": "Footprints",
+   "id": "footprints-album",
+   "title": "Footprints (album)",
    "year": 1972,
    "recordingYear": null,
    "label": "Cobblestone / Muse",
@@ -6366,15 +6893,15 @@
      "instrument": "guitar"
     },
     {
-     "artistId": "gil-goldstein",
-     "instrument": "piano, synthesizer"
+     "artistId": "bobby-rose",
+     "instrument": "guitar"
     },
     {
-     "artistId": "steve-laspina",
+     "artistId": "richard-davis",
      "instrument": "bass"
     },
     {
-     "artistId": "joey-baron",
+     "artistId": "billy-higgins",
      "instrument": "drums"
     }
    ],
@@ -6386,6 +6913,40 @@
     {
      "tuneId": "footprints",
      "key": null
+    }
+   ]
+  },
+  {
+   "id": "footprints-the-visit",
+   "title": "Footprints (The Visit)",
+   "year": null,
+   "recordingYear": null,
+   "label": null,
+   "artistIds": [
+    "pat-martino"
+   ],
+   "credits": [
+    {
+     "artistId": "pat-martino",
+     "instrument": "guitar"
+    },
+    {
+     "artistId": "bobby-rose",
+     "instrument": "guitar"
+    },
+    {
+     "artistId": "richard-davis",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "billy-higgins",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "alone-together",
+     "key": "Am"
     }
    ]
   },
@@ -6573,7 +7134,7 @@
      "instrument": "trombone"
     },
     {
-     "artistId": "marshal-royal",
+     "artistId": "marshall-royal",
      "instrument": "alto saxophone"
     },
     {
@@ -6618,6 +7179,10 @@
     {
      "artistId": "paul-motian",
      "instrument": "drums"
+    },
+    {
+     "artistId": "eddie-gomez",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -6648,6 +7213,10 @@
     {
      "artistId": "jose-mangual",
      "instrument": "bongos, percussion"
+    },
+    {
+     "artistId": "ernest-mccarty",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -6971,12 +7540,50 @@
     {
      "artistId": "brian-blade",
      "instrument": "drums"
+    },
+    {
+     "artistId": "terri-lyne-carrington",
+     "instrument": "drums"
     }
    ],
    "tracks": [
     {
      "tuneId": "how-high-the-moon",
      "key": "C"
+    }
+   ]
+  },
+  {
+   "id": "good-night-good-luck",
+   "title": "Good Night, Good Luck",
+   "year": null,
+   "recordingYear": null,
+   "label": null,
+   "artistIds": [
+    "dianne-reeves"
+   ],
+   "credits": [
+    {
+     "artistId": "dianne-reeves",
+     "instrument": "vocals"
+    },
+    {
+     "artistId": "peter-martin",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "reginald-veal",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "terence-blanchard",
+     "instrument": "trumpet"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "straighten-up-and-fly-right",
+     "key": null
     }
    ]
   },
@@ -7107,7 +7714,7 @@
   {
    "id": "groove-brothers",
    "title": "Groove Brothers",
-   "year": null,
+   "year": 1979,
    "recordingYear": null,
    "label": "Milestone",
    "artistIds": [
@@ -7141,9 +7748,9 @@
   {
    "id": "guitar-genius",
    "title": "Guitar Genius",
-   "year": null,
+   "year": 2006,
    "recordingYear": null,
-   "label": "Various",
+   "label": "Giant Steps",
    "artistIds": [
     "tal-farlow"
    ],
@@ -7218,6 +7825,10 @@
     },
     {
      "artistId": "chuck-thompson",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "kenny-clarke",
      "instrument": "drums"
     }
    ],
@@ -7355,9 +7966,9 @@
   {
    "id": "hit-that-jive-jack",
    "title": "Hit That Jive, Jack",
-   "year": null,
+   "year": 1996,
    "recordingYear": null,
-   "label": "Decca",
+   "label": "Decca Jazz/GRP",
    "artistIds": [
     "nat-king-cole-trio"
    ],
@@ -7479,7 +8090,7 @@
   {
    "id": "i-love-jazz",
    "title": "I Love Jazz",
-   "year": null,
+   "year": 1962,
    "recordingYear": null,
    "label": "Decca",
    "artistIds": [
@@ -7535,7 +8146,7 @@
   {
    "id": "i-want-to-rocknroll",
    "title": "I Want to Rock'n'Roll",
-   "year": null,
+   "year": 2005,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -7557,7 +8168,7 @@
   {
    "id": "i-wish",
    "title": "I Wish",
-   "year": null,
+   "year": 2024,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -7789,9 +8400,9 @@
   {
    "id": "in-new-york",
    "title": "In New York",
-   "year": null,
+   "year": 2023,
    "recordingYear": null,
-   "label": null,
+   "label": "Stunt Records",
    "artistIds": [
     "michael-brecker",
     "mike-stern",
@@ -7942,6 +8553,10 @@
     {
      "artistId": "alvin-stoller",
      "instrument": "drums"
+    },
+    {
+     "artistId": "ernie-wilkins",
+     "instrument": "arranger"
     }
    ],
    "tracks": [
@@ -8246,8 +8861,8 @@
    ]
   },
   {
-   "id": "jaco-pastorius",
-   "title": "Jaco Pastorius",
+   "id": "jaco-pastorius-album",
+   "title": "Jaco Pastorius (album)",
    "year": 1976,
    "recordingYear": null,
    "label": "Epic",
@@ -8423,9 +9038,9 @@
   {
    "id": "jazz-moods-chet-baker",
    "title": "Jazz Moods (Chet Baker)",
-   "year": null,
+   "year": 2005,
    "recordingYear": null,
-   "label": "Sony/Columbia",
+   "label": "Sony Legacy",
    "artistIds": [
     "chet-baker"
    ],
@@ -8438,16 +9053,16 @@
    "tracks": [
     {
      "tuneId": "autumn-leaves",
-     "key": "Fm"
+     "key": null
     }
    ]
   },
   {
    "id": "jazz-moods-cool",
    "title": "Jazz Moods - Cool",
-   "year": null,
+   "year": 2004,
    "recordingYear": null,
-   "label": "Verve",
+   "label": "Columbia/Legacy",
    "artistIds": [
     "stan-getz"
    ],
@@ -8508,11 +9123,41 @@
    ]
   },
   {
+   "id": "jazz-sebastian-bach",
+   "title": "Jazz Sebastian Bach",
+   "year": 1963,
+   "recordingYear": null,
+   "label": "Philips",
+   "artistIds": [
+    "the-swingle-singers"
+   ],
+   "credits": [
+    {
+     "artistId": "the-swingle-singers",
+     "instrument": "voices"
+    },
+    {
+     "artistId": "guy-pedersen",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "daniel-humair",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-1068-air",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "jazz-standards-essential-best",
    "title": "Jazz Standards, Essential Best",
-   "year": null,
+   "year": 2011,
    "recordingYear": null,
-   "label": "Venus",
+   "label": "Venus Records (Japan)",
    "artistIds": [
     "eddie-higgins-trio"
    ],
@@ -8525,7 +9170,7 @@
    "tracks": [
     {
      "tuneId": "blue-bossa",
-     "key": "Cm"
+     "key": null
     }
    ]
   },
@@ -8588,9 +9233,9 @@
   {
    "id": "jim-hall-the-complete-jazz-heritage-society-recordings",
    "title": "Jim Hall The Complete Jazz Heritage Society Recordings",
-   "year": null,
+   "year": 2023,
    "recordingYear": null,
-   "label": "Jazz Heritage Society",
+   "label": "Jazz Heritage Society/MHS",
    "artistIds": [
     "jim-hall",
     "gary-burton",
@@ -8807,9 +9452,9 @@
   {
    "id": "keep-movin-on",
    "title": "Keep Movin' On",
-   "year": null,
+   "year": 2001,
    "recordingYear": null,
-   "label": "RCA Victor",
+   "label": "ABKCO",
    "artistIds": [
     "sam-cooke"
    ],
@@ -8921,7 +9566,7 @@
      "instrument": "trumpet"
     },
     {
-     "artistId": "j-j-johnson",
+     "artistId": "jj-johnson",
      "instrument": "trombone"
     },
     {
@@ -8947,6 +9592,10 @@
     {
      "artistId": "carlos-valdes",
      "instrument": "congas, bongos"
+    },
+    {
+     "artistId": "art-taylor",
+     "instrument": "drums"
     }
    ],
    "tracks": [
@@ -9049,7 +9698,7 @@
   {
    "id": "lady-day-the-complete-billie-holiday-on-columbia-19331944",
    "title": "Lady Day The Complete Billie Holiday on Columbia 1933–1944",
-   "year": null,
+   "year": 2001,
    "recordingYear": null,
    "label": "Columbia/Legacy",
    "artistIds": [
@@ -9079,21 +9728,43 @@
   {
    "id": "lafaro",
    "title": "LaFaro",
-   "year": null,
+   "year": 2024,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
-    "julian-bromberg"
+    "brian-bromberg"
    ],
    "credits": [
     {
-     "artistId": "julian-bromberg",
-     "instrument": "saxophone"
+     "artistId": "brian-bromberg",
+     "instrument": "bass"
     }
    ],
    "tracks": [
     {
      "tuneId": "glorias-step",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "last-train-from-overbrook",
+   "title": "Last Train from Overbrook",
+   "year": 1958,
+   "recordingYear": null,
+   "label": "Argo",
+   "artistIds": [
+    "james-moody"
+   ],
+   "credits": [
+    {
+     "artistId": "james-moody",
+     "instrument": "tenor saxophone, flute"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "all-the-things-you-are",
      "key": null
     }
    ]
@@ -9273,11 +9944,11 @@
    "recordingYear": null,
    "label": "Verve",
    "artistIds": [
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "credits": [
     {
-     "artistId": "j-j-johnson",
+     "artistId": "jj-johnson",
      "instrument": "trombone"
     },
     {
@@ -9291,6 +9962,14 @@
     {
      "artistId": "tommy-flanagan",
      "instrument": "piano (some tracks)"
+    },
+    {
+     "artistId": "shirley-horn",
+     "instrument": "piano / vocals"
+    },
+    {
+     "artistId": "toots-thielemans",
+     "instrument": "harmonica"
     }
    ],
    "tracks": [
@@ -9301,11 +9980,49 @@
    ]
   },
   {
+   "id": "light-as-a-feather",
+   "title": "Light as a Feather",
+   "year": 1973,
+   "recordingYear": null,
+   "label": "Polydor",
+   "artistIds": [
+    "chick-corea"
+   ],
+   "credits": [
+    {
+     "artistId": "chick-corea",
+     "instrument": "electric piano"
+    },
+    {
+     "artistId": "stanley-clarke",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "joe-farrell",
+     "instrument": "flute, sax"
+    },
+    {
+     "artistId": "airto-moreira",
+     "instrument": "drums, percussion"
+    },
+    {
+     "artistId": "flora-purim",
+     "instrument": "vocals, percussion"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "spain",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "lines-of-oppression",
    "title": "Lines of Oppression",
    "year": 2011,
    "recordingYear": null,
-   "label": null,
+   "label": "AH-HA / Naïve",
    "artistIds": [
     "ari-hoenig"
    ],
@@ -9327,12 +10044,7 @@
      "instrument": "bass"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "rhythm-a-ning",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "linger-awhile",
@@ -9572,9 +10284,9 @@
   {
    "id": "lorne-lofsky-album",
    "title": "Lorne Lofsky (album)",
-   "year": null,
+   "year": 1980,
    "recordingYear": null,
-   "label": null,
+   "label": "Innovation",
    "artistIds": [
     "lorne-lofsky"
    ],
@@ -9658,6 +10370,10 @@
     {
      "artistId": "al-harewood",
      "instrument": "drums"
+    },
+    {
+     "artistId": "mickey-turner",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -9713,9 +10429,9 @@
   {
    "id": "love-songs",
    "title": "Love Songs",
-   "year": null,
+   "year": 2000,
    "recordingYear": null,
-   "label": "Columbia",
+   "label": "Columbia/Legacy (Sony)",
    "artistIds": [
     "louis-armstrong"
    ],
@@ -9771,6 +10487,14 @@
     {
      "artistId": "benny-goodman",
      "instrument": "clarinet"
+    },
+    {
+     "artistId": "ray-brown",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "sy-oliver",
+     "instrument": "arranger / bandleader"
     }
    ],
    "tracks": [
@@ -9988,9 +10712,9 @@
   {
    "id": "meet-triste-janero",
    "title": "Meet Triste Janero",
-   "year": null,
+   "year": 1969,
    "recordingYear": null,
-   "label": "Unknown",
+   "label": "White Whale",
    "artistIds": [
     "triste-janero"
    ],
@@ -10084,8 +10808,8 @@
    ]
   },
   {
-   "id": "michel-camilo",
-   "title": "Michel Camilo",
+   "id": "michel-camilo-album",
+   "title": "Michel Camilo (album)",
    "year": 1988,
    "recordingYear": null,
    "label": "Portrait/Columbia",
@@ -10184,9 +10908,9 @@
   {
    "id": "milestones-of-jazz-legends-more-than-you-know",
    "title": "Milestones of Jazz Legends More than You Know",
-   "year": null,
+   "year": 2019,
    "recordingYear": null,
-   "label": "Milestones of Jazz Legends",
+   "label": "Documents (Membran/The Intense Media)",
    "artistIds": [
     "paul-desmond",
     "romeo-penque"
@@ -10205,12 +10929,7 @@
      "instrument": "French horn"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "i-should-care",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "milt-jackson-and-the-thelonious-monk-quartet",
@@ -10280,6 +10999,14 @@
     {
      "artistId": "kenny-pancho-hagood",
      "instrument": "vocals on “All the Things You Are”"
+    },
+    {
+     "artistId": "curley-russell",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "tommy-potter",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -10292,9 +11019,9 @@
   {
    "id": "minor-blues-kenny-barron-trio",
    "title": "Minor Blues (Kenny Barron Trio)",
-   "year": null,
+   "year": 2009,
    "recordingYear": null,
-   "label": null,
+   "label": "Venus Records (Japan)",
    "artistIds": [
     "kenny-barron-trio"
    ],
@@ -10310,6 +11037,10 @@
     {
      "artistId": "ben-riley",
      "instrument": "drums"
+    },
+    {
+     "artistId": "ray-drummond",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -10389,6 +11120,41 @@
    ]
   },
   {
+   "id": "misterioso",
+   "title": "Misterioso",
+   "year": 1958,
+   "recordingYear": 1958,
+   "label": "Riverside",
+   "artistIds": [
+    "thelonious-monk-quartet",
+    "johnny-griffin"
+   ],
+   "credits": [
+    {
+     "artistId": "thelonious-monk",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "johnny-griffin",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "artistId": "ahmed-abdul-malik",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "roy-haynes",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "round-midnight",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "mobius",
    "title": "Mobius",
    "year": 1975,
@@ -10413,9 +11179,9 @@
   {
    "id": "modern-art",
    "title": "Modern Art",
-   "year": null,
+   "year": 1957,
    "recordingYear": null,
-   "label": "Blue Note",
+   "label": "Intro",
    "artistIds": [
     "art-pepper"
    ],
@@ -10663,9 +11429,9 @@
   {
    "id": "mr-blues-pour-flirter",
    "title": "Mr Blues Pour Flirter",
-   "year": null,
+   "year": 1963,
    "recordingYear": null,
-   "label": null,
+   "label": "Brunswick (France)",
    "artistIds": [
     "sonny-criss"
    ],
@@ -10767,9 +11533,9 @@
   {
    "id": "my-shining-hour",
    "title": "My Shining Hour",
-   "year": null,
+   "year": 1995,
    "recordingYear": null,
-   "label": null,
+   "label": "Storyville",
    "artistIds": [
     "roy-haynes"
    ],
@@ -10807,6 +11573,10 @@
     {
      "artistId": "wesley-prince",
      "instrument": "bass"
+    },
+    {
+     "artistId": "nah-king-cole-piano",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -10962,6 +11732,23 @@
     {
      "tuneId": "alone-together",
      "key": "Cm"
+    }
+   ]
+  },
+  {
+   "id": "new-york-notes",
+   "title": "New York Notes",
+   "year": 2019,
+   "recordingYear": null,
+   "label": "Savant",
+   "artistIds": [
+    "alan-broadbent"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
+     "key": null
     }
    ]
   },
@@ -11241,18 +12028,58 @@
     {
      "artistId": "dizzy-gillespie",
      "instrument": "trumpet"
+    },
+    {
+     "artistId": "charlie-parker",
+     "instrument": "alto sax"
+    },
+    {
+     "artistId": "dexter-gordon",
+     "instrument": "tenor sax"
+    },
+    {
+     "artistId": "sarah-vaughan",
+     "instrument": "vocals"
+    },
+    {
+     "artistId": "milt-jackson",
+     "instrument": "vibraphone"
+    },
+    {
+     "artistId": "sonny-stitt",
+     "instrument": "alto/tenor sax"
+    },
+    {
+     "artistId": "james-moody",
+     "instrument": "tenor sax"
+    },
+    {
+     "artistId": "hank-jones",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "jj-johnson",
+     "instrument": "trombone"
+    },
+    {
+     "artistId": "art-blakey",
+     "instrument": "drums"
     }
    ],
    "tracks": [
     {
      "tuneId": "lullaby-of-the-leaves",
      "key": null
+    },
+    {
+     "tuneId": "all-the-things-you-are",
+     "key": "Ab"
     }
    ]
   },
   {
-   "id": "oleo",
-   "title": "Oleo",
+   "id": "oleo-album",
+   "title": "Oleo (album)",
    "year": 1959,
    "recordingYear": null,
    "label": "Old Style",
@@ -11281,8 +12108,8 @@
    ]
   },
   {
-   "id": "on-green-dolphin-street",
-   "title": "On Green Dolphin Street",
+   "id": "on-green-dolphin-street-album",
+   "title": "On Green Dolphin Street (album)",
    "year": 1958,
    "recordingYear": null,
    "label": "Riverside",
@@ -11395,9 +12222,9 @@
   {
    "id": "one-for-bird",
    "title": "One For Bird",
-   "year": null,
+   "year": 1988,
    "recordingYear": null,
-   "label": null,
+   "label": "SteepleChase",
    "artistIds": [
     "red-rodney"
    ],
@@ -11415,8 +12242,8 @@
    ]
   },
   {
-   "id": "ornithology",
-   "title": "Ornithology",
+   "id": "ornithology-album",
+   "title": "Ornithology (album)",
    "year": 1964,
    "recordingYear": 1963,
    "label": "Atlantic",
@@ -11443,6 +12270,10 @@
     {
      "artistId": "connie-kay",
      "instrument": "drums"
+    },
+    {
+     "artistId": "james-spaulding",
+     "instrument": "alto saxophone"
     }
    ],
    "tracks": [
@@ -11659,12 +12490,16 @@
     {
      "tuneId": "dexterity",
      "key": null
+    },
+    {
+     "tuneId": "steeple-chase",
+     "key": null
     }
    ]
   },
   {
-   "id": "paul-bley",
-   "title": "Paul Bley",
+   "id": "paul-bley-album",
+   "title": "Paul Bley (album)",
    "year": 1955,
    "recordingYear": null,
    "label": "EmArcy",
@@ -11715,9 +12550,9 @@
    ]
   },
   {
-   "id": "phil-harper",
-   "title": "Phil Harper",
-   "year": null,
+   "id": "phil-harper-album",
+   "title": "Phil Harper (album)",
+   "year": 2017,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -11764,6 +12599,105 @@
    ]
   },
   {
+   "id": "place-vendome",
+   "title": "Place Vendôme",
+   "year": 1966,
+   "recordingYear": null,
+   "label": "Philips",
+   "artistIds": [
+    "the-swingle-singers",
+    "modern-jazz-quartet"
+   ],
+   "credits": [
+    {
+     "artistId": "the-swingle-singers",
+     "instrument": "voices"
+    },
+    {
+     "artistId": "john-lewis",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "milt-jackson",
+     "instrument": "vibes"
+    },
+    {
+     "artistId": "percy-heath",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "connie-kay",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-1068-air",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "play-bach-no-1",
+   "title": "Play Bach No. 1",
+   "year": 1959,
+   "recordingYear": null,
+   "label": "Decca",
+   "artistIds": [
+    "jacques-loussier-trio"
+   ],
+   "credits": [
+    {
+     "artistId": "jacques-loussier",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "pierre-michelot",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "christian-garros",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-565-toccata",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "play-bach-no-2",
+   "title": "Play Bach No. 2",
+   "year": 1960,
+   "recordingYear": null,
+   "label": "Decca",
+   "artistIds": [
+    "jacques-loussier-trio"
+   ],
+   "credits": [
+    {
+     "artistId": "jacques-loussier",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "pierre-michelot",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "christian-garros",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-1068-air",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "playin-with-my-friends-bennett-sings-the-blues",
    "title": "Playin' With My Friends- Bennett Sings The Blues",
    "year": 2001,
@@ -11793,9 +12727,9 @@
   {
    "id": "plays-misty",
    "title": "Plays Misty",
-   "year": null,
+   "year": 1962,
    "recordingYear": null,
-   "label": "Mercury/EmArcy",
+   "label": "Mercury",
    "artistIds": [
     "erroll-garner"
    ],
@@ -11823,7 +12757,7 @@
   {
    "id": "plays-the-blues",
    "title": "Plays the Blues",
-   "year": null,
+   "year": 2025,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -12029,7 +12963,7 @@
   {
    "id": "powder",
    "title": "Powder",
-   "year": null,
+   "year": 2026,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -12038,10 +12972,10 @@
    "credits": [
     {
      "artistId": "nathaniel-young",
-     "instrument": "guitar"
+     "instrument": "sax"
     },
     {
-     "artistId": "corey-gnecco",
+     "artistId": "corey-gordon",
      "instrument": "unknown instrument"
     }
    ],
@@ -12101,11 +13035,11 @@
    "recordingYear": null,
    "label": "Impulse!",
    "artistIds": [
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "credits": [
     {
-     "artistId": "j-j-johnson",
+     "artistId": "jj-johnson",
      "instrument": "trombone"
     },
     {
@@ -12125,6 +13059,23 @@
     {
      "tuneId": "stella-by-starlight",
      "key": "Eb"
+    }
+   ]
+  },
+  {
+   "id": "public-eye",
+   "title": "Public Eye",
+   "year": 1991,
+   "recordingYear": null,
+   "label": "Novus/RCA",
+   "artistIds": [
+    "roy-hargrove"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
+     "key": null
     }
    ]
   },
@@ -12238,9 +13189,9 @@
   {
    "id": "quentin-tarantinos-django-unchained-original-motion-picture-soundtrack",
    "title": "Quentin Tarantino's Django Unchained (Original Motion Picture Soundtrack)",
-   "year": null,
+   "year": 2012,
    "recordingYear": null,
-   "label": "Republic Records",
+   "label": "Republic / Loma Vista",
    "artistIds": [
     "luis-bacalov",
     "rocky-roberts"
@@ -12303,7 +13254,7 @@
   {
    "id": "quintal-do-tempo",
    "title": "Quintal do Tempo",
-   "year": null,
+   "year": 2025,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -12463,6 +13414,10 @@
     {
      "artistId": "brian-blade",
      "instrument": "drums"
+    },
+    {
+     "artistId": "larry-grenadier",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -12553,7 +13508,7 @@
   {
    "id": "red-garlands-piano",
    "title": "Red Garland's Piano",
-   "year": null,
+   "year": 1957,
    "recordingYear": null,
    "label": "Prestige",
    "artistIds": [
@@ -12631,11 +13586,23 @@
     {
      "artistId": "chick-corea-akoustic-band",
      "instrument": "group"
+    },
+    {
+     "artistId": "gonzalo-rubalcaba",
+     "instrument": "piano (on \"Concierto de Aranjuez / Spain\")"
+    },
+    {
+     "artistId": "chick-corea",
+     "instrument": "piano"
     }
    ],
    "tracks": [
     {
      "tuneId": "bessies-blues",
+     "key": null
+    },
+    {
+     "tuneId": "spain",
      "key": null
     }
    ]
@@ -12643,7 +13610,7 @@
   {
    "id": "resonance",
    "title": "Resonance",
-   "year": null,
+   "year": 2005,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -12665,9 +13632,9 @@
   {
    "id": "rhythm-a-ning-gil-evans",
    "title": "Rhythm-A-Ning (Gil Evans)",
-   "year": 1987,
-   "recordingYear": null,
-   "label": null,
+   "year": 1988,
+   "recordingYear": 1987,
+   "label": "EmArcy",
    "artistIds": [
     "gil-evans",
     "laurent-cugny"
@@ -12692,9 +13659,9 @@
   {
    "id": "rhythm-a-ning-live",
    "title": "Rhythm-a-Ning (Live)",
-   "year": null,
-   "recordingYear": null,
-   "label": null,
+   "year": 2024,
+   "recordingYear": 1992,
+   "label": "Storyville",
    "artistIds": [
     "johnny-griffin",
     "herve-sellin",
@@ -12719,12 +13686,7 @@
      "instrument": "drums"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "rhythm-a-ning",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "rio-revisited",
@@ -13008,6 +13970,14 @@
     {
      "artistId": "ernie-wilkins",
      "instrument": "arrangements"
+    },
+    {
+     "artistId": "jj-johnson",
+     "instrument": "trombone"
+    },
+    {
+     "artistId": "marshall-royal",
+     "instrument": "alto sax / clarinet"
     }
    ],
    "tracks": [
@@ -13076,7 +14046,7 @@
   {
    "id": "scootchie-bop",
    "title": "Scootchie Bop",
-   "year": null,
+   "year": 2020,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -13140,8 +14110,8 @@
   {
    "id": "second-set",
    "title": "Second Set",
-   "year": null,
-   "recordingYear": null,
+   "year": 1979,
+   "recordingYear": 1977,
    "label": "SteepleChase",
    "artistIds": [
     "cedar-walton",
@@ -13316,9 +14286,9 @@
   {
    "id": "shuckin-n-jivin",
    "title": "Shuckin' N' Jivin'",
-   "year": null,
+   "year": 1972,
    "recordingYear": null,
-   "label": null,
+   "label": "Jaro",
    "artistIds": [
     "johnny-lewis-quartet"
    ],
@@ -13338,6 +14308,10 @@
     {
      "artistId": "kenneth-drake",
      "instrument": "drums"
+    },
+    {
+     "artistId": "joey-de-leon",
+     "instrument": "trombone"
     }
    ],
    "tracks": [
@@ -13368,6 +14342,14 @@
     {
      "artistId": "bill-stewart",
      "instrument": "drums"
+    },
+    {
+     "artistId": "clarence-penn",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "john-patitucci",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -13384,9 +14366,9 @@
   {
    "id": "sinatra-jobim-the-complete-reprise-recordings",
    "title": "Sinatra Jobim The Complete Reprise Recordings",
-   "year": null,
+   "year": 2010,
    "recordingYear": null,
-   "label": "Reprise",
+   "label": "Reprise/Concord",
    "artistIds": [
     "antonio-carlos-jobim",
     "frank-sinatra"
@@ -13504,6 +14486,44 @@
     {
      "tuneId": "autumn-leaves",
      "key": "Gm"
+    }
+   ]
+  },
+  {
+   "id": "sketches-of-spain",
+   "title": "Sketches of Spain",
+   "year": 1960,
+   "recordingYear": null,
+   "label": "Columbia",
+   "artistIds": [
+    "miles-davis"
+   ],
+   "credits": [
+    {
+     "artistId": "miles-davis",
+     "instrument": "trumpet, flugelhorn"
+    },
+    {
+     "artistId": "gil-evans",
+     "instrument": "arranger, conductor"
+    },
+    {
+     "artistId": "paul-chambers",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "jimmy-cobb",
+     "instrument": "drums"
+    },
+    {
+     "artistId": "elvin-jones",
+     "instrument": "percussion"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "concierto-de-aranjuez-ii-adagio",
+     "key": null
     }
    ]
   },
@@ -13683,6 +14703,44 @@
    ]
   },
   {
+   "id": "so-what-eddie-henderson",
+   "title": "So What (Eddie Henderson)",
+   "year": 2002,
+   "recordingYear": null,
+   "label": "Eighty-Eight's/Columbia",
+   "artistIds": [
+    "eddie-henderson"
+   ],
+   "credits": [
+    {
+     "artistId": "eddie-henderson",
+     "instrument": "trumpet, flugelhorn"
+    },
+    {
+     "artistId": "bob-berg",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "artistId": "david-kikoski",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "ed-howard",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "victor-lewis",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "round-midnight",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "solo-barry-harris",
    "title": "Solo (Barry Harris)",
    "year": 1984,
@@ -13694,13 +14752,17 @@
    "credits": [
     {
      "artistId": "barry-harris",
-     "instrument": "piano"
+     "instrument": "piano (solo)"
     }
    ],
    "tracks": [
     {
      "tuneId": "i-should-care",
      "key": null
+    },
+    {
+     "tuneId": "how-high-the-moon",
+     "key": "G"
     }
    ]
   },
@@ -13729,7 +14791,7 @@
   {
    "id": "solo-monk",
    "title": "Solo Monk",
-   "year": null,
+   "year": 1965,
    "recordingYear": null,
    "label": "Columbia",
    "artistIds": [
@@ -13741,16 +14803,28 @@
      "instrument": "piano"
     }
    ],
+   "tracks": []
+  },
+  {
+   "id": "some-of-my-best-friends-are-the-sax-players",
+   "title": "Some of My Best Friends Are... The Sax Players",
+   "year": 1996,
+   "recordingYear": null,
+   "label": "Telarc",
+   "artistIds": [
+    "ray-brown"
+   ],
+   "credits": [],
    "tracks": [
     {
-     "tuneId": "i-should-care",
+     "tuneId": "crazeology",
      "key": null
     }
    ]
   },
   {
-   "id": "someday-my-prince-will-come",
-   "title": "Someday My Prince Will Come",
+   "id": "someday-my-prince-will-come-album",
+   "title": "Someday My Prince Will Come (album)",
    "year": 1961,
    "recordingYear": null,
    "label": "Columbia",
@@ -14283,7 +15357,7 @@
   {
    "id": "st-louis-blues",
    "title": "St. Louis Blues",
-   "year": null,
+   "year": 2017,
    "recordingYear": null,
    "label": "Swing/Decca",
    "artistIds": [
@@ -14393,9 +15467,9 @@
   {
    "id": "standards-and-other-songs",
    "title": "Standards (And Other Songs)",
-   "year": null,
+   "year": 1992,
    "recordingYear": null,
-   "label": null,
+   "label": "Atlantic Jazz",
    "artistIds": [
     "mike-stern"
    ],
@@ -14426,6 +15500,10 @@
     "bireli-lagrene"
    ],
    "credits": [
+    {
+     "artistId": "bireli-lagrene",
+     "instrument": "guitar"
+    },
     {
      "artistId": "bireli-lagrene",
      "instrument": "guitar"
@@ -14523,7 +15601,7 @@
   {
    "id": "standards-vol-3",
    "title": "Standards, Vol. 3",
-   "year": null,
+   "year": 2024,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -14655,9 +15733,9 @@
   {
    "id": "straight-no-chaser-joe-henderson",
    "title": "Straight No Chaser (Joe Henderson)",
-   "year": null,
-   "recordingYear": null,
-   "label": null,
+   "year": 1996,
+   "recordingYear": 1968,
+   "label": "Verve",
    "artistIds": [
     "joe-henderson"
    ],
@@ -14719,6 +15797,32 @@
    "tracks": [
     {
      "tuneId": "sandu",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "sugan",
+   "title": "Sugan",
+   "year": 1957,
+   "recordingYear": 1957,
+   "label": "Status / Prestige",
+   "artistIds": [
+    "phil-woods"
+   ],
+   "credits": [
+    {
+     "artistId": "phil-woods",
+     "instrument": "alto saxophone"
+    },
+    {
+     "artistId": "red-garland",
+     "instrument": "piano"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "steeple-chase",
      "key": null
     }
    ]
@@ -14825,9 +15929,9 @@
   {
    "id": "sunshine-of-your-love",
    "title": "Sunshine of Your Love",
-   "year": null,
+   "year": 1969,
    "recordingYear": null,
-   "label": null,
+   "label": "MPS",
    "artistIds": [
     "ella-fitzgerald"
    ],
@@ -14897,7 +16001,7 @@
   {
    "id": "swedish-schnapps-the-great-quintet-sessions",
    "title": "Swedish Schnapps + The Great Quintet Sessions",
-   "year": null,
+   "year": 1991,
    "recordingYear": null,
    "label": "Verve",
    "artistIds": [
@@ -14972,7 +16076,7 @@
   {
    "id": "swingin-easy",
    "title": "Swingin' Easy",
-   "year": null,
+   "year": 1957,
    "recordingYear": null,
    "label": "EmArcy",
    "artistIds": [
@@ -15165,9 +16269,9 @@
   {
    "id": "tal-farlow-album",
    "title": "Tal Farlow (album)",
-   "year": null,
+   "year": 1954,
    "recordingYear": null,
-   "label": "Unknown",
+   "label": "Norgran",
    "artistIds": [
     "tal-farlow"
    ],
@@ -15209,9 +16313,9 @@
   {
    "id": "tell-mama-the-complete-muscle-shoals-sessions",
    "title": "Tell Mama The Complete Muscle Shoals Sessions",
-   "year": null,
+   "year": 2001,
    "recordingYear": null,
-   "label": "Cadet",
+   "label": "MCA/Chess",
    "artistIds": [
     "etta-james"
    ],
@@ -15267,8 +16371,8 @@
    ]
   },
   {
-   "id": "tenor-madness",
-   "title": "Tenor Madness",
+   "id": "tenor-madness-album",
+   "title": "Tenor Madness (album)",
    "year": 1956,
    "recordingYear": null,
    "label": "Prestige",
@@ -15341,7 +16445,7 @@
   {
    "id": "the-amazing-bud-powell",
    "title": "The Amazing Bud Powell",
-   "year": null,
+   "year": 1952,
    "recordingYear": null,
    "label": "Blue Note",
    "artistIds": [
@@ -15413,7 +16517,7 @@
   {
    "id": "the-art-tatum-solo-masterpieces",
    "title": "The Art Tatum Solo Masterpieces",
-   "year": null,
+   "year": 1991,
    "recordingYear": null,
    "label": "Pablo",
    "artistIds": [
@@ -15435,9 +16539,9 @@
   {
    "id": "the-artistry-of-tal-farlow",
    "title": "The Artistry Of Tal Farlow",
-   "year": null,
+   "year": 1954,
    "recordingYear": null,
-   "label": "Verve",
+   "label": "Norgran",
    "artistIds": [
     "tal-farlow"
    ],
@@ -15507,9 +16611,9 @@
   {
    "id": "the-banff-sessions",
    "title": "The Banff Sessions",
-   "year": null,
-   "recordingYear": null,
-   "label": "unknown",
+   "year": 2002,
+   "recordingYear": 1998,
+   "label": "Origin",
    "artistIds": [
     "john-stowell"
    ],
@@ -15563,9 +16667,9 @@
   {
    "id": "the-best-of-paul-desmond",
    "title": "The Best of Paul Desmond",
-   "year": null,
+   "year": 1990,
    "recordingYear": null,
-   "label": "various",
+   "label": "Columbia/Legacy (Sony)",
    "artistIds": [
     "paul-desmond"
    ],
@@ -15578,7 +16682,7 @@
    "tracks": [
     {
      "tuneId": "autumn-leaves",
-     "key": "Fm"
+     "key": null
     }
    ]
   },
@@ -15639,7 +16743,7 @@
   {
    "id": "the-birth-of-swing",
    "title": "The Birth Of Swing",
-   "year": null,
+   "year": 1991,
    "recordingYear": null,
    "label": "Bluebird/RCA",
    "artistIds": [
@@ -15701,6 +16805,23 @@
    ]
   },
   {
+   "id": "the-bud-powell-trio",
+   "title": "The Bud Powell Trio",
+   "year": 1957,
+   "recordingYear": null,
+   "label": "Roost",
+   "artistIds": [
+    "bud-powell"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "the-cat",
    "title": "The Cat",
    "year": 1964,
@@ -15718,6 +16839,48 @@
    "tracks": [
     {
      "tuneId": "basin-street-blues",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "the-champ-sonny-stitt",
+   "title": "The Champ (Sonny Stitt)",
+   "year": 1973,
+   "recordingYear": 1973,
+   "label": "Muse",
+   "artistIds": [
+    "sonny-stitt"
+   ],
+   "credits": [
+    {
+     "artistId": "sonny-stitt",
+     "instrument": "alto saxophone, tenor saxophone"
+    },
+    {
+     "artistId": "joe-newman",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "duke-jordan",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "sam-jones",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "roy-brooks",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "the-eternal-triangle",
+     "key": null
+    },
+    {
+     "tuneId": "all-the-things-you-are",
      "key": null
     }
    ]
@@ -15766,6 +16929,48 @@
    ]
   },
   {
+   "id": "the-classical-jazz-quartet-plays-bach",
+   "title": "The Classical Jazz Quartet Plays Bach",
+   "year": 2002,
+   "recordingYear": null,
+   "label": "Vertical Jazz",
+   "artistIds": [
+    "classical-jazz-quartet"
+   ],
+   "credits": [
+    {
+     "artistId": "kenny-barron",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "stefon-harris",
+     "instrument": "vibes, marimba"
+    },
+    {
+     "artistId": "ron-carter",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "lewis-nash",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "bwv-147-jesu-joy-of-mans-desiring",
+     "key": null
+    },
+    {
+     "tuneId": "bwv-1047-i-allegro",
+     "key": null
+    },
+    {
+     "tuneId": "bwv-1047-ii-andante",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "the-columbia-years",
    "title": "The Columbia Years",
    "year": 1993,
@@ -15790,6 +16995,10 @@
     {
      "artistId": "art-ryerson",
      "instrument": "guitar"
+    },
+    {
+     "artistId": "axel-stordahl",
+     "instrument": "arranger / conductor"
     }
    ],
    "tracks": [
@@ -15852,9 +17061,9 @@
   {
    "id": "the-complete-capitol-trios",
    "title": "The Complete Capitol Trios",
-   "year": null,
+   "year": 1999,
    "recordingYear": null,
-   "label": "Capitol",
+   "label": "Capitol Jazz/Blue Note",
    "artistIds": [
     "benny-goodman-trio"
    ],
@@ -15886,7 +17095,7 @@
   {
    "id": "the-complete-clef-verve-fifties-studio-recordings",
    "title": "The Complete Clef & Verve Fifties Studio Recordings",
-   "year": null,
+   "year": 2005,
    "recordingYear": null,
    "label": "Mosaic",
    "artistIds": [
@@ -15913,9 +17122,9 @@
   {
    "id": "the-complete-decca-masters-plus",
    "title": "The Complete Decca Masters (Plus)",
-   "year": null,
+   "year": 1994,
    "recordingYear": null,
-   "label": "Decca",
+   "label": "MCA",
    "artistIds": [
     "judy-garland"
    ],
@@ -15935,9 +17144,9 @@
   {
    "id": "the-complete-decca-recordings",
    "title": "The Complete Decca Recordings",
-   "year": null,
+   "year": 1992,
    "recordingYear": null,
-   "label": "GRP",
+   "label": "GRP/Decca Jazz",
    "artistIds": [
     "count-basie"
    ],
@@ -15981,7 +17190,7 @@
   {
    "id": "the-complete-hot-five-and-hot-seven-recordings",
    "title": "The Complete Hot Five and Hot Seven Recordings",
-   "year": null,
+   "year": 2000,
    "recordingYear": null,
    "label": "Columbia/Legacy",
    "artistIds": [
@@ -16061,7 +17270,7 @@
   {
    "id": "the-complete-lionel-hampton-quartets-and-quintets-with-oscar-peterson-on-verve",
    "title": "The Complete Lionel Hampton Quartets and Quintets with Oscar Peterson on Verve",
-   "year": null,
+   "year": 1999,
    "recordingYear": null,
    "label": "Verve",
    "artistIds": [
@@ -16138,9 +17347,9 @@
   {
    "id": "the-complete-piano-duets",
    "title": "The Complete Piano Duets",
-   "year": null,
+   "year": 2020,
    "recordingYear": null,
-   "label": "Verve",
+   "label": "Verve/UMe",
    "artistIds": [
     "ella-fitzgerald"
    ],
@@ -16160,7 +17369,7 @@
   {
    "id": "the-complete-prestige-10-inch-lp-collection",
    "title": "The Complete Prestige 10-Inch LP Collection",
-   "year": null,
+   "year": 2017,
    "recordingYear": null,
    "label": "Craft Recordings",
    "artistIds": [
@@ -16182,7 +17391,7 @@
   {
    "id": "the-complete-quartets-with-sonny-clark",
    "title": "The Complete Quartets with Sonny Clark",
-   "year": null,
+   "year": 1997,
    "recordingYear": null,
    "label": "Blue Note",
    "artistIds": [
@@ -16326,6 +17535,10 @@
     {
      "artistId": "harold-west",
      "instrument": "drums (various sessions)"
+    },
+    {
+     "artistId": "tommy-potter",
+     "instrument": "bass"
     }
    ],
    "tracks": [
@@ -16392,7 +17605,7 @@
   {
    "id": "the-cool-side-of-the-city-vol-17",
    "title": "The Cool Side of the City, Vol. 17",
-   "year": null,
+   "year": 2025,
    "recordingYear": null,
    "label": "Unknown",
    "artistIds": [
@@ -16414,9 +17627,9 @@
   {
    "id": "the-definitive-chick-corea-on-stretch-and-concord",
    "title": "The Definitive Chick Corea on Stretch and Concord",
-   "year": null,
+   "year": 2011,
    "recordingYear": null,
-   "label": null,
+   "label": "Concord/Stretch",
    "artistIds": [
     "chick-corea"
    ],
@@ -16483,8 +17696,8 @@
    ]
   },
   {
-   "id": "the-derek-trucks-band",
-   "title": "The Derek Trucks Band",
+   "id": "the-derek-trucks-band-album",
+   "title": "The Derek Trucks Band (album)",
    "year": 1997,
    "recordingYear": null,
    "label": "Landslide",
@@ -16827,9 +18040,9 @@
   {
    "id": "the-finishing-touch-all-star-trio",
    "title": "The Finishing Touch (All Star Trio)",
-   "year": null,
-   "recordingYear": null,
-   "label": null,
+   "year": 1996,
+   "recordingYear": 1994,
+   "label": "Blue Geodesics",
    "artistIds": [
     "ron-carter",
     "billy-higgins",
@@ -16849,12 +18062,7 @@
      "instrument": "piano"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "bessies-blues",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "the-golden-flute",
@@ -16986,6 +18194,10 @@
     {
      "tuneId": "d-natural-blues",
      "key": null
+    },
+    {
+     "tuneId": "polka-dots-and-moonbeams",
+     "key": null
     }
    ]
   },
@@ -17058,6 +18270,14 @@
     {
      "artistId": "roy-brooks",
      "instrument": "drums"
+    },
+    {
+     "artistId": "dmitry-baevsky",
+     "instrument": "alto saxophone"
+    },
+    {
+     "artistId": "jeb-patton",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -17112,9 +18332,9 @@
   {
    "id": "the-laws-of-jazz-flute-by-laws",
    "title": "The Laws Of Jazz - Flute By-Laws",
-   "year": null,
+   "year": 1994,
    "recordingYear": null,
-   "label": "Atlantic",
+   "label": "Rhino/Atlantic",
    "artistIds": [
     "hubert-laws"
    ],
@@ -17216,9 +18436,9 @@
   {
    "id": "the-legendary-okeh-and-epic-recordings",
    "title": "The Legendary Okeh and Epic Recordings",
-   "year": null,
+   "year": 2005,
    "recordingYear": null,
-   "label": "Columbia/Legacy",
+   "label": "Epic/Legacy (Sony BMG)",
    "artistIds": [
     "ahmad-jamal"
    ],
@@ -17239,7 +18459,7 @@
    "tracks": [
     {
      "tuneId": "autumn-leaves",
-     "key": "Gm"
+     "key": null
     }
    ]
   },
@@ -17358,9 +18578,9 @@
   {
    "id": "the-original-quartet-with-chet-baker",
    "title": "The Original Quartet with Chet Baker",
-   "year": null,
+   "year": 1998,
    "recordingYear": null,
-   "label": "Blue Note",
+   "label": "Pacific Jazz/Blue Note",
    "artistIds": [
     "gerry-mulligan"
    ],
@@ -17442,9 +18662,43 @@
    ]
   },
   {
+   "id": "the-quartet-live-chicago-1982",
+   "title": "The Quartet Live Chicago 1982",
+   "year": 2021,
+   "recordingYear": 1982,
+   "label": "Resonance",
+   "artistIds": [
+    "mccoy-tyner"
+   ],
+   "credits": [
+    {
+     "artistId": "mccoy-tyner",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "freddie-hubbard",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "ron-carter",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "tony-williams",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "rhythm-a-ning",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "the-roost-sessions-bud-powell",
    "title": "The Roost Sessions (Bud Powell)",
-   "year": null,
+   "year": 1957,
    "recordingYear": null,
    "label": "Roost",
    "artistIds": [
@@ -17555,7 +18809,7 @@
   {
    "id": "the-smart-attitude-of-tommy-flanagan",
    "title": "The Smart Attitude of Tommy Flanagan",
-   "year": null,
+   "year": 2011,
    "recordingYear": null,
    "label": null,
    "artistIds": [
@@ -17870,8 +19124,8 @@
    ]
   },
   {
-   "id": "thelonious-monk",
-   "title": "Thelonious Monk",
+   "id": "thelonious-monk-album",
+   "title": "Thelonious Monk (album)",
    "year": 1954,
    "recordingYear": null,
    "label": "Prestige",
@@ -17887,6 +19141,23 @@
    "tracks": [
     {
      "tuneId": "blue-monk",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "then-and-now",
+   "title": "Then and Now",
+   "year": 1992,
+   "recordingYear": null,
+   "label": "Chesky",
+   "artistIds": [
+    "red-rodney"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
      "key": null
     }
    ]
@@ -17946,12 +19217,48 @@
     {
      "artistId": "shelly-manne",
      "instrument": null
+    },
+    {
+     "artistId": "conrad-gozzo",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "don-fagerquist",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "justin-gordon",
+     "instrument": "reeds"
+    },
+    {
+     "artistId": "manny-klein",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "milt-bernhart",
+     "instrument": "trombone"
+    },
+    {
+     "artistId": "paul-harnell",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "pete-candoli",
+     "instrument": "trumpet"
+    },
+    {
+     "artistId": "uan-rasey",
+     "instrument": "trumpet"
     }
    ],
    "tracks": [
     {
      "tuneId": "alone-together",
      "key": "Fm"
+    },
+    {
+     "tuneId": "alright-okay-you-win",
+     "key": null
     }
    ]
   },
@@ -18071,9 +19378,9 @@
   {
    "id": "this-is-jazz-louis-armstrong-sings",
    "title": "This Is Jazz Louis Armstrong Sings",
-   "year": null,
+   "year": 1997,
    "recordingYear": null,
-   "label": "Columbia",
+   "label": "Columbia/Legacy",
    "artistIds": [
     "louis-armstrong"
    ],
@@ -18131,7 +19438,7 @@
   {
    "id": "tiffany-transcriptions-vol-5",
    "title": "Tiffany Transcriptions, Vol. 5",
-   "year": null,
+   "year": 1986,
    "recordingYear": null,
    "label": "Kaleidoscope",
    "artistIds": [
@@ -18185,6 +19492,10 @@
     {
      "artistId": "evelyn-mckinney",
      "instrument": "vocals"
+    },
+    {
+     "artistId": "lester-barnard",
+     "instrument": "guitar"
     }
    ],
    "tracks": [
@@ -18371,9 +19682,9 @@
   {
    "id": "trio-jimmy-rosenberg",
    "title": "Trio (Jimmy Rosenberg)",
-   "year": null,
+   "year": 2004,
    "recordingYear": null,
-   "label": null,
+   "label": "Hot Club Records",
    "artistIds": [
     "jimmy-rosenberg-trio"
    ],
@@ -18394,7 +19705,7 @@
    "tracks": [
     {
      "tuneId": "blue-bossa",
-     "key": "Cm"
+     "key": null
     }
    ]
   },
@@ -18420,6 +19731,43 @@
     },
     {
      "artistId": "roy-haynes",
+     "instrument": "drums"
+    }
+   ],
+   "tracks": [
+    {
+     "tuneId": "rhythm-a-ning",
+     "key": null
+    }
+   ]
+  },
+  {
+   "id": "trio-music-dexter-gordon",
+   "title": "Trio Music (Dexter Gordon)",
+   "year": null,
+   "recordingYear": null,
+   "label": null,
+   "artistIds": [
+    "dexter-gordon",
+    "wynton-kelly",
+    "sam-jones",
+    "roy-brooks"
+   ],
+   "credits": [
+    {
+     "artistId": "dexter-gordon",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "artistId": "wynton-kelly",
+     "instrument": "piano"
+    },
+    {
+     "artistId": "sam-jones",
+     "instrument": "bass"
+    },
+    {
+     "artistId": "roy-brooks",
      "instrument": "drums"
     }
    ],
@@ -18473,6 +19821,23 @@
    ]
   },
   {
+   "id": "two-fives",
+   "title": "Two Fives",
+   "year": null,
+   "recordingYear": null,
+   "label": "SteepleChase",
+   "artistIds": [
+    "chris-byars"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "crazeology",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "two-of-a-mind",
    "title": "Two of a Mind",
    "year": 1962,
@@ -18513,9 +19878,9 @@
   {
    "id": "ultimate-big-band-collection-benny-goodman",
    "title": "Ultimate Big Band Collection Benny Goodman",
-   "year": null,
+   "year": 2010,
    "recordingYear": null,
-   "label": "Columbia",
+   "label": "Sony/Legacy",
    "artistIds": [
     "benny-goodman"
    ],
@@ -18545,17 +19910,12 @@
      "instrument": "tenor saxophone"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "honeysuckle-rose",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "ultimate-dizzy-gillespie",
    "title": "Ultimate Dizzy Gillespie",
-   "year": null,
+   "year": 1998,
    "recordingYear": null,
    "label": "Verve",
    "artistIds": [
@@ -18577,9 +19937,9 @@
   {
    "id": "ultimate-sinatra-the-centennial-collection",
    "title": "Ultimate Sinatra The Centennial Collection",
-   "year": null,
+   "year": 2015,
    "recordingYear": null,
-   "label": "Capitol",
+   "label": "Capitol/UMe (Signature Sinatra)",
    "artistIds": [
     "frank-sinatra"
    ],
@@ -18601,12 +19961,7 @@
      "instrument": "conductors/arrangers"
     }
    ],
-   "tracks": [
-    {
-     "tuneId": "all-of-me",
-     "key": null
-    }
-   ]
+   "tracks": []
   },
   {
    "id": "unforgettable",
@@ -18635,11 +19990,28 @@
    ]
   },
   {
+   "id": "unheard-bird-the-unheard-takes-of-charlie-parker",
+   "title": "Unheard Bird The Unheard Takes of Charlie Parker",
+   "year": null,
+   "recordingYear": null,
+   "label": "Unknown",
+   "artistIds": [
+    "charlie-parker"
+   ],
+   "credits": [],
+   "tracks": [
+    {
+     "tuneId": "passport",
+     "key": null
+    }
+   ]
+  },
+  {
    "id": "up-jumped-spring",
    "title": "Up Jumped Spring",
    "year": 1990,
-   "recordingYear": null,
-   "label": null,
+   "recordingYear": 1990,
+   "label": "LRC Ltd.",
    "artistIds": [
     "benny-golson"
    ],
@@ -18652,7 +20024,7 @@
    "tracks": [
     {
      "tuneId": "beautiful-love",
-     "key": "Fm"
+     "key": null
     }
    ]
   },
@@ -19014,11 +20386,11 @@
    "label": "Pablo",
    "artistIds": [
     "joe-pass",
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "credits": [
     {
-     "artistId": "j-j-johnson",
+     "artistId": "jj-johnson",
      "instrument": "trombone"
     },
     {
@@ -19062,6 +20434,10 @@
     {
      "artistId": "claus-ogerman",
      "instrument": "arranger / conductor"
+    },
+    {
+     "artistId": "wynton-kelly",
+     "instrument": "piano"
     }
    ],
    "tracks": [
@@ -19212,6 +20588,14 @@
     {
      "artistId": "paul-svanberg",
      "instrument": "drums"
+    },
+    {
+     "artistId": "wayne-king",
+     "instrument": "guitar / vocals"
+    },
+    {
+     "artistId": "wayne-king-vocals",
+     "instrument": "vocals"
     }
    ],
    "tracks": [
@@ -19223,7 +20607,7 @@
   },
   {
    "id": "where-would-i-be",
-   "title": "Where Would I Be?",
+   "title": "Where Would I Be",
    "year": 1971,
    "recordingYear": null,
    "label": "Milestone",
@@ -19250,11 +20634,11 @@
    ],
    "tracks": [
     {
-     "tuneId": "i-should-care",
+     "tuneId": "careful",
      "key": null
     },
     {
-     "tuneId": "careful",
+     "tuneId": "i-should-care",
      "key": null
     }
    ]
@@ -19320,11 +20704,11 @@
    ]
   },
   {
-   "id": "woody-herman-orchestra-reunion-at-northsea",
-   "title": "Woody Herman Orchestra - Reunion at NorthSea",
-   "year": null,
+   "id": "woody-herman-orchestra-reunion-at-newport",
+   "title": "Woody Herman Orchestra - Reunion at Newport",
+   "year": 2006,
    "recordingYear": null,
-   "label": null,
+   "label": "ITM Archives",
    "artistIds": [
     "john-riley",
     "frank-tiberi",
@@ -19468,8 +20852,8 @@
    ]
   },
   {
-   "id": "zimbo-trio",
-   "title": "Zimbo Trio",
+   "id": "zimbo-trio-album",
+   "title": "Zimbo Trio (album)",
    "year": 1964,
    "recordingYear": null,
    "label": "RGE",
@@ -19507,7 +20891,7 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 89,
+   "bpm": null,
    "melody": null
   },
   {
@@ -19632,12 +21016,34 @@
    "melody": null
   },
   {
+   "id": "all-the-things-you-are::after-hours-dexter-gordon::dexter-gordon",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "dexter-gordon"
+   ],
+   "albumId": "after-hours-dexter-gordon",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "all-the-things-you-are::another-day::oscar-peterson",
    "tuneId": "all-the-things-you-are",
    "artistIds": [
     "oscar-peterson"
    ],
    "albumId": "another-day",
+   "key": "Ab",
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "all-the-things-you-are::art-of-the-trio-vol-4-back-at-the-vanguard::brad-mehldau",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "albumId": "art-of-the-trio-vol-4-back-at-the-vanguard",
    "key": "Ab",
    "bpm": null,
    "melody": null
@@ -19800,6 +21206,17 @@
    "melody": null
   },
   {
+   "id": "all-the-things-you-are::last-train-from-overbrook::james-moody",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "james-moody"
+   ],
+   "albumId": "last-train-from-overbrook",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "all-the-things-you-are::live-at-birdland-jim-hall::jim-hall",
    "tuneId": "all-the-things-you-are",
    "artistIds": [
@@ -19955,6 +21372,28 @@
    "melody": null
   },
   {
+   "id": "all-the-things-you-are::standards-vol-1::keith-jarrett",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "keith-jarrett"
+   ],
+   "albumId": "standards-vol-1",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "all-the-things-you-are::take-ten::paul-desmond",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "paul-desmond"
+   ],
+   "albumId": "take-ten",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "all-the-things-you-are::tal-farlow-album::tal-farlow",
    "tuneId": "all-the-things-you-are",
    "artistIds": [
@@ -19963,6 +21402,17 @@
    "albumId": "tal-farlow-album",
    "key": null,
    "bpm": 136,
+   "melody": null
+  },
+  {
+   "id": "all-the-things-you-are::the-champ-sonny-stitt::sonny-stitt",
+   "tuneId": "all-the-things-you-are",
+   "artistIds": [
+    "sonny-stitt"
+   ],
+   "albumId": "the-champ-sonny-stitt",
+   "key": null,
+   "bpm": null,
    "melody": null
   },
   {
@@ -20112,6 +21562,17 @@
    "melody": null
   },
   {
+   "id": "alone-together::art-of-the-trio-vol-5-progression::brad-mehldau",
+   "tuneId": "alone-together",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "albumId": "art-of-the-trio-vol-5-progression",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "alone-together::at-the-blue-note-the-complete-recordings::keith-jarrett",
    "tuneId": "alone-together",
    "artistIds": [
@@ -20119,6 +21580,17 @@
    ],
    "albumId": "at-the-blue-note-the-complete-recordings",
    "key": "Dm",
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "alone-together::at-the-blue-note::keith-jarrett",
+   "tuneId": "alone-together",
+   "artistIds": [
+    "keith-jarrett"
+   ],
+   "albumId": "at-the-blue-note",
+   "key": null,
    "bpm": null,
    "melody": null
   },
@@ -20214,12 +21686,12 @@
    "melody": null
   },
   {
-   "id": "alone-together::footprints::pat-martino",
+   "id": "alone-together::footprints-album::pat-martino",
    "tuneId": "alone-together",
    "artistIds": [
     "pat-martino"
    ],
-   "albumId": "footprints",
+   "albumId": "footprints-album",
    "key": "Am",
    "bpm": null,
    "melody": null
@@ -21170,10 +22642,10 @@
    "melody": null
   },
   {
-   "id": "beautiful-love::lets-hang-out::j-j-johnson",
+   "id": "beautiful-love::lets-hang-out::jj-johnson",
    "tuneId": "beautiful-love",
    "artistIds": [
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "albumId": "lets-hang-out",
    "key": "Dm",
@@ -21245,7 +22717,7 @@
     "john-abercrombie"
    ],
    "albumId": null,
-   "key": "Dm",
+   "key": null,
    "bpm": null,
    "melody": null
   },
@@ -21280,6 +22752,17 @@
    "albumId": "take-love-easy-sophie-milman",
    "key": "Gm",
    "bpm": 108,
+   "melody": null
+  },
+  {
+   "id": "beautiful-love::turning-point::benny-golson",
+   "tuneId": "beautiful-love",
+   "artistIds": [
+    "benny-golson"
+   ],
+   "albumId": "turning-point",
+   "key": null,
+   "bpm": null,
    "melody": null
   },
   {
@@ -21439,7 +22922,7 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 117,
+   "bpm": null,
    "melody": null
   },
   {
@@ -21541,7 +23024,7 @@
    "albumId": "biting-the-apple",
    "key": "Cm",
    "bpm": 112,
-   "melody": "https://www.dropbox.com/scl/fi/rtrsovd0ozrse31w3ygza/Blue-Bossa-Dexter-Gordon.mp3?rlkey=npz5344vvcoxl5ouyfsdrt3ge&st=j4vofxj4&dl=0"
+   "melody": null
   },
   {
    "id": "blue-bossa::black-and-blue::gene-harris",
@@ -21644,12 +23127,12 @@
    "melody": null
   },
   {
-   "id": "blue-bossa::michel-camilo::michel-camilo",
+   "id": "blue-bossa::michel-camilo-album::michel-camilo",
    "tuneId": "blue-bossa",
    "artistIds": [
     "michel-camilo"
    ],
-   "albumId": "michel-camilo",
+   "albumId": "michel-camilo-album",
    "key": "Cm",
    "bpm": 129,
    "melody": null
@@ -21711,7 +23194,7 @@
    "albumId": "the-big-3",
    "key": "Cm",
    "bpm": null,
-   "melody": ":08"
+   "melody": null
   },
   {
    "id": "blue-bossa::the-standard-joe::joe-henderson",
@@ -21736,11 +23219,11 @@
    "melody": null
   },
   {
-   "id": "blue-bossa::well-be-together-again::joe-pass+j-j-johnson",
+   "id": "blue-bossa::well-be-together-again::joe-pass+jj-johnson",
    "tuneId": "blue-bossa",
    "artistIds": [
     "joe-pass",
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "albumId": "well-be-together-again",
    "key": "Cm",
@@ -21816,12 +23299,12 @@
    "melody": null
   },
   {
-   "id": "blue-monk::thelonious-monk::thelonious-monk",
+   "id": "blue-monk::thelonious-monk-album::thelonious-monk",
    "tuneId": "blue-monk",
    "artistIds": [
     "thelonious-monk"
    ],
-   "albumId": "thelonious-monk",
+   "albumId": "thelonious-monk-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -21930,13 +23413,13 @@
    "melody": null
   },
   {
-   "id": "blues-for-alice::cone-s-soup::wycliffe-gordon+stacy-dillard",
+   "id": "blues-for-alice::cones-coup::wycliffe-gordon+stacy-dillard",
    "tuneId": "blues-for-alice",
    "artistIds": [
     "wycliffe-gordon",
     "stacy-dillard"
    ],
-   "albumId": "cone-s-soup",
+   "albumId": "cones-coup",
    "key": null,
    "bpm": null,
    "melody": null
@@ -21970,6 +23453,118 @@
     "rahsaan-roland-kirk"
    ],
    "albumId": "we-free-kings",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1043-i-vivace::no-album::eddie-south+stephane-grappelli+django-reinhardt",
+   "tuneId": "bwv-1043-i-vivace",
+   "artistIds": [
+    "eddie-south",
+    "stephane-grappelli",
+    "django-reinhardt"
+   ],
+   "albumId": null,
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1047-i-allegro::the-classical-jazz-quartet-plays-bach::classical-jazz-quartet",
+   "tuneId": "bwv-1047-i-allegro",
+   "artistIds": [
+    "classical-jazz-quartet"
+   ],
+   "albumId": "the-classical-jazz-quartet-plays-bach",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1047-ii-andante::the-classical-jazz-quartet-plays-bach::classical-jazz-quartet",
+   "tuneId": "bwv-1047-ii-andante",
+   "artistIds": [
+    "classical-jazz-quartet"
+   ],
+   "albumId": "the-classical-jazz-quartet-plays-bach",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1068-air::jazz-sebastian-bach::the-swingle-singers",
+   "tuneId": "bwv-1068-air",
+   "artistIds": [
+    "the-swingle-singers"
+   ],
+   "albumId": "jazz-sebastian-bach",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1068-air::place-vendome::the-swingle-singers",
+   "tuneId": "bwv-1068-air",
+   "artistIds": [
+    "the-swingle-singers"
+   ],
+   "albumId": "place-vendome",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-1068-air::play-bach-no-2::jacques-loussier-trio",
+   "tuneId": "bwv-1068-air",
+   "artistIds": [
+    "jacques-loussier-trio"
+   ],
+   "albumId": "play-bach-no-2",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring::blues-on-bach::modern-jazz-quartet",
+   "tuneId": "bwv-147-jesu-joy-of-mans-desiring",
+   "artistIds": [
+    "modern-jazz-quartet"
+   ],
+   "albumId": "blues-on-bach",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-147-jesu-joy-of-mans-desiring::the-classical-jazz-quartet-plays-bach::classical-jazz-quartet",
+   "tuneId": "bwv-147-jesu-joy-of-mans-desiring",
+   "artistIds": [
+    "classical-jazz-quartet"
+   ],
+   "albumId": "the-classical-jazz-quartet-plays-bach",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-565-toccata::play-bach-no-1::jacques-loussier-trio",
+   "tuneId": "bwv-565-toccata",
+   "artistIds": [
+    "jacques-loussier-trio"
+   ],
+   "albumId": "play-bach-no-1",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "bwv-855-prelude::after-bach::brad-mehldau",
+   "tuneId": "bwv-855-prelude",
+   "artistIds": [
+    "brad-mehldau"
+   ],
+   "albumId": "after-bach",
    "key": null,
    "bpm": null,
    "melody": null
@@ -22044,6 +23639,17 @@
    "melody": null
   },
   {
+   "id": "careful::somethings-coming::jimmy-giuffre",
+   "tuneId": "careful",
+   "artistIds": [
+    "jimmy-giuffre"
+   ],
+   "albumId": "somethings-coming",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "careful::the-cool-side-of-the-city-vol-17::jimmy-giuffre",
    "tuneId": "careful",
    "artistIds": [
@@ -22063,6 +23669,17 @@
    "albumId": "the-easy-way",
    "key": null,
    "bpm": 136,
+   "melody": null
+  },
+  {
+   "id": "careful::times-square::gary-burton",
+   "tuneId": "careful",
+   "artistIds": [
+    "gary-burton"
+   ],
+   "albumId": "times-square",
+   "key": null,
+   "bpm": null,
    "melody": null
   },
   {
@@ -22099,12 +23716,12 @@
    "melody": null
   },
   {
-   "id": "chega-de-saudade::chega-de-saudade::joao-gilberto",
+   "id": "chega-de-saudade::chega-de-saudade-album::joao-gilberto",
    "tuneId": "chega-de-saudade",
    "artistIds": [
     "joao-gilberto"
    ],
-   "albumId": "chega-de-saudade",
+   "albumId": "chega-de-saudade-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -22187,6 +23804,40 @@
    "melody": null
   },
   {
+   "id": "concierto-de-aranjuez-ii-adagio::collaboration::modern-jazz-quartet+laurindo-almeida",
+   "tuneId": "concierto-de-aranjuez-ii-adagio",
+   "artistIds": [
+    "modern-jazz-quartet",
+    "laurindo-almeida"
+   ],
+   "albumId": "collaboration",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::concierto::jim-hall",
+   "tuneId": "concierto-de-aranjuez-ii-adagio",
+   "artistIds": [
+    "jim-hall"
+   ],
+   "albumId": "concierto",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "concierto-de-aranjuez-ii-adagio::sketches-of-spain::miles-davis",
+   "tuneId": "concierto-de-aranjuez-ii-adagio",
+   "artistIds": [
+    "miles-davis"
+   ],
+   "albumId": "sketches-of-spain",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "cool-blues::born-to-be-blue::grant-green",
    "tuneId": "cool-blues",
    "artistIds": [
@@ -22221,6 +23872,17 @@
    "melody": null
   },
   {
+   "id": "crazeology::feelin-and-dealin::ralph-lalama",
+   "tuneId": "crazeology",
+   "artistIds": [
+    "ralph-lalama"
+   ],
+   "albumId": "feelin-and-dealin",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "crazeology::for-real::hampton-hawes+harold-land+scott-lafaro",
    "tuneId": "crazeology",
    "artistIds": [
@@ -22242,39 +23904,17 @@
    "albumId": "messages",
    "key": null,
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/c4td61vx5wzf9vu7k1dcf/crazeology-hank-mobley.mp3?rlkey=etlplwuz7ow4763plbgmw1gf8&st=w841j5bf&dl=0"
+   "melody": null
   },
   {
-   "id": "crazeology::no-album::alan-broadbent",
+   "id": "crazeology::new-york-notes::alan-broadbent",
    "tuneId": "crazeology",
    "artistIds": [
     "alan-broadbent"
    ],
-   "albumId": null,
+   "albumId": "new-york-notes",
    "key": null,
    "bpm": 96,
-   "melody": null
-  },
-  {
-   "id": "crazeology::no-album::bud-powell",
-   "tuneId": "crazeology",
-   "artistIds": [
-    "bud-powell"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 129,
-   "melody": null
-  },
-  {
-   "id": "crazeology::no-album::chris-byars",
-   "tuneId": "crazeology",
-   "artistIds": [
-    "chris-byars"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 108,
    "melody": null
   },
   {
@@ -22289,47 +23929,36 @@
    "melody": null
   },
   {
-   "id": "crazeology::no-album::ralph-lalama",
-   "tuneId": "crazeology",
-   "artistIds": [
-    "ralph-lalama"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "crazeology::no-album::ray-brown",
-   "tuneId": "crazeology",
-   "artistIds": [
-    "ray-brown"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "crazeology::no-album::red-rodney",
-   "tuneId": "crazeology",
-   "artistIds": [
-    "red-rodney"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "crazeology::no-album::roy-hargrove",
+   "id": "crazeology::public-eye::roy-hargrove",
    "tuneId": "crazeology",
    "artistIds": [
     "roy-hargrove"
    ],
-   "albumId": null,
+   "albumId": "public-eye",
    "key": null,
    "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "crazeology::some-of-my-best-friends-are-the-sax-players::ray-brown",
+   "tuneId": "crazeology",
+   "artistIds": [
+    "ray-brown"
+   ],
+   "albumId": "some-of-my-best-friends-are-the-sax-players",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "crazeology::the-bud-powell-trio::bud-powell",
+   "tuneId": "crazeology",
+   "artistIds": [
+    "bud-powell"
+   ],
+   "albumId": "the-bud-powell-trio",
+   "key": null,
+   "bpm": 129,
    "melody": null
   },
   {
@@ -22341,6 +23970,28 @@
    "albumId": "the-complete-savoy-dial-master-takes",
    "key": null,
    "bpm": 129,
+   "melody": null
+  },
+  {
+   "id": "crazeology::then-and-now::red-rodney",
+   "tuneId": "crazeology",
+   "artistIds": [
+    "red-rodney"
+   ],
+   "albumId": "then-and-now",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "crazeology::two-fives::chris-byars",
+   "tuneId": "crazeology",
+   "artistIds": [
+    "chris-byars"
+   ],
+   "albumId": "two-fives",
+   "key": null,
+   "bpm": 108,
    "melody": null
   },
   {
@@ -22483,7 +24134,7 @@
    "albumId": "the-complete-savoy-dial-master-takes",
    "key": null,
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/7ymmpjs9kzzardjfhf3j6/Dexterity-Charlie-Parker.mp3?rlkey=mpfkyeqne7hfvfb7w6uz4ow0n&st=pwinyy6z&dl=0"
+   "melody": null
   },
   {
    "id": "dexterity::what-if::kenny-barron",
@@ -22655,12 +24306,12 @@
    "melody": null
   },
   {
-   "id": "donna-lee::jaco-pastorius::jaco-pastorius",
+   "id": "donna-lee::jaco-pastorius-album::jaco-pastorius",
    "tuneId": "donna-lee",
    "artistIds": [
     "jaco-pastorius"
    ],
-   "albumId": "jaco-pastorius",
+   "albumId": "jaco-pastorius-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -22767,23 +24418,23 @@
    "melody": null
   },
   {
-   "id": "footprints::footprints::pat-martino",
+   "id": "footprints::footprints-album::pat-martino",
    "tuneId": "footprints",
    "artistIds": [
     "pat-martino"
    ],
-   "albumId": "footprints",
+   "albumId": "footprints-album",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "footprints::the-derek-trucks-band::derek-trucks",
+   "id": "footprints::the-derek-trucks-band-album::derek-trucks",
    "tuneId": "footprints",
    "artistIds": [
     "derek-trucks"
    ],
-   "albumId": "the-derek-trucks-band",
+   "albumId": "the-derek-trucks-band-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -22834,10 +24485,10 @@
    "melody": null
   },
   {
-   "id": "glorias-step::lafaro::julian-bromberg",
+   "id": "glorias-step::lafaro::brian-bromberg",
    "tuneId": "glorias-step",
    "artistIds": [
-    "julian-bromberg"
+    "brian-bromberg"
    ],
    "albumId": "lafaro",
    "key": null,
@@ -23079,12 +24730,12 @@
    "melody": null
   },
   {
-   "id": "honeysuckle-rose::django-reinhardt::django-reinhardt",
+   "id": "honeysuckle-rose::django-reinhardt-album::django-reinhardt",
    "tuneId": "honeysuckle-rose",
    "artistIds": [
     "django-reinhardt"
    ],
-   "albumId": "django-reinhardt",
+   "albumId": "django-reinhardt-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -23215,6 +24866,28 @@
    "melody": null
   },
   {
+   "id": "how-high-the-moon::an-evening-with-oscar-peterson::oscar-peterson",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "oscar-peterson"
+   ],
+   "albumId": "an-evening-with-oscar-peterson",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::blue-guitar::barney-kessel",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "barney-kessel"
+   ],
+   "albumId": "blue-guitar",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "how-high-the-moon::bud-powell-in-paris::bud-powell",
    "tuneId": "how-high-the-moon",
    "artistIds": [
@@ -23234,7 +24907,29 @@
    "albumId": "chet",
    "key": "G",
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/y593bfre7o9bcdo2dd9gs/How-High-The-Moon-Chet-Baker.mp3?rlkey=oqzy4b6dbmy29fhm52v1mp48n&st=crihoi36&dl=0"
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::chet::chet-baker",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "chet-baker"
+   ],
+   "albumId": "chet",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::complete-jazz-heritage-society-recordings::artie-shaw",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "artie-shaw"
+   ],
+   "albumId": "complete-jazz-heritage-society-recordings",
+   "key": null,
+   "bpm": null,
+   "melody": null
   },
   {
    "id": "how-high-the-moon::djangology::django-reinhardt",
@@ -23248,6 +24943,50 @@
    "melody": null
   },
   {
+   "id": "how-high-the-moon::gemini::erroll-garner",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "erroll-garner"
+   ],
+   "albumId": "gemini",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::gene-krupa-plays-gerry-mulligan-arrangements::gene-krupa",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "gene-krupa"
+   ],
+   "albumId": "gene-krupa-plays-gerry-mulligan-arrangements",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::good-night-and-good-luck-ost::dianne-reeves",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "dianne-reeves"
+   ],
+   "albumId": "good-night-and-good-luck-ost",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::how-high-the-moon-stitt-plays-bird::sonny-stitt",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "sonny-stitt"
+   ],
+   "albumId": "how-high-the-moon-stitt-plays-bird",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "how-high-the-moon::in-the-land-of-hi-fi::sarah-vaughan",
    "tuneId": "how-high-the-moon",
    "artistIds": [
@@ -23256,6 +24995,28 @@
    "albumId": "in-the-land-of-hi-fi",
    "key": "E",
    "bpm": 129,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::jazz-at-oberlin::the-dave-brubeck-quartet",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "the-dave-brubeck-quartet"
+   ],
+   "albumId": "jazz-at-oberlin",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::just-one-of-those-things-grappelli::stephane-grappelli",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "stephane-grappelli"
+   ],
+   "albumId": "just-one-of-those-things-grappelli",
+   "key": null,
+   "bpm": null,
    "melody": null
   },
   {
@@ -23282,12 +25043,12 @@
    "melody": null
   },
   {
-   "id": "how-high-the-moon::no-album::art-tatum",
+   "id": "how-high-the-moon::nat-king-cole-at-the-piano::nat-king-cole-trio",
    "tuneId": "how-high-the-moon",
    "artistIds": [
-    "art-tatum"
+    "nat-king-cole-trio"
    ],
-   "albumId": null,
+   "albumId": "nat-king-cole-at-the-piano",
    "key": null,
    "bpm": null,
    "melody": null
@@ -23337,17 +25098,6 @@
    "melody": null
   },
   {
-   "id": "how-high-the-moon::no-album::cal-tjader",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "cal-tjader"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 136,
-   "melody": null
-  },
-  {
    "id": "how-high-the-moon::no-album::charlie-parker",
    "tuneId": "how-high-the-moon",
    "artistIds": [
@@ -23356,17 +25106,6 @@
    "albumId": null,
    "key": null,
    "bpm": 117,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::chet-baker",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "chet-baker"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
    "melody": null
   },
   {
@@ -23388,36 +25127,14 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 112,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "how-high-the-moon::no-album::erroll-garner",
+   "id": "how-high-the-moon::no-album::harry-james",
    "tuneId": "how-high-the-moon",
    "artistIds": [
-    "erroll-garner"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 129,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::gene-krupa",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "gene-krupa"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 99,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::hank-jones-trio",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "hank-jones-trio"
+    "harry-james"
    ],
    "albumId": null,
    "key": null,
@@ -23425,59 +25142,25 @@
    "melody": null
   },
   {
-   "id": "how-high-the-moon::no-album::nat-king-cole-trio",
+   "id": "how-high-the-moon::piano-starts-here::art-tatum",
    "tuneId": "how-high-the-moon",
    "artistIds": [
-    "nat-king-cole-trio"
+    "art-tatum"
    ],
-   "albumId": null,
-   "key": null,
-   "bpm": 161,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::oscar-peterson",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "oscar-peterson"
-   ],
-   "albumId": null,
+   "albumId": "piano-starts-here",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "how-high-the-moon::no-album::sonny-stitt",
+   "id": "how-high-the-moon::pyramid::modern-jazz-quartet",
    "tuneId": "how-high-the-moon",
    "artistIds": [
-    "sonny-stitt"
+    "modern-jazz-quartet"
    ],
-   "albumId": null,
+   "albumId": "pyramid",
    "key": null,
    "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::stephane-grappelli+martin-taylor",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "stephane-grappelli",
-    "martin-taylor"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 123,
-   "melody": null
-  },
-  {
-   "id": "how-high-the-moon::no-album::wes-montgomery",
-   "tuneId": "how-high-the-moon",
-   "artistIds": [
-    "wes-montgomery"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 92,
    "melody": null
   },
   {
@@ -23488,6 +25171,28 @@
    ],
    "albumId": "sonny-rollins-and-the-contemporary-leaders",
    "key": "G",
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::soul-bird-whiffenpoof::cal-tjader",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "cal-tjader"
+   ],
+   "albumId": "soul-bird-whiffenpoof",
+   "key": null,
+   "bpm": 136,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::the-trio-hank-jones::hank-jones-trio",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "hank-jones-trio"
+   ],
+   "albumId": "the-trio-hank-jones",
+   "key": null,
    "bpm": null,
    "melody": null
   },
@@ -23503,12 +25208,34 @@
    "melody": null
   },
   {
-   "id": "how-insensitive::footprints::pat-martino",
+   "id": "how-high-the-moon::volume-ii-savoy::charlie-parker",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "charlie-parker"
+   ],
+   "albumId": "volume-ii-savoy",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-high-the-moon::wes-montgomery-plays-the-great-american-songbook::wes-montgomery",
+   "tuneId": "how-high-the-moon",
+   "artistIds": [
+    "wes-montgomery"
+   ],
+   "albumId": "wes-montgomery-plays-the-great-american-songbook",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "how-insensitive::footprints-album::pat-martino",
    "tuneId": "how-insensitive",
    "artistIds": [
     "pat-martino"
    ],
-   "albumId": "footprints",
+   "albumId": "footprints-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -23672,17 +25399,6 @@
    "melody": null
   },
   {
-   "id": "i-got-rhythm::ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book::ella-fitzgerald",
-   "tuneId": "i-got-rhythm",
-   "artistIds": [
-    "ella-fitzgerald"
-   ],
-   "albumId": "ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
    "id": "i-got-rhythm::great-gentlemen-of-song-spotlight-on-bobby-darin::bobby-darin",
    "tuneId": "i-got-rhythm",
    "artistIds": [
@@ -23694,12 +25410,10 @@
    "melody": null
   },
   {
-   "id": "i-got-rhythm::la-familia::the-rosenberg-trio+mozes-rosenberg+johnny-rosenberg",
+   "id": "i-got-rhythm::la-familia::the-rosenberg-trio",
    "tuneId": "i-got-rhythm",
    "artistIds": [
-    "the-rosenberg-trio",
-    "mozes-rosenberg",
-    "johnny-rosenberg"
+    "the-rosenberg-trio"
    ],
    "albumId": "la-familia",
    "key": null,
@@ -23730,11 +25444,10 @@
    "melody": null
   },
   {
-   "id": "i-got-rhythm::skol-original-jazz-classics-remasters::oscar-peterson+stephane-grappelli",
+   "id": "i-got-rhythm::skol-original-jazz-classics-remasters::oscar-peterson",
    "tuneId": "i-got-rhythm",
    "artistIds": [
-    "oscar-peterson",
-    "stephane-grappelli"
+    "oscar-peterson"
    ],
    "albumId": "skol-original-jazz-classics-remasters",
    "key": null,
@@ -23798,23 +25511,12 @@
    "melody": null
   },
   {
-   "id": "i-got-rhythm::the-hard-swing::sonny-stitt",
-   "tuneId": "i-got-rhythm",
-   "artistIds": [
-    "sonny-stitt"
-   ],
-   "albumId": "the-hard-swing",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::bill-evans-at-town-hall::bill-evans-trio",
+   "id": "i-should-care::another-workout::hank-mobley",
    "tuneId": "i-should-care",
    "artistIds": [
-    "bill-evans-trio"
+    "hank-mobley"
    ],
-   "albumId": "bill-evans-at-town-hall",
+   "albumId": "another-workout",
    "key": null,
    "bpm": null,
    "melody": null
@@ -23831,23 +25533,12 @@
    "melody": null
   },
   {
-   "id": "i-should-care::flight-to-jordan::duke-jordan",
+   "id": "i-should-care::desmond-blue::paul-desmond",
    "tuneId": "i-should-care",
    "artistIds": [
-    "duke-jordan"
+    "paul-desmond"
    ],
-   "albumId": "flight-to-jordan",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::how-my-heart-sings::bill-evans-trio",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "bill-evans-trio"
-   ],
-   "albumId": "how-my-heart-sings",
+   "albumId": "desmond-blue",
    "key": null,
    "bpm": null,
    "melody": null
@@ -23864,17 +25555,6 @@
    "melody": null
   },
   {
-   "id": "i-should-care::jim-hall-plays-standards::jim-hall",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "jim-hall"
-   ],
-   "albumId": "jim-hall-plays-standards",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
    "id": "i-should-care::julie-is-her-name::julie-london",
    "tuneId": "i-should-care",
    "artistIds": [
@@ -23886,37 +25566,12 @@
    "melody": null
   },
   {
-   "id": "i-should-care::milestones-of-jazz-legends-more-than-you-know::paul-desmond+romeo-penque",
+   "id": "i-should-care::no-album::bud-powell-trio",
    "tuneId": "i-should-care",
    "artistIds": [
-    "paul-desmond",
-    "romeo-penque"
+    "bud-powell-trio"
    ],
-   "albumId": "milestones-of-jazz-legends-more-than-you-know",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::music-for-lovers::hank-mobley",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "hank-mobley"
-   ],
-   "albumId": "music-for-lovers",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::portraits-at-the-penthouse-live-in-portland-1977::bill-evans+eddie-gomez+eliot-zigmund",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "bill-evans",
-    "eddie-gomez",
-    "eliot-zigmund"
-   ],
-   "albumId": "portraits-at-the-penthouse-live-in-portland-1977",
+   "albumId": null,
    "key": null,
    "bpm": null,
    "melody": null
@@ -23928,50 +25583,6 @@
     "barry-harris"
    ],
    "albumId": "solo-barry-harris",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::solo-monk::thelonious-monk",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "thelonious-monk"
-   ],
-   "albumId": "solo-monk",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::the-roost-sessions-bud-powell::bud-powell-trio",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "bud-powell-trio"
-   ],
-   "albumId": "the-roost-sessions-bud-powell",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::unforgettable::joe-pass",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "joe-pass"
-   ],
-   "albumId": "unforgettable",
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "i-should-care::where-would-i-be::jim-hall",
-   "tuneId": "i-should-care",
-   "artistIds": [
-    "jim-hall"
-   ],
-   "albumId": "where-would-i-be",
    "key": null,
    "bpm": null,
    "melody": null
@@ -24056,12 +25667,12 @@
    "melody": null
   },
   {
-   "id": "inutil-paisagem::zimbo-trio::zimbo-trio",
+   "id": "inutil-paisagem::zimbo-trio-album::zimbo-trio",
    "tuneId": "inutil-paisagem",
    "artistIds": [
     "zimbo-trio"
    ],
-   "albumId": "zimbo-trio",
+   "albumId": "zimbo-trio-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -24079,11 +25690,11 @@
    "melody": null
   },
   {
-   "id": "isfahan::body-and-soul-john-stowell::john-stowell+norbert-durr",
+   "id": "isfahan::body-and-soul-john-stowell::john-stowell+norbert-domling",
    "tuneId": "isfahan",
    "artistIds": [
     "john-stowell",
-    "norbert-durr"
+    "norbert-domling"
    ],
    "albumId": "body-and-soul-john-stowell",
    "key": null,
@@ -24146,11 +25757,11 @@
    "melody": null
   },
   {
-   "id": "isfahan::powder::nathaniel-young+corey-gnecco",
+   "id": "isfahan::powder::nathaniel-young+corey-gordon",
    "tuneId": "isfahan",
    "artistIds": [
     "nathaniel-young",
-    "corey-gnecco"
+    "corey-gordon"
    ],
    "albumId": "powder",
    "key": null,
@@ -24272,12 +25883,12 @@
    "melody": null
   },
   {
-   "id": "lullaby-of-the-leaves::benny-goodman-sextet::benny-goodman-sextet",
+   "id": "lullaby-of-the-leaves::benny-goodman-sextet-album::benny-goodman-sextet",
    "tuneId": "lullaby-of-the-leaves",
    "artistIds": [
     "benny-goodman-sextet"
    ],
-   "albumId": "benny-goodman-sextet",
+   "albumId": "benny-goodman-sextet-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -24573,6 +26184,17 @@
    "melody": null
   },
   {
+   "id": "misty::this-is-jazz::stan-getz",
+   "tuneId": "misty",
+   "artistIds": [
+    "stan-getz"
+   ],
+   "albumId": "this-is-jazz",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "misty::walkman-jazz::oscar-peterson",
    "tuneId": "misty",
    "artistIds": [
@@ -24595,55 +26217,10 @@
    "melody": null
   },
   {
-   "id": "moose-the-mooche::no-album::art-blakey",
+   "id": "moose-the-mooche::the-complete-savoy-dial-master-takes::charlie-parker",
    "tuneId": "moose-the-mooche",
    "artistIds": [
-    "art-blakey"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 123,
-   "melody": null
-  },
-  {
-   "id": "moose-the-mooche::no-album::barry-harris",
-   "tuneId": "moose-the-mooche",
-   "artistIds": [
-    "barry-harris"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "moose-the-mooche::no-album::branford-marsalis",
-   "tuneId": "moose-the-mooche",
-   "artistIds": [
-    "branford-marsalis"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "moose-the-mooche::no-album::bud-powell",
-   "tuneId": "moose-the-mooche",
-   "artistIds": [
-    "bud-powell"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 92,
-   "melody": null
-  },
-  {
-   "id": "moose-the-mooche::the-complete-savoy-dial-master-takes::charlie-parker+miles-davis",
-   "tuneId": "moose-the-mooche",
-   "artistIds": [
-    "charlie-parker",
-    "miles-davis"
+    "charlie-parker"
    ],
    "albumId": "the-complete-savoy-dial-master-takes",
    "key": null,
@@ -24806,7 +26383,7 @@
    "albumId": "night-train-oscar-peterson-trio",
    "key": null,
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/9nabm6cmesnhsjbb0uszq/Night-Train-Oscar-Peterson.mp3?rlkey=xu01lysrxsw607utmdy1g2av6&st=z1kb4tej&dl=0"
+   "melody": null
   },
   {
    "id": "night-train::the-definitive-collection::jimmy-smith+wes-montgomery",
@@ -24875,7 +26452,7 @@
    "albumId": "the-complete-savoy-dial-master-takes",
    "key": null,
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/d6c1oepswnlzozjv1cc3p/Nows-the-time-Charlie-Parker.mp3?rlkey=wifv8bzw7dn9km3hu8x18k5y4&st=quwf50v3&dl=0"
+   "melody": null
   },
   {
    "id": "oleo::another-side-of-john-coltrane::john-coltrane+miles-davis-quintet",
@@ -24994,23 +26571,23 @@
    "melody": null
   },
   {
-   "id": "oleo::oleo::grant-green",
+   "id": "oleo::oleo-album::grant-green",
    "tuneId": "oleo",
    "artistIds": [
     "grant-green"
    ],
-   "albumId": "oleo",
+   "albumId": "oleo-album",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "oleo::oleo::sonny-rollins",
+   "id": "oleo::oleo-album::sonny-rollins",
    "tuneId": "oleo",
    "artistIds": [
     "sonny-rollins"
    ],
-   "albumId": "oleo",
+   "albumId": "oleo-album",
    "key": null,
    "bpm": 112,
    "melody": null
@@ -25177,13 +26754,13 @@
    "melody": null
   },
   {
-   "id": "on-green-dolphin-street::on-green-dolphin-street::bill-evans+philly-joe-jones",
+   "id": "on-green-dolphin-street::on-green-dolphin-street-album::bill-evans+philly-joe-jones",
    "tuneId": "on-green-dolphin-street",
    "artistIds": [
     "bill-evans",
     "philly-joe-jones"
    ],
-   "albumId": "on-green-dolphin-street",
+   "albumId": "on-green-dolphin-street-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25381,7 +26958,7 @@
    "albumId": "the-composer-of-desafinado-plays",
    "key": "A",
    "bpm": null,
-   "melody": "https://www.dropbox.com/scl/fi/vu7k33b4wyvng0c9z4gr2/Once-I-Loved-Jobim.mp3?rlkey=uauzt07tr9oupxhqoenuc36ad&st=epx82553&dl=0"
+   "melody": null
   },
   {
    "id": "once-i-loved::the-trio-cedar-walton::cedar-walton",
@@ -25589,12 +27166,12 @@
    "melody": null
   },
   {
-   "id": "ornithology::ornithology::sonny-stitt",
+   "id": "ornithology::ornithology-album::sonny-stitt",
    "tuneId": "ornithology",
    "artistIds": [
     "sonny-stitt"
    ],
-   "albumId": "ornithology",
+   "albumId": "ornithology-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25644,46 +27221,35 @@
    "melody": null
   },
   {
-   "id": "passport::no-album::barry-harris",
+   "id": "passport::breakin-it-up::barry-harris",
    "tuneId": "passport",
    "artistIds": [
     "barry-harris"
    ],
-   "albumId": null,
+   "albumId": "breakin-it-up",
    "key": null,
-   "bpm": 89,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "passport::no-album::charlie-parker",
+   "id": "passport::unheard-bird-the-unheard-takes-of-charlie-parker::charlie-parker",
    "tuneId": "passport",
    "artistIds": [
     "charlie-parker"
    ],
-   "albumId": null,
+   "albumId": "unheard-bird-the-unheard-takes-of-charlie-parker",
    "key": null,
-   "bpm": 99,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "passport::no-album::charlie-parker",
-   "tuneId": "passport",
-   "artistIds": [
-    "charlie-parker"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 103,
-   "melody": null
-  },
-  {
-   "id": "pfrancing::phil-harper::phil-harper+massimo-farao-trio",
+   "id": "pfrancing::phil-harper-album::phil-harper+massimo-farao-trio",
    "tuneId": "pfrancing",
    "artistIds": [
     "phil-harper",
     "massimo-farao-trio"
    ],
-   "albumId": "phil-harper",
+   "albumId": "phil-harper-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25700,14 +27266,14 @@
    "melody": null
   },
   {
-   "id": "pfrancing::someday-my-prince-will-come::miles-davis+hank-mobley+wynton-kelly",
+   "id": "pfrancing::someday-my-prince-will-come-album::miles-davis+hank-mobley+wynton-kelly",
    "tuneId": "pfrancing",
    "artistIds": [
     "miles-davis",
     "hank-mobley",
     "wynton-kelly"
    ],
-   "albumId": "someday-my-prince-will-come",
+   "albumId": "someday-my-prince-will-come-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25724,12 +27290,12 @@
    "melody": null
   },
   {
-   "id": "polka-dots-and-moonbeams::no-album::wes-montgomery",
+   "id": "polka-dots-and-moonbeams::the-incredible-jazz-guitar-of-wes-montgomery::wes-montgomery",
    "tuneId": "polka-dots-and-moonbeams",
    "artistIds": [
     "wes-montgomery"
    ],
-   "albumId": null,
+   "albumId": "the-incredible-jazz-guitar-of-wes-montgomery",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25742,16 +27308,16 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 129,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "prince-albert::no-album::art-blakey",
+   "id": "prince-albert::at-the-cafe-bohemia-vol-1::art-blakey",
    "tuneId": "prince-albert",
    "artistIds": [
     "art-blakey"
    ],
-   "albumId": null,
+   "albumId": "at-the-cafe-bohemia-vol-1",
    "key": null,
    "bpm": null,
    "melody": null
@@ -25779,129 +27345,47 @@
    "melody": null
   },
   {
-   "id": "rhythm-a-ning::no-album::ari-hoenig",
+   "id": "rhythm-a-ning::gettin-together::conte-candoli",
    "tuneId": "rhythm-a-ning",
    "artistIds": [
-    "ari-hoenig"
+    "conte-candoli"
    ],
-   "albumId": null,
+   "albumId": "gettin-together",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "rhythm-a-ning::no-album::art-blakey+thelonious-monk",
+   "id": "rhythm-a-ning::les-liaisons-dangereuses-1960::barney-wilen",
    "tuneId": "rhythm-a-ning",
    "artistIds": [
-    "art-blakey",
-    "thelonious-monk"
+    "barney-wilen"
    ],
-   "albumId": null,
+   "albumId": "les-liaisons-dangereuses-1960",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "rhythm-a-ning::no-album::art-pepper",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "art-pepper"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 144,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::no-album::bobby-broom",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "bobby-broom"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 136,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::no-album::branford-marsalis",
+   "id": "rhythm-a-ning::metamorphosen::branford-marsalis",
    "tuneId": "rhythm-a-ning",
    "artistIds": [
     "branford-marsalis"
    ],
-   "albumId": null,
+   "albumId": "metamorphosen",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "rhythm-a-ning::no-album::cedar-walton",
+   "id": "rhythm-a-ning::no-album::johnny-griffin",
    "tuneId": "rhythm-a-ning",
    "artistIds": [
-    "cedar-walton"
+    "johnny-griffin"
    ],
    "albumId": null,
    "key": null,
    "bpm": null,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::no-album::herbie-hancock",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "herbie-hancock"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 108,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::no-album::kenny-barron",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "kenny-barron"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 129,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::no-album::thelonious-monk",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "thelonious-monk"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 136,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::rhythm-a-ning-gil-evans::gil-evans+laurent-cugny",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "gil-evans",
-    "laurent-cugny"
-   ],
-   "albumId": "rhythm-a-ning-gil-evans",
-   "key": null,
-   "bpm": 152,
-   "melody": null
-  },
-  {
-   "id": "rhythm-a-ning::rhythm-a-ning-live::johnny-griffin+herve-sellin+reggie-johnson+doug-sides",
-   "tuneId": "rhythm-a-ning",
-   "artistIds": [
-    "johnny-griffin",
-    "herve-sellin",
-    "reggie-johnson",
-    "doug-sides"
-   ],
-   "albumId": "rhythm-a-ning-live",
-   "key": null,
-   "bpm": 112,
    "melody": null
   },
   {
@@ -25913,6 +27397,17 @@
    "albumId": "the-jumpin-blues",
    "key": null,
    "bpm": 117,
+   "melody": null
+  },
+  {
+   "id": "rhythm-a-ning::the-quartet-live-chicago-1982::freddie-hubbard",
+   "tuneId": "rhythm-a-ning",
+   "artistIds": [
+    "freddie-hubbard"
+   ],
+   "albumId": "the-quartet-live-chicago-1982",
+   "key": null,
+   "bpm": null,
    "melody": null
   },
   {
@@ -25941,6 +27436,50 @@
    "melody": null
   },
   {
+   "id": "round-midnight::art-pepper-eleven-modern-jazz-classics::art-pepper",
+   "tuneId": "round-midnight",
+   "artistIds": [
+    "art-pepper"
+   ],
+   "albumId": "art-pepper-eleven-modern-jazz-classics",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "round-midnight::misterioso::johnny-griffin",
+   "tuneId": "round-midnight",
+   "artistIds": [
+    "johnny-griffin"
+   ],
+   "albumId": "misterioso",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "round-midnight::round-midnight-original-motion-picture-soundtrack::dexter-gordon",
+   "tuneId": "round-midnight",
+   "artistIds": [
+    "dexter-gordon"
+   ],
+   "albumId": "round-midnight-original-motion-picture-soundtrack",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "round-midnight::so-what-eddie-henderson::bob-berg",
+   "tuneId": "round-midnight",
+   "artistIds": [
+    "bob-berg"
+   ],
+   "albumId": "so-what-eddie-henderson",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "salt-peanuts::no-album::dizzy-gillespie",
    "tuneId": "salt-peanuts",
    "artistIds": [
@@ -25948,7 +27487,7 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 103,
+   "bpm": null,
    "melody": null
   },
   {
@@ -25990,12 +27529,12 @@
    "melody": null
   },
   {
-   "id": "someday-my-prince-will-come::no-album::miles-davis",
+   "id": "someday-my-prince-will-come::someday-my-prince-will-come-album::miles-davis",
    "tuneId": "someday-my-prince-will-come",
    "artistIds": [
     "miles-davis"
    ],
-   "albumId": null,
+   "albumId": "someday-my-prince-will-come-album",
    "key": null,
    "bpm": null,
    "melody": null
@@ -26012,6 +27551,54 @@
    "melody": null
   },
   {
+   "id": "spain::duet-chick-corea-hiromi::chick-corea+hiromi",
+   "tuneId": "spain",
+   "artistIds": [
+    "chick-corea",
+    "hiromi"
+   ],
+   "albumId": "duet-chick-corea-hiromi",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "spain::light-as-a-feather::chick-corea",
+   "tuneId": "spain",
+   "artistIds": [
+    "chick-corea"
+   ],
+   "albumId": "light-as-a-feather",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "spain::no-album::chick-corea+eric-owens+terence-blanchard",
+   "tuneId": "spain",
+   "artistIds": [
+    "chick-corea",
+    "eric-owens",
+    "terence-blanchard"
+   ],
+   "albumId": null,
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
+   "id": "spain::rendezvous-in-new-york::chick-corea+gonzalo-rubalcaba",
+   "tuneId": "spain",
+   "artistIds": [
+    "chick-corea",
+    "gonzalo-rubalcaba"
+   ],
+   "albumId": "rendezvous-in-new-york",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "steeple-chase::no-album::charlie-parker",
    "tuneId": "steeple-chase",
    "artistIds": [
@@ -26023,17 +27610,6 @@
    "melody": null
   },
   {
-   "id": "steeple-chase::no-album::christian-mcbride",
-   "tuneId": "steeple-chase",
-   "artistIds": [
-    "christian-mcbride"
-   ],
-   "albumId": null,
-   "key": null,
-   "bpm": 152,
-   "melody": null
-  },
-  {
    "id": "steeple-chase::no-album::jackie-mclean",
    "tuneId": "steeple-chase",
    "artistIds": [
@@ -26041,18 +27617,29 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 117,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "steeple-chase::no-album::phil-woods",
+   "id": "steeple-chase::parkers-mood::christian-mcbride",
+   "tuneId": "steeple-chase",
+   "artistIds": [
+    "christian-mcbride"
+   ],
+   "albumId": "parkers-mood",
+   "key": null,
+   "bpm": 152,
+   "melody": null
+  },
+  {
+   "id": "steeple-chase::sugan::phil-woods",
    "tuneId": "steeple-chase",
    "artistIds": [
     "phil-woods"
    ],
-   "albumId": null,
+   "albumId": "sugan",
    "key": null,
-   "bpm": 108,
+   "bpm": null,
    "melody": null
   },
   {
@@ -26302,10 +27889,10 @@
    "melody": null
   },
   {
-   "id": "stella-by-starlight::proof-positive::j-j-johnson",
+   "id": "stella-by-starlight::proof-positive::jj-johnson",
    "tuneId": "stella-by-starlight",
    "artistIds": [
-    "j-j-johnson"
+    "jj-johnson"
    ],
    "albumId": "proof-positive",
    "key": "Eb",
@@ -26773,6 +28360,17 @@
    "melody": null
   },
   {
+   "id": "straight-no-chaser::after-hours-dexter-gordon::dexter-gordon",
+   "tuneId": "straight-no-chaser",
+   "artistIds": [
+    "dexter-gordon"
+   ],
+   "albumId": "after-hours-dexter-gordon",
+   "key": null,
+   "bpm": null,
+   "melody": null
+  },
+  {
    "id": "straight-no-chaser::different-drummer::buddy-rich",
    "tuneId": "straight-no-chaser",
    "artistIds": [
@@ -26861,12 +28459,12 @@
    "melody": null
   },
   {
-   "id": "straighten-up-and-fly-right::good-night-and-good-luck-ost::dianne-reeves",
+   "id": "straighten-up-and-fly-right::good-night-good-luck::dianne-reeves",
    "tuneId": "straighten-up-and-fly-right",
    "artistIds": [
     "dianne-reeves"
    ],
-   "albumId": "good-night-and-good-luck-ost",
+   "albumId": "good-night-good-luck",
    "key": null,
    "bpm": null,
    "melody": null
@@ -26925,18 +28523,18 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 129,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "tea-for-two::no-album::ella-fitzgerald",
+   "id": "tea-for-two::ella-and-basie::ella-fitzgerald",
    "tuneId": "tea-for-two",
    "artistIds": [
     "ella-fitzgerald"
    ],
-   "albumId": null,
+   "albumId": "ella-and-basie",
    "key": null,
-   "bpm": 136,
+   "bpm": null,
    "melody": null
   },
   {
@@ -26956,27 +28554,27 @@
    "melody": null
   },
   {
-   "id": "tenor-madness::tenor-madness::sonny-rollins-quartet+john-coltrane",
+   "id": "tenor-madness::tenor-madness-album::sonny-rollins-quartet+john-coltrane",
    "tuneId": "tenor-madness",
    "artistIds": [
     "sonny-rollins-quartet",
     "john-coltrane"
    ],
-   "albumId": "tenor-madness",
+   "albumId": "tenor-madness-album",
    "key": null,
    "bpm": null,
    "melody": null
   },
   {
-   "id": "the-days-of-wine-and-roses::no-album::joe-pass+ella-fitzgerald",
+   "id": "the-days-of-wine-and-roses::easy-living::joe-pass+ella-fitzgerald",
    "tuneId": "the-days-of-wine-and-roses",
    "artistIds": [
     "joe-pass",
     "ella-fitzgerald"
    ],
-   "albumId": null,
+   "albumId": "easy-living",
    "key": null,
-   "bpm": 103,
+   "bpm": null,
    "melody": null
   },
   {
@@ -27124,16 +28722,16 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 96,
+   "bpm": null,
    "melody": null
   },
   {
-   "id": "topsy::paul-bley::paul-bley",
+   "id": "topsy::paul-bley-album::paul-bley",
    "tuneId": "topsy",
    "artistIds": [
     "paul-bley"
    ],
-   "albumId": "paul-bley",
+   "albumId": "paul-bley-album",
    "key": null,
    "bpm": 99,
    "melody": null
@@ -27202,7 +28800,7 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 136,
+   "bpm": null,
    "melody": null
   },
   {
@@ -27294,14 +28892,14 @@
    "melody": null
   },
   {
-   "id": "woodchoppers-ball::woody-herman-orchestra-reunion-at-northsea::joe-lovano+frank-tiberi+john-riley",
+   "id": "woodchoppers-ball::woody-herman-orchestra-reunion-at-newport::joe-lovano+frank-tiberi+john-riley",
    "tuneId": "woodchoppers-ball",
    "artistIds": [
     "joe-lovano",
     "frank-tiberi",
     "john-riley"
    ],
-   "albumId": "woody-herman-orchestra-reunion-at-northsea",
+   "albumId": "woody-herman-orchestra-reunion-at-newport",
    "key": null,
    "bpm": null,
    "melody": null
@@ -27314,7 +28912,7 @@
    ],
    "albumId": null,
    "key": null,
-   "bpm": 103,
+   "bpm": null,
    "melody": null
   }
  ]

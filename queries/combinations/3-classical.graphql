@@ -1,0 +1,24 @@
+# Combination: CLASSICAL only (:4003)
+# A work, its movements, and the movement recordings. Work, Movement and
+# MovementRecording are all classical-owned. Note we do NOT select
+# performer.name — that would resolve the Artist through the artists subgraph.
+# Selecting only classical-owned scalars keeps the plan inside classical.
+query ClassicalOnly {
+  work(id: "bwv-1001") {
+    id
+    composer
+    title
+    bwv
+    movements {
+      id
+      name
+      key
+      recordings {
+        label
+        character
+        notes
+        bpm
+      }
+    }
+  }
+}

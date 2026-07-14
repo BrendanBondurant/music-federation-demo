@@ -246,6 +246,13 @@
    "style": null
   },
   {
+   "id": "angel-romero",
+   "name": "Ángel Romero",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "anita-oday",
    "name": "Anita O'Day",
    "instrument": "vocals",
@@ -953,6 +960,13 @@
    "style": null
   },
   {
+   "id": "brian-bromberg",
+   "name": "Brian Bromberg",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "britt-woodman",
    "name": "Britt Woodman",
    "instrument": "trombone",
@@ -1380,6 +1394,13 @@
    "style": null
   },
   {
+   "id": "christian-garros",
+   "name": "Christian Garros",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "christian-mcbride",
    "name": "Christian McBride",
    "instrument": "bass",
@@ -1447,6 +1468,13 @@
    "name": "Clarence Penn",
    "instrument": "drums",
    "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "classical-jazz-quartet",
+   "name": "Classical Jazz Quartet",
+   "instrument": "jazz quartet",
+   "type": "ENSEMBLE",
    "style": null
   },
   {
@@ -1541,8 +1569,8 @@
    "style": null
   },
   {
-   "id": "corey-gnecco",
-   "name": "Corey Gnecco",
+   "id": "corey-gordon",
+   "name": "Corey Gordon",
    "instrument": "drums",
    "type": "PERSON",
    "style": null
@@ -1711,7 +1739,7 @@
   {
    "id": "dave-liebman",
    "name": "Dave Liebman",
-   "instrument": "tenor sax",
+   "instrument": "tenor & soprano sax",
    "type": "PERSON",
    "style": null
   },
@@ -1758,9 +1786,9 @@
    "style": null
   },
   {
-   "id": "david-liebman",
-   "name": "David Liebman",
-   "instrument": "soprano saxophone",
+   "id": "david-kikoski",
+   "name": "David Kikoski",
+   "instrument": "piano",
    "type": "PERSON",
    "style": null
   },
@@ -2073,6 +2101,13 @@
    "style": null
   },
   {
+   "id": "ed-howard",
+   "name": "Ed Howard",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "ed-shaughnessy",
    "name": "Ed Shaughnessy",
    "instrument": "drums",
@@ -2129,6 +2164,13 @@
    "style": null
   },
   {
+   "id": "eddie-henderson",
+   "name": "Eddie Henderson",
+   "instrument": "trumpet",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "eddie-higgins",
    "name": "Eddie Higgins",
    "instrument": "piano",
@@ -2167,6 +2209,13 @@
    "id": "eddie-sauter",
    "name": "Eddie Sauter",
    "instrument": "arranger",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eddie-south",
+   "name": "Eddie South",
+   "instrument": "violin",
    "type": "PERSON",
    "style": null
   },
@@ -2265,6 +2314,13 @@
    "id": "eric-kloss",
    "name": "Eric Kloss",
    "instrument": "soprano saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "eric-owens",
+   "name": "Eric Owens",
+   "instrument": "vocals",
    "type": "PERSON",
    "style": null
   },
@@ -2398,6 +2454,13 @@
    "id": "fiorenzo-carpi",
    "name": "Fiorenzo Carpi",
    "instrument": "arranger/conductor",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "flora-purim",
+   "name": "Flora Purim",
+   "instrument": "vocals",
    "type": "PERSON",
    "style": null
   },
@@ -2815,6 +2878,13 @@
    "style": null
   },
   {
+   "id": "gonzalo-rubalcaba",
+   "name": "Gonzalo Rubalcaba",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "goran-sollscher",
    "name": "Göran Söllscher",
    "instrument": "guitar",
@@ -2887,6 +2957,13 @@
   {
    "id": "gunnar-johnson",
    "name": "Gunnar Johnson",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "guy-pedersen",
+   "name": "Guy Pedersen",
    "instrument": "bass",
    "type": "PERSON",
    "style": null
@@ -3102,6 +3179,13 @@
    "style": null
   },
   {
+   "id": "hiromi",
+   "name": "Hiromi",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "hopkinson-smith",
    "name": "Hopkinson Smith",
    "instrument": "lute",
@@ -3207,13 +3291,6 @@
    "style": null
   },
   {
-   "id": "j-j-johnson",
-   "name": "J J Johnson",
-   "instrument": "trombone",
-   "type": "PERSON",
-   "style": null
-  },
-  {
    "id": "jack-dejohnette",
    "name": "Jack DeJohnette",
    "instrument": "drums",
@@ -3260,6 +3337,20 @@
    "name": "Jaco Pastorius",
    "instrument": "bass",
    "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jacques-loussier",
+   "name": "Jacques Loussier",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "jacques-loussier-trio",
+   "name": "Jacques Loussier Trio",
+   "instrument": "piano trio",
+   "type": "ENSEMBLE",
    "style": null
   },
   {
@@ -3721,6 +3812,13 @@
    "id": "joe-coughlin",
    "name": "Joe Coughlin",
    "instrument": "vocals",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "joe-farrell",
+   "name": "Joe Farrell",
+   "instrument": "saxophone",
    "type": "PERSON",
    "style": null
   },
@@ -4215,13 +4313,6 @@
    "style": null
   },
   {
-   "id": "julian-bromberg",
-   "name": "Julian Bromberg",
-   "instrument": "saxophone",
-   "type": "PERSON",
-   "style": null
-  },
-  {
    "id": "julian-lage",
    "name": "Julian Lage",
    "instrument": "guitar",
@@ -4586,9 +4677,23 @@
    "style": null
   },
   {
+   "id": "lars-sjosten",
+   "name": "Lars Sjösten",
+   "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "laurent-cugny",
    "name": "Laurent Cugny",
    "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "laurindo-almeida",
+   "name": "Laurindo Almeida",
+   "instrument": "guitar",
    "type": "PERSON",
    "style": null
   },
@@ -4812,7 +4917,7 @@
   {
    "id": "luis-bacalov",
    "name": "Luis Bacalov",
-   "instrument": "arranger/composer",
+   "instrument": "composer",
    "type": "PERSON",
    "style": null
   },
@@ -4918,13 +5023,6 @@
    "id": "mark-eisenman",
    "name": "Mark Eisenman",
    "instrument": "piano",
-   "type": "PERSON",
-   "style": null
-  },
-  {
-   "id": "marshal-royal",
-   "name": "Marshal Royal",
-   "instrument": "sax",
    "type": "PERSON",
    "style": null
   },
@@ -5157,7 +5255,7 @@
    "name": "Miles Davis",
    "instrument": "trumpet",
    "type": "PERSON",
-   "style": "modal jazz"
+   "style": null
   },
   {
    "id": "miles-davis-quintet",
@@ -5351,7 +5449,7 @@
   {
    "id": "nathaniel-young",
    "name": "Nathaniel Young",
-   "instrument": "drums",
+   "instrument": "sax",
    "type": "PERSON",
    "style": null
   },
@@ -5433,8 +5531,8 @@
    "style": null
   },
   {
-   "id": "norbert-durr",
-   "name": "Norbert Dürr",
+   "id": "norbert-domling",
+   "name": "Norbert Dömling",
    "instrument": "bass",
    "type": "PERSON",
    "style": null
@@ -5505,6 +5603,13 @@
   {
    "id": "oz-noy",
    "name": "Oz Noy",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "paco-de-lucia",
+   "name": "Paco de Lucía",
    "instrument": "guitar",
    "type": "PERSON",
    "style": null
@@ -5669,6 +5774,20 @@
    "instrument": "vocals",
    "type": "PERSON",
    "style": "swing"
+  },
+  {
+   "id": "pelle-hulten",
+   "name": "Pelle Hultén",
+   "instrument": "drums",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "pepe-romero",
+   "name": "Pepe Romero",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
   },
   {
    "id": "pepper-adams",
@@ -6028,6 +6147,13 @@
    "style": null
   },
   {
+   "id": "regino-sainz-de-la-maza",
+   "name": "Regino Sáinz de la Maza",
+   "instrument": "guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "rein-de-graaf",
    "name": "Rein de Graaf",
    "instrument": "piano",
@@ -6164,6 +6290,13 @@
    "id": "roland-hanna",
    "name": "Roland Hanna",
    "instrument": "piano",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "rolf-ericson",
+   "name": "Rolf Ericson",
+   "instrument": "trumpet",
    "type": "PERSON",
    "style": null
   },
@@ -6637,9 +6770,23 @@
    "style": null
   },
   {
+   "id": "stanley-clarke",
+   "name": "Stanley Clarke",
+   "instrument": "bass",
+   "type": "PERSON",
+   "style": null
+  },
+  {
    "id": "stanley-turrentine",
    "name": "Stanley Turrentine",
    "instrument": "tenor saxophone",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "stefon-harris",
+   "name": "Stefon Harris",
+   "instrument": "vibes",
    "type": "PERSON",
    "style": null
   },
@@ -6738,6 +6885,13 @@
    "id": "stochelo-rosenberg",
    "name": "Stochelo Rosenberg",
    "instrument": "lead guitar",
+   "type": "PERSON",
+   "style": null
+  },
+  {
+   "id": "sture-nordin",
+   "name": "Sture Nordin",
+   "instrument": "bass",
    "type": "PERSON",
    "style": null
   },
@@ -6906,6 +7060,13 @@
    "id": "the-rosenberg-trio",
    "name": "The Rosenberg Trio",
    "instrument": "ensemble",
+   "type": "ENSEMBLE",
+   "style": null
+  },
+  {
+   "id": "the-swingle-singers",
+   "name": "The Swingle Singers",
+   "instrument": "vocal ensemble",
    "type": "ENSEMBLE",
    "style": null
   },

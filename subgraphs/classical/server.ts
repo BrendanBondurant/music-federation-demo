@@ -16,11 +16,11 @@ const seed = JSON.parse(readFileSync(join(here, "..", "..", "seed", "classical.j
   movementRecordings: MovementRecording[];
 };
 
-const workByBwv = new Map(seed.works.map((w) => [w.bwv, w]));
+const workById = new Map(seed.works.map((w) => [w.id, w]));
 const movementById = new Map(seed.movements.map((m) => [m.id, m]));
-const movementsByBwv = new Map<number, Movement[]>();
+const movementsByWork = new Map<string, Movement[]>();
 for (const m of seed.movements) {
-  (movementsByBwv.get(m.bwv) ?? movementsByBwv.set(m.bwv, []).get(m.bwv)!).push(m);
+  (movementsByWork.get(m.workId) ?? movementsByWork.set(m.workId, []).get(m.workId)!).push(m);
 }
 const recordingsByMovement = new Map<string, MovementRecording[]>();
 const recordingsByPerformer = new Map<string, MovementRecording[]>();
@@ -33,23 +33,38 @@ startSubgraph({
   name: "classical",
   port: 4003,
   sdl,
-  entityTypes: ["Artist"],
-  resolveEntity: (ref) => ({ __typename: "Artist", id: String(ref.id) }),
+  entityTypes: ["Artist", "Tune", "Work"],
+  resolveEntity: (ref) => {
+    if (ref.__typename === "Tune") return { __typename: "Tune", id: String(ref.id) };
+    if (ref.__typename === "Work") return workById.get(String(ref.id)) ?? null;
+    return { __typename: "Artist", id: String(ref.id) };
+  },
   resolvers: {
     Query: {
-      work: (_: unknown, args: { bwv: number }) => workByBwv.get(args.bwv) ?? null,
-      works: () => seed.works,
+      work: (_: unknown, args: { id: string }) => workById.get(args.id) ?? null,
+      works: (_: unknown, args: { composer?: string }) =>
+        args.composer ? seed.works.filter((w) => w.composer === args.composer) : seed.works,
     },
     Artist: {
       bachRecordings: (a: { id: string }) => recordingsByPerformer.get(a.id) ?? [],
     },
+    // Classical subgraph contributes movementRecordings to the catalog's Tune
+    // entity. For crossover BWV pieces, the movement id and tune id are the
+    // same slug (e.g. "bwv-147-jesu-joy-of-mans-desiring"), so the lookup
+    // resolves naturally. Pure jazz tunes return [].
+    Tune: {
+      movementRecordings: (t: { id: string }) => recordingsByMovement.get(t.id) ?? [],
+    },
     Work: {
       movements: (w: Work) =>
-        (movementsByBwv.get(w.bwv) ?? []).slice().sort((a, b) => a.order - b.order),
+        (movementsByWork.get(w.id) ?? []).slice().sort((a, b) => a.order - b.order),
     },
     Movement: {
-      work: (m: Movement) => workByBwv.get(m.bwv)!,
+      work: (m: Movement) => workById.get(m.workId)!,
       recordings: (m: Movement) => recordingsByMovement.get(m.id) ?? [],
+      // For crossover movements, returns the catalog Tune entity by the same id.
+      // The router fetches actual Tune data from the catalog subgraph.
+      tune: (m: Movement) => ({ __typename: "Tune", id: m.id }),
     },
     MovementRecording: {
       movement: (r: MovementRecording) => movementById.get(r.movementId)!,
