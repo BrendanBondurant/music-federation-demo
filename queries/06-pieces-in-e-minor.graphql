@@ -1,0 +1,33 @@
+# Interface search: the @interfaceObject payoff.
+# One field returns Movement and Tune mixed -- BWV 996 next to Nardis -- and
+# every result carries recordings even though the discography subgraph has no
+# idea Movement or Tune exist.
+query EverythingInEMinor {
+  pieces(musicalKey: "E minor") {
+    __typename
+    title
+    genre
+    ... on Movement {
+      work {
+        title
+        catalogNumber
+      }
+    }
+    ... on Tune {
+      composer {
+        name
+      }
+    }
+    recordings {
+      performers {
+        artist {
+          name
+        }
+      }
+      album {
+        title
+      }
+      source
+    }
+  }
+}

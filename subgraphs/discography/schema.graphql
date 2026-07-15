@@ -1,0 +1,103 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@interfaceObject", "@provides", "@external"])
+
+"""
+The discography subgraph owns who recorded what, where: albums, recordings,
+and credits. It references pieces and artists it does not own, so almost every
+query through it produces a chained plan across all three subgraphs.
+"""
+type Album @key(fields: "id") {
+  "Slug id derived from the album title."
+  id: ID!
+  "Album title."
+  title: String!
+  "Release year. Around 40 albums legitimately have no year in the source data."
+  year: Int
+  "Record label. Null when unknown."
+  label: String
+  """
+  Who played what on THIS record, from the album's Personnel section.
+  Instrument-per-album lives here, not on identity: the same person plays a
+  different role on every record.
+  """
+  credits: [Credit!]!
+  "Recordings on this album, in track order. Covers only pieces tracked in the vault, so most track lists are partial."
+  tracks: [Recording!]!
+}
+
+"""
+A single credit: one artist and their role. The artist's name is denormalized
+into this subgraph's data, so @provides lets the router skip the hop to the
+artists subgraph when only the name is selected.
+"""
+type Credit {
+  "The credited artist."
+  artist: Artist! @provides(fields: "name")
+  "Role as written ('cajón, tinaja', 'arranger, conductor'). Null when unstated."
+  role: String
+}
+
+"""
+One tracked performance of a piece. The id is synthetic (piece + album/source +
+performers, numbered on collision), so it survives two takes of one tune on a
+live album and gives later subgraphs a stable key to extend.
+"""
+type Recording @key(fields: "id") {
+  "Synthetic id: '<pieceId>::<albumId|source|no-album>::<performers>[::take-n]'."
+  id: ID!
+  "The piece performed: a Tune or a Movement, resolved by the catalog subgraph."
+  piece: Piece!
+  "The album this recording appears on. Null for recordings known only from a non-album source."
+  album: Album
+  "Performing artists on this recording, with roles when stated."
+  performers: [Credit!]!
+  "Key this performance was played in ('Gm'). Null when not noted."
+  performanceKey: String
+  "Non-album source as written ('YouTube', 'Netherlands Bach Society', an orchestra credit). Null when the recording has an album."
+  source: String
+  "Free-text note on the performance ('Premiere · Dedicatee; first recording'). Null when absent."
+  notes: String
+  "Tempo in beats per minute. Null when not noted."
+  bpm: Int
+}
+
+"""
+The Piece entity interface is owned by the catalog subgraph. Declaring it here
+as an @interfaceObject contributes `recordings` to every type that implements
+it there -- Movement and Tune both get the field without this subgraph knowing
+either type exists.
+"""
+type Piece @key(fields: "id") @interfaceObject {
+  "Shared slug @key."
+  id: ID!
+  "Tracked performances of this piece, across albums and sources."
+  recordings: [Recording!]!
+}
+
+"""
+The discography does not own Artist identity. It contributes discography edges
+to the Artist entity owned by the artists subgraph.
+"""
+type Artist @key(fields: "id") {
+  "Shared slug @key; identity lives in the artists subgraph."
+  id: ID!
+  "Display name. Resolved by the artists subgraph; only @provides paths read the denormalized copy here."
+  name: String! @external
+  "Albums this artist appears on, as principal artist or personnel."
+  albums: [Album!]!
+  "Every recording this artist plays on, across albums and sources."
+  recordings(
+    "Slug id of a piece to filter by ('oleo'); omit for every recording."
+    piece: ID
+  ): [Recording!]!
+}
+
+"Root entry points owned by the discography subgraph."
+type Query {
+  "Look up one album by slug id. Null when no album has that id."
+  album(
+    "Slug id of the album to fetch, e.g. 'zyryab-album'."
+    id: ID!
+  ): Album
+  "Every album in the discography."
+  albums: [Album!]!
+}

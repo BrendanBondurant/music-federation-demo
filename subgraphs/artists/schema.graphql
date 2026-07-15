@@ -1,28 +1,66 @@
-extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@shareable"])
 
 """
-A person or ensemble. The id slug is the shared @key: the same person
-resolves across the artists, catalog, and classical subgraphs.
+A person or ensemble. The id slug is the shared @key: the same person resolves
+across the artists, catalog, and discography subgraphs. Composers named only in
+tune/work frontmatter exist here too, as name-only records, so composer edges
+land in the same pool as performers -- there is no separate composer type.
 """
 type Artist @key(fields: "id") {
   "Slug id derived from the name; the shared @key across all three subgraphs."
   id: ID!
-  "Display name, e.g. 'Jim Hall'."
-  name: String!
-  "Primary instrument, lowercase ('guitar', 'tenor sax'; 'ensemble' for groups). Null when unknown."
-  instrument: String
+  "Display name, e.g. 'Jim Hall'. @shareable so the discography subgraph can @provide it on credits."
+  name: String! @shareable
   "Whether this artist is a single person or an ensemble."
-  type: ArtistType!
-  "Broad stylistic tag. Sparse in the source data; usually null."
-  style: String
+  kind: ArtistKind!
+  "Instruments played, lowercase ('guitar', 'tenor sax'). Empty for ensembles and for name-only composer records."
+  instruments: [String!]!
+  "Stylistic tags ('flamenco', 'cool jazz'). Sparse in the source data; usually empty."
+  styles: [String!]!
+  "Short prose profile from the vault. Null for most artists."
+  bio: String
+  "Interpretive axes (clarity / tone color / risk). Only classical performers with a written profile have one."
+  profile: InterpretiveProfile
+  "Members of this ensemble, when the vault states a lineup. Empty for people and for most groups."
+  members: [Membership!]!
+  "Ensembles this artist is a stated member of. Empty for most artists."
+  memberOf: [Membership!]!
 }
 
 "Whether an Artist is one individual or a group credited as a single act."
-enum ArtistType {
+enum ArtistKind {
   "A single individual."
   PERSON
   "A group credited as one artist (e.g. the Modern Jazz Quartet)."
   ENSEMBLE
+}
+
+"""
+One stated group-membership edge. Lineups come from a group file's Personnel
+section and are only recorded when stable enough to state as fact, so most
+groups have none.
+"""
+type Membership {
+  "The ensemble."
+  group: Artist!
+  "The member."
+  member: Artist!
+  "Role in the group as written ('tenor sax'). Null when unstated."
+  role: String
+}
+
+"""
+Interpretive-axes summary for a classical performer, parsed from the vault's
+profile notes. Values are free text as written ('High', 'Medium–High', 'Not
+explicit'), not a scale.
+"""
+type InterpretiveProfile {
+  "How clean and articulate the playing reads. Null when the notes don't say."
+  clarity: String
+  "Timbral range and color. Null when the notes don't say."
+  toneColor: String
+  "How far interpretation strays from the plain text. Null when the notes don't say."
+  risk: String
 }
 
 "Root entry points owned by the artists subgraph."

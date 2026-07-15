@@ -1,8 +1,8 @@
 # Doc gaps
 
 Friction found while building this demo against the Cosmo docs (the
-`docs-website` repo as of 2026-07-03). Format: what I needed, what the docs
-said, what actually worked.
+`docs-website` repo; entries 1-6 as of 2026-07-03, entries 7-8 as of
+2026-07-14). Format: what I needed, what the docs said, what actually worked.
 
 ## 1. Local composition + Docker router is not documented end to end
 
@@ -95,6 +95,48 @@ about the SDL contract. I wrote the schemas with
 import: ["@key"])` and composition worked first try, so the answer is
 "normal federation v2 SDL", but that is stated nowhere on the page.
 
+## 7. @interfaceObject has no directive page; entity interfaces live inside @key
+
+**Needed (2026-07-14, building the Piece entity interface):** how to declare an
+entity interface in one subgraph and contribute fields to it from another.
+
+**Docs:** every other federation directive used here (`@key`, `@provides`,
+`@external`, `@shareable`) has its own page under `federation/directives/`.
+`@interfaceObject` has only a table row in `federation-directives-index.mdx`
+and a "Supported" line in the compatibility matrix. The rules for entity
+interfaces themselves (defining subgraph must define every implementing type,
+implementers must repeat the interface's `@key`, key values must be unique
+across implementing types) are documented well -- but as a section of
+`federation/directives/key.mdx`, which you only find if you already know
+interfaces are a `@key` topic. The index row's one-liner is accurate but is
+the entire treatment of the directive that makes the pattern work.
+
+**Worked:** `interface Piece @key(fields: "id")` in the defining subgraph with
+both implementers repeating the key, `type Piece @key(fields: "id")
+@interfaceObject` in the contributing subgraph, exactly per the index row.
+A dedicated `@interfaceObject` page showing the two-subgraph pair (or a
+cross-link from the index row to the "Keys on Interfaces" section) would have
+saved the scavenger hunt.
+
+## 8. Composition with @interfaceObject but no entity interface is undefined
+
+**Needed (2026-07-14):** the publish order for a graph where subgraph C
+declares `type Piece @key @interfaceObject` against an entity interface owned
+by subgraph B -- i.e. does publishing C before B produce one of the "expected
+composition errors" the onboarding warns about?
+
+**Docs:** the directives index says using `@interfaceObject` while defining an
+implementing type in the same subgraph is a composition error, but says
+nothing about the entity interface being absent from the graph entirely.
+
+**Observed (wgc router compose, local):** artists + discography *without* the
+catalog subgraph composes with no error or warning; the `@interfaceObject`
+type behaves as a plain entity object until the interface-owning subgraph
+arrives. Convenient for incremental publishing, surprising for anyone
+expecting parity with the same-subgraph error case. One sentence on the index
+row (or the future `@interfaceObject` page) stating this is intentional would
+settle whether it can be relied on.
+
 ## Non-gaps worth recording
 
 - Publish order for incremental composition validity is documented well in
@@ -105,3 +147,8 @@ import: ["@key"])` and composition worked first try, so the answer is
   `cli/intro.mdx`.
 - The `wgc subgraph publish --routing-url` create-and-publish shortcut is
   clearly documented on the publish page.
+- `@provides` (as of 2026-07-14): `federation/directives/provides.mdx` states
+  both preconditions plainly -- provided fields must be `@external` in the
+  providing subgraph and `@shareable` (or key fields) where they are resolved.
+  Both requirements bit immediately (`Artist.name` needed `@shareable` in
+  artists, `@external` in discography) and the page had the answer both times.

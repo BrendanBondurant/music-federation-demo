@@ -1,0 +1,30 @@
+# Album deep-dive: reference chains in both directions.
+# Zyryab starts in discography, walks credits out to artist identity, and
+# walks tracks back into the catalog for the piece and its composer.
+query AlbumDeepDive {
+  album(id: "zyryab-album") {
+    title
+    year
+    label
+    credits {
+      artist {
+        name
+        instruments
+        styles
+      }
+      role
+    }
+    tracks {
+      piece {
+        title
+        genre
+        ... on Tune {
+          composer {
+            name
+          }
+        }
+      }
+      performanceKey
+    }
+  }
+}

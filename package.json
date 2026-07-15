@@ -9,7 +9,7 @@
     "seed": "tsx seeder/seed.ts",
     "dev:artists": "tsx subgraphs/artists/server.ts",
     "dev:catalog": "tsx subgraphs/catalog/server.ts",
-    "dev:classical": "tsx subgraphs/classical/server.ts",
+    "dev:discography": "tsx subgraphs/discography/server.ts",
     "compose": "bash scripts/compose.sh",
     "start": "bash scripts/start.sh",
     "start:cloud": "bash scripts/start-cloud.sh",

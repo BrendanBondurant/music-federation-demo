@@ -19,7 +19,7 @@ cleanup() {
 }
 trap cleanup EXIT
 
-for s in artists catalog classical; do
+for s in artists catalog discography; do
   npx tsx "subgraphs/$s/server.ts" &
   pids="$pids $!"
 done
@@ -44,7 +44,7 @@ if [ "$(uname -sm)" = "Darwin arm64" ]; then
 fi
 
 echo "Starting Cosmo Router on http://localhost:3002 (playground there too)."
-echo "Try queries/04-artists-catalog.graphql, then open the query-plan dropdown."
+echo "Try queries/01-piece-across-genres.graphql, then open the query-plan dropdown."
 docker run \
   --name cosmo-router \
   --rm \

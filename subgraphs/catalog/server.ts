@@ -1,42 +1,28 @@
 /**
- * catalog subgraph (port 4002) -- the jazz discography service.
- * Owns Album, Tune, Recording, and contributes albums / recordings /
- * composedTunes to the Artist entity it does not own.
+ * catalog subgraph (port 4002) -- what music exists.
+ * Owns Work, Movement, Tune, and the Piece entity interface; contributes
+ * composedPieces / composedWorks to the Artist entity it does not own.
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { startSubgraph } from "../lib/subgraph.js";
-import type { Album, Recording, Tune } from "../lib/seed-types.js";
+import { startSubgraph, type EntityReference } from "../lib/subgraph.js";
+import type { Movement, Tune, Work } from "../lib/seed-types.js";
 
 const here = import.meta.dirname;
 const sdl = readFileSync(join(here, "schema.graphql"), "utf8");
 const seed = JSON.parse(readFileSync(join(here, "..", "..", "seed", "catalog.json"), "utf8")) as {
+  works: Work[];
+  movements: Movement[];
   tunes: Tune[];
-  albums: Album[];
-  recordings: Recording[];
 };
 
+const workById = new Map(seed.works.map((w) => [w.id, w]));
+const movementById = new Map(seed.movements.map((m) => [m.id, m]));
 const tuneById = new Map(seed.tunes.map((t) => [t.id, t]));
-const albumById = new Map(seed.albums.map((a) => [a.id, a]));
 
-// artistId -> album ids (principal artist or personnel), deduped
-const albumsByArtist = new Map<string, Set<string>>();
-for (const a of seed.albums) {
-  for (const id of [...a.artistIds, ...a.credits.map((c) => c.artistId)]) {
-    (albumsByArtist.get(id) ?? albumsByArtist.set(id, new Set()).get(id)!).add(a.id);
-  }
-}
-const recordingsByArtist = new Map<string, Recording[]>();
-const recordingsByTune = new Map<string, Recording[]>();
-const recordingsByAlbum = new Map<string, Recording[]>();
-for (const r of seed.recordings) {
-  for (const id of r.artistIds) {
-    (recordingsByArtist.get(id) ?? recordingsByArtist.set(id, []).get(id)!).push(r);
-  }
-  (recordingsByTune.get(r.tuneId) ?? recordingsByTune.set(r.tuneId, []).get(r.tuneId)!).push(r);
-  if (r.albumId) {
-    (recordingsByAlbum.get(r.albumId) ?? recordingsByAlbum.set(r.albumId, []).get(r.albumId)!).push(r);
-  }
+const movementsByWork = new Map<string, Movement[]>();
+for (const m of seed.movements) {
+  (movementsByWork.get(m.workId) ?? movementsByWork.set(m.workId, []).get(m.workId)!).push(m);
 }
 const tunesByComposer = new Map<string, Tune[]>();
 for (const t of seed.tunes) {
@@ -44,53 +30,92 @@ for (const t of seed.tunes) {
     (tunesByComposer.get(t.composerId) ?? tunesByComposer.set(t.composerId, []).get(t.composerId)!).push(t);
   }
 }
+const worksByComposer = new Map<string, Work[]>();
+for (const w of seed.works) {
+  if (w.composerId) {
+    (worksByComposer.get(w.composerId) ?? worksByComposer.set(w.composerId, []).get(w.composerId)!).push(w);
+  }
+}
+const contrafactsByParent = new Map<string, Tune[]>();
+for (const t of seed.tunes) {
+  if (t.contrafactOfId) {
+    (contrafactsByParent.get(t.contrafactOfId) ?? contrafactsByParent.set(t.contrafactOfId, []).get(t.contrafactOfId)!).push(t);
+  }
+}
 
-const artistRef = (id: string) => ({ __typename: "Artist", id });
-const sortAlbums = (a: Album, b: Album) =>
-  (a.year ?? 9999) - (b.year ?? 9999) || a.title.localeCompare(b.title);
+// A Piece is a Movement or a Tune; ids never collide (the seeder gates it).
+const withType = (m: Movement | null | undefined, t: Tune | null | undefined) =>
+  m ? { __typename: "Movement", ...m } : t ? { __typename: "Tune", ...t } : null;
+const pieceById = (id: string) => withType(movementById.get(id), tuneById.get(id));
+const allPieces = () => [
+  ...seed.movements.map((m) => ({ __typename: "Movement", ...m })),
+  ...seed.tunes.map((t) => ({ __typename: "Tune", ...t })),
+];
+
+const artistRef = (id: string | null) => (id ? { __typename: "Artist", id } : null);
+const sortMovements = (a: Movement, b: Movement) =>
+  (a.position ?? 99) - (b.position ?? 99) || a.id.localeCompare(b.id);
 
 startSubgraph({
   name: "catalog",
   port: 4002,
   sdl,
-  entityTypes: ["Artist", "Tune"],
-  resolveEntity: (ref) => {
-    if (ref.__typename === "Tune") return tuneById.get(String(ref.id)) ?? null;
-    return { __typename: "Artist", id: String(ref.id) };
+  entityTypes: ["Artist", "Work", "Movement", "Tune"],
+  // The router sends concrete refs (Movement, Tune, Work, Artist) and, for the
+  // entity interface, Piece refs coming from the discography's @interfaceObject.
+  // A Piece ref resolves to whichever concrete piece owns the id.
+  resolveEntity: (ref: EntityReference) => {
+    const id = String(ref.id);
+    switch (ref.__typename) {
+      case "Piece":
+        return pieceById(id);
+      case "Movement":
+        return withType(movementById.get(id), null);
+      case "Tune":
+        return withType(null, tuneById.get(id));
+      case "Work":
+        return workById.get(id) ?? null;
+      default:
+        return { __typename: "Artist", id };
+    }
   },
   resolvers: {
     Query: {
+      piece: (_: unknown, args: { id: string }) => pieceById(args.id),
+      pieces: (_: unknown, args: { musicalKey?: string | null }) =>
+        args.musicalKey ? allPieces().filter((p) => p.musicalKey === args.musicalKey) : allPieces(),
       tune: (_: unknown, args: { id: string }) => tuneById.get(args.id) ?? null,
       tunes: () => seed.tunes,
-      album: (_: unknown, args: { id: string }) => albumById.get(args.id) ?? null,
-      albums: () => seed.albums,
+      work: (_: unknown, args: { id: string }) => workById.get(args.id) ?? null,
+      works: (_: unknown, args: { composer?: string | null }) =>
+        args.composer ? (worksByComposer.get(args.composer) ?? []) : seed.works,
     },
-    Artist: {
-      albums: (a: { id: string }) =>
-        [...(albumsByArtist.get(a.id) ?? [])].map((id) => albumById.get(id)!).sort(sortAlbums),
-      recordings: (a: { id: string }) => recordingsByArtist.get(a.id) ?? [],
-      composedTunes: (a: { id: string }) => tunesByComposer.get(a.id) ?? [],
+    Piece: {
+      __resolveType: (obj: { __typename: string }) => obj.__typename,
     },
-    Album: {
-      artists: (a: Album) => a.artistIds.map(artistRef),
-      credits: (a: Album) => a.credits,
-      tracks: (a: Album) => a.tracks,
-      recordings: (a: Album) => recordingsByAlbum.get(a.id) ?? [],
+    Work: {
+      composer: (w: Work) => artistRef(w.composerId),
+      movements: (w: Work) => (movementsByWork.get(w.id) ?? []).slice().sort(sortMovements),
     },
-    Credit: {
-      artist: (c: { artistId: string }) => artistRef(c.artistId),
-    },
-    Track: {
-      tune: (t: { tuneId: string }) => tuneById.get(t.tuneId)!,
+    Movement: {
+      work: (m: Movement) => workById.get(m.workId)!,
     },
     Tune: {
-      composedBy: (t: Tune) => (t.composerId ? artistRef(t.composerId) : null),
-      recordings: (t: Tune) => recordingsByTune.get(t.id) ?? [],
+      composer: (t: Tune) => artistRef(t.composerId),
+      contrafactOf: (t: Tune) => (t.contrafactOfId ? tuneById.get(t.contrafactOfId)! : null),
+      contrafacts: (t: Tune) => contrafactsByParent.get(t.id) ?? [],
     },
-    Recording: {
-      tune: (r: Recording) => tuneById.get(r.tuneId)!,
-      artists: (r: Recording) => r.artistIds.map(artistRef),
-      album: (r: Recording) => (r.albumId ? albumById.get(r.albumId)! : null),
+    Artist: {
+      composedPieces: (a: { id: string }) => [
+        ...(tunesByComposer.get(a.id) ?? []).map((t) => ({ __typename: "Tune", ...t })),
+        ...(worksByComposer.get(a.id) ?? []).flatMap((w) =>
+          (movementsByWork.get(w.id) ?? [])
+            .slice()
+            .sort(sortMovements)
+            .map((m) => ({ __typename: "Movement", ...m })),
+        ),
+      ],
+      composedWorks: (a: { id: string }) => worksByComposer.get(a.id) ?? [],
     },
   },
 });

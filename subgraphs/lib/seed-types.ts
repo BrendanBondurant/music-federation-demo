@@ -1,68 +1,82 @@
 /** Shapes of the JSON files the seeder emits into seed/. */
 
+export interface InterpretiveProfile {
+  clarity: string | null;
+  toneColor: string | null;
+  risk: string | null;
+}
+
 export interface Person {
   id: string;
   name: string;
-  instrument: string | null;
-  type: "PERSON" | "ENSEMBLE";
-  style: string | null;
+  kind: "PERSON" | "ENSEMBLE";
+  instruments: string[];
+  styles: string[];
+  bio: string | null;
+  profile: InterpretiveProfile | null;
+  /** True for composers synthesized from tune/work frontmatter (no vault file of their own). */
+  stub: boolean;
+}
+
+export interface Membership {
+  groupId: string;
+  memberId: string;
+  role: string | null;
+}
+
+export type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO";
+
+export interface Work {
+  id: string;
+  title: string;
+  catalogNumber: string | null;
+  composerId: string | null;
+  genre: Genre;
+}
+
+export interface Movement {
+  id: string;
+  workId: string;
+  title: string;
+  position: number | null;
+  musicalKey: string | null;
+  genre: Genre;
 }
 
 export interface Tune {
   id: string;
   title: string;
-  composer: string | null;
   composerId: string | null;
   style: string | null;
-}
-
-export interface Recording {
-  id: string;
-  tuneId: string;
-  artistIds: string[];
-  albumId: string | null;
-  key: string | null;
-  bpm: number | null;
-  melody: string | null;
+  contrafactOfId: string | null;
+  musicalKey: string | null;
+  genre: Genre;
 }
 
 export interface Credit {
   artistId: string;
-  instrument: string | null;
+  role: string | null;
 }
 
 export interface Album {
   id: string;
   title: string;
   year: number | null;
-  recordingYear: number | null;
   label: string | null;
+  /** Principal artists from frontmatter. Used for indexing Artist.albums; not a schema field. */
   artistIds: string[];
   credits: Credit[];
-  tracks: { tuneId: string; key: string | null }[];
+  /** Recording ids on this album, in the album file's track order. */
+  trackIds: string[];
 }
 
-export interface Work {
+export interface Recording {
   id: string;
-  composer: string;
-  title: string;
-  bwv: number | null;
-}
-
-export interface Movement {
-  id: string;
-  workId: string;
-  name: string;
-  key: string | null;
-  order: number;
-}
-
-export interface MovementRecording {
-  id: string;
-  movementId: string;
-  performerId: string;
-  label: string | null;
-  character: string | null;
+  pieceId: string;
+  albumId: string | null;
+  performerIds: string[];
+  performanceKey: string | null;
+  source: string | null;
   notes: string | null;
   bpm: number | null;
 }

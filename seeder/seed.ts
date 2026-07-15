@@ -2,73 +2,87 @@
  * Vault parser / seeder for the music federation demo.
  *
  * Reads the Obsidian vault (read-only), emits seed/artists.json,
- * seed/catalog.json, seed/classical.json, and fails loudly if any
+ * seed/catalog.json, seed/discography.json, and fails loudly if any
  * reference dangles or the entity counts drift from the verified numbers.
+ *
+ * Three trees feed three subgraphs:
+ *   - who plays  -> artists.json     (Jazz Tunes/Artists, Flamenco/Artists,
+ *                                     Composers/Performers, group Personnel)
+ *   - what music exists -> catalog.json (Works, Movements, Tunes, contrafacts)
+ *   - who recorded what -> discography.json (Albums, unified Recordings)
  *
  * Usage:
  *   npm run seed -- /path/to/Personal/Music
  *   (defaults to ~/Documents/Obsidian/Personal/Music if it exists)
  */
 import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync, existsSync } from "node:fs";
-import { join, basename } from "node:path";
+import { join, basename, dirname } from "node:path";
 import { homedir } from "node:os";
 
 // ---------------------------------------------------------------------------
-// Expected state of the vault, verified 2026-07-13. If the seeder reports
-// different numbers, the parser is wrong -- not the vault.
+// Expected state of the vault, verified 2026-07-14 (post-reorg: flamenco tree,
+// crossover tune files merged into movement files, group Personnel sections).
+// If the seeder reports different numbers, the parser is wrong -- not the
+// vault. Do not edit these to make a failing run pass.
 //
-// Counts will shift slightly once these vault data issues are resolved:
-//   - Footprints recordings in Alone Together + How Insensitive link to [[Footprints]]
-//     but the album is "Footprints (album).md" -- fix the links.
-//   - I Got Rhythm has a recording row for [[George Gershwin]] (no artist file) -- remove it.
-//   - After Hours (Dexter Gordon) credits Rolf Ericson, Lars Sjösten, Sture Nordin,
-//     Pelle Hultén (no artist files); also lists I Remember You + Darn That Dream
-//     as tracks (no tune files) -- add the missing files or remove the references.
-//   - Desmond Blue credits Bob Prince (no artist file) -- add or remove.
-//   - Let's Hang Out, Proof Positive, Well Be Together Again link to [[J J Johnson]]
-//     (slug j-j-johnson) but the artist file is J.J. Johnson.md (slug jj-johnson)
-//     -- fix the links to [[J.J. Johnson]] in the album files.
-//   - So What (Eddie Henderson) credits Eddie Henderson, David Kikoski, Ed Howard
-//     (no artist files) -- add or remove.
-//   - The Champ (Sonny Stitt) lists Walkin' as a track (no tune file) -- add it.
+// Cross-checks behind the numbers:
+//   - works 10        = 9 BWV headings in Works – Master.md + Concierto de Aranjuez
+//   - movements 22    = movement files under Composers/Works (22)
+//   - tunes 147       = 145 Jazz Tunes/Tunes files (Other tunes.md skipped) + 2 Flamenco/Tunes
+//   - contrafactEdges = 4 (ATTYA) + 4 (How High the Moon) + 16 (Rhythm Changes);
+//                       the 71 Blues-folder tunes have no parent tune on purpose
+//   - albums 612      = 611 jazz + 4 flamenco album files - 3 placeholders
+//   - memberships 10  = Miles Davis Quintet (5) + Modern Jazz Quartet (5)
+//   - profiles 11     = performer files with an **Axes:** line
+//   - recordings 889  = tune rows + movement rows + album track rows with no
+//                       matching (piece, album) recording
 const EXPECTED = {
-  people: 1083,
-  ensembles: 58,
-  albums: 604,
-  tunes: 153,
-  recordings: 713,
-  personnelEdges: 2123,
-  works: 9,
-  movements: 21,
-  movementRecordings: 142,
+  people: 1160,
+  ensembles: 61,
+  composerStubs: 41,
+  memberships: 10,
+  profiles: 11,
+  works: 10,
+  movements: 22,
+  tunes: 147,
+  contrafactEdges: 24,
+  albums: 612,
+  personnelEdges: 2170,
+  recordings: 889,
   warnings: 0,
 };
 
 const SKIP_FILES = new Set(["CLAUDE.md", "Albums to fix.md", "Other tunes.md"]);
 const PLACEHOLDER_ALBUMS = new Set(["youtube", "late-night-jazz-compilation", "baroquswing-vol-ii"]);
 const JUNK_ARTIST_SLUGS = new Set(["georgie-gershwin"]);
-// Personnel credits for arrangers/producers who don't have artist files and don't need one.
+// Personnel credits for arrangers/producers who don't have artist files and
+// don't need one. Their credits are dropped (Credit.artist is non-null now).
 const SKIP_PERSONNEL_SLUGS = new Set(["bob-prince"]);
+// Contrafact folders whose name is not itself a tune file.
+const CONTRAFACT_PARENT_ALIAS: Record<string, string | null> = {
+  "rhythm-changes": "i-got-rhythm", // rhythm changes = the I Got Rhythm form
+  blues: null, // the blues is a form, not a parent tune
+};
 
 // ---------------------------------------------------------------------------
 // Helpers
 
 /** Normalize whitespace: non-breaking spaces -> spaces, trim. */
 function norm(s: string): string {
-  return s.replace(/\u00a0/g, " ").trim();
+  return s.replace(/ /g, " ").trim();
 }
 
 /**
  * Slug: lowercase, diacritics stripped, punctuation removed, spaces -> hyphens.
  * So "Where Would I Be?" and "Where Would I Be" collapse to one id, variant
- * spellings like G\u00f3mez/Gomez merge, and "J.J. Johnson" (jj-johnson) stays
+ * spellings like Gómez/Gomez merge, and "J.J. Johnson" (jj-johnson) stays
  * distinct from "J J Johnson" (j-j-johnson) -- both exist in the vault.
  * Person slugs are the shared @key across all three subgraphs.
  */
 function slug(s: string): string {
   return norm(s)
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .replace(/[^\w\s-]/g, "")
     .replace(/\s+/g, "-")
@@ -107,8 +121,8 @@ function extractLinks(cell: string): string[] {
 
 /** Split a markdown table row into cells; pipes inside [[...]] are safe. */
 function splitRow(line: string): string[] {
-  const masked = line.replace(/\[\[[^\]]*\]\]/g, (s) => s.replace(/\|/g, "\u0001"));
-  let cells = masked.split("|").map((c) => c.replace(/\u0001/g, "|"));
+  const masked = line.replace(/\[\[[^\]]*\]\]/g, (s) => s.replace(/\|/g, ""));
+  let cells = masked.split("|").map((c) => c.replace(//g, "|"));
   // drop leading/trailing empties from the outer pipes
   if (cells.length && cells[0].trim() === "") cells = cells.slice(1);
   if (cells.length && cells[cells.length - 1].trim() === "") cells = cells.slice(0, -1);
@@ -168,6 +182,52 @@ function bulletsUnder(body: string, headingPrefix: string): string[] {
     if (inSection && /^\s*-\s+/.test(line)) out.push(norm(line.replace(/^\s*-\s+/, "")));
   }
   return out;
+}
+
+/**
+ * First prose paragraph under the section whose heading starts with
+ * `headingPrefix` (or, with prefix null, directly under the `# Title` line).
+ * Skips bullets, tables, and the **Axes:** line. Returns null when empty.
+ */
+function proseUnder(body: string, headingPrefix: string | null): string | null {
+  const lines = body.split("\n");
+  let inSection = headingPrefix === null;
+  const para: string[] = [];
+  for (const line of lines) {
+    if (/^#\s/.test(line) && headingPrefix === null) {
+      inSection = true; // start after the title line
+      continue;
+    }
+    if (/^#{1,6}\s/.test(line)) {
+      if (para.length) break;
+      inSection =
+        headingPrefix !== null &&
+        norm(line).replace(/^#+\s*/, "").toLowerCase().startsWith(headingPrefix.toLowerCase());
+      continue;
+    }
+    if (!inSection) continue;
+    const t = norm(line);
+    if (!t) {
+      if (para.length) break;
+      continue;
+    }
+    if (/^[-|*]/.test(t) || t.startsWith("**Axes:**")) {
+      if (para.length) break;
+      continue;
+    }
+    para.push(t);
+  }
+  const text = para.join(" ").trim();
+  return text || null;
+}
+
+/** Parse "**Axes:** Clarity – X · Tone color – Y · Interpretive risk – Z". */
+function parseAxes(body: string): { clarity: string | null; toneColor: string | null; risk: string | null } | null {
+  const m = body.match(
+    /\*\*Axes:\*\*\s*Clarity\s*[–—-]\s*(.+?)\s*·\s*Tone color\s*[–—-]\s*(.+?)\s*·\s*Interpretive risk\s*[–—-]\s*(.+?)\s*$/m,
+  );
+  if (!m) return null;
+  return { clarity: norm(m[1]) || null, toneColor: norm(m[2]) || null, risk: norm(m[3]) || null };
 }
 
 /** Tiny YAML-subset frontmatter parser: scalars and string lists. */
@@ -237,64 +297,68 @@ function romanLead(name: string): number | null {
 }
 
 // ---------------------------------------------------------------------------
-// Data shapes
+// Data shapes (mirror subgraphs/lib/seed-types.ts)
 
+type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO";
 interface Person {
   id: string;
   name: string;
-  instrument: string | null;
-  type: "PERSON" | "ENSEMBLE";
-  style: string | null;
+  kind: "PERSON" | "ENSEMBLE";
+  instruments: string[];
+  styles: string[];
+  bio: string | null;
+  profile: { clarity: string | null; toneColor: string | null; risk: string | null } | null;
+  stub: boolean;
+}
+interface Membership {
+  groupId: string;
+  memberId: string;
+  role: string | null;
+}
+interface Work {
+  id: string;
+  title: string;
+  catalogNumber: string | null;
+  composerId: string | null;
+  genre: Genre;
+}
+interface Movement {
+  id: string;
+  workId: string;
+  title: string;
+  position: number | null;
+  musicalKey: string | null;
+  genre: Genre;
 }
 interface Tune {
   id: string;
   title: string;
-  composer: string | null;
   composerId: string | null;
   style: string | null;
-}
-interface Recording {
-  id: string;
-  tuneId: string;
-  artistIds: string[];
-  albumId: string | null;
-  key: string | null;
-  bpm: number | null;
-  melody: string | null;
+  contrafactOfId: string | null;
+  musicalKey: string | null;
+  genre: Genre;
 }
 interface Credit {
   artistId: string;
-  instrument: string | null;
+  role: string | null;
 }
 interface Album {
   id: string;
   title: string;
   year: number | null;
-  recordingYear: number | null;
   label: string | null;
   artistIds: string[];
   credits: Credit[];
-  tracks: { tuneId: string; key: string | null }[];
+  trackIds: string[];
 }
-interface Work {
+interface Recording {
   id: string;
-  composer: string;
-  title: string;
-  bwv: number | null;
-}
-interface Movement {
-  id: string;
-  workId: string;
-  name: string;
-  key: string | null;
-  order: number;
-}
-interface MovementRecording {
-  id: string;
-  movementId: string;
-  performerId: string;
-  label: string | null;
-  character: string | null;
+  pieceId: string;
+  albumId: string | null;
+  performerIds: string[];
+  performanceKey: string | null;
+  source: string | null;
   notes: string | null;
   bpm: number | null;
 }
@@ -314,102 +378,273 @@ if (!vault || !existsSync(vault)) {
   process.exit(1);
 }
 const jazz = join(vault, "Jazz Tunes");
+const flamenco = join(vault, "Flamenco");
 const composers = join(vault, "Composers");
 
-// --- People: jazz artists + Bach performers share ONE pool ------------------
+// --- People: jazz + flamenco artists + classical performers share ONE pool ---
 const people = new Map<string, Person>();
+const membershipSources: { groupId: string; file: string; body: string }[] = [];
 
-for (const p of mdFiles(join(jazz, "Artists"))) {
-  const { fm } = frontmatter(readFileSync(p, "utf8"));
+function addArtistFile(p: string, kind: "PERSON" | "ENSEMBLE"): void {
+  const { fm, body } = frontmatter(readFileSync(p, "utf8"));
   const name = typeof fm.name === "string" && fm.name ? fm.name : fileTitle(p);
-  const instrument = typeof fm.instrument === "string" ? fm.instrument : null;
   const id = slug(fileTitle(p));
+  if (kind === "ENSEMBLE" && bulletsUnder(body, "Personnel").length > 0) {
+    membershipSources.push({ groupId: id, file: p, body });
+  }
   // Variant spellings of the same person (Gomez / Gómez) slug to one id on
   // purpose: same name, same key. First file wins; no warning.
-  if (people.has(id)) continue;
+  if (people.has(id)) return;
+  const instrument = typeof fm.instrument === "string" ? fm.instrument : null;
+  // "ensemble"/"group" is a folder marker, not an instrument.
+  const instruments =
+    instrument && !["ensemble", "group"].includes(instrument.toLowerCase()) ? [instrument] : [];
+  const style = typeof fm.style === "string" && fm.style ? fm.style : null;
   people.set(id, {
     id,
     name,
-    instrument,
-    type: p.includes("/Groups/") ? "ENSEMBLE" : "PERSON",
-    style: typeof fm.style === "string" ? fm.style : null,
+    kind,
+    instruments,
+    styles: style ? [style] : [],
+    bio: proseUnder(body, "Profile") ?? proseUnder(body, null),
+    profile: parseAxes(body),
+    stub: false,
   });
 }
 
+for (const p of mdFiles(join(jazz, "Artists"))) {
+  addArtistFile(p, p.includes("/Groups/") ? "ENSEMBLE" : "PERSON");
+}
+for (const p of mdFiles(join(flamenco, "Artists"))) {
+  addArtistFile(p, p.includes("/Groups/") ? "ENSEMBLE" : "PERSON");
+}
 for (const p of mdFiles(join(composers, "Performers"))) {
-  const { fm } = frontmatter(readFileSync(p, "utf8"));
-  const id = slug(fileTitle(p));
-  if (people.has(id)) continue; // crossover person: jazz record wins, Bach data attaches by id
-  people.set(id, {
-    id,
-    name: fileTitle(p),
-    instrument: typeof fm.instrument === "string" ? fm.instrument : null,
-    type: "PERSON",
-    style: null,
-  });
+  // Crossover person: jazz/flamenco record wins, classical data attaches by id.
+  addArtistFile(p, "PERSON");
 }
 
-// --- Tunes + recordings ------------------------------------------------------
-const tunes = new Map<string, Tune>();
-const recordings: Recording[] = [];
+// Composers named in tune/work frontmatter but without a vault file become
+// stub artists: real people, real names from the vault, no identity data
+// beyond the name. This is what lets composer edges resolve into the shared
+// person pool instead of staying display strings.
+function composerRef(nameRaw: string | undefined): string | null {
+  const name = typeof nameRaw === "string" ? norm(nameRaw) : "";
+  if (!name) return null;
+  const id = slug(name);
+  if (!id) return null;
+  if (!people.has(id)) {
+    people.set(id, {
+      id,
+      name,
+      kind: "PERSON",
+      instruments: [],
+      styles: [],
+      bio: null,
+      profile: null,
+      stub: true,
+    });
+  }
+  return id;
+}
 
-for (const p of mdFiles(join(jazz, "Tunes"))) {
+// --- Memberships (group Personnel bullets) -----------------------------------
+const memberships: Membership[] = [];
+for (const { groupId, body } of membershipSources) {
+  for (const b of bulletsUnder(body, "Personnel")) {
+    const links = extractLinks(b);
+    if (links.length === 0) continue;
+    const after = b.slice(b.lastIndexOf("]]") + 2);
+    const dm = after.match(/^\s*[-–—]\s*(.+)$/);
+    memberships.push({ groupId, memberId: slug(links[0]), role: dm ? norm(dm[1]) : null });
+  }
+}
+
+// --- Classical works + movements ---------------------------------------------
+// Bach works come from the master index ("## BWV <n> — Title" headings); other
+// composers' works are created from movement frontmatter on first sight.
+const works = new Map<string, Work>();
+const movementOrder = new Map<string, number>(); // "bwv-996:allemande" -> index
+
+{
+  const master = readFileSync(join(composers, "Works – Master.md"), "utf8");
+  let currentWorkId: string | null = null;
+  let expectMovements = false;
+  let idx = 0;
+  for (const line of master.split("\n")) {
+    const h = norm(line).match(/^#{2,3}\s+BWV\s+(\d+)\s+[-–—]\s+(.+)$/);
+    if (h) {
+      const bwv = parseInt(h[1], 10);
+      currentWorkId = `bwv-${bwv}`;
+      const title = norm(h[2]).replace(/\s+[-–—].*$/, "").trim();
+      works.set(currentWorkId, {
+        id: currentWorkId,
+        title,
+        catalogNumber: `BWV ${bwv}`,
+        composerId: null, // filled after the loop; composerRef needs people loaded
+        genre: "CLASSICAL",
+      });
+      idx = 0;
+      expectMovements = true;
+      continue;
+    }
+    if (/^#{1,6}\s/.test(line)) {
+      currentWorkId = null;
+      expectMovements = false;
+      continue;
+    }
+    if (expectMovements && currentWorkId !== null) {
+      const links = extractLinks(line);
+      if (links.length > 0) {
+        for (const link of links) {
+          movementOrder.set(`${currentWorkId}:${slug(link)}`, idx++);
+        }
+        expectMovements = false;
+      }
+    }
+  }
+  const bachId = composerRef("Bach");
+  for (const w of works.values()) w.composerId = bachId;
+}
+
+const movements = new Map<string, Movement>();
+// Album track tables and tune-style references link movement FILES, whose
+// filename slug ("147-jesu-joy-of-mans-desiring") differs from the movement id
+// ("bwv-147-jesu-joy-of-mans-desiring"). This map bridges the two.
+const movementByFileSlug = new Map<string, string>();
+// Movement recordings are parsed later, into the unified recordings list, but
+// the rows live in the movement files: stash the tables while walking them.
+const movementRecordingSources: { movementId: string; file: string; body: string }[] = [];
+
+const orderCounter = new Map<string, number>(); // file-order fallback per workId
+for (const p of mdFiles(join(composers, "Works"))) {
+  const { fm, body } = frontmatter(readFileSync(p, "utf8"));
+  const workRef = typeof fm.work === "string" ? fm.work : "";
+  const composer = typeof fm.composer === "string" ? fm.composer : "";
+  const title = typeof fm.movement === "string" && fm.movement ? fm.movement : fileTitle(p);
+
+  const bwvMatch = workRef.match(/BWV\s*(\d+)/i);
+  let workId: string;
+  let position: number | null;
+  if (bwvMatch) {
+    workId = `bwv-${parseInt(bwvMatch[1], 10)}`;
+    // Skip movement files for works not in the master index (e.g. _review works).
+    if (!works.has(workId)) continue;
+    position = movementOrder.get(`${workId}:${slug(title)}`) ?? null;
+  } else {
+    if (!workRef || !composer) {
+      errors.push(`movement without work/composer frontmatter: ${p}`);
+      continue;
+    }
+    workId = slug(workRef);
+    if (!works.has(workId)) {
+      works.set(workId, {
+        id: workId,
+        title: workRef,
+        catalogNumber: null,
+        composerId: composerRef(composer),
+        genre: "CLASSICAL",
+      });
+    }
+    // Order by the leading roman numeral (I/II/III), else file-encounter order.
+    const roman = romanLead(title);
+    if (roman !== null) {
+      position = roman;
+    } else {
+      position = orderCounter.get(workId) ?? 0;
+      orderCounter.set(workId, position + 1);
+    }
+  }
+  const id = `${workId}-${slug(title)}`;
+  movements.set(id, {
+    id,
+    workId,
+    title,
+    position,
+    musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
+    genre: "CLASSICAL",
+  });
+  movementByFileSlug.set(slug(fileTitle(p)), id);
+  movementRecordingSources.push({ movementId: id, file: p, body });
+}
+
+// --- Tunes (jazz + flamenco, contrafact folders) ------------------------------
+const tunes = new Map<string, Tune>();
+const tuneRecordingSources: { tuneId: string; file: string; body: string }[] = [];
+const contrafactFolder = new Map<string, string>(); // tuneId -> parent folder name
+
+function addTuneFile(p: string, genre: Genre): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
   const title = fileTitle(p);
   const id = slug(title);
   if (tunes.has(id)) {
     warn(`duplicate tune file merged: ${title}`);
   } else {
-    const composer = typeof fm.composer === "string" && fm.composer ? fm.composer : null;
-    const composerId = composer && people.has(slug(composer)) ? slug(composer) : null;
+    const style = typeof fm.style === "string" && fm.style ? fm.style : null;
     tunes.set(id, {
       id,
       title,
-      composer,
-      composerId,
-      style: typeof fm.style === "string" ? fm.style : null,
+      composerId: composerRef(typeof fm.composer === "string" ? fm.composer : undefined),
+      style,
+      contrafactOfId: null, // resolved after all tunes are known
+      musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
+      genre: style === "flamenco" ? "FLAMENCO" : genre,
     });
+    // Tunes/Contrafacts/<Parent>/X.md -> X is a contrafact of <Parent>.
+    const parentDir = basename(dirname(p));
+    if (dirname(p).includes("/Contrafacts/")) contrafactFolder.set(id, parentDir);
   }
+  tuneRecordingSources.push({ tuneId: id, file: p, body });
+}
 
-  const t = tableUnder(body, "Recordings");
-  if (!t) continue;
-  const cArtist = col(t, "artist");
-  const cAlbum = col(t, "album");
-  const cKey = col(t, "key");
-  const cBpm = col(t, "bpm");
-  const cMelody = col(t, "melody");
-  for (const row of t.rows) {
-    const artistNames = cArtist >= 0 ? extractLinks(row[cArtist] ?? "") : [];
-    if (artistNames.length === 0) continue; // not a recording row
-    let artistIds = artistNames.map(slug);
-    if (artistIds.some((a) => JUNK_ARTIST_SLUGS.has(a))) {
-      warn(`junk recording row dropped: [[${artistNames.join("/")}]] in ${basename(p)}`);
-      continue;
-    }
-    const albumLinks = cAlbum >= 0 ? extractLinks(row[cAlbum] ?? "") : [];
-    let albumId: string | null = albumLinks.length ? slug(albumLinks[0]) : null;
-    if (albumId && PLACEHOLDER_ALBUMS.has(albumId)) albumId = null;
-    const bpmRaw = cBpm >= 0 ? norm(row[cBpm] ?? "") : "";
-    const melodyRaw = cMelody >= 0 ? norm(row[cMelody] ?? "") : "";
-    recordings.push({
-      id: `${id}::${albumId ?? "no-album"}::${artistIds.join("+")}`,
-      tuneId: id,
-      artistIds,
-      albumId,
-      key: cKey >= 0 ? normKey(row[cKey] ?? "") : null,
-      bpm: /^\d+$/.test(bpmRaw) ? parseInt(bpmRaw, 10) : null,
-      melody: melodyRaw || null,
-    });
+for (const p of mdFiles(join(jazz, "Tunes"))) addTuneFile(p, "JAZZ");
+for (const p of mdFiles(join(flamenco, "Tunes"))) addTuneFile(p, "FLAMENCO");
+
+let contrafactEdges = 0;
+for (const [tuneId, folder] of contrafactFolder) {
+  const folderSlug = slug(folder);
+  const parentId =
+    folderSlug in CONTRAFACT_PARENT_ALIAS
+      ? CONTRAFACT_PARENT_ALIAS[folderSlug]
+      : tunes.has(folderSlug)
+        ? folderSlug
+        : null;
+  if (parentId === null && !(folderSlug in CONTRAFACT_PARENT_ALIAS)) {
+    errors.push(`contrafact folder "${folder}" resolves to no tune (${tuneId})`);
+    continue;
+  }
+  const t = tunes.get(tuneId)!;
+  t.contrafactOfId = parentId;
+  if (parentId) contrafactEdges++;
+}
+
+// Piece is an entity interface: Movement and Tune ids must never collide,
+// or two pieces would share one key.
+for (const id of tunes.keys()) {
+  if (movements.has(id) || movementByFileSlug.has(id)) {
+    errors.push(`piece id collision: "${id}" is both a Tune and a Movement`);
   }
 }
 
-// --- Albums ------------------------------------------------------------------
+// --- Albums (jazz + flamenco) --------------------------------------------------
 const albums = new Map<string, Album>();
+const placeholderName = new Map<string, string>(); // slug -> display title
+// Track rows are resolved to recordings after the recordings pass.
+const trackRows = new Map<string, { pieceId: string; key: string | null }[]>();
 
-for (const p of mdFiles(join(jazz, "Albums"))) {
+/** A wiki-link target names a piece: a tune, or a movement file. */
+function pieceRef(linkTarget: string): string | null {
+  const s = slug(linkTarget);
+  if (tunes.has(s)) return s;
+  return movementByFileSlug.get(s) ?? null;
+}
+
+function addAlbumFile(p: string): void {
   const title = fileTitle(p);
   const id = slug(title);
-  if (PLACEHOLDER_ALBUMS.has(id)) continue; // placeholder files: recordings keep null album
+  if (PLACEHOLDER_ALBUMS.has(id)) {
+    placeholderName.set(id, title); // recordings keep a null album, named source
+    return;
+  }
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
 
   const fmArtists = Array.isArray(fm.artist) ? fm.artist : typeof fm.artist === "string" ? [fm.artist] : [];
@@ -422,202 +657,200 @@ for (const p of mdFiles(join(jazz, "Albums"))) {
   for (const b of bulletsUnder(body, "Personnel")) {
     const links = extractLinks(b);
     if (links.length === 0) continue;
+    const artistId = slug(links[0]);
+    if (SKIP_PERSONNEL_SLUGS.has(artistId)) continue;
     const after = b.slice(b.lastIndexOf("]]") + 2);
     const dm = after.match(/^\s*[-–—]\s*(.+)$/);
-    credits.push({ artistId: slug(links[0]), instrument: dm ? norm(dm[1]) : null });
+    credits.push({ artistId, role: dm ? norm(dm[1]) : null });
   }
 
-  const tracks: { tuneId: string; key: string | null }[] = [];
+  const rows: { pieceId: string; key: string | null }[] = [];
   const tt = tableUnder(body, "Tunes");
   if (tt) {
     const cTune = col(tt, "tune");
     const cKey = col(tt, "key");
     for (const row of tt.rows) {
       const links = cTune >= 0 ? extractLinks(row[cTune] ?? "") : [];
-      if (links.length === 0) continue;
-      tracks.push({ tuneId: slug(links[0]), key: cKey >= 0 ? normKey(row[cKey] ?? "") : null });
+      if (links.length === 0) continue; // untracked track: no piece file in the vault
+      const pieceId = pieceRef(links[0]);
+      if (!pieceId) {
+        errors.push(`album ${id}: track links to unknown piece "${links[0]}"`);
+        continue;
+      }
+      rows.push({ pieceId, key: cKey >= 0 ? normKey(row[cKey] ?? "") : null });
     }
   }
 
   const yr = typeof fm.year === "string" && /^\d{4}$/.test(fm.year) ? parseInt(fm.year, 10) : null;
-  const ry =
-    typeof fm.recording_year === "string" && /^\d{4}$/.test(fm.recording_year)
-      ? parseInt(fm.recording_year, 10)
-      : null;
 
   const existing = albums.get(id);
   if (existing) {
     // Variant spelling of the same album ("Where Would I Be?" / "Where Would
     // I Be"): one album, union of the data. First file wins on metadata.
     existing.year ??= yr;
-    existing.recordingYear ??= ry;
     existing.label ??= typeof fm.label === "string" && fm.label ? fm.label : null;
     if (existing.artistIds.length === 0) existing.artistIds = artistIds;
     existing.credits.push(...credits);
-    for (const tr of tracks) {
-      if (!existing.tracks.some((t) => t.tuneId === tr.tuneId)) existing.tracks.push(tr);
+    const known = trackRows.get(id)!;
+    for (const tr of rows) {
+      if (!known.some((t) => t.pieceId === tr.pieceId)) known.push(tr);
     }
-    continue;
+    return;
   }
   albums.set(id, {
     id,
     title,
     year: yr,
-    recordingYear: ry,
     label: typeof fm.label === "string" && fm.label ? fm.label : null,
     artistIds,
     credits,
-    tracks,
+    trackIds: [], // filled after the recordings pass
   });
+  trackRows.set(id, rows);
 }
 
-// --- Classical works, movements, movement recordings -------------------------
-// Works are keyed by a generic workId string: "bwv-<n>" for Bach (bwv set),
-// slug(title) for any other composer (bwv null). Bach ids stay byte-for-byte
-// identical to the old numeric scheme.
-const works = new Map<string, Work>();
-const movementOrder = new Map<string, number>(); // "bwv-996:allemande" -> index
+for (const p of mdFiles(join(jazz, "Albums"))) addAlbumFile(p);
+for (const p of mdFiles(join(flamenco, "Albums"))) addAlbumFile(p);
 
-{
-  const master = readFileSync(join(composers, "Works – Master.md"), "utf8");
-  let currentWorkId: string | null = null;
-  let expectMovements = false;
-  let idx = 0;
-  for (const line of master.split("\n")) {
-    // Match ## or ### headings that start a BWV work entry. The master index is
-    // Bach-only; other composers' works are created from movement frontmatter.
-    const h = norm(line).match(/^#{2,3}\s+BWV\s+(\d+)\s+[-–—]\s+(.+)$/);
-    if (h) {
-      const bwv = parseInt(h[1], 10);
-      currentWorkId = `bwv-${bwv}`;
-      // Strip trailing " — performer info" from the title if present.
-      const title = norm(h[2]).replace(/\s+[-–—].*$/, "").trim();
-      works.set(currentWorkId, { id: currentWorkId, composer: "Bach", title, bwv });
-      idx = 0;
-      expectMovements = true;
-      continue;
-    }
-    if (/^#{1,6}\s/.test(line)) {
-      // Any non-BWV heading closes the open section.
-      currentWorkId = null;
-      expectMovements = false;
-      continue;
-    }
-    if (expectMovements && currentWorkId !== null) {
-      // Movement links appear as [[Name]] · [[Name]] · ... on the line after the heading.
-      const links = extractLinks(line);
-      if (links.length > 0) {
-        for (const link of links) {
-          movementOrder.set(`${currentWorkId}:${slug(link)}`, idx++);
-        }
-        expectMovements = false;
-      }
-    }
+// --- Recordings: one model for jazz, flamenco, and classical -------------------
+const recordings: Recording[] = [];
+const recordingIds = new Set<string>();
+const byPieceAlbum = new Set<string>(); // "pieceId::albumId" pairs that exist
+
+function pushRecording(r: Omit<Recording, "id">): void {
+  const albumPart = r.albumId ?? (r.source ? slug(r.source) : "no-album");
+  let id = `${r.pieceId}::${albumPart}::${r.performerIds.join("+") || "unattributed"}`;
+  // Two takes of one piece on one album by the same performers: number them.
+  for (let n = 2; recordingIds.has(id); n++) {
+    id = `${r.pieceId}::${albumPart}::${r.performerIds.join("+") || "unattributed"}::take-${n}`;
   }
+  recordingIds.add(id);
+  recordings.push({ id, ...r });
+  if (r.albumId) byPieceAlbum.add(`${r.pieceId}::${r.albumId}`);
 }
 
-const movements = new Map<string, Movement>();
-const movementRecordings: MovementRecording[] = [];
-
-// Loop every Composers/Works/<Composer>/ folder, not just Bach. A movement's
-// work comes from its frontmatter: Bach notes carry a BWV number (workId
-// "bwv-<n>", already created from the master index); other composers carry a
-// work title + composer, so their Work is created here on first sight.
-const orderCounter = new Map<string, number>(); // file-order fallback per workId
-for (const p of mdFiles(join(composers, "Works"))) {
-  const { fm, body } = frontmatter(readFileSync(p, "utf8"));
-  const workRef = typeof fm.work === "string" ? fm.work : "";
-  const composer = typeof fm.composer === "string" ? fm.composer : "";
-  const name = typeof fm.movement === "string" && fm.movement ? fm.movement : fileTitle(p);
-
-  const bwvMatch = workRef.match(/BWV\s*(\d+)/i);
-  let workId: string;
-  let order: number;
-  if (bwvMatch) {
-    // Bach: id scheme unchanged.
-    workId = `bwv-${parseInt(bwvMatch[1], 10)}`;
-    // Skip movement files for works not in the master index (e.g. _review works).
-    if (!works.has(workId)) continue;
-    order = movementOrder.get(`${workId}:${slug(name)}`) ?? 99;
-  } else {
-    // Non-Bach: derive the work from frontmatter, create it on first sight.
-    if (!workRef || !composer) {
-      errors.push(`movement without work/composer frontmatter: ${p}`);
-      continue;
-    }
-    workId = slug(workRef);
-    if (!works.has(workId)) works.set(workId, { id: workId, composer, title: workRef, bwv: null });
-    // Order by the leading roman numeral (I/II/III), else file-encounter order.
-    const roman = romanLead(name);
-    if (roman !== null) {
-      order = roman;
-    } else {
-      order = orderCounter.get(workId) ?? 0;
-      orderCounter.set(workId, order + 1);
-    }
-  }
-  const id = `${workId}-${slug(name)}`;
-  movements.set(id, {
-    id,
-    workId,
-    name,
-    key: typeof fm.key === "string" && fm.key ? fm.key : null,
-    order,
-  });
-
+/** Parse one Recordings table into unified recordings for the given piece. */
+function parseRecordingRows(pieceId: string, file: string, body: string): void {
   const t = tableUnder(body, "Recordings");
-  if (!t) continue;
-  // Table columns: | Artist | Audio | Album | Key | notes | bpm |
-  // "Album" holds the label/source; "notes" has "Character · detail" merged.
-  const cPerf = col(t, "artist");
-  const cRec = col(t, "album");
-  const cNotes = col(t, "notes");
+  if (!t) return;
+  const cArtist = col(t, "artist");
+  const cAlbum = col(t, "album");
+  const cKey = col(t, "key");
   const cBpm = col(t, "bpm");
+  let cNotes = col(t, "notes");
+  if (cNotes === -1) cNotes = col(t, "melody"); // older tune files use "Melody"
   for (const row of t.rows) {
-    const perf = cPerf >= 0 ? extractLinks(row[cPerf] ?? "") : [];
-    if (perf.length === 0) continue;
-    const performerId = slug(perf[0]);
-    const labelRaw = cRec >= 0 ? norm(row[cRec] ?? "") : "";
+    const artistNames = cArtist >= 0 ? extractLinks(row[cArtist] ?? "") : [];
+    if (artistNames.length === 0) continue; // not a recording row
+    const performerIds = artistNames.map(slug);
+    if (performerIds.some((a) => JUNK_ARTIST_SLUGS.has(a))) {
+      warn(`junk recording row dropped: [[${artistNames.join("/")}]] in ${basename(file)}`);
+      continue;
+    }
+    // Album cell: a wiki link is a real album (placeholders become a source
+    // string); plain text is a source ("Netherlands Bach Society", a radio
+    // orchestra credit, ...). Both null when the cell is empty or a dash.
+    const albumCell = cAlbum >= 0 ? (row[cAlbum] ?? "") : "";
+    const albumLinks = extractLinks(albumCell);
+    let albumId: string | null = null;
+    let source: string | null = null;
+    if (albumLinks.length > 0) {
+      const linked = slug(albumLinks[0]);
+      if (PLACEHOLDER_ALBUMS.has(linked)) {
+        source = placeholderName.get(linked) ?? albumLinks[0];
+      } else {
+        albumId = linked;
+      }
+    } else {
+      const text = norm(albumCell);
+      source = text && !/^[-–—]$/.test(text) ? text : null;
+    }
     const notesRaw = cNotes >= 0 ? norm(row[cNotes] ?? "") : "";
     const bpmRaw = cBpm >= 0 ? norm(row[cBpm] ?? "") : "";
-    // "notes" column format: "Character · detail text" or just "detail text".
-    const dotIdx = notesRaw.indexOf(" · ");
-    const character = dotIdx >= 0 ? notesRaw.slice(0, dotIdx) : null;
-    const notes = dotIdx >= 0 ? notesRaw.slice(dotIdx + 3) : notesRaw || null;
-    movementRecordings.push({
-      id: `${id}::${performerId}`,
-      movementId: id,
-      performerId,
-      label: labelRaw && !/^[-–—]$/.test(labelRaw) ? labelRaw : null,
-      character: character || null,
-      notes: notes || null,
+    pushRecording({
+      pieceId,
+      albumId,
+      performerIds,
+      performanceKey: cKey >= 0 ? normKey(row[cKey] ?? "") : null,
+      source,
+      notes: notesRaw || null,
       bpm: /^\d+$/.test(bpmRaw) ? parseInt(bpmRaw, 10) : null,
     });
+  }
+}
+
+for (const { tuneId, file, body } of tuneRecordingSources) parseRecordingRows(tuneId, file, body);
+for (const { movementId, file, body } of movementRecordingSources) parseRecordingRows(movementId, file, body);
+
+// Album track rows without a matching recording become recordings too: the
+// album file states the piece is on the record, and the principal artists are
+// the performers of record. No dedupe loss: rows matching an existing
+// (piece, album) pair only contribute their key.
+for (const [albumId, rows] of trackRows) {
+  const album = albums.get(albumId)!;
+  for (const tr of rows) {
+    if (byPieceAlbum.has(`${tr.pieceId}::${albumId}`)) {
+      if (tr.key) {
+        for (const r of recordings) {
+          if (r.pieceId === tr.pieceId && r.albumId === albumId && r.performanceKey === null) {
+            r.performanceKey = tr.key;
+          }
+        }
+      }
+      continue;
+    }
+    pushRecording({
+      pieceId: tr.pieceId,
+      albumId,
+      performerIds: album.artistIds,
+      performanceKey: tr.key,
+      source: null,
+      notes: null,
+      bpm: null,
+    });
+  }
+}
+
+// Album.trackIds: the album's track rows, in file order, joined to recordings.
+for (const [albumId, rows] of trackRows) {
+  const album = albums.get(albumId)!;
+  for (const tr of rows) {
+    for (const r of recordings) {
+      if (r.pieceId === tr.pieceId && r.albumId === albumId && !album.trackIds.includes(r.id)) {
+        album.trackIds.push(r.id);
+      }
+    }
   }
 }
 
 // ---------------------------------------------------------------------------
 // Referential-integrity gate: fail loudly on ANY dangling reference.
 
-for (const r of recordings) {
-  for (const a of r.artistIds) if (!people.has(a)) errors.push(`recording ${r.id}: dangling artist ${a}`);
-  if (!tunes.has(r.tuneId)) errors.push(`recording ${r.id}: dangling tune ${r.tuneId}`);
-  if (r.albumId && !albums.has(r.albumId)) errors.push(`recording ${r.id}: dangling album ${r.albumId}`);
+for (const m of memberships) {
+  if (!people.has(m.groupId)) errors.push(`membership: dangling group ${m.groupId}`);
+  if (!people.has(m.memberId)) errors.push(`membership ${m.groupId}: dangling member ${m.memberId}`);
 }
-for (const al of albums.values()) {
-  for (const a of al.artistIds) if (!people.has(a)) errors.push(`album ${al.id}: dangling artist ${a}`);
-  for (const c of al.credits) if (!SKIP_PERSONNEL_SLUGS.has(c.artistId) && !people.has(c.artistId)) errors.push(`album ${al.id}: dangling personnel ${c.artistId}`);
-  for (const tr of al.tracks) if (!tunes.has(tr.tuneId)) errors.push(`album ${al.id}: dangling tune ${tr.tuneId}`);
-}
-for (const t of tunes.values()) {
-  if (t.composerId && !people.has(t.composerId)) errors.push(`tune ${t.id}: dangling composer ${t.composerId}`);
+for (const w of works.values()) {
+  if (w.composerId && !people.has(w.composerId)) errors.push(`work ${w.id}: dangling composer ${w.composerId}`);
 }
 for (const m of movements.values()) {
   if (!works.has(m.workId)) errors.push(`movement ${m.id}: dangling work ${m.workId}`);
 }
-for (const mr of movementRecordings) {
-  if (!people.has(mr.performerId)) errors.push(`movement recording ${mr.id}: dangling performer ${mr.performerId}`);
-  if (!movements.has(mr.movementId)) errors.push(`movement recording ${mr.id}: dangling movement ${mr.movementId}`);
+for (const t of tunes.values()) {
+  if (t.composerId && !people.has(t.composerId)) errors.push(`tune ${t.id}: dangling composer ${t.composerId}`);
+  if (t.contrafactOfId && !tunes.has(t.contrafactOfId)) {
+    errors.push(`tune ${t.id}: dangling contrafact parent ${t.contrafactOfId}`);
+  }
+}
+for (const al of albums.values()) {
+  for (const a of al.artistIds) if (!people.has(a)) errors.push(`album ${al.id}: dangling artist ${a}`);
+  for (const c of al.credits) if (!people.has(c.artistId)) errors.push(`album ${al.id}: dangling personnel ${c.artistId}`);
+}
+const isPiece = (id: string) => tunes.has(id) || movements.has(id);
+for (const r of recordings) {
+  for (const a of r.performerIds) if (!people.has(a)) errors.push(`recording ${r.id}: dangling performer ${a}`);
+  if (!isPiece(r.pieceId)) errors.push(`recording ${r.id}: dangling piece ${r.pieceId}`);
+  if (r.albumId && !albums.has(r.albumId)) errors.push(`recording ${r.id}: dangling album ${r.albumId}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -625,14 +858,17 @@ for (const mr of movementRecordings) {
 
 const counts = {
   people: people.size,
-  ensembles: [...people.values()].filter((p) => p.type === "ENSEMBLE").length,
-  albums: albums.size,
-  tunes: tunes.size,
-  recordings: recordings.length,
-  personnelEdges: [...albums.values()].reduce((n, a) => n + a.credits.length, 0),
+  ensembles: [...people.values()].filter((p) => p.kind === "ENSEMBLE").length,
+  composerStubs: [...people.values()].filter((p) => p.stub).length,
+  memberships: memberships.length,
+  profiles: [...people.values()].filter((p) => p.profile !== null).length,
   works: works.size,
   movements: movements.size,
-  movementRecordings: movementRecordings.length,
+  tunes: tunes.size,
+  contrafactEdges,
+  albums: albums.size,
+  personnelEdges: [...albums.values()].reduce((n, a) => n + a.credits.length, 0),
+  recordings: recordings.length,
   warnings: warnings.length,
 };
 
@@ -661,31 +897,49 @@ mkdirSync(outDir, { recursive: true });
 const byId = <T extends { id: string }>(m: Map<string, T>) =>
   [...m.values()].sort((a, b) => a.id.localeCompare(b.id));
 
-writeFileSync(join(outDir, "artists.json"), JSON.stringify({ people: byId(people) }, null, 1));
+// Names for every artist referenced by the discography, denormalized so the
+// discography subgraph can honor @provides(fields: "name") on Credit.artist.
+const referencedArtists = new Set<string>();
+for (const al of albums.values()) {
+  for (const a of al.artistIds) referencedArtists.add(a);
+  for (const c of al.credits) referencedArtists.add(c.artistId);
+}
+for (const r of recordings) for (const a of r.performerIds) referencedArtists.add(a);
+const artistNames: Record<string, string> = {};
+for (const id of [...referencedArtists].sort()) artistNames[id] = people.get(id)!.name;
+
 writeFileSync(
-  join(outDir, "catalog.json"),
+  join(outDir, "artists.json"),
   JSON.stringify(
     {
-      tunes: byId(tunes),
-      albums: byId(albums),
-      recordings: recordings.sort((a, b) => a.id.localeCompare(b.id)),
+      people: byId(people),
+      memberships: memberships.slice().sort((a, b) => a.groupId.localeCompare(b.groupId) || a.memberId.localeCompare(b.memberId)),
     },
     null,
     1,
   ),
 );
 writeFileSync(
-  join(outDir, "classical.json"),
+  join(outDir, "catalog.json"),
   JSON.stringify(
     {
-      works: [...works.values()].sort((a, b) => (a.bwv ?? 9e9) - (b.bwv ?? 9e9) || a.id.localeCompare(b.id)),
+      works: byId(works),
       movements: [...movements.values()].sort(
-        (a, b) =>
-          (works.get(a.workId)?.bwv ?? 9e9) - (works.get(b.workId)?.bwv ?? 9e9) ||
-          a.order - b.order ||
-          a.id.localeCompare(b.id),
+        (a, b) => a.workId.localeCompare(b.workId) || (a.position ?? 99) - (b.position ?? 99) || a.id.localeCompare(b.id),
       ),
-      movementRecordings: movementRecordings.sort((a, b) => a.id.localeCompare(b.id)),
+      tunes: byId(tunes),
+    },
+    null,
+    1,
+  ),
+);
+writeFileSync(
+  join(outDir, "discography.json"),
+  JSON.stringify(
+    {
+      albums: byId(albums),
+      recordings: recordings.slice().sort((a, b) => a.id.localeCompare(b.id)),
+      artistNames,
     },
     null,
     1,
