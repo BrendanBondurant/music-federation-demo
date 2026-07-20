@@ -16,6 +16,10 @@ const FEDERATION_BOILERPLATE = /* GraphQL */ `
   directive @link(url: String!, as: String, import: [link__Import]) repeatable on SCHEMA
   scalar link__Import
   directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+  directive @interfaceObject on OBJECT
+  directive @external on FIELD_DEFINITION | OBJECT
+  directive @provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+  directive @shareable repeatable on FIELD_DEFINITION | OBJECT
   scalar federation__FieldSet
   scalar _Any
   type _Service {

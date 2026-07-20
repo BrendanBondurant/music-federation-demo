@@ -1,0 +1,29 @@
+# Contrafact walk: a self-edge in catalog, fanning out to discography.
+# I Got Rhythm's form carries 16 tunes in the vault (Oleo, Rhythm-A-Ning, ...).
+# Each contrafact resolves its own composer into the shared artist pool and its
+# own recordings from the discography.
+query RhythmChangesFamily {
+  tune(id: "i-got-rhythm") {
+    title
+    composer {
+      name
+    }
+    contrafacts {
+      title
+      composer {
+        name
+      }
+      recordings {
+        performers {
+          artist {
+            name
+          }
+        }
+        album {
+          title
+          year
+        }
+      }
+    }
+  }
+}

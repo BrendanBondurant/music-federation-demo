@@ -1,0 +1,32 @@
+# Ensemble hop: membership edges in artists, discography per member.
+# The quintet's own Oleo (Relaxin') sits next to each member's Oleo recordings
+# under their own name. Members without one return an honest empty list.
+query QuintetOleo {
+  artist(id: "miles-davis-quintet") {
+    name
+    kind
+    recordings(piece: "oleo") {
+      album {
+        title
+        year
+      }
+    }
+    members {
+      role
+      member {
+        name
+        recordings(piece: "oleo") {
+          album {
+            title
+            year
+          }
+          performers {
+            artist {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

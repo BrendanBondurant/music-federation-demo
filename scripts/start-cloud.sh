@@ -16,7 +16,7 @@ cleanup() {
 }
 trap cleanup EXIT
 
-for s in artists catalog classical; do
+for s in artists catalog discography; do
   npx tsx "subgraphs/$s/server.ts" &
   pids="$pids $!"
 done

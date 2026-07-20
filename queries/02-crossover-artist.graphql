@@ -1,0 +1,35 @@
+# One artist, three services.
+# Tomatito: identity from artists, compositions from catalog, recordings from
+# discography -- one entity assembled from everywhere. His recordings mix his
+# own rumba (La Vacilona), a jazz standard (Spain), and the complete Rodrigo
+# concerto, which is why the composer/performer split had to die.
+query CrossoverArtist {
+  artist(id: "tomatito") {
+    name
+    instruments
+    styles
+    bio
+    composedPieces {
+      title
+      genre
+    }
+    recordings {
+      piece {
+        title
+        genre
+        ... on Movement {
+          work {
+            composer {
+              name
+            }
+          }
+        }
+      }
+      album {
+        title
+        year
+      }
+      source
+    }
+  }
+}

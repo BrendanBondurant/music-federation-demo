@@ -1,0 +1,37 @@
+# One piece, every genre -- the money shot.
+# The Aranjuez Adagio is a classical Movement, but its recordings span Sáinz de
+# la Maza's 1948 premiere, Paco de Lucía, Miles Davis, and Jim Hall. The router
+# chains all three subgraphs: catalog resolves the piece, discography supplies
+# recordings via the Piece @interfaceObject, artists fills in performer
+# identity. Open the query-plan dropdown and watch the fan-out.
+query AdagioAcrossGenres {
+  piece(id: "concierto-de-aranjuez-ii-adagio") {
+    title
+    genre
+    ... on Movement {
+      work {
+        title
+        composer {
+          name
+        }
+      }
+    }
+    recordings {
+      album {
+        title
+        year
+        label
+      }
+      source
+      notes
+      performers {
+        artist {
+          name
+          instruments
+          styles
+        }
+        role
+      }
+    }
+  }
+}

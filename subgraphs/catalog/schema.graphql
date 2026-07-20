@@ -1,109 +1,127 @@
 extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
 
 """
-The catalog subgraph does not own Artist identity. It contributes
-discography fields to the Artist entity owned by the artists subgraph.
+The catalog subgraph owns what music exists: works, movements, tunes, and the
+Piece entity interface that joins them. It does not own people -- it extends
+the Artist entity with composer edges, so composer and performer are one pool
+(the same person can be both, which matters for flamenco).
 """
-type Artist @key(fields: "id") {
-  "Shared slug @key; identity (name, instrument) lives in the artists subgraph."
+interface Piece @key(fields: "id") {
+  "Slug id; the shared @key. Unique across all implementing types."
   id: ID!
-  "Albums this artist appears on, as principal artist or personnel."
-  albums: [Album!]!
-  "Every recording this artist plays on, across all albums."
-  recordings: [Recording!]!
-  "Tunes this artist wrote. The composer edge is resolved by slug into the shared person pool."
-  composedTunes: [Tune!]!
-}
-
-"A released album: the container for recordings, personnel, and a track list."
-type Album {
-  "Slug id derived from the album title."
-  id: ID!
-  "Album title."
+  "Display title."
   title: String!
-  "Release year. Around 40 albums legitimately have no year in the source data."
-  year: Int
-  "Recording year, when it differs from the release year."
-  recordingYear: Int
-  "Record label. Null when unknown."
-  label: String
-  "Principal artists from the album frontmatter. Empty for various-artists compilations."
-  artists: [Artist!]!
-  """
-  Who played what on THIS record. Instrument-per-album lives here, not on the
-  identity record: the same person plays a different role on every record.
-  """
-  credits: [Credit!]!
-  "Tunes on this album, with the key they were played in when noted."
-  tracks: [Track!]!
-  "Recordings on this album, as rows in the per-tune recordings tables."
-  recordings: [Recording!]!
+  "Broad genre of the piece."
+  genre: Genre!
+  "Home key as written in the vault ('E minor'). Null when not noted."
+  musicalKey: String
 }
 
-"A single personnel credit on an album: one artist and the instrument they played."
-type Credit {
-  "The credited artist. Null when the credit could not be resolved to a person."
-  artist: Artist
-  "Instrument played on this record. Null when unstated."
-  instrument: String
+"Broad genre buckets. A piece has exactly one; artists can span all three."
+enum Genre {
+  "Notated works and their movements (Bach, Rodrigo)."
+  CLASSICAL
+  "Jazz standards, originals, and contrafacts."
+  JAZZ
+  "Flamenco compositions (bulerías, rumbas)."
+  FLAMENCO
 }
 
-"A tune as it appears on an album's track list, with the key it was played in."
-type Track {
-  "The tune played on this track."
-  tune: Tune!
-  "Key this track was played in. Null when not noted."
-  key: String
+"""
+A notated multi-movement work ('Violin Sonata No. 1 in G minor'). The work
+itself is not a Piece; its movements are -- recordings attach to movements.
+"""
+type Work @key(fields: "id") {
+  "Generic work id: 'bwv-<n>' for Bach, slug(title) for other composers."
+  id: ID!
+  "Work title, e.g. 'Concierto de Aranjuez'."
+  title: String!
+  "Catalogue number as written ('BWV 1001'). Null for works without one."
+  catalogNumber: String
+  "The composer, resolved into the shared Artist pool. Null when unknown."
+  composer: Artist
+  "Broad genre; CLASSICAL for every work in the current data."
+  genre: Genre!
+  "Movements of this work, in performance order."
+  movements: [Movement!]!
 }
 
-"A composition (jazz standard, original, or crossover piece). Owned by catalog."
-type Tune @key(fields: "id") {
-  "Slug id derived from the tune title; the shared @key with the classical subgraph."
+"A single movement of a work. This is the recordable unit for classical music."
+type Movement implements Piece @key(fields: "id") {
+  "Movement id: '<workId>-<slug(title)>', e.g. 'concierto-de-aranjuez-ii-adagio'."
+  id: ID!
+  "Movement title as written, e.g. 'II. Adagio' or 'Praeludium'."
+  title: String!
+  "Position within the work (1-based). Null when the source doesn't order it."
+  position: Int
+  "The work this movement belongs to."
+  work: Work!
+  "Broad genre; CLASSICAL for every movement in the current data."
+  genre: Genre!
+  "Key of the movement as written ('E minor'). Null when not noted."
+  musicalKey: String
+}
+
+"A tune: jazz standard, original, or flamenco composition."
+type Tune implements Piece @key(fields: "id") {
+  "Slug id derived from the tune title."
   id: ID!
   "Tune title."
   title: String!
-  "Composer display string, e.g. 'Antônio Carlos Jobim'. Null when unknown."
-  composer: String
-  "Composer resolved into the shared person pool; null when the composer has no artist record."
-  composedBy: Artist
-  "Broad stylistic tag. Null when untagged."
+  "Style tag as written ('standard', 'bossa', 'flamenco'). Null when untagged."
   style: String
-  "Tracked performances of this tune. This is the jazz edge of a crossover tune."
-  recordings: [Recording!]!
+  "Composer, resolved into the shared Artist pool. Null when the vault names none."
+  composer: Artist
+  "The tune this one borrows its form from (Oleo -> I Got Rhythm). Null for non-contrafacts and for blues-form tunes, which have no single parent."
+  contrafactOf: Tune
+  "Tunes built on this tune's form."
+  contrafacts: [Tune!]!
+  "Broad genre."
+  genre: Genre!
+  "Home key as written ('E minor'). Set on only a few tunes; performance keys live on recordings."
+  musicalKey: String
 }
 
-"One tracked performance of a tune: who played it, on which album, and how."
-type Recording {
-  "Composite id: tune::album::artists."
+"""
+The catalog does not own Artist identity. It contributes composer edges to the
+Artist entity owned by the artists subgraph.
+"""
+type Artist @key(fields: "id") {
+  "Shared slug @key; identity (name, instruments) lives in the artists subgraph."
   id: ID!
-  "The tune performed."
-  tune: Tune!
-  "Performing artists on this recording."
-  artists: [Artist!]!
-  "Null for recordings sourced from placeholder albums (YouTube rips, compilations)."
-  album: Album
-  "Key this recording was played in. Null when not noted."
-  key: String
-  "Tempo in beats per minute. Null when not noted."
-  bpm: Int
-  "Free-text note on the melody or head. Null when absent."
-  melody: String
+  "Every piece this artist composed: tunes plus the movements of their works."
+  composedPieces: [Piece!]!
+  "Multi-movement works this artist composed. Empty for tune-only composers."
+  composedWorks: [Work!]!
 }
 
 "Root entry points owned by the catalog subgraph."
 type Query {
+  "Look up any piece (movement or tune) by slug id. Null when not found."
+  piece(
+    "Slug id of the piece, e.g. 'concierto-de-aranjuez-ii-adagio' or 'oleo'."
+    id: ID!
+  ): Piece
+  "All pieces, optionally filtered by exact home key as written ('E minor')."
+  pieces(
+    "Exact musicalKey string to filter by; omit to return every piece."
+    musicalKey: String
+  ): [Piece!]!
   "Look up one tune by slug id. Null when no tune has that id."
   tune(
-    "Slug id of the tune to fetch, e.g. 'alone-together'."
+    "Slug id of the tune to fetch, e.g. 'i-got-rhythm'."
     id: ID!
   ): Tune
   "Every tune in the catalog."
   tunes: [Tune!]!
-  "Look up one album by slug id. Null when no album has that id."
-  album(
-    "Slug id of the album to fetch, e.g. '3-dimensional'."
+  "Look up one work by id ('bwv-1001', 'concierto-de-aranjuez'). Null when not found."
+  work(
+    "Work id to fetch."
     id: ID!
-  ): Album
-  "Every album in the catalog."
-  albums: [Album!]!
+  ): Work
+  "All works, optionally filtered by composer."
+  works(
+    "Slug id of the composer to filter by ('bach', 'rodrigo'); omit for all. Ids, never display names: the id pool is the join key."
+    composer: ID
+  ): [Work!]!
 }

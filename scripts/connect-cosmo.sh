@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Publish this graph to Cosmo Cloud: namespace, federated graph, all three
-# subgraphs, and a router token. Everything except the API key is automated.
+# subgraphs (artists, catalog, discography), and a router token. Everything
+# except the API key is automated.
 #
 # Manual step first (once): create an API key in Cosmo Studio
 # (Settings -> API Keys), then:
@@ -24,9 +25,13 @@ $WGC federated-graph create "$GRAPH" \
   --routing-url http://localhost:3002/graphql || echo "    (already exists, continuing)"
 
 # Publish in this order and every intermediate composition stays valid:
-# artists is self-contained, catalog and classical only add fields to Artist.
+# artists is self-contained, catalog adds fields to Artist, discography joins
+# both. Composition happens to accept discography even before catalog (its
+# Piece @interfaceObject composes as a plain object type until the entity
+# interface arrives -- see DOC-GAPS.md #8), but catalog-first is the order
+# under which every intermediate graph also means what it says.
 echo "==> Publishing subgraphs"
-for s in artists catalog classical; do
+for s in artists catalog discography; do
   port=$([ "$s" = artists ] && echo 4001 || { [ "$s" = catalog ] && echo 4002 || echo 4003; })
   $WGC subgraph publish "$s" \
     --namespace "$NAMESPACE" \
