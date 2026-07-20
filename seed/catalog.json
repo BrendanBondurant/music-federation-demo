@@ -2,63 +2,63 @@
  "works": [
   {
    "id": "bwv-1001",
-   "title": "Violin Sonata No. 1 in G minor",
+   "title": "BWV 1001",
    "catalogNumber": "BWV 1001",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-1043",
-   "title": "Concerto for Two Violins in D minor",
+   "title": "BWV 1043",
    "catalogNumber": "BWV 1043",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-1047",
-   "title": "Brandenburg Concerto No. 2 in F major",
+   "title": "BWV 1047",
    "catalogNumber": "BWV 1047",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-1068",
-   "title": "Air (from Orchestral Suite No. 3)",
+   "title": "BWV 1068",
    "catalogNumber": "BWV 1068",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-147",
-   "title": "Jesu, Joy of Man's Desiring",
+   "title": "BWV 147",
    "catalogNumber": "BWV 147",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-565",
-   "title": "Toccata and Fugue in D minor",
+   "title": "BWV 565",
    "catalogNumber": "BWV 565",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-855",
-   "title": "Prelude and Fugue in E minor (WTC I No. 10)",
+   "title": "BWV 855",
    "catalogNumber": "BWV 855",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-947",
-   "title": "Fugue in A minor (attribution doubtful)",
+   "title": "BWV 947",
    "catalogNumber": "BWV 947",
    "composerId": "bach",
    "genre": "CLASSICAL"
   },
   {
    "id": "bwv-996",
-   "title": "Lute Suite in E minor",
+   "title": "BWV 996",
    "catalogNumber": "BWV 996",
    "composerId": "bach",
    "genre": "CLASSICAL"
@@ -260,6 +260,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "aires-choqueros",
+   "title": "Aires choqueros",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "all-of-me",
    "title": "All of Me",
    "composerId": "gerald-marks-seymour-simons",
@@ -282,7 +291,7 @@
    "title": "All the Things You Could Be By Now If Sigmund Freud’s Wife Was Your Mother",
    "composerId": "charles-mingus",
    "style": "standard",
-   "contrafactOfId": "all-the-things-you-are",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -309,9 +318,18 @@
    "title": "Anthropology",
    "composerId": "charlie-parker",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "antonia",
+   "title": "Antonia",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "au-privave",
@@ -372,7 +390,7 @@
    "title": "Bean at the Met",
    "composerId": "coleman-hawkins",
    "style": "standard",
-   "contrafactOfId": "how-high-the-moon",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -458,15 +476,6 @@
    "genre": "JAZZ"
   },
   {
-   "id": "blue-bird",
-   "title": "Blue Bird",
-   "composerId": "charlie-parker",
-   "style": "blues",
-   "contrafactOfId": null,
-   "musicalKey": null,
-   "genre": "JAZZ"
-  },
-  {
    "id": "blue-bossa",
    "title": "Blue Bossa",
    "composerId": "kenny-dorham",
@@ -530,15 +539,6 @@
    "genre": "JAZZ"
   },
   {
-   "id": "blues-for-wood",
-   "title": "Blues for Wood",
-   "composerId": "woody-shaw",
-   "style": "blues",
-   "contrafactOfId": null,
-   "musicalKey": null,
-   "genre": "JAZZ"
-  },
-  {
    "id": "blues-in-the-closet",
    "title": "Blues in the Closet",
    "composerId": "oscar-pettiford",
@@ -584,6 +584,42 @@
    "genre": "JAZZ"
   },
   {
+   "id": "calle-municion",
+   "title": "Calle Munición",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "callejon-del-muro",
+   "title": "Callejón del Muro",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "camaron",
+   "title": "Camarón",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "cana-de-azucar",
+   "title": "Caña de Azúcar",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "careful",
    "title": "Careful",
    "composerId": "jim-hall",
@@ -591,6 +627,51 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "casa-bernardo",
+   "title": "Casa Bernardo",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "casilda",
+   "title": "Casilda",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "castro-marin",
+   "title": "Castro Marín",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "cepa-andaluza",
+   "title": "Cepa Andaluza",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "chanela",
+   "title": "Chanela",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "chasin-the-trane",
@@ -629,6 +710,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "convite",
+   "title": "Convite",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "cool-blues",
    "title": "Cool Blues",
    "composerId": "charlie-parker",
@@ -638,11 +728,20 @@
    "genre": "JAZZ"
   },
   {
+   "id": "cositas-buenas",
+   "title": "Cositas Buenas",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "cotton-tail",
    "title": "Cotton Tail",
    "composerId": "duke-ellington",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -660,7 +759,7 @@
    "title": "Crazeology",
    "composerId": "bennie-harris",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -678,7 +777,7 @@
    "title": "Dexterity",
    "composerId": "charlie-parker",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -710,13 +809,49 @@
    "genre": "JAZZ"
   },
   {
-   "id": "duff",
-   "title": "Duff",
-   "composerId": "hampton-hawes",
-   "style": "blues",
+   "id": "el-chorruelo",
+   "title": "El chorruelo",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
-   "genre": "JAZZ"
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-dengue",
+   "title": "El Dengue",
+   "composerId": "paco-de-lucia-juan-danyelica",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-panuelo",
+   "title": "El Pañuelo",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-tesorillo",
+   "title": "El Tesorillo",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "entre-dos-aguas",
+   "title": "Entre dos aguas",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "equinox",
@@ -750,7 +885,7 @@
    "title": "Flying Home",
    "composerId": "benny-goodman-lionel-hampton",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -773,13 +908,31 @@
    "genre": "JAZZ"
   },
   {
-   "id": "funky",
-   "title": "Funky",
-   "composerId": "kenny-burrell",
-   "style": "blues",
+   "id": "fuente-y-caudal",
+   "title": "Fuente y caudal",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
-   "genre": "JAZZ"
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "gitanos-andaluces",
+   "title": "Gitanos Andaluces",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "gloria-al-nino-ricardo",
+   "title": "Gloria al Niño Ricardo",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "glorias-step",
@@ -800,13 +953,13 @@
    "genre": "JAZZ"
   },
   {
-   "id": "hit-that-mess",
-   "title": "Hit that Mess",
-   "composerId": "harry-squires-bulee-gaillard",
-   "style": "blues",
+   "id": "herencia",
+   "title": "Herencia",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
-   "genre": "JAZZ"
+   "genre": "FLAMENCO"
   },
   {
    "id": "honeysuckle-rose",
@@ -834,6 +987,15 @@
    "contrafactOfId": null,
    "musicalKey": "D minor",
    "genre": "JAZZ"
+  },
+  {
+   "id": "huida",
+   "title": "Huida",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "i-got-rhythm",
@@ -867,7 +1029,7 @@
    "title": "Indiana Winter",
    "composerId": "coleman-hawkins",
    "style": "standard",
-   "contrafactOfId": "how-high-the-moon",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -890,15 +1052,6 @@
    "genre": "JAZZ"
   },
   {
-   "id": "jackie",
-   "title": "Jackie",
-   "composerId": "hampton-hawes",
-   "style": "blues",
-   "contrafactOfId": null,
-   "musicalKey": null,
-   "genre": "JAZZ"
-  },
-  {
    "id": "jumpin-with-symphony-sid",
    "title": "Jumpin with Symphony Sid",
    "composerId": "lester-young-buddy-feyne",
@@ -906,6 +1059,33 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "la-barrosa",
+   "title": "La Barrosa",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-canada",
+   "title": "La Cañada",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-tumbona",
+   "title": "La Tumbona",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "la-vacilona",
@@ -917,11 +1097,20 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "la-villa-vieja",
+   "title": "La Villa vieja",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "lennie-bird",
    "title": "Lennie-Bird",
    "composerId": "lennie-tristano",
    "style": "standard",
-   "contrafactOfId": "how-high-the-moon",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -930,7 +1119,7 @@
    "title": "Lester Leaps In",
    "composerId": "lester-young",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -953,6 +1142,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "los-pinares",
+   "title": "Los Pinares",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "lullaby-of-the-leaves",
    "title": "Lullaby of the Leaves",
    "composerId": "bernice-petkere",
@@ -960,6 +1158,33 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "luzia",
+   "title": "Luzia",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "manteca-colora",
+   "title": "Manteca colorá",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "me-regale",
+   "title": "Me regalé",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "meditation",
@@ -971,6 +1196,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "mi-nino-curro",
+   "title": "Mi Niño Curro",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "misty",
    "title": "Misty",
    "composerId": "erroll-garner",
@@ -980,11 +1214,29 @@
    "genre": "JAZZ"
   },
   {
+   "id": "monasterio-de-sal",
+   "title": "Monasterio de sal",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "montino",
+   "title": "Montiño",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "moose-the-mooche",
    "title": "Moose the Mooche",
    "composerId": "charlie-parker",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -993,7 +1245,7 @@
    "title": "More Moon",
    "composerId": "woody-herman",
    "style": "standard",
-   "contrafactOfId": "how-high-the-moon",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1047,7 +1299,7 @@
    "title": "Oleo",
    "composerId": "sonny-rollins",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1088,13 +1340,31 @@
    "genre": "JAZZ"
   },
   {
+   "id": "palenque",
+   "title": "Palenque",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "passport",
    "title": "Passport",
    "composerId": "charlie-parker",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "patio-custodio",
+   "title": "Patio Custodio",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "perhaps",
@@ -1113,6 +1383,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "pinonate",
+   "title": "Piñonate",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "plaza-de-san-juan",
+   "title": "Plaza de San Juan",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "polka-dots-and-moonbeams",
@@ -1137,9 +1425,18 @@
    "title": "Prince Albert",
    "composerId": "kenny-dorham",
    "style": "standard",
-   "contrafactOfId": "all-the-things-you-are",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "que-venga-el-alba",
+   "title": "Que Venga el Alba",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "red-top",
@@ -1149,6 +1446,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "reflejo-de-luna",
+   "title": "Reflejo de luna",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "relaxin-at-camarillo",
@@ -1164,9 +1470,18 @@
    "title": "Rhythm-A-Ning",
    "composerId": "thelonious-monk",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "rio-de-la-miel",
+   "title": "Río de la miel",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "round-midnight",
@@ -1191,7 +1506,7 @@
    "title": "Salt Peanuts",
    "composerId": "dizzy-gillespie",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1209,7 +1524,7 @@
    "title": "Seven Come Eleven",
    "composerId": "benny-goodman",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1221,6 +1536,24 @@
    "contrafactOfId": null,
    "musicalKey": "C minor",
    "genre": "JAZZ"
+  },
+  {
+   "id": "solera",
+   "title": "Solera",
+   "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "solo-quiero-caminar",
+   "title": "Sólo quiero caminar",
+   "composerId": "paco-de-lucia-pepe-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "some-other-blues",
@@ -1272,7 +1605,7 @@
    "title": "Steeple Chase",
    "composerId": "charlie-parker",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1308,7 +1641,7 @@
    "title": "Straighten Up and Fly Right",
    "composerId": "nat-king-cole",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1416,7 +1749,7 @@
    "title": "The Eternal Triangle",
    "composerId": "sonny-stitt",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1434,7 +1767,7 @@
    "title": "The Serpents Tooth",
    "composerId": "miles-davis",
    "style": "standard",
-   "contrafactOfId": "i-got-rhythm",
+   "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
   },
@@ -1511,15 +1844,6 @@
    "genre": "JAZZ"
   },
   {
-   "id": "twisted",
-   "title": "Twisted",
-   "composerId": "wardell-gray",
-   "style": "blues",
-   "contrafactOfId": null,
-   "musicalKey": null,
-   "genre": "JAZZ"
-  },
-  {
    "id": "two-degrees-east-three-degrees-west",
    "title": "Two Degrees East Three Degrees West",
    "composerId": "john-lewis",
@@ -1527,6 +1851,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "volar",
+   "title": "Volar",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "waltz-for-debby",

@@ -5,11 +5,13 @@
  * seed/catalog.json, seed/discography.json, and fails loudly if any
  * reference dangles or the entity counts drift from the verified numbers.
  *
- * Three trees feed three subgraphs:
- *   - who plays  -> artists.json     (Jazz Tunes/Artists, Flamenco/Artists,
- *                                     Composers/Performers, group Personnel)
- *   - what music exists -> catalog.json (Works, Movements, Tunes, contrafacts)
- *   - who recorded what -> discography.json (Albums, unified Recordings)
+ * Three trees feed three subgraphs, all flat since the 2026-07-16 vault-wide
+ * schema unification (see vault/_meta/CLAUDE.md):
+ *   - who plays  -> artists.json     (Artists/, ensembles flagged by
+ *                                     instrument: ensemble|group, group
+ *                                     Personnel sections)
+ *   - what music exists -> catalog.json (Pieces/Works, Pieces/Tunes, contrafacts)
+ *   - who recorded what -> discography.json (Albums/, unified Recordings)
  *
  * Usage:
  *   npm run seed -- /path/to/Personal/Music
@@ -20,48 +22,86 @@ import { join, basename, dirname } from "node:path";
 import { homedir } from "node:os";
 
 // ---------------------------------------------------------------------------
-// Expected state of the vault, verified 2026-07-14 (post-reorg: flamenco tree,
-// crossover tune files merged into movement files, group Personnel sections).
-// If the seeder reports different numbers, the parser is wrong -- not the
-// vault. Do not edit these to make a failing run pass.
+// Expected state of the vault, verified 2026-07-20 (post schema-unification:
+// Jazz Tunes/Flamenco/Composers folders collapsed into flat Artists/, Albums/,
+// Pieces/{Tunes,Works}/; ensembles now flagged by frontmatter instead of a
+// Groups/ folder; contrafacts now come from an in-file ## Contrafacts section
+// on the parent tune instead of a Contrafacts/<Parent>/ folder). If the
+// seeder reports different numbers, the parser is wrong -- not the vault.
+// Do not edit these to make a failing run pass.
 //
 // Cross-checks behind the numbers:
-//   - works 10        = 9 BWV headings in Works – Master.md + Concierto de Aranjuez
-//   - movements 22    = movement files under Composers/Works (22)
-//   - tunes 147       = 145 Jazz Tunes/Tunes files (Other tunes.md skipped) + 2 Flamenco/Tunes
-//   - contrafactEdges = 4 (ATTYA) + 4 (How High the Moon) + 16 (Rhythm Changes);
-//                       the 71 Blues-folder tunes have no parent tune on purpose
-//   - albums 612      = 611 jazz + 4 flamenco album files - 3 placeholders
-//   - memberships 10  = Miles Davis Quintet (5) + Modern Jazz Quartet (5)
-//   - profiles 11     = performer files with an **Axes:** line
-//   - recordings 889  = tune rows + movement rows + album track rows with no
-//                       matching (piece, album) recording
+//   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
+//   - movements 22      = movement files under Pieces/Works (22)
+//   - tunes 184         = Pieces/Tunes files (Other tunes.md skipped)
+//   - contrafactEdges 2 = only "All The Things You Are" carries a
+//                         ## Contrafacts section post-reorg (Bird of Paradise,
+//                         Ablution). The old Rhythm-Changes/Blues/How-High-the-
+//                         Moon folder groupings were dropped in the reorg and
+//                         have no in-file equivalent yet -- those tunes
+//                         (including the 71 blues tunes, deliberately parentless
+//                         even before the reorg) now have no parent on purpose.
+//   - albums 717        = 720 Albums/ files - 3 placeholders (YouTube, Late
+//                         Night Jazz, Baroquswing Vol. II)
+//   - people 1221       = 1183 Artists/ files + 38 composer stubs
+//   - ensembles 57      = Artists/ files with instrument: ensemble (42) or
+//                         instrument: group (15)
+//   - memberships 256   = independently re-summed: every "- [[...]]" bullet
+//                         under ## Personnel across all 57 ensemble/group files
+//   - profiles 0        = no **Axes:** line survives anywhere in Artists/ post-
+//                         reorg (was 11). The InterpretiveProfile feature the
+//                         artists subgraph exposes has no backing data right
+//                         now -- flagged to Brendan, not silently patched.
+//   - personnelEdges 2488 = independently re-summed: 2645 raw "- [[...]]"
+//                         Personnel bullets across all Albums/ files, minus
+//                         146 bulleted lines with no wikilink, minus 1
+//                         bob-prince (skipped by name), minus 11 bullets that
+//                         belong to the 3 placeholder albums (skipped whole)
+//   - recordings 1036   = tune rows + movement rows + album track rows with no
+//                         matching (piece, album) recording; grew with the 147
+//                         -> 184 tune count. No independent hand recount --
+//                         verified via the referential-integrity gate only.
+//   - warnings 1        = "Ralph Lalama & His Manhattan All Stars" (Feelin'
+//                         and Dealin') has no Artists/ file of its own; the
+//                         real personnel are still credited individually
 const EXPECTED = {
-  people: 1160,
-  ensembles: 61,
-  composerStubs: 41,
-  memberships: 10,
-  profiles: 11,
+  people: 1221,
+  ensembles: 57,
+  composerStubs: 38,
+  memberships: 256,
+  profiles: 0,
   works: 10,
   movements: 22,
-  tunes: 147,
-  contrafactEdges: 24,
-  albums: 612,
-  personnelEdges: 2170,
-  recordings: 889,
-  warnings: 0,
+  tunes: 184,
+  contrafactEdges: 2,
+  albums: 717,
+  personnelEdges: 2488,
+  recordings: 1036,
+  warnings: 1,
 };
 
 const SKIP_FILES = new Set(["CLAUDE.md", "Albums to fix.md", "Other tunes.md"]);
-const PLACEHOLDER_ALBUMS = new Set(["youtube", "late-night-jazz-compilation", "baroquswing-vol-ii"]);
+// Self-titled compilation/one-off albums with no backing Album file -- same
+// treatment as the pre-reorg placeholders: recordings keep a null album and
+// carry the name as source. Found as dangling self-titled links during the
+// 2026-07-20 reseed (each tune is the only source for its own eponymous set).
+const PLACEHOLDER_ALBUMS = new Set([
+  "youtube",
+  "late-night-jazz-compilation",
+  "baroquswing-vol-ii",
+  "blues-in-the-closet",
+  "the-jody-grind",
+  "the-thumper",
+]);
 const JUNK_ARTIST_SLUGS = new Set(["georgie-gershwin"]);
 // Personnel credits for arrangers/producers who don't have artist files and
 // don't need one. Their credits are dropped (Credit.artist is non-null now).
 const SKIP_PERSONNEL_SLUGS = new Set(["bob-prince"]);
-// Contrafact folders whose name is not itself a tune file.
-const CONTRAFACT_PARENT_ALIAS: Record<string, string | null> = {
-  "rhythm-changes": "i-got-rhythm", // rhythm changes = the I Got Rhythm form
-  blues: null, // the blues is a form, not a parent tune
+// Known misspellings in album frontmatter `artist:` lists that don't match
+// their Artists/ file slug (found during the 2026-07-20 reseed). Vault is
+// read-only, so corrected here rather than in the source file.
+const ARTIST_SLUG_ALIAS: Record<string, string> = {
+  "esperanca-spalding": "esperanza-spalding", // Chamber Music Society.md: "Esperança"
 };
 
 // ---------------------------------------------------------------------------
@@ -101,8 +141,10 @@ function normKey(raw: string): string | null {
 
 /**
  * Extract wiki-link targets from a cell. Handles [[Name]], full-vault-path
- * links (take the last path segment), |alias and #heading parts. Skips
- * ![[...]] embeds.
+ * links (take the last path segment) and |alias parts. Skips ![[...]] embeds.
+ * Does NOT strip a "#" suffix: the vault has real filenames containing a
+ * literal "#" (This Is Jazz #14) and zero legitimate heading-anchor links, so
+ * treating "#" as an anchor separator would truncate a valid link target.
  */
 function extractLinks(cell: string): string[] {
   const out: string[] = [];
@@ -111,7 +153,7 @@ function extractLinks(cell: string): string[] {
   while ((m = re.exec(cell)) !== null) {
     if (m[1] === "!") continue; // embed (PDFs etc.)
     let target = m[2];
-    target = target.split("|")[0].split("#")[0];
+    target = target.split("|")[0];
     const segs = target.split("/");
     const name = norm(segs[segs.length - 1]);
     if (name) out.push(name);
@@ -180,6 +222,29 @@ function bulletsUnder(body: string, headingPrefix: string): string[] {
       continue;
     }
     if (inSection && /^\s*-\s+/.test(line)) out.push(norm(line.replace(/^\s*-\s+/, "")));
+  }
+  return out;
+}
+
+/**
+ * Non-empty lines under the section whose heading starts with `headingPrefix`,
+ * unlike bulletsUnder these are plain lines, not "- " bullets (used for the
+ * post-reorg ## Contrafacts section: "[[Child]] - Composer" per line).
+ */
+function linesUnder(body: string, headingPrefix: string): string[] {
+  const lines = body.split("\n");
+  let inSection = false;
+  const out: string[] = [];
+  for (const line of lines) {
+    if (/^#{1,6}\s/.test(line)) {
+      if (inSection) break;
+      inSection = norm(line).replace(/^#+\s*/, "").toLowerCase().startsWith(headingPrefix.toLowerCase());
+      continue;
+    }
+    if (inSection) {
+      const t = norm(line);
+      if (t) out.push(t);
+    }
   }
   return out;
 }
@@ -377,28 +442,33 @@ if (!vault || !existsSync(vault)) {
   console.error("Vault path required: npm run seed -- /path/to/Personal/Music");
   process.exit(1);
 }
-const jazz = join(vault, "Jazz Tunes");
-const flamenco = join(vault, "Flamenco");
-const composers = join(vault, "Composers");
+const artistsDir = join(vault, "Artists");
+const albumsDir = join(vault, "Albums");
+const tunesDir = join(vault, "Pieces", "Tunes");
+const worksDir = join(vault, "Pieces", "Works");
+const metaDir = join(vault, "_meta");
 
-// --- People: jazz + flamenco artists + classical performers share ONE pool ---
+// --- People: jazz, flamenco, and classical artists share ONE flat pool -------
+// (there is no separate "classical subgraph" convention -- see _meta/CLAUDE.md)
 const people = new Map<string, Person>();
 const membershipSources: { groupId: string; file: string; body: string }[] = [];
 
-function addArtistFile(p: string, kind: "PERSON" | "ENSEMBLE"): void {
+function addArtistFile(p: string): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
   const name = typeof fm.name === "string" && fm.name ? fm.name : fileTitle(p);
   const id = slug(fileTitle(p));
-  if (kind === "ENSEMBLE" && bulletsUnder(body, "Personnel").length > 0) {
+  const instrument = typeof fm.instrument === "string" ? fm.instrument : null;
+  // Ensembles are flagged by frontmatter now, not a Groups/ folder.
+  const isEnsemble = !!instrument && ["ensemble", "group"].includes(instrument.toLowerCase());
+  const kind: "PERSON" | "ENSEMBLE" = isEnsemble ? "ENSEMBLE" : "PERSON";
+  if (isEnsemble && bulletsUnder(body, "Personnel").length > 0) {
     membershipSources.push({ groupId: id, file: p, body });
   }
   // Variant spellings of the same person (Gomez / Gómez) slug to one id on
   // purpose: same name, same key. First file wins; no warning.
   if (people.has(id)) return;
-  const instrument = typeof fm.instrument === "string" ? fm.instrument : null;
-  // "ensemble"/"group" is a folder marker, not an instrument.
-  const instruments =
-    instrument && !["ensemble", "group"].includes(instrument.toLowerCase()) ? [instrument] : [];
+  // "ensemble"/"group" is a kind marker, not an instrument.
+  const instruments = instrument && !isEnsemble ? [instrument] : [];
   const style = typeof fm.style === "string" && fm.style ? fm.style : null;
   people.set(id, {
     id,
@@ -412,16 +482,7 @@ function addArtistFile(p: string, kind: "PERSON" | "ENSEMBLE"): void {
   });
 }
 
-for (const p of mdFiles(join(jazz, "Artists"))) {
-  addArtistFile(p, p.includes("/Groups/") ? "ENSEMBLE" : "PERSON");
-}
-for (const p of mdFiles(join(flamenco, "Artists"))) {
-  addArtistFile(p, p.includes("/Groups/") ? "ENSEMBLE" : "PERSON");
-}
-for (const p of mdFiles(join(composers, "Performers"))) {
-  // Crossover person: jazz/flamenco record wins, classical data attaches by id.
-  addArtistFile(p, "PERSON");
-}
+for (const p of mdFiles(artistsDir)) addArtistFile(p);
 
 // Composers named in tune/work frontmatter but without a vault file become
 // stub artists: real people, real names from the vault, no identity data
@@ -460,27 +521,35 @@ for (const { groupId, body } of membershipSources) {
 }
 
 // --- Classical works + movements ---------------------------------------------
-// Bach works come from the master index ("## BWV <n> — Title" headings); other
-// composers' works are created from movement frontmatter on first sight.
+// Works come from the master index ("## <Composer> - <WorkRef>" headings, one
+// per composer since the reorg -- previously Bach-only with a descriptive
+// title in the heading). The reorg dropped the descriptive title text from
+// the vault entirely, so Work.title falls back to the catalog number (or the
+// work name when there isn't one, e.g. Concierto de Aranjuez) -- no invented
+// musicological titles. Other composers' works are created from movement
+// frontmatter on first sight, as a safety net if a work is missing from the
+// master index.
 const works = new Map<string, Work>();
 const movementOrder = new Map<string, number>(); // "bwv-996:allemande" -> index
 
 {
-  const master = readFileSync(join(composers, "Works – Master.md"), "utf8");
+  const master = readFileSync(join(metaDir, "Works – Master.md"), "utf8");
   let currentWorkId: string | null = null;
   let expectMovements = false;
   let idx = 0;
   for (const line of master.split("\n")) {
-    const h = norm(line).match(/^#{2,3}\s+BWV\s+(\d+)\s+[-–—]\s+(.+)$/);
+    const h = norm(line).match(/^#{2,3}\s+(.+?)\s+-\s+(.+)$/);
     if (h) {
-      const bwv = parseInt(h[1], 10);
-      currentWorkId = `bwv-${bwv}`;
-      const title = norm(h[2]).replace(/\s+[-–—].*$/, "").trim();
+      const composerName = h[1];
+      const workRef = h[2];
+      const bwvMatch = workRef.match(/BWV\s*(\d+)/i);
+      const catalogNumber = bwvMatch ? `BWV ${parseInt(bwvMatch[1], 10)}` : null;
+      currentWorkId = bwvMatch ? `bwv-${parseInt(bwvMatch[1], 10)}` : slug(workRef);
       works.set(currentWorkId, {
         id: currentWorkId,
-        title,
-        catalogNumber: `BWV ${bwv}`,
-        composerId: null, // filled after the loop; composerRef needs people loaded
+        title: catalogNumber ?? workRef,
+        catalogNumber,
+        composerId: composerRef(composerName),
         genre: "CLASSICAL",
       });
       idx = 0;
@@ -502,8 +571,6 @@ const movementOrder = new Map<string, number>(); // "bwv-996:allemande" -> index
       }
     }
   }
-  const bachId = composerRef("Bach");
-  for (const w of works.values()) w.composerId = bachId;
 }
 
 const movements = new Map<string, Movement>();
@@ -516,7 +583,7 @@ const movementByFileSlug = new Map<string, string>();
 const movementRecordingSources: { movementId: string; file: string; body: string }[] = [];
 
 const orderCounter = new Map<string, number>(); // file-order fallback per workId
-for (const p of mdFiles(join(composers, "Works"))) {
+for (const p of mdFiles(worksDir)) {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
   const workRef = typeof fm.work === "string" ? fm.work : "";
   const composer = typeof fm.composer === "string" ? fm.composer : "";
@@ -567,12 +634,13 @@ for (const p of mdFiles(join(composers, "Works"))) {
   movementRecordingSources.push({ movementId: id, file: p, body });
 }
 
-// --- Tunes (jazz + flamenco, contrafact folders) ------------------------------
+// --- Tunes (jazz + flamenco, flat since the reorg; flamenco flagged by
+// style: flamenco frontmatter rather than a separate folder) -----------------
 const tunes = new Map<string, Tune>();
 const tuneRecordingSources: { tuneId: string; file: string; body: string }[] = [];
-const contrafactFolder = new Map<string, string>(); // tuneId -> parent folder name
+const tuneBodies = new Map<string, string>(); // tuneId -> body, for the Contrafacts pass
 
-function addTuneFile(p: string, genre: Genre): void {
+function addTuneFile(p: string): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
   const title = fileTitle(p);
   const id = slug(title);
@@ -587,34 +655,31 @@ function addTuneFile(p: string, genre: Genre): void {
       style,
       contrafactOfId: null, // resolved after all tunes are known
       musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
-      genre: style === "flamenco" ? "FLAMENCO" : genre,
+      genre: style === "flamenco" ? "FLAMENCO" : "JAZZ",
     });
-    // Tunes/Contrafacts/<Parent>/X.md -> X is a contrafact of <Parent>.
-    const parentDir = basename(dirname(p));
-    if (dirname(p).includes("/Contrafacts/")) contrafactFolder.set(id, parentDir);
+    tuneBodies.set(id, body);
   }
   tuneRecordingSources.push({ tuneId: id, file: p, body });
 }
 
-for (const p of mdFiles(join(jazz, "Tunes"))) addTuneFile(p, "JAZZ");
-for (const p of mdFiles(join(flamenco, "Tunes"))) addTuneFile(p, "FLAMENCO");
+for (const p of mdFiles(tunesDir)) addTuneFile(p);
 
+// A parent tune's own "## Contrafacts" section lists its children, one link
+// per line ("[[Child]] - Composer"), replacing the old Contrafacts/<Parent>/
+// folder convention -- see the EXPECTED comment above on what this dropped.
 let contrafactEdges = 0;
-for (const [tuneId, folder] of contrafactFolder) {
-  const folderSlug = slug(folder);
-  const parentId =
-    folderSlug in CONTRAFACT_PARENT_ALIAS
-      ? CONTRAFACT_PARENT_ALIAS[folderSlug]
-      : tunes.has(folderSlug)
-        ? folderSlug
-        : null;
-  if (parentId === null && !(folderSlug in CONTRAFACT_PARENT_ALIAS)) {
-    errors.push(`contrafact folder "${folder}" resolves to no tune (${tuneId})`);
-    continue;
+for (const [parentTuneId, body] of tuneBodies) {
+  for (const line of linesUnder(body, "Contrafacts")) {
+    const links = extractLinks(line);
+    if (links.length === 0) continue;
+    const childId = slug(links[0]);
+    if (!tunes.has(childId)) {
+      errors.push(`contrafact under ${parentTuneId}: unknown child tune "${links[0]}"`);
+      continue;
+    }
+    tunes.get(childId)!.contrafactOfId = parentTuneId;
+    contrafactEdges++;
   }
-  const t = tunes.get(tuneId)!;
-  t.contrafactOfId = parentId;
-  if (parentId) contrafactEdges++;
 }
 
 // Piece is an entity interface: Movement and Tune ids must never collide,
@@ -648,10 +713,20 @@ function addAlbumFile(p: string): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
 
   const fmArtists = Array.isArray(fm.artist) ? fm.artist : typeof fm.artist === "string" ? [fm.artist] : [];
-  const artistIds = fmArtists
-    .filter((a) => a && a.toLowerCase() !== "various")
-    .map(slug)
-    .filter((a) => a.length > 0);
+  const artistIds: string[] = [];
+  for (const a of fmArtists) {
+    if (!a || /^various(\s+artists)?$/i.test(a.trim())) continue; // not a resolvable entity
+    const aid = ARTIST_SLUG_ALIAS[slug(a)] ?? slug(a);
+    if (!aid) continue;
+    if (!people.has(aid)) {
+      // Descriptive band credit with no artist file of its own (e.g. "Ralph
+      // Lalama & His Manhattan All Stars") -- the real personnel are still
+      // credited individually below. Dropped, not a hard error.
+      warn(`album ${id}: artist "${a}" has no Artists/ file, dropped from artistIds`);
+      continue;
+    }
+    artistIds.push(aid);
+  }
 
   const credits: Credit[] = [];
   for (const b of bulletsUnder(body, "Personnel")) {
@@ -665,9 +740,16 @@ function addAlbumFile(p: string): void {
   }
 
   const rows: { pieceId: string; key: string | null }[] = [];
-  const tt = tableUnder(body, "Tunes");
+  // Classical albums use "## Movements" instead of "## Tunes" (same table
+  // shape, header "Movement" instead of "Tune").
+  let tt = tableUnder(body, "Tunes");
+  let pieceColName = "tune";
+  if (!tt) {
+    tt = tableUnder(body, "Movements");
+    pieceColName = "movement";
+  }
   if (tt) {
-    const cTune = col(tt, "tune");
+    const cTune = col(tt, pieceColName);
     const cKey = col(tt, "key");
     for (const row of tt.rows) {
       const links = cTune >= 0 ? extractLinks(row[cTune] ?? "") : [];
@@ -709,8 +791,7 @@ function addAlbumFile(p: string): void {
   trackRows.set(id, rows);
 }
 
-for (const p of mdFiles(join(jazz, "Albums"))) addAlbumFile(p);
-for (const p of mdFiles(join(flamenco, "Albums"))) addAlbumFile(p);
+for (const p of mdFiles(albumsDir)) addAlbumFile(p);
 
 // --- Recordings: one model for jazz, flamenco, and classical -------------------
 const recordings: Recording[] = [];

@@ -33,8 +33,8 @@ Which subgraphs a query hits is decided by the **fields selected**, not the root
 |----|--------|
 | `concierto-de-aranjuez-ii-adagio` | Movement (the crossover piece) |
 | `tomatito` | Artist spanning flamenco, jazz, classical |
-| `i-got-rhythm` | Tune with 16 contrafacts |
-| `oleo` | Tune (rhythm-changes contrafact) |
+| `all-the-things-you-are` | Tune with 2 contrafacts (Ablution, Bird of Paradise) |
+| `oleo` | Tune (the quintet's own, used by #5) |
 | `zyryab-album` | Album |
 | `miles-davis-quintet` | Artist (ENSEMBLE, with stated members) |
 | `bwv-996` | Work in E minor (its movements show in #6) |

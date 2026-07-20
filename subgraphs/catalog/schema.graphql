@@ -72,7 +72,7 @@ type Tune implements Piece @key(fields: "id") {
   style: String
   "Composer, resolved into the shared Artist pool. Null when the vault names none."
   composer: Artist
-  "The tune this one borrows its form from (Oleo -> I Got Rhythm). Null for non-contrafacts and for blues-form tunes, which have no single parent."
+  "The tune this one borrows its form from (Ablution -> All The Things You Are). Null for non-contrafacts and for blues-form tunes, which have no single parent."
   contrafactOf: Tune
   "Tunes built on this tune's form."
   contrafacts: [Tune!]!

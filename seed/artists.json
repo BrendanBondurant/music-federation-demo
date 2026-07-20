@@ -223,6 +223,20 @@
    "stub": false
   },
   {
+   "id": "alain-perez",
+   "name": "Alain Pérez",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Bass.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "alan-broadbent",
    "name": "Alan Broadbent",
    "kind": "PERSON",
@@ -398,7 +412,7 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Guitar transcription of the BWV 1001 Presto using the Barrueco arrangement. Praised for \"very beautiful playing.\" Good for hearing the Presto's line and rhythm in a plucked-string context.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -446,7 +460,21 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Spanish-American guitarist, brother of Pepe Romero. Recorded the concerto with the London Symphony Orchestra under André Previn (EMI, 1977).",
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "angela-bautista",
+   "name": "Ángela Bautista",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
    "profile": null,
    "stub": false
   },
@@ -468,6 +496,18 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "anthony-hervey",
+   "name": "Anthony Hervey",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
    ],
    "styles": [],
    "bio": null,
@@ -521,6 +561,20 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "antonio-el-negro",
+   "name": "Antonio el Negro",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
    "profile": null,
    "stub": false
   },
@@ -678,7 +732,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Analog-era classic included in the Rolf 25-artist comparison. Elegant, classically proportioned — the Presto is about poise rather than sheer velocity. Warmer, old-school sound and phrasing shaped by mid-20th-century taste.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -785,6 +839,18 @@
    "bio": null,
    "profile": null,
    "stub": true
+  },
+  {
+   "id": "barbara-baines",
+   "name": "Barbara Baines",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
   },
   {
    "id": "barney-bigard",
@@ -930,6 +996,18 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "benjamin-jaffe",
+   "name": "Benjamin Jaffe",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -1090,6 +1168,20 @@
     "vocals"
    ],
    "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "betty-carter",
+   "name": "Betty Carter",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "vocal jazz, bebop"
+   ],
    "bio": null,
    "profile": null,
    "stub": false
@@ -1301,6 +1393,18 @@
    "stub": false
   },
   {
+   "id": "billy-butterfield",
+   "name": "Billy Butterfield",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "billy-childs",
    "name": "Billy Childs",
    "kind": "PERSON",
@@ -1410,7 +1514,7 @@
   },
   {
    "id": "bireli-lagrene",
-   "name": "Bireli Lagrène",
+   "name": "Biréli Lagrène",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -1517,6 +1621,18 @@
     "bebop"
    ],
    "bio": "Bob Mintzer",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "bob-prince",
+   "name": "Bob Prince",
+   "kind": "PERSON",
+   "instruments": [
+    "arranger"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -1714,6 +1830,18 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "brandon-lee",
+   "name": "Brandon Lee",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
    ],
    "styles": [],
    "bio": null,
@@ -2055,6 +2183,18 @@
    "stub": false
   },
   {
+   "id": "carl-maraghi",
+   "name": "Carl Maraghi",
+   "kind": "PERSON",
+   "instruments": [
+    "baritone saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "carl-perkins",
    "name": "Carl Perkins",
    "kind": "PERSON",
@@ -2153,6 +2293,18 @@
    "stub": false
   },
   {
+   "id": "cass-moore",
+   "name": "Cass Moore",
+   "kind": "PERSON",
+   "instruments": [
+    "keyboards"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "cat-anderson",
    "name": "Cat Anderson",
    "kind": "PERSON",
@@ -2223,6 +2375,18 @@
     "flamenco"
    ],
    "bio": "Spanish pianist from Cádiz who fuses flamenco with jazz; frequent collaborator with Wynton Marsalis and the Jazz at Lincoln Center Orchestra.",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "charl-du-plessis",
+   "name": "Charl du Plessis",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -2503,6 +2667,18 @@
    "stub": false
   },
   {
+   "id": "chico-de-souza",
+   "name": "Chico de Souza",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "chico-hamilton",
    "name": "Chico Hamilton",
    "kind": "PERSON",
@@ -2558,7 +2734,7 @@
     "mandolin"
    ],
    "styles": [],
-   "bio": "Complete BWV 1001 on mandolin. Reddit: \"students studying Bach on any instrument could learn from this recording.\" Plucked-string clarity makes the Presto's line and rhythm especially audible.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -2616,6 +2792,20 @@
     "piano"
    ],
    "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "chuck-berry",
+   "name": "Chuck Berry",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar, vocals"
+   ],
+   "styles": [
+    "rock and roll"
+   ],
    "bio": null,
    "profile": null,
    "stub": false
@@ -2707,7 +2897,7 @@
   {
    "id": "classical-jazz-quartet",
    "name": "Classical Jazz Quartet",
-   "kind": "ENSEMBLE",
+   "kind": "PERSON",
    "instruments": [
     "jazz quartet"
    ],
@@ -3053,6 +3243,18 @@
    "stub": false
   },
   {
+   "id": "dan-pratt",
+   "name": "Dan Pratt",
+   "kind": "PERSON",
+   "instruments": [
+    "tenor saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "daniel-humair",
    "name": "Daniel Humair",
    "kind": "PERSON",
@@ -3264,12 +3466,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "\"Vivid clarity and nuance,\" refined ornamentation, beautiful Telarc engineering. Each movement brought to life with transparent articulation and warm tone. Tasteful rather than radical — the Bourrée and Gigue are held up as models of dancing rhythm without sacrificing contrapuntal detail.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "High",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -3427,6 +3625,20 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "diego-el-cigala",
+   "name": "Diego El Cigala",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Vocals.",
    "profile": null,
    "stub": false
   },
@@ -3737,6 +3949,18 @@
    "stub": false
   },
   {
+   "id": "dr-michael-white",
+   "name": "Dr. Michael White",
+   "kind": "PERSON",
+   "instruments": [
+    "clarinet"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "duke-ellington",
    "name": "Duke Ellington",
    "kind": "PERSON",
@@ -3781,6 +4005,20 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "duquende",
+   "name": "Duquende",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Vocals.",
    "profile": null,
    "stub": false
   },
@@ -3916,7 +4154,7 @@
   },
   {
    "id": "eddie-gomez",
-   "name": "Eddie Gomez",
+   "name": "Eddie Gómez",
    "kind": "PERSON",
    "instruments": [
     "bass"
@@ -4070,7 +4308,7 @@
   },
   {
    "id": "edmund-quint-johnson",
-   "name": "Edmund \"Quint\" Johnson",
+   "name": "Edmund Quint Johnson",
    "kind": "PERSON",
    "instruments": [
     "tenor saxophone"
@@ -4253,6 +4491,18 @@
    "stub": false
   },
   {
+   "id": "eric-reed",
+   "name": "Eric Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "eric-reed-trio",
    "name": "Eric Reed Trio",
    "kind": "ENSEMBLE",
@@ -4301,18 +4551,6 @@
   {
    "id": "ernest-mccarty",
    "name": "Ernest McCarty",
-   "kind": "PERSON",
-   "instruments": [
-    "bass"
-   ],
-   "styles": [],
-   "bio": null,
-   "profile": null,
-   "stub": false
-  },
-  {
-   "id": "ernest-mccarty-jr",
-   "name": "Ernest McCarty Jr.",
    "kind": "PERSON",
    "instruments": [
     "bass"
@@ -4393,18 +4631,6 @@
     "classical"
    ],
    "bio": "Finnish conductor and composer, former music director of the Los Angeles Philharmonic.",
-   "profile": null,
-   "stub": false
-  },
-  {
-   "id": "esperanca-spalding",
-   "name": "Esperança Spalding",
-   "kind": "PERSON",
-   "instruments": [
-    "vocals / bass"
-   ],
-   "styles": [],
-   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -4621,6 +4847,18 @@
    "stub": false
   },
   {
+   "id": "frank-demond",
+   "name": "Frank Demond",
+   "kind": "PERSON",
+   "instruments": [
+    "trombone"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "frank-flynn",
    "name": "Frank Flynn",
    "kind": "PERSON",
@@ -4650,6 +4888,18 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "frank-greene",
+   "name": "Frank Greene",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
    ],
    "styles": [],
    "bio": null,
@@ -4770,6 +5020,18 @@
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "freddie-hendrix",
+   "name": "Freddie Hendrix",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
    ],
    "styles": [],
    "bio": null,
@@ -5188,7 +5450,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Intense, individual Bach that still maintains structural integrity. Recommended when you want more personality and tension than the classic \"neutral\" accounts. Good choice for the Presto's relentless drive.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -5272,12 +5534,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "MusicWeb's preferred version over Williams and Isbin. 11-string guitar gives the music unique color and balance, closer to a lute's range. \"Execution faultless\" — praised for taste and effectiveness rather than experimentation.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "High",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -5385,6 +5643,20 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "guadiana",
+   "name": "Guadiana",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
    "profile": null,
    "stub": false
   },
@@ -5579,16 +5851,6 @@
    "stub": false
   },
   {
-   "id": "harry-squires-bulee-gaillard",
-   "name": "Harry Squires / Bulee Gaillard",
-   "kind": "PERSON",
-   "instruments": [],
-   "styles": [],
-   "bio": null,
-   "profile": null,
-   "stub": true
-  },
-  {
    "id": "harvey-mason",
    "name": "Harvey Mason",
    "kind": "PERSON",
@@ -5678,7 +5940,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Often mentioned alongside Milstein as the other essential classic reference. Dignified, architecturally clear Bach. Particularly solid control in fast movements. The choice when you want a serious, deeply musical reading without virtuosic showboating.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -5800,7 +6062,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Most frequently recommended modern mainstream recording in general Bach discussions. Flawless technique, precise rhythm, clear singing tone. Best entry point before branching into more specialized aesthetics.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -5824,12 +6086,8 @@
     "lute"
    ],
    "styles": [],
-   "bio": "Listed among the leading Bach lutenists in Walter Bitner's \"Bach on the Lute: 70 Years of Recordings.\" Historically informed approach; idiomatic lute technique; nuanced ornamentation. Rhetorical but within baroque practice norms.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "Medium–High",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -5945,6 +6203,18 @@
    "stub": false
   },
   {
+   "id": "hugo-radyn",
+   "name": "Hugo Radyn",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "i-pommeriggi-musicali-di-milano",
    "name": "I Pommeriggi Musicali di Milano",
    "kind": "ENSEMBLE",
@@ -5986,7 +6256,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Common modern top choice. Highly rated in the Rolf musicblog 25-artist comparison for structural insight and stylistic sensitivity. Fast but not showy; clear articulation with vibrato restraint. Best choice if you want HIP-leaning thinking on a modern instrument.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -6024,7 +6294,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Recorded full BWV 1001 (Adagio, Fuga, Siciliana, Presto). Core legacy recording — labels keep reissuing it as \"Perlman Plays Bach.\" Technically immaculate, tonally generous, interpretively authoritative. The modern \"big violin sound\" benchmark.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -6131,12 +6401,24 @@
   {
    "id": "jacques-loussier-trio",
    "name": "Jacques Loussier Trio",
-   "kind": "ENSEMBLE",
+   "kind": "PERSON",
    "instruments": [
     "piano trio"
    ],
    "styles": [],
    "bio": "French pianist Jacques Loussier's trio; the *Play Bach* series (from 1959) set Bach to swing.",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "james-burton",
+   "name": "James Burton",
+   "kind": "PERSON",
+   "instruments": [
+    "trombone"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -6268,12 +6550,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Modern pedagogical benchmark cited in academic work on Bach transcriptions. Rhythmically clear, tastefully ornamented — Courante and Bourrée held up as models of stylistically informed dance character. Balanced and judicious rather than iconoclastic.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "Medium",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -6294,6 +6572,18 @@
    "kind": "PERSON",
    "instruments": [
     "baritone saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jay-leonhart",
+   "name": "Jay Leonhart",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -6396,7 +6686,7 @@
   },
   {
    "id": "jeff-t-bone-gerard",
-   "name": "Jeff \"T-Bone\" Gerard",
+   "name": "Jeff T-Bone Gerard",
    "kind": "PERSON",
    "instruments": [
     "vocals"
@@ -6752,11 +7042,15 @@
    "id": "jimmy-heath",
    "name": "Jimmy Heath",
    "kind": "PERSON",
-   "instruments": [],
-   "styles": [],
+   "instruments": [
+    "tenor saxophone"
+   ],
+   "styles": [
+    "bebop, hard bop"
+   ],
    "bio": null,
    "profile": null,
-   "stub": true
+   "stub": false
   },
   {
    "id": "jimmy-jones",
@@ -6925,6 +7219,18 @@
    "stub": false
   },
   {
+   "id": "joe-ascione",
+   "name": "Joe Ascione",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "joe-benjamin",
    "name": "Joe Benjamin",
    "kind": "PERSON",
@@ -7069,6 +7375,32 @@
   {
    "id": "joe-hunt",
    "name": "Joe Hunt",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "joe-jackson",
+   "name": "Joe Jackson",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals, vibraphone"
+   ],
+   "styles": [
+    "new wave, swing revival"
+   ],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "joe-lastie",
+   "name": "Joe Lastie",
    "kind": "PERSON",
    "instruments": [
     "drums"
@@ -7570,12 +7902,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Benchmark alongside Söllscher and Isbin; \"excellently executed.\" Clean articulation, historically significant as an early guitar transcription. Solid, reliable — not described as colorful or daring, but consistently praised for execution.",
-   "profile": {
-    "clarity": "Medium–High",
-    "toneColor": "Medium",
-    "risk": "Low"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -7795,18 +8123,6 @@
    "stub": false
   },
   {
-   "id": "jorn-elniff",
-   "name": "Jorn Elniff",
-   "kind": "PERSON",
-   "instruments": [
-    "drums"
-   ],
-   "styles": [],
-   "bio": "> See [[Jørn Elniff]]",
-   "profile": null,
-   "stub": false
-  },
-  {
    "id": "jose-mangual",
    "name": "José Mangual",
    "kind": "PERSON",
@@ -7815,6 +8131,34 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jose-maria-bandera",
+   "name": "Jose Maria Bandera",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Guitar.",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "josemi-carmona",
+   "name": "Josemi Carmona",
+   "kind": "PERSON",
+   "instruments": [
+    "mandola"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Mandola.",
    "profile": null,
    "stub": false
   },
@@ -7889,6 +8233,20 @@
    "stub": false
   },
   {
+   "id": "juan-ramirez",
+   "name": "Juan Ramírez",
+   "kind": "PERSON",
+   "instruments": [
+    "dance"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Dancer.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "judith-lynn-stillman",
    "name": "Judith Lynn Stillman",
    "kind": "PERSON",
@@ -7922,12 +8280,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Helped popularize BWV 996 alongside Williams. Known for expressive, coloristic playing and individualized phrasing — a more romantic, personal approach. Movement-level detail in writing is sparse; the focus is on his historical importance and charismatic timbral richness.",
-   "profile": {
-    "clarity": "Not explicit",
-    "toneColor": "High",
-    "risk": "Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -8056,12 +8410,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Virtuosic and intense. Listener commentary stresses his control at high speed; Classical Guitar Magazine describes his Bach cello suites as \"magical\" with intensely expressive slow movements. BWV 996 video comments emphasize a standout, distinctive reading. The highest interpretive risk of the guitar performers.",
-   "profile": {
-    "clarity": "Medium",
-    "toneColor": "Medium",
-    "risk": "High"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -8601,6 +8951,18 @@
    "stub": false
   },
   {
+   "id": "laverne-andrews",
+   "name": "LaVerne Andrews",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "lawrence-brown",
    "name": "Lawrence Brown",
    "kind": "PERSON",
@@ -8750,7 +9112,7 @@
   },
   {
    "id": "lester-junior-barnard",
-   "name": "Lester \"Junior\" Barnard",
+   "name": "Lester Junior Barnard",
    "kind": "PERSON",
    "instruments": [
     "electric guitar"
@@ -8951,6 +9313,20 @@
    "stub": false
   },
   {
+   "id": "louis-jordan",
+   "name": "Louis Jordan",
+   "kind": "PERSON",
+   "instruments": [
+    "alto saxophone, vocals"
+   ],
+   "styles": [
+    "jump blues, swing"
+   ],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "louis-prima",
    "name": "Louis Prima",
    "kind": "PERSON",
@@ -9011,6 +9387,20 @@
    "stub": false
   },
   {
+   "id": "luis-dulzaides",
+   "name": "Luis Dulzaides",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Congas.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "luizao-maia",
    "name": "Luizão Maia",
    "kind": "PERSON",
@@ -9061,6 +9451,18 @@
   {
    "id": "makoto-ozone",
    "name": "Makoto Ozone",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mal-waldron",
+   "name": "Mal Waldron",
    "kind": "PERSON",
    "instruments": [
     "piano"
@@ -9166,12 +9568,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Tonebase community favorite. Rich, controlled sound; the Courante in BWV 996 is singled out as a particular highlight. Valued for taste and balance over flamboyance.",
-   "profile": {
-    "clarity": "Medium–High",
-    "toneColor": "Medium–High",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -9183,6 +9581,18 @@
    ],
    "styles": [],
    "bio": "Trumpeter, longtime member of the Jazz at Lincoln Center Orchestra.",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "marcus-roberts",
+   "name": "Marcus Roberts",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -9204,6 +9614,30 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mark-taylor",
+   "name": "Mark Taylor",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mark-whitfield",
+   "name": "Mark Whitfield",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -9307,6 +9741,18 @@
    "stub": false
   },
   {
+   "id": "massimo-farao",
+   "name": "Massimo Faraò",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "massimo-farao-trio",
    "name": "Massimo Faraò Trio",
    "kind": "ENSEMBLE",
@@ -9369,6 +9815,18 @@
    "name": "Max Roach Quintet",
    "kind": "ENSEMBLE",
    "instruments": [],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "maxene-andrews",
+   "name": "Maxene Andrews",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
    "styles": [],
    "bio": null,
    "profile": null,
@@ -9481,6 +9939,18 @@
    "stub": false
   },
   {
+   "id": "michael-dease",
+   "name": "Michael Dease",
+   "kind": "PERSON",
+   "instruments": [
+    "trombone"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "michael-formanek",
    "name": "Michael Formanek",
    "kind": "PERSON",
@@ -9563,6 +10033,18 @@
    ],
    "styles": [],
    "bio": "Mik Zander",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mike-collier",
+   "name": "Mike Collier",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -9803,6 +10285,20 @@
    "stub": false
   },
   {
+   "id": "montse-cortes",
+   "name": "Montse Cortés",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "monty-alexander",
    "name": "Monty Alexander",
    "kind": "PERSON",
@@ -9885,11 +10381,11 @@
    "stub": false
   },
   {
-   "id": "nah-king-cole-piano",
-   "name": "Nah King Cole (piano)",
+   "id": "nabate-isles",
+   "name": "Nabate Isles",
    "kind": "PERSON",
    "instruments": [
-    "piano"
+    "trumpet"
    ],
    "styles": [],
    "bio": null,
@@ -9902,6 +10398,18 @@
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "narvin-kimball",
+   "name": "Narvin Kimball",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -9950,7 +10458,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Classic high-bar reference in comparative reviews (included in 25-artist Rolf musicblog survey). Praised for clarity of line and classical poise. Reddit consensus: \"if you only hear a few recordings, make sure one is Milstein.\"",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -9972,6 +10480,18 @@
    "kind": "PERSON",
    "instruments": [
     "arranger"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "neal-reid",
+   "name": "Neal Reid",
+   "kind": "PERSON",
+   "instruments": [
+    "trombone"
    ],
    "styles": [],
    "bio": null,
@@ -10041,6 +10561,18 @@
    "stub": false
   },
   {
+   "id": "nick-robbins",
+   "name": "Nick Robbins",
+   "kind": "PERSON",
+   "instruments": [
+    "synthesizer"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "niels-henning-rsted-pedersen",
    "name": "Niels-Henning Ørsted Pedersen",
    "kind": "PERSON",
@@ -10060,12 +10592,8 @@
     "lute"
    ],
    "styles": [],
-   "bio": "Naxos reviews emphasize clarity, structure, and balance. Often recommended as a core modern reference for listeners who want clarity without extremes. Measured and introspective — the conservative HIP choice.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "Medium",
-    "risk": "Low"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -10117,6 +10645,18 @@
    "stub": false
   },
   {
+   "id": "norm-miller",
+   "name": "Norm Miller",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "nousche-rosenberg",
    "name": "Nous'che Rosenberg",
    "kind": "PERSON",
@@ -10144,11 +10684,15 @@
    "id": "oliver-nelson",
    "name": "Oliver Nelson",
    "kind": "PERSON",
-   "instruments": [],
-   "styles": [],
+   "instruments": [
+    "alto saxophone"
+   ],
+   "styles": [
+    "hard bop, big band"
+   ],
    "bio": null,
    "profile": null,
-   "stub": true
+   "stub": false
   },
   {
    "id": "orlando-le-fleming",
@@ -10166,11 +10710,15 @@
    "id": "ornette-coleman",
    "name": "Ornette Coleman",
    "kind": "PERSON",
-   "instruments": [],
-   "styles": [],
+   "instruments": [
+    "alto saxophone"
+   ],
+   "styles": [
+    "free jazz, avant-garde"
+   ],
    "bio": null,
    "profile": null,
-   "stub": true
+   "stub": false
   },
   {
    "id": "oscar-castro-neves",
@@ -10281,6 +10829,36 @@
    "stub": false
   },
   {
+   "id": "paco-de-lucia-jose-torregrosa",
+   "name": "Paco de Lucía, José Torregrosa",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": true
+  },
+  {
+   "id": "paco-de-lucia-juan-danyelica",
+   "name": "Paco de Lucía, Juan D'Anyelica",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": true
+  },
+  {
+   "id": "paco-de-lucia-pepe-de-lucia",
+   "name": "Paco de Lucía, Pepe de Lucía",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": true
+  },
+  {
    "id": "pasquale-grasso",
    "name": "Pasquale Grasso",
    "kind": "PERSON",
@@ -10307,6 +10885,30 @@
   {
    "id": "pat-metheny",
    "name": "Pat Metheny",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "patty-andrews",
+   "name": "Patty Andrews",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "paul-baines",
+   "name": "Paul Baines",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -10370,12 +10972,8 @@
     "guitar (8-string)"
    ],
    "styles": [],
-   "bio": "8-string guitar clarifies bass and inner voices in Bach. Recital reviews describe his approach as \"unusual\" and structurally intense — a more distinctive interpretive stance than most guitar performers. Extended range gives the music a distinctive timbre.",
-   "profile": {
-    "clarity": "High",
-    "toneColor": "Medium–High",
-    "risk": "Medium–High"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -10386,20 +10984,6 @@
     "tenor saxophone"
    ],
    "styles": [],
-   "bio": null,
-   "profile": null,
-   "stub": false
-  },
-  {
-   "id": "paul-harnell",
-   "name": "Paul Harnell",
-   "kind": "PERSON",
-   "instruments": [
-    "piano"
-   ],
-   "styles": [
-    "swing"
-   ],
    "bio": null,
    "profile": null,
    "stub": false
@@ -10597,6 +11181,20 @@
    "stub": false
   },
   {
+   "id": "pepe-de-lucia",
+   "name": "Pepe de Lucía",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Vocals.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "pepe-romero",
    "name": "Pepe Romero",
    "kind": "PERSON",
@@ -10604,7 +11202,7 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Spanish-American virtuoso, of Los Romeros. A celebrated Rodrigo interpreter; recorded the concerto with the Academy of St Martin in the Fields under Neville Marriner (Philips).",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -10853,6 +11451,20 @@
    "stub": false
   },
   {
+   "id": "potito",
+   "name": "Potito",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "preservation-hall-jazz-band",
    "name": "Preservation Hall Jazz Band",
    "kind": "ENSEMBLE",
@@ -10868,6 +11480,18 @@
    "kind": "PERSON",
    "instruments": [
     "arranger"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "quincy-phillips",
+   "name": "Quincy Phillips",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
    ],
    "styles": [],
    "bio": null,
@@ -10892,7 +11516,7 @@
     "baroque violin"
    ],
    "styles": [],
-   "bio": "Primary HIP reference for BWV 1001. Baroque bow and setup shift the Presto's character — dance-inflected rhythmic feel and lighter articulation. Natural first choice if you want to hear what a baroque setup does to the movement.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -10953,6 +11577,20 @@
    ],
    "styles": [],
    "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ramon-de-algeciras",
+   "name": "Ramón de Algeciras",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Flamenco guitar.",
    "profile": null,
    "stub": false
   },
@@ -11238,7 +11876,7 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Spanish guitarist and dedicatee of the Concierto de Aranjuez. Gave the 1940 premiere and made the first recording (Orquesta Nacional de España / Ataúlfo Argenta, 1948).",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -11255,6 +11893,18 @@
    "stub": false
   },
   {
+   "id": "renato-rivolta",
+   "name": "Renato Rivolta",
+   "kind": "PERSON",
+   "instruments": [
+    "conductor"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "renaud-capucon",
    "name": "Renaud Capuçon",
    "kind": "PERSON",
@@ -11262,7 +11912,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Newer entry; available on major labels and streaming. Early responses position it as a polished, expressive modern alternative alongside Faust and Hahn. Long-term consensus still forming.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -11354,6 +12004,18 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "rickie-monie",
+   "name": "Rickie Monie",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
    ],
    "styles": [],
    "bio": null,
@@ -11532,6 +12194,18 @@
    "kind": "PERSON",
    "instruments": [
     "electric bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ron-blake",
+   "name": "Ron Blake",
+   "kind": "PERSON",
+   "instruments": [
+    "tenor saxophone"
    ],
    "styles": [],
    "bio": null,
@@ -11997,6 +12671,18 @@
    "stub": false
   },
   {
+   "id": "sean-smith",
+   "name": "Sean Smith",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "sebastiao-neto",
    "name": "Sebastião Neto",
    "kind": "PERSON",
@@ -12050,12 +12736,8 @@
     "guitar"
    ],
    "styles": [],
-   "bio": "Frequently grouped with Williams and Söllscher as a core Bach-on-guitar option. Published the Schirmer/Tureck–Isbin performance edition with critical notes, manuscript references, and ornamentation — emphasizes stylistic detail. Meticulous and informed, not extreme.",
-   "profile": {
-    "clarity": "Medium–High",
-    "toneColor": "High",
-    "risk": "Low–Medium"
-   },
+   "bio": null,
+   "profile": null,
    "stub": false
   },
   {
@@ -12116,7 +12798,7 @@
     "baroque violin"
    ],
    "styles": [],
-   "bio": "Netherlands Bach Society \"All of Bach\" project — complete BWV 1001 on baroque violin with detailed production and contextual notes. Free, high-fidelity video on YouTube. Strong institutional weight as a curated HIP reference.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -12423,6 +13105,18 @@
    "stub": false
   },
   {
+   "id": "steady-nelson",
+   "name": "Steady Nelson",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "stefon-harris",
    "name": "Stefon Harris",
    "kind": "PERSON",
@@ -12675,6 +13369,20 @@
    "stub": false
   },
   {
+   "id": "tana",
+   "name": "Tana",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Palmas, chorus.",
+   "profile": null,
+   "stub": false
+  },
+  {
    "id": "ted-adams",
    "name": "Ted Adams",
    "kind": "PERSON",
@@ -12821,7 +13529,7 @@
   {
    "id": "the-andrews-sisters",
    "name": "The Andrews Sisters",
-   "kind": "ENSEMBLE",
+   "kind": "PERSON",
    "instruments": [
     "vocals"
    ],
@@ -12903,7 +13611,7 @@
   {
    "id": "the-swingle-singers",
    "name": "The Swingle Singers",
-   "kind": "ENSEMBLE",
+   "kind": "PERSON",
    "instruments": [
     "vocal ensemble"
    ],
@@ -12983,6 +13691,18 @@
     "flamenco"
    ],
    "bio": "Cajón, tablas, drums.",
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "todd-bashore",
+   "name": "Todd Bashore",
+   "kind": "PERSON",
+   "instruments": [
+    "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -13440,7 +14160,7 @@
     "violin"
    ],
    "styles": [],
-   "bio": "Ethan Hein's analysis of \"perpetual motion in the Presto\" uses her recording as the audio reference — an implicit endorsement of its clarity and musicality. Hybrid of historically aware phrasing and modern violin virtuosity.",
+   "bio": null,
    "profile": null,
    "stub": false
   },
@@ -13551,16 +14271,6 @@
    "stub": false
   },
   {
-   "id": "wardell-gray",
-   "name": "Wardell Gray",
-   "kind": "PERSON",
-   "instruments": [],
-   "styles": [],
-   "bio": null,
-   "profile": null,
-   "stub": true
-  },
-  {
    "id": "warne-marsh",
    "name": "Warne Marsh",
    "kind": "PERSON",
@@ -13634,17 +14344,45 @@
   },
   {
    "id": "wc-handy",
-   "name": "WC Handy",
+   "name": "W.C. Handy",
    "kind": "PERSON",
-   "instruments": [],
+   "instruments": [
+    "trumpet"
+   ],
+   "styles": [
+    "blues, early jazz"
+   ],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "wendell-brunious",
+   "name": "Wendell Brunious",
+   "kind": "PERSON",
+   "instruments": [
+    "trumpet"
+   ],
    "styles": [],
    "bio": null,
    "profile": null,
-   "stub": true
+   "stub": false
   },
   {
    "id": "wendell-marshall",
    "name": "Wendell Marshall",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "werner-spies",
+   "name": "Werner Spies",
    "kind": "PERSON",
    "instruments": [
     "bass"
@@ -13715,11 +14453,11 @@
    "stub": false
   },
   {
-   "id": "william-schiopffe",
-   "name": "William Schiöpffe",
+   "id": "william-schipffe",
+   "name": "William Schiøpffe",
    "kind": "PERSON",
    "instruments": [
-    "bass"
+    "drums"
    ],
    "styles": [],
    "bio": null,
@@ -13903,6 +14641,796 @@
  ],
  "memberships": [
   {
+   "groupId": "acoustic-jazz-quartet",
+   "memberId": "craig-fundyga",
+   "role": "vibes"
+  },
+  {
+   "groupId": "acoustic-jazz-quartet",
+   "memberId": "david-grisman",
+   "role": "mandolin"
+  },
+  {
+   "groupId": "acoustic-jazz-quartet",
+   "memberId": "martin-taylor",
+   "role": "guitar"
+  },
+  {
+   "groupId": "ahmad-jamal-trio",
+   "memberId": "ahmad-jamal",
+   "role": "piano"
+  },
+  {
+   "groupId": "ahmad-jamal-trio",
+   "memberId": "israel-crosby",
+   "role": "bass"
+  },
+  {
+   "groupId": "ahmad-jamal-trio",
+   "memberId": "vernel-fournier",
+   "role": "drums"
+  },
+  {
+   "groupId": "art-blakey-the-jazz-messengers",
+   "memberId": "art-blakey",
+   "role": "drums"
+  },
+  {
+   "groupId": "art-blakey-the-jazz-messengers",
+   "memberId": "doug-watkins",
+   "role": "bass"
+  },
+  {
+   "groupId": "art-blakey-the-jazz-messengers",
+   "memberId": "hank-mobley",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "art-blakey-the-jazz-messengers",
+   "memberId": "horace-silver",
+   "role": "piano"
+  },
+  {
+   "groupId": "art-blakey-the-jazz-messengers",
+   "memberId": "kenny-dorham",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "barry-harris-quintet",
+   "memberId": "barry-harris",
+   "role": "piano"
+  },
+  {
+   "groupId": "barry-harris-quintet",
+   "memberId": "charles-mcpherson",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "barry-harris-quintet",
+   "memberId": "clifford-jarvis",
+   "role": "drums"
+  },
+  {
+   "groupId": "barry-harris-quintet",
+   "memberId": "ernie-farrow",
+   "role": "bass"
+  },
+  {
+   "groupId": "barry-harris-quintet",
+   "memberId": "lonnie-hillyer",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "barry-harris",
+   "role": "piano"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "barry-harris",
+   "role": "piano"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "frank-gant",
+   "role": "drums"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "leroy-williams",
+   "role": "drums"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "ron-carter",
+   "role": "bass"
+  },
+  {
+   "groupId": "barry-harris-trio",
+   "memberId": "william-austin",
+   "role": "bass"
+  },
+  {
+   "groupId": "benny-goodman-sextet",
+   "memberId": "benny-goodman",
+   "role": "clarinet"
+  },
+  {
+   "groupId": "benny-goodman-trio",
+   "memberId": "benny-goodman",
+   "role": "clarinet"
+  },
+  {
+   "groupId": "benny-goodman-trio",
+   "memberId": "gene-krupa",
+   "role": "drums"
+  },
+  {
+   "groupId": "benny-goodman-trio",
+   "memberId": "teddy-wilson",
+   "role": "piano"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "bill-evans",
+   "role": "piano"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "bill-evans",
+   "role": "piano"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "chuck-israels",
+   "role": "bass"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "paul-motian",
+   "role": "drums"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "paul-motian",
+   "role": "drums"
+  },
+  {
+   "groupId": "bill-evans-trio",
+   "memberId": "scott-lafaro",
+   "role": "bass"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "alex-brashear",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "bob-wills",
+   "role": "fiddle, vocals"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "dean-mckinney",
+   "role": "vocals"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "evelyn-mckinney",
+   "role": "vocals"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "herb-remington",
+   "role": "steel guitar"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "joe-holley",
+   "role": "fiddle"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "johnny-cuviello",
+   "role": "drums"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "lester-junior-barnard",
+   "role": "electric guitar"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "louis-tierney",
+   "role": "fiddle, saxophone"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "luke-wills",
+   "role": "bass"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "millard-kelso",
+   "role": "piano"
+  },
+  {
+   "groupId": "bob-wills-his-texas-playboys",
+   "memberId": "tommy-duncan",
+   "role": "lead vocals"
+  },
+  {
+   "groupId": "branford-marsalis-quartet",
+   "memberId": "branford-marsalis",
+   "role": "soprano & tenor saxophone"
+  },
+  {
+   "groupId": "branford-marsalis-quartet",
+   "memberId": "eric-revis",
+   "role": "bass"
+  },
+  {
+   "groupId": "branford-marsalis-quartet",
+   "memberId": "jeff-watts",
+   "role": "drums"
+  },
+  {
+   "groupId": "branford-marsalis-quartet",
+   "memberId": "joey-calderazzo",
+   "role": "piano"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "art-taylor",
+   "role": "drums"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "bud-powell",
+   "role": "piano"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "bud-powell",
+   "role": "piano"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "curly-russell",
+   "role": "bass"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "george-duvivier",
+   "role": "bass"
+  },
+  {
+   "groupId": "bud-powell-trio",
+   "memberId": "max-roach",
+   "role": "drums"
+  },
+  {
+   "groupId": "charlie-parker-and-his-orchestra",
+   "memberId": "charlie-parker",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "charlie-parker-and-his-orchestra",
+   "memberId": "max-roach",
+   "role": "drums"
+  },
+  {
+   "groupId": "charlie-parker-and-his-orchestra",
+   "memberId": "miles-davis",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "charlie-parker-and-his-orchestra",
+   "memberId": "teddy-kotick",
+   "role": "bass"
+  },
+  {
+   "groupId": "charlie-parker-and-his-orchestra",
+   "memberId": "walter-bishop-jr",
+   "role": "piano"
+  },
+  {
+   "groupId": "chick-corea-akoustic-band",
+   "memberId": "chick-corea",
+   "role": "piano"
+  },
+  {
+   "groupId": "chick-corea-akoustic-band",
+   "memberId": "dave-weckl",
+   "role": "drums"
+  },
+  {
+   "groupId": "chick-corea-akoustic-band",
+   "memberId": "john-patitucci",
+   "role": "bass"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "carl-maraghi",
+   "role": "baritone saxophone"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "christian-mcbride",
+   "role": "bass, producer"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "douglas-purviance",
+   "role": "bass trombone"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "frank-greene",
+   "role": "trumpets"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "joey-defrancesco",
+   "role": "organ"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "mark-whitfield",
+   "role": "guitar"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "michael-dease",
+   "role": "trombones"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "quincy-phillips",
+   "role": "drums"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "ron-blake",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "steve-wilson",
+   "role": "alto & soprano saxophones, flute"
+  },
+  {
+   "groupId": "christian-mcbride-big-band",
+   "memberId": "todd-bashore",
+   "role": "alto saxophone, flute"
+  },
+  {
+   "groupId": "clayton-hamilton-jazz-orchestra",
+   "memberId": "jeff-clayton",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "clayton-hamilton-jazz-orchestra",
+   "memberId": "jeff-hamilton",
+   "role": "drums"
+  },
+  {
+   "groupId": "clayton-hamilton-jazz-orchestra",
+   "memberId": "john-clayton",
+   "role": "bass"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "eddie-jones",
+   "role": "bass"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "frank-foster",
+   "role": "arrangements"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "frank-wess",
+   "role": "reeds"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "freddie-green",
+   "role": "guitar"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "henry-coker",
+   "role": "trombones"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "kirk-stuart",
+   "role": "piano"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "sarah-vaughan",
+   "role": "vocals"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "sonny-cohn",
+   "role": "trumpets"
+  },
+  {
+   "groupId": "count-basie-orchestra",
+   "memberId": "sonny-payne",
+   "role": "drums"
+  },
+  {
+   "groupId": "eddie-higgins-trio",
+   "memberId": "ben-riley",
+   "role": null
+  },
+  {
+   "groupId": "eddie-higgins-trio",
+   "memberId": "eddie-higgins",
+   "role": "piano"
+  },
+  {
+   "groupId": "eddie-higgins-trio",
+   "memberId": "ray-drummond",
+   "role": null
+  },
+  {
+   "groupId": "eric-reed-trio",
+   "memberId": "al-foster",
+   "role": "drums"
+  },
+  {
+   "groupId": "eric-reed-trio",
+   "memberId": "eric-reed",
+   "role": "piano"
+  },
+  {
+   "groupId": "eric-reed-trio",
+   "memberId": "ron-carter",
+   "role": "bass"
+  },
+  {
+   "groupId": "gerry-mulligan-quartet",
+   "memberId": "carson-smith",
+   "role": "bass"
+  },
+  {
+   "groupId": "gerry-mulligan-quartet",
+   "memberId": "chet-baker",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "gerry-mulligan-quartet",
+   "memberId": "chico-hamilton",
+   "role": "drums"
+  },
+  {
+   "groupId": "gerry-mulligan-quartet",
+   "memberId": "gerry-mulligan",
+   "role": "baritone saxophone"
+  },
+  {
+   "groupId": "hank-jones-trio",
+   "memberId": "hank-jones",
+   "role": "piano"
+  },
+  {
+   "groupId": "hank-jones-trio",
+   "memberId": "kenny-clarke",
+   "role": "drums"
+  },
+  {
+   "groupId": "hank-jones-trio",
+   "memberId": "wendell-marshall",
+   "role": "bass"
+  },
+  {
+   "groupId": "i-pommeriggi-musicali-di-milano",
+   "memberId": "i-pommeriggi-musicali-di-milano",
+   "role": "orchestra"
+  },
+  {
+   "groupId": "i-pommeriggi-musicali-di-milano",
+   "memberId": "john-mclaughlin",
+   "role": "acoustic guitar"
+  },
+  {
+   "groupId": "i-pommeriggi-musicali-di-milano",
+   "memberId": "renato-rivolta",
+   "role": "conductor"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "ali-jackson",
+   "role": "drums, tambourine"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "carlos-henriquez",
+   "role": "bass"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "chris-crenshaw",
+   "role": "trombone"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "dan-nimmer",
+   "role": "piano"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "elliot-mason",
+   "role": "trombone"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "joe-temperley",
+   "role": "baritone sax, bass clarinet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "marcus-printup",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "ryan-kisor",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "sean-jones",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "sherman-irby",
+   "role": "alto sax, soprano sax, clarinet, flute"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "ted-nash",
+   "role": "alto sax, soprano sax, clarinet, flute, piccolo"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "victor-goines",
+   "role": "tenor sax, soprano sax, clarinet, bass clarinet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "vincent-gardner",
+   "role": "trombone"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "walter-blanding",
+   "role": "tenor sax, soprano sax, clarinet"
+  },
+  {
+   "groupId": "jazz-at-lincoln-center-orchestra",
+   "memberId": "wynton-marsalis",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "jimmy-dorsey-his-orchestra",
+   "memberId": "jimmy-dorsey",
+   "role": "alto saxophone, clarinet, leader"
+  },
+  {
+   "groupId": "jimmy-rosenberg-trio",
+   "memberId": "jimmy-rosenberg",
+   "role": "guitar"
+  },
+  {
+   "groupId": "jimmy-rosenberg-trio",
+   "memberId": "nousche-rosenberg",
+   "role": "guitar"
+  },
+  {
+   "groupId": "jimmy-rosenberg-trio",
+   "memberId": "svein-aarbostad",
+   "role": "bass"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "grachan-moncur-iii",
+   "role": "trombone"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "joe-henderson",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "kenny-barron",
+   "role": "piano"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "louis-hayes",
+   "role": "drums"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "mike-lawrence",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "joe-henderson-sextet",
+   "memberId": "ron-carter",
+   "role": "bass"
+  },
+  {
+   "groupId": "john-coltrane-quartet",
+   "memberId": "elvin-jones",
+   "role": "drums"
+  },
+  {
+   "groupId": "john-coltrane-quartet",
+   "memberId": "jimmy-garrison",
+   "role": "bass"
+  },
+  {
+   "groupId": "john-coltrane-quartet",
+   "memberId": "john-coltrane",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "john-coltrane-quartet",
+   "memberId": "mccoy-tyner",
+   "role": "piano"
+  },
+  {
+   "groupId": "johnny-lewis-quartet",
+   "memberId": "james-thompson",
+   "role": "organ, clavinet"
+  },
+  {
+   "groupId": "johnny-lewis-quartet",
+   "memberId": "joe-villa",
+   "role": "guitar"
+  },
+  {
+   "groupId": "johnny-lewis-quartet",
+   "memberId": "joey-de-leon",
+   "role": "trombone"
+  },
+  {
+   "groupId": "johnny-lewis-quartet",
+   "memberId": "johnny-lewis",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "johnny-lewis-quartet",
+   "memberId": "kenneth-drake",
+   "role": "drums"
+  },
+  {
+   "groupId": "julian-lage-group",
+   "memberId": "aristides-rivas",
+   "role": "cello"
+  },
+  {
+   "groupId": "julian-lage-group",
+   "memberId": "dan-blake",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "julian-lage-group",
+   "memberId": "jorge-roeder",
+   "role": "bass"
+  },
+  {
+   "groupId": "julian-lage-group",
+   "memberId": "julian-lage",
+   "role": "guitar"
+  },
+  {
+   "groupId": "julian-lage-group",
+   "memberId": "tupac-mantilla",
+   "role": "percussion"
+  },
+  {
+   "groupId": "juliano-vidal-band",
+   "memberId": "juliano-vidal",
+   "role": "leader"
+  },
+  {
+   "groupId": "kenny-barron-trio",
+   "memberId": "ben-riley",
+   "role": "drums"
+  },
+  {
+   "groupId": "kenny-barron-trio",
+   "memberId": "george-mraz",
+   "role": null
+  },
+  {
+   "groupId": "kenny-barron-trio",
+   "memberId": "kenny-barron",
+   "role": "piano"
+  },
+  {
+   "groupId": "kenny-garrett-quintet",
+   "memberId": "charnett-moffett",
+   "role": "bass"
+  },
+  {
+   "groupId": "kenny-garrett-quintet",
+   "memberId": "kenny-garrett",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "kenny-garrett-quintet",
+   "memberId": "mulgrew-miller",
+   "role": "piano"
+  },
+  {
+   "groupId": "kenny-garrett-quintet",
+   "memberId": "tony-reedus",
+   "role": "drums"
+  },
+  {
+   "groupId": "massimo-farao-trio",
+   "memberId": "massimo-farao",
+   "role": "piano"
+  },
+  {
+   "groupId": "massimo-farao-trio",
+   "memberId": "phil-harper",
+   "role": "trumpet (guest)"
+  },
+  {
+   "groupId": "max-roach-quintet",
+   "memberId": "clifford-brown",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "max-roach-quintet",
+   "memberId": "george-morrow",
+   "role": "bass"
+  },
+  {
+   "groupId": "max-roach-quintet",
+   "memberId": "harold-land",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "max-roach-quintet",
+   "memberId": "max-roach",
+   "role": "drums"
+  },
+  {
+   "groupId": "max-roach-quintet",
+   "memberId": "richie-powell",
+   "role": "piano"
+  },
+  {
+   "groupId": "mccoy-tyner-trio",
+   "memberId": "henry-grimes",
+   "role": "bass"
+  },
+  {
+   "groupId": "mccoy-tyner-trio",
+   "memberId": "mccoy-tyner",
+   "role": "piano"
+  },
+  {
+   "groupId": "mccoy-tyner-trio",
+   "memberId": "roy-haynes",
+   "role": "drums"
+  },
+  {
    "groupId": "miles-davis-quintet",
    "memberId": "john-coltrane",
    "role": "tenor sax"
@@ -13951,6 +15479,446 @@
    "groupId": "modern-jazz-quartet",
    "memberId": "percy-heath",
    "role": "bass"
+  },
+  {
+   "groupId": "nat-king-cole-trio",
+   "memberId": "nat-king-cole",
+   "role": "piano, vocals"
+  },
+  {
+   "groupId": "nat-king-cole-trio",
+   "memberId": "oscar-moore",
+   "role": "guitar"
+  },
+  {
+   "groupId": "nat-king-cole-trio",
+   "memberId": "wesley-prince",
+   "role": "bass"
+  },
+  {
+   "groupId": "oscar-peterson-trio",
+   "memberId": "ed-thigpen",
+   "role": "drums"
+  },
+  {
+   "groupId": "oscar-peterson-trio",
+   "memberId": "oscar-peterson",
+   "role": "piano"
+  },
+  {
+   "groupId": "oscar-peterson-trio",
+   "memberId": "ray-brown",
+   "role": "bass"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "benjamin-jaffe",
+   "role": "double bass, producer"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "dr-michael-white",
+   "role": "clarinet"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "frank-demond",
+   "role": "trombone"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "joe-lastie",
+   "role": "drums"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "narvin-kimball",
+   "role": "banjo"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "rickie-monie",
+   "role": "piano"
+  },
+  {
+   "groupId": "preservation-hall-jazz-band",
+   "memberId": "wendell-brunious",
+   "role": "trumpet, vocals"
+  },
+  {
+   "groupId": "quintette-du-hot-club-de-france",
+   "memberId": "django-reinhardt",
+   "role": "guitar"
+  },
+  {
+   "groupId": "quintette-du-hot-club-de-france",
+   "memberId": "joseph-reinhardt",
+   "role": "guitar"
+  },
+  {
+   "groupId": "quintette-du-hot-club-de-france",
+   "memberId": "louis-vola",
+   "role": "bass"
+  },
+  {
+   "groupId": "quintette-du-hot-club-de-france",
+   "memberId": "roger-chaput",
+   "role": "guitar"
+  },
+  {
+   "groupId": "quintette-du-hot-club-de-france",
+   "memberId": "stephane-grappelli",
+   "role": "violin"
+  },
+  {
+   "groupId": "ray-brown-trio",
+   "memberId": "geoff-keezer",
+   "role": "piano"
+  },
+  {
+   "groupId": "ray-brown-trio",
+   "memberId": "greg-hutchinson",
+   "role": "drums"
+  },
+  {
+   "groupId": "ray-brown-trio",
+   "memberId": "ray-brown",
+   "role": "bass"
+  },
+  {
+   "groupId": "ray-brown-trio",
+   "memberId": "ulf-wakenius",
+   "role": "guitar"
+  },
+  {
+   "groupId": "red-norvo-trio",
+   "memberId": "charles-mingus",
+   "role": "bass"
+  },
+  {
+   "groupId": "red-norvo-trio",
+   "memberId": "red-norvo",
+   "role": "vibraphone"
+  },
+  {
+   "groupId": "red-norvo-trio",
+   "memberId": "tal-farlow",
+   "role": "guitar"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "antonio-carlos-jobim",
+   "role": "guitar"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "art-farmer",
+   "role": "flugelhorn"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "chico-de-souza",
+   "role": "drums"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "hubert-laws",
+   "role": "flute"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "phil-woods",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "sebastiao-neto",
+   "role": "bass"
+  },
+  {
+   "groupId": "sergio-mendes-trio",
+   "memberId": "sergio-mendes",
+   "role": "piano"
+  },
+  {
+   "groupId": "sonny-rollins-quartet",
+   "memberId": "paul-chambers",
+   "role": "bass"
+  },
+  {
+   "groupId": "sonny-rollins-quartet",
+   "memberId": "philly-joe-jones",
+   "role": "drums"
+  },
+  {
+   "groupId": "sonny-rollins-quartet",
+   "memberId": "red-garland",
+   "role": "piano"
+  },
+  {
+   "groupId": "sonny-rollins-quartet",
+   "memberId": "sonny-rollins",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "the-bbc-dance-orchestra",
+   "memberId": "henry-hall",
+   "role": "conductor"
+  },
+  {
+   "groupId": "the-bbc-dance-orchestra",
+   "memberId": "the-bbc-dance-orchestra",
+   "role": "ensemble (various personnel; 1930s–1940s, no unified roster found)"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "bill-evans",
+   "role": "piano"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "blue-mitchell",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "bobby-timmons",
+   "role": null
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "cannonball-adderley",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "cannonball-adderley",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "connie-kay",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "louis-hayes",
+   "role": null
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "nat-adderley",
+   "role": "cornet"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "percy-heath",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-cannonball-adderley-quintet",
+   "memberId": "sam-jones",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "dave-brubeck",
+   "role": "piano"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "dave-brubeck",
+   "role": "piano"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "eugene-wright",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "joe-morello",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "lloyd-davis",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "paul-desmond",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "paul-desmond",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "the-dave-brubeck-quartet",
+   "memberId": "ron-crotty",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-derek-trucks-band",
+   "memberId": "derek-trucks",
+   "role": "guitar"
+  },
+  {
+   "groupId": "the-derek-trucks-band",
+   "memberId": "kofi-burbridge",
+   "role": "keyboards"
+  },
+  {
+   "groupId": "the-derek-trucks-band",
+   "memberId": "todd-smallie",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-derek-trucks-band",
+   "memberId": "yonrico-scott",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "dan-parrish",
+   "role": "trombone"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "edmund-quint-johnson",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "jeff-rupert",
+   "role": "saxophone, conductor"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "josh-mercado",
+   "role": "trumpet"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "noah-charles",
+   "role": "guitar"
+  },
+  {
+   "groupId": "the-flying-horse-big-band",
+   "memberId": "paul-van-wormer",
+   "role": "alto saxophone"
+  },
+  {
+   "groupId": "the-kenny-clarke-francy-boland-big-band",
+   "memberId": "francy-boland",
+   "role": "piano, arranger"
+  },
+  {
+   "groupId": "the-kenny-clarke-francy-boland-big-band",
+   "memberId": "kenny-clarke",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-rosenberg-trio",
+   "memberId": "nonnie-rosenberg",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-rosenberg-trio",
+   "memberId": "nousche-rosenberg",
+   "role": "rhythm guitar"
+  },
+  {
+   "groupId": "the-rosenberg-trio",
+   "memberId": "stochelo-rosenberg",
+   "role": "lead guitar"
+  },
+  {
+   "groupId": "thelonious-monk-quartet",
+   "memberId": "ahmed-abdul-malik",
+   "role": "bass"
+  },
+  {
+   "groupId": "thelonious-monk-quartet",
+   "memberId": "johnny-griffin",
+   "role": "tenor saxophone"
+  },
+  {
+   "groupId": "thelonious-monk-quartet",
+   "memberId": "roy-haynes",
+   "role": "drums"
+  },
+  {
+   "groupId": "thelonious-monk-quartet",
+   "memberId": "thelonious-monk",
+   "role": "piano"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "barbara-baines",
+   "role": "vocals, arrangements, composition"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "cass-moore",
+   "role": "keyboards"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "mike-collier",
+   "role": "drums"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "nick-robbins",
+   "role": "synthesizer, arrangements"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "norm-miller",
+   "role": "vocals, bass, arrangements, production"
+  },
+  {
+   "groupId": "triste-janero",
+   "memberId": "paul-baines",
+   "role": "guitar"
+  },
+  {
+   "groupId": "woody-herman-his-orchestra",
+   "memberId": "woody-herman",
+   "role": "clarinet, saxophone, vocals, leader"
+  },
+  {
+   "groupId": "wynton-kelly-trio",
+   "memberId": "jimmy-cobb",
+   "role": "drums"
+  },
+  {
+   "groupId": "wynton-kelly-trio",
+   "memberId": "ron-mcclure",
+   "role": "bass"
+  },
+  {
+   "groupId": "wynton-kelly-trio",
+   "memberId": "wynton-kelly",
+   "role": "piano"
+  },
+  {
+   "groupId": "zimbo-trio",
+   "memberId": "amilton-godoy",
+   "role": "piano"
+  },
+  {
+   "groupId": "zimbo-trio",
+   "memberId": "luis-chaves",
+   "role": "bass"
+  },
+  {
+   "groupId": "zimbo-trio",
+   "memberId": "rubinho-barsotti",
+   "role": "drums"
   }
  ]
 }

@@ -1,9 +1,10 @@
 # Contrafact walk: a self-edge in catalog, fanning out to discography.
-# I Got Rhythm's form carries 16 tunes in the vault (Oleo, Rhythm-A-Ning, ...).
-# Each contrafact resolves its own composer into the shared artist pool and its
-# own recordings from the discography.
-query RhythmChangesFamily {
-  tune(id: "i-got-rhythm") {
+# All The Things You Are is the only tune with an in-vault ## Contrafacts
+# section post-reorg, carrying Ablution and Bird of Paradise. Each contrafact
+# resolves its own composer into the shared artist pool and its own
+# recordings from the discography.
+query AllTheThingsYouAreFamily {
+  tune(id: "all-the-things-you-are") {
     title
     composer {
       name
