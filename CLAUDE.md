@@ -23,7 +23,7 @@ If a change helps one job and hurts the other, stop and flag it.
 
 | Subgraph | Port | Owns | Extends |
 |---|---|---|---|
-| `artists` | 4001 | `Artist` identity (`@key(fields: "id")`), `Membership`, `InterpretiveProfile` | — |
+| `artists` | 4001 | `Artist` identity (`@key(fields: "id")`), `Membership` | — |
 | `catalog` | 4002 | `Work`, `Movement`, `Tune`, `interface Piece @key`, `Genre` | `Artist` += `composedPieces`, `composedWorks` |
 | `discography` | 4003 | `Album`, `Recording`, `Credit` | `Piece` += `recordings` (`@interfaceObject`); `Artist` += `albums`, `recordings` |
 

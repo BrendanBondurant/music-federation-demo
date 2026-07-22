@@ -48,10 +48,6 @@ import { homedir } from "node:os";
 //                         instrument: group (15)
 //   - memberships 256   = independently re-summed: every "- [[...]]" bullet
 //                         under ## Personnel across all 57 ensemble/group files
-//   - profiles 0        = no **Axes:** line survives anywhere in Artists/ post-
-//                         reorg (was 11). The InterpretiveProfile feature the
-//                         artists subgraph exposes has no backing data right
-//                         now -- flagged to Brendan, not silently patched.
 //   - personnelEdges 2488 = independently re-summed: 2645 raw "- [[...]]"
 //                         Personnel bullets across all Albums/ files, minus
 //                         146 bulleted lines with no wikilink, minus 1
@@ -69,7 +65,6 @@ const EXPECTED = {
   ensembles: 57,
   composerStubs: 38,
   memberships: 256,
-  profiles: 0,
   works: 10,
   movements: 22,
   tunes: 184,
@@ -286,15 +281,6 @@ function proseUnder(body: string, headingPrefix: string | null): string | null {
   return text || null;
 }
 
-/** Parse "**Axes:** Clarity – X · Tone color – Y · Interpretive risk – Z". */
-function parseAxes(body: string): { clarity: string | null; toneColor: string | null; risk: string | null } | null {
-  const m = body.match(
-    /\*\*Axes:\*\*\s*Clarity\s*[–—-]\s*(.+?)\s*·\s*Tone color\s*[–—-]\s*(.+?)\s*·\s*Interpretive risk\s*[–—-]\s*(.+?)\s*$/m,
-  );
-  if (!m) return null;
-  return { clarity: norm(m[1]) || null, toneColor: norm(m[2]) || null, risk: norm(m[3]) || null };
-}
-
 /** Tiny YAML-subset frontmatter parser: scalars and string lists. */
 function frontmatter(text: string): { fm: Record<string, string | string[]>; body: string } {
   if (!text.startsWith("---")) return { fm: {}, body: text };
@@ -372,7 +358,6 @@ interface Person {
   instruments: string[];
   styles: string[];
   bio: string | null;
-  profile: { clarity: string | null; toneColor: string | null; risk: string | null } | null;
   stub: boolean;
 }
 interface Membership {
@@ -477,7 +462,6 @@ function addArtistFile(p: string): void {
     instruments,
     styles: style ? [style] : [],
     bio: proseUnder(body, "Profile") ?? proseUnder(body, null),
-    profile: parseAxes(body),
     stub: false,
   });
 }
@@ -501,7 +485,6 @@ function composerRef(nameRaw: string | undefined): string | null {
       instruments: [],
       styles: [],
       bio: null,
-      profile: null,
       stub: true,
     });
   }
@@ -942,7 +925,6 @@ const counts = {
   ensembles: [...people.values()].filter((p) => p.kind === "ENSEMBLE").length,
   composerStubs: [...people.values()].filter((p) => p.stub).length,
   memberships: memberships.length,
-  profiles: [...people.values()].filter((p) => p.profile !== null).length,
   works: works.size,
   movements: movements.size,
   tunes: tunes.size,

@@ -48,8 +48,8 @@ type Recording @key(fields: "id") {
   piece: Piece!
   "The album this recording appears on. Null for recordings known only from a non-album source."
   album: Album
-  "Performing artists on this recording, with roles when stated."
-  performers: [Credit!]!
+  "The artists who played on this recording. Per-performer roles are not tracked at the recording level (they live on album credits), so this is identity only."
+  performers: [Artist!]!
   "Key this performance was played in ('Gm'). Null when not noted."
   performanceKey: String
   "Non-album source as written ('YouTube', 'Netherlands Bach Society', an orchestra credit). Null when the recording has an album."

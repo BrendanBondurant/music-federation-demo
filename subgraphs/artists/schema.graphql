@@ -19,8 +19,6 @@ type Artist @key(fields: "id") {
   styles: [String!]!
   "Short prose profile from the vault. Null for most artists."
   bio: String
-  "Interpretive axes (clarity / tone color / risk). Only classical performers with a written profile have one."
-  profile: InterpretiveProfile
   "Members of this ensemble, when the vault states a lineup. Empty for people and for most groups."
   members: [Membership!]!
   "Ensembles this artist is a stated member of. Empty for most artists."
@@ -47,20 +45,6 @@ type Membership {
   member: Artist!
   "Role in the group as written ('tenor sax'). Null when unstated."
   role: String
-}
-
-"""
-Interpretive-axes summary for a classical performer, parsed from the vault's
-profile notes. Values are free text as written ('High', 'Medium–High', 'Not
-explicit'), not a scale.
-"""
-type InterpretiveProfile {
-  "How clean and articulate the playing reads. Null when the notes don't say."
-  clarity: String
-  "Timbral range and color. Null when the notes don't say."
-  toneColor: String
-  "How far interpretation strays from the plain text. Null when the notes don't say."
-  risk: String
 }
 
 "Root entry points owned by the artists subgraph."

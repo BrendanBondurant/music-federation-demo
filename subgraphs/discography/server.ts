@@ -6,7 +6,7 @@
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { startSubgraph, type EntityReference } from "../lib/subgraph.js";
+import { startSubgraph, pushInto, addInto, entityRef, must, type EntityReference } from "../lib/subgraph.js";
 import type { Album, Credit, Recording } from "../lib/seed-types.js";
 
 const here = import.meta.dirname;
@@ -23,15 +23,12 @@ const recordingById = new Map(seed.recordings.map((r) => [r.id, r]));
 const recordingsByPiece = new Map<string, Recording[]>();
 const recordingsByArtist = new Map<string, Recording[]>();
 for (const r of seed.recordings) {
-  (recordingsByPiece.get(r.pieceId) ?? recordingsByPiece.set(r.pieceId, []).get(r.pieceId)!).push(r);
-  for (const id of r.performerIds) {
-    (recordingsByArtist.get(id) ?? recordingsByArtist.set(id, []).get(id)!).push(r);
-  }
+  pushInto(recordingsByPiece, r.pieceId, r);
+  for (const id of r.performerIds) pushInto(recordingsByArtist, id, r);
 }
 // artistId -> album ids (principal artist, personnel, or recording performer), deduped
 const albumsByArtist = new Map<string, Set<string>>();
-const addAlbum = (artistId: string, albumId: string) =>
-  (albumsByArtist.get(artistId) ?? albumsByArtist.set(artistId, new Set()).get(artistId)!).add(albumId);
+const addAlbum = (artistId: string, albumId: string) => addInto(albumsByArtist, artistId, albumId);
 for (const a of seed.albums) {
   for (const id of a.artistIds) addAlbum(id, a.id);
   for (const c of a.credits) addAlbum(c.artistId, a.id);
@@ -42,7 +39,11 @@ for (const r of seed.recordings) {
 
 // The name is denormalized into this subgraph's seed so Credit.artist can
 // honor @provides(fields: "name") without a hop to the artists subgraph.
-const artistWithName = (id: string) => ({ __typename: "Artist", id, name: seed.artistNames[id] });
+const artistWithName = (id: string) => ({
+  __typename: "Artist",
+  id,
+  name: must(seed.artistNames[id], `artist name for ${id}`),
+});
 const sortAlbums = (a: Album, b: Album) =>
   (a.year ?? 9999) - (b.year ?? 9999) || a.title.localeCompare(b.title);
 
@@ -61,9 +62,11 @@ startSubgraph({
       case "Piece":
         // @interfaceObject: the ref stays a plain Piece here; this subgraph
         // never learns which concrete type implements it.
-        return { __typename: "Piece", id };
+        return entityRef("Piece", id);
+      case "Artist":
+        return entityRef("Artist", id);
       default:
-        return { __typename: "Artist", id };
+        return null;
     }
   },
   resolvers: {
@@ -73,22 +76,25 @@ startSubgraph({
     },
     Album: {
       credits: (a: Album) => a.credits,
-      tracks: (a: Album) => a.trackIds.map((id) => recordingById.get(id)!),
+      tracks: (a: Album) => a.trackIds.map((id) => must(recordingById.get(id), `Recording ${id}`)),
     },
     Credit: {
       artist: (c: Credit) => artistWithName(c.artistId),
     },
     Recording: {
-      piece: (r: Recording) => ({ __typename: "Piece", id: r.pieceId }),
-      album: (r: Recording) => (r.albumId ? albumById.get(r.albumId)! : null),
-      performers: (r: Recording) => r.performerIds.map((id) => ({ artistId: id, role: null })),
+      piece: (r: Recording) => entityRef("Piece", r.pieceId),
+      album: (r: Recording) =>
+        r.albumId ? must(albumById.get(r.albumId), `Album ${r.albumId}`) : null,
+      performers: (r: Recording) => r.performerIds.map((id) => entityRef("Artist", id)),
     },
     Piece: {
       recordings: (p: { id: string }) => recordingsByPiece.get(p.id) ?? [],
     },
     Artist: {
       albums: (a: { id: string }) =>
-        [...(albumsByArtist.get(a.id) ?? [])].map((id) => albumById.get(id)!).sort(sortAlbums),
+        [...(albumsByArtist.get(a.id) ?? [])]
+          .map((id) => must(albumById.get(id), `Album ${id}`))
+          .sort(sortAlbums),
       recordings: (a: { id: string }, args: { piece?: string | null }) => {
         const all = recordingsByArtist.get(a.id) ?? [];
         return args.piece ? all.filter((r) => r.pieceId === args.piece) : all;

@@ -1,11 +1,11 @@
 /**
  * artists subgraph (port 4001) -- the identity service.
  * Owns the Artist entity: who a person is, independent of any catalog.
- * Also owns membership edges and the interpretive-axes profiles.
+ * Also owns the membership edges between ensembles and their members.
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { startSubgraph } from "../lib/subgraph.js";
+import { startSubgraph, pushInto, must } from "../lib/subgraph.js";
 import type { Membership, Person } from "../lib/seed-types.js";
 
 const here = import.meta.dirname;
@@ -18,8 +18,8 @@ const byId = new Map(people.map((p) => [p.id, p]));
 const membersByGroup = new Map<string, Membership[]>();
 const groupsByMember = new Map<string, Membership[]>();
 for (const m of memberships) {
-  (membersByGroup.get(m.groupId) ?? membersByGroup.set(m.groupId, []).get(m.groupId)!).push(m);
-  (groupsByMember.get(m.memberId) ?? groupsByMember.set(m.memberId, []).get(m.memberId)!).push(m);
+  pushInto(membersByGroup, m.groupId, m);
+  pushInto(groupsByMember, m.memberId, m);
 }
 
 startSubgraph({
@@ -44,8 +44,8 @@ startSubgraph({
       memberOf: (a: { id: string }) => groupsByMember.get(a.id) ?? [],
     },
     Membership: {
-      group: (m: Membership) => byId.get(m.groupId)!,
-      member: (m: Membership) => byId.get(m.memberId)!,
+      group: (m: Membership) => must(byId.get(m.groupId), `Artist ${m.groupId}`),
+      member: (m: Membership) => must(byId.get(m.memberId), `Artist ${m.memberId}`),
     },
   },
 });

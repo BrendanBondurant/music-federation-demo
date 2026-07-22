@@ -7,7 +7,7 @@ reassembled by the router at query time.
 
 | Subgraph | Port | Owns | Extends |
 |---|---|---|---|
-| `artists` | 4001 | `Artist` identity, `Membership`, `InterpretiveProfile` | — |
+| `artists` | 4001 | `Artist` identity, `Membership` | — |
 | `catalog` | 4002 | `Work`, `Movement`, `Tune`, the `Piece` interface, `Genre` | `Artist` += `composedPieces`, `composedWorks` |
 | `discography` | 4003 | `Album`, `Recording`, `Credit` | `Piece` += `recordings` (via `@interfaceObject`); `Artist` += `albums`, `recordings` |
 

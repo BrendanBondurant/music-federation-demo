@@ -1,11 +1,5 @@
 /** Shapes of the JSON files the seeder emits into seed/. */
 
-export interface InterpretiveProfile {
-  clarity: string | null;
-  toneColor: string | null;
-  risk: string | null;
-}
-
 export interface Person {
   id: string;
   name: string;
@@ -13,7 +7,6 @@ export interface Person {
   instruments: string[];
   styles: string[];
   bio: string | null;
-  profile: InterpretiveProfile | null;
   /** True for composers synthesized from tune/work frontmatter (no vault file of their own). */
   stub: boolean;
 }

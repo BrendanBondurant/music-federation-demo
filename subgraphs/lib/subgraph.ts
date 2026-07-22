@@ -32,6 +32,38 @@ export interface EntityReference {
   [key: string]: unknown;
 }
 
+/** Build an entity reference stub the router can re-resolve, e.g. entityRef("Artist", id). */
+export function entityRef(typename: string, id: string): EntityReference {
+  return { __typename: typename, id };
+}
+
+/**
+ * Assert an internal lookup that the schema promises as non-null actually
+ * resolved. Today the seeder's integrity gate guarantees every reference, so
+ * this never throws; it replaces a bare `!` (which TypeScript erases, leaving
+ * a runtime `undefined` and GraphQL's opaque "Cannot return null for
+ * non-nullable field"). When the seed becomes a database, a dangling reference
+ * fails loudly here, naming what was missing, instead of somewhere upstream.
+ */
+export function must<T>(value: T | null | undefined, what: string): T {
+  if (value == null) throw new Error(`Referential integrity: ${what} not found`);
+  return value;
+}
+
+/** Append `value` to the array at `key`, creating the array on first use. */
+export function pushInto<K, V>(map: Map<K, V[]>, key: K, value: V): void {
+  const arr = map.get(key);
+  if (arr) arr.push(value);
+  else map.set(key, [value]);
+}
+
+/** Add `value` to the Set at `key`, creating the Set on first use. */
+export function addInto<K, V>(map: Map<K, Set<V>>, key: K, value: V): void {
+  const set = map.get(key);
+  if (set) set.add(value);
+  else map.set(key, new Set([value]));
+}
+
 export interface SubgraphConfig {
   name: string;
   port: number;
