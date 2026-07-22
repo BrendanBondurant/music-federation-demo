@@ -16,7 +16,6 @@
     "connect-cosmo": "bash scripts/connect-cosmo.sh"
   },
   "dependencies": {
-    "@esbuild/linux-arm64": "^0.28.1",
     "graphql": "^16.9.0",
     "graphql-yoga": "^5.10.0"
   },

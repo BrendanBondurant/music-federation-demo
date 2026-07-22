@@ -4,21 +4,26 @@
  * recordings and Artist with albums / recordings. This is the join service:
  * it references both other subgraphs and is referenced by neither.
  */
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
-import { startSubgraph, pushInto, addInto, entityRef, must, type EntityReference } from "../lib/subgraph.js";
+import {
+  startSubgraph,
+  pushInto,
+  addInto,
+  entityRef,
+  must,
+  loadSubgraph,
+  indexById,
+  type EntityReference,
+} from "../lib/subgraph.js";
 import type { Album, Credit, Recording } from "../lib/seed-types.js";
 
-const here = import.meta.dirname;
-const sdl = readFileSync(join(here, "schema.graphql"), "utf8");
-const seed = JSON.parse(readFileSync(join(here, "..", "..", "seed", "discography.json"), "utf8")) as {
+const { sdl, seed } = loadSubgraph<{
   albums: Album[];
   recordings: Recording[];
   artistNames: Record<string, string>;
-};
+}>(import.meta.dirname, "discography.json");
 
-const albumById = new Map(seed.albums.map((a) => [a.id, a]));
-const recordingById = new Map(seed.recordings.map((r) => [r.id, r]));
+const albumById = indexById(seed.albums);
+const recordingById = indexById(seed.recordings);
 
 const recordingsByPiece = new Map<string, Recording[]>();
 const recordingsByArtist = new Map<string, Recording[]>();
@@ -45,7 +50,7 @@ const artistWithName = (id: string) => ({
   name: must(seed.artistNames[id], `artist name for ${id}`),
 });
 const sortAlbums = (a: Album, b: Album) =>
-  (a.year ?? 9999) - (b.year ?? 9999) || a.title.localeCompare(b.title);
+  (a.year ?? Infinity) - (b.year ?? Infinity) || a.title.localeCompare(b.title);
 
 startSubgraph({
   name: "discography",

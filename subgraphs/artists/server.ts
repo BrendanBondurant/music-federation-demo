@@ -3,18 +3,16 @@
  * Owns the Artist entity: who a person is, independent of any catalog.
  * Also owns the membership edges between ensembles and their members.
  */
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
-import { startSubgraph, pushInto, must } from "../lib/subgraph.js";
+import { startSubgraph, pushInto, must, loadSubgraph, indexById } from "../lib/subgraph.js";
 import type { Membership, Person } from "../lib/seed-types.js";
 
-const here = import.meta.dirname;
-const sdl = readFileSync(join(here, "schema.graphql"), "utf8");
-const { people, memberships } = JSON.parse(
-  readFileSync(join(here, "..", "..", "seed", "artists.json"), "utf8"),
-) as { people: Person[]; memberships: Membership[] };
+const { sdl, seed } = loadSubgraph<{ people: Person[]; memberships: Membership[] }>(
+  import.meta.dirname,
+  "artists.json",
+);
+const { people, memberships } = seed;
 
-const byId = new Map(people.map((p) => [p.id, p]));
+const byId = indexById(people);
 const membersByGroup = new Map<string, Membership[]>();
 const groupsByMember = new Map<string, Membership[]>();
 for (const m of memberships) {

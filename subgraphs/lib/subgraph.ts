@@ -9,6 +9,8 @@
  * That's all the router needs. The @link URL points at specs.apollo.dev
  * because that is the federation spec's identifier, not a dependency.
  */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { createServer } from "node:http";
 import { createSchema, createYoga } from "graphql-yoga";
 
@@ -62,6 +64,22 @@ export function addInto<K, V>(map: Map<K, Set<V>>, key: K, value: V): void {
   const set = map.get(key);
   if (set) set.add(value);
   else map.set(key, new Set([value]));
+}
+
+/**
+ * Read a subgraph's SDL and its seed JSON, both resolved relative to the
+ * subgraph directory (pass `import.meta.dirname`). The seed lives at
+ * `<dir>/../../seed/<seedFile>`, matching the repo layout.
+ */
+export function loadSubgraph<T>(dir: string, seedFile: string): { sdl: string; seed: T } {
+  const sdl = readFileSync(join(dir, "schema.graphql"), "utf8");
+  const seed = JSON.parse(readFileSync(join(dir, "..", "..", "seed", seedFile), "utf8")) as T;
+  return { sdl, seed };
+}
+
+/** Index a list of id-bearing records into a Map keyed by id. */
+export function indexById<T extends { id: string }>(items: T[]): Map<string, T> {
+  return new Map(items.map((it) => [it.id, it]));
 }
 
 export interface SubgraphConfig {

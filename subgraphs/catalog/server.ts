@@ -3,22 +3,25 @@
  * Owns Work, Movement, Tune, and the Piece entity interface; contributes
  * composedPieces / composedWorks to the Artist entity it does not own.
  */
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
-import { startSubgraph, pushInto, entityRef, must, type EntityReference } from "../lib/subgraph.js";
+import {
+  startSubgraph,
+  pushInto,
+  entityRef,
+  must,
+  loadSubgraph,
+  indexById,
+  type EntityReference,
+} from "../lib/subgraph.js";
 import type { Movement, Tune, Work } from "../lib/seed-types.js";
 
-const here = import.meta.dirname;
-const sdl = readFileSync(join(here, "schema.graphql"), "utf8");
-const seed = JSON.parse(readFileSync(join(here, "..", "..", "seed", "catalog.json"), "utf8")) as {
-  works: Work[];
-  movements: Movement[];
-  tunes: Tune[];
-};
+const { sdl, seed } = loadSubgraph<{ works: Work[]; movements: Movement[]; tunes: Tune[] }>(
+  import.meta.dirname,
+  "catalog.json",
+);
 
-const workById = new Map(seed.works.map((w) => [w.id, w]));
-const movementById = new Map(seed.movements.map((m) => [m.id, m]));
-const tuneById = new Map(seed.tunes.map((t) => [t.id, t]));
+const workById = indexById(seed.works);
+const movementById = indexById(seed.movements);
+const tuneById = indexById(seed.tunes);
 
 const movementsByWork = new Map<string, Movement[]>();
 for (const m of seed.movements) {
@@ -38,17 +41,18 @@ for (const t of seed.tunes) {
 }
 
 // A Piece is a Movement or a Tune; ids never collide (the seeder gates it).
+// Tag each concrete row with its __typename so Piece.__resolveType can switch on it.
+const tagMovement = (m: Movement) => ({ __typename: "Movement" as const, ...m });
+const tagTune = (t: Tune) => ({ __typename: "Tune" as const, ...t });
 const withType = (m: Movement | null | undefined, t: Tune | null | undefined) =>
-  m ? { __typename: "Movement", ...m } : t ? { __typename: "Tune", ...t } : null;
+  m ? tagMovement(m) : t ? tagTune(t) : null;
 const pieceById = (id: string) => withType(movementById.get(id), tuneById.get(id));
-const allPieces = () => [
-  ...seed.movements.map((m) => ({ __typename: "Movement", ...m })),
-  ...seed.tunes.map((t) => ({ __typename: "Tune", ...t })),
-];
+// Built once at load, like the id maps above: every piece tagged with its type.
+const allPieces = [...seed.movements.map(tagMovement), ...seed.tunes.map(tagTune)];
 
 const artistRef = (id: string | null) => (id ? entityRef("Artist", id) : null);
 const sortMovements = (a: Movement, b: Movement) =>
-  (a.position ?? 99) - (b.position ?? 99) || a.id.localeCompare(b.id);
+  (a.position ?? Infinity) - (b.position ?? Infinity) || a.id.localeCompare(b.id);
 
 startSubgraph({
   name: "catalog",
@@ -79,7 +83,7 @@ startSubgraph({
     Query: {
       piece: (_: unknown, args: { id: string }) => pieceById(args.id),
       pieces: (_: unknown, args: { musicalKey?: string | null }) =>
-        args.musicalKey ? allPieces().filter((p) => p.musicalKey === args.musicalKey) : allPieces(),
+        args.musicalKey ? allPieces.filter((p) => p.musicalKey === args.musicalKey) : allPieces,
       tune: (_: unknown, args: { id: string }) => tuneById.get(args.id) ?? null,
       tunes: () => seed.tunes,
       work: (_: unknown, args: { id: string }) => workById.get(args.id) ?? null,
@@ -104,12 +108,9 @@ startSubgraph({
     },
     Artist: {
       composedPieces: (a: { id: string }) => [
-        ...(tunesByComposer.get(a.id) ?? []).map((t) => ({ __typename: "Tune", ...t })),
+        ...(tunesByComposer.get(a.id) ?? []).map(tagTune),
         ...(worksByComposer.get(a.id) ?? []).flatMap((w) =>
-          (movementsByWork.get(w.id) ?? [])
-            .slice()
-            .sort(sortMovements)
-            .map((m) => ({ __typename: "Movement", ...m })),
+          (movementsByWork.get(w.id) ?? []).slice().sort(sortMovements).map(tagMovement),
         ),
       ],
       composedWorks: (a: { id: string }) => worksByComposer.get(a.id) ?? [],
