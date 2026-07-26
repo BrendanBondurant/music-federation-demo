@@ -1,4 +1,4 @@
-extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@shareable"])
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
 
 """
 A person or ensemble. The id slug is the shared @key: the same person resolves
@@ -9,8 +9,8 @@ land in the same pool as performers -- there is no separate composer type.
 type Artist @key(fields: "id") {
   "Slug id derived from the name; the shared @key across all three subgraphs."
   id: ID!
-  "Display name, e.g. 'Jim Hall'. @shareable so the discography subgraph can @provide it on credits."
-  name: String! @shareable
+  "Display name, e.g. 'Jim Hall'. Owned here; every subgraph that needs it hops back."
+  name: String!
   "Whether this artist is a single person or an ensemble."
   kind: ArtistKind!
   "Instruments played, lowercase ('guitar', 'tenor sax'). Empty for ensembles and for name-only composer records."

@@ -960,17 +960,6 @@ mkdirSync(outDir, { recursive: true });
 const byId = <T extends { id: string }>(m: Map<string, T>) =>
   [...m.values()].sort((a, b) => a.id.localeCompare(b.id));
 
-// Names for every artist referenced by the discography, denormalized so the
-// discography subgraph can honor @provides(fields: "name") on Credit.artist.
-const referencedArtists = new Set<string>();
-for (const al of albums.values()) {
-  for (const a of al.artistIds) referencedArtists.add(a);
-  for (const c of al.credits) referencedArtists.add(c.artistId);
-}
-for (const r of recordings) for (const a of r.performerIds) referencedArtists.add(a);
-const artistNames: Record<string, string> = {};
-for (const id of [...referencedArtists].sort()) artistNames[id] = people.get(id)!.name;
-
 writeFileSync(
   join(outDir, "artists.json"),
   JSON.stringify(
@@ -1002,7 +991,6 @@ writeFileSync(
     {
       albums: byId(albums),
       recordings: recordings.slice().sort((a, b) => a.id.localeCompare(b.id)),
-      artistNames,
     },
     null,
     1,

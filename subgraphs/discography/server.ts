@@ -19,7 +19,6 @@ import type { Album, Credit, Recording } from "../lib/seed-types.js";
 const { sdl, seed } = loadSubgraph<{
   albums: Album[];
   recordings: Recording[];
-  artistNames: Record<string, string>;
 }>(import.meta.dirname, "discography.json");
 
 const albumById = indexById(seed.albums);
@@ -42,13 +41,6 @@ for (const r of seed.recordings) {
   if (r.albumId) for (const id of r.performerIds) addAlbum(id, r.albumId);
 }
 
-// The name is denormalized into this subgraph's seed so Credit.artist can
-// honor @provides(fields: "name") without a hop to the artists subgraph.
-const artistWithName = (id: string) => ({
-  __typename: "Artist",
-  id,
-  name: must(seed.artistNames[id], `artist name for ${id}`),
-});
 const sortAlbums = (a: Album, b: Album) =>
   (a.year ?? Infinity) - (b.year ?? Infinity) || a.title.localeCompare(b.title);
 
@@ -84,7 +76,7 @@ startSubgraph({
       tracks: (a: Album) => a.trackIds.map((id) => must(recordingById.get(id), `Recording ${id}`)),
     },
     Credit: {
-      artist: (c: Credit) => artistWithName(c.artistId),
+      artist: (c: Credit) => entityRef("Artist", c.artistId),
     },
     Recording: {
       piece: (r: Recording) => entityRef("Piece", r.pieceId),
