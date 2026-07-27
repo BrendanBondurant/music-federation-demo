@@ -350,7 +350,7 @@ function romanLead(name: string): number | null {
 // ---------------------------------------------------------------------------
 // Data shapes (mirror subgraphs/lib/seed-types.ts)
 
-type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO";
+type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO" | "BLUEGRASS";
 interface Person {
   id: string;
   name: string;
@@ -617,11 +617,18 @@ for (const p of mdFiles(worksDir)) {
   movementRecordingSources.push({ movementId: id, file: p, body });
 }
 
-// --- Tunes (jazz + flamenco, flat since the reorg; flamenco flagged by
-// style: flamenco frontmatter rather than a separate folder) -----------------
+// --- Tunes (flat since the reorg; genre is derived from style frontmatter
+// rather than a separate folder: flamenco -> FLAMENCO, bluegrass -> BLUEGRASS,
+// everything else -> JAZZ) ----------------------------------------------------
 const tunes = new Map<string, Tune>();
 const tuneRecordingSources: { tuneId: string; file: string; body: string }[] = [];
 const tuneBodies = new Map<string, string>(); // tuneId -> body, for the Contrafacts pass
+
+function genreFromStyle(style: string | null): Genre {
+  if (style === "flamenco") return "FLAMENCO";
+  if (style === "bluegrass") return "BLUEGRASS";
+  return "JAZZ";
+}
 
 function addTuneFile(p: string): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
@@ -638,7 +645,7 @@ function addTuneFile(p: string): void {
       style,
       contrafactOfId: null, // resolved after all tunes are known
       musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
-      genre: style === "flamenco" ? "FLAMENCO" : "JAZZ",
+      genre: genreFromStyle(style),
     });
     tuneBodies.set(id, body);
   }

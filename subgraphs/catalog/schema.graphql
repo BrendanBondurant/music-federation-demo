@@ -17,7 +17,7 @@ interface Piece @key(fields: "id") {
   musicalKey: String
 }
 
-"Broad genre buckets. A piece has exactly one; artists can span all three."
+"Broad genre buckets. A piece has exactly one; artists can span more than one."
 enum Genre {
   "Notated works and their movements (Bach, Rodrigo)."
   CLASSICAL
@@ -25,6 +25,8 @@ enum Genre {
   JAZZ
   "Flamenco compositions (bulerías, rumbas)."
   FLAMENCO
+  "Bluegrass tunes, fiddle tunes, and related traditional forms."
+  BLUEGRASS
 }
 
 """
@@ -62,13 +64,13 @@ type Movement implements Piece @key(fields: "id") {
   musicalKey: String
 }
 
-"A tune: jazz standard, original, or flamenco composition."
+"A tune: jazz standard, original, flamenco composition, or bluegrass/fiddle tune."
 type Tune implements Piece @key(fields: "id") {
   "Slug id derived from the tune title."
   id: ID!
   "Tune title."
   title: String!
-  "Style tag as written ('standard', 'bossa', 'flamenco'). Null when untagged."
+  "Style tag as written ('standard', 'bossa', 'flamenco', 'bluegrass'). Null when untagged."
   style: String
   "Composer, resolved into the shared Artist pool. Null when the vault names none."
   composer: Artist

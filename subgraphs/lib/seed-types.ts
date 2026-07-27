@@ -17,7 +17,7 @@ export interface Membership {
   role: string | null;
 }
 
-export type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO";
+export type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO" | "BLUEGRASS";
 
 export interface Work {
   id: string;
