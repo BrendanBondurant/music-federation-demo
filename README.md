@@ -72,6 +72,32 @@ The set also covers the contrafact self-edge, an album deep-dive, and the
 ensemble-membership hop.
 
 
+## Vault layout
+
+The seeder reads an Obsidian vault, not a database. Its folders, not this
+repo's:
+
+```
+Artists/         one file per person or ensemble, flat, no subfolders.
+                 Ensembles are flagged by instrument: ensemble|group
+                 frontmatter, not a separate folder.
+Albums/          one file per album, flat. ## Personnel is a
+                 "Musician | Instrument" table, not a bullet list.
+Pieces/
+  Tunes/         jazz, flamenco, and bluegrass tunes together in one flat
+                 folder. Genre comes from `style:` frontmatter
+                 (flamenco -> FLAMENCO, bluegrass -> BLUEGRASS, anything
+                 else -> JAZZ) -- there's no separate folder per genre.
+  Works/         classical works, one file per movement.
+  Palos/         flamenco palo reference pages (Bulerías, Soleá, Tangos...).
+                 Not read by the seeder -- reference data, not a piece or
+                 an entity any subgraph owns (see the comment by `metaDir`
+                 in seed.ts).
+_meta/           master indexes + working notes. Not read by the seeder
+                 except Works – Master.md; EXPECTED in seed.ts is the
+                 actual source of truth for vault counts.
+```
+
 ## Repo layout
 
 ```
@@ -100,7 +126,7 @@ DOC-GAPS.md            where the Cosmo docs fell short while building this
   albums) resolve by id pool, never by string.
 - Ids are slugs: lowercase, diacritics stripped, punctuation dropped, spaces
   to hyphens. Person slugs are the shared `@key` across all three subgraphs;
-  jazz, flamenco, and classical names slug into one pool.
+  jazz, flamenco, bluegrass, and classical names slug into one pool.
 - Composers named only in frontmatter (Gershwin, Rodrigo) become name-only
   `Artist` records, so composer edges resolve into the same pool as
   performers. There is no separate composer type.
