@@ -23,7 +23,7 @@ If a change helps one job and hurts the other, stop and flag it.
 
 | Subgraph | Port | Owns | Extends |
 |---|---|---|---|
-| `artists` | 4001 | `Artist` identity (`@key(fields: "id")`), `Membership`, `InterpretiveProfile` | — |
+| `artists` | 4001 | `Artist` identity (`@key(fields: "id")`), `Membership` | — |
 | `catalog` | 4002 | `Work`, `Movement`, `Tune`, `interface Piece @key`, `Genre` | `Artist` += `composedPieces`, `composedWorks` |
 | `discography` | 4003 | `Album`, `Recording`, `Credit` | `Piece` += `recordings` (`@interfaceObject`); `Artist` += `albums`, `recordings` |
 
@@ -37,9 +37,9 @@ If a change helps one job and hurts the other, stop and flag it.
   `@interfaceObject`). Crossover pieces are one piece: the Aranjuez Adagio is
   a `Movement` and its Miles Davis recording hangs off it. Genre is a field,
   never a service boundary.
-- `Credit.artist` carries `@provides(fields: "name")`: the name is
-  denormalized into the discography seed, `@shareable` in artists,
-  `@external` in discography. Keep all three in sync if credits change.
+- `Artist.name` has a single source of truth in the artists subgraph.
+  Discography returns bare `Artist` entity refs from `Credit.artist` and
+  `Recording.performers`; the router fetches `name` from artists when selected.
 - Router runs in Docker; subgraphs run on the host. `routing_url`s use
   `host.docker.internal` (see `graph.yaml`).
 

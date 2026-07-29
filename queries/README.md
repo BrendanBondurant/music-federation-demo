@@ -22,9 +22,9 @@ Which subgraphs a query hits is decided by the **fields selected**, not the root
 
 - `recordings` on any piece is a hop to **D** via the `Piece` entity interface:
   the discography contributes the field without knowing Movement or Tune exist.
-- `artist { name }` under `credits`/`performers` normally hops to **A** — but
-  `Credit.artist` declares `@provides(fields: "name")`, so plans that select
-  only `name` skip that hop. Add `instruments` to see the hop come back.
+- `artist { name }` under `credits` hops to **A**: `Credit.artist` returns a
+  bare entity ref, same as `Recording.performers`, so `name` always resolves
+  in the artists subgraph.
 - Drop `composer { name }` from #3 and it becomes C+D.
 
 ## Seed ids used

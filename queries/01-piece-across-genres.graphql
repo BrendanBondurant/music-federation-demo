@@ -25,12 +25,9 @@ query AdagioAcrossGenres {
       source
       notes
       performers {
-        artist {
-          name
-          instruments
-          styles
-        }
-        role
+        name
+        instruments
+        styles
       }
     }
   }

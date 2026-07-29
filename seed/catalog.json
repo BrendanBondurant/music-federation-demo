@@ -251,6 +251,78 @@
  ],
  "tunes": [
   {
+   "id": "a-buscar-la-flor",
+   "title": "A buscar la flor",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-camaron",
+   "title": "A Camarón",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-clavito-y-a-canela",
+   "title": "A clavito y a canela",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-la-memoria-de-mi-padre",
+   "title": "A la memoria de mi padre",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-la-perla-de-cadiz",
+   "title": "A la Perla de Cádiz",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-los-santos-del-cielo",
+   "title": "A los santos del cielo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-manuel-moraito-chico",
+   "title": "A Manuel, Moraíto Chico",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "a-mi-chache-miguel",
+   "title": "A mi chaché Miguel",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "ablution",
    "title": "Ablution",
    "composerId": "lennie-tristano",
@@ -260,9 +332,135 @@
    "genre": "JAZZ"
   },
   {
+   "id": "aguadulce",
+   "title": "Aguadulce",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ahi-te-quedas",
+   "title": "Ahí Te Quedas",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "aire-de-tango",
+   "title": "Aire De Tango",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "aires-choqueros",
    "title": "Aires choqueros",
    "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "aires-de-linares",
+   "title": "Aires de Linares",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-aire-de-triana",
+   "title": "Al Aire de Triana",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-gurugu-guruguero",
+   "title": "Al gurugu guruguero",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-mari",
+   "title": "Al Mari",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-padre-santo-de-roma",
+   "title": "Al Padre Santo de Roma",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-puerto",
+   "title": "Al Puerto",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "al-verte-las-flores-lloran",
+   "title": "Al verte las flores lloran",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "alameda-vijea",
+   "title": "Alameda Vijea",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "alcazar-de-cristal",
+   "title": "Alcázar de cristal",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "alejandria",
+   "title": "Alejandría",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "algo-que-decir",
+   "title": "Algo que decir",
+   "composerId": "jose-jimenez-el-viejin",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -296,6 +494,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "almonte",
+   "title": "Almonte",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "almoraima",
+   "title": "Almoraima",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "alone-together",
    "title": "Alone Together",
    "composerId": "arthur-schwartz",
@@ -305,6 +521,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "alquimia",
+   "title": "Alquimia",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "alright-okay-you-win",
    "title": "Alright, Okay, You Win",
    "composerId": "mayme-watts-sid-wyche",
@@ -312,6 +537,42 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "amarraita-en-tu-pelo",
+   "title": "Amarraita En Tu Pelo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "amorali",
+   "title": "Amoralí",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "anda-y-no-presumas-mas",
+   "title": "Anda y no presumas más",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ante-el-altar-me-juraste",
+   "title": "Ante el altar me juraste",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "anthropology",
@@ -326,6 +587,15 @@
    "id": "antonia",
    "title": "Antonia",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "asomao-a-mi-ventana",
+   "title": "Asomao A Mi Ventana",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -368,6 +638,33 @@
    "genre": "JAZZ"
   },
   {
+   "id": "bahia-de-cadiz",
+   "title": "Bahía de Cádiz",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "banderillas",
+   "title": "Banderillas",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "bangalore-krishna",
+   "title": "Bangalore Krishna",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "barbados",
    "title": "Barbados",
    "composerId": "charlie-parker",
@@ -375,6 +672,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "barrio-de-santa-maria",
+   "title": "Barrio de Santa María",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "barrio-santiago",
+   "title": "Barrio Santiago",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "basin-street-blues",
@@ -404,6 +719,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "benamargosa",
+   "title": "Benamargosa",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "bessies-blues",
    "title": "Bessie's Blues",
    "composerId": "john-coltrane",
@@ -431,6 +755,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "bir-omurluk-misafir",
+   "title": "Bir Ömürlük Misafir",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "bird-feathers",
    "title": "Bird Feathers",
    "composerId": "charlie-parker",
@@ -456,6 +789,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "blanca-de-sal",
+   "title": "Blanca De Sal",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "bloomdido",
@@ -557,6 +899,33 @@
    "genre": "JAZZ"
   },
   {
+   "id": "bronce",
+   "title": "Bronce",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "buleriando",
+   "title": "Buleriando",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "bury-me-beneath-the-willow",
+   "title": "Bury Me Beneath the Willow",
+   "composerId": "traditional",
+   "style": "bluegrass",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "BLUEGRASS"
+  },
+  {
    "id": "buzzy",
    "title": "Buzzy",
    "composerId": "charlie-parker",
@@ -575,6 +944,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "cada-vez-que-nos-miramos",
+   "title": "Cada vez que nos miramos",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "caldonia",
    "title": "Caldonia",
    "composerId": "fleecie-moore",
@@ -584,9 +962,36 @@
    "genre": "JAZZ"
   },
   {
+   "id": "calle-fabie",
+   "title": "Calle Fabie",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "calle-municion",
    "title": "Calle Munición",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "callecita-que-subes",
+   "title": "Callecita que subes",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "callejon-de-las-flores",
+   "title": "Callejón de las Flores",
+   "composerId": "jose-jimenez-el-viejin",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -611,9 +1016,54 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "camina-y-dime",
+   "title": "Camina y dime",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "caminillo-viejo",
+   "title": "Caminillo Viejo",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "caminito-pa-la-mina",
+   "title": "Caminito Pa La Mina",
+   "composerId": "kalichi-jl-vargas",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "cana-de-azucar",
    "title": "Caña de Azúcar",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "cancion-de-amor",
+   "title": "Canción de amor",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "candelaria",
+   "title": "Candelaria",
+   "composerId": "jose-jimenez-el-viejin",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -656,9 +1106,27 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "celosa",
+   "title": "Celosa",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "cepa-andaluza",
    "title": "Cepa Andaluza",
    "composerId": "paco-de-lucia-jose-torregrosa",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "cerro-de-san-cristobal",
+   "title": "Cerro De San Cristóbal",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -701,6 +1169,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "chick",
+   "title": "Chick",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "chitlins-con-carne",
    "title": "Chitlins con Carne",
    "composerId": "kenny-burrell",
@@ -708,6 +1185,42 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "cobre",
+   "title": "Cobre",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "compadres",
+   "title": "Compadres",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "con-el-pensamiento",
+   "title": "Con el pensamiento",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "con-la-varita-en-la-mano",
+   "title": "Con la varita en la mano",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "convite",
@@ -726,6 +1239,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "corre-por-mis-venas",
+   "title": "Corre Por Mis Venas",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "cositas-buenas",
@@ -764,6 +1286,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "cueva-del-gato",
+   "title": "Cueva del Gato",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "d-natural-blues",
    "title": "D-Natural Blues",
    "composerId": "wes-montgomery",
@@ -771,6 +1302,78 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "de-blanco-y-oro",
+   "title": "De blanco y oro",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "de-capote",
+   "title": "De Capote",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "de-madrid-al-cielo",
+   "title": "De Madrid al Cielo",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "de-muleta",
+   "title": "De Muleta",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "de-una-mina-de-la-union",
+   "title": "De Una Mina de La Unión",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "dedicado-a-camaron",
+   "title": "Dedicado a Camarón",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "despacito",
+   "title": "Despacito",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "detras-del-tuyo-se-va",
+   "title": "Detrás del tuyo se va",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "dexterity",
@@ -800,6 +1403,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "donde-una-ermita-poner",
+   "title": "Donde una ermita poner",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "donna-lee",
    "title": "Donna Lee",
    "composerId": "charlie-parker",
@@ -807,6 +1419,33 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "dos-toreros",
+   "title": "Dos Toreros",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "dulce-manantial",
+   "title": "Dulce Manantial",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-callejon-de-las-canteras",
+   "title": "El Callejón de las Canteras",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "el-chorruelo",
@@ -827,6 +1466,33 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "el-espejo-en-que-te-miras",
+   "title": "El Espejo En Que Te Miras",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-impetu",
+   "title": "El Ímpetu",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-mandaito",
+   "title": "El mandaito",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "el-panuelo",
    "title": "El Pañuelo",
    "composerId": "paco-de-lucia",
@@ -836,9 +1502,99 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "el-regalo",
+   "title": "El Regalo",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-rinconcillo",
+   "title": "El Rinconcillo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-rio-de-la-vida",
+   "title": "El Río de la Vida",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-tajo",
+   "title": "El Tajo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-tempul",
+   "title": "El tempul",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "el-tesorillo",
    "title": "El Tesorillo",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "el-zarandeo",
+   "title": "El zarandeo",
+   "composerId": "francisco-rodriguez-lico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "en-el-rastro",
+   "title": "En el Rastro",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "en-la-caleta",
+   "title": "En la caleta",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "en-la-provincia-de-cadiz",
+   "title": "En La Provincia de Cádiz",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "en-una-piedra-me-acoste",
+   "title": "En una piedra me acosté",
+   "composerId": null,
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -863,6 +1619,42 @@
    "genre": "JAZZ"
   },
   {
+   "id": "esa-noche",
+   "title": "Esa noche",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "estoy-cumpliendo-condena",
+   "title": "Estoy Cumpliendo Condena",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "feria-del-caballo",
+   "title": "Feria Del Caballo",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "fiesta-en-moguer",
+   "title": "Fiesta en Moguer",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "filthy-mcnasty",
    "title": "Filthy McNasty",
    "composerId": "horace-silver",
@@ -879,6 +1671,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "flores-amargas",
+   "title": "Flores Amargas",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "flying-home",
@@ -917,9 +1718,36 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "generalife-bajo-la-luna",
+   "title": "Generalife bajo la luna",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "gitana-soy",
+   "title": "Gitana soy",
+   "composerId": "juan-antonio-salazar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "gitanos-andaluces",
    "title": "Gitanos Andaluces",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "gitanos-trianeros",
+   "title": "Gitanos Trianeros",
+   "composerId": null,
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -944,6 +1772,33 @@
    "genre": "JAZZ"
   },
   {
+   "id": "guadameci",
+   "title": "Guadamecí",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "guajiras-de-lucia",
+   "title": "Guajiras de Lucía",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "hasta-la-fe-de-bautismo",
+   "title": "Hasta la fe de bautismo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "have-you-met-miss-jones",
    "title": "Have You Met Miss Jones",
    "composerId": "richard-rodgers",
@@ -956,6 +1811,33 @@
    "id": "herencia",
    "title": "Herencia",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "hiere",
+   "title": "Hiere",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "homenaje-a-federico",
+   "title": "Homenaje a Federico",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "homenaje-a-un-amigo",
+   "title": "Homenaje a un amigo",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1025,6 +1907,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "impetu",
+   "title": "Ímpetu",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "indiana-winter",
    "title": "Indiana Winter",
    "composerId": "coleman-hawkins",
@@ -1052,6 +1943,33 @@
    "genre": "JAZZ"
   },
   {
+   "id": "jardin-de-belleza",
+   "title": "Jardín de belleza",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "jerezana",
+   "title": "Jerezana",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "jesus-de-nazaret",
+   "title": "Jesús De Nazaret",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "jumpin-with-symphony-sid",
    "title": "Jumpin with Symphony Sid",
    "composerId": "lester-young-buddy-feyne",
@@ -1059,6 +1977,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "la-andan-hablando",
+   "title": "La andan hablando",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-andonda",
+   "title": "La Andonda",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "la-barrosa",
@@ -1070,9 +2006,108 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "la-calle-del-olvido",
+   "title": "La Calle Del Olvido",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "la-canada",
    "title": "La Cañada",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-chanca",
+   "title": "La Chanca",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-flor-de-la-canela",
+   "title": "La Flor de la Canela",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-fragua",
+   "title": "La Fragua",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-fuentecica",
+   "title": "La Fuentecica",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-leyenda-del-tiempo",
+   "title": "La Leyenda del Tiempo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-luciernaga",
+   "title": "La Luciérnaga",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-mujer-con-ser-mujer",
+   "title": "La Mujer Con Ser Mujer",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-primavera",
+   "title": "La Primavera",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-rosa-blanca",
+   "title": "La Rosa Blanca",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "la-tarara",
+   "title": "La Tarara",
+   "composerId": null,
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1106,6 +2141,51 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "lamento-minero",
+   "title": "Lamento minero",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "las-alfareras",
+   "title": "Las Alfareras",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "las-cuatro-lunas",
+   "title": "Las Cuatro Lunas",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "las-ninas-del-barrio",
+   "title": "Las Niñas del Barrio",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "le-estoy-pidiendo-a-la-virgen",
+   "title": "Le estoy pidiendo a la Virgen",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "lennie-bird",
    "title": "Lennie-Bird",
    "composerId": "lennie-tristano",
@@ -1131,6 +2211,87 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "limon-de-nata",
+   "title": "Limón de nata",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "llanos-del-real",
+   "title": "Llanos del Real",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "llanto-a-cadiz",
+   "title": "Llanto a Cádiz",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "llora-la-siguiriya",
+   "title": "Llora la siguiriya",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "lloran-al-lao-mio",
+   "title": "Lloran Al Lao Mío",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "llorando-gotas-de-sangre",
+   "title": "Llorando gotas de sangre",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "llorando-me-lo-pedia",
+   "title": "Llorando me lo pedía",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "lo-deje-pasar",
+   "title": "Lo dejé pasar",
+   "composerId": "jl-vargas-jose-soto-sorderita",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "lo-sabes-que-te-quiero",
+   "title": "Lo sabes que te quiero",
+   "composerId": "jl-vargas-kalichi",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "locomotion",
@@ -1169,9 +2330,63 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "macael",
+   "title": "Macael",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "maestranza",
+   "title": "Maestranza",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "maletilla",
+   "title": "Maletilla",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "manteca-colora",
    "title": "Manteca colorá",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mantilla-de-feria",
+   "title": "Mantilla de feria",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "maria-de-los-dolores",
+   "title": "María de los Dolores",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "me-la-tienes-controla",
+   "title": "Me La Tienes Controlá",
+   "composerId": "antonio-sanchez-pecino",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1187,6 +2402,24 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "me-voy-contigo",
+   "title": "Me Voy Contigo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "me-voy-por-la-calle-abajo",
+   "title": "Me Voy Por La Calle Abajo",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "meditation",
    "title": "Meditation",
    "composerId": "antonio-carlos-jobim",
@@ -1196,9 +2429,63 @@
    "genre": "JAZZ"
   },
   {
+   "id": "mensaje",
+   "title": "Mensaje",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mercado-persa",
+   "title": "Mercado Persa",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mi-inspiracion",
+   "title": "Mi inspiración",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mi-nina-se-fue-a-la-mar",
+   "title": "Mi Niña se Fue a la Mar",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "mi-nino-curro",
    "title": "Mi Niño Curro",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mira-lo-que-te-he-comprao",
+   "title": "Mira lo que te he comprao",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "mister-benson",
+   "title": "Mister Benson",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1241,6 +2528,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "moral",
+   "title": "Moral",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "more-moon",
    "title": "More Moon",
    "composerId": "woody-herman",
@@ -1248,6 +2544,33 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "musica-en-el-aire",
+   "title": "Musica En El Aire",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "nacencia",
+   "title": "Nacencia",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "nana-del-caballo-grande",
+   "title": "Nana del Caballo Grande",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "nardis",
@@ -1277,6 +2600,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "nostalgia-anadia",
+   "title": "Nostalgia Añadía",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "nota-en-el-aire",
+   "title": "Nota en el aire",
+   "composerId": "ms-melchor",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "now-see-how-you-are",
    "title": "Now See How You Are",
    "composerId": "oscar-pettiford-woody-harris",
@@ -1293,6 +2634,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "ole",
+   "title": "Olé",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "oleo",
@@ -1331,6 +2681,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "oracion",
+   "title": "Oración",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "ornithology",
    "title": "Ornithology",
    "composerId": "charlie-parker-benny-harris",
@@ -1340,9 +2699,54 @@
    "genre": "JAZZ"
   },
   {
+   "id": "our-spain",
+   "title": "Our Spain",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "pa-la-pimpi",
+   "title": "Pa La Pimpi",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "pa-mi-comare",
+   "title": "Pa' Mi Comare",
+   "composerId": "jl-vargas",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "palenque",
    "title": "Palenque",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "panaderos-flamencos",
+   "title": "Panaderos flamencos",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "paseo-de-los-castanos",
+   "title": "Paseo De Los Castaños",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1385,9 +2789,45 @@
    "genre": "JAZZ"
   },
   {
+   "id": "piel-de-toro",
+   "title": "Piel de toro",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "pinonate",
    "title": "Piñonate",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "playa-del-carmen",
+   "title": "Playa del Carmen",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "plaza-alta",
+   "title": "Plaza Alta",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "plaza-de-las-sirenas",
+   "title": "Plaza de las Sirenas",
+   "composerId": "vicente-amigo",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1412,6 +2852,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "por-la-castellana",
+   "title": "Por la Castellana",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "por-mala-lengua-que-tienes",
+   "title": "Por Mala Lengua Que Tienes",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "prelude-to-a-kiss",
    "title": "Prelude to a Kiss",
    "composerId": "duke-ellington",
@@ -1430,9 +2888,126 @@
    "genre": "JAZZ"
   },
   {
+   "id": "puente-de-los-orfebres",
+   "title": "Puente de los Orfebres",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "puente-rio-macarena-triana",
+   "title": "Puente Río Macarena, Triana",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "puerta-de-sevilla",
+   "title": "Puerta de Sevilla",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "puerta-del-principe",
+   "title": "Puerta del Príncipe",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "punta-umbria",
+   "title": "Punta Umbría",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "que-blancas-canas-te-peinas",
+   "title": "Qué blancas canas te peinas",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "que-grande-el-castigo",
+   "title": "Que grande el castigo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "que-un-toro-bravo-en-su-muerte",
+   "title": "Que un toro bravo en su muerte",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "que-venga-el-alba",
    "title": "Que Venga el Alba",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "querido-metheny",
+   "title": "Querido Metheny",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "rebelde",
+   "title": "Rebelde",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "recuerdo-a-paco",
+   "title": "Recuerdo a Paco",
+   "composerId": "jose-jimenez-el-viejin",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "recuerdo-a-patino",
+   "title": "Recuerdo a Patiño",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "recuerdos",
+   "title": "Recuerdos",
+   "composerId": null,
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1457,6 +3032,15 @@
    "genre": "FLAMENCO"
   },
   {
+   "id": "reflexion",
+   "title": "Reflexión",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "relaxin-at-camarillo",
    "title": "Relaxin' At Camarillo",
    "composerId": "charlie-parker",
@@ -1464,6 +3048,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "requiem",
+   "title": "Réquiem",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "rhythm-a-ning",
@@ -1475,9 +3068,63 @@
    "genre": "JAZZ"
   },
   {
+   "id": "rio-ancho",
+   "title": "Río Ancho",
+   "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "rio-de-azucar",
+   "title": "Río de Azúcar",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "rio-de-la-miel",
    "title": "Río de la miel",
    "composerId": "paco-de-lucia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ritmo-del-ganges",
+   "title": "Ritmo del Ganges",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "romance-del-amargo",
+   "title": "Romance del Amargo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "rompeserones",
+   "title": "Rompeserones",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "rosas-del-amor",
+   "title": "Rosas del Amor",
+   "composerId": "tomatito",
    "style": "flamenco",
    "contrafactOfId": null,
    "musicalKey": null,
@@ -1520,6 +3167,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "se-la-llevo-dios",
+   "title": "Se la llevó Dios",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "se-murio-mi-madre",
+   "title": "Se Murió Mi Madre",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "seven-come-eleven",
    "title": "Seven Come Eleven",
    "composerId": "benny-goodman",
@@ -1529,6 +3194,51 @@
    "genre": "JAZZ"
   },
   {
+   "id": "sevilla",
+   "title": "Sevilla",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "si-acaso-muero",
+   "title": "Si acaso muero",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "si-ahora-tu-no-te-arrepentias",
+   "title": "Si ahora tú no te arrepentías",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "sierra-del-agua",
+   "title": "Sierra del Agua",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "sin-motivos-ni-razon",
+   "title": "Sin Motivos Ni Razón",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "solar",
    "title": "Solar",
    "composerId": "miles-davis",
@@ -1536,6 +3246,15 @@
    "contrafactOfId": null,
    "musicalKey": "C minor",
    "genre": "JAZZ"
+  },
+  {
+   "id": "soledad",
+   "title": "Soledad",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "solera",
@@ -1574,6 +3293,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "son-tus-ojos-dos-estrellas",
+   "title": "Son Tus Ojos Dos Estrellas",
+   "composerId": "antonio-sanchez-pecino",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "soniquete",
+   "title": "Soniquete",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "sonnymoon-for-two",
    "title": "Sonnymoon For Two",
    "composerId": "sonny-rollins",
@@ -1581,6 +3318,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "soy-flamenco",
+   "title": "Soy Flamenco",
+   "composerId": "tomatito",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "soy-grande-por-ser-gitano",
+   "title": "Soy grande por ser gitano",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "spain",
@@ -1646,6 +3401,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "sube-al-enganche",
+   "title": "Sube al enganche",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "swedish-pastry",
    "title": "Swedish Pastry",
    "composerId": "barney-kessel",
@@ -1664,6 +3428,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "tacita-de-plata",
+   "title": "Tacita de plata",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "taconeo-gitano",
+   "title": "Taconeo gitano",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "take-the-coltrane",
    "title": "Take the Coltrane",
    "composerId": "duke-ellington",
@@ -1671,6 +3453,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "tangos-de-la-sultana",
+   "title": "Tangos de la Sultana",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "tarde-de-abril",
+   "title": "Tarde de abril",
+   "composerId": "juan-jose-suarez-enrique-heredia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "tea-for-two",
@@ -1707,6 +3507,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "tercio-de-vara",
+   "title": "Tercio de Vara",
+   "composerId": "manolo-sanlucar",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "terremoto",
+   "title": "Terremoto",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "the-champ",
@@ -1799,6 +3617,24 @@
    "genre": "JAZZ"
   },
   {
+   "id": "tientos-del-candil",
+   "title": "Tientos del Candil",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "tio-sabas",
+   "title": "Tío Sabas",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "topsy",
    "title": "Topsy",
    "composerId": "eddie-durham-edgar-battle",
@@ -1806,6 +3642,15 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "torre-del-viento",
+   "title": "Torre Del Viento",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "tranes-blues",
@@ -1817,6 +3662,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "tratante-de-vara-larga",
+   "title": "Tratante De Vara Larga",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "triste",
    "title": "Triste",
    "composerId": "antonio-carlos-jobim",
@@ -1824,6 +3678,24 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "tu-eres-mio",
+   "title": "Tú eres mío",
+   "composerId": "gori-carmona-maria-rosa-garcia",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "tu-no-debes-tener-celos",
+   "title": "Tú no debes tener celos",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "tune-up",
@@ -1844,6 +3716,15 @@
    "genre": "JAZZ"
   },
   {
+   "id": "turu-turai",
+   "title": "Turu Turai",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "two-degrees-east-three-degrees-west",
    "title": "Two Degrees East Three Degrees West",
    "composerId": "john-lewis",
@@ -1851,6 +3732,105 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "un-ole-a-tiempo",
+   "title": "Un Ole A Tiempo",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "un-pastor-en-la-sierra",
+   "title": "Un pastor en la sierra",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "una-estrella-chiquitita",
+   "title": "Una estrella chiquitita",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "vas-a-conseguir-tres-cosas",
+   "title": "Vas a conseguir tres cosas",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ventanas-al-alma",
+   "title": "Ventanas al alma",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ventorillo-de-la-union",
+   "title": "Ventorillo De La Union",
+   "composerId": "moraito-chico",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "viejo-mundo",
+   "title": "Viejo Mundo",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "viva-la-union",
+   "title": "Viva la Unión",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "vivencias",
+   "title": "Vivencias",
+   "composerId": "rafael-riqueni",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "vivencias-imaginadas",
+   "title": "Vivencias imaginadas",
+   "composerId": "vicente-amigo",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "volando-voy",
+   "title": "Volando Voy",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "volar",
@@ -1889,6 +3869,42 @@
    "genre": "JAZZ"
   },
   {
+   "id": "y-no-llegaste-a-quererme",
+   "title": "Y no llegaste a quererme",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "y-si-no-es-verdad",
+   "title": "...Y Si No Es Verdad?",
+   "composerId": "javier-limon",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "y-tu-no-me-respondias",
+   "title": "Y tú no me respondías",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "ya-no-le-temo-a-la-muerte",
+   "title": "Ya no le temo a la muerte",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
    "id": "yardbird-suite",
    "title": "Yardbird Suite",
    "composerId": "charlie-parker",
@@ -1896,6 +3912,33 @@
    "contrafactOfId": null,
    "musicalKey": null,
    "genre": "JAZZ"
+  },
+  {
+   "id": "yerbaguena-occidente",
+   "title": "Yerbagüena (Occidente)",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "yerbaguena-oriente",
+   "title": "Yerbagüena (Oriente)",
+   "composerId": null,
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
+  },
+  {
+   "id": "zarzillos-de-coral",
+   "title": "Zarzillos de coral",
+   "composerId": "ramon-pisa-borja",
+   "style": "flamenco",
+   "contrafactOfId": null,
+   "musicalKey": null,
+   "genre": "FLAMENCO"
   },
   {
    "id": "zyryab",

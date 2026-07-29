@@ -20,9 +20,7 @@ query EverythingInEMinor {
     }
     recordings {
       performers {
-        artist {
-          name
-        }
+        name
       }
       album {
         title

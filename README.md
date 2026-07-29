@@ -7,15 +7,15 @@ reassembled by the router at query time.
 
 | Subgraph | Port | Owns | Extends |
 |---|---|---|---|
-| `artists` | 4001 | `Artist` identity, `Membership`, `InterpretiveProfile` | — |
+| `artists` | 4001 | `Artist` identity, `Membership` | — |
 | `catalog` | 4002 | `Work`, `Movement`, `Tune`, the `Piece` interface, `Genre` | `Artist` += `composedPieces`, `composedWorks` |
 | `discography` | 4003 | `Album`, `Recording`, `Credit` | `Piece` += `recordings` (via `@interfaceObject`); `Artist` += `albums`, `recordings` |
 
 `catalog` says what music exists, `artists` says who plays, `discography` says
 who recorded what and where. The discography is the join service: it references
 both other subgraphs, so almost every query through it produces a chained plan.
-Genres (classical, jazz, flamenco) are a field, not a service boundary -- the
-same person composes a rumba and records the Rodrigo concerto.
+Genres (classical, jazz, flamenco, bluegrass) are a field, not a service
+boundary -- the same person composes a rumba and records the Rodrigo concerto.
 
 No Apollo packages. Subgraphs are GraphQL Yoga plus a ~70-line hand-rolled
 federation helper (`subgraphs/lib/subgraph.ts`) that serves `_service { sdl }`

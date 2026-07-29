@@ -9,6 +9,8 @@
  * That's all the router needs. The @link URL points at specs.apollo.dev
  * because that is the federation spec's identifier, not a dependency.
  */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { createServer } from "node:http";
 import { createSchema, createYoga } from "graphql-yoga";
 
@@ -30,6 +32,54 @@ const FEDERATION_BOILERPLATE = /* GraphQL */ `
 export interface EntityReference {
   __typename: string;
   [key: string]: unknown;
+}
+
+/** Build an entity reference stub the router can re-resolve, e.g. entityRef("Artist", id). */
+export function entityRef(typename: string, id: string): EntityReference {
+  return { __typename: typename, id };
+}
+
+/**
+ * Assert an internal lookup that the schema promises as non-null actually
+ * resolved. Today the seeder's integrity gate guarantees every reference, so
+ * this never throws; it replaces a bare `!` (which TypeScript erases, leaving
+ * a runtime `undefined` and GraphQL's opaque "Cannot return null for
+ * non-nullable field"). When the seed becomes a database, a dangling reference
+ * fails loudly here, naming what was missing, instead of somewhere upstream.
+ */
+export function must<T>(value: T | null | undefined, what: string): T {
+  if (value == null) throw new Error(`Referential integrity: ${what} not found`);
+  return value;
+}
+
+/** Append `value` to the array at `key`, creating the array on first use. */
+export function pushInto<K, V>(map: Map<K, V[]>, key: K, value: V): void {
+  const arr = map.get(key);
+  if (arr) arr.push(value);
+  else map.set(key, [value]);
+}
+
+/** Add `value` to the Set at `key`, creating the Set on first use. */
+export function addInto<K, V>(map: Map<K, Set<V>>, key: K, value: V): void {
+  const set = map.get(key);
+  if (set) set.add(value);
+  else map.set(key, new Set([value]));
+}
+
+/**
+ * Read a subgraph's SDL and its seed JSON, both resolved relative to the
+ * subgraph directory (pass `import.meta.dirname`). The seed lives at
+ * `<dir>/../../seed/<seedFile>`, matching the repo layout.
+ */
+export function loadSubgraph<T>(dir: string, seedFile: string): { sdl: string; seed: T } {
+  const sdl = readFileSync(join(dir, "schema.graphql"), "utf8");
+  const seed = JSON.parse(readFileSync(join(dir, "..", "..", "seed", seedFile), "utf8")) as T;
+  return { sdl, seed };
+}
+
+/** Index a list of id-bearing records into a Map keyed by id. */
+export function indexById<T extends { id: string }>(items: T[]): Map<string, T> {
+  return new Map(items.map((it) => [it.id, it]));
 }
 
 export interface SubgraphConfig {

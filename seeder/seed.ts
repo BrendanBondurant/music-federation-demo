@@ -22,18 +22,33 @@ import { join, basename, dirname } from "node:path";
 import { homedir } from "node:os";
 
 // ---------------------------------------------------------------------------
-// Expected state of the vault, verified 2026-07-20 (post schema-unification:
-// Jazz Tunes/Flamenco/Composers folders collapsed into flat Artists/, Albums/,
-// Pieces/{Tunes,Works}/; ensembles now flagged by frontmatter instead of a
-// Groups/ folder; contrafacts now come from an in-file ## Contrafacts section
-// on the parent tune instead of a Contrafacts/<Parent>/ folder). If the
-// seeder reports different numbers, the parser is wrong -- not the vault.
-// Do not edit these to make a failing run pass.
+// Expected state of the vault, re-verified 2026-07-29 (previously verified
+// 2026-07-20; the numbers moved for two reasons found in this reseed: real
+// content growth -- see _meta/Flamenco Artists to Fix.md's 2026-07-26 pass,
+// which alone added 36 artist stubs plus backlink/misspelling fixes -- and a
+// vault-wide Personnel format change, bullets -> a "Musician | Instrument"
+// table (see tablesUnder), which the parser silently mis-read as zero
+// credits until this pass taught it the new shape. A `Pieces/Palos/` folder
+// (flamenco palo reference pages) also appeared; it's out of scope for the
+// seeder for now (see the comment by `metaDir`) and doesn't affect any count
+// below. If the seeder reports different numbers than these, the parser is
+// wrong -- not the vault. Do not edit these to make a failing run pass.
+//
+// Same-day follow-up (also 2026-07-29): closed out the two items
+// _meta/Flamenco Artists to Fix.md had left open. Created the 5
+// MISSING_PIECE_TRACKS tune files (tunes +5), and merged the duplicate
+// Paseo de los Castaños album pair into the one correctly-disambiguated file
+// (albums -1; personnelEdges -1, net of losing the EmArcy file's 2 credits
+// and gaining 1 on the merged file; recordings +4, net of the 5 new tunes'
+// own Recordings rows and collapsing La Vacilona's two parallel recordings
+// -- one per duplicate album -- into the one correct recording, which now
+// carries its true performers, Tomatito + George Benson, instead of the
+// album-fallback's Tomatito-only guess).
 //
 // Cross-checks behind the numbers:
 //   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
 //   - movements 22      = movement files under Pieces/Works (22)
-//   - tunes 184         = Pieces/Tunes files (Other tunes.md skipped)
+//   - tunes 411         = 412 Pieces/Tunes files - 1 (Other tunes.md skipped)
 //   - contrafactEdges 2 = only "All The Things You Are" carries a
 //                         ## Contrafacts section post-reorg (Bird of Paradise,
 //                         Ablution). The old Rhythm-Changes/Blues/How-High-the-
@@ -41,42 +56,47 @@ import { homedir } from "node:os";
 //                         have no in-file equivalent yet -- those tunes
 //                         (including the 71 blues tunes, deliberately parentless
 //                         even before the reorg) now have no parent on purpose.
-//   - albums 717        = 720 Albums/ files - 3 placeholders (YouTube, Late
-//                         Night Jazz, Baroquswing Vol. II)
-//   - people 1221       = 1183 Artists/ files + 38 composer stubs
-//   - ensembles 57      = Artists/ files with instrument: ensemble (42) or
+//   - albums 768        = 771 Albums/ files - 3 placeholders that exist as
+//                         files and are skipped (YouTube, Late Night Jazz
+//                         (compilation), Baroquswing Vol. II). The other 3
+//                         PLACEHOLDER_ALBUMS entries (Blues in the Closet,
+//                         The Jody Grind, The Thumper) are self-titled
+//                         one-off sets with no backing file at all -- they
+//                         never counted against this total either side of
+//                         the reorg, only resolved when a recording's Album
+//                         cell links to them.
+//   - people 1378       = 1329 Artists/ files (independently re-slugged: no
+//                         collisions) + 49 composer stubs
+//   - ensembles 66      = Artists/ files with instrument: ensemble (51) or
 //                         instrument: group (15)
-//   - memberships 256   = independently re-summed: every "- [[...]]" bullet
-//                         under ## Personnel across all 57 ensemble/group files
-//   - profiles 0        = no **Axes:** line survives anywhere in Artists/ post-
-//                         reorg (was 11). The InterpretiveProfile feature the
-//                         artists subgraph exposes has no backing data right
-//                         now -- flagged to Brendan, not silently patched.
-//   - personnelEdges 2488 = independently re-summed: 2645 raw "- [[...]]"
-//                         Personnel bullets across all Albums/ files, minus
-//                         146 bulleted lines with no wikilink, minus 1
-//                         bob-prince (skipped by name), minus 11 bullets that
-//                         belong to the 3 placeholder albums (skipped whole)
-//   - recordings 1036   = tune rows + movement rows + album track rows with no
-//                         matching (piece, album) recording; grew with the 147
-//                         -> 184 tune count. No independent hand recount --
-//                         verified via the referential-integrity gate only.
+//   - memberships 275   = independently re-summed: every "- [[...]]" bullet
+//                         under ## Personnel across all ensemble/group files
+//   - personnelEdges 2757 = independently re-summed against the new table
+//                         format: every linked Musician cell across every
+//                         non-placeholder album's ## Personnel table(s),
+//                         expanding multi-name cells ("Wynton Kelly / Cedar
+//                         Walton / McCoy Tyner") into one credit per name,
+//                         minus bob-prince (skipped by name)
+//   - recordings 1294   = tune rows + movement rows + album track rows with no
+//                         matching (piece, album) recording; grew with the
+//                         184 -> 411 tune count and 717 -> 768 album count.
+//                         No independent hand recount -- verified via the
+//                         referential-integrity gate only.
 //   - warnings 1        = "Ralph Lalama & His Manhattan All Stars" (Feelin'
 //                         and Dealin') has no Artists/ file of its own; the
 //                         real personnel are still credited individually
 const EXPECTED = {
-  people: 1221,
-  ensembles: 57,
-  composerStubs: 38,
-  memberships: 256,
-  profiles: 0,
+  people: 1378,
+  ensembles: 66,
+  composerStubs: 49,
+  memberships: 275,
   works: 10,
   movements: 22,
-  tunes: 184,
+  tunes: 411,
   contrafactEdges: 2,
-  albums: 717,
-  personnelEdges: 2488,
-  recordings: 1036,
+  albums: 768,
+  personnelEdges: 2757,
+  recordings: 1294,
   warnings: 1,
 };
 
@@ -210,6 +230,63 @@ function col(t: Table, name: string): number {
   return t.headers.findIndex((h) => h.includes(name));
 }
 
+/**
+ * All markdown tables under the section whose heading starts with
+ * `headingPrefix`, including tables nested under further sub-headings inside
+ * that section (e.g. `### Session 1 (with Duvivier/Taylor)` grouping two
+ * Personnel tables on The Roost Sessions (Bud Powell)). Stops at the next
+ * heading whose level is <= the section heading's own level. Unlike
+ * `tableUnder`, a sub-heading does not end the section -- it just starts a
+ * new table within it.
+ */
+function tablesUnder(body: string, headingPrefix: string): Table[] {
+  const lines = body.split("\n");
+  let sectionLevel: number | null = null;
+  let inSection = false;
+  const tables: Table[] = [];
+  let headers: string[] | null = null;
+  let rows: string[][] = [];
+  const flush = () => {
+    if (headers) tables.push({ headers, rows });
+    headers = null;
+    rows = [];
+  };
+  for (const line of lines) {
+    const h = line.match(/^(#{1,6})\s(.*)$/);
+    if (h) {
+      const level = h[1].length;
+      if (inSection) {
+        flush();
+        if (level <= (sectionLevel as number)) {
+          inSection = false;
+          sectionLevel = null;
+        }
+        continue;
+      }
+      if (norm(h[2]).toLowerCase().startsWith(headingPrefix.toLowerCase())) {
+        inSection = true;
+        sectionLevel = level;
+      }
+      continue;
+    }
+    if (!inSection) continue;
+    const t = line.trim();
+    if (!t.startsWith("|")) {
+      flush();
+      continue;
+    }
+    const cells = splitRow(t);
+    if (!headers) {
+      headers = cells.map((c) => c.toLowerCase());
+      continue;
+    }
+    if (cells.every((c) => /^[:\-\s]*$/.test(c))) continue; // separator row
+    rows.push(cells);
+  }
+  if (inSection) flush();
+  return tables;
+}
+
 /** Bullet lines under the section whose heading starts with `headingPrefix`. */
 function bulletsUnder(body: string, headingPrefix: string): string[] {
   const lines = body.split("\n");
@@ -286,15 +363,6 @@ function proseUnder(body: string, headingPrefix: string | null): string | null {
   return text || null;
 }
 
-/** Parse "**Axes:** Clarity – X · Tone color – Y · Interpretive risk – Z". */
-function parseAxes(body: string): { clarity: string | null; toneColor: string | null; risk: string | null } | null {
-  const m = body.match(
-    /\*\*Axes:\*\*\s*Clarity\s*[–—-]\s*(.+?)\s*·\s*Tone color\s*[–—-]\s*(.+?)\s*·\s*Interpretive risk\s*[–—-]\s*(.+?)\s*$/m,
-  );
-  if (!m) return null;
-  return { clarity: norm(m[1]) || null, toneColor: norm(m[2]) || null, risk: norm(m[3]) || null };
-}
-
 /** Tiny YAML-subset frontmatter parser: scalars and string lists. */
 function frontmatter(text: string): { fm: Record<string, string | string[]>; body: string } {
   if (!text.startsWith("---")) return { fm: {}, body: text };
@@ -364,7 +432,7 @@ function romanLead(name: string): number | null {
 // ---------------------------------------------------------------------------
 // Data shapes (mirror subgraphs/lib/seed-types.ts)
 
-type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO";
+type Genre = "CLASSICAL" | "JAZZ" | "FLAMENCO" | "BLUEGRASS";
 interface Person {
   id: string;
   name: string;
@@ -372,7 +440,6 @@ interface Person {
   instruments: string[];
   styles: string[];
   bio: string | null;
-  profile: { clarity: string | null; toneColor: string | null; risk: string | null } | null;
   stub: boolean;
 }
 interface Membership {
@@ -447,6 +514,14 @@ const albumsDir = join(vault, "Albums");
 const tunesDir = join(vault, "Pieces", "Tunes");
 const worksDir = join(vault, "Pieces", "Works");
 const metaDir = join(vault, "_meta");
+// Pieces/Palos/ (flamenco palo reference pages, type: palo) is a new vault
+// folder as of the 2026-07-29 reseed, linked from a new Palo column in
+// flamenco albums' Tunes tables. Deliberately not read here: it's reference
+// data, not a piece or an entity any subgraph owns yet, and adding a Genre-
+// style field for it is a scope call for a future pass, not this one (same
+// discipline as "a fourth subgraph is a deliberate decision" in CLAUDE.md).
+// col()-based lookups elsewhere already ignore the extra Palo column, so its
+// presence doesn't affect existing parsing.
 
 // --- People: jazz, flamenco, and classical artists share ONE flat pool -------
 // (there is no separate "classical subgraph" convention -- see _meta/CLAUDE.md)
@@ -477,7 +552,6 @@ function addArtistFile(p: string): void {
     instruments,
     styles: style ? [style] : [],
     bio: proseUnder(body, "Profile") ?? proseUnder(body, null),
-    profile: parseAxes(body),
     stub: false,
   });
 }
@@ -501,7 +575,6 @@ function composerRef(nameRaw: string | undefined): string | null {
       instruments: [],
       styles: [],
       bio: null,
-      profile: null,
       stub: true,
     });
   }
@@ -634,11 +707,18 @@ for (const p of mdFiles(worksDir)) {
   movementRecordingSources.push({ movementId: id, file: p, body });
 }
 
-// --- Tunes (jazz + flamenco, flat since the reorg; flamenco flagged by
-// style: flamenco frontmatter rather than a separate folder) -----------------
+// --- Tunes (flat since the reorg; genre is derived from style frontmatter
+// rather than a separate folder: flamenco -> FLAMENCO, bluegrass -> BLUEGRASS,
+// everything else -> JAZZ) ----------------------------------------------------
 const tunes = new Map<string, Tune>();
 const tuneRecordingSources: { tuneId: string; file: string; body: string }[] = [];
 const tuneBodies = new Map<string, string>(); // tuneId -> body, for the Contrafacts pass
+
+function genreFromStyle(style: string | null): Genre {
+  if (style === "flamenco") return "FLAMENCO";
+  if (style === "bluegrass") return "BLUEGRASS";
+  return "JAZZ";
+}
 
 function addTuneFile(p: string): void {
   const { fm, body } = frontmatter(readFileSync(p, "utf8"));
@@ -655,7 +735,7 @@ function addTuneFile(p: string): void {
       style,
       contrafactOfId: null, // resolved after all tunes are known
       musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
-      genre: style === "flamenco" ? "FLAMENCO" : "JAZZ",
+      genre: genreFromStyle(style),
     });
     tuneBodies.set(id, body);
   }
@@ -728,15 +808,25 @@ function addAlbumFile(p: string): void {
     artistIds.push(aid);
   }
 
+  // Album Personnel moved from a bullet list to a "Musician | Instrument"
+  // table vault-wide (found during the 2026-07-29 reseed -- see tablesUnder).
+  // A Musician cell can name more than one person ("Wynton Kelly / Cedar
+  // Walton / McCoy Tyner" for a role that varies by track); each linked name
+  // becomes its own credit sharing that row's Instrument text.
   const credits: Credit[] = [];
-  for (const b of bulletsUnder(body, "Personnel")) {
-    const links = extractLinks(b);
-    if (links.length === 0) continue;
-    const artistId = slug(links[0]);
-    if (SKIP_PERSONNEL_SLUGS.has(artistId)) continue;
-    const after = b.slice(b.lastIndexOf("]]") + 2);
-    const dm = after.match(/^\s*[-–—]\s*(.+)$/);
-    credits.push({ artistId, role: dm ? norm(dm[1]) : null });
+  for (const t of tablesUnder(body, "Personnel")) {
+    const cMusician = col(t, "musician");
+    const cInstrument = col(t, "instrument");
+    for (const row of t.rows) {
+      const links = cMusician >= 0 ? extractLinks(row[cMusician] ?? "") : [];
+      if (links.length === 0) continue; // plain-text-only credit (no artist file to link)
+      const role = cInstrument >= 0 ? norm(row[cInstrument] ?? "") : "";
+      for (const link of links) {
+        const artistId = slug(link);
+        if (SKIP_PERSONNEL_SLUGS.has(artistId)) continue;
+        credits.push({ artistId, role: role || null });
+      }
+    }
   }
 
   const rows: { pieceId: string; key: string | null }[] = [];
@@ -942,7 +1032,6 @@ const counts = {
   ensembles: [...people.values()].filter((p) => p.kind === "ENSEMBLE").length,
   composerStubs: [...people.values()].filter((p) => p.stub).length,
   memberships: memberships.length,
-  profiles: [...people.values()].filter((p) => p.profile !== null).length,
   works: works.size,
   movements: movements.size,
   tunes: tunes.size,
@@ -978,17 +1067,6 @@ mkdirSync(outDir, { recursive: true });
 const byId = <T extends { id: string }>(m: Map<string, T>) =>
   [...m.values()].sort((a, b) => a.id.localeCompare(b.id));
 
-// Names for every artist referenced by the discography, denormalized so the
-// discography subgraph can honor @provides(fields: "name") on Credit.artist.
-const referencedArtists = new Set<string>();
-for (const al of albums.values()) {
-  for (const a of al.artistIds) referencedArtists.add(a);
-  for (const c of al.credits) referencedArtists.add(c.artistId);
-}
-for (const r of recordings) for (const a of r.performerIds) referencedArtists.add(a);
-const artistNames: Record<string, string> = {};
-for (const id of [...referencedArtists].sort()) artistNames[id] = people.get(id)!.name;
-
 writeFileSync(
   join(outDir, "artists.json"),
   JSON.stringify(
@@ -1020,7 +1098,6 @@ writeFileSync(
     {
       albums: byId(albums),
       recordings: recordings.slice().sort((a, b) => a.id.localeCompare(b.id)),
-      artistNames,
     },
     null,
     1,

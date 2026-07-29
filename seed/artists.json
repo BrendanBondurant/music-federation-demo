@@ -1,6 +1,19 @@
 {
  "people": [
   {
+   "id": "a-humanes",
+   "name": "A. Humanes",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "No fuller name given in the source credit.",
+   "stub": false
+  },
+  {
    "id": "aaron-bell",
    "name": "Aaron Bell",
    "kind": "PERSON",
@@ -9,7 +22,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -19,7 +31,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -31,7 +42,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -43,7 +53,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "adam-steffey",
+   "name": "Adam Steffey",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -55,7 +75,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -65,7 +84,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -77,7 +95,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -87,7 +104,6 @@
    "instruments": [],
    "styles": [],
    "bio": "French guitar quartet. Lineup has changed over the years (members have included Alexandre Del Fa, François Szönyi, Olivier Fautrat, Pascal Rabatti, and Philippe Loli); exact lineup on the 2003 recording below is unconfirmed.",
-   "profile": null,
    "stub": false
   },
   {
@@ -99,7 +115,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -111,7 +126,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -123,7 +137,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -135,7 +148,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -147,7 +159,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -159,7 +170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -171,7 +181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -183,7 +192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -195,7 +203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -207,7 +214,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -219,7 +225,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -233,7 +238,6 @@
     "flamenco"
    ],
    "bio": "Bass.",
-   "profile": null,
    "stub": false
   },
   {
@@ -245,7 +249,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -257,7 +260,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -269,7 +271,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -281,7 +282,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -293,7 +293,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -305,7 +304,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -317,7 +315,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -329,7 +326,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -341,7 +337,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -353,7 +348,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -365,7 +359,17 @@
    ],
    "styles": [],
    "bio": "Drummer, longtime member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "allison-miller",
+   "name": "Allison Miller",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -377,7 +381,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -389,7 +392,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "american-patchwork-quartet",
+   "name": "American Patchwork Quartet",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -401,7 +412,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -413,7 +423,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -425,7 +434,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -437,7 +445,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -449,7 +456,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ane-carrasco",
+   "name": "Ané Carrasco",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -461,7 +480,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -475,7 +493,17 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "anita-carter",
+   "name": "Anita Carter",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -487,7 +515,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -499,7 +526,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -511,7 +537,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -525,7 +550,6 @@
     "classical"
    ],
    "bio": "American organist, harpsichordist, and conductor; a Bach specialist and frequent Marsalis collaborator (In Gabriel's Garden).",
-   "profile": null,
    "stub": false
   },
   {
@@ -537,7 +561,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -549,7 +572,32 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "anton",
+   "name": "Antón",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "No surname given in the source credit.",
+   "stub": false
+  },
+  {
+   "id": "antonio-canales",
+   "name": "Antonio Canales",
+   "kind": "PERSON",
+   "instruments": [
+    "dance"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -561,7 +609,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "antonio-carmona",
+   "name": "Antonio Carmona",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -575,7 +635,69 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "antonio-moreno-tacita",
+   "name": "Antonio Moreno (Tacita)",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "antonio-ramos-maca",
+   "name": "Antonio Ramos (Maca)",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "antonio-sanchez-pecino",
+   "name": "Antonio Sánchez Pecino",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ap-carter",
+   "name": "A.P. Carter",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "arcangel",
+   "name": "Arcángel",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -587,7 +709,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -599,7 +720,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -611,7 +731,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -623,7 +742,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -637,7 +755,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -647,7 +764,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -659,7 +775,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -671,7 +786,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -683,7 +797,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -695,7 +808,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -709,7 +821,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -721,7 +832,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -733,7 +843,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -745,7 +854,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "arthur-rosenbaum",
+   "name": "Arthur Rosenbaum",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -755,7 +872,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -767,7 +883,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -779,7 +894,28 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "aubrey-haynie",
+   "name": "Aubrey Haynie",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "audie-webster",
+   "name": "Audie Webster",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -791,7 +927,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -803,7 +938,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -815,7 +949,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -827,7 +960,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -837,7 +969,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -849,7 +980,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -861,7 +991,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -873,7 +1002,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -885,7 +1013,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -897,7 +1024,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -909,7 +1035,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -919,7 +1044,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -929,7 +1053,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -939,7 +1062,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -951,7 +1073,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -963,7 +1084,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -975,7 +1095,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -987,7 +1106,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -999,7 +1117,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1011,7 +1128,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1021,7 +1137,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -1033,7 +1148,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1045,7 +1159,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1057,7 +1170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1069,7 +1181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1081,7 +1192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1091,7 +1201,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -1101,7 +1210,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1111,7 +1219,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1123,7 +1230,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1135,7 +1241,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1147,7 +1252,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "bernardo-parrilla",
+   "name": "Bernardo Parrilla",
+   "kind": "PERSON",
+   "instruments": [
+    "violin"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -1157,7 +1274,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -1169,7 +1285,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1183,7 +1298,6 @@
     "vocal jazz, bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1195,7 +1309,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1207,7 +1320,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1219,7 +1331,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1233,7 +1344,6 @@
     "cool jazz"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1243,7 +1353,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1255,7 +1364,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1267,7 +1375,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1281,7 +1388,26 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "bill-owens",
+   "name": "Bill Owens",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bill-owens-and-the-kinfolk",
+   "name": "Bill Owens And The Kinfolk",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -1293,7 +1419,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1305,7 +1430,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1317,7 +1441,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1329,7 +1452,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1341,7 +1463,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1353,7 +1474,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1365,7 +1485,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1377,7 +1496,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1389,7 +1507,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1401,7 +1518,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1413,7 +1529,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1425,7 +1540,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1437,7 +1551,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1449,7 +1562,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1461,7 +1573,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1473,7 +1584,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1485,7 +1595,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1497,7 +1606,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1509,7 +1617,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1521,7 +1628,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "blackberry-winter",
+   "name": "Blackberry Winter",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -1535,7 +1650,6 @@
     "flamenco"
    ],
    "bio": "Flamenco cantaor (singer) discovered by Chano Domínguez.",
-   "profile": null,
    "stub": false
   },
   {
@@ -1547,7 +1661,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "bo-brown",
+   "name": "Bo Brown",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -1559,7 +1681,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1571,7 +1692,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1583,7 +1703,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1595,7 +1714,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1607,7 +1725,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1621,7 +1738,6 @@
     "bebop"
    ],
    "bio": "Bob Mintzer",
-   "profile": null,
    "stub": false
   },
   {
@@ -1633,7 +1749,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1645,7 +1760,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1657,7 +1771,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1669,7 +1782,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1679,7 +1791,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1691,7 +1802,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1703,7 +1813,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1715,7 +1824,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1727,7 +1835,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1739,7 +1846,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1751,7 +1857,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1763,7 +1868,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1775,7 +1879,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1787,7 +1890,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1799,7 +1901,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1811,7 +1912,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1821,7 +1921,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -1833,7 +1932,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1845,7 +1943,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1857,7 +1954,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1867,7 +1963,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1879,7 +1974,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1891,7 +1985,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1903,7 +1996,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "brittany-haas",
+   "name": "Brittany Haas",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -1913,7 +2016,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -1925,7 +2027,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1937,7 +2038,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1949,7 +2049,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1963,7 +2062,6 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1973,7 +2071,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1985,7 +2082,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -1997,7 +2093,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2009,7 +2104,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2021,7 +2115,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2033,7 +2126,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2045,7 +2137,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2057,7 +2148,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2069,7 +2159,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2081,7 +2170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2093,7 +2181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2105,7 +2192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2117,7 +2203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2129,7 +2214,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2141,7 +2225,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2153,7 +2236,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "camaron-de-la-isla",
+   "name": "Camarón de la Isla",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -2167,7 +2262,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2179,7 +2273,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "carl-jackson",
+   "name": "Carl Jackson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2191,7 +2295,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2203,7 +2306,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2217,7 +2319,6 @@
     "flamenco"
    ],
    "bio": "Also plays mandolin.",
-   "profile": null,
    "stub": false
   },
   {
@@ -2229,7 +2330,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2241,7 +2341,6 @@
    ],
    "styles": [],
    "bio": "Bassist, longtime member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -2253,7 +2352,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2265,7 +2363,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2277,7 +2374,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2289,7 +2385,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "carter-stanley",
+   "name": "Carter Stanley",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2301,7 +2407,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2313,7 +2418,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "catherine-marx",
+   "name": "Catherine Marx",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2325,7 +2440,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2337,7 +2451,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2349,7 +2462,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2361,7 +2473,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2375,7 +2486,6 @@
     "flamenco"
    ],
    "bio": "Spanish pianist from Cádiz who fuses flamenco with jazz; frequent collaborator with Wynton Marsalis and the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -2387,7 +2497,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2399,7 +2508,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "charles-hedgepath",
+   "name": "Charles Hedgepath",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2411,7 +2530,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2423,7 +2541,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2435,7 +2552,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2447,7 +2563,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2459,7 +2574,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2471,7 +2585,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2483,7 +2596,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2497,7 +2609,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2509,7 +2620,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2521,7 +2631,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2533,7 +2642,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2545,7 +2653,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2559,7 +2666,6 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2569,7 +2675,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2579,7 +2684,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -2591,7 +2695,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2603,7 +2706,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2615,7 +2717,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2627,7 +2728,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2641,7 +2741,19 @@
     "cool jazz"
    ],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "chicharrito",
+   "name": "Chicharrito",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Cajón; handclaps and jaleo vocals.",
    "stub": false
   },
   {
@@ -2653,7 +2765,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2663,7 +2774,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2675,7 +2785,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2687,7 +2796,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2699,7 +2807,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2711,7 +2818,6 @@
    ],
    "styles": [],
    "bio": "Trombonist, vocalist, and composer/arranger with the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -2723,7 +2829,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2735,7 +2840,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2747,7 +2851,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2759,7 +2862,6 @@
    ],
    "styles": [],
    "bio": "French jazz drummer; the Jacques Loussier Play Bach trio.",
-   "profile": null,
    "stub": false
   },
   {
@@ -2771,7 +2873,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2781,7 +2882,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2793,7 +2893,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2807,7 +2906,6 @@
     "rock and roll"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2819,7 +2917,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2831,7 +2928,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2843,7 +2939,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2855,7 +2950,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2867,7 +2961,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2879,7 +2972,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2891,7 +2983,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "clarence-white",
+   "name": "Clarence White",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2903,7 +3005,6 @@
    ],
    "styles": [],
    "bio": "Kenny Barron, Stefon Harris, Ron Carter, Lewis Nash. *Plays Bach* (2002).",
-   "profile": null,
    "stub": false
   },
   {
@@ -2915,7 +3016,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2927,7 +3027,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "clay-ross",
+   "name": "Clay Ross",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -2937,7 +3047,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2949,7 +3058,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2961,7 +3069,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2973,7 +3080,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2987,7 +3093,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -2999,7 +3104,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3011,7 +3115,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3023,7 +3126,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3037,7 +3139,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3049,7 +3150,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3061,7 +3161,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3073,7 +3172,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3085,7 +3183,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3095,7 +3192,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3107,7 +3203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3119,7 +3214,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "curley-lambert",
+   "name": "Curley Lambert",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3131,7 +3236,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3143,7 +3247,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3155,7 +3258,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3167,7 +3269,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3179,7 +3280,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3191,7 +3291,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3203,7 +3302,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3215,7 +3313,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3227,7 +3324,6 @@
    ],
    "styles": [],
    "bio": "Dan Nimmer",
-   "profile": null,
    "stub": false
   },
   {
@@ -3239,7 +3335,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3251,7 +3346,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3263,7 +3357,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3275,7 +3368,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3287,7 +3379,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3299,7 +3390,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3311,7 +3401,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3323,7 +3412,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3335,7 +3423,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3347,7 +3434,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3359,7 +3445,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3371,7 +3456,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3383,7 +3467,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3395,7 +3478,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3407,7 +3489,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3419,7 +3500,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3431,7 +3511,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3443,7 +3522,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "david-holt",
+   "name": "David Holt",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3455,7 +3544,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3467,7 +3555,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3479,7 +3566,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3491,7 +3577,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3503,7 +3588,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3515,7 +3599,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3527,7 +3610,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3539,7 +3621,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3551,7 +3632,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "dennis-crider",
+   "name": "Dennis Crider",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3563,7 +3652,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3575,7 +3663,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3589,7 +3676,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3601,7 +3687,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3613,7 +3698,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3625,7 +3709,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3639,7 +3722,6 @@
     "flamenco"
    ],
    "bio": "Vocals.",
-   "profile": null,
    "stub": false
   },
   {
@@ -3651,7 +3733,6 @@
    ],
    "styles": [],
    "bio": "Diego Figueiredo",
-   "profile": null,
    "stub": false
   },
   {
@@ -3663,7 +3744,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "dirthog-newton",
+   "name": "Dirthog Newton",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3677,7 +3768,6 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3689,7 +3779,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3701,7 +3790,6 @@
    ],
    "styles": [],
    "bio": "Manouche jazz guitarist. Accompanied the 1937 swing recording of Bach's Double Violin Concerto.",
-   "profile": null,
    "stub": false
   },
   {
@@ -3713,7 +3801,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "doc-watson",
+   "name": "Doc Watson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3725,7 +3823,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "dominick-leslie",
+   "name": "Dominick Leslie",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3737,7 +3845,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3749,7 +3856,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3761,7 +3867,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3773,7 +3878,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3787,7 +3891,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3799,7 +3902,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3811,7 +3913,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3823,7 +3924,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3835,7 +3935,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3847,7 +3946,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3859,7 +3957,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3871,7 +3968,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3885,7 +3981,6 @@
     "classical"
    ],
    "bio": "American conductor, longtime music director of the Eastman Wind Ensemble (1965–2001) and an arranger of orchestral works for wind band.",
-   "profile": null,
    "stub": false
   },
   {
@@ -3897,7 +3992,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "dorothy-jo-hope",
+   "name": "Dorothy Jo Hope",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -3909,7 +4014,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3921,7 +4025,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3933,7 +4036,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3945,7 +4047,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3957,7 +4058,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3971,7 +4071,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -3981,7 +4080,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -3993,7 +4091,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4005,7 +4102,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4019,7 +4115,6 @@
     "flamenco"
    ],
    "bio": "Vocals.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4031,7 +4126,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4043,7 +4137,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4055,7 +4148,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4067,7 +4159,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4079,7 +4170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4091,7 +4181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4103,7 +4192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4115,7 +4203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4127,7 +4214,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4139,7 +4225,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4149,7 +4234,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -4161,7 +4245,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4173,7 +4256,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4185,7 +4267,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4197,7 +4278,6 @@
    ],
    "styles": [],
    "bio": "Eddie Higgins",
-   "profile": null,
    "stub": false
   },
   {
@@ -4207,7 +4287,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4219,7 +4298,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4231,7 +4309,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4243,7 +4320,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4255,7 +4331,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4267,7 +4342,6 @@
    ],
    "styles": [],
    "bio": "Classically trained jazz violinist. Recorded Bach's Double Violin Concerto with Grappelli and Django (Paris, 1937).",
-   "profile": null,
    "stub": false
   },
   {
@@ -4277,7 +4351,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -4289,7 +4362,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4303,7 +4375,6 @@
     "classical"
    ],
    "bio": "Slovak coloratura soprano celebrated for her bel canto roles.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4315,7 +4386,45 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "eduardo-cortes",
+   "name": "Eduardo Cortés",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "el-pele",
+   "name": "El Pele",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "el-viejin",
+   "name": "El Viejín",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -4327,7 +4436,6 @@
    ],
    "styles": [],
    "bio": "Eli-Marie Helgeland Davidsen",
-   "profile": null,
    "stub": false
   },
   {
@@ -4339,7 +4447,6 @@
    ],
    "styles": [],
    "bio": "Eliane Elias",
-   "profile": null,
    "stub": false
   },
   {
@@ -4351,7 +4458,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4363,7 +4469,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4375,7 +4480,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "elizabeth-steen",
+   "name": "Elizabeth Steen",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -4389,7 +4504,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4401,7 +4515,6 @@
    ],
    "styles": [],
    "bio": "Trombonist, member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4415,7 +4528,17 @@
     "post-bop"
    ],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "emily-miller",
+   "name": "Emily Miller",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -4427,7 +4550,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4439,7 +4561,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "emmylou-harris",
+   "name": "Emmylou Harris",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -4451,7 +4583,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4463,7 +4594,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4475,7 +4605,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4487,7 +4616,6 @@
    ],
    "styles": [],
    "bio": "Opera bass-baritone; featured on Chick Corea's 'Spanish Suite'.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4499,7 +4627,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4509,7 +4636,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4521,7 +4647,26 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "eric-weissberg",
+   "name": "Eric Weissberg",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "erik-della-penna",
+   "name": "Erik Della Penna",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -4533,7 +4678,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4545,7 +4689,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4557,7 +4700,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4569,7 +4711,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4581,7 +4722,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4593,7 +4733,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4605,7 +4744,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4617,7 +4755,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4631,7 +4768,6 @@
     "classical"
    ],
    "bio": "Finnish conductor and composer, former music director of the Los Angeles Philharmonic.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4643,7 +4779,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4655,7 +4790,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4667,7 +4801,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4679,7 +4812,43 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "evora",
+   "name": "Évora",
+   "kind": "PERSON",
+   "instruments": [
+    "orchestral arrangements"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "José Miguel \"Évora\" — orchestral arranger.",
+   "stub": false
+  },
+  {
+   "id": "falguni-shah",
+   "name": "Falguni Shah",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "farruquito",
+   "name": "Farruquito",
+   "kind": "PERSON",
+   "instruments": [
+    "dance"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -4691,7 +4860,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4703,7 +4871,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4715,7 +4882,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4725,7 +4891,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -4737,7 +4902,6 @@
    ],
    "styles": [],
    "bio": "Brazilian jazz vocalist; sang with Return to Forever.",
-   "profile": null,
    "stub": false
   },
   {
@@ -4749,8 +4913,16 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "francisco-rodriguez-lico",
+   "name": "Francisco Rodríguez \\\"Lico\\\"",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "franco-ambrosetti",
@@ -4761,7 +4933,6 @@
    ],
    "styles": [],
    "bio": "Franco Ambrosetti",
-   "profile": null,
    "stub": false
   },
   {
@@ -4773,7 +4944,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4785,7 +4955,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4797,7 +4966,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4809,7 +4977,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4821,7 +4988,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4831,7 +4997,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -4843,7 +5008,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4855,7 +5019,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4867,7 +5030,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4879,7 +5041,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4891,7 +5052,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4903,7 +5063,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4915,7 +5074,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4927,7 +5085,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4939,7 +5096,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4951,7 +5107,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4963,7 +5118,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4975,7 +5129,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4987,7 +5140,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -4999,7 +5151,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5011,7 +5162,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5023,7 +5173,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5035,7 +5184,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5047,7 +5195,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5059,7 +5206,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "gabriel-gordon",
+   "name": "Gabriel Gordon",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -5071,7 +5228,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5083,7 +5239,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5095,7 +5250,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5107,7 +5261,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5119,7 +5272,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5131,7 +5283,6 @@
    ],
    "styles": [],
    "bio": "Gary Smith",
-   "profile": null,
    "stub": false
   },
   {
@@ -5143,7 +5294,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5155,7 +5305,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5167,7 +5316,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5179,7 +5327,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5191,7 +5338,6 @@
    ],
    "styles": [],
    "bio": "Gene Harris",
-   "profile": null,
    "stub": false
   },
   {
@@ -5203,7 +5349,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5215,7 +5360,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5227,7 +5371,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5239,7 +5382,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5251,7 +5393,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5263,7 +5404,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5273,7 +5413,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -5285,7 +5424,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5297,7 +5435,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5309,7 +5446,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5321,7 +5457,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5333,7 +5468,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5345,7 +5479,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5357,7 +5490,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5369,7 +5501,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5381,7 +5512,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5391,7 +5521,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -5403,7 +5532,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5417,7 +5545,6 @@
     "cool jazz"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5427,7 +5554,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5439,7 +5565,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5451,7 +5576,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5463,7 +5587,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5475,7 +5598,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5487,7 +5609,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5499,7 +5620,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5511,7 +5631,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5523,7 +5642,6 @@
    ],
    "styles": [],
    "bio": "Recorded Spain / Concierto de Aranjuez with Chick Corea (*Rendezvous in New York*, 2003).",
-   "profile": null,
    "stub": false
   },
   {
@@ -5535,7 +5653,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5547,8 +5664,29 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "gori-carmona",
+   "name": "Gori Carmona",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Also a co-writer, with María Rosa García, of \"Tú Eres Mío\" on [[Gitana Soy (album)]].",
+   "stub": false
+  },
+  {
+   "id": "gori-carmona-maria-rosa-garcia",
+   "name": "Gori Carmona, María Rosa García",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "grachan-moncur-iii",
@@ -5559,7 +5697,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5571,7 +5708,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5583,7 +5719,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "graham-maby",
+   "name": "Graham Maby",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -5595,7 +5741,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "gray-sky-girls",
+   "name": "Gray Sky Girls",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -5607,7 +5761,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5619,7 +5772,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5631,7 +5783,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5643,7 +5794,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5657,7 +5807,19 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "gualberto-garcia",
+   "name": "Gualberto García",
+   "kind": "PERSON",
+   "instruments": [
+    "sitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -5669,7 +5831,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5681,7 +5842,6 @@
    ],
    "styles": [],
    "bio": "French jazz bassist; rhythm section on the Swingle Singers' Bach recordings.",
-   "profile": null,
    "stub": false
   },
   {
@@ -5693,7 +5853,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5705,7 +5864,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5717,7 +5875,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5727,7 +5884,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5739,7 +5895,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5751,7 +5906,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5763,7 +5917,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5775,7 +5928,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5787,7 +5939,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5799,7 +5950,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5811,7 +5961,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5823,7 +5972,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5835,7 +5983,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5847,7 +5994,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5859,7 +6005,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5871,7 +6016,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5883,7 +6027,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5895,7 +6038,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5907,7 +6049,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5919,7 +6060,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5929,7 +6069,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -5941,7 +6080,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5953,7 +6091,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5965,7 +6102,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5977,7 +6113,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -5991,7 +6126,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6003,7 +6137,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6015,7 +6148,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6027,7 +6159,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6039,7 +6170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6051,7 +6181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6063,7 +6192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6075,7 +6203,6 @@
    ],
    "styles": [],
    "bio": "Recorded Spain / Concierto de Aranjuez as a piano duet with Chick Corea (*Duet*, 2009).",
-   "profile": null,
    "stub": false
   },
   {
@@ -6087,7 +6214,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6101,7 +6227,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6113,7 +6238,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6125,7 +6249,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6137,7 +6260,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6149,7 +6271,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6161,7 +6282,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6175,7 +6295,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6187,7 +6306,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6199,7 +6317,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6211,7 +6328,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6221,7 +6337,6 @@
    "instruments": [],
    "styles": [],
    "bio": "Milan chamber orchestra (I Pomeriggi Musicali, founded 1945). Plays the three-part orchestral title suite on John McLaughlin's [[Thieves & Poets]].",
-   "profile": null,
    "stub": false
   },
   {
@@ -6233,7 +6348,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6245,7 +6359,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "inga-liljestrom",
+   "name": "Inga Liljeström",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6257,7 +6381,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6269,7 +6392,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6283,7 +6405,6 @@
     "flamenco"
    ],
    "bio": "Madrid-born cajón virtuoso; longtime member of Paco de Lucía's band.",
-   "profile": null,
    "stub": false
   },
   {
@@ -6295,7 +6416,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6307,7 +6427,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6321,7 +6440,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6333,7 +6451,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6345,7 +6462,6 @@
    ],
    "styles": [],
    "bio": "Jack Sheldon",
-   "profile": null,
    "stub": false
   },
   {
@@ -6357,7 +6473,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6371,7 +6486,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6383,7 +6497,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6395,7 +6508,6 @@
    ],
    "styles": [],
    "bio": "French pianist; founder of the Play Bach trio.",
-   "profile": null,
    "stub": false
   },
   {
@@ -6407,7 +6519,17 @@
    ],
    "styles": [],
    "bio": "French pianist Jacques Loussier's trio; the *Play Bach* series (from 1959) set Bach to swing.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jake-robert-owens",
+   "name": "Jake Robert Owens",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6419,7 +6541,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6431,7 +6552,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6443,7 +6563,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6455,7 +6574,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6467,7 +6585,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6479,7 +6596,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6491,7 +6607,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6503,7 +6618,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6515,7 +6629,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6527,7 +6640,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6539,7 +6651,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6551,7 +6662,32 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "javier-colina",
+   "name": "Javier Colina",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "javier-limon",
+   "name": "Javier Limón",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -6563,7 +6699,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6575,7 +6710,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6587,7 +6721,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6597,7 +6730,6 @@
    "instruments": [],
    "styles": [],
    "bio": "The resident big band of Jazz at Lincoln Center, led by Wynton Marsalis.",
-   "profile": null,
    "stub": false
   },
   {
@@ -6609,7 +6741,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6621,7 +6752,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jean-ritchie",
+   "name": "Jean Ritchie",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6633,7 +6774,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6645,7 +6785,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6657,7 +6796,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6669,7 +6807,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6681,7 +6818,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6693,7 +6829,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6705,7 +6840,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6717,7 +6851,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jeff-white",
+   "name": "Jeff White",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6729,7 +6873,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "jeremy-stephens",
+   "name": "Jeremy Stephens",
+   "kind": "PERSON",
+   "instruments": [
+    "autoharp"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6739,7 +6893,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -6751,7 +6904,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6763,7 +6915,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6775,7 +6926,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6787,7 +6937,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6799,7 +6948,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6811,7 +6959,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6823,7 +6970,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6835,7 +6981,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6847,7 +6992,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6859,7 +7003,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6871,7 +7014,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6883,7 +7025,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6895,7 +7036,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6907,7 +7047,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6919,7 +7058,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6931,7 +7069,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6943,7 +7080,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6955,7 +7091,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6967,7 +7102,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6977,7 +7111,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6989,7 +7122,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -6999,7 +7131,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -7011,7 +7142,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7023,7 +7153,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7035,7 +7164,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7049,7 +7177,6 @@
     "bebop, hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7061,7 +7188,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7073,7 +7199,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7085,7 +7210,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7097,7 +7221,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7107,7 +7230,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7119,7 +7241,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7129,7 +7250,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -7141,7 +7261,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7153,8 +7272,38 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "jl-vargas",
+   "name": "J.L. Vargas",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "No fuller name given in the source credit. Credited for palmas, coros, and as a co-writer on several tracks of [[Gitana Soy (album)]].",
+   "stub": false
+  },
+  {
+   "id": "jl-vargas-jose-soto-sorderita",
+   "name": "J.L. Vargas, José Soto Sorderita",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
+  },
+  {
+   "id": "jl-vargas-kalichi",
+   "name": "J.L. Vargas, Kalichi",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "jo-jones",
@@ -7165,7 +7314,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7177,7 +7325,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7191,7 +7338,6 @@
     "flamenco"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7203,7 +7349,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7215,7 +7360,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7227,7 +7371,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7239,7 +7382,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7249,7 +7391,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -7261,7 +7402,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7273,7 +7413,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7285,7 +7424,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7297,7 +7435,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7309,7 +7446,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7321,7 +7457,6 @@
    ],
    "styles": [],
    "bio": "Jazz saxophonist and flutist; Return to Forever.",
-   "profile": null,
    "stub": false
   },
   {
@@ -7335,7 +7470,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7347,7 +7481,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7357,7 +7490,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7369,7 +7501,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7381,7 +7512,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7395,7 +7525,6 @@
     "new wave, swing revival"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7407,7 +7536,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7419,7 +7547,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7431,7 +7558,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7445,7 +7571,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7457,7 +7582,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7469,7 +7593,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7481,7 +7604,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7493,7 +7615,6 @@
    ],
    "styles": [],
    "bio": "Scottish-born baritone saxophonist, longtime member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -7505,7 +7626,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7517,7 +7637,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7529,7 +7648,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7541,7 +7659,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7553,7 +7670,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7565,7 +7681,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7577,7 +7692,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7589,7 +7703,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7601,7 +7714,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7613,7 +7725,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7625,7 +7736,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7637,7 +7747,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7649,7 +7758,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7661,7 +7769,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7675,7 +7782,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7685,7 +7791,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7697,7 +7802,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7709,7 +7813,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7721,7 +7824,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7733,7 +7835,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "john-leventhal",
+   "name": "John Leventhal",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -7745,7 +7857,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7757,7 +7868,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7771,7 +7881,6 @@
     "classical"
    ],
    "bio": "American conductor best known for his Berlioz interpretations; led the Indianapolis Symphony and later the Ensemble Orchestral de Paris.",
-   "profile": null,
    "stub": false
   },
   {
@@ -7783,7 +7892,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7795,7 +7903,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7807,7 +7914,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7819,7 +7925,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7831,7 +7936,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7843,7 +7947,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7855,7 +7958,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7867,7 +7969,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7879,7 +7980,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7891,7 +7991,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7903,7 +8002,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7915,7 +8013,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7927,7 +8024,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7939,7 +8035,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7951,7 +8046,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7963,7 +8057,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7975,7 +8068,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7985,7 +8077,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -7997,7 +8088,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8009,7 +8099,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8021,7 +8110,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8033,7 +8121,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8045,7 +8132,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8057,7 +8143,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8069,7 +8154,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8081,7 +8165,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8095,7 +8178,6 @@
     "flamenco"
    ],
    "bio": "Flute, saxophone.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8107,7 +8189,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8119,8 +8200,42 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "jose-a-fernandez-mariscal",
+   "name": "José A. Fernández Mariscal",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jose-antonio-galicia",
+   "name": "José Antonio Galicia",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jose-jimenez-el-viejin",
+   "name": "José Jiménez \"[[El Viejín]]",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "jose-mangual",
@@ -8131,7 +8246,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8145,7 +8259,19 @@
     "flamenco"
    ],
    "bio": "Guitar.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "joselin-vargas",
+   "name": "Joselin Vargas",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -8159,7 +8285,6 @@
     "flamenco"
    ],
    "bio": "Mandola.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8169,7 +8294,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -8181,7 +8305,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8193,7 +8316,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8205,7 +8327,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8217,7 +8338,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8229,7 +8349,63 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "juan-antonio-salazar",
+   "name": "Juan Antonio Salazar",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
+  },
+  {
+   "id": "juan-carmona",
+   "name": "Juan Carmona",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "juan-grande",
+   "name": "Juan Grande",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "juan-jose-suarez-enrique-heredia",
+   "name": "Juan José Suárez, Enrique Heredia",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
+  },
+  {
+   "id": "juan-moneo-el-torta",
+   "name": "Juan Moneo (El Torta)",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Voice; wrote the lyrics for \"Musica En El Aire\" on [[Morao y Oro]].",
    "stub": false
   },
   {
@@ -8243,7 +8419,6 @@
     "flamenco"
    ],
    "bio": "Dancer.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8257,7 +8432,6 @@
     "classical"
    ],
    "bio": "American pianist and composer, Artist-in-Residence at Rhode Island College; her duo album with Wynton Marsalis reached the Billboard Top Ten.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8269,7 +8443,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "judy-hyman",
+   "name": "Judy Hyman",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -8281,7 +8465,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8293,7 +8476,6 @@
    ],
    "styles": [],
    "bio": "Julian Lage",
-   "profile": null,
    "stub": false
   },
   {
@@ -8303,7 +8485,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8315,7 +8496,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8325,7 +8505,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8337,7 +8516,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8349,7 +8527,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8361,7 +8538,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8373,8 +8549,16 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "kalichi-jl-vargas",
+   "name": "Kalichi, J.L. Vargas",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "kansas-fields",
@@ -8385,7 +8569,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8399,7 +8582,6 @@
     "classical"
    ],
    "bio": "American operatic soprano, longtime Metropolitan Opera star.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8411,7 +8593,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8423,7 +8604,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8435,7 +8615,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8447,7 +8626,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8459,7 +8637,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8471,7 +8648,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8483,7 +8659,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8493,7 +8668,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8505,7 +8679,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8517,7 +8690,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8529,7 +8701,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8541,7 +8712,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8553,7 +8723,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8565,7 +8734,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8575,7 +8743,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8587,7 +8754,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8599,7 +8765,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8611,7 +8776,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8623,7 +8787,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8635,7 +8798,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8647,7 +8809,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "kevin-grantt",
+   "name": "Kevin Grantt",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -8659,7 +8831,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8671,7 +8842,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8683,7 +8853,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "kiki-cortinas",
+   "name": "Kiki Cortiñas",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -8695,7 +8877,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8707,7 +8888,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8719,7 +8899,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8731,7 +8910,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8743,7 +8921,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8755,7 +8932,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8767,7 +8943,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8779,7 +8954,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8791,7 +8965,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8803,7 +8976,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8815,7 +8987,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8827,7 +8998,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8839,7 +9009,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8851,7 +9020,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8863,7 +9031,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8875,7 +9042,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8887,7 +9053,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8899,7 +9064,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8911,7 +9075,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8923,7 +9086,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8935,7 +9097,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "laurie-lewis",
+   "name": "Laurie Lewis",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -8947,7 +9119,6 @@
    ],
    "styles": [],
    "bio": "Brazilian classical/jazz guitarist. Recorded the Concierto de Aranjuez with the Modern Jazz Quartet.",
-   "profile": null,
    "stub": false
   },
   {
@@ -8959,7 +9130,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8971,7 +9141,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8983,7 +9152,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -8995,7 +9163,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9009,7 +9176,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9023,7 +9189,6 @@
     "cool jazz"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9035,7 +9200,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9047,7 +9211,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9059,7 +9222,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9071,7 +9233,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9083,7 +9244,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9095,7 +9255,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9107,7 +9266,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9119,7 +9277,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9131,7 +9288,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9141,7 +9297,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -9153,7 +9308,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9165,7 +9319,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9177,7 +9330,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9189,7 +9341,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "linda-stoffel",
+   "name": "Linda Stoffel",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9201,7 +9363,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "lisa-bastoni",
+   "name": "Lisa Bastoni",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9213,7 +9385,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9225,7 +9396,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9237,7 +9407,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9249,7 +9418,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9261,7 +9429,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9273,7 +9440,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9285,7 +9451,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9297,7 +9462,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9309,7 +9473,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9323,7 +9486,6 @@
     "jump blues, swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9335,7 +9497,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9347,7 +9508,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9359,7 +9519,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9371,7 +9530,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9383,7 +9541,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9397,7 +9554,6 @@
     "flamenco"
    ],
    "bio": "Congas.",
-   "profile": null,
    "stub": false
   },
   {
@@ -9409,7 +9565,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9421,7 +9576,32 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "luki-losada",
+   "name": "Lukí Losada",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion, guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "luquita",
+   "name": "Luquita",
+   "kind": "PERSON",
+   "instruments": [
+    "jaleos"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -9433,7 +9613,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9445,7 +9624,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9457,7 +9635,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9469,7 +9646,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9481,7 +9657,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9493,7 +9668,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9507,7 +9681,32 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "manolo-marinelli",
+   "name": "Manolo Marinelli",
+   "kind": "PERSON",
+   "instruments": [
+    "keyboards"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "manolo-rosa",
+   "name": "Manolo Rosa",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -9521,7 +9720,6 @@
     "flamenco"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9533,7 +9731,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9545,7 +9742,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9557,7 +9753,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9569,7 +9764,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9581,7 +9775,6 @@
    ],
    "styles": [],
    "bio": "Trumpeter, longtime member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -9593,7 +9786,30 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mari-angeles-fernandez-torres",
+   "name": "Mari Ángeles Fernández Torres",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "marideth-sisco",
+   "name": "Marideth Sisco",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9605,7 +9821,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9617,7 +9832,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9629,7 +9843,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9641,7 +9854,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "marshall-brickman",
+   "name": "Marshall Brickman",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9653,7 +9874,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9665,7 +9885,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9677,7 +9896,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9689,7 +9907,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9701,7 +9918,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9713,7 +9929,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9725,7 +9940,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9737,7 +9951,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9749,7 +9962,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9759,7 +9971,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9771,7 +9982,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9783,7 +9993,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9795,7 +10004,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9807,7 +10015,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9817,7 +10024,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9829,7 +10035,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "maybelle-carter",
+   "name": "Maybelle Carter",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9839,7 +10055,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -9851,7 +10066,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9865,7 +10079,6 @@
     "post-bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9875,7 +10088,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9887,7 +10099,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9899,7 +10110,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9911,7 +10121,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9923,7 +10132,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9935,7 +10143,28 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "michael-cleveland",
+   "name": "Michael Cleveland",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "michael-daves",
+   "name": "Michael Daves",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9947,7 +10176,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9961,7 +10189,17 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "michael-lira",
+   "name": "Michael Lira",
+   "kind": "PERSON",
+   "instruments": [
+    "double bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -9973,7 +10211,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9985,7 +10222,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -9997,7 +10233,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10009,7 +10244,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10021,7 +10255,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "miguel-poveda",
+   "name": "Miguel Poveda",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -10033,7 +10279,17 @@
    ],
    "styles": [],
    "bio": "Mik Zander",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mike-bub",
+   "name": "Mike Bub",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10045,7 +10301,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10057,7 +10312,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10069,7 +10323,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "mike-rogers",
+   "name": "Mike Rogers",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10081,7 +10345,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10093,7 +10356,6 @@
    ],
    "styles": [],
    "bio": "Recorded the Adagio of the Concierto de Aranjuez on *Sketches of Spain* (1960), arranged by Gil Evans.",
-   "profile": null,
    "stub": false
   },
   {
@@ -10103,7 +10365,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10115,7 +10376,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10129,7 +10389,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10141,7 +10400,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10153,7 +10411,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10165,7 +10422,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10177,7 +10433,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10189,7 +10444,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10201,7 +10455,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10213,7 +10466,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10225,7 +10477,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10237,7 +10488,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10247,7 +10497,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10257,8 +10506,31 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
+  },
+  {
+   "id": "molly-tuttle",
+   "name": "Molly Tuttle",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "moncho",
+   "name": "Moncho",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "mongo-santamaria",
@@ -10269,7 +10541,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10281,7 +10552,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10295,7 +10565,6 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
    "stub": false
   },
   {
@@ -10307,7 +10576,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10319,7 +10587,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "moraito-chico",
+   "name": "Moraíto Chico",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Manuel Moreno Junquera. Guitar credit on \"Tarde de Abril\" ([[Gitana Soy (album)]]); also honored by Tomatito's tribute tune [[A Manuel, Moraíto Chico]].",
    "stub": false
   },
   {
@@ -10329,7 +10609,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -10341,7 +10620,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10353,8 +10631,16 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "ms-melchor",
+   "name": "M.S. Melchor",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "muggsy-spanier",
@@ -10365,7 +10651,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10377,7 +10662,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10389,7 +10673,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10401,7 +10684,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "naomi-sommers",
+   "name": "Naomi Sommers",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10413,7 +10706,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10425,7 +10717,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10437,7 +10728,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10447,7 +10737,17 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "natalie-merchant",
+   "name": "Natalie Merchant",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10459,7 +10759,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10471,7 +10770,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10483,7 +10781,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10495,7 +10792,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10507,7 +10803,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10519,7 +10814,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10531,7 +10825,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10545,7 +10838,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10557,7 +10849,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10569,7 +10860,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10581,7 +10871,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10593,7 +10882,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "nina-pastori",
+   "name": "Niña Pastori",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -10605,7 +10906,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10617,7 +10917,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10629,7 +10928,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10641,7 +10939,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10653,7 +10950,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "norman-blake",
+   "name": "Norman Blake",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10665,7 +10972,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10677,7 +10983,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10691,7 +10996,6 @@
     "hard bop, big band"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10703,7 +11007,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10717,7 +11020,6 @@
     "free jazz, avant-garde"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10729,7 +11031,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10741,7 +11042,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10755,7 +11055,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10765,7 +11064,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10777,7 +11075,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10787,7 +11084,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -10799,7 +11095,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10811,7 +11106,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "paco-bautista",
+   "name": "Paco Bautista",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -10825,7 +11132,6 @@
     "flamenco"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10835,7 +11141,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -10845,7 +11150,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -10855,8 +11159,31 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
+  },
+  {
+   "id": "pam-gadd",
+   "name": "Pam Gadd",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "paquete",
+   "name": "Paquete",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "pasquale-grasso",
@@ -10867,7 +11194,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10879,7 +11205,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10891,7 +11216,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10903,7 +11227,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "paul-asbell",
+   "name": "Paul Asbell",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10915,7 +11249,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10927,7 +11260,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10939,7 +11271,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10951,7 +11282,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "paul-elliott",
+   "name": "Paul Elliott",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -10961,7 +11302,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -10973,7 +11313,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10985,7 +11324,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -10997,7 +11335,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11009,7 +11346,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11021,7 +11357,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11033,7 +11368,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11045,7 +11379,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11057,7 +11390,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11067,7 +11399,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -11079,7 +11410,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11091,7 +11421,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11103,7 +11432,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11115,7 +11443,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11127,7 +11454,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11139,7 +11465,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "pedro-el-granaino",
+   "name": "Pedro El Granaíno",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11151,7 +11489,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11165,7 +11502,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11177,7 +11513,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11191,7 +11526,58 @@
     "flamenco"
    ],
    "bio": "Vocals.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "pepe-de-pura",
+   "name": "Pepe de Pura",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pepe-ebano",
+   "name": "Pepe Ébano",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pepe-habichuela",
+   "name": "Pepe Habichuela",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pepe-roca",
+   "name": "Pepe Roca",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11203,7 +11589,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11215,7 +11600,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11227,7 +11611,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11239,7 +11622,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11253,7 +11635,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11265,7 +11646,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11277,7 +11657,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11289,7 +11668,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11303,7 +11681,6 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11315,7 +11692,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11327,7 +11703,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "peter-ostroushko",
+   "name": "Peter Ostroushko",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -11339,7 +11725,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11351,7 +11736,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11363,7 +11747,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11375,7 +11758,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11387,7 +11769,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11399,7 +11780,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11411,7 +11791,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11423,7 +11802,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11435,7 +11813,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11447,7 +11824,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "porter-wagoner",
+   "name": "Porter Wagoner",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -11461,7 +11848,6 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
    "stub": false
   },
   {
@@ -11471,7 +11857,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11483,7 +11868,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11495,7 +11879,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11505,7 +11888,19 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "quique-vargas",
+   "name": "Quique Vargas",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11517,7 +11912,71 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "rafael-de-los-reyes",
+   "name": "Rafael de los Reyes",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Coros (backing vocals).",
+   "stub": false
+  },
+  {
+   "id": "rafael-de-utrera",
+   "name": "Rafael de Utrera",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rafael-marinelli",
+   "name": "Rafael Marinelli",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rafael-riqueni",
+   "name": "Rafael Riqueni",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rafael-romero-junquera",
+   "name": "Rafael Romero Junquera",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Handclaps and jaleo vocals.",
    "stub": false
   },
   {
@@ -11529,7 +11988,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "raimundo-amador",
+   "name": "Raimundo Amador",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11541,7 +12012,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ralph-mayo",
+   "name": "Ralph Mayo",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -11553,7 +12034,28 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ralph-rinzler",
+   "name": "Ralph Rinzler",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ralph-stanley",
+   "name": "Ralph Stanley",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -11565,7 +12067,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11577,7 +12078,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11591,8 +12091,42 @@
     "flamenco"
    ],
    "bio": "Flamenco guitar.",
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "ramon-el-portugues",
+   "name": "Ramón el Portugués",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ramon-jimenez",
+   "name": "Ramón Jiménez",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ramon-pisa-borja",
+   "name": "Ramón Pisa Borja",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "randy-brecker",
@@ -11603,7 +12137,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "raul",
+   "name": "Raúl",
+   "kind": "PERSON",
+   "instruments": [
+    "dance"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "Zapateado (dancer). No surname given in the source credit.",
    "stub": false
   },
   {
@@ -11615,7 +12161,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11627,7 +12172,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11637,7 +12181,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11649,7 +12192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11661,7 +12203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11673,7 +12214,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11685,7 +12225,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11697,7 +12236,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11709,7 +12247,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11721,7 +12258,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11733,7 +12269,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11745,7 +12280,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11759,7 +12293,6 @@
     "classical"
    ],
    "bio": "British conductor and harpsichordist known for reviving Baroque opera (Monteverdi, Cavalli); also conducted Wynton Marsalis's Baroque Music for Trumpets.",
-   "profile": null,
    "stub": false
   },
   {
@@ -11771,7 +12304,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11783,7 +12315,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11795,7 +12326,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11805,7 +12335,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11817,7 +12346,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11829,7 +12357,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11841,7 +12368,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11853,7 +12379,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11865,7 +12390,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11877,7 +12401,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11889,7 +12412,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "remedios-amaya",
+   "name": "Remedios Amaya",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11901,7 +12436,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11913,7 +12447,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11925,7 +12458,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ricardo-el-pelao",
+   "name": "Ricardo (El Pelao)",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -11937,7 +12482,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11949,7 +12493,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11959,7 +12502,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -11971,7 +12513,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11983,7 +12524,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -11995,7 +12535,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "richie-stearns",
+   "name": "Richie Stearns",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12007,7 +12557,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12019,7 +12568,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "ricky-skaggs",
+   "name": "Ricky Skaggs",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12031,7 +12590,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12043,7 +12601,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12055,7 +12612,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12067,7 +12623,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12079,7 +12634,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12091,7 +12645,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12103,7 +12656,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12113,8 +12665,18 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
+  },
+  {
+   "id": "roger-bush",
+   "name": "Roger Bush",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "roger-chaput",
@@ -12125,7 +12687,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12137,7 +12698,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12149,7 +12709,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12161,7 +12720,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12173,7 +12731,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12185,7 +12742,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12197,7 +12753,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12209,7 +12764,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12221,7 +12775,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12233,7 +12786,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12245,7 +12797,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12257,7 +12808,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12269,7 +12819,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12281,7 +12830,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "rosanne-cash",
+   "name": "Rosanne Cash",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12293,7 +12852,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12305,7 +12863,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12317,7 +12874,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12329,7 +12885,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12341,7 +12896,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12355,7 +12909,6 @@
     "flamenco"
    ],
    "bio": "Cajón, tinaja.",
-   "profile": null,
    "stub": false
   },
   {
@@ -12367,7 +12920,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12379,7 +12931,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12391,7 +12942,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12403,7 +12953,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12415,7 +12964,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12427,7 +12975,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12439,7 +12986,6 @@
    ],
    "styles": [],
    "bio": "Trumpeter; won the 1990 Thelonious Monk International Jazz Trumpet Competition and later joined the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -12451,7 +12997,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12463,7 +13008,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12475,7 +13019,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12487,7 +13030,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12499,7 +13041,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12511,7 +13052,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12525,7 +13065,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12537,7 +13076,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12549,7 +13087,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12561,7 +13098,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12573,7 +13109,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12583,7 +13118,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -12595,7 +13129,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "sara-carter",
+   "name": "Sara Carter",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12607,7 +13151,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12619,7 +13162,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12631,7 +13173,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12643,7 +13184,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "scott-nygaard",
+   "name": "Scott Nygaard",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12655,7 +13206,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12667,7 +13217,6 @@
    ],
    "styles": [],
    "bio": "Trumpeter and educator; former lead trumpet with the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -12679,7 +13228,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12691,7 +13239,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12703,7 +13250,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12713,7 +13259,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12725,7 +13270,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12737,7 +13281,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12751,7 +13294,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12763,7 +13305,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12775,7 +13316,6 @@
    ],
    "styles": [],
    "bio": "Alto saxophonist, member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -12787,7 +13327,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12799,7 +13338,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12811,7 +13349,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12823,7 +13360,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12835,7 +13371,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12847,7 +13382,15 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "smoky-mountain-dna",
+   "name": "Smoky Mountain DNA",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12859,7 +13402,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12871,7 +13413,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12883,7 +13424,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12895,7 +13435,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12907,7 +13446,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12919,7 +13457,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12931,7 +13468,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12945,7 +13481,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12955,7 +13490,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12967,7 +13501,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12979,7 +13512,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -12991,7 +13523,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "sorderita",
+   "name": "Sorderita",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "José Soto \"Sorderita.\" Coro (backing vocals); co-writer of \"Lo dejé pasar.\"",
    "stub": false
   },
   {
@@ -13005,7 +13549,6 @@
     "hard bop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13015,7 +13558,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -13027,7 +13569,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13039,7 +13580,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13053,7 +13593,6 @@
     "cool jazz"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13065,7 +13604,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13077,7 +13615,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13089,7 +13626,6 @@
    ],
    "styles": [],
    "bio": "Jazz/fusion bassist; Return to Forever.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13101,7 +13637,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13113,7 +13648,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13125,7 +13659,6 @@
    ],
    "styles": [],
    "bio": "Jazz vibraphonist; the Classical Jazz Quartet.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13137,7 +13670,6 @@
    ],
    "styles": [],
    "bio": "Jazz violinist of the Quintette du Hot Club de France. Recorded Bach's Double Violin Concerto with Eddie South and Django (1937).",
-   "profile": null,
    "stub": false
   },
   {
@@ -13149,7 +13681,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13161,7 +13692,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13173,7 +13703,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13185,7 +13714,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13197,7 +13725,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13209,7 +13736,6 @@
    ],
    "styles": [],
    "bio": "Steve Howe",
-   "profile": null,
    "stub": false
   },
   {
@@ -13221,7 +13747,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13233,7 +13758,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13245,7 +13769,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13257,7 +13780,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13269,7 +13791,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13281,7 +13802,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13293,7 +13813,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13305,7 +13824,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13317,7 +13835,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13329,7 +13846,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13341,7 +13857,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13353,7 +13868,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13365,7 +13879,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13379,7 +13892,6 @@
     "flamenco"
    ],
    "bio": "Palmas, chorus.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13391,7 +13903,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13403,7 +13914,6 @@
    ],
    "styles": [],
    "bio": "Saxophonist, flutist, and composer with the Jazz at Lincoln Center Orchestra; his Presidential Suite won a Grammy.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13415,7 +13925,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13427,7 +13936,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13439,7 +13947,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "tedi-may",
+   "name": "Tedi May",
+   "kind": "PERSON",
+   "instruments": [
+    "upright bass"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13451,7 +13969,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13463,7 +13980,6 @@
    ],
    "styles": [],
    "bio": "Featured on Chick Corea's 'Spanish Suite' (Concierto de Aranjuez / Spain).",
-   "profile": null,
    "stub": false
   },
   {
@@ -13475,7 +13991,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13487,7 +14002,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13499,7 +14013,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13511,7 +14024,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13523,7 +14035,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13535,7 +14046,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13545,7 +14055,15 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "the-bollywood-strings",
+   "name": "The Bollywood Strings",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13555,7 +14073,15 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "the-carter-family",
+   "name": "The Carter Family",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13565,7 +14091,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13575,7 +14100,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13585,7 +14109,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13595,7 +14118,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13605,7 +14127,24 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "the-sassafras-sisters",
+   "name": "The Sassafras Sisters",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-stanley-brothers",
+   "name": "The Stanley Brothers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13617,7 +14156,6 @@
    ],
    "styles": [],
    "bio": "Ward Swingle's vocal group; scat-sung Bach on *Jazz Sebastian Bach* and, with the MJQ, on *Place Vendôme*.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13631,7 +14169,6 @@
     "bebop"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13641,7 +14178,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13653,7 +14189,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13665,7 +14200,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13677,7 +14211,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13691,7 +14224,32 @@
     "flamenco"
    ],
    "bio": "Cajón, tablas, drums.",
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "tito",
+   "name": "Tito",
+   "kind": "PERSON",
+   "instruments": [
+    "palmas"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": "No surname given in the source credit.",
+   "stub": false
+  },
+  {
+   "id": "tito-duarte",
+   "name": "Tito Duarte",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -13703,7 +14261,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13715,7 +14272,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13727,7 +14283,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13739,7 +14294,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13753,7 +14307,6 @@
     "flamenco"
    ],
    "bio": "Flamenco dancer, singer, and rapper from Jerez de la Frontera, known as Tomasito.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13767,7 +14320,6 @@
     "flamenco"
    ],
    "bio": "José Fernández Torres.",
-   "profile": null,
    "stub": false
   },
   {
@@ -13779,7 +14331,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13791,7 +14342,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13803,7 +14353,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13815,7 +14364,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13827,7 +14375,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13839,7 +14386,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13851,7 +14397,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13863,7 +14408,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13875,7 +14419,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "tony-creasman",
+   "name": "Tony Creasman",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13887,7 +14441,28 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "tony-rice",
+   "name": "Tony Rice",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tony-trischka",
+   "name": "Tony Trischka",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13899,7 +14474,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13911,7 +14485,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13923,8 +14496,16 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
+  },
+  {
+   "id": "traditional",
+   "name": "Traditional",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
   },
   {
    "id": "triste-janero",
@@ -13933,7 +14514,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13945,7 +14525,6 @@
    ],
    "styles": [],
    "bio": "Trond Davidsen",
-   "profile": null,
    "stub": false
   },
   {
@@ -13957,7 +14536,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13969,7 +14547,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13981,7 +14558,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -13993,7 +14569,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14007,7 +14582,6 @@
     "swing"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14019,7 +14593,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14031,7 +14604,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14043,7 +14615,26 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "val-mindel",
+   "name": "Val Mindel",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "van-colbert",
+   "name": "Van Colbert",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -14055,7 +14646,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14067,7 +14657,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14079,7 +14668,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14091,7 +14679,19 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "vicente-amigo",
+   "name": "Vicente Amigo",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [
+    "flamenco"
+   ],
+   "bio": null,
    "stub": false
   },
   {
@@ -14103,7 +14703,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14115,7 +14714,6 @@
    ],
    "styles": [],
    "bio": "Saxophonist and clarinetist, longtime member of the Jazz at Lincoln Center Orchestra; later chair of Juilliard Jazz.",
-   "profile": null,
    "stub": false
   },
   {
@@ -14127,7 +14725,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14139,7 +14736,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14149,7 +14745,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -14161,7 +14756,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "vince-gill",
+   "name": "Vince Gill",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -14173,7 +14778,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14185,7 +14789,6 @@
    ],
    "styles": [],
    "bio": "Trombonist, longtime member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -14195,7 +14798,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": true
   },
   {
@@ -14207,7 +14809,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14219,7 +14820,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14231,7 +14831,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14243,7 +14842,6 @@
    ],
    "styles": [],
    "bio": "Tenor saxophonist, member of the Jazz at Lincoln Center Orchestra.",
-   "profile": null,
    "stub": false
   },
   {
@@ -14255,7 +14853,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14267,7 +14864,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14279,7 +14875,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14291,7 +14886,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14303,7 +14897,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14315,7 +14908,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14327,7 +14919,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14339,7 +14930,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14353,7 +14943,6 @@
     "blues, early jazz"
    ],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14365,7 +14954,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14377,7 +14965,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14389,7 +14976,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14401,7 +14987,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14413,7 +14998,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14425,7 +15009,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14437,7 +15020,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14449,7 +15031,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14461,7 +15042,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14473,7 +15053,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14485,7 +15064,6 @@
    ],
    "styles": [],
    "bio": "Wolfgang Lackerschmid",
-   "profile": null,
    "stub": false
   },
   {
@@ -14497,7 +15075,17 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
+   "stub": false
+  },
+  {
+   "id": "woody-guthrie",
+   "name": "Woody Guthrie",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -14509,7 +15097,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14519,7 +15106,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14531,7 +15117,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14543,7 +15128,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14555,7 +15139,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14567,7 +15150,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14577,7 +15159,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14589,7 +15170,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14601,7 +15181,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14613,7 +15192,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14625,7 +15203,6 @@
    ],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   },
   {
@@ -14635,7 +15212,6 @@
    "instruments": [],
    "styles": [],
    "bio": null,
-   "profile": null,
    "stub": false
   }
  ],
@@ -14669,6 +15245,26 @@
    "groupId": "ahmad-jamal-trio",
    "memberId": "vernel-fournier",
    "role": "drums"
+  },
+  {
+   "groupId": "american-patchwork-quartet",
+   "memberId": "clarence-penn",
+   "role": "drums, percussion"
+  },
+  {
+   "groupId": "american-patchwork-quartet",
+   "memberId": "clay-ross",
+   "role": "guitar, vocals"
+  },
+  {
+   "groupId": "american-patchwork-quartet",
+   "memberId": "falguni-shah",
+   "role": "vocals"
+  },
+  {
+   "groupId": "american-patchwork-quartet",
+   "memberId": "yasushi-nakamura",
+   "role": "bass"
   },
   {
    "groupId": "art-blakey-the-jazz-messengers",
@@ -14799,6 +15395,46 @@
    "groupId": "bill-evans-trio",
    "memberId": "scott-lafaro",
    "role": "bass"
+  },
+  {
+   "groupId": "bill-owens-and-the-kinfolk",
+   "memberId": "bill-owens",
+   "role": "guitar, vocals"
+  },
+  {
+   "groupId": "bill-owens-and-the-kinfolk",
+   "memberId": "dorothy-jo-hope",
+   "role": "banjo, vocals"
+  },
+  {
+   "groupId": "bill-owens-and-the-kinfolk",
+   "memberId": "jake-robert-owens",
+   "role": "fiddle, vocals"
+  },
+  {
+   "groupId": "blackberry-winter",
+   "memberId": "bo-brown",
+   "role": null
+  },
+  {
+   "groupId": "blackberry-winter",
+   "memberId": "dennis-crider",
+   "role": null
+  },
+  {
+   "groupId": "blackberry-winter",
+   "memberId": "marideth-sisco",
+   "role": "vocals"
+  },
+  {
+   "groupId": "blackberry-winter",
+   "memberId": "tedi-may",
+   "role": "upright bass"
+  },
+  {
+   "groupId": "blackberry-winter",
+   "memberId": "van-colbert",
+   "role": null
   },
   {
    "groupId": "bob-wills-his-texas-playboys",
@@ -15114,6 +15750,16 @@
    "groupId": "gerry-mulligan-quartet",
    "memberId": "gerry-mulligan",
    "role": "baritone saxophone"
+  },
+  {
+   "groupId": "gray-sky-girls",
+   "memberId": "lisa-bastoni",
+   "role": "vocals, guitar"
+  },
+  {
+   "groupId": "gray-sky-girls",
+   "memberId": "naomi-sommers",
+   "role": "vocals, guitar"
   },
   {
    "groupId": "hank-jones-trio",
@@ -15721,6 +16367,21 @@
    "role": "bass"
   },
   {
+   "groupId": "the-carter-family",
+   "memberId": "ap-carter",
+   "role": "vocals"
+  },
+  {
+   "groupId": "the-carter-family",
+   "memberId": "maybelle-carter",
+   "role": "vocals, guitar"
+  },
+  {
+   "groupId": "the-carter-family",
+   "memberId": "sara-carter",
+   "role": "lead vocals, autoharp"
+  },
+  {
    "groupId": "the-dave-brubeck-quartet",
    "memberId": "dave-brubeck",
    "role": "piano"
@@ -15834,6 +16495,16 @@
    "groupId": "the-rosenberg-trio",
    "memberId": "stochelo-rosenberg",
    "role": "lead guitar"
+  },
+  {
+   "groupId": "the-stanley-brothers",
+   "memberId": "carter-stanley",
+   "role": "guitar, vocals"
+  },
+  {
+   "groupId": "the-stanley-brothers",
+   "memberId": "ralph-stanley",
+   "role": "banjo, vocals"
   },
   {
    "groupId": "thelonious-monk-quartet",

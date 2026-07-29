@@ -1,4 +1,4 @@
-extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@interfaceObject", "@provides", "@external"])
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@interfaceObject"])
 
 """
 The discography subgraph owns who recorded what, where: albums, recordings,
@@ -25,13 +25,12 @@ type Album @key(fields: "id") {
 }
 
 """
-A single credit: one artist and their role. The artist's name is denormalized
-into this subgraph's data, so @provides lets the router skip the hop to the
-artists subgraph when only the name is selected.
+A single credit: one artist and their role. Returns a bare Artist reference;
+name and other identity fields resolve in the artists subgraph.
 """
 type Credit {
   "The credited artist."
-  artist: Artist! @provides(fields: "name")
+  artist: Artist!
   "Role as written ('cajón, tinaja', 'arranger, conductor'). Null when unstated."
   role: String
 }
@@ -48,8 +47,8 @@ type Recording @key(fields: "id") {
   piece: Piece!
   "The album this recording appears on. Null for recordings known only from a non-album source."
   album: Album
-  "Performing artists on this recording, with roles when stated."
-  performers: [Credit!]!
+  "The artists who played on this recording. Per-performer roles are not tracked at the recording level (they live on album credits), so this is identity only."
+  performers: [Artist!]!
   "Key this performance was played in ('Gm'). Null when not noted."
   performanceKey: String
   "Non-album source as written ('YouTube', 'Netherlands Bach Society', an orchestra credit). Null when the recording has an album."
@@ -80,8 +79,6 @@ to the Artist entity owned by the artists subgraph.
 type Artist @key(fields: "id") {
   "Shared slug @key; identity lives in the artists subgraph."
   id: ID!
-  "Display name. Resolved by the artists subgraph; only @provides paths read the denormalized copy here."
-  name: String! @external
   "Albums this artist appears on, as principal artist or personnel."
   albums: [Album!]!
   "Every recording this artist plays on, across albums and sources."

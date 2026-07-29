@@ -16,9 +16,7 @@ query AllTheThingsYouAreFamily {
       }
       recordings {
         performers {
-          artist {
-            name
-          }
+          name
         }
         album {
           title

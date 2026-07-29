@@ -1,4 +1,4 @@
-extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key", "@shareable"])
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
 
 """
 A person or ensemble. The id slug is the shared @key: the same person resolves
@@ -9,8 +9,8 @@ land in the same pool as performers -- there is no separate composer type.
 type Artist @key(fields: "id") {
   "Slug id derived from the name; the shared @key across all three subgraphs."
   id: ID!
-  "Display name, e.g. 'Jim Hall'. @shareable so the discography subgraph can @provide it on credits."
-  name: String! @shareable
+  "Display name, e.g. 'Jim Hall'. Owned here; every subgraph that needs it hops back."
+  name: String!
   "Whether this artist is a single person or an ensemble."
   kind: ArtistKind!
   "Instruments played, lowercase ('guitar', 'tenor sax'). Empty for ensembles and for name-only composer records."
@@ -19,8 +19,6 @@ type Artist @key(fields: "id") {
   styles: [String!]!
   "Short prose profile from the vault. Null for most artists."
   bio: String
-  "Interpretive axes (clarity / tone color / risk). Only classical performers with a written profile have one."
-  profile: InterpretiveProfile
   "Members of this ensemble, when the vault states a lineup. Empty for people and for most groups."
   members: [Membership!]!
   "Ensembles this artist is a stated member of. Empty for most artists."
@@ -47,20 +45,6 @@ type Membership {
   member: Artist!
   "Role in the group as written ('tenor sax'). Null when unstated."
   role: String
-}
-
-"""
-Interpretive-axes summary for a classical performer, parsed from the vault's
-profile notes. Values are free text as written ('High', 'Medium–High', 'Not
-explicit'), not a scale.
-"""
-type InterpretiveProfile {
-  "How clean and articulate the playing reads. Null when the notes don't say."
-  clarity: String
-  "Timbral range and color. Null when the notes don't say."
-  toneColor: String
-  "How far interpretation strays from the plain text. Null when the notes don't say."
-  risk: String
 }
 
 "Root entry points owned by the artists subgraph."

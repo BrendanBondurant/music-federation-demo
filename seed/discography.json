@@ -43,6 +43,10 @@
     {
      "artistId": "jrn-elniff",
      "role": "drums"
+    },
+    {
+     "artistId": "william-schipffe",
+     "role": "drums"
     }
    ],
    "trackIds": [
@@ -91,6 +95,28 @@
    ],
    "trackIds": [
     "on-green-dolphin-street::30-by-ella::ella-fitzgerald"
+   ]
+  },
+  {
+   "id": "33-guitar-instrumentals",
+   "title": "33 Guitar Instrumentals",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "clarence-white"
+   ],
+   "credits": [
+    {
+     "artistId": "clarence-white",
+     "role": "lead guitar"
+    },
+    {
+     "artistId": "roger-bush",
+     "role": "rhythm guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::33-guitar-instrumentals::clarence-white"
    ]
   },
   {
@@ -232,6 +258,24 @@
    ],
    "trackIds": [
     "the-champ::a-new-sound-a-new-star::jimmy-smith"
+   ]
+  },
+  {
+   "id": "a-north-wind-blows",
+   "title": "A North Wind Blows",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "the-sassafras-sisters"
+   ],
+   "credits": [
+    {
+     "artistId": "the-sassafras-sisters",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::a-north-wind-blows::the-sassafras-sisters"
    ]
   },
   {
@@ -445,6 +489,32 @@
    ]
   },
   {
+   "id": "aguadulce-album",
+   "title": "Aguadulce (album)",
+   "year": 2004,
+   "label": "Universal Music Spain",
+   "artistIds": [
+    "tomatito"
+   ],
+   "credits": [
+    {
+     "artistId": "tomatito",
+     "role": "flamenco guitar, composer"
+    }
+   ],
+   "trackIds": [
+    "la-vacilona::aguadulce-album::tomatito",
+    "la-primavera::aguadulce-album::tomatito",
+    "aguadulce::aguadulce-album::tomatito",
+    "el-callejon-de-las-canteras::aguadulce-album::tomatito",
+    "al-mari::aguadulce-album::tomatito",
+    "la-luciernaga::aguadulce-album::tomatito",
+    "a-camaron::aguadulce-album::tomatito",
+    "caminillo-viejo::aguadulce-album::tomatito",
+    "homenaje-a-un-amigo::aguadulce-album::tomatito"
+   ]
+  },
+  {
    "id": "aint-misbehavin",
    "title": "Ain't Misbehavin",
    "year": 1956,
@@ -480,6 +550,142 @@
    ],
    "trackIds": [
     "honeysuckle-rose::aint-misbehavin::fats-waller"
+   ]
+  },
+  {
+   "id": "al-verte-las-flores-lloran-album",
+   "title": "Al Verte las Flores Lloran (album)",
+   "year": 1969,
+   "label": "Philips / Universal Music Spain",
+   "artistIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "camaron-de-la-isla",
+     "role": "vocals (cante)"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar"
+    },
+    {
+     "artistId": "ramon-de-algeciras",
+     "role": "second guitar"
+    },
+    {
+     "artistId": "moncho",
+     "role": "palmas"
+    },
+    {
+     "artistId": "ricardo-el-pelao",
+     "role": "palmas"
+    }
+   ],
+   "trackIds": [
+    "al-verte-las-flores-lloran::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "que-un-toro-bravo-en-su-muerte::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "si-acaso-muero::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "en-una-piedra-me-acoste::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "anda-y-no-presumas-mas::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "camina-y-dime::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "detras-del-tuyo-se-va::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "y-tu-no-me-respondias::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "llorando-me-lo-pedia::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "una-estrella-chiquitita::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "con-la-varita-en-la-mano::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+    "barrio-de-santa-maria::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia"
+   ]
+  },
+  {
+   "id": "alcazar-de-cristal-album",
+   "title": "Alcázar de Cristal (album)",
+   "year": 1996,
+   "label": "Nuba Records",
+   "artistIds": [
+    "rafael-riqueni"
+   ],
+   "credits": [
+    {
+     "artistId": "rafael-riqueni",
+     "role": "flamenco guitar, composer"
+    }
+   ],
+   "trackIds": [
+    "vivencias::alcazar-de-cristal-album::rafael-riqueni",
+    "calle-fabie::alcazar-de-cristal-album::rafael-riqueni",
+    "a-la-memoria-de-mi-padre::alcazar-de-cristal-album::rafael-riqueni",
+    "alcazar-de-cristal::alcazar-de-cristal-album::rafael-riqueni",
+    "piel-de-toro::alcazar-de-cristal-album::rafael-riqueni",
+    "tacita-de-plata::alcazar-de-cristal-album::rafael-riqueni",
+    "esa-noche::alcazar-de-cristal-album::rafael-riqueni",
+    "reflexion::alcazar-de-cristal-album::rafael-riqueni",
+    "puente-rio-macarena-triana::alcazar-de-cristal-album::rafael-riqueni",
+    "benamargosa::alcazar-de-cristal-album::rafael-riqueni",
+    "rebelde::alcazar-de-cristal-album::rafael-riqueni"
+   ]
+  },
+  {
+   "id": "algo-que-decir-album",
+   "title": "Algo que decir (album)",
+   "year": 1999,
+   "label": "Nuevos Medios",
+   "artistIds": [
+    "el-viejin"
+   ],
+   "credits": [
+    {
+     "artistId": "el-viejin",
+     "role": "flamenco guitar, composer"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guest guitar on \"A los niños que sufren\""
+    },
+    {
+     "artistId": "montse-cortes",
+     "role": "vocals (several tracks)"
+    },
+    {
+     "artistId": "carles-benavent",
+     "role": "bass"
+    },
+    {
+     "artistId": "antonio-canales",
+     "role": "dance (zapateado / heel work)"
+    },
+    {
+     "artistId": "ramon-el-portugues",
+     "role": "vocals"
+    },
+    {
+     "artistId": "bernardo-parrilla",
+     "role": "violin"
+    },
+    {
+     "artistId": "luki-losada",
+     "role": "percussion"
+    },
+    {
+     "artistId": "ramon-jimenez",
+     "role": "guitar, co-producer"
+    },
+    {
+     "artistId": "juan-carmona",
+     "role": "guitar, co-producer"
+    }
+   ],
+   "trackIds": [
+    "algo-que-decir::algo-que-decir-album::el-viejin",
+    "callejon-de-las-flores::algo-que-decir-album::el-viejin",
+    "recuerdo-a-paco::algo-que-decir-album::el-viejin",
+    "las-ninas-del-barrio::algo-que-decir-album::el-viejin",
+    "de-madrid-al-cielo::algo-que-decir-album::el-viejin",
+    "en-el-rastro::algo-que-decir-album::el-viejin",
+    "candelaria::algo-que-decir-album::el-viejin",
+    "al-aire-de-triana::algo-que-decir-album::el-viejin",
+    "por-la-castellana::algo-que-decir-album::el-viejin"
    ]
   },
   {
@@ -537,6 +743,39 @@
    ],
    "trackIds": [
     "autumn-leaves::all-time-great-instrumental-hits::howard-roberts"
+   ]
+  },
+  {
+   "id": "almoraima-album",
+   "title": "Almoraima (album)",
+   "year": 1976,
+   "label": "Philips",
+   "artistIds": [
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "paco-de-lucia",
+     "role": "flamenco guitar, composer"
+    },
+    {
+     "artistId": "ramon-de-algeciras",
+     "role": "second guitar"
+    },
+    {
+     "artistId": "pepe-ebano",
+     "role": "percussion (bongo / cajón)"
+    }
+   ],
+   "trackIds": [
+    "almoraima::almoraima-album::paco-de-lucia",
+    "cueva-del-gato::almoraima-album::paco-de-lucia",
+    "cobre::almoraima-album::paco-de-lucia",
+    "a-la-perla-de-cadiz::almoraima-album::paco-de-lucia",
+    "ole::almoraima-album::paco-de-lucia",
+    "plaza-alta::almoraima-album::paco-de-lucia",
+    "rio-ancho::almoraima-album::paco-de-lucia",
+    "llanos-del-real::almoraima-album::paco-de-lucia"
    ]
   },
   {
@@ -680,6 +919,36 @@
    ],
    "trackIds": [
     "lullaby-of-the-leaves::american-duettists-with-piano::turner-layton+clarence-johnston"
+   ]
+  },
+  {
+   "id": "american-patchwork-quartet-album",
+   "title": "American Patchwork Quartet (album)",
+   "year": 2024,
+   "label": null,
+   "artistIds": [
+    "american-patchwork-quartet"
+   ],
+   "credits": [
+    {
+     "artistId": "clay-ross",
+     "role": "guitar, vocals"
+    },
+    {
+     "artistId": "falguni-shah",
+     "role": "vocals"
+    },
+    {
+     "artistId": "yasushi-nakamura",
+     "role": "bass"
+    },
+    {
+     "artistId": "clarence-penn",
+     "role": "drums, percussion"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::american-patchwork-quartet-album::american-patchwork-quartet"
    ]
   },
   {
@@ -909,6 +1178,32 @@
    ],
    "trackIds": [
     "glorias-step::anthem::ralph-towner"
+   ]
+  },
+  {
+   "id": "anthology-vol-1-1929-1932",
+   "title": "Anthology, Vol. 1 (1929-1932)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "the-carter-family"
+   ],
+   "credits": [
+    {
+     "artistId": "ap-carter",
+     "role": "vocals"
+    },
+    {
+     "artistId": "sara-carter",
+     "role": "lead vocals, autoharp"
+    },
+    {
+     "artistId": "maybelle-carter",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::anthology-vol-1-1929-1932::the-carter-family"
    ]
   },
   {
@@ -2652,6 +2947,28 @@
    ]
   },
   {
+   "id": "blue-mesa",
+   "title": "Blue Mesa",
+   "year": 1989,
+   "label": "Red House Records",
+   "artistIds": [
+    "peter-ostroushko"
+   ],
+   "credits": [
+    {
+     "artistId": "peter-ostroushko",
+     "role": "fiddle, mandolin, mandola, mandocello, vocals"
+    },
+    {
+     "artistId": "norman-blake",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::blue-mesa::peter-ostroushko"
+   ]
+  },
+  {
    "id": "blue-moods",
    "title": "Blue Moods",
    "year": 1955,
@@ -3346,6 +3663,51 @@
    ]
   },
   {
+   "id": "cada-vez-que-nos-miramos-album",
+   "title": "Cada vez que nos miramos (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "camaron-de-la-isla"
+   ],
+   "credits": [
+    {
+     "artistId": "camaron-de-la-isla",
+     "role": "cante"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar"
+    },
+    {
+     "artistId": "ramon-de-algeciras",
+     "role": "guitar"
+    },
+    {
+     "artistId": "moncho",
+     "role": "palmas"
+    },
+    {
+     "artistId": "ricardo-el-pelao",
+     "role": "palmas"
+    }
+   ],
+   "trackIds": [
+    "cada-vez-que-nos-miramos::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "y-no-llegaste-a-quererme::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "ante-el-altar-me-juraste::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "moral::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "la-andan-hablando::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "vas-a-conseguir-tres-cosas::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "jardin-de-belleza::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "sube-al-enganche::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "donde-una-ermita-poner::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "a-los-santos-del-cielo::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "soy-grande-por-ser-gitano::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+    "al-gurugu-guruguero::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia"
+   ]
+  },
+  {
    "id": "cannonball-adderley-and-the-poll-winners",
    "title": "Cannonball Adderley And The Poll Winners",
    "year": 1960,
@@ -3622,6 +3984,10 @@
     },
     {
      "artistId": "connie-kay",
+     "role": "drums"
+    },
+    {
+     "artistId": "philly-joe-jones",
      "role": "drums"
     }
    ],
@@ -3943,11 +4309,31 @@
      "role": "piano (varies by track)"
     },
     {
+     "artistId": "cedar-walton",
+     "role": "piano (varies by track)"
+    },
+    {
+     "artistId": "mccoy-tyner",
+     "role": "piano (varies by track)"
+    },
+    {
      "artistId": "paul-chambers",
      "role": "bass"
     },
     {
+     "artistId": "steve-davis",
+     "role": "bass"
+    },
+    {
      "artistId": "jimmy-cobb",
+     "role": "drums"
+    },
+    {
+     "artistId": "elvin-jones",
+     "role": "drums"
+    },
+    {
+     "artistId": "lex-humphries",
      "role": "drums"
     }
    ],
@@ -4361,7 +4747,27 @@
     },
     {
      "artistId": "guadiana",
-     "role": null
+     "role": "palmas, chorus"
+    },
+    {
+     "artistId": "antonio-el-negro",
+     "role": "palmas, chorus"
+    },
+    {
+     "artistId": "montse-cortes",
+     "role": "palmas, chorus"
+    },
+    {
+     "artistId": "tana",
+     "role": "palmas, chorus"
+    },
+    {
+     "artistId": "potito",
+     "role": "palmas, chorus"
+    },
+    {
+     "artistId": "angela-bautista",
+     "role": "palmas, chorus"
     },
     {
      "artistId": "diego-el-cigala",
@@ -4429,6 +4835,29 @@
    ],
    "trackIds": [
     "on-green-dolphin-street::count-em-88::ahmad-jamal-trio"
+   ]
+  },
+  {
+   "id": "country-gospel-favorites-mike-rogers",
+   "title": "Country & Gospel Favorites (Mike Rogers)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "mike-rogers",
+    "ricky-skaggs"
+   ],
+   "credits": [
+    {
+     "artistId": "mike-rogers",
+     "role": "vocals"
+    },
+    {
+     "artistId": "ricky-skaggs",
+     "role": "vocals, mandolin"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::country-gospel-favorites-mike-rogers::mike-rogers+ricky-skaggs"
    ]
   },
   {
@@ -4563,6 +4992,29 @@
    ],
    "trackIds": [
     "rhythm-a-ning::criss-cross-thelonious-monk::thelonious-monk"
+   ]
+  },
+  {
+   "id": "dawg-plays-big-mon",
+   "title": "Dawg Plays Big Mon",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "david-grisman",
+    "ralph-rinzler"
+   ],
+   "credits": [
+    {
+     "artistId": "david-grisman",
+     "role": "mandolin"
+    },
+    {
+     "artistId": "ralph-rinzler",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::dawg-plays-big-mon::david-grisman+ralph-rinzler"
    ]
   },
   {
@@ -5234,6 +5686,49 @@
    ]
   },
   {
+   "id": "earl-jam-a-tribute-to-earl-scruggs",
+   "title": "Earl Jam - A Tribute to Earl Scruggs",
+   "year": 2024,
+   "label": null,
+   "artistIds": [
+    "tony-trischka",
+    "vince-gill"
+   ],
+   "credits": [
+    {
+     "artistId": "tony-trischka",
+     "role": "banjo"
+    },
+    {
+     "artistId": "vince-gill",
+     "role": "lead vocals, guitar"
+    },
+    {
+     "artistId": "michael-cleveland",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "brittany-haas",
+     "role": "2nd fiddle"
+    },
+    {
+     "artistId": "dominick-leslie",
+     "role": "mandolin"
+    },
+    {
+     "artistId": "mike-bub",
+     "role": "bass"
+    },
+    {
+     "artistId": "jeff-white",
+     "role": "harmony vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::earl-jam-a-tribute-to-earl-scruggs::tony-trischka+vince-gill"
+   ]
+  },
+  {
    "id": "early-autumn",
    "title": "Early Autumn",
    "year": 1972,
@@ -5351,6 +5846,45 @@
    ],
    "trackIds": [
     "once-i-loved::el-hombre::pat-martino"
+   ]
+  },
+  {
+   "id": "el-mundo-del-flamenco",
+   "title": "El mundo del flamenco",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "paco-de-lucia",
+     "role": "flamenco guitar"
+    },
+    {
+     "artistId": "ramon-de-algeciras",
+     "role": "flamenco guitar"
+    },
+    {
+     "artistId": "pepe-de-lucia",
+     "role": "vocals"
+    },
+    {
+     "artistId": "raul",
+     "role": "zapateado"
+    }
+   ],
+   "trackIds": [
+    "guajiras-de-lucia::el-mundo-del-flamenco::paco-de-lucia",
+    "con-el-pensamiento::el-mundo-del-flamenco::paco-de-lucia",
+    "el-tempul::el-mundo-del-flamenco::paco-de-lucia",
+    "al-puerto::el-mundo-del-flamenco::paco-de-lucia",
+    "maria-de-los-dolores::el-mundo-del-flamenco::paco-de-lucia",
+    "taconeo-gitano::el-mundo-del-flamenco::paco-de-lucia",
+    "callecita-que-subes::el-mundo-del-flamenco::paco-de-lucia",
+    "recuerdos::el-mundo-del-flamenco::paco-de-lucia",
+    "el-impetu::el-mundo-del-flamenco::paco-de-lucia",
+    "el-rinconcillo::el-mundo-del-flamenco::paco-de-lucia"
    ]
   },
   {
@@ -5556,6 +6090,10 @@
     },
     {
      "artistId": "frank-flynn",
+     "role": "drums"
+    },
+    {
+     "artistId": "alvin-stoller",
      "role": "drums"
     },
     {
@@ -5891,6 +6429,33 @@
    ],
    "trackIds": [
     "nardis::ezz-thetics::george-russell"
+   ]
+  },
+  {
+   "id": "fantasia-flamenca-de-paco-de-lucia",
+   "title": "Fantasía flamenca de Paco de Lucía",
+   "year": 1969,
+   "label": "Philips",
+   "artistIds": [
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "paco-de-lucia",
+     "role": "flamenco guitar"
+    }
+   ],
+   "trackIds": [
+    "aires-de-linares::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "mi-inspiracion::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "guajiras-de-lucia::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "mantilla-de-feria::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "el-tempul::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "panaderos-flamencos::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "generalife-bajo-la-luna::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "fiesta-en-moguer::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "lamento-minero::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+    "celosa::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia"
    ]
   },
   {
@@ -6817,6 +7382,129 @@
    ]
   },
   {
+   "id": "gitana-soy-album",
+   "title": "Gitana Soy (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "remedios-amaya"
+   ],
+   "credits": [
+    {
+     "artistId": "remedios-amaya",
+     "role": "cante"
+    },
+    {
+     "artistId": "josemi-carmona",
+     "role": "guitar, mandola"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar"
+    },
+    {
+     "artistId": "paquete",
+     "role": "guitar"
+    },
+    {
+     "artistId": "juan-carmona",
+     "role": "guitar"
+    },
+    {
+     "artistId": "moraito-chico",
+     "role": "guitar"
+    },
+    {
+     "artistId": "el-viejin",
+     "role": "guitar"
+    },
+    {
+     "artistId": "carles-benavent",
+     "role": "bass"
+    },
+    {
+     "artistId": "antonio-ramos-maca",
+     "role": "bass"
+    },
+    {
+     "artistId": "antonio-carmona",
+     "role": "percussion"
+    },
+    {
+     "artistId": "joselin-vargas",
+     "role": "percussion"
+    },
+    {
+     "artistId": "tino-di-giraldo",
+     "role": "percussion"
+    },
+    {
+     "artistId": "luis-dulzaides",
+     "role": "percussion"
+    },
+    {
+     "artistId": "bernardo-parrilla",
+     "role": "violin"
+    },
+    {
+     "artistId": "angela-bautista",
+     "role": "coros"
+    },
+    {
+     "artistId": "antonio-el-negro",
+     "role": "coros, palmas"
+    },
+    {
+     "artistId": "rafael-de-los-reyes",
+     "role": "coros"
+    },
+    {
+     "artistId": "a-humanes",
+     "role": "coros, palmas"
+    },
+    {
+     "artistId": "jl-vargas",
+     "role": "coros, palmas"
+    },
+    {
+     "artistId": "quique-vargas",
+     "role": "coros, palmas"
+    },
+    {
+     "artistId": "guadiana",
+     "role": "palmas"
+    },
+    {
+     "artistId": "anton",
+     "role": "palmas"
+    },
+    {
+     "artistId": "gori-carmona",
+     "role": "palmas"
+    },
+    {
+     "artistId": "paco-bautista",
+     "role": "palmas"
+    },
+    {
+     "artistId": "luquita",
+     "role": "jaleos"
+    }
+   ],
+   "trackIds": [
+    "el-zarandeo::gitana-soy-album::remedios-amaya",
+    "gitana-soy::gitana-soy-album::remedios-amaya",
+    "nota-en-el-aire::gitana-soy-album::remedios-amaya",
+    "tu-eres-mio::gitana-soy-album::remedios-amaya",
+    "lo-deje-pasar::gitana-soy-album::remedios-amaya",
+    "tarde-de-abril::gitana-soy-album::remedios-amaya",
+    "zarzillos-de-coral::gitana-soy-album::remedios-amaya",
+    "lo-sabes-que-te-quiero::gitana-soy-album::remedios-amaya",
+    "pa-mi-comare::gitana-soy-album::remedios-amaya",
+    "caminito-pa-la-mina::gitana-soy-album::remedios-amaya"
+   ]
+  },
+  {
    "id": "gladwell",
    "title": "Gladwell",
    "year": 2011,
@@ -7083,6 +7771,28 @@
    ]
   },
   {
+   "id": "gray-sky-girls-album",
+   "title": "Gray Sky Girls (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "gray-sky-girls"
+   ],
+   "credits": [
+    {
+     "artistId": "lisa-bastoni",
+     "role": "vocals, guitar"
+    },
+    {
+     "artistId": "naomi-sommers",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::gray-sky-girls-album::gray-sky-girls"
+   ]
+  },
+  {
    "id": "great-gentlemen-of-song-spotlight-on-bobby-darin",
    "title": "Great Gentlemen of Song - Spotlight on Bobby Darin",
    "year": 1995,
@@ -7182,11 +7892,31 @@
      "role": "piano (varies by session)"
     },
     {
+     "artistId": "wynton-kelly",
+     "role": "piano (varies by session)"
+    },
+    {
+     "artistId": "tommy-flanagan",
+     "role": "piano (varies by session)"
+    },
+    {
      "artistId": "ron-carter",
      "role": "bass (varies by session)"
     },
     {
+     "artistId": "percy-heath",
+     "role": "bass (varies by session)"
+    },
+    {
      "artistId": "lex-humphries",
+     "role": "drums (varies by session)"
+    },
+    {
+     "artistId": "jimmy-cobb",
+     "role": "drums (varies by session)"
+    },
+    {
+     "artistId": "philly-joe-jones",
      "role": "drums (varies by session)"
     }
    ],
@@ -7563,6 +8293,40 @@
    ]
   },
   {
+   "id": "i-aint-gonna-work-tomorrow",
+   "title": "I Ain't Gonna Work Tomorrow",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "the-stanley-brothers"
+   ],
+   "credits": [
+    {
+     "artistId": "carter-stanley",
+     "role": "guitar, vocals"
+    },
+    {
+     "artistId": "ralph-stanley",
+     "role": "banjo, vocals"
+    },
+    {
+     "artistId": "curley-lambert",
+     "role": "guitar, mandolin"
+    },
+    {
+     "artistId": "ralph-mayo",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "audie-webster",
+     "role": "bass"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::i-aint-gonna-work-tomorrow::the-stanley-brothers"
+   ]
+  },
+  {
    "id": "i-love-jazz",
    "title": "I Love Jazz",
    "year": 1962,
@@ -7644,6 +8408,24 @@
    ],
    "trackIds": [
     "isfahan::i-wish::john-stowell"
+   ]
+  },
+  {
+   "id": "i-wish-i-could-know-you",
+   "title": "I Wish I Could Know You",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "anita-carter"
+   ],
+   "credits": [
+    {
+     "artistId": "anita-carter",
+     "role": "vocals, upright bass, autoharp"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::i-wish-i-could-know-you::anita-carter"
    ]
   },
   {
@@ -7982,6 +8764,29 @@
    ]
   },
   {
+   "id": "in-the-valley",
+   "title": "In the Valley",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "emily-miller",
+    "val-mindel"
+   ],
+   "credits": [
+    {
+     "artistId": "emily-miller",
+     "role": "vocals, guitar"
+    },
+    {
+     "artistId": "val-mindel",
+     "role": "vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::in-the-valley::emily-miller+val-mindel"
+   ]
+  },
+  {
    "id": "in-washington-dc-1956-vol-2",
    "title": "In Washington D.C. 1956, Vol. 2",
    "year": 1997,
@@ -8139,6 +8944,10 @@
     },
     {
      "artistId": "jeff-hamilton",
+     "role": "drums"
+    },
+    {
+     "artistId": "harvey-mason",
      "role": "drums"
     }
    ],
@@ -9024,7 +9833,15 @@
      "role": "bass"
     },
     {
+     "artistId": "paul-chambers",
+     "role": "bass"
+    },
+    {
      "artistId": "shadow-wilson",
+     "role": "drums"
+    },
+    {
+     "artistId": "kenny-clarke",
      "role": "drums"
     },
     {
@@ -9121,6 +9938,10 @@
      "role": "congas, bongos"
     },
     {
+     "artistId": "julio-collazo",
+     "role": "congas, bongos"
+    },
+    {
      "artistId": "art-taylor",
      "role": "drums"
     }
@@ -9173,6 +9994,33 @@
    ]
   },
   {
+   "id": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "title": "La fabulosa guitarra de Paco de Lucía",
+   "year": 1967,
+   "label": "Philips",
+   "artistIds": [
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "paco-de-lucia",
+     "role": "flamenco guitar"
+    }
+   ],
+   "trackIds": [
+    "gitanos-trianeros::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "llanto-a-cadiz::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "recuerdo-a-patino::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "punta-umbria::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "jerezana::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "viva-la-union::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "llora-la-siguiriya::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "en-la-caleta::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "impetu::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+    "el-tajo::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia"
+   ]
+  },
+  {
    "id": "la-familia",
    "title": "La Familia",
    "year": 2015,
@@ -9206,6 +10054,131 @@
    ],
    "trackIds": [
     "i-got-rhythm::la-familia::the-rosenberg-trio"
+   ]
+  },
+  {
+   "id": "la-leyenda-del-tiempo-album",
+   "title": "La Leyenda del Tiempo (album)",
+   "year": 1979,
+   "label": "Philips",
+   "artistIds": [
+    "camaron-de-la-isla"
+   ],
+   "credits": [
+    {
+     "artistId": "camaron-de-la-isla",
+     "role": "vocals"
+    },
+    {
+     "artistId": "tomatito",
+     "role": "flamenco guitar"
+    },
+    {
+     "artistId": "raimundo-amador",
+     "role": "flamenco guitar"
+    },
+    {
+     "artistId": "jorge-pardo",
+     "role": "flute"
+    },
+    {
+     "artistId": "manolo-marinelli",
+     "role": "keyboards"
+    },
+    {
+     "artistId": "rafael-marinelli",
+     "role": "piano"
+    },
+    {
+     "artistId": "pepe-roca",
+     "role": "electric guitar"
+    },
+    {
+     "artistId": "gualberto-garcia",
+     "role": "sitar"
+    },
+    {
+     "artistId": "rubem-dantas",
+     "role": "percussion"
+    },
+    {
+     "artistId": "tito-duarte",
+     "role": "percussion"
+    },
+    {
+     "artistId": "jose-antonio-galicia",
+     "role": "drums"
+    },
+    {
+     "artistId": "antonio-moreno-tacita",
+     "role": "drums"
+    },
+    {
+     "artistId": "pepe-ebano",
+     "role": "bongo"
+    },
+    {
+     "artistId": "manolo-rosa",
+     "role": "bass guitar"
+    }
+   ],
+   "trackIds": [
+    "la-leyenda-del-tiempo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "romance-del-amargo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "homenaje-a-federico::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "mi-nina-se-fue-a-la-mar::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "la-tarara::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "volando-voy::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "bahia-de-cadiz::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "viejo-mundo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "tangos-de-la-sultana::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+    "nana-del-caballo-grande::la-leyenda-del-tiempo-album::camaron-de-la-isla"
+   ]
+  },
+  {
+   "id": "la-rosa-blanca-album",
+   "title": "La Rosa Blanca (album)",
+   "year": 2004,
+   "label": "Sony BMG",
+   "artistIds": [
+    "montse-cortes"
+   ],
+   "credits": [
+    {
+     "artistId": "montse-cortes",
+     "role": "vocals"
+    },
+    {
+     "artistId": "javier-limon",
+     "role": "composer, producer, guitar on various tracks"
+    },
+    {
+     "artistId": "eduardo-cortes",
+     "role": "backing vocals (e.g., \"Hiere\")"
+    },
+    {
+     "artistId": "alain-perez",
+     "role": "bass (e.g., \"Hiere\")"
+    },
+    {
+     "artistId": "luki-losada",
+     "role": "guitar and percussion"
+    },
+    {
+     "artistId": "bernardo-parrilla",
+     "role": "violin"
+    }
+   ],
+   "trackIds": [
+    "rio-de-azucar::la-rosa-blanca-album::montse-cortes",
+    "las-alfareras::la-rosa-blanca-album::montse-cortes",
+    "hiere::la-rosa-blanca-album::montse-cortes",
+    "la-rosa-blanca::la-rosa-blanca-album::montse-cortes",
+    "un-ole-a-tiempo::la-rosa-blanca-album::montse-cortes",
+    "y-si-no-es-verdad::la-rosa-blanca-album::montse-cortes",
+    "jesus-de-nazaret::la-rosa-blanca-album::montse-cortes",
+    "lloran-al-lao-mio::la-rosa-blanca-album::montse-cortes",
+    "nostalgia-anadia::la-rosa-blanca-album::montse-cortes"
    ]
   },
   {
@@ -9326,6 +10299,29 @@
    "trackIds": [
     "donna-lee::lee-konitz-with-warne-marsh::lee-konitz+warne-marsh",
     "topsy::lee-konitz-with-warne-marsh::lee-konitz+warne-marsh"
+   ]
+  },
+  {
+   "id": "legacy",
+   "title": "Legacy",
+   "year": 2002,
+   "label": null,
+   "artistIds": [
+    "david-holt",
+    "doc-watson"
+   ],
+   "credits": [
+    {
+     "artistId": "doc-watson",
+     "role": "guitar, harmonica, vocals, banjo"
+    },
+    {
+     "artistId": "david-holt",
+     "role": "banjo, guitar, vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::legacy::david-holt+doc-watson"
    ]
   },
   {
@@ -9826,6 +10822,40 @@
    ]
   },
   {
+   "id": "los-chiquitos-de-algeciras-album",
+   "title": "Los Chiquitos de Algeciras (album)",
+   "year": 1961,
+   "label": "Hispavox",
+   "artistIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "pepe-de-lucia",
+     "role": "vocals (cantaor)"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "hasta-la-fe-de-bautismo::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "llorando-gotas-de-sangre::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "mira-lo-que-te-he-comprao::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "que-grande-el-castigo::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "ya-no-le-temo-a-la-muerte::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "que-blancas-canas-te-peinas::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "si-ahora-tu-no-te-arrepentias::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "un-pastor-en-la-sierra::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "le-estoy-pidiendo-a-la-virgen::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "a-buscar-la-flor::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "tu-no-debes-tener-celos::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+    "a-clavito-y-a-canela::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia"
+   ]
+  },
+  {
    "id": "lost-in-sound",
    "title": "Lost in Sound",
    "year": 1964,
@@ -10234,6 +11264,36 @@
    ]
   },
   {
+   "id": "me-voy-contigo-album",
+   "title": "Me voy contigo (album)",
+   "year": 1997,
+   "label": "Hispavox",
+   "artistIds": [
+    "remedios-amaya"
+   ],
+   "credits": [
+    {
+     "artistId": "remedios-amaya",
+     "role": "vocals"
+    },
+    {
+     "artistId": "vicente-amigo",
+     "role": "flamenco guitar (primary accompanist / arranger)"
+    }
+   ],
+   "trackIds": [
+    "me-voy-contigo::me-voy-contigo-album::remedios-amaya",
+    "la-calle-del-olvido::me-voy-contigo-album::remedios-amaya",
+    "flores-amargas::me-voy-contigo-album::remedios-amaya",
+    "torre-del-viento::me-voy-contigo-album::remedios-amaya",
+    "amarraita-en-tu-pelo::me-voy-contigo-album::remedios-amaya",
+    "blanca-de-sal::me-voy-contigo-album::remedios-amaya",
+    "dos-toreros::me-voy-contigo-album::remedios-amaya",
+    "turu-turai::me-voy-contigo-album::remedios-amaya",
+    "tratante-de-vara-larga::me-voy-contigo-album::remedios-amaya"
+   ]
+  },
+  {
    "id": "meditation-tudo-bem",
    "title": "Meditation (Tudo Bem!)",
    "year": 1978,
@@ -10311,6 +11371,86 @@
    ],
    "trackIds": [
     "how-insensitive::meet-triste-janero::triste-janero"
+   ]
+  },
+  {
+   "id": "mementos",
+   "title": "Mementos",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "charles-hedgepath"
+   ],
+   "credits": [
+    {
+     "artistId": "charles-hedgepath",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::mementos::charles-hedgepath"
+   ]
+  },
+  {
+   "id": "memoria-de-los-sentidos-album",
+   "title": "Memoria de los Sentidos (album)",
+   "year": 2017,
+   "label": "Sony Music Entertainment España",
+   "artistIds": [
+    "vicente-amigo"
+   ],
+   "credits": [
+    {
+     "artistId": "vicente-amigo",
+     "role": "flamenco guitar, composer"
+    },
+    {
+     "artistId": "potito",
+     "role": "vocals on \"Amoralí\""
+    },
+    {
+     "artistId": "el-pele",
+     "role": "vocals on \"La Fragua\""
+    },
+    {
+     "artistId": "farruquito",
+     "role": "dance / jaleos on \"Puente de los Orfebres\""
+    },
+    {
+     "artistId": "pepe-de-pura",
+     "role": "vocals on \"Plaza de las Sirenas\""
+    },
+    {
+     "artistId": "miguel-poveda",
+     "role": "vocals on \"Tientos del Candil\""
+    },
+    {
+     "artistId": "pedro-el-granaino",
+     "role": "vocals on \"Las Cuatro Lunas\""
+    },
+    {
+     "artistId": "nina-pastori",
+     "role": "vocals on \"Réquiem\""
+    },
+    {
+     "artistId": "arcangel",
+     "role": "vocals on \"Réquiem\""
+    },
+    {
+     "artistId": "rafael-de-utrera",
+     "role": "vocals on \"Réquiem\""
+    }
+   ],
+   "trackIds": [
+    "amorali::memoria-de-los-sentidos-album::vicente-amigo",
+    "guadameci::memoria-de-los-sentidos-album::vicente-amigo",
+    "la-fragua::memoria-de-los-sentidos-album::vicente-amigo",
+    "puente-de-los-orfebres::memoria-de-los-sentidos-album::vicente-amigo",
+    "sevilla::memoria-de-los-sentidos-album::vicente-amigo",
+    "plaza-de-las-sirenas::memoria-de-los-sentidos-album::vicente-amigo",
+    "tientos-del-candil::memoria-de-los-sentidos-album::vicente-amigo",
+    "las-cuatro-lunas::memoria-de-los-sentidos-album::vicente-amigo",
+    "requiem::memoria-de-los-sentidos-album::vicente-amigo"
    ]
   },
   {
@@ -10393,10 +11533,18 @@
     },
     {
      "artistId": "marc-johnson",
-     "role": null
+     "role": "bass"
+    },
+    {
+     "artistId": "lincoln-goines",
+     "role": "bass"
     },
     {
      "artistId": "joel-rosenblatt",
+     "role": "drums"
+    },
+    {
+     "artistId": "dave-weckl",
      "role": "drums"
     },
     {
@@ -10548,7 +11696,23 @@
      "role": "bass"
     },
     {
+     "artistId": "al-mckibbon",
+     "role": "bass"
+    },
+    {
+     "artistId": "percy-heath",
+     "role": "bass"
+    },
+    {
      "artistId": "shadow-wilson",
+     "role": "drums"
+    },
+    {
+     "artistId": "art-blakey",
+     "role": "drums"
+    },
+    {
+     "artistId": "kenny-clarke",
      "role": "drums"
     },
     {
@@ -10901,6 +12065,48 @@
    ]
   },
   {
+   "id": "morao-y-oro",
+   "title": "Morao y Oro",
+   "year": 1992,
+   "label": "Auvidis Ethnic",
+   "artistIds": [
+    "moraito-chico"
+   ],
+   "credits": [
+    {
+     "artistId": "moraito-chico",
+     "role": "guitar, composer, arranger"
+    },
+    {
+     "artistId": "juan-moneo-el-torta",
+     "role": "voice; lyrics on \"Musica En El Aire\""
+    },
+    {
+     "artistId": "jose-a-fernandez-mariscal",
+     "role": "bass"
+    },
+    {
+     "artistId": "chicharrito",
+     "role": "cajón, handclaps, jaleo"
+    },
+    {
+     "artistId": "rafael-romero-junquera",
+     "role": "handclaps, jaleo"
+    }
+   ],
+   "trackIds": [
+    "feria-del-caballo::morao-y-oro::moraito-chico",
+    "alameda-vijea::morao-y-oro::moraito-chico",
+    "buleriando::morao-y-oro::moraito-chico",
+    "bronce::morao-y-oro::moraito-chico",
+    "musica-en-el-aire::morao-y-oro::moraito-chico",
+    "terremoto::morao-y-oro::moraito-chico",
+    "rompeserones::morao-y-oro::moraito-chico",
+    "ventorillo-de-la-union::morao-y-oro::moraito-chico",
+    "mercado-persa::morao-y-oro::moraito-chico"
+   ]
+  },
+  {
    "id": "more-smiles",
    "title": "More Smiles",
    "year": 1968,
@@ -11085,6 +12291,10 @@
      "role": "bass"
     },
     {
+     "artistId": "johnny-miller",
+     "role": "bass"
+    },
+    {
      "artistId": "nat-king-cole",
      "role": "piano"
     }
@@ -11186,7 +12396,7 @@
     },
     {
      "artistId": "johnny-coles",
-     "role": null
+     "role": "trumpet"
     },
     {
      "artistId": "paul-chambers",
@@ -11194,6 +12404,10 @@
     },
     {
      "artistId": "philly-joe-jones",
+     "role": "drums"
+    },
+    {
+     "artistId": "art-blakey",
      "role": "drums"
     }
    ],
@@ -11426,6 +12640,32 @@
    ],
    "trackIds": [
     "blue-monk::nights-of-ballads-blues::mccoy-tyner"
+   ]
+  },
+  {
+   "id": "no-hurry",
+   "title": "No Hurry",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "scott-nygaard"
+   ],
+   "credits": [
+    {
+     "artistId": "scott-nygaard",
+     "role": "guitar"
+    },
+    {
+     "artistId": "laurie-lewis",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "paul-elliott",
+     "role": "fiddle"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::no-hurry::scott-nygaard"
    ]
   },
   {
@@ -11776,6 +13016,52 @@
    ]
   },
   {
+   "id": "orthophonic-joy-the-1927-bristol-sessions-revisited",
+   "title": "Orthophonic Joy - The 1927 Bristol Sessions Revisited",
+   "year": 2015,
+   "label": null,
+   "artistIds": [
+    "emmylou-harris"
+   ],
+   "credits": [
+    {
+     "artistId": "emmylou-harris",
+     "role": "vocals"
+    },
+    {
+     "artistId": "carl-jackson",
+     "role": "guitar"
+    },
+    {
+     "artistId": "tony-creasman",
+     "role": "drums"
+    },
+    {
+     "artistId": "kevin-grantt",
+     "role": "bass"
+    },
+    {
+     "artistId": "catherine-marx",
+     "role": "piano"
+    },
+    {
+     "artistId": "aubrey-haynie",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "adam-steffey",
+     "role": "mandolin"
+    },
+    {
+     "artistId": "jeremy-stephens",
+     "role": "autoharp"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::orthophonic-joy-the-1927-bristol-sessions-revisited::emmylou-harris"
+   ]
+  },
+  {
    "id": "oscar-peterson-dizzy-gillespie",
    "title": "Oscar Peterson & Dizzy Gillespie",
    "year": 1975,
@@ -11983,10 +13269,10 @@
    ]
   },
   {
-   "id": "paseo-de-los-castanos",
-   "title": "Paseo de los Castaños",
+   "id": "paseo-de-los-castanos-album",
+   "title": "Paseo de los Castaños (album)",
    "year": 2001,
-   "label": "EmArcy",
+   "label": "Universal Music Spain",
    "artistIds": [
     "tomatito"
    ],
@@ -12001,7 +13287,15 @@
     }
    ],
    "trackIds": [
-    "la-vacilona::paseo-de-los-castanos::tomatito+george-benson"
+    "pa-la-pimpi::paseo-de-los-castanos-album::tomatito",
+    "alquimia::paseo-de-los-castanos-album::tomatito",
+    "paseo-de-los-castanos::paseo-de-los-castanos-album::tomatito",
+    "aire-de-tango::paseo-de-los-castanos-album::tomatito",
+    "la-vacilona::paseo-de-los-castanos-album::tomatito+george-benson",
+    "macael::paseo-de-los-castanos-album::tomatito",
+    "dulce-manantial::paseo-de-los-castanos-album::tomatito",
+    "bir-omurluk-misafir::paseo-de-los-castanos-album::tomatito",
+    "ahi-te-quedas::paseo-de-los-castanos-album::tomatito"
    ]
   },
   {
@@ -12251,11 +13545,27 @@
      "role": "piano (varies by session)"
     },
     {
+     "artistId": "joe-zawinul",
+     "role": "piano (varies by session)"
+    },
+    {
+     "artistId": "victor-feldman",
+     "role": "piano (varies by session)"
+    },
+    {
+     "artistId": "barry-harris",
+     "role": "piano (varies by session)"
+    },
+    {
      "artistId": "sam-jones",
      "role": "bass"
     },
     {
      "artistId": "louis-hayes",
+     "role": "drums (varies by session)"
+    },
+    {
+     "artistId": "roy-mccurdy",
      "role": "drums (varies by session)"
     }
    ],
@@ -12309,6 +13619,29 @@
    ],
    "trackIds": [
     "lullaby-of-the-leaves::plectrist::billy-bauer"
+   ]
+  },
+  {
+   "id": "porter-wagoner-duets",
+   "title": "Porter Wagoner Duets",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "porter-wagoner",
+    "pam-gadd"
+   ],
+   "credits": [
+    {
+     "artistId": "porter-wagoner",
+     "role": "vocals"
+    },
+    {
+     "artistId": "pam-gadd",
+     "role": "vocals, banjo"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::porter-wagoner-duets::porter-wagoner+pam-gadd"
    ]
   },
   {
@@ -12479,6 +13812,36 @@
    ],
    "trackIds": [
     "red-top::prayer-meetin::jimmy-smith"
+   ]
+  },
+  {
+   "id": "precious-memories-jean-ritchie",
+   "title": "Precious Memories (Jean Ritchie)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "jean-ritchie"
+   ],
+   "credits": [
+    {
+     "artistId": "jean-ritchie",
+     "role": "vocals, dulcimer"
+    },
+    {
+     "artistId": "arthur-rosenbaum",
+     "role": null
+    },
+    {
+     "artistId": "eric-weissberg",
+     "role": null
+    },
+    {
+     "artistId": "marshall-brickman",
+     "role": null
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::precious-memories-jean-ritchie::jean-ritchie"
    ]
   },
   {
@@ -13261,6 +14624,55 @@
    ]
   },
   {
+   "id": "rosas-del-amor-album",
+   "title": "Rosas del Amor (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "tomatito"
+   ],
+   "credits": [
+    {
+     "artistId": "tomatito",
+     "role": "flamenco guitar, composer"
+    },
+    {
+     "artistId": "juan-carmona",
+     "role": "2nd guitar"
+    },
+    {
+     "artistId": "carles-benavent",
+     "role": "bass"
+    },
+    {
+     "artistId": "antonio-carmona",
+     "role": "percussion"
+    },
+    {
+     "artistId": "guadiana",
+     "role": "palmas"
+    },
+    {
+     "artistId": "tito",
+     "role": "palmas"
+    },
+    {
+     "artistId": "josemi-carmona",
+     "role": "mandolin on \"Rosas del Amor\""
+    }
+   ],
+   "trackIds": [
+    "dedicado-a-camaron::rosas-del-amor-album::tomatito",
+    "la-chanca::rosas-del-amor-album::tomatito",
+    "rosas-del-amor::rosas-del-amor-album::tomatito",
+    "la-andonda::rosas-del-amor-album::tomatito",
+    "puerta-de-sevilla::rosas-del-amor-album::tomatito",
+    "barrio-santiago::rosas-del-amor-album::tomatito",
+    "alejandria::rosas-del-amor-album::tomatito",
+    "soledad::rosas-del-amor-album::tomatito"
+   ]
+  },
+  {
    "id": "round-midnight-original-motion-picture-soundtrack",
    "title": "'Round Midnight - Original Motion Picture Soundtrack",
    "year": 1986,
@@ -13347,11 +14759,43 @@
      "role": "trumpets"
     },
     {
+     "artistId": "joe-newman",
+     "role": "trumpets"
+    },
+    {
+     "artistId": "snooky-young",
+     "role": "trumpets"
+    },
+    {
+     "artistId": "thad-jones",
+     "role": "trumpets"
+    },
+    {
      "artistId": "henry-coker",
      "role": "trombones"
     },
     {
+     "artistId": "al-grey",
+     "role": "trombones"
+    },
+    {
+     "artistId": "benny-powell",
+     "role": "trombones"
+    },
+    {
      "artistId": "frank-wess",
+     "role": "reeds"
+    },
+    {
+     "artistId": "frank-foster",
+     "role": "reeds"
+    },
+    {
+     "artistId": "billy-mitchell",
+     "role": "reeds"
+    },
+    {
+     "artistId": "charlie-fowlkes",
      "role": "reeds"
     },
     {
@@ -13947,6 +15391,29 @@
    ]
   },
   {
+   "id": "skaggs-and-rice",
+   "title": "Skaggs And Rice",
+   "year": 1980,
+   "label": "Sugar Hill Records",
+   "artistIds": [
+    "ricky-skaggs",
+    "tony-rice"
+   ],
+   "credits": [
+    {
+     "artistId": "ricky-skaggs",
+     "role": "mandolin, vocals"
+    },
+    {
+     "artistId": "tony-rice",
+     "role": "guitar, vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::skaggs-and-rice::ricky-skaggs+tony-rice"
+   ]
+  },
+  {
    "id": "sketches-of-spain",
    "title": "Sketches of Spain",
    "year": 1960,
@@ -14013,6 +15480,29 @@
    ],
    "trackIds": [
     "i-got-rhythm::skol-original-jazz-classics-remasters::oscar-peterson"
+   ]
+  },
+  {
+   "id": "sleep-with-one-eye-open",
+   "title": "Sleep With One Eye Open",
+   "year": 2011,
+   "label": "Nonesuch",
+   "artistIds": [
+    "chris-thile",
+    "michael-daves"
+   ],
+   "credits": [
+    {
+     "artistId": "chris-thile",
+     "role": "mandolin, vocals"
+    },
+    {
+     "artistId": "michael-daves",
+     "role": "guitar, vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::sleep-with-one-eye-open::chris-thile+michael-daves"
    ]
   },
   {
@@ -14191,6 +15681,10 @@
     },
     {
      "artistId": "victor-lewis",
+     "role": "drums"
+    },
+    {
+     "artistId": "billy-hart",
      "role": "drums"
     }
    ],
@@ -14488,6 +15982,44 @@
    ]
   },
   {
+   "id": "son-tus-ojos-dos-estrellas-album",
+   "title": "Son Tus Ojos Dos Estrellas (album)",
+   "year": 1971,
+   "label": "Philips / Universal Music Spain",
+   "artistIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "credits": [
+    {
+     "artistId": "camaron-de-la-isla",
+     "role": "vocals"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar"
+    },
+    {
+     "artistId": "antonio-sanchez-pecino",
+     "role": "composer (with Paco de Lucía)"
+    }
+   ],
+   "trackIds": [
+    "son-tus-ojos-dos-estrellas::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "la-mujer-con-ser-mujer::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "por-mala-lengua-que-tienes::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "sin-motivos-ni-razon::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "en-la-provincia-de-cadiz::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "de-una-mina-de-la-union::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "el-espejo-en-que-te-miras::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "me-la-tienes-controla::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "al-padre-santo-de-roma::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "estoy-cumpliendo-condena::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "se-murio-mi-madre::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+    "me-voy-por-la-calle-abajo::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia"
+   ]
+  },
+  {
    "id": "songs-of-new-orleans",
    "title": "Songs of New Orleans",
    "year": 1995,
@@ -14531,6 +16063,33 @@
    ],
    "trackIds": [
     "basin-street-blues::songs-of-new-orleans::preservation-hall-jazz-band"
+   ]
+  },
+  {
+   "id": "songs-of-the-smokie-mountains",
+   "title": "Songs Of The Smokie Mountains",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "bill-owens-and-the-kinfolk",
+    "smoky-mountain-dna"
+   ],
+   "credits": [
+    {
+     "artistId": "bill-owens",
+     "role": "guitar, vocals"
+    },
+    {
+     "artistId": "dorothy-jo-hope",
+     "role": "banjo, vocals"
+    },
+    {
+     "artistId": "jake-robert-owens",
+     "role": "fiddle, vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::songs-of-the-smokie-mountains::bill-owens-and-the-kinfolk+smoky-mountain-dna"
    ]
   },
   {
@@ -14744,6 +16303,61 @@
    "trackIds": [
     "meditation::soul-espanol::oscar-peterson",
     "how-insensitive::soul-espanol::oscar-peterson"
+   ]
+  },
+  {
+   "id": "soy-flamenco-album",
+   "title": "Soy Flamenco (album)",
+   "year": 2013,
+   "label": "Universal Music Spain",
+   "artistIds": [
+    "tomatito"
+   ],
+   "credits": [
+    {
+     "artistId": "tomatito",
+     "role": "flamenco guitar, primary composer"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar on \"Corre por mis venas\""
+    },
+    {
+     "artistId": "camaron-de-la-isla",
+     "role": "archival vocal on \"El Regalo\" (seguiriya)"
+    },
+    {
+     "artistId": "mari-angeles-fernandez-torres",
+     "role": "vocals on \"Soy Flamenco\""
+    },
+    {
+     "artistId": "kiki-cortinas",
+     "role": "vocals / jaleos"
+    },
+    {
+     "artistId": "luki-losada",
+     "role": "percussion"
+    },
+    {
+     "artistId": "juan-grande",
+     "role": "percussion / palmas"
+    },
+    {
+     "artistId": "ane-carrasco",
+     "role": "percussion"
+    }
+   ],
+   "trackIds": [
+    "soy-flamenco::soy-flamenco-album::tomatito",
+    "la-fuentecica::soy-flamenco-album::tomatito",
+    "asomao-a-mi-ventana::soy-flamenco-album::tomatito",
+    "despacito::soy-flamenco-album::tomatito",
+    "cerro-de-san-cristobal::soy-flamenco-album::tomatito",
+    "el-regalo::soy-flamenco-album::tomatito",
+    "a-manuel-moraito-chico::soy-flamenco-album::tomatito",
+    "mister-benson::soy-flamenco-album::tomatito",
+    "corre-por-mis-venas::soy-flamenco-album::tomatito",
+    "our-spain::soy-flamenco-album::tomatito"
    ]
   },
   {
@@ -15162,6 +16776,24 @@
    ],
    "trackIds": [
     "oleo::steel-guitar-jazz::buddy-emmons"
+   ]
+  },
+  {
+   "id": "steel-string-americana",
+   "title": "Steel String Americana",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "paul-asbell"
+   ],
+   "credits": [
+    {
+     "artistId": "paul-asbell",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::steel-string-americana::paul-asbell"
    ]
   },
   {
@@ -15676,6 +17308,40 @@
    ],
    "trackIds": [
     "all-the-things-you-are::tal-farlow-album::tal-farlow"
+   ]
+  },
+  {
+   "id": "tauromagia",
+   "title": "Tauromagia",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "manolo-sanlucar"
+   ],
+   "credits": [
+    {
+     "artistId": "manolo-sanlucar",
+     "role": "guitar, composer"
+    },
+    {
+     "artistId": "vicente-amigo",
+     "role": "guitar"
+    },
+    {
+     "artistId": "evora",
+     "role": "orchestral arrangements"
+    }
+   ],
+   "trackIds": [
+    "nacencia::tauromagia::manolo-sanlucar",
+    "maletilla::tauromagia::manolo-sanlucar",
+    "oracion::tauromagia::manolo-sanlucar",
+    "maestranza::tauromagia::manolo-sanlucar",
+    "de-capote::tauromagia::manolo-sanlucar",
+    "tercio-de-vara::tauromagia::manolo-sanlucar",
+    "banderillas::tauromagia::manolo-sanlucar",
+    "de-muleta::tauromagia::manolo-sanlucar",
+    "puerta-del-principe::tauromagia::manolo-sanlucar"
    ]
   },
   {
@@ -16439,6 +18105,10 @@
      "role": "guitar"
     },
     {
+     "artistId": "george-van-eps",
+     "role": "guitar"
+    },
+    {
      "artistId": "axel-stordahl",
      "role": "arranger / conductor"
     }
@@ -16735,6 +18405,10 @@
     {
      "artistId": "kenny-clarke",
      "role": "drums"
+    },
+    {
+     "artistId": "connie-kay",
+     "role": "drums"
     }
    ],
    "trackIds": [
@@ -16847,7 +18521,15 @@
      "role": "piano"
     },
     {
+     "artistId": "john-lewis",
+     "role": "piano"
+    },
+    {
      "artistId": "curley-russell",
+     "role": "bass"
+    },
+    {
+     "artistId": "tommy-potter",
      "role": "bass"
     },
     {
@@ -17108,6 +18790,24 @@
    ]
   },
   {
+   "id": "the-early-years",
+   "title": "The Early Years",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "woody-guthrie"
+   ],
+   "credits": [
+    {
+     "artistId": "woody-guthrie",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::the-early-years::woody-guthrie"
+   ]
+  },
+  {
    "id": "the-easy-way",
    "title": "The Easy Way",
    "year": 1959,
@@ -17346,6 +19046,10 @@
      "role": "drums"
     },
     {
+     "artistId": "mickey-roker",
+     "role": "drums"
+    },
+    {
      "artistId": "herbie-hancock",
      "role": "piano (on some tracks)"
     },
@@ -17510,6 +19214,74 @@
    ],
    "trackIds": [
     "i-got-rhythm::the-hard-swing::sonny-stitt"
+   ]
+  },
+  {
+   "id": "the-house-carpenters-daughter",
+   "title": "The House Carpenter's Daughter",
+   "year": 2003,
+   "label": "Myth America Records",
+   "artistIds": [
+    "natalie-merchant"
+   ],
+   "credits": [
+    {
+     "artistId": "natalie-merchant",
+     "role": "vocals"
+    },
+    {
+     "artistId": "erik-della-penna",
+     "role": "guitar, lap steel"
+    },
+    {
+     "artistId": "gabriel-gordon",
+     "role": "guitar"
+    },
+    {
+     "artistId": "richie-stearns",
+     "role": "banjo"
+    },
+    {
+     "artistId": "graham-maby",
+     "role": "bass"
+    },
+    {
+     "artistId": "allison-miller",
+     "role": "drums"
+    },
+    {
+     "artistId": "judy-hyman",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "elizabeth-steen",
+     "role": "piano, organ, accordion"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::the-house-carpenters-daughter::natalie-merchant"
+   ]
+  },
+  {
+   "id": "the-hunger-games-the-ballad-of-songbirds-snakes-music-from-inspired-by",
+   "title": "The Hunger Games - The Ballad of Songbirds & Snakes (Music from & Inspired By)",
+   "year": 2023,
+   "label": null,
+   "artistIds": [
+    "molly-tuttle"
+   ],
+   "credits": [
+    {
+     "artistId": "molly-tuttle",
+     "role": "vocals, guitar"
+    },
+    {
+     "artistId": "dominick-leslie",
+     "role": "mandolin, background vocals"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::the-hunger-games-the-ballad-of-songbirds-snakes-music-from-inspired-by::molly-tuttle"
    ]
   },
   {
@@ -17818,6 +19590,28 @@
    ]
   },
   {
+   "id": "the-list",
+   "title": "The List",
+   "year": 2009,
+   "label": null,
+   "artistIds": [
+    "rosanne-cash"
+   ],
+   "credits": [
+    {
+     "artistId": "rosanne-cash",
+     "role": "vocals"
+    },
+    {
+     "artistId": "john-leventhal",
+     "role": "guitar, organ, bass, mandolin"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::the-list::rosanne-cash"
+   ]
+  },
+  {
    "id": "the-magnificent-charlie-parker",
    "title": "The Magnificent Charlie Parker",
    "year": 1955,
@@ -17885,6 +19679,10 @@
     },
     {
      "artistId": "johnny-miller",
+     "role": "bass"
+    },
+    {
+     "artistId": "wesley-prince",
      "role": "bass"
     }
    ],
@@ -18023,7 +19821,32 @@
    "artistIds": [
     "bud-powell"
    ],
-   "credits": [],
+   "credits": [
+    {
+     "artistId": "bud-powell",
+     "role": "piano"
+    },
+    {
+     "artistId": "george-duvivier",
+     "role": "bass"
+    },
+    {
+     "artistId": "art-taylor",
+     "role": "drums"
+    },
+    {
+     "artistId": "bud-powell",
+     "role": "piano"
+    },
+    {
+     "artistId": "curly-russell",
+     "role": "bass"
+    },
+    {
+     "artistId": "max-roach",
+     "role": "drums"
+    }
+   ],
    "trackIds": [
     "stella-by-starlight::the-roost-sessions-bud-powell::bud-powell",
     "i-should-care::the-roost-sessions-bud-powell::bud-powell-trio"
@@ -18926,6 +20749,10 @@
      "role": "bass"
     },
     {
+     "artistId": "red-mitchell",
+     "role": "bass"
+    },
+    {
      "artistId": "shelly-manne",
      "role": "drums"
     }
@@ -19210,7 +21037,23 @@
      "role": "bass"
     },
     {
+     "artistId": "joe-benjamin",
+     "role": "bass"
+    },
+    {
+     "artistId": "wendell-marshall",
+     "role": "bass"
+    },
+    {
      "artistId": "connie-kay",
+     "role": "drums"
+    },
+    {
+     "artistId": "mel-lewis",
+     "role": "drums"
+    },
+    {
+     "artistId": "ed-shaughnessy",
      "role": "drums"
     }
    ],
@@ -19412,6 +21255,24 @@
    ]
   },
   {
+   "id": "up-on-pinewood-mountain",
+   "title": "Up On Pinewood Mountain",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "dirthog-newton"
+   ],
+   "credits": [
+    {
+     "artistId": "dirthog-newton",
+     "role": "vocals, guitar"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::up-on-pinewood-mountain::dirthog-newton"
+   ]
+  },
+  {
    "id": "very-tall",
    "title": "Very Tall",
    "year": 1962,
@@ -19595,6 +21456,35 @@
    ]
   },
   {
+   "id": "vivencias-imaginadas-album",
+   "title": "Vivencias Imaginadas (album)",
+   "year": 1995,
+   "label": "CBS/Sony (Sony Music Entertainment Spain)",
+   "artistIds": [
+    "vicente-amigo"
+   ],
+   "credits": [
+    {
+     "artistId": "vicente-amigo",
+     "role": "flamenco guitar, composer"
+    },
+    {
+     "artistId": "paco-de-lucia",
+     "role": "guitar on \"Querido Metheny\""
+    }
+   ],
+   "trackIds": [
+    "limon-de-nata::vivencias-imaginadas-album::vicente-amigo",
+    "el-mandaito::vivencias-imaginadas-album::vicente-amigo",
+    "ventanas-al-alma::vivencias-imaginadas-album::vicente-amigo",
+    "mensaje::vivencias-imaginadas-album::vicente-amigo",
+    "querido-metheny::vivencias-imaginadas-album::vicente-amigo",
+    "de-blanco-y-oro::vivencias-imaginadas-album::vicente-amigo",
+    "vivencias-imaginadas::vivencias-imaginadas-album::vicente-amigo",
+    "sierra-del-agua::vivencias-imaginadas-album::vicente-amigo"
+   ]
+  },
+  {
    "id": "volume-ii-savoy",
    "title": "Volume II (Savoy)",
    "year": 1952,
@@ -19612,7 +21502,19 @@
      "role": "trumpet"
     },
     {
+     "artistId": "howard-mcghee",
+     "role": "trumpet"
+    },
+    {
      "artistId": "duke-jordan",
+     "role": "piano"
+    },
+    {
+     "artistId": "bud-powell",
+     "role": "piano"
+    },
+    {
+     "artistId": "dizzy-gillespie",
      "role": "piano"
     },
     {
@@ -19620,7 +21522,15 @@
      "role": "bass"
     },
     {
+     "artistId": "curley-russell",
+     "role": "bass"
+    },
+    {
      "artistId": "max-roach",
+     "role": "drums"
+    },
+    {
+     "artistId": "roy-haynes",
      "role": "drums"
     }
    ],
@@ -19869,6 +21779,28 @@
    ]
   },
   {
+   "id": "we-have-tigers",
+   "title": "We Have Tigers",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "inga-liljestrom"
+   ],
+   "credits": [
+    {
+     "artistId": "inga-liljestrom",
+     "role": "vocals"
+    },
+    {
+     "artistId": "michael-lira",
+     "role": "double bass, bass clarinet, clarinet, violin, guitar, banjo, ocarina, percussion, flute, trumpet, melodica"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::we-have-tigers::inga-liljestrom"
+   ]
+  },
+  {
    "id": "well-be-together-again",
    "title": "We'll Be Together Again",
    "year": 1984,
@@ -20099,6 +22031,29 @@
    ]
   },
   {
+   "id": "winters-bone-soundtrack",
+   "title": "Winter's Bone Soundtrack",
+   "year": 2010,
+   "label": null,
+   "artistIds": [
+    "linda-stoffel",
+    "blackberry-winter"
+   ],
+   "credits": [
+    {
+     "artistId": "linda-stoffel",
+     "role": "vocals"
+    },
+    {
+     "artistId": "blackberry-winter",
+     "role": "ensemble"
+    }
+   ],
+   "trackIds": [
+    "bury-me-beneath-the-willow::winters-bone-soundtrack::linda-stoffel+blackberry-winter"
+   ]
+  },
+  {
    "id": "wish",
    "title": "Wish",
    "year": 1993,
@@ -20288,6 +22243,55 @@
    ]
   },
   {
+   "id": "yerbaguena-album",
+   "title": "Yerbagüena (album)",
+   "year": 2001,
+   "label": "Nuevos Medios",
+   "artistIds": [
+    "pepe-habichuela"
+   ],
+   "credits": [
+    {
+     "artistId": "pepe-habichuela",
+     "role": "flamenco guitar"
+    },
+    {
+     "artistId": "josemi-carmona",
+     "role": "musical director, producer, guitar"
+    },
+    {
+     "artistId": "juan-carmona",
+     "role": "guitar"
+    },
+    {
+     "artistId": "antonio-carmona",
+     "role": "percussion"
+    },
+    {
+     "artistId": "tino-di-giraldo",
+     "role": "drums"
+    },
+    {
+     "artistId": "javier-colina",
+     "role": "double bass"
+    },
+    {
+     "artistId": "the-bollywood-strings",
+     "role": "Indian string ensemble (violins/strings)"
+    }
+   ],
+   "trackIds": [
+    "yerbaguena-oriente::yerbaguena-album::pepe-habichuela",
+    "bangalore-krishna::yerbaguena-album::pepe-habichuela",
+    "a-mi-chache-miguel::yerbaguena-album::pepe-habichuela",
+    "se-la-llevo-dios::yerbaguena-album::pepe-habichuela",
+    "yerbaguena-occidente::yerbaguena-album::pepe-habichuela",
+    "la-flor-de-la-canela::yerbaguena-album::pepe-habichuela",
+    "ritmo-del-ganges::yerbaguena-album::pepe-habichuela",
+    "el-rio-de-la-vida::yerbaguena-album::pepe-habichuela"
+   ]
+  },
+  {
    "id": "you-wont-forget-me",
    "title": "You Won't Forget Me",
    "year": 1991,
@@ -20390,11 +22394,117 @@
     }
    ],
    "trackIds": [
-    "zyryab::zyryab-album::paco-de-lucia+chick-corea"
+    "soniquete::zyryab-album::paco-de-lucia",
+    "tio-sabas::zyryab-album::paco-de-lucia",
+    "chick::zyryab-album::paco-de-lucia",
+    "compadres::zyryab-album::paco-de-lucia",
+    "zyryab::zyryab-album::paco-de-lucia+chick-corea",
+    "cancion-de-amor::zyryab-album::paco-de-lucia",
+    "playa-del-carmen::zyryab-album::paco-de-lucia",
+    "almonte::zyryab-album::paco-de-lucia"
    ]
   }
  ],
  "recordings": [
+  {
+   "id": "a-buscar-la-flor::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "a-buscar-la-flor",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-camaron::aguadulce-album::tomatito",
+   "pieceId": "a-camaron",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-clavito-y-a-canela::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "a-clavito-y-a-canela",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-la-memoria-de-mi-padre::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "a-la-memoria-de-mi-padre",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-la-perla-de-cadiz::almoraima-album::paco-de-lucia",
+   "pieceId": "a-la-perla-de-cadiz",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-los-santos-del-cielo::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "a-los-santos-del-cielo",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-manuel-moraito-chico::soy-flamenco-album::tomatito",
+   "pieceId": "a-manuel-moraito-chico",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "a-mi-chache-miguel::yerbaguena-album::pepe-habichuela",
+   "pieceId": "a-mi-chache-miguel",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
   {
    "id": "ablution::nostalgia-timeless::rein-de-graaf",
    "pieceId": "ablution",
@@ -20408,11 +22518,182 @@
    "bpm": null
   },
   {
+   "id": "aguadulce::aguadulce-album::tomatito",
+   "pieceId": "aguadulce",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ahi-te-quedas::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "ahi-te-quedas",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "aire-de-tango::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "aire-de-tango",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "aires-choqueros::fuente-y-caudal-album::paco-de-lucia",
    "pieceId": "aires-choqueros",
    "albumId": "fuente-y-caudal-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "aires-de-linares::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "aires-de-linares",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-aire-de-triana::algo-que-decir-album::el-viejin",
+   "pieceId": "al-aire-de-triana",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-gurugu-guruguero::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "al-gurugu-guruguero",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-mari::aguadulce-album::tomatito",
+   "pieceId": "al-mari",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-padre-santo-de-roma::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "al-padre-santo-de-roma",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-puerto::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "al-puerto",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "al-verte-las-flores-lloran::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "al-verte-las-flores-lloran",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "alameda-vijea::morao-y-oro::moraito-chico",
+   "pieceId": "alameda-vijea",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "alcazar-de-cristal::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "alcazar-de-cristal",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "alejandria::rosas-del-amor-album::tomatito",
+   "pieceId": "alejandria",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "algo-que-decir::algo-que-decir-album::el-viejin",
+   "pieceId": "algo-que-decir",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
    ],
    "performanceKey": null,
    "source": null,
@@ -21120,6 +23401,30 @@
    "bpm": null
   },
   {
+   "id": "almonte::zyryab-album::paco-de-lucia",
+   "pieceId": "almonte",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "almoraima::almoraima-album::paco-de-lucia",
+   "pieceId": "almoraima",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "alone-together::alone-together-catherine-russell::catherine-russell",
    "pieceId": "alone-together",
    "albumId": "alone-together-catherine-russell",
@@ -21465,6 +23770,18 @@
    "bpm": null
   },
   {
+   "id": "alquimia::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "alquimia",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "alright-okay-you-win::bette-midler-sings-the-peggy-lee-songbook::bette-midler",
    "pieceId": "alright-okay-you-win",
    "albumId": "bette-midler-sings-the-peggy-lee-songbook",
@@ -21532,6 +23849,56 @@
    "albumId": "things-are-swingin",
    "performerIds": [
     "peggy-lee"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "amarraita-en-tu-pelo::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "amarraita-en-tu-pelo",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "amorali::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "amorali",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "anda-y-no-presumas-mas::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "anda-y-no-presumas-mas",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ante-el-altar-me-juraste::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "ante-el-altar-me-juraste",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -21693,6 +24060,18 @@
    "albumId": "cositas-buenas-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "asomao-a-mi-ventana::soy-flamenco-album::tomatito",
+   "pieceId": "asomao-a-mi-ventana",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -22201,6 +24580,42 @@
    "bpm": null
   },
   {
+   "id": "bahia-de-cadiz::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "bahia-de-cadiz",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "banderillas::tauromagia::manolo-sanlucar",
+   "pieceId": "banderillas",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "bangalore-krishna::yerbaguena-album::pepe-habichuela",
+   "pieceId": "bangalore-krishna",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "barbados::birds-of-a-feather-a-tribute-to-charlie-parker::roy-haynes",
    "pieceId": "barbados",
    "albumId": "birds-of-a-feather-a-tribute-to-charlie-parker",
@@ -22230,6 +24645,31 @@
    "albumId": "the-complete-savoy-dial-master-takes",
    "performerIds": [
     "charlie-parker"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "barrio-de-santa-maria::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "barrio-de-santa-maria",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "barrio-santiago::rosas-del-amor-album::tomatito",
+   "pieceId": "barrio-santiago",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -22628,6 +25068,18 @@
    "bpm": null
   },
   {
+   "id": "benamargosa::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "benamargosa",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bessies-blues::crescent::john-coltrane-quartet",
    "pieceId": "bessies-blues",
    "albumId": "crescent",
@@ -22777,6 +25229,18 @@
    "bpm": null
   },
   {
+   "id": "bir-omurluk-misafir::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "bir-omurluk-misafir",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bird-feathers::new-bottle-old-wine::gil-evans",
    "pieceId": "bird-feathers",
    "albumId": "new-bottle-old-wine",
@@ -22866,6 +25330,18 @@
    "albumId": "profile",
    "performerIds": [
     "duke-pearson"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "blanca-de-sal::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "blanca-de-sal",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -23560,6 +26036,388 @@
    "source": null,
    "notes": null,
    "bpm": null
+  },
+  {
+   "id": "bronce::morao-y-oro::moraito-chico",
+   "pieceId": "bronce",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "buleriando::morao-y-oro::moraito-chico",
+   "pieceId": "buleriando",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "bury-me-beneath-the-willow::33-guitar-instrumentals::clarence-white",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "33-guitar-instrumentals",
+   "performerIds": [
+    "clarence-white"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 121
+  },
+  {
+   "id": "bury-me-beneath-the-willow::a-north-wind-blows::the-sassafras-sisters",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "a-north-wind-blows",
+   "performerIds": [
+    "the-sassafras-sisters"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 110
+  },
+  {
+   "id": "bury-me-beneath-the-willow::american-patchwork-quartet-album::american-patchwork-quartet",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "american-patchwork-quartet-album",
+   "performerIds": [
+    "american-patchwork-quartet"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 100
+  },
+  {
+   "id": "bury-me-beneath-the-willow::anthology-vol-1-1929-1932::the-carter-family",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "anthology-vol-1-1929-1932",
+   "performerIds": [
+    "the-carter-family"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 113
+  },
+  {
+   "id": "bury-me-beneath-the-willow::blue-mesa::peter-ostroushko",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "blue-mesa",
+   "performerIds": [
+    "peter-ostroushko"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 139
+  },
+  {
+   "id": "bury-me-beneath-the-willow::country-gospel-favorites-mike-rogers::mike-rogers+ricky-skaggs",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "country-gospel-favorites-mike-rogers",
+   "performerIds": [
+    "mike-rogers",
+    "ricky-skaggs"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 106
+  },
+  {
+   "id": "bury-me-beneath-the-willow::dawg-plays-big-mon::david-grisman+ralph-rinzler",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "dawg-plays-big-mon",
+   "performerIds": [
+    "david-grisman",
+    "ralph-rinzler"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 199
+  },
+  {
+   "id": "bury-me-beneath-the-willow::earl-jam-a-tribute-to-earl-scruggs::tony-trischka+vince-gill",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "earl-jam-a-tribute-to-earl-scruggs",
+   "performerIds": [
+    "tony-trischka",
+    "vince-gill"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 127
+  },
+  {
+   "id": "bury-me-beneath-the-willow::gray-sky-girls-album::gray-sky-girls",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "gray-sky-girls-album",
+   "performerIds": [
+    "gray-sky-girls"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 198
+  },
+  {
+   "id": "bury-me-beneath-the-willow::i-aint-gonna-work-tomorrow::the-stanley-brothers",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "i-aint-gonna-work-tomorrow",
+   "performerIds": [
+    "the-stanley-brothers"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 168
+  },
+  {
+   "id": "bury-me-beneath-the-willow::i-wish-i-could-know-you::anita-carter",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "i-wish-i-could-know-you",
+   "performerIds": [
+    "anita-carter"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 194
+  },
+  {
+   "id": "bury-me-beneath-the-willow::in-the-valley::emily-miller+val-mindel",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "in-the-valley",
+   "performerIds": [
+    "emily-miller",
+    "val-mindel"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 128
+  },
+  {
+   "id": "bury-me-beneath-the-willow::legacy::david-holt+doc-watson",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "legacy",
+   "performerIds": [
+    "david-holt",
+    "doc-watson"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 99
+  },
+  {
+   "id": "bury-me-beneath-the-willow::mementos::charles-hedgepath",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "mementos",
+   "performerIds": [
+    "charles-hedgepath"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 167
+  },
+  {
+   "id": "bury-me-beneath-the-willow::no-hurry::scott-nygaard",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "no-hurry",
+   "performerIds": [
+    "scott-nygaard"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 109
+  },
+  {
+   "id": "bury-me-beneath-the-willow::orthophonic-joy-the-1927-bristol-sessions-revisited::emmylou-harris",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "orthophonic-joy-the-1927-bristol-sessions-revisited",
+   "performerIds": [
+    "emmylou-harris"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 170
+  },
+  {
+   "id": "bury-me-beneath-the-willow::porter-wagoner-duets::porter-wagoner+pam-gadd",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "porter-wagoner-duets",
+   "performerIds": [
+    "porter-wagoner",
+    "pam-gadd"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 152
+  },
+  {
+   "id": "bury-me-beneath-the-willow::precious-memories-jean-ritchie::jean-ritchie",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "precious-memories-jean-ritchie",
+   "performerIds": [
+    "jean-ritchie"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 109
+  },
+  {
+   "id": "bury-me-beneath-the-willow::skaggs-and-rice::ricky-skaggs+tony-rice",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "skaggs-and-rice",
+   "performerIds": [
+    "ricky-skaggs",
+    "tony-rice"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 181
+  },
+  {
+   "id": "bury-me-beneath-the-willow::sleep-with-one-eye-open::chris-thile+michael-daves",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "sleep-with-one-eye-open",
+   "performerIds": [
+    "chris-thile",
+    "michael-daves"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 85
+  },
+  {
+   "id": "bury-me-beneath-the-willow::songs-of-the-smokie-mountains::bill-owens-and-the-kinfolk+smoky-mountain-dna",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "songs-of-the-smokie-mountains",
+   "performerIds": [
+    "bill-owens-and-the-kinfolk",
+    "smoky-mountain-dna"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 234
+  },
+  {
+   "id": "bury-me-beneath-the-willow::steel-string-americana::paul-asbell",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "steel-string-americana",
+   "performerIds": [
+    "paul-asbell"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 172
+  },
+  {
+   "id": "bury-me-beneath-the-willow::the-early-years::woody-guthrie",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "the-early-years",
+   "performerIds": [
+    "woody-guthrie"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 207
+  },
+  {
+   "id": "bury-me-beneath-the-willow::the-house-carpenters-daughter::natalie-merchant",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "the-house-carpenters-daughter",
+   "performerIds": [
+    "natalie-merchant"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 207
+  },
+  {
+   "id": "bury-me-beneath-the-willow::the-hunger-games-the-ballad-of-songbirds-snakes-music-from-inspired-by::molly-tuttle",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "the-hunger-games-the-ballad-of-songbirds-snakes-music-from-inspired-by",
+   "performerIds": [
+    "molly-tuttle"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 180
+  },
+  {
+   "id": "bury-me-beneath-the-willow::the-list::rosanne-cash",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "the-list",
+   "performerIds": [
+    "rosanne-cash"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 160
+  },
+  {
+   "id": "bury-me-beneath-the-willow::up-on-pinewood-mountain::dirthog-newton",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "up-on-pinewood-mountain",
+   "performerIds": [
+    "dirthog-newton"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 108
+  },
+  {
+   "id": "bury-me-beneath-the-willow::we-have-tigers::inga-liljestrom",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "we-have-tigers",
+   "performerIds": [
+    "inga-liljestrom"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 69
+  },
+  {
+   "id": "bury-me-beneath-the-willow::winters-bone-soundtrack::linda-stoffel+blackberry-winter",
+   "pieceId": "bury-me-beneath-the-willow",
+   "albumId": "winters-bone-soundtrack",
+   "performerIds": [
+    "linda-stoffel",
+    "blackberry-winter"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": 197
   },
   {
    "id": "buzzy::the-complete-savoy-dial-master-takes::charlie-parker",
@@ -25257,6 +28115,19 @@
    "bpm": null
   },
   {
+   "id": "cada-vez-que-nos-miramos::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "cada-vez-que-nos-miramos",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "caldonia::somebody-up-there-digs-me::louis-jordan",
    "pieceId": "caldonia",
    "albumId": "somebody-up-there-digs-me",
@@ -25281,11 +28152,47 @@
    "bpm": null
   },
   {
+   "id": "calle-fabie::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "calle-fabie",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "calle-municion::luzia-album::paco-de-lucia",
    "pieceId": "calle-municion",
    "albumId": "luzia-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "callecita-que-subes::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "callecita-que-subes",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "callejon-de-las-flores::algo-que-decir-album::el-viejin",
+   "pieceId": "callejon-de-las-flores",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
    ],
    "performanceKey": null,
    "source": null,
@@ -25317,12 +28224,73 @@
    "bpm": null
   },
   {
+   "id": "camina-y-dime::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "camina-y-dime",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "caminillo-viejo::aguadulce-album::tomatito",
+   "pieceId": "caminillo-viejo",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "caminito-pa-la-mina::gitana-soy-album::remedios-amaya",
+   "pieceId": "caminito-pa-la-mina",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "cana-de-azucar::siroco::paco-de-lucia+jose-maria-bandera",
    "pieceId": "cana-de-azucar",
    "albumId": "siroco",
    "performerIds": [
     "paco-de-lucia",
     "jose-maria-bandera"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "cancion-de-amor::zyryab-album::paco-de-lucia",
+   "pieceId": "cancion-de-amor",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "candelaria::algo-que-decir-album::el-viejin",
+   "pieceId": "candelaria",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
    ],
    "performanceKey": null,
    "source": null,
@@ -25477,11 +28445,35 @@
    "bpm": null
   },
   {
+   "id": "celosa::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "celosa",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "cepa-andaluza::fuente-y-caudal-album::paco-de-lucia",
    "pieceId": "cepa-andaluza",
    "albumId": "fuente-y-caudal-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "cerro-de-san-cristobal::soy-flamenco-album::tomatito",
+   "pieceId": "cerro-de-san-cristobal",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -25609,6 +28601,18 @@
    "bpm": null
   },
   {
+   "id": "chick::zyryab-album::paco-de-lucia",
+   "pieceId": "chick",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "chitlins-con-carne::first-class-grits-and-gravy-first-class::eric-kloss",
    "pieceId": "chitlins-con-carne",
    "albumId": "first-class-grits-and-gravy-first-class",
@@ -25650,6 +28654,55 @@
    "albumId": "the-sky-is-crying",
    "performerIds": [
     "stevie-ray-vaughan"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "cobre::almoraima-album::paco-de-lucia",
+   "pieceId": "cobre",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "compadres::zyryab-album::paco-de-lucia",
+   "pieceId": "compadres",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "con-el-pensamiento::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "con-el-pensamiento",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "con-la-varita-en-la-mano::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "con-la-varita-en-la-mano",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -25947,6 +29000,18 @@
    "bpm": null
   },
   {
+   "id": "corre-por-mis-venas::soy-flamenco-album::tomatito",
+   "pieceId": "corre-por-mis-venas",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "cositas-buenas::cositas-buenas-album::paco-de-lucia",
    "pieceId": "cositas-buenas",
    "albumId": "cositas-buenas-album",
@@ -26154,6 +29219,18 @@
    "bpm": 108
   },
   {
+   "id": "cueva-del-gato::almoraima-album::paco-de-lucia",
+   "pieceId": "cueva-del-gato",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "d-natural-blues::cookin-at-the-queens-live-in-las-vegas::emily-remler",
    "pieceId": "d-natural-blues",
    "albumId": "cookin-at-the-queens-live-in-las-vegas",
@@ -26185,6 +29262,104 @@
     "wes-montgomery"
    ],
    "performanceKey": "https://www.dropbox.com/scl/fi/tbjwwn1qg74r1fatfo2ja/D-natural-Blues-Wes.mp3?rlkey=3hiwy8huufisl4mebsw62ban8&st=rdxlto9t&dl=0",
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "de-blanco-y-oro::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "de-blanco-y-oro",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "de-capote::tauromagia::manolo-sanlucar",
+   "pieceId": "de-capote",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "de-madrid-al-cielo::algo-que-decir-album::el-viejin",
+   "pieceId": "de-madrid-al-cielo",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "de-muleta::tauromagia::manolo-sanlucar",
+   "pieceId": "de-muleta",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "de-una-mina-de-la-union::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "de-una-mina-de-la-union",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "dedicado-a-camaron::rosas-del-amor-album::tomatito",
+   "pieceId": "dedicado-a-camaron",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "despacito::soy-flamenco-album::tomatito",
+   "pieceId": "despacito",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "detras-del-tuyo-se-va::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "detras-del-tuyo-se-va",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
    "source": null,
    "notes": null,
    "bpm": null
@@ -26480,6 +29655,19 @@
    "bpm": null
   },
   {
+   "id": "donde-una-ermita-poner::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "donde-una-ermita-poner",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "donna-lee::art-pepper-eleven-modern-jazz-classics::art-pepper",
    "pieceId": "donna-lee",
    "albumId": "art-pepper-eleven-modern-jazz-classics",
@@ -26529,6 +29717,42 @@
    "bpm": 112
   },
   {
+   "id": "dos-toreros::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "dos-toreros",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "dulce-manantial::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "dulce-manantial",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-callejon-de-las-canteras::aguadulce-album::tomatito",
+   "pieceId": "el-callejon-de-las-canteras",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "el-chorruelo::luzia-album::paco-de-lucia",
    "pieceId": "el-chorruelo",
    "albumId": "luzia-album",
@@ -26553,9 +29777,118 @@
    "bpm": null
   },
   {
+   "id": "el-espejo-en-que-te-miras::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "el-espejo-en-que-te-miras",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-impetu::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "el-impetu",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-mandaito::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "el-mandaito",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "el-panuelo::siroco::paco-de-lucia",
    "pieceId": "el-panuelo",
    "albumId": "siroco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-regalo::soy-flamenco-album::tomatito",
+   "pieceId": "el-regalo",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-rinconcillo::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "el-rinconcillo",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-rio-de-la-vida::yerbaguena-album::pepe-habichuela",
+   "pieceId": "el-rio-de-la-vida",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-tajo::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "el-tajo",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-tempul::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "el-tempul",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-tempul::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "el-tempul",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
    "performerIds": [
     "paco-de-lucia"
    ],
@@ -26571,6 +29904,68 @@
    "performerIds": [
     "paco-de-lucia",
     "diego-el-cigala"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "el-zarandeo::gitana-soy-album::remedios-amaya",
+   "pieceId": "el-zarandeo",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "en-el-rastro::algo-que-decir-album::el-viejin",
+   "pieceId": "en-el-rastro",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "en-la-caleta::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "en-la-caleta",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "en-la-provincia-de-cadiz::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "en-la-provincia-de-cadiz",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "en-una-piedra-me-acoste::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "en-una-piedra-me-acoste",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -26651,6 +30046,55 @@
    "bpm": null
   },
   {
+   "id": "esa-noche::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "esa-noche",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "estoy-cumpliendo-condena::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "estoy-cumpliendo-condena",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "feria-del-caballo::morao-y-oro::moraito-chico",
+   "pieceId": "feria-del-caballo",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "fiesta-en-moguer::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "fiesta-en-moguer",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "filthy-mcnasty::doin-the-thing::horace-silver",
    "pieceId": "filthy-mcnasty",
    "albumId": "doin-the-thing",
@@ -26705,6 +30149,18 @@
    "albumId": "good-time-blues",
    "performerIds": [
     "benny-golson"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "flores-amargas::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "flores-amargas",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -26821,9 +30277,45 @@
    "bpm": null
   },
   {
+   "id": "generalife-bajo-la-luna::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "generalife-bajo-la-luna",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "gitana-soy::gitana-soy-album::remedios-amaya",
+   "pieceId": "gitana-soy",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "gitanos-andaluces::castro-marin-album::paco-de-lucia",
    "pieceId": "gitanos-andaluces",
    "albumId": "castro-marin-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "gitanos-trianeros::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "gitanos-trianeros",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
    "performerIds": [
     "paco-de-lucia"
    ],
@@ -26967,6 +30459,55 @@
    "bpm": null
   },
   {
+   "id": "guadameci::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "guadameci",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "guajiras-de-lucia::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "guajiras-de-lucia",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "guajiras-de-lucia::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "guajiras-de-lucia",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "hasta-la-fe-de-bautismo::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "hasta-la-fe-de-bautismo",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "have-you-met-miss-jones::chops::joe-pass+niels-henning-rsted-pedersen",
    "pieceId": "have-you-met-miss-jones",
    "albumId": "chops",
@@ -27093,6 +30634,42 @@
    "albumId": "castro-marin-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "hiere::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "hiere",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "homenaje-a-federico::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "homenaje-a-federico",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "homenaje-a-un-amigo::aguadulce-album::tomatito",
+   "pieceId": "homenaje-a-un-amigo",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -28277,6 +31854,18 @@
    "bpm": null
   },
   {
+   "id": "impetu::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "impetu",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "indiana-winter::selected-sessions-1943-1946::coleman-hawkins",
    "pieceId": "indiana-winter",
    "albumId": "selected-sessions-1943-1946",
@@ -28523,6 +32112,43 @@
    "bpm": null
   },
   {
+   "id": "jardin-de-belleza::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "jardin-de-belleza",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "jerezana::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "jerezana",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "jesus-de-nazaret::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "jesus-de-nazaret",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "jumpin-with-symphony-sid::centennial-celebration::lester-young",
    "pieceId": "jumpin-with-symphony-sid",
    "albumId": "centennial-celebration",
@@ -28583,11 +32209,48 @@
    "bpm": null
   },
   {
+   "id": "la-andan-hablando::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "la-andan-hablando",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-andonda::rosas-del-amor-album::tomatito",
+   "pieceId": "la-andonda",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "la-barrosa::siroco::paco-de-lucia",
    "pieceId": "la-barrosa",
    "albumId": "siroco",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-calle-del-olvido::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "la-calle-del-olvido",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -28607,6 +32270,127 @@
    "bpm": null
   },
   {
+   "id": "la-chanca::rosas-del-amor-album::tomatito",
+   "pieceId": "la-chanca",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-flor-de-la-canela::yerbaguena-album::pepe-habichuela",
+   "pieceId": "la-flor-de-la-canela",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-fragua::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "la-fragua",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-fuentecica::soy-flamenco-album::tomatito",
+   "pieceId": "la-fuentecica",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-leyenda-del-tiempo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "la-leyenda-del-tiempo",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-luciernaga::aguadulce-album::tomatito",
+   "pieceId": "la-luciernaga",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-mujer-con-ser-mujer::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "la-mujer-con-ser-mujer",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-primavera::aguadulce-album::tomatito",
+   "pieceId": "la-primavera",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-rosa-blanca::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "la-rosa-blanca",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-tarara::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "la-tarara",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "la-tumbona::solo-quiero-caminar-album::paco-de-lucia",
    "pieceId": "la-tumbona",
    "albumId": "solo-quiero-caminar-album",
@@ -28619,9 +32403,21 @@
    "bpm": null
   },
   {
-   "id": "la-vacilona::paseo-de-los-castanos::tomatito+george-benson",
+   "id": "la-vacilona::aguadulce-album::tomatito",
    "pieceId": "la-vacilona",
-   "albumId": "paseo-de-los-castanos",
+   "albumId": "aguadulce-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "la-vacilona::paseo-de-los-castanos-album::tomatito+george-benson",
+   "pieceId": "la-vacilona",
+   "albumId": "paseo-de-los-castanos-album",
    "performerIds": [
     "tomatito",
     "george-benson"
@@ -28649,6 +32445,67 @@
    "pieceId": "la-villa-vieja",
    "albumId": "luzia-album",
    "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "lamento-minero::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "lamento-minero",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "las-alfareras::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "las-alfareras",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "las-cuatro-lunas::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "las-cuatro-lunas",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "las-ninas-del-barrio::algo-que-decir-album::el-viejin",
+   "pieceId": "las-ninas-del-barrio",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "le-estoy-pidiendo-a-la-virgen::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "le-estoy-pidiendo-a-la-virgen",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
     "paco-de-lucia"
    ],
    "performanceKey": null,
@@ -28784,6 +32641,116 @@
    "albumId": "get-happy",
    "performerIds": [
     "ella-fitzgerald"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "limon-de-nata::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "limon-de-nata",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "llanos-del-real::almoraima-album::paco-de-lucia",
+   "pieceId": "llanos-del-real",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "llanto-a-cadiz::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "llanto-a-cadiz",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "llora-la-siguiriya::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "llora-la-siguiriya",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "lloran-al-lao-mio::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "lloran-al-lao-mio",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "llorando-gotas-de-sangre::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "llorando-gotas-de-sangre",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "llorando-me-lo-pedia::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "llorando-me-lo-pedia",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "lo-deje-pasar::gitana-soy-album::remedios-amaya",
+   "pieceId": "lo-deje-pasar",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "lo-sabes-que-te-quiero::gitana-soy-album::remedios-amaya",
+   "pieceId": "lo-sabes-que-te-quiero",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -28986,6 +32953,42 @@
    "bpm": null
   },
   {
+   "id": "macael::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "macael",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "maestranza::tauromagia::manolo-sanlucar",
+   "pieceId": "maestranza",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "maletilla::tauromagia::manolo-sanlucar",
+   "pieceId": "maletilla",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "manteca-colora::luzia-album::paco-de-lucia",
    "pieceId": "manteca-colora",
    "albumId": "luzia-album",
@@ -28998,10 +33001,72 @@
    "bpm": null
   },
   {
+   "id": "mantilla-de-feria::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "mantilla-de-feria",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "maria-de-los-dolores::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "maria-de-los-dolores",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "me-la-tienes-controla::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "me-la-tienes-controla",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "me-regale::luzia-album::paco-de-lucia",
    "pieceId": "me-regale",
    "albumId": "luzia-album",
    "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "me-voy-contigo::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "me-voy-contigo",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "me-voy-por-la-calle-abajo::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "me-voy-por-la-calle-abajo",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
     "paco-de-lucia"
    ],
    "performanceKey": null,
@@ -29072,11 +33137,84 @@
    "bpm": 129
   },
   {
+   "id": "mensaje::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "mensaje",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "mercado-persa::morao-y-oro::moraito-chico",
+   "pieceId": "mercado-persa",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "mi-inspiracion::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "mi-inspiracion",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "mi-nina-se-fue-a-la-mar::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "mi-nina-se-fue-a-la-mar",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "mi-nino-curro::siroco::paco-de-lucia",
    "pieceId": "mi-nino-curro",
    "albumId": "siroco",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "mira-lo-que-te-he-comprao::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "mira-lo-que-te-he-comprao",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "mister-benson::soy-flamenco-album::tomatito",
+   "pieceId": "mister-benson",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -29288,6 +33426,19 @@
    "bpm": null
   },
   {
+   "id": "moral::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "moral",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "more-moon::early-autumn::woody-herman",
    "pieceId": "more-moon",
    "albumId": "early-autumn",
@@ -29317,6 +33468,42 @@
    "albumId": "unheard-herd",
    "performerIds": [
     "phil-woods"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "musica-en-el-aire::morao-y-oro::moraito-chico",
+   "pieceId": "musica-en-el-aire",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "nacencia::tauromagia::manolo-sanlucar",
+   "pieceId": "nacencia",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "nana-del-caballo-grande::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "nana-del-caballo-grande",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
    ],
    "performanceKey": null,
    "source": null,
@@ -29547,6 +33734,30 @@
    "bpm": null
   },
   {
+   "id": "nostalgia-anadia::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "nostalgia-anadia",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "nota-en-el-aire::gitana-soy-album::remedios-amaya",
+   "pieceId": "nota-en-el-aire",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "now-see-how-you-are::kenny-burrell-album::kenny-burrell",
    "pieceId": "now-see-how-you-are",
    "albumId": "kenny-burrell-album",
@@ -29564,6 +33775,18 @@
    "albumId": "the-complete-savoy-dial-master-takes",
    "performerIds": [
     "charlie-parker"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ole::almoraima-album::paco-de-lucia",
+   "pieceId": "ole",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -30308,6 +34531,18 @@
    "bpm": null
   },
   {
+   "id": "oracion::tauromagia::manolo-sanlucar",
+   "pieceId": "oracion",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "ornithology::be-bop::bud-powell",
    "pieceId": "ornithology",
    "albumId": "be-bop",
@@ -30405,6 +34640,42 @@
    "bpm": null
   },
   {
+   "id": "our-spain::soy-flamenco-album::tomatito",
+   "pieceId": "our-spain",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "pa-la-pimpi::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "pa-la-pimpi",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "pa-mi-comare::gitana-soy-album::remedios-amaya",
+   "pieceId": "pa-mi-comare",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "palenque::castro-marin-album::paco-de-lucia+larry-coryell+john-mclaughlin",
    "pieceId": "palenque",
    "albumId": "castro-marin-album",
@@ -30424,6 +34695,30 @@
    "albumId": "solo-quiero-caminar-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "panaderos-flamencos::fantasia-flamenca-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "panaderos-flamencos",
+   "albumId": "fantasia-flamenca-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "paseo-de-los-castanos::paseo-de-los-castanos-album::tomatito",
+   "pieceId": "paseo-de-los-castanos",
+   "albumId": "paseo-de-los-castanos-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -30555,11 +34850,59 @@
    "bpm": null
   },
   {
+   "id": "piel-de-toro::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "piel-de-toro",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "pinonate::solo-quiero-caminar-album::paco-de-lucia",
    "pieceId": "pinonate",
    "albumId": "solo-quiero-caminar-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "playa-del-carmen::zyryab-album::paco-de-lucia",
+   "pieceId": "playa-del-carmen",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "plaza-alta::almoraima-album::paco-de-lucia",
+   "pieceId": "plaza-alta",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "plaza-de-las-sirenas::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "plaza-de-las-sirenas",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
    ],
    "performanceKey": null,
    "source": null,
@@ -30591,6 +34934,31 @@
    "bpm": null
   },
   {
+   "id": "por-la-castellana::algo-que-decir-album::el-viejin",
+   "pieceId": "por-la-castellana",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "por-mala-lengua-que-tienes::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "por-mala-lengua-que-tienes",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "prelude-to-a-kiss::ella-fitzgerald-sings-the-duke-ellington-song-book-verve-1957::ella-fitzgerald",
    "pieceId": "prelude-to-a-kiss",
    "albumId": null,
@@ -30615,9 +34983,168 @@
    "bpm": null
   },
   {
+   "id": "puente-de-los-orfebres::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "puente-de-los-orfebres",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "puente-rio-macarena-triana::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "puente-rio-macarena-triana",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "puerta-de-sevilla::rosas-del-amor-album::tomatito",
+   "pieceId": "puerta-de-sevilla",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "puerta-del-principe::tauromagia::manolo-sanlucar",
+   "pieceId": "puerta-del-principe",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "punta-umbria::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "punta-umbria",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "que-blancas-canas-te-peinas::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "que-blancas-canas-te-peinas",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "que-grande-el-castigo::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "que-grande-el-castigo",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "que-un-toro-bravo-en-su-muerte::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "que-un-toro-bravo-en-su-muerte",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "que-venga-el-alba::cositas-buenas-album::paco-de-lucia",
    "pieceId": "que-venga-el-alba",
    "albumId": "cositas-buenas-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "querido-metheny::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "querido-metheny",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "rebelde::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "rebelde",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "recuerdo-a-paco::algo-que-decir-album::el-viejin",
+   "pieceId": "recuerdo-a-paco",
+   "albumId": "algo-que-decir-album",
+   "performerIds": [
+    "el-viejin"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "recuerdo-a-patino::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "recuerdo-a-patino",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "recuerdos::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "recuerdos",
+   "albumId": "el-mundo-del-flamenco",
    "performerIds": [
     "paco-de-lucia"
    ],
@@ -30687,11 +35214,35 @@
    "bpm": null
   },
   {
+   "id": "reflexion::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "reflexion",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "relaxin-at-camarillo::the-smart-attitude-of-tommy-flanagan::tommy-flanagan",
    "pieceId": "relaxin-at-camarillo",
    "albumId": "the-smart-attitude-of-tommy-flanagan",
    "performerIds": [
     "tommy-flanagan"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "requiem::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "requiem",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
    ],
    "performanceKey": null,
    "source": null,
@@ -30909,11 +35460,83 @@
    "bpm": null
   },
   {
+   "id": "rio-ancho::almoraima-album::paco-de-lucia",
+   "pieceId": "rio-ancho",
+   "albumId": "almoraima-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "rio-de-azucar::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "rio-de-azucar",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "rio-de-la-miel::luzia-album::paco-de-lucia",
    "pieceId": "rio-de-la-miel",
    "albumId": "luzia-album",
    "performerIds": [
     "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ritmo-del-ganges::yerbaguena-album::pepe-habichuela",
+   "pieceId": "ritmo-del-ganges",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "romance-del-amargo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "romance-del-amargo",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "rompeserones::morao-y-oro::moraito-chico",
+   "pieceId": "rompeserones",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "rosas-del-amor::rosas-del-amor-album::tomatito",
+   "pieceId": "rosas-del-amor",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
    ],
    "performanceKey": null,
    "source": null,
@@ -31030,11 +35653,99 @@
    "bpm": null
   },
   {
+   "id": "se-la-llevo-dios::yerbaguena-album::pepe-habichuela",
+   "pieceId": "se-la-llevo-dios",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "se-murio-mi-madre::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "se-murio-mi-madre",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "seven-come-eleven::jazz-guitar-jim-hall::jim-hall",
    "pieceId": "seven-come-eleven",
    "albumId": "jazz-guitar-jim-hall",
    "performerIds": [
     "jim-hall"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "sevilla::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "sevilla",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "si-acaso-muero::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "si-acaso-muero",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "si-ahora-tu-no-te-arrepentias::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "si-ahora-tu-no-te-arrepentias",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "sierra-del-agua::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "sierra-del-agua",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "sin-motivos-ni-razon::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "sin-motivos-ni-razon",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -31056,6 +35767,18 @@
    "source": null,
    "notes": null,
    "bpm": 161
+  },
+  {
+   "id": "soledad::rosas-del-amor-album::tomatito",
+   "pieceId": "soledad",
+   "albumId": "rosas-del-amor-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
   },
   {
    "id": "solera::fuente-y-caudal-album::paco-de-lucia",
@@ -31107,6 +35830,31 @@
    "bpm": null
   },
   {
+   "id": "son-tus-ojos-dos-estrellas::son-tus-ojos-dos-estrellas-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "son-tus-ojos-dos-estrellas",
+   "albumId": "son-tus-ojos-dos-estrellas-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "soniquete::zyryab-album::paco-de-lucia",
+   "pieceId": "soniquete",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "sonnymoon-for-two::first-session::grant-green",
    "pieceId": "sonnymoon-for-two",
    "albumId": "first-session",
@@ -31124,6 +35872,31 @@
    "albumId": "so-much-guitar",
    "performerIds": [
     "wes-montgomery"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "soy-flamenco::soy-flamenco-album::tomatito",
+   "pieceId": "soy-flamenco",
+   "albumId": "soy-flamenco-album",
+   "performerIds": [
+    "tomatito"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "soy-grande-por-ser-gitano::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "soy-grande-por-ser-gitano",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
    ],
    "performanceKey": null,
    "source": null,
@@ -32267,6 +37040,19 @@
    "bpm": null
   },
   {
+   "id": "sube-al-enganche::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "sube-al-enganche",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "swedish-pastry::the-best-of-bill-evans::bill-evans-trio",
    "pieceId": "swedish-pastry",
    "albumId": "the-best-of-bill-evans",
@@ -32317,6 +37103,30 @@
    "bpm": null
   },
   {
+   "id": "tacita-de-plata::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "tacita-de-plata",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "taconeo-gitano::el-mundo-del-flamenco::paco-de-lucia",
+   "pieceId": "taconeo-gitano",
+   "albumId": "el-mundo-del-flamenco",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "take-the-coltrane::after-the-rain::john-mclaughlin",
    "pieceId": "take-the-coltrane",
    "albumId": "after-the-rain",
@@ -32347,6 +37157,30 @@
    "albumId": "wanton-spirit",
    "performerIds": [
     "kenny-barron"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tangos-de-la-sultana::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "tangos-de-la-sultana",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tarde-de-abril::gitana-soy-album::remedios-amaya",
+   "pieceId": "tarde-de-abril",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -32401,6 +37235,30 @@
    "performerIds": [
     "sonny-rollins-quartet",
     "john-coltrane"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tercio-de-vara::tauromagia::manolo-sanlucar",
+   "pieceId": "tercio-de-vara",
+   "albumId": "tauromagia",
+   "performerIds": [
+    "manolo-sanlucar"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "terremoto::morao-y-oro::moraito-chico",
+   "pieceId": "terremoto",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
    ],
    "performanceKey": null,
    "source": null,
@@ -32690,6 +37548,30 @@
    "bpm": null
   },
   {
+   "id": "tientos-del-candil::memoria-de-los-sentidos-album::vicente-amigo",
+   "pieceId": "tientos-del-candil",
+   "albumId": "memoria-de-los-sentidos-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tio-sabas::zyryab-album::paco-de-lucia",
+   "pieceId": "tio-sabas",
+   "albumId": "zyryab-album",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "topsy::78-rpm-single-decca-1937-pre-lp-era::count-basie",
    "pieceId": "topsy",
    "albumId": null,
@@ -32800,11 +37682,35 @@
    "bpm": 161
   },
   {
+   "id": "torre-del-viento::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "torre-del-viento",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "tranes-blues::workin-with-the-miles-davis-quintet::miles-davis-quintet",
    "pieceId": "tranes-blues",
    "albumId": "workin-with-the-miles-davis-quintet",
    "performerIds": [
     "miles-davis-quintet"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tratante-de-vara-larga::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "tratante-de-vara-larga",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
    ],
    "performanceKey": null,
    "source": null,
@@ -32822,6 +37728,31 @@
    "source": null,
    "notes": null,
    "bpm": 108
+  },
+  {
+   "id": "tu-eres-mio::gitana-soy-album::remedios-amaya",
+   "pieceId": "tu-eres-mio",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "tu-no-debes-tener-celos::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "tu-no-debes-tener-celos",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
   },
   {
    "id": "tune-up::blue-haze-prestige-1954::miles-davis",
@@ -32885,6 +37816,18 @@
    "bpm": null
   },
   {
+   "id": "turu-turai::me-voy-contigo-album::remedios-amaya",
+   "pieceId": "turu-turai",
+   "albumId": "me-voy-contigo-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "two-degrees-east-three-degrees-west::grand-encounter-pacific-jazz-1956::jim-hall",
    "pieceId": "two-degrees-east-three-degrees-west",
    "albumId": null,
@@ -32893,6 +37836,141 @@
    ],
    "performanceKey": null,
    "source": "Grand Encounter (Pacific Jazz, 1956)",
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "un-ole-a-tiempo::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "un-ole-a-tiempo",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "un-pastor-en-la-sierra::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "un-pastor-en-la-sierra",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "una-estrella-chiquitita::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "una-estrella-chiquitita",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "vas-a-conseguir-tres-cosas::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "vas-a-conseguir-tres-cosas",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ventanas-al-alma::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "ventanas-al-alma",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ventorillo-de-la-union::morao-y-oro::moraito-chico",
+   "pieceId": "ventorillo-de-la-union",
+   "albumId": "morao-y-oro",
+   "performerIds": [
+    "moraito-chico"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "viejo-mundo::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "viejo-mundo",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "viva-la-union::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
+   "pieceId": "viva-la-union",
+   "albumId": "la-fabulosa-guitarra-de-paco-de-lucia",
+   "performerIds": [
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "vivencias-imaginadas::vivencias-imaginadas-album::vicente-amigo",
+   "pieceId": "vivencias-imaginadas",
+   "albumId": "vivencias-imaginadas-album",
+   "performerIds": [
+    "vicente-amigo"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "vivencias::alcazar-de-cristal-album::rafael-riqueni",
+   "pieceId": "vivencias",
+   "albumId": "alcazar-de-cristal-album",
+   "performerIds": [
+    "rafael-riqueni"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "volando-voy::la-leyenda-del-tiempo-album::camaron-de-la-isla",
+   "pieceId": "volando-voy",
+   "albumId": "la-leyenda-del-tiempo-album",
+   "performerIds": [
+    "camaron-de-la-isla"
+   ],
+   "performanceKey": null,
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -33019,6 +38097,57 @@
    "bpm": null
   },
   {
+   "id": "y-no-llegaste-a-quererme::cada-vez-que-nos-miramos-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "y-no-llegaste-a-quererme",
+   "albumId": "cada-vez-que-nos-miramos-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "y-si-no-es-verdad::la-rosa-blanca-album::montse-cortes",
+   "pieceId": "y-si-no-es-verdad",
+   "albumId": "la-rosa-blanca-album",
+   "performerIds": [
+    "montse-cortes"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "y-tu-no-me-respondias::al-verte-las-flores-lloran-album::camaron-de-la-isla+paco-de-lucia",
+   "pieceId": "y-tu-no-me-respondias",
+   "albumId": "al-verte-las-flores-lloran-album",
+   "performerIds": [
+    "camaron-de-la-isla",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "ya-no-le-temo-a-la-muerte::los-chiquitos-de-algeciras-album::pepe-de-lucia+paco-de-lucia",
+   "pieceId": "ya-no-le-temo-a-la-muerte",
+   "albumId": "los-chiquitos-de-algeciras-album",
+   "performerIds": [
+    "pepe-de-lucia",
+    "paco-de-lucia"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "yardbird-suite::78-rpm-single-dial-1946-pre-lp-era::charlie-parker",
    "pieceId": "yardbird-suite",
    "albumId": null,
@@ -33027,6 +38156,42 @@
    ],
    "performanceKey": null,
    "source": "78 rpm single, Dial 1946 — pre-LP era",
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "yerbaguena-occidente::yerbaguena-album::pepe-habichuela",
+   "pieceId": "yerbaguena-occidente",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "yerbaguena-oriente::yerbaguena-album::pepe-habichuela",
+   "pieceId": "yerbaguena-oriente",
+   "albumId": "yerbaguena-album",
+   "performerIds": [
+    "pepe-habichuela"
+   ],
+   "performanceKey": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "zarzillos-de-coral::gitana-soy-album::remedios-amaya",
+   "pieceId": "zarzillos-de-coral",
+   "albumId": "gitana-soy-album",
+   "performerIds": [
+    "remedios-amaya"
+   ],
+   "performanceKey": null,
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -33043,1171 +38208,5 @@
    "notes": null,
    "bpm": null
   }
- ],
- "artistNames": {
-  "aaron-bell": "Aaron Bell",
-  "acoustic-jazz-quartet": "Acoustic Jazz Quartet",
-  "adam-nussbaum": "Adam Nussbaum",
-  "adam-rogers": "Adam Rogers",
-  "ahmad-jamal": "Ahmad Jamal",
-  "ahmad-jamal-trio": "Ahmad Jamal Trio",
-  "ahmed-abdul-malik": "Ahmed Abdul-Malik",
-  "aighetta-quartet": "Aighetta Quartet",
-  "airto-moreira": "Airto Moreira",
-  "ake-persson": "Åke Persson",
-  "al-aarons": "Al Aarons",
-  "al-cohn": "Al Cohn",
-  "al-foster": "Al Foster",
-  "al-haig": "Al Haig",
-  "al-harewood": "Al Harewood",
-  "al-levitt": "Al Levitt",
-  "al-lucas": "Al Lucas",
-  "alain-perez": "Alain Pérez",
-  "alan-broadbent": "Alan Broadbent",
-  "albert-casey": "Albert Casey",
-  "albert-heath": "Albert Heath",
-  "albert-richman": "Albert Richman",
-  "albert-tootie-heath": "Albert Tootie Heath",
-  "alex-acuna": "Alex Acuña",
-  "alex-brashear": "Alex Brashear",
-  "alex-norris": "Alex Norris",
-  "alex-riel": "Alex Riel",
-  "alexis-cole": "Alexis Cole",
-  "ali-jackson": "Ali Jackson",
-  "alonzo-johnson": "Alonzo Johnson",
-  "alvin-stoller": "Alvin Stoller",
-  "amilton-godoy": "Amilton Godoy",
-  "ana-vidovic": "Ana Vidović",
-  "andrew-ackers": "Andrew Ackers",
-  "andy-simpkins": "Andy Simpkins",
-  "andy-watson": "Andy Watson",
-  "angel-romero": "Ángel Romero",
-  "anita-oday": "Anita O'Day",
-  "anthony-cox": "Anthony Cox",
-  "anthony-hervey": "Anthony Hervey",
-  "anthony-newman": "Anthony Newman",
-  "anthony-ortega": "Anthony Ortega",
-  "anthony-wilson": "Anthony Wilson",
-  "antonio-carlos-jobim": "Antônio Carlos Jobim",
-  "ari-hoenig": "Ari Hoenig",
-  "ariane-salari": "Ariane Salari",
-  "aristides-rivas": "Aristides Rivas",
-  "arnold-fishkind": "Arnold Fishkind",
-  "art-blakey": "Art Blakey",
-  "art-blakey-the-jazz-messengers": "Art Blakey & The Jazz Messengers",
-  "art-davis": "Art Davis",
-  "art-farmer": "Art Farmer",
-  "art-pepper": "Art Pepper",
-  "art-ryerson": "Art Ryerson",
-  "art-tatum": "Art Tatum",
-  "art-taylor": "Art Taylor",
-  "arthur-grumiaux": "Arthur Grumiaux",
-  "arthur-harper": "Arthur Harper",
-  "artie-shaw": "Artie Shaw",
-  "astrud-gilberto": "Astrud Gilberto",
-  "aurelio-de-carolis": "Aurelio de Carolis",
-  "axel-stordahl": "Axel Stordahl",
-  "baby-dodds": "Baby Dodds",
-  "baby-face-willette": "Baby Face Willette",
-  "barbara-baines": "Barbara Baines",
-  "barney-bigard": "Barney Bigard",
-  "barney-kessel": "Barney Kessel",
-  "barney-wilen": "Barney Wilen",
-  "barrett-deems": "Barrett Deems",
-  "barry-harris": "Barry Harris",
-  "barry-harris-quintet": "Barry Harris Quintet",
-  "barry-harris-trio": "Barry Harris Trio",
-  "ben-dixon": "Ben Dixon",
-  "ben-riley": "Ben Riley",
-  "ben-tucker": "Ben Tucker",
-  "ben-webster": "Ben Webster",
-  "bengt-hallberg": "Bengt Hallberg",
-  "benjamin-jaffe": "Benjamin Jaffe",
-  "benny-aronov": "Benny Aronov",
-  "benny-bailey": "Benny Bailey",
-  "benny-barth": "Benny Barth",
-  "benny-golson": "Benny Golson",
-  "benny-goodman": "Benny Goodman",
-  "benny-goodman-sextet": "Benny Goodman Sextet",
-  "benny-goodman-trio": "Benny Goodman Trio",
-  "benny-green": "Benny Green",
-  "benny-powell": "Benny Powell",
-  "bent-axen": "Bent Axen",
-  "bette-midler": "Bette Midler",
-  "betty-carter": "Betty Carter",
-  "bill-byrne": "Bill Byrne",
-  "bill-crow": "Bill Crow",
-  "bill-dearango": "Bill DeArango",
-  "bill-evans": "Bill Evans",
-  "bill-evans-trio": "Bill Evans Trio",
-  "bill-frisell": "Bill Frisell",
-  "bill-goodwin": "Bill Goodwin",
-  "bill-hardman": "Bill Hardman",
-  "bill-perkins": "Bill Perkins",
-  "bill-potts": "Bill Potts",
-  "bill-reichenbach": "Bill Reichenbach",
-  "bill-ross": "Bill Ross",
-  "bill-stewart": "Bill Stewart",
-  "bill-takas": "Bill Takas",
-  "billie-holiday": "Billie Holiday",
-  "billy-bauer": "Billy Bauer",
-  "billy-butler": "Billy Butler",
-  "billy-butterfield": "Billy Butterfield",
-  "billy-childs": "Billy Childs",
-  "billy-cobham": "Billy Cobham",
-  "billy-hart": "Billy Hart",
-  "billy-higgins": "Billy Higgins",
-  "billy-james": "Billy James",
-  "billy-may": "Billy May",
-  "billy-strayhorn": "Billy Strayhorn",
-  "birch-johnson": "Birch Johnson",
-  "bireli-lagrene": "Biréli Lagrène",
-  "blas-cordoba-el-kejio": "Blas Cordoba (El Kejio)",
-  "blue-mitchell": "Blue Mitchell",
-  "bob-berg": "Bob Berg",
-  "bob-brookmeyer": "Bob Brookmeyer",
-  "bob-cranshaw": "Bob Cranshaw",
-  "bob-james": "Bob James",
-  "bob-mclaren": "Bob McLaren",
-  "bob-mintzer": "Bob Mintzer",
-  "bob-schwarz": "Bob Schwarz",
-  "bob-whitlock": "Bob Whitlock",
-  "bob-wills": "Bob Wills",
-  "bob-wills-his-texas-playboys": "Bob Wills & His Texas Playboys",
-  "bobby-broom": "Bobby Broom",
-  "bobby-darin": "Bobby Darin",
-  "bobby-donaldson": "Bobby Donaldson",
-  "bobby-durham": "Bobby Durham",
-  "bobby-hackett": "Bobby Hackett",
-  "bobby-hutcherson": "Bobby Hutcherson",
-  "bobby-jaspar": "Bobby Jaspar",
-  "bobby-rose": "Bobby Rose",
-  "bobby-scott": "Bobby Scott",
-  "bobby-thomas": "Bobby Thomas",
-  "bobby-timmons": "Bobby Timmons",
-  "brad-mehldau": "Brad Mehldau",
-  "brandon-lee": "Brandon Lee",
-  "branford-marsalis": "Branford Marsalis",
-  "branford-marsalis-quartet": "Branford Marsalis Quartet",
-  "brian-blade": "Brian Blade",
-  "brian-bromberg": "Brian Bromberg",
-  "britt-woodman": "Britt Woodman",
-  "bruno-nicolai": "Bruno Nicolai",
-  "buck-clayton": "Buck Clayton",
-  "bucky-pizzarelli": "Bucky Pizzarelli",
-  "bud-powell": "Bud Powell",
-  "bud-powell-trio": "Bud Powell Trio",
-  "bud-shank": "Bud Shank",
-  "buddy-bregman": "Buddy Bregman",
-  "buddy-catlett": "Buddy Catlett",
-  "buddy-collette": "Buddy Collette",
-  "buddy-defranco": "Buddy DeFranco",
-  "buddy-deppenschmidt": "Buddy Deppenschmidt",
-  "buddy-emmons": "Buddy Emmons",
-  "buddy-montgomery": "Buddy Montgomery",
-  "buddy-rich": "Buddy Rich",
-  "bunny-berigan": "Bunny Berigan",
-  "buster-cooper": "Buster Cooper",
-  "buster-williams": "Buster Williams",
-  "butch-warren": "Butch Warren",
-  "cachao-lopez": "Cachao López",
-  "cal-tjader": "Cal Tjader",
-  "cannonball-adderley": "Cannonball Adderley",
-  "carl-allen": "Carl Allen",
-  "carl-maraghi": "Carl Maraghi",
-  "carl-perkins": "Carl Perkins",
-  "carles-benavent": "Carles Benavent",
-  "carlo-pecori": "Carlo Pecori",
-  "carlos-henriquez": "Carlos Henriquez",
-  "carlos-valdes": "Carlos Valdés",
-  "carmell-jones": "Carmell Jones",
-  "carmelo-garcia": "Carmelo Garcia",
-  "carson-smith": "Carson Smith",
-  "cass-moore": "Cass Moore",
-  "cat-anderson": "Cat Anderson",
-  "catherine-russell": "Catherine Russell",
-  "cecil-payne": "Cecil Payne",
-  "cedar-walton": "Cedar Walton",
-  "cesar-mariano": "César Mariano",
-  "chano-dominguez": "Chano Domínguez",
-  "charles-ables": "Charles Ables",
-  "charles-mcpherson": "Charles McPherson",
-  "charles-mingus": "Charles Mingus",
-  "charles-pillow": "Charles Pillow",
-  "charles-thomas": "Charles Thomas",
-  "charles-turner": "Charles Turner",
-  "charles-williams": "Charles Williams",
-  "charlie-byrd": "Charlie Byrd",
-  "charlie-christian": "Charlie Christian",
-  "charlie-haden": "Charlie Haden",
-  "charlie-kennedy": "Charlie Kennedy",
-  "charlie-mariano": "Charlie Mariano",
-  "charlie-parker": "Charlie Parker",
-  "charlie-parker-and-his-orchestra": "Charlie Parker And His Orchestra",
-  "charlie-persip": "Charlie Persip",
-  "charlie-rouse": "Charlie Rouse",
-  "charlie-watts": "Charlie Watts",
-  "charnett-moffett": "Charnett Moffett",
-  "chet-baker": "Chet Baker",
-  "chick-corea": "Chick Corea",
-  "chick-corea-akoustic-band": "Chick Corea Akoustic Band",
-  "chico-de-souza": "Chico de Souza",
-  "chico-hamilton": "Chico Hamilton",
-  "chris-byars": "Chris Byars",
-  "chris-crenshaw": "Chris Crenshaw",
-  "chris-layton": "Chris Layton",
-  "chris-thile": "Chris Thile",
-  "chris-white": "Chris White",
-  "christian-garros": "Christian Garros",
-  "christian-mcbride": "Christian McBride",
-  "christian-mcbride-big-band": "Christian McBride Big Band",
-  "chucho-valdes": "Chucho Valdés",
-  "chuck-berry": "Chuck Berry",
-  "chuck-connors": "Chuck Connors",
-  "chuck-flores": "Chuck Flores",
-  "chuck-israels": "Chuck Israels",
-  "chuck-thompson": "Chuck Thompson",
-  "clare-fischer": "Clare Fischer",
-  "clarence-johnston": "Clarence Johnston",
-  "clarence-penn": "Clarence Penn",
-  "classical-jazz-quartet": "Classical Jazz Quartet",
-  "claudio-slon": "Claudio Slon",
-  "claus-ogerman": "Claus Ogerman",
-  "clayton-hamilton-jazz-orchestra": "Clayton-Hamilton Jazz Orchestra",
-  "clifford-brown": "Clifford Brown",
-  "clifford-jarvis": "Clifford Jarvis",
-  "clifford-jordan": "Clifford Jordan",
-  "coleman-hawkins": "Coleman Hawkins",
-  "colin-bailey": "Colin Bailey",
-  "colin-stranahan": "Colin Stranahan",
-  "connie-kay": "Connie Kay",
-  "conrad-gozzo": "Conrad Gozzo",
-  "conte-candoli": "Conte Candoli",
-  "cootie-williams": "Cootie Williams",
-  "corey-gordon": "Corey Gordon",
-  "count-basie": "Count Basie",
-  "count-basie-orchestra": "Count Basie Orchestra",
-  "craig-fundyga": "Craig Fundyga",
-  "craig-weinrib": "Craig Weinrib",
-  "curley-russell": "Curley Russell",
-  "curly-russell": "Curly Russell",
-  "curtis-fuller": "Curtis Fuller",
-  "curtis-lundy": "Curtis Lundy",
-  "cyrille-aimee": "Cyrille Aimée",
-  "cyrus-chestnut": "Cyrus Chestnut",
-  "dan-arcamone": "Dan Arcamone",
-  "dan-blake": "Dan Blake",
-  "dan-nimmer": "Dan Nimmer",
-  "dan-parrish": "Dan Parrish",
-  "dan-pratt": "Dan Pratt",
-  "daniel-humair": "Daniel Humair",
-  "danny-resto": "Danny Resto",
-  "danny-richmond": "Danny Richmond",
-  "dave-bailey": "Dave Bailey",
-  "dave-baker": "Dave Baker",
-  "dave-bennett": "Dave Bennett",
-  "dave-brubeck": "Dave Brubeck",
-  "dave-kennedy": "Dave Kennedy",
-  "dave-lalama": "Dave Lalama",
-  "dave-liebman": "Dave Liebman",
-  "dave-schildkraut": "Dave Schildkraut",
-  "dave-stryker": "Dave Stryker",
-  "dave-weckl": "Dave Weckl",
-  "dave-young": "Dave Young",
-  "david-bowler": "David Bowler",
-  "david-grisman": "David Grisman",
-  "david-kikoski": "David Kikoski",
-  "david-russell": "David Russell",
-  "david-sanborn": "David Sanborn",
-  "david-williams": "David Williams",
-  "david-wong": "David Wong",
-  "dean-mckinney": "Dean McKinney",
-  "denis-charles": "Denis Charles",
-  "dennis-carroll": "Dennis Carroll",
-  "dennis-chambers": "Dennis Chambers",
-  "dennis-irwin": "Dennis Irwin",
-  "derek-trucks": "Derek Trucks",
-  "dexter-gordon": "Dexter Gordon",
-  "diana-krall": "Diana Krall",
-  "dianne-reeves": "Dianne Reeves",
-  "dicky-wells": "Dicky Wells",
-  "diego-el-cigala": "Diego El Cigala",
-  "diego-figueiredo": "Diego Figueiredo",
-  "dinah-washington": "Dinah Washington",
-  "dizzy-gillespie": "Dizzy Gillespie",
-  "dizzy-reece": "Dizzy Reece",
-  "django-reinhardt": "Django Reinhardt",
-  "dmitry-baevsky": "Dmitry Baevsky",
-  "doc-west": "Doc West",
-  "don-alias": "Don Alias",
-  "don-costa": "Don Costa",
-  "don-ellis": "Don Ellis",
-  "don-ewell": "Don Ewell",
-  "don-fagerquist": "Don Fagerquist",
-  "don-grolnick": "Don Grolnick",
-  "don-grusin": "Don Grusin",
-  "don-patterson": "Don Patterson",
-  "don-sebesky": "Don Sebesky",
-  "don-thompson": "Don Thompson",
-  "donald-bailey": "Donald Bailey",
-  "donald-byrd": "Donald Byrd",
-  "donald-hunsberger": "Donald Hunsberger",
-  "doris-day": "Doris Day",
-  "doug-sides": "Doug Sides",
-  "doug-watkins": "Doug Watkins",
-  "douglas-purviance": "Douglas Purviance",
-  "dr-john": "Dr. John",
-  "dr-michael-white": "Dr. Michael White",
-  "duke-ellington": "Duke Ellington",
-  "duke-jordan": "Duke Jordan",
-  "duke-pearson": "Duke Pearson",
-  "duquende": "Duquende",
-  "dylan-day": "Dylan Day",
-  "eberhard-weber": "Eberhard Weber",
-  "ed-bickert": "Ed Bickert",
-  "ed-howard": "Ed Howard",
-  "ed-thigpen": "Ed Thigpen",
-  "eddie-bert": "Eddie Bert",
-  "eddie-calhoun": "Eddie Calhoun",
-  "eddie-costa": "Eddie Costa",
-  "eddie-daniels": "Eddie Daniels",
-  "eddie-gomez": "Eddie Gómez",
-  "eddie-green": "Eddie Green",
-  "eddie-henderson": "Eddie Henderson",
-  "eddie-higgins": "Eddie Higgins",
-  "eddie-higgins-trio": "Eddie Higgins Trio",
-  "eddie-jones": "Eddie Jones",
-  "eddie-locke": "Eddie Locke",
-  "eddie-mcfadden": "Eddie McFadden",
-  "eddie-sauter": "Eddie Sauter",
-  "eddie-south": "Eddie South",
-  "edison-machado": "Edison Machado",
-  "edita-gruberova": "Edita Gruberová",
-  "edmund-quint-johnson": "Edmund Quint Johnson",
-  "eli-marie-helgeland-davidsen": "Eli-Marie Helgeland Davidsen",
-  "eliane-elias": "Eliane Elias",
-  "elias-frederico": "Elias Frederico",
-  "eliot-zigmund": "Eliot Zigmund",
-  "elis-regina": "Elis Regina",
-  "ella-fitzgerald": "Ella Fitzgerald",
-  "elliot-mason": "Elliot Mason",
-  "elvin-jones": "Elvin Jones",
-  "emily-remler": "Emily Remler",
-  "emmet-cohen": "Emmet Cohen",
-  "enrico-pieranunzi": "Enrico Pieranunzi",
-  "eric-dolphy": "Eric Dolphy",
-  "eric-kloss": "Eric Kloss",
-  "eric-owens": "Eric Owens",
-  "eric-reed": "Eric Reed",
-  "eric-reed-trio": "Eric Reed Trio",
-  "eric-revis": "Eric Revis",
-  "erik-moseholm": "Erik Moseholm",
-  "erik-nordstrom-or-bjarne-nerem": "Erik Nordström or Bjarne Nerem",
-  "ernest-mccarty": "Ernest McCarty",
-  "ernie-farrow": "Ernie Farrow",
-  "ernie-henry": "Ernie Henry",
-  "ernie-shepard": "Ernie Shepard",
-  "ernie-wilkins": "Ernie Wilkins",
-  "erroll-garner": "Erroll Garner",
-  "esa-pekka-salonen": "Esa-Pekka Salonen",
-  "esperanza-spalding": "Esperanza Spalding",
-  "etta-james": "Etta James",
-  "eugene-wright": "Eugene Wright",
-  "evelyn-mckinney": "Evelyn McKinney",
-  "fats-navarro": "Fats Navarro",
-  "fats-waller": "Fats Waller",
-  "fiorenzo-carpi": "Fiorenzo Carpi",
-  "flora-purim": "Flora Purim",
-  "francesco-lo-castro": "Francesco Lo Castro",
-  "franco-ambrosetti": "Franco Ambrosetti",
-  "francy-boland": "Francy Boland",
-  "frank-adams": "Frank Adams",
-  "frank-brown": "Frank Brown",
-  "frank-butler": "Frank Butler",
-  "frank-capp": "Frank Capp",
-  "frank-de-vol": "Frank de Vol",
-  "frank-demond": "Frank Demond",
-  "frank-flynn": "Frank Flynn",
-  "frank-foster": "Frank Foster",
-  "frank-gant": "Frank Gant",
-  "frank-greene": "Frank Greene",
-  "frank-isola": "Frank Isola",
-  "frank-morgan": "Frank Morgan",
-  "frank-sinatra": "Frank Sinatra",
-  "frank-strozier": "Frank Strozier",
-  "frank-tiberi": "Frank Tiberi",
-  "frank-wess": "Frank Wess",
-  "frankie-dunlop": "Frankie Dunlop",
-  "fred-guy": "Fred Guy",
-  "fred-katz": "Fred Katz",
-  "freddie-green": "Freddie Green",
-  "freddie-hendrix": "Freddie Hendrix",
-  "freddie-hubbard": "Freddie Hubbard",
-  "fumio-watanabe": "Fumio Watanabe",
-  "gal-costa": "Gal Costa",
-  "garnett-brown": "Garnett Brown",
-  "gary-burton": "Gary Burton",
-  "gary-mcfarland": "Gary McFarland",
-  "gary-peacock": "Gary Peacock",
-  "gary-smith": "Gary Smith",
-  "gary-smulyan": "Gary Smulyan",
-  "gene-ammons": "Gene Ammons",
-  "gene-byrd": "Gene Byrd",
-  "gene-cherico": "Gene Cherico",
-  "gene-harris": "Gene Harris",
-  "gene-krupa": "Gene Krupa",
-  "gene-sedric": "Gene Sedric",
-  "geoff-keezer": "Geoff Keezer",
-  "george-benson": "George Benson",
-  "george-coleman": "George Coleman",
-  "george-duvivier": "George Duvivier",
-  "george-hughes": "George Hughes",
-  "george-morrow": "George Morrow",
-  "george-mraz": "George Mraz",
-  "george-russell": "George Russell",
-  "george-shearing": "George Shearing",
-  "george-tucker": "George Tucker",
-  "george-van-eps": "George Van Eps",
-  "georges-arvanitas": "Georges Arvanitas",
-  "georgie-auld": "Georgie Auld",
-  "gerald-wilson": "Gerald Wilson",
-  "gerry-mulligan": "Gerry Mulligan",
-  "gerry-mulligan-quartet": "Gerry Mulligan Quartet",
-  "gianni-safred": "Gianni Safred",
-  "gidon-kremer": "Gidon Kremer",
-  "gil-evans": "Gil Evans",
-  "gil-goldstein": "Gil Goldstein",
-  "gilad-hekselman": "Gilad Hekselman",
-  "gilbert-rovere": "Gilbert Rovere",
-  "glenn-drewes": "Glenn Drewes",
-  "gonzalo-rubalcaba": "Gonzalo Rubalcaba",
-  "goran-sollscher": "Göran Söllscher",
-  "gordon-jenkins": "Gordon Jenkins",
-  "grachan-moncur-iii": "Grachan Moncur III",
-  "grady-tate": "Grady Tate",
-  "graham-harvey": "Graham Harvey",
-  "grant-green": "Grant Green",
-  "greg-gisbert": "Greg Gisbert",
-  "greg-hutchinson": "Greg Hutchinson",
-  "greg-osby": "Greg Osby",
-  "gretchen-parlato": "Gretchen Parlato",
-  "guadiana": "Guadiana",
-  "gunnar-johnson": "Gunnar Johnson",
-  "guy-pedersen": "Guy Pedersen",
-  "hampton-hawes": "Hampton Hawes",
-  "hank-garland": "Hank Garland",
-  "hank-jones": "Hank Jones",
-  "hank-jones-trio": "Hank Jones Trio",
-  "hank-mobley": "Hank Mobley",
-  "harold-danko": "Harold Danko",
-  "harold-jones": "Harold Jones",
-  "harold-land": "Harold Land",
-  "harold-mabern": "Harold Mabern",
-  "harold-west": "Harold West",
-  "harry-carney": "Harry Carney",
-  "harry-dial": "Harry Dial",
-  "harry-edison": "Harry Edison",
-  "harry-james": "Harry James",
-  "hector-costita": "Hector Costita",
-  "helmut-schartlmuller": "Helmut Schartlmüller",
-  "henry-coker": "Henry Coker",
-  "henry-grimes": "Henry Grimes",
-  "henry-hall": "Henry Hall",
-  "henryk-szeryng": "Henryk Szeryng",
-  "herb-ellis": "Herb Ellis",
-  "herb-geller": "Herb Geller",
-  "herb-remington": "Herb Remington",
-  "herbie-hancock": "Herbie Hancock",
-  "herbie-lewis": "Herbie Lewis",
-  "herbie-mann": "Herbie Mann",
-  "herman-autrey": "Herman Autrey",
-  "herman-wright": "Herman Wright",
-  "herve-sellin": "Hervé Sellin",
-  "hilary-hahn": "Hilary Hahn",
-  "hiromi": "Hiromi",
-  "hopkinson-smith": "Hopkinson Smith",
-  "horace-silver": "Horace Silver",
-  "houston-person": "Houston Person",
-  "howard-alden": "Howard Alden",
-  "howard-gaul": "Howard Gaul",
-  "howard-johnson": "Howard Johnson",
-  "howard-roberts": "Howard Roberts",
-  "hubert-laws": "Hubert Laws",
-  "hugh-lawson": "Hugh Lawson",
-  "i-pommeriggi-musicali-di-milano": "I Pommeriggi Musicali di Milano",
-  "ike-isaacs": "Ike Isaacs",
-  "illinois-jacquet": "Illinois Jacquet",
-  "isabelle-faust": "Isabelle Faust",
-  "israel-crosby": "Israel Crosby",
-  "israel-suarez-el-pirana": "Israel Suarez (El Piraña)",
-  "itzhak-perlman": "Itzhak Perlman",
-  "jack-dejohnette": "Jack DeJohnette",
-  "jack-marshall": "Jack Marshall",
-  "jack-sewing": "Jack Sewing",
-  "jack-sheldon": "Jack Sheldon",
-  "jack-teagarden": "Jack Teagarden",
-  "jackie-mclean": "Jackie McLean",
-  "jaco-pastorius": "Jaco Pastorius",
-  "jacques-loussier": "Jacques Loussier",
-  "jacques-loussier-trio": "Jacques Loussier Trio",
-  "james-burton": "James Burton",
-  "james-burton-iii": "James Burton III",
-  "james-cammack": "James Cammack",
-  "james-moody": "James Moody",
-  "james-spaulding": "James Spaulding",
-  "james-thompson": "James Thompson",
-  "jan-johansson": "Jan Johansson",
-  "jane-hall": "Jane Hall",
-  "janis-hansen": "Janis Hansen",
-  "jared-gold": "Jared Gold",
-  "jason-jackson": "Jason Jackson",
-  "jason-vieaux": "Jason Vieaux",
-  "jay-andersen": "Jay Andersen",
-  "jay-brandford": "Jay Brandford",
-  "jay-leonhart": "Jay Leonhart",
-  "jazz-at-lincoln-center-orchestra": "Jazz at Lincoln Center Orchestra",
-  "jc-heard": "J.C. Heard",
-  "jean-michel-pilc": "Jean-Michel Pilc",
-  "jeb-patton": "Jeb Patton",
-  "jeff-clayton": "Jeff Clayton",
-  "jeff-hamilton": "Jeff Hamilton",
-  "jeff-morton": "Jeff Morton",
-  "jeff-rupert": "Jeff Rupert",
-  "jeff-t-bone-gerard": "Jeff T-Bone Gerard",
-  "jeff-tain-watts": "Jeff Tain Watts",
-  "jeff-watts": "Jeff Watts",
-  "jeremy-brown": "Jeremy Brown",
-  "jerome-richardson": "Jerome Richardson",
-  "jerry-dodgion": "Jerry Dodgion",
-  "jess-stacy": "Jess Stacy",
-  "jesse-van-ruller": "Jesse Van Ruller",
-  "jim-atlas": "Jim Atlas",
-  "jim-hall": "Jim Hall",
-  "jim-hughart": "Jim Hughart",
-  "jim-lucht": "Jim Lucht",
-  "jim-powell": "Jim Powell",
-  "jim-tomlinson": "Jim Tomlinson",
-  "jimmie-smith": "Jimmie Smith",
-  "jimmie-vaughan": "Jimmie Vaughan",
-  "jimmy-blanton": "Jimmy Blanton",
-  "jimmy-bruno": "Jimmy Bruno",
-  "jimmy-campbell": "Jimmy Campbell",
-  "jimmy-carroll": "Jimmy Carroll",
-  "jimmy-cleveland": "Jimmy Cleveland",
-  "jimmy-cobb": "Jimmy Cobb",
-  "jimmy-dorsey": "Jimmy Dorsey",
-  "jimmy-dorsey-his-orchestra": "Jimmy Dorsey & His Orchestra",
-  "jimmy-forrest": "Jimmy Forrest",
-  "jimmy-garrison": "Jimmy Garrison",
-  "jimmy-giuffre": "Jimmy Giuffre",
-  "jimmy-hamilton": "Jimmy Hamilton",
-  "jimmy-heath": "Jimmy Heath",
-  "jimmy-jones": "Jimmy Jones",
-  "jimmy-owens": "Jimmy Owens",
-  "jimmy-raney": "Jimmy Raney",
-  "jimmy-rosenberg": "Jimmy Rosenberg",
-  "jimmy-rosenberg-trio": "Jimmy Rosenberg Trio",
-  "jimmy-smith": "Jimmy Smith",
-  "jimmy-woode": "Jimmy Woode",
-  "jj-johnson": "J.J. Johnson",
-  "jo-jones": "Jo Jones",
-  "joachim-schoenecker": "Joachim Schoenecker",
-  "joan-albert-amargos": "Joan Albert Amargós",
-  "joao-gilberto": "João Gilberto",
-  "joao-palma": "João Palma",
-  "joe-ascione": "Joe Ascione",
-  "joe-benjamin": "Joe Benjamin",
-  "joe-bradley": "Joe Bradley",
-  "joe-chambers": "Joe Chambers",
-  "joe-cocuzzo": "Joe Cocuzzo",
-  "joe-comfort": "Joe Comfort",
-  "joe-coughlin": "Joe Coughlin",
-  "joe-farrell": "Joe Farrell",
-  "joe-harnell": "Joe Harnell",
-  "joe-henderson": "Joe Henderson",
-  "joe-henderson-sextet": "Joe Henderson Sextet",
-  "joe-holley": "Joe Holley",
-  "joe-hunt": "Joe Hunt",
-  "joe-jackson": "Joe Jackson",
-  "joe-lastie": "Joe Lastie",
-  "joe-lipman": "Joe Lipman",
-  "joe-lovano": "Joe Lovano",
-  "joe-mondragon": "Joe Mondragon",
-  "joe-morello": "Joe Morello",
-  "joe-newman": "Joe Newman",
-  "joe-pass": "Joe Pass",
-  "joe-temperley": "Joe Temperley",
-  "joe-villa": "Joe Villa",
-  "joe-williams": "Joe Williams",
-  "joe-zawinul": "Joe Zawinul",
-  "joel-rosenblatt": "Joel Rosenblatt",
-  "joey-baron": "Joey Baron",
-  "joey-calderazzo": "Joey Calderazzo",
-  "joey-de-leon": "Joey De Leon",
-  "joey-defrancesco": "Joey DeFrancesco",
-  "johannes-weidenmueller": "Johannes Weidenmueller",
-  "john-abercrombie": "John Abercrombie",
-  "john-b-williams": "John B. Williams",
-  "john-basile": "John Basile",
-  "john-beal": "John Beal",
-  "john-clayton": "John Clayton",
-  "john-coltrane": "John Coltrane",
-  "john-coltrane-quartet": "John Coltrane Quartet",
-  "john-gilmore": "John Gilmore",
-  "john-guerin": "John Guerin",
-  "john-hicks": "John Hicks",
-  "john-hilliard": "John Hilliard",
-  "john-lewis": "John Lewis",
-  "john-mclaughlin": "John McLaughlin",
-  "john-nelson": "John Nelson",
-  "john-ore": "John Ore",
-  "john-patitucci": "John Patitucci",
-  "john-pisano": "John Pisano",
-  "john-pizzarelli": "John Pizzarelli",
-  "john-poole": "John Poole",
-  "john-riley": "John Riley",
-  "john-scofield": "John Scofield",
-  "john-simmons": "John Simmons",
-  "john-stowell": "John Stowell",
-  "john-thomas": "John Thomas",
-  "john-williams": "John Williams",
-  "johnny-coles": "Johnny Coles",
-  "johnny-cuviello": "Johnny Cuviello",
-  "johnny-dodds": "Johnny Dodds",
-  "johnny-griffin": "Johnny Griffin",
-  "johnny-hodges": "Johnny Hodges",
-  "johnny-lewis": "Johnny Lewis",
-  "johnny-lewis-quartet": "Johnny Lewis Quartet",
-  "johnny-miller": "Johnny Miller",
-  "johnny-rae": "Johnny Rae",
-  "johnny-rosenberg": "Johnny Rosenberg",
-  "johnny-st-cyr": "Johnny St. Cyr",
-  "johnny-vidacovich": "Johnny Vidacovich",
-  "jon-faddis": "Jon Faddis",
-  "jon-owens": "Jon Owens",
-  "jonathan-kreisberg": "Jonathan Kreisberg",
-  "jorge-pardo": "Jorge Pardo",
-  "jorge-roeder": "Jorge Roeder",
-  "jorge-rossy": "Jorge Rossy",
-  "jose-mangual": "José Mangual",
-  "jose-maria-bandera": "Jose Maria Bandera",
-  "josemi-carmona": "Josemi Carmona",
-  "joseph-reinhardt": "Joseph Reinhardt",
-  "josh-mercado": "Josh Mercado",
-  "joshua-redman": "Joshua Redman",
-  "jrn-elniff": "Jørn Elniff",
-  "juampy-juarez": "Juampy Juarez",
-  "juan-ramirez": "Juan Ramírez",
-  "judith-lynn-stillman": "Judith Lynn Stillman",
-  "judy-garland": "Judy Garland",
-  "julian-bream": "Julian Bream",
-  "julian-lage": "Julian Lage",
-  "julian-lage-group": "Julian Lage Group",
-  "juliano-vidal": "Juliano Vidal",
-  "juliano-vidal-band": "Juliano Vidal Band",
-  "julie-london": "Julie London",
-  "justin-gordon": "Justin Gordon",
-  "kai-winding": "Kai Winding",
-  "kansas-fields": "Kansas Fields",
-  "kathleen-battle": "Kathleen Battle",
-  "kazuhito-yamashita": "Kazuhito Yamashita",
-  "keely-smith": "Keely Smith",
-  "keith-jarrett": "Keith Jarrett",
-  "kelly-martin": "Kelly Martin",
-  "kendric-mccallister": "Kendric McCallister",
-  "kenneth-drake": "Kenneth Drake",
-  "kenny-barron": "Kenny Barron",
-  "kenny-barron-trio": "Kenny Barron Trio",
-  "kenny-burrell": "Kenny Burrell",
-  "kenny-clare": "Kenny Clare",
-  "kenny-clarke": "Kenny Clarke",
-  "kenny-dorham": "Kenny Dorham",
-  "kenny-drew": "Kenny Drew",
-  "kenny-garrett": "Kenny Garrett",
-  "kenny-garrett-quintet": "Kenny Garrett Quintet",
-  "kenny-kirkland": "Kenny Kirkland",
-  "kenny-napper": "Kenny Napper",
-  "kenny-pancho-hagood": "Kenny Pancho Hagood",
-  "kenny-washington": "Kenny Washington",
-  "keter-betts": "Keter Betts",
-  "kevin-george": "Kevin George",
-  "kevin-hays": "Kevin Hays",
-  "kid-ory": "Kid Ory",
-  "kieran-overs": "Kieran Overs",
-  "kirk-macdonald": "Kirk MacDonald",
-  "kirk-stuart": "Kirk Stuart",
-  "knobby-totah": "Knobby Totah",
-  "kobie-watkins": "Kobie Watkins",
-  "kofi-burbridge": "Kofi Burbridge",
-  "konrad-paszkudzki": "Konrad Paszkudzki",
-  "kunimitsu-inaba": "Kunimitsu Inaba",
-  "kyle-poole": "Kyle Poole",
-  "lalo-schifrin": "Lalo Schifrin",
-  "lani-hall": "Lani Hall",
-  "lara-louise": "Lara Louise",
-  "larry-bunker": "Larry Bunker",
-  "larry-coryell": "Larry Coryell",
-  "larry-gales": "Larry Gales",
-  "larry-grenadier": "Larry Grenadier",
-  "larry-shunk": "Larry Shunk",
-  "larry-young": "Larry Young",
-  "lars-gullin": "Lars Gullin",
-  "lars-jansson": "Lars Jansson",
-  "lars-sjosten": "Lars Sjösten",
-  "laurent-cugny": "Laurent Cugny",
-  "laurindo-almeida": "Laurindo Almeida",
-  "laverne-andrews": "LaVerne Andrews",
-  "lawrence-brown": "Lawrence Brown",
-  "lawrence-marable": "Lawrence Marable",
-  "lee-konitz": "Lee Konitz",
-  "lee-morgan": "Lee Morgan",
-  "lennie-tristano": "Lennie Tristano",
-  "leo-genovese": "Leo Genovese",
-  "leo-wright": "Leo Wright",
-  "leroy-vinnegar": "Leroy Vinnegar",
-  "leroy-williams": "Leroy Williams",
-  "les-paul": "Les Paul",
-  "les-spann": "Les Spann",
-  "lester-barnard": "Lester Barnard",
-  "lester-junior-barnard": "Lester Junior Barnard",
-  "lester-young": "Lester Young",
-  "lewis-nash": "Lewis Nash",
-  "lex-humphries": "Lex Humphries",
-  "lil-hardin-armstrong": "Lil Hardin Armstrong",
-  "lionel-hampton": "Lionel Hampton",
-  "lloyd-davis": "Lloyd Davis",
-  "lonnie-hewitt": "Lonnie Hewitt",
-  "lonnie-hillyer": "Lonnie Hillyer",
-  "lorne-lofsky": "Lorne Lofsky",
-  "lou-donaldson": "Lou Donaldson",
-  "lou-levy": "Lou Levy",
-  "louie-bellson": "Louie Bellson",
-  "louis-armstrong": "Louis Armstrong",
-  "louis-hayes": "Louis Hayes",
-  "louis-jordan": "Louis Jordan",
-  "louis-prima": "Louis Prima",
-  "louis-tierney": "Louis Tierney",
-  "louis-vola": "Louis Vola",
-  "luis-bacalov": "Luis Bacalov",
-  "luis-chaves": "Luís Chaves",
-  "luis-dulzaides": "Luis Dulzaides",
-  "luizao-maia": "Luizão Maia",
-  "luke-wills": "Luke Wills",
-  "luther-hughes": "Luther Hughes",
-  "major-holley": "Major Holley",
-  "makoto-ozone": "Makoto Ozone",
-  "mal-waldron": "Mal Waldron",
-  "malcolm-arnold": "Malcolm Arnold",
-  "malcolm-cecil": "Malcolm Cecil",
-  "manny-klein": "Manny Klein",
-  "manolo-sanlucar": "Manolo Sanlúcar",
-  "manuel-barrueco": "Manuel Barrueco",
-  "marc-fosset": "Marc Fosset",
-  "marc-johnson": "Marc Johnson",
-  "marcin-dylla": "Marcin Dylla",
-  "marcus-printup": "Marcus Printup",
-  "marcus-roberts": "Marcus Roberts",
-  "mario-rossy": "Mario Rossy",
-  "mark-eisenman": "Mark Eisenman",
-  "mark-taylor": "Mark Taylor",
-  "mark-whitfield": "Mark Whitfield",
-  "marshall-royal": "Marshall Royal",
-  "martin-taylor": "Martin Taylor",
-  "marty-banks": "Marty Banks",
-  "marty-melanson": "Marty Melanson",
-  "marty-morell": "Marty Morell",
-  "marty-paich": "Marty Paich",
-  "mary-ford": "Mary Ford",
-  "mary-stallings": "Mary Stallings",
-  "massimo-farao": "Massimo Faraò",
-  "massimo-farao-trio": "Massimo Faraò Trio",
-  "matt-home": "Matt Home",
-  "matt-perrine": "Matt Perrine",
-  "maurilio": "Maurilio",
-  "max-roach": "Max Roach",
-  "max-roach-quintet": "Max Roach Quintet",
-  "maxene-andrews": "Maxene Andrews",
-  "mcclenty-hunter": "McClenty Hunter",
-  "mccoy-tyner": "McCoy Tyner",
-  "mccoy-tyner-trio": "McCoy Tyner Trio",
-  "med-flory": "Med Flory",
-  "meirelles": "Meirelles",
-  "mel-lewis": "Mel Lewis",
-  "melba-liston": "Melba Liston",
-  "michael-brecker": "Michael Brecker",
-  "michael-dease": "Michael Dease",
-  "michael-formanek": "Michael Formanek",
-  "michael-weiss": "Michael Weiss",
-  "michel-camilo": "Michel Camilo",
-  "mickey-roker": "Mickey Roker",
-  "mickey-tucker": "Mickey Tucker",
-  "mickey-turner": "Mickey Turner",
-  "mik-zander": "Mik Zander",
-  "mike-collier": "Mike Collier",
-  "mike-karn": "Mike Karn",
-  "mike-lawrence": "Mike Lawrence",
-  "mike-stern": "Mike Stern",
-  "miles-davis": "Miles Davis",
-  "miles-davis-quintet": "Miles Davis Quintet",
-  "millard-kelso": "Millard Kelso",
-  "milt-bernhart": "Milt Bernhart",
-  "milt-buckner": "Milt Buckner",
-  "milt-hinton": "Milt Hinton",
-  "milt-jackson": "Milt Jackson",
-  "milton-banana": "Milton Banana",
-  "milton-nascimento": "Milton Nascimento",
-  "miroslav-vitous": "Miroslav Vitous",
-  "mitch-fine": "Mitch Fine",
-  "mitch-miller": "Mitch Miller",
-  "miucha": "Miúcha",
-  "modern-jazz-quartet": "Modern Jazz Quartet",
-  "mongo-santamaria": "Mongo Santamaría",
-  "monk-montgomery": "Monk Montgomery",
-  "monty-alexander": "Monty Alexander",
-  "monty-budwig": "Monty Budwig",
-  "morris-lang": "Morris Lang",
-  "mozes-rosenberg": "Mozes Rosenberg",
-  "muggsy-spanier": "Muggsy Spanier",
-  "mulgrew-miller": "Mulgrew Miller",
-  "nabate-isles": "Nabate Isles",
-  "nancy-wilson": "Nancy Wilson",
-  "narvin-kimball": "Narvin Kimball",
-  "nat-adderley": "Nat Adderley",
-  "nat-king-cole": "Nat King Cole",
-  "nat-king-cole-trio": "Nat King Cole Trio",
-  "nathan-milstein": "Nathan Milstein",
-  "nathaniel-young": "Nathaniel Young",
-  "neal-hefti": "Neal Hefti",
-  "neal-reid": "Neal Reid",
-  "nels-cline": "Nels Cline",
-  "nelson-boyd": "Nelson Boyd",
-  "nelson-hinds": "Nelson Hinds",
-  "nelson-riddle": "Nelson Riddle",
-  "nicholas-payton": "Nicholas Payton",
-  "nick-robbins": "Nick Robbins",
-  "niels-henning-rsted-pedersen": "Niels-Henning Ørsted Pedersen",
-  "nigel-north": "Nigel North",
-  "nina-simone": "Nina Simone",
-  "noah-charles": "Noah Charles",
-  "nonnie-rosenberg": "Nonnie Rosenberg",
-  "norbert-domling": "Norbert Dömling",
-  "norm-miller": "Norm Miller",
-  "nousche-rosenberg": "Nous'che Rosenberg",
-  "octavio-bailly-jr": "Octavio Bailly, Jr.",
-  "oliver-nelson": "Oliver Nelson",
-  "orlando-le-fleming": "Orlando Le Fleming",
-  "ornette-coleman": "Ornette Coleman",
-  "oscar-castro-neves": "Oscar Castro-Neves",
-  "oscar-moore": "Oscar Moore",
-  "oscar-peterson": "Oscar Peterson",
-  "oscar-peterson-trio": "Oscar Peterson Trio",
-  "oscar-pettiford": "Oscar Pettiford",
-  "osie-johnson": "Osie Johnson",
-  "oz-noy": "Oz Noy",
-  "paco-de-lucia": "Paco de Lucía",
-  "pasquale-grasso": "Pasquale Grasso",
-  "pat-martino": "Pat Martino",
-  "pat-metheny": "Pat Metheny",
-  "patty-andrews": "Patty Andrews",
-  "paul-baines": "Paul Baines",
-  "paul-bley": "Paul Bley",
-  "paul-chambers": "Paul Chambers",
-  "paul-desmond": "Paul Desmond",
-  "paul-galbraith": "Paul Galbraith",
-  "paul-gonsalves": "Paul Gonsalves",
-  "paul-humphrey": "Paul Humphrey",
-  "paul-motian": "Paul Motian",
-  "paul-parker": "Paul Parker",
-  "paul-smith": "Paul Smith",
-  "paul-svanberg": "Paul Svanberg",
-  "paul-van-wormer": "Paul Van Wormer",
-  "paulinho-braga": "Paulinho Braga",
-  "paulinho-da-costa": "Paulinho da Costa",
-  "paulo-moura": "Paulo Moura",
-  "payton-crossley": "Payton Crossley",
-  "peanuts-hucko": "Peanuts Hucko",
-  "peck-morrison": "Peck Morrison",
-  "pedro-paulo": "Pedro Paulo",
-  "peggy-lee": "Peggy Lee",
-  "pelle-hulten": "Pelle Hultén",
-  "pepe-de-lucia": "Pepe de Lucía",
-  "pepe-romero": "Pepe Romero",
-  "pepper-adams": "Pepper Adams",
-  "percy-heath": "Percy Heath",
-  "pete-briggs": "Pete Briggs",
-  "pete-candoli": "Pete Candoli",
-  "pete-la-roca": "Pete La Roca",
-  "pete-van-nostrand": "Pete Van Nostrand",
-  "peter-bernstein": "Peter Bernstein",
-  "peter-erskine": "Peter Erskine",
-  "peter-ind": "Peter Ind",
-  "peter-martin": "Peter Martin",
-  "phil-harper": "Phil Harper",
-  "phil-markowitz": "Phil Markowitz",
-  "phil-sunkel": "Phil Sunkel",
-  "phil-woods": "Phil Woods",
-  "philip-catherine": "Philip Catherine",
-  "philippe-combelle": "Philippe Combelle",
-  "philly-joe-jones": "Philly Joe Jones",
-  "pierre-michelot": "Pierre Michelot",
-  "plas-johnson": "Plas Johnson",
-  "poncho-sanchez": "Poncho Sanchez",
-  "preservation-hall-jazz-band": "Preservation Hall Jazz Band",
-  "quincy-jones": "Quincy Jones",
-  "quincy-phillips": "Quincy Phillips",
-  "quintette-du-hot-club-de-france": "Quintette du Hot Club de France",
-  "rachel-podger": "Rachel Podger",
-  "rahsaan-roland-kirk": "Rahsaan Roland Kirk",
-  "ralph-lalama": "Ralph Lalama",
-  "ralph-pena": "Ralph Peña",
-  "ralph-towner": "Ralph Towner",
-  "ramon-banda": "Ramon Banda",
-  "ramon-de-algeciras": "Ramón de Algeciras",
-  "randy-brecker": "Randy Brecker",
-  "ray-barretto": "Ray Barretto",
-  "ray-brown": "Ray Brown",
-  "ray-brown-trio": "Ray Brown Trio",
-  "ray-bryant": "Ray Bryant",
-  "ray-crawford": "Ray Crawford",
-  "ray-drummond": "Ray Drummond",
-  "ray-ellis": "Ray Ellis",
-  "ray-leatherwood": "Ray Leatherwood",
-  "ray-lucas": "Ray Lucas",
-  "ray-marchica": "Ray Marchica",
-  "ray-nance": "Ray Nance",
-  "ray-price": "Ray Price",
-  "raymond-leppard": "Raymond Leppard",
-  "red-garland": "Red Garland",
-  "red-mitchell": "Red Mitchell",
-  "red-norvo": "Red Norvo",
-  "red-norvo-trio": "Red Norvo Trio",
-  "red-rodney": "Red Rodney",
-  "reese-wynans": "Reese Wynans",
-  "reggie-johnson": "Reggie Johnson",
-  "reggie-workman": "Reggie Workman",
-  "reginald-veal": "Reginald Veal",
-  "regino-sainz-de-la-maza": "Regino Sáinz de la Maza",
-  "rein-de-graaf": "Rein de Graaf",
-  "renato-rivolta": "Renato Rivolta",
-  "renaud-capucon": "Renaud Capuçon",
-  "rene-thomas": "René Thomas",
-  "richard-crabtree": "Richard Crabtree",
-  "richard-davis": "Richard Davis",
-  "richard-williams": "Richard Williams",
-  "richie-kamuca": "Richie Kamuca",
-  "richie-powell": "Richie Powell",
-  "rick-rosato": "Rick Rosato",
-  "rickie-monie": "Rickie Monie",
-  "robert-bain": "Robert Bain",
-  "robert-hurst": "Robert Hurst",
-  "robert-m-freedman": "Robert M. Freedman",
-  "rocky-roberts": "Rocky Roberts",
-  "rod-olivares": "Rod Olivares",
-  "rodgers-grant": "Rodgers Grant",
-  "rodney-whitaker": "Rodney Whitaker",
-  "roger-chaput": "Roger Chaput",
-  "roger-kellaway": "Roger Kellaway",
-  "roger-squitero": "Roger Squitero",
-  "roland-hanna": "Roland Hanna",
-  "rolf-ericson": "Rolf Ericson",
-  "romeo-penque": "Romeo Penque",
-  "ron-adams": "Ron Adams",
-  "ron-blake": "Ron Blake",
-  "ron-carter": "Ron Carter",
-  "ron-crotty": "Ron Crotty",
-  "ron-eschete": "Ron Escheté",
-  "ron-mcclure": "Ron McClure",
-  "ronnie-ball": "Ronnie Ball",
-  "ronnie-stephenson": "Ronnie Stephenson",
-  "roy-brooks": "Roy Brooks",
-  "roy-burrowes": "Roy Burrowes",
-  "roy-hargrove": "Roy Hargrove",
-  "roy-haynes": "Roy Haynes",
-  "roy-mccurdy": "Roy McCurdy",
-  "rubem-dantas": "Rubem Dantas",
-  "rubens-bassini": "Rubens Bassini",
-  "rubinho-barsotti": "Rubinho Barsotti",
-  "rufus-reid": "Rufus Reid",
-  "russ-freeman": "Russ Freeman",
-  "russell-hall": "Russell Hall",
-  "russell-procope": "Russell Procope",
-  "ryan-kisor": "Ryan Kisor",
-  "sadik-hakim": "Sadik Hakim",
-  "sahib-shihab": "Sahib Shihab",
-  "sal-cracchiolo": "Sal Cracchiolo",
-  "sam-brown": "Sam Brown",
-  "sam-butera": "Sam Butera",
-  "sam-cooke": "Sam Cooke",
-  "sam-dockery": "Sam Dockery",
-  "sam-jones": "Sam Jones",
-  "sam-wilkes": "Sam Wilkes",
-  "sam-woodyard": "Sam Woodyard",
-  "samara-joy": "Samara Joy",
-  "sandro-haick": "Sandro Haick",
-  "sarah-vaughan": "Sarah Vaughan",
-  "scatman-crothers": "Scatman Crothers",
-  "scott-colley": "Scott Colley",
-  "scott-lafaro": "Scott LaFaro",
-  "scott-robinson": "Scott Robinson",
-  "sean-jones": "Sean Jones",
-  "sean-smith": "Sean Smith",
-  "sebastiao-neto": "Sebastião Neto",
-  "sergio-mendes": "Sérgio Mendes",
-  "sergio-mendes-trio": "Sérgio Mendes Trio",
-  "shadow-wilson": "Shadow Wilson",
-  "sharon-isbin": "Sharon Isbin",
-  "shelly-manne": "Shelly Manne",
-  "sherman-ferguson": "Sherman Ferguson",
-  "sherman-irby": "Sherman Irby",
-  "shirley-horn": "Shirley Horn",
-  "shunske-sato": "Shunske Sato",
-  "sidney-bechet": "Sidney Bechet",
-  "sir-roland-hanna": "Sir Roland Hanna",
-  "slam-stewart": "Slam Stewart",
-  "slide-hampton": "Slide Hampton",
-  "sonny-clark": "Sonny Clark",
-  "sonny-cohn": "Sonny Cohn",
-  "sonny-criss": "Sonny Criss",
-  "sonny-greer": "Sonny Greer",
-  "sonny-payne": "Sonny Payne",
-  "sonny-red": "Sonny Red",
-  "sonny-rollins": "Sonny Rollins",
-  "sonny-rollins-quartet": "Sonny Rollins Quartet",
-  "sonny-sharrock": "Sonny Sharrock",
-  "sonny-stitt": "Sonny Stitt",
-  "sophie-milman": "Sophie Milman",
-  "spanky-debrest": "Spanky DeBrest",
-  "stacey-kent": "Stacey Kent",
-  "stacy-dillard": "Stacy Dillard",
-  "stan-getz": "Stan Getz",
-  "stan-levey": "Stan Levey",
-  "stan-puls": "Stan Puls",
-  "stanley-clarke": "Stanley Clarke",
-  "stanley-turrentine": "Stanley Turrentine",
-  "steady-nelson": "Steady Nelson",
-  "stefon-harris": "Stefon Harris",
-  "stephane-grappelli": "Stéphane Grappelli",
-  "stephen-hall-jones": "Stephen Hall-Jones",
-  "stephen-scott": "Stephen Scott",
-  "steve-davis": "Steve Davis",
-  "steve-gadd": "Steve Gadd",
-  "steve-houghton": "Steve Houghton",
-  "steve-howe": "Steve Howe",
-  "steve-jordan": "Steve Jordan",
-  "steve-laspina": "Steve LaSpina",
-  "steve-swallow": "Steve Swallow",
-  "steve-williams": "Steve Williams",
-  "steve-wilson": "Steve Wilson",
-  "stevie-ray-vaughan": "Stevie Ray Vaughan",
-  "stochelo-rosenberg": "Stochelo Rosenberg",
-  "sture-nordin": "Sture Nordin",
-  "sullivan-fortner": "Sullivan Fortner",
-  "svein-aarbostad": "Svein Aarbostad",
-  "sy-oliver": "Sy Oliver",
-  "sylvain-luc": "Sylvain Luc",
-  "tal-farlow": "Tal Farlow",
-  "ted-adams": "Ted Adams",
-  "ted-nash": "Ted Nash",
-  "teddy-charles": "Teddy Charles",
-  "teddy-kotick": "Teddy Kotick",
-  "teddy-wilson": "Teddy Wilson",
-  "tenorio-jr": "Tenorio Jr.",
-  "terence-blanchard": "Terence Blanchard",
-  "terri-lyne-carrington": "Terri Lyne Carrington",
-  "terry-clarke": "Terry Clarke",
-  "tete-montoliu": "Tete Montoliu",
-  "tetsujiro-obara": "Tetsujiro Obara",
-  "thad-jones": "Thad Jones",
-  "the-andrews-sisters": "The Andrews Sisters",
-  "the-bbc-dance-orchestra": "The BBC Dance Orchestra",
-  "the-cannonball-adderley-quintet": "The Cannonball Adderley Quintet",
-  "the-dave-brubeck-quartet": "The Dave Brubeck Quartet",
-  "the-derek-trucks-band": "The Derek Trucks Band",
-  "the-flying-horse-big-band": "The flying Horse big band",
-  "the-kenny-clarke-francy-boland-big-band": "The Kenny Clarke-Francy Boland Big Band",
-  "the-rosenberg-trio": "The Rosenberg Trio",
-  "the-swingle-singers": "The Swingle Singers",
-  "thelonious-monk": "Thelonious Monk",
-  "thelonious-monk-quartet": "Thelonious Monk Quartet",
-  "thomas-fonnesbk": "Thomas Fonnesbæk",
-  "tigran-hamasyan": "Tigran Hamasyan",
-  "tina-brooks": "Tina Brooks",
-  "tino-di-giraldo": "Tino di Giraldo",
-  "todd-bashore": "Todd Bashore",
-  "todd-smallie": "Todd Smallie",
-  "tom-harrell": "Tom Harrell",
-  "tom-mcintosh": "Tom McIntosh",
-  "tomas-moreno-romero-tomasito": "Tomás Moreno Romero (Tomasito)",
-  "tomatito": "Tomatito",
-  "tommy-bryant": "Tommy Bryant",
-  "tommy-duncan": "Tommy Duncan",
-  "tommy-flanagan": "Tommy Flanagan",
-  "tommy-potter": "Tommy Potter",
-  "tommy-shannon": "Tommy Shannon",
-  "ton-kadleck": "Ton Kadleck",
-  "tony-banda": "Tony Banda",
-  "tony-bazley": "Tony Bazley",
-  "tony-bennett": "Tony Bennett",
-  "tony-reedus": "Tony Reedus",
-  "tony-williams": "Tony Williams",
-  "toots-thielemans": "Toots Thielemans",
-  "toquinho": "Toquinho",
-  "triste-janero": "Triste Janero",
-  "trond-davidsen": "Trond Davidsen",
-  "trudy-pitts": "Trudy Pitts",
-  "tupac-mantilla": "Tupac Mantilla",
-  "turner-layton": "Turner Layton",
-  "tyrone-brown": "Tyrone Brown",
-  "uan-rasey": "Uan Rasey",
-  "ugonna-okegwo": "Ugonna Okegwo",
-  "ulf-wakenius": "Ulf Wakenius",
-  "urbie-green": "Urbie Green",
-  "vance-anderson": "Vance Anderson",
-  "vernel-fournier": "Vernel Fournier",
-  "vernell-fournier": "Vernell Fournier",
-  "vic-schoen": "Vic Schoen",
-  "victor-feldman": "Victor Feldman",
-  "victor-goines": "Victor Goines",
-  "victor-lewis": "Victor Lewis",
-  "victor-pantoja": "Victor Pantoja",
-  "viktoria-mullova": "Viktoria Mullova",
-  "vince-guaraldi": "Vince Guaraldi",
-  "vincent-gardner": "Vincent Gardner",
-  "vinnie-burke": "Vinnie Burke",
-  "wade-robinson": "Wade Robinson",
-  "walter-bishop-jr": "Walter Bishop Jr.",
-  "walter-blanding": "Walter Blanding",
-  "walter-booker": "Walter Booker",
-  "walter-page": "Walter Page",
-  "warne-marsh": "Warne Marsh",
-  "waymon-atkinson": "Waymon Atkinson",
-  "wayne-escoffery": "Wayne Escoffery",
-  "wayne-king": "Wayne King",
-  "wayne-king-vocals": "Wayne King (vocals)",
-  "wayne-shorter": "Wayne Shorter",
-  "wc-handy": "W.C. Handy",
-  "wendell-brunious": "Wendell Brunious",
-  "wendell-marshall": "Wendell Marshall",
-  "wes-montgomery": "Wes Montgomery",
-  "wesley-prince": "Wesley Prince",
-  "wilbur-ware": "Wilbur Ware",
-  "will-vinson": "Will Vinson",
-  "william-austin": "William Austin",
-  "william-schipffe": "William Schiøpffe",
-  "willie-smith": "Willie Smith",
-  "wolfgang-lackerschmid": "Wolfgang Lackerschmid",
-  "wolfgang-muthspiel": "Wolfgang Muthspiel",
-  "woody-herman": "Woody Herman",
-  "woody-herman-his-orchestra": "Woody Herman & His Orchestra",
-  "woody-shaw": "Woody Shaw",
-  "woody-theus": "Woody Theus",
-  "wycliffe-gordon": "Wycliffe Gordon",
-  "wynton-kelly": "Wynton Kelly",
-  "wynton-kelly-trio": "Wynton Kelly Trio",
-  "wynton-marsalis": "Wynton Marsalis",
-  "yasushi-nakamura": "Yasushi Nakamura",
-  "yonrico-scott": "Yonrico Scott",
-  "yusef-lateef": "Yusef Lateef",
-  "zimbo-trio": "Zimbo Trio"
- }
+ ]
 }

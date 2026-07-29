@@ -21,9 +21,7 @@ query QuintetOleo {
             year
           }
           performers {
-            artist {
-              name
-            }
+            name
           }
         }
       }
