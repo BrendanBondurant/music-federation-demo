@@ -43,6 +43,8 @@ export interface Tune {
   style: string | null;
   contrafactOfId: string | null;
   musicalKey: string | null;
+  /** Flamenco rhythmic form as written ('Rondeña'). Null for non-flamenco / untagged. */
+  palo: string | null;
   genre: Genre;
 }
 
@@ -69,6 +71,10 @@ export interface Recording {
   albumId: string | null;
   performerIds: string[];
   performanceKey: string | null;
+  /** Palo of this performance. Null when not noted. */
+  palo: string | null;
+  /** Idiom of this performance ('Classical', 'Jazz'). Null when untagged. */
+  idiom: string | null;
   source: string | null;
   notes: string | null;
   bpm: number | null;

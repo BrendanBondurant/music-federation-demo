@@ -33,7 +33,9 @@ Which subgraphs a query hits is decided by the **fields selected**, not the root
 |----|--------|
 | `concierto-de-aranjuez-ii-adagio` | Movement (the crossover piece) |
 | `tomatito` | Artist spanning flamenco, jazz, classical |
-| `all-the-things-you-are` | Tune with 2 contrafacts (Ablution, Bird of Paradise) |
+| `all-the-things-you-are` | Tune with 3 contrafacts (Ablution, Bird of Paradise, Prince Albert) |
+| `i-got-rhythm` | Tune with 13 rhythm-changes contrafacts (Oleo, Anthropology, …) |
+| `how-high-the-moon` | Tune with 2 contrafacts (Ornithology, Lennie-Bird) |
 | `oleo` | Tune (the quintet's own, used by #5) |
 | `zyryab-album` | Album |
 | `miles-davis-quintet` | Artist (ENSEMBLE, with stated members) |
