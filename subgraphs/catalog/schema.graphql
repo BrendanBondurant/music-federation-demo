@@ -70,7 +70,7 @@ type Tune implements Piece @key(fields: "id") {
   id: ID!
   "Tune title."
   title: String!
-  "Style tag as written ('standard', 'bossa', 'flamenco', 'bluegrass'). Null when untagged."
+  "Style tag as written in the vault (standard, flamenco, blues, bossa, bluegrass, jazz, ...). Null when untagged."
   style: String
   "Composer, resolved into the shared Artist pool. Null when the vault names none."
   composer: Artist
@@ -82,6 +82,8 @@ type Tune implements Piece @key(fields: "id") {
   genre: Genre!
   "Home key as written ('E minor'). Set on only a few tunes; performance keys live on recordings."
   musicalKey: String
+  "Home palo (flamenco rhythmic form) as written, e.g. 'Rondeña'. Null for non-flamenco tunes and untagged ones."
+  palo: String
 }
 
 """

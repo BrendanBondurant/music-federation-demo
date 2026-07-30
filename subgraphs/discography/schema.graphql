@@ -57,6 +57,10 @@ type Recording @key(fields: "id") {
   performers: [Artist!]!
   "Key this performance was played in ('Gm'). Null when not noted."
   performanceKey: String
+  "Palo of this specific performance, when it differs from or confirms the tune's home palo. Null when not noted."
+  palo: String
+  "Idiom of this specific performance ('Classical', 'Jazz', 'Flamenco'), for pieces recorded across genres. Null when the piece has no cross-genre ambiguity — most recordings don't need this."
+  idiom: String
   "Non-album source as written ('YouTube', 'Netherlands Bach Society', an orchestra credit). Null when the recording has an album."
   source: String
   "Free-text note on the performance ('Premiere · Dedicatee; first recording'). Null when absent."

@@ -49,13 +49,12 @@ import { homedir } from "node:os";
 //   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
 //   - movements 22      = movement files under Pieces/Works (22)
 //   - tunes 411         = 412 Pieces/Tunes files - 1 (Other tunes.md skipped)
-//   - contrafactEdges 2 = only "All The Things You Are" carries a
-//                         ## Contrafacts section post-reorg (Bird of Paradise,
-//                         Ablution). The old Rhythm-Changes/Blues/How-High-the-
-//                         Moon folder groupings were dropped in the reorg and
-//                         have no in-file equivalent yet -- those tunes
-//                         (including the 71 blues tunes, deliberately parentless
-//                         even before the reorg) now have no parent on purpose.
+//   - contrafactEdges 18 = as of 2026-07-30: three parents carry ## Contrafacts
+//                         sections — "All The Things You Are" (3: Bird of
+//                         Paradise, Ablution, Prince Albert), "How High the
+//                         Moon" (2: Ornithology, Lennie-Bird), and "I Got
+//                         Rhythm" (13 rhythm-changes children). Blues-form
+//                         tunes remain deliberately parentless.
 //   - albums 768        = 771 Albums/ files - 3 placeholders that exist as
 //                         files and are skipped (YouTube, Late Night Jazz
 //                         (compilation), Baroquswing Vol. II). The other 3
@@ -93,7 +92,7 @@ const EXPECTED = {
   works: 10,
   movements: 22,
   tunes: 411,
-  contrafactEdges: 2,
+  contrafactEdges: 18,
   albums: 768,
   personnelEdges: 2757,
   recordings: 1294,
@@ -469,6 +468,7 @@ interface Tune {
   style: string | null;
   contrafactOfId: string | null;
   musicalKey: string | null;
+  palo: string | null;
   genre: Genre;
 }
 interface Credit {
@@ -490,6 +490,8 @@ interface Recording {
   albumId: string | null;
   performerIds: string[];
   performanceKey: string | null;
+  palo: string | null;
+  idiom: string | null;
   source: string | null;
   notes: string | null;
   bpm: number | null;
@@ -514,14 +516,14 @@ const albumsDir = join(vault, "Albums");
 const tunesDir = join(vault, "Pieces", "Tunes");
 const worksDir = join(vault, "Pieces", "Works");
 const metaDir = join(vault, "_meta");
-// Pieces/Palos/ (flamenco palo reference pages, type: palo) is a new vault
-// folder as of the 2026-07-29 reseed, linked from a new Palo column in
-// flamenco albums' Tunes tables. Deliberately not read here: it's reference
-// data, not a piece or an entity any subgraph owns yet, and adding a Genre-
-// style field for it is a scope call for a future pass, not this one (same
-// discipline as "a fourth subgraph is a deliberate decision" in CLAUDE.md).
-// col()-based lookups elsewhere already ignore the extra Palo column, so its
-// presence doesn't affect existing parsing.
+// Pieces/Palos/ (flamenco palo reference pages, type: palo) arrived in the
+// vault as of the 2026-07-29 reseed, linked from a Palo column in flamenco
+// albums' Tunes tables and tune frontmatter/recordings. The reference pages
+// themselves are still not read: they're reference data, not a piece or an
+// entity any subgraph owns. As of 2026-07-30 Brendan asked for palo as a
+// string field on Tune (home) and Recording (per-performance), mirroring
+// musicalKey/performanceKey — so those columns and frontmatter are parsed
+// below. A Genre-style Palos entity remains a deliberate future call.
 
 // --- People: jazz, flamenco, and classical artists share ONE flat pool -------
 // (there is no separate "classical subgraph" convention -- see _meta/CLAUDE.md)
@@ -728,6 +730,7 @@ function addTuneFile(p: string): void {
     warn(`duplicate tune file merged: ${title}`);
   } else {
     const style = typeof fm.style === "string" && fm.style ? fm.style : null;
+    const palo = typeof fm.palo === "string" ? extractLinks(fm.palo)[0] ?? null : null;
     tunes.set(id, {
       id,
       title,
@@ -735,6 +738,7 @@ function addTuneFile(p: string): void {
       style,
       contrafactOfId: null, // resolved after all tunes are known
       musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
+      palo,
       genre: genreFromStyle(style),
     });
     tuneBodies.set(id, body);
@@ -774,7 +778,7 @@ for (const id of tunes.keys()) {
 const albums = new Map<string, Album>();
 const placeholderName = new Map<string, string>(); // slug -> display title
 // Track rows are resolved to recordings after the recordings pass.
-const trackRows = new Map<string, { pieceId: string; key: string | null }[]>();
+const trackRows = new Map<string, { pieceId: string; key: string | null; palo: string | null }[]>();
 
 /** A wiki-link target names a piece: a tune, or a movement file. */
 function pieceRef(linkTarget: string): string | null {
@@ -829,7 +833,7 @@ function addAlbumFile(p: string): void {
     }
   }
 
-  const rows: { pieceId: string; key: string | null }[] = [];
+  const rows: { pieceId: string; key: string | null; palo: string | null }[] = [];
   // Classical albums use "## Movements" instead of "## Tunes" (same table
   // shape, header "Movement" instead of "Tune").
   let tt = tableUnder(body, "Tunes");
@@ -841,6 +845,7 @@ function addAlbumFile(p: string): void {
   if (tt) {
     const cTune = col(tt, pieceColName);
     const cKey = col(tt, "key");
+    const cPalo = col(tt, "palo");
     for (const row of tt.rows) {
       const links = cTune >= 0 ? extractLinks(row[cTune] ?? "") : [];
       if (links.length === 0) continue; // untracked track: no piece file in the vault
@@ -849,7 +854,11 @@ function addAlbumFile(p: string): void {
         errors.push(`album ${id}: track links to unknown piece "${links[0]}"`);
         continue;
       }
-      rows.push({ pieceId, key: cKey >= 0 ? normKey(row[cKey] ?? "") : null });
+      rows.push({
+        pieceId,
+        key: cKey >= 0 ? normKey(row[cKey] ?? "") : null,
+        palo: cPalo >= 0 ? extractLinks(row[cPalo] ?? "")[0] ?? null : null,
+      });
     }
   }
 
@@ -907,6 +916,8 @@ function parseRecordingRows(pieceId: string, file: string, body: string): void {
   const cArtist = col(t, "artist");
   const cAlbum = col(t, "album");
   const cKey = col(t, "key");
+  const cPalo = col(t, "palo");
+  const cIdiom = col(t, "idiom");
   const cBpm = col(t, "bpm");
   let cNotes = col(t, "notes");
   if (cNotes === -1) cNotes = col(t, "melody"); // older tune files use "Melody"
@@ -938,11 +949,14 @@ function parseRecordingRows(pieceId: string, file: string, body: string): void {
     }
     const notesRaw = cNotes >= 0 ? norm(row[cNotes] ?? "") : "";
     const bpmRaw = cBpm >= 0 ? norm(row[cBpm] ?? "") : "";
+    const idiomRaw = cIdiom >= 0 ? norm(row[cIdiom] ?? "") : "";
     pushRecording({
       pieceId,
       albumId,
       performerIds,
       performanceKey: cKey >= 0 ? normKey(row[cKey] ?? "") : null,
+      palo: cPalo >= 0 ? extractLinks(row[cPalo] ?? "")[0] ?? null : null,
+      idiom: idiomRaw || null,
       source,
       notes: notesRaw || null,
       bpm: /^\d+$/.test(bpmRaw) ? parseInt(bpmRaw, 10) : null,
@@ -956,15 +970,16 @@ for (const { movementId, file, body } of movementRecordingSources) parseRecordin
 // Album track rows without a matching recording become recordings too: the
 // album file states the piece is on the record, and the principal artists are
 // the performers of record. No dedupe loss: rows matching an existing
-// (piece, album) pair only contribute their key.
+// (piece, album) pair only contribute their key / palo.
 for (const [albumId, rows] of trackRows) {
   const album = albums.get(albumId)!;
   for (const tr of rows) {
     if (byPieceAlbum.has(`${tr.pieceId}::${albumId}`)) {
-      if (tr.key) {
+      if (tr.key || tr.palo) {
         for (const r of recordings) {
-          if (r.pieceId === tr.pieceId && r.albumId === albumId && r.performanceKey === null) {
-            r.performanceKey = tr.key;
+          if (r.pieceId === tr.pieceId && r.albumId === albumId) {
+            if (tr.key && r.performanceKey === null) r.performanceKey = tr.key;
+            if (tr.palo && r.palo === null) r.palo = tr.palo;
           }
         }
       }
@@ -975,6 +990,8 @@ for (const [albumId, rows] of trackRows) {
       albumId,
       performerIds: album.artistIds,
       performanceKey: tr.key,
+      palo: tr.palo,
+      idiom: null,
       source: null,
       notes: null,
       bpm: null,
