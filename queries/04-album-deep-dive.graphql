@@ -6,6 +6,9 @@ query AlbumDeepDive {
     title
     year
     label
+    leaders {
+      name
+    }
     credits {
       artist {
         name

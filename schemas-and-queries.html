@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Federation — Schemas &amp; Queries</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161922;
+    --border: #262b38;
+    --text: #d8dde5;
+    --muted: #7a8194;
+    --accent: #6fb0ff;
+    --accent2: #f2a154;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 40px 24px 80px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: var(--accent2);
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+  }
+  .port { color: var(--muted); font-weight: 400; font-size: 13px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+  }
+  pre {
+    margin: 0;
+    overflow-x: auto;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  code { white-space: pre; }
+  .section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 40px 0 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Music Federation</h1>
+  <div class="sub">Schemas and concept queries — restructured.</div>
+
+  <div class="section-title">Subgraph Schemas</div>
+  
+    <section class="card">
+      <h2><span class="dot"></span>artists <span class="port">:4001</span></h2>
+      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;])
+
+type Artist @key(fields: &quot;id&quot;) {
+  id: ID!
+  name: String!
+  kind: ArtistKind!
+  instruments: [String!]!
+  styles: [String!]!
+  bio: String
+  members: [Membership!]!
+  memberOf: [Membership!]!
+}
+
+enum ArtistKind {
+  PERSON
+  ENSEMBLE
+}
+
+type Membership {
+  group: Artist!
+  member: Artist!
+  role: String
+}
+
+type Query {
+  artist(
+    id: ID!
+  ): Artist
+  artists(
+    instrument: String
+  ): [Artist!]!
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span>catalog <span class="port">:4002</span></h2>
+      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;])
+
+interface Piece @key(fields: &quot;id&quot;) {
+  id: ID!
+  title: String!
+  genre: Genre!
+  musicalKey: String
+}
+
+enum Genre {
+  CLASSICAL
+  JAZZ
+  FLAMENCO
+  BLUEGRASS
+}
+
+type Work @key(fields: &quot;id&quot;) {
+  id: ID!
+  title: String!
+  catalogNumber: String
+  composer: Artist
+  genre: Genre!
+  movements: [Movement!]!
+}
+
+type Movement implements Piece @key(fields: &quot;id&quot;) {
+  id: ID!
+  title: String!
+  position: Int
+  work: Work!
+  genre: Genre!
+  musicalKey: String
+}
+
+type Tune implements Piece @key(fields: &quot;id&quot;) {
+  id: ID!
+  title: String!
+  style: String
+  composer: Artist
+  contrafactOf: Tune
+  contrafacts: [Tune!]!
+  genre: Genre!
+  musicalKey: String
+}
+
+type Artist @key(fields: &quot;id&quot;) {
+  id: ID!
+  composedPieces: [Piece!]!
+  composedWorks: [Work!]!
+}
+
+type Query {
+  piece(
+    id: ID!
+  ): Piece
+  pieces(
+    musicalKey: String
+  ): [Piece!]!
+  tune(
+    id: ID!
+  ): Tune
+  tunes: [Tune!]!
+  work(
+    id: ID!
+  ): Work
+  works(
+    composer: ID
+  ): [Work!]!
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span>discography <span class="port">:4003</span></h2>
+      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;, &quot;@interfaceObject&quot;])
+
+type Album @key(fields: &quot;id&quot;) {
+  id: ID!
+  title: String!
+  year: Int
+  label: String
+  leaders: [Artist!]!
+  credits: [Credit!]!
+  tracks: [Recording!]!
+}
+
+type Credit {
+  artist: Artist!
+  role: String
+}
+
+type Recording @key(fields: &quot;id&quot;) {
+  id: ID!
+  piece: Piece!
+  album: Album
+  performers: [Artist!]!
+  performanceKey: String
+  source: String
+  notes: String
+  bpm: Int
+}
+
+type Piece @key(fields: &quot;id&quot;) @interfaceObject {
+  id: ID!
+  recordings: [Recording!]!
+}
+
+type Artist @key(fields: &quot;id&quot;) {
+  id: ID!
+  albums: [Album!]!
+  recordings(
+    piece: ID
+  ): [Recording!]!
+}
+
+type Query {
+  album(
+    id: ID!
+  ): Album
+  albums: [Album!]!
+}
+</code></pre>
+    </section>
+
+
+  <div class="section-title">Concept Queries</div>
+  
+    <section class="card">
+      <h3>piece across genres</h3>
+      <pre><code>query AdagioAcrossGenres {
+  piece(id: &quot;concierto-de-aranjuez-ii-adagio&quot;) {
+    title
+    genre
+    ... on Movement {
+      work {
+        title
+        composer {
+          name
+        }
+      }
+    }
+    recordings {
+      album {
+        title
+        year
+        label
+      }
+      source
+      notes
+      performers {
+        name
+        instruments
+        styles
+      }
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>crossover artist</h3>
+      <pre><code>query CrossoverArtist {
+  artist(id: &quot;tomatito&quot;) {
+    name
+    instruments
+    styles
+    bio
+    composedPieces {
+      title
+      genre
+    }
+    recordings {
+      piece {
+        title
+        genre
+        ... on Movement {
+          work {
+            composer {
+              name
+            }
+          }
+        }
+      }
+      album {
+        title
+        year
+      }
+      source
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>contrafact walk</h3>
+      <pre><code>query AllTheThingsYouAreFamily {
+  tune(id: &quot;all-the-things-you-are&quot;) {
+    title
+    composer {
+      name
+    }
+    contrafacts {
+      title
+      composer {
+        name
+      }
+      recordings {
+        performers {
+          name
+        }
+        album {
+          title
+          year
+        }
+      }
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>album deep dive</h3>
+      <pre><code>query AlbumDeepDive {
+  album(id: &quot;zyryab-album&quot;) {
+    title
+    year
+    label
+    leaders {
+      name
+    }
+    credits {
+      artist {
+        name
+        instruments
+        styles
+      }
+      role
+    }
+    tracks {
+      piece {
+        title
+        genre
+        ... on Tune {
+          composer {
+            name
+          }
+        }
+      }
+      performanceKey
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>ensemble hop</h3>
+      <pre><code>query QuintetOleo {
+  artist(id: &quot;miles-davis-quintet&quot;) {
+    name
+    kind
+    recordings(piece: &quot;oleo&quot;) {
+      album {
+        title
+        year
+      }
+    }
+    members {
+      role
+      member {
+        name
+        recordings(piece: &quot;oleo&quot;) {
+          album {
+            title
+            year
+          }
+          performers {
+            name
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>pieces in e minor</h3>
+      <pre><code>query EverythingInEMinor {
+  pieces(musicalKey: &quot;E minor&quot;) {
+    __typename
+    title
+    genre
+    ... on Movement {
+      work {
+        title
+        catalogNumber
+      }
+    }
+    ... on Tune {
+      composer {
+        name
+      }
+    }
+    recordings {
+      performers {
+        name
+      }
+      album {
+        title
+      }
+      source
+    }
+  }
+}
+</code></pre>
+    </section>
+
+  <div class="section-title">Practice Queries — Core Use Case</div>
+
+    <section class="card">
+      <h3>who played autumn leaves</h3>
+      <pre><code>query WhoPlayedAutumnLeaves {
+  piece(id: &quot;autumn-leaves&quot;) {
+    title
+    recordings {
+      album {
+        id
+        title
+        year
+        leaders {
+          name
+        }
+      }
+      source
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>who recorded bwv 996 gigue</h3>
+      <pre><code>query WhoRecordedBWV996Gigue {
+  piece(id: &quot;bwv-996-gigue&quot;) {
+    title
+    recordings {
+      album {
+        id
+        title
+        year
+        leaders {
+          name
+        }
+      }
+      source
+    }
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>click into an album</h3>
+      <pre><code>query AlbumFromRecording {
+  album(id: &quot;portrait-in-jazz&quot;) {
+    title
+    year
+    label
+    leaders {
+      name
+    }
+    credits {
+      artist {
+        name
+      }
+      role
+    }
+    tracks {
+      piece {
+        title
+      }
+    }
+  }
+}
+</code></pre>
+    </section>
+
+  <div class="section-title">Practice Queries — Warm-ups</div>
+
+    <section class="card">
+      <h3>list every tune</h3>
+      <pre><code>query AllTunes {
+  tunes {
+    id
+    title
+    genre
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>list every album</h3>
+      <pre><code>query AllAlbums {
+  albums {
+    id
+    title
+    year
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>look up one artist</h3>
+      <pre><code>query LookUpArtist {
+  artist(id: &quot;bill-evans&quot;) {
+    name
+    kind
+    instruments
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>filter artists by instrument</h3>
+      <pre><code>query GuitaristsOnly {
+  artists(instrument: &quot;guitar&quot;) {
+    name
+  }
+}
+</code></pre>
+    </section>
+
+    <section class="card">
+      <h3>one work and its movements</h3>
+      <pre><code>query WorkAndMovements {
+  work(id: &quot;bwv-996&quot;) {
+    title
+    catalogNumber
+    movements {
+      title
+      position
+    }
+  }
+}
+</code></pre>
+    </section>
+
+</div>
+</body>
+</html>

@@ -12,7 +12,7 @@ Subgraphs: **A** = artists (:4001) · **C** = catalog (:4002) · **D** = discogr
 | 1 | `01-piece-across-genres.graphql` | ✅ | ✅ | ✅ | The Aranjuez Adagio: one Piece, recordings from the premiere to Miles Davis, chained through all three services |
 | 2 | `02-crossover-artist.graphql` | ✅ | ✅ | ✅ | Tomatito: identity + compositions + discography assembled onto one entity |
 | 3 | `03-contrafact-walk.graphql` | ✅ | ✅ | ✅ | Contrafact self-edge on Tune, fan-out to recordings per contrafact |
-| 4 | `04-album-deep-dive.graphql` | ✅ | ✅ | ✅ | Zyryab: credits out to identity, tracks back into the catalog |
+| 4 | `04-album-deep-dive.graphql` | ✅ | ✅ | ✅ | Zyryab: leader + credits out to identity, tracks back into the catalog |
 | 5 | `05-ensemble-hop.graphql` | ✅ | | ✅ | Membership edges: the quintet's Oleo next to each member's own |
 | 6 | `06-pieces-in-e-minor.graphql` | ✅ | ✅ | ✅ | Entity-interface search: Movement and Tune mixed, each with recordings via `@interfaceObject` |
 
@@ -46,3 +46,6 @@ Which subgraphs a query hits is decided by the **fields selected**, not the root
   movements plus Nardis. Performance keys live on recordings.
 - Quintet members without their own Oleo recording return `[]` in #5 — real
   nulls and empty lists are kept, not papered over.
+- `Album.leaders` (used in #4) is the billed artist(s) from frontmatter, not a
+  guess from performer order. Compilations with no single attributable artist
+  ('Various Artists') return `[]`.

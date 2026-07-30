@@ -15,6 +15,12 @@ type Album @key(fields: "id") {
   "Record label. Null when unknown."
   label: String
   """
+  The billed artist(s) -- whoever's record this is, from the album's frontmatter
+  credit. Empty for compilations with no single attributable artist ('Various
+  Artists'). Can be more than one for co-billed releases.
+  """
+  leaders: [Artist!]!
+  """
   Who played what on THIS record, from the album's Personnel section.
   Instrument-per-album lives here, not on identity: the same person plays a
   different role on every record.

@@ -56,7 +56,7 @@ export interface Album {
   title: string;
   year: number | null;
   label: string | null;
-  /** Principal artists from frontmatter. Used for indexing Artist.albums; not a schema field. */
+  /** Principal artists from frontmatter. Indexes Artist.albums and backs Album.leaders. */
   artistIds: string[];
   credits: Credit[];
   /** Recording ids on this album, in the album file's track order. */

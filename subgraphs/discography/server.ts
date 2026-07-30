@@ -72,6 +72,7 @@ startSubgraph({
       albums: () => seed.albums,
     },
     Album: {
+      leaders: (a: Album) => a.artistIds.map((id) => entityRef("Artist", id)),
       credits: (a: Album) => a.credits,
       tracks: (a: Album) => a.trackIds.map((id) => must(recordingById.get(id), `Recording ${id}`)),
     },
