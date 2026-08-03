@@ -2,580 +2,443 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Music Federation — Schemas &amp; Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Federation &mdash; Schemas &amp; Queries</title>
 <style>
-  :root {
-    --bg: #0f1115;
-    --panel: #161922;
-    --border: #262b38;
-    --text: #d8dde5;
-    --muted: #7a8194;
-    --accent: #6fb0ff;
-    --accent2: #f2a154;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    padding: 40px 24px 80px;
-  }
-  .wrap { max-width: 980px; margin: 0 auto; }
-  h1 {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0 0 4px;
-  }
-  .sub { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
-  h2 {
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 0 0 12px;
-  }
-  h3 {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 0 10px;
-    color: var(--accent2);
-  }
-  .dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--accent);
-    display: inline-block;
-  }
-  .port { color: var(--muted); font-weight: 400; font-size: 13px; }
-  .card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px 22px;
-    margin-bottom: 18px;
-  }
-  pre {
-    margin: 0;
-    overflow-x: auto;
-    font-family: "SF Mono", Menlo, Consolas, monospace;
-    font-size: 13px;
-    line-height: 1.55;
-  }
-  code { white-space: pre; }
-  .section-title {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin: 40px 0 16px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-  }
-  .section-title:first-of-type { margin-top: 0; }
+:root {
+  --bg: #0f1115;
+  --panel: #161922;
+  --border: #262b38;
+  --text: #d8dde5;
+  --muted: #7a8194;
+  --accent: #6fb0ff;
+  --accent2: #f2a154;
+  --k: #cba6f7;
+  --d: #f9e2af;
+  --t: #89b4fa;
+  --f: #a6e3a1;
+  --s: #fab387;
+  --p: #6c7086;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  padding: 40px 24px 80px;
+}
+.wrap { max-width: 980px; margin: 0 auto; }
+h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+.sub { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+h2 {
+  font-size: 16px; font-weight: 600; margin: 0 0 4px;
+  display: flex; align-items: center; gap: 8px;
+}
+h3 { font-size: 14px; font-weight: 600; margin: 0 0 4px; color: var(--accent2); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.port { color: var(--muted); font-weight: 400; font-size: 13px; }
+.owns { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+}
+pre {
+  margin: 0;
+  overflow-x: auto;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.55;
+}
+code { white-space: pre; }
+.k { color: var(--k); font-weight: 600; }
+.d { color: var(--d); }
+.t { color: var(--t); }
+.f { color: var(--f); }
+.s { color: var(--s); }
+.p { color: var(--p); }
+.section-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 40px 0 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.section-title:first-of-type { margin-top: 0; }
+@media print {
+  body { padding: 0.4in; }
+  .card, pre { break-inside: avoid; }
+  .section-title { break-after: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Music Federation</h1>
-  <div class="sub">Schemas and concept queries — restructured.</div>
+  <div class="sub">Three subgraph schemas and the six concept queries, descriptions and comments stripped.</div>
+  <div class="section-title">Subgraph schemas</div>
+  <section class="card">
+    <h2><span class="dot"></span>artists <span class="port">:4001</span></h2>
+    <p class="owns">Artist identity and stated group memberships.</p>
+    <pre><code><span class="k">extend</span> <span class="k">schema</span> <span class="d">@link</span><span class="p">(</span><span class="f">url</span><span class="p">:</span> <span class="s">&quot;https://specs.apollo.dev/federation/v2.3&quot;</span><span class="p">,</span> <span class="f">import</span><span class="p">:</span> <span class="p">[</span><span class="s">&quot;@key&quot;</span><span class="p">])</span>
 
-  <div class="section-title">Subgraph Schemas</div>
-  
-    <section class="card">
-      <h2><span class="dot"></span>artists <span class="port">:4001</span></h2>
-      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;])
+<span class="k">type</span> <span class="t">Artist</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">name</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">kind</span><span class="p">:</span> <span class="t">ArtistKind</span><span class="p">!</span>
+  <span class="f">instruments</span><span class="p">:</span> <span class="p">[</span><span class="t">String</span><span class="p">!]!</span>
+  <span class="f">styles</span><span class="p">:</span> <span class="p">[</span><span class="t">String</span><span class="p">!]!</span>
+  <span class="f">bio</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">members</span><span class="p">:</span> <span class="p">[</span><span class="t">Membership</span><span class="p">!]!</span>
+  <span class="f">memberOf</span><span class="p">:</span> <span class="p">[</span><span class="t">Membership</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Artist @key(fields: &quot;id&quot;) {
-  id: ID!
-  name: String!
-  kind: ArtistKind!
-  instruments: [String!]!
-  styles: [String!]!
-  bio: String
-  members: [Membership!]!
-  memberOf: [Membership!]!
-}
+<span class="k">enum</span> <span class="t">ArtistKind</span> <span class="p">{</span>
+  <span class="t">PERSON</span>
+  <span class="t">ENSEMBLE</span>
+<span class="p">}</span>
 
-enum ArtistKind {
-  PERSON
-  ENSEMBLE
-}
+<span class="k">type</span> <span class="t">Membership</span> <span class="p">{</span>
+  <span class="f">group</span><span class="p">:</span> <span class="t">Artist</span><span class="p">!</span>
+  <span class="f">member</span><span class="p">:</span> <span class="t">Artist</span><span class="p">!</span>
+  <span class="f">role</span><span class="p">:</span> <span class="t">String</span>
+<span class="p">}</span>
 
-type Membership {
-  group: Artist!
-  member: Artist!
-  role: String
-}
-
-type Query {
-  artist(
-    id: ID!
-  ): Artist
-  artists(
-    instrument: String
-  ): [Artist!]!
-}
+<span class="k">type</span> <span class="t">Query</span> <span class="p">{</span>
+  <span class="f">artist</span><span class="p">(</span>
+    <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="p">):</span> <span class="t">Artist</span>
+  <span class="f">artists</span><span class="p">(</span>
+    <span class="f">instrument</span><span class="p">:</span> <span class="t">String</span>
+  <span class="p">):</span> <span class="p">[</span><span class="t">Artist</span><span class="p">!]!</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
+  </section>
+  <section class="card">
+    <h2><span class="dot"></span>catalog <span class="port">:4002</span></h2>
+    <p class="owns">Works, movements, tunes, and the Piece entity interface.</p>
+    <pre><code><span class="k">extend</span> <span class="k">schema</span> <span class="d">@link</span><span class="p">(</span><span class="f">url</span><span class="p">:</span> <span class="s">&quot;https://specs.apollo.dev/federation/v2.3&quot;</span><span class="p">,</span> <span class="f">import</span><span class="p">:</span> <span class="p">[</span><span class="s">&quot;@key&quot;</span><span class="p">])</span>
 
-    <section class="card">
-      <h2><span class="dot"></span>catalog <span class="port">:4002</span></h2>
-      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;])
+<span class="k">interface</span> <span class="t">Piece</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">title</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">genre</span><span class="p">:</span> <span class="t">Genre</span><span class="p">!</span>
+  <span class="f">musicalKey</span><span class="p">:</span> <span class="t">String</span>
+<span class="p">}</span>
 
-interface Piece @key(fields: &quot;id&quot;) {
-  id: ID!
-  title: String!
-  genre: Genre!
-  musicalKey: String
-}
+<span class="k">enum</span> <span class="t">Genre</span> <span class="p">{</span>
+  <span class="t">CLASSICAL</span>
+  <span class="t">JAZZ</span>
+  <span class="t">FLAMENCO</span>
+  <span class="t">BLUEGRASS</span>
+<span class="p">}</span>
 
-enum Genre {
-  CLASSICAL
-  JAZZ
-  FLAMENCO
-  BLUEGRASS
-}
+<span class="k">type</span> <span class="t">Work</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">title</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">catalogNumber</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">composer</span><span class="p">:</span> <span class="t">Artist</span>
+  <span class="f">genre</span><span class="p">:</span> <span class="t">Genre</span><span class="p">!</span>
+  <span class="f">movements</span><span class="p">:</span> <span class="p">[</span><span class="t">Movement</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Work @key(fields: &quot;id&quot;) {
-  id: ID!
-  title: String!
-  catalogNumber: String
-  composer: Artist
-  genre: Genre!
-  movements: [Movement!]!
-}
+<span class="k">type</span> <span class="t">Movement</span> <span class="k">implements</span> <span class="t">Piece</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">title</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">position</span><span class="p">:</span> <span class="t">Int</span>
+  <span class="f">work</span><span class="p">:</span> <span class="t">Work</span><span class="p">!</span>
+  <span class="f">genre</span><span class="p">:</span> <span class="t">Genre</span><span class="p">!</span>
+  <span class="f">musicalKey</span><span class="p">:</span> <span class="t">String</span>
+<span class="p">}</span>
 
-type Movement implements Piece @key(fields: &quot;id&quot;) {
-  id: ID!
-  title: String!
-  position: Int
-  work: Work!
-  genre: Genre!
-  musicalKey: String
-}
+<span class="k">type</span> <span class="t">Tune</span> <span class="k">implements</span> <span class="t">Piece</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">title</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">style</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">composer</span><span class="p">:</span> <span class="t">Artist</span>
+  <span class="f">contrafactOf</span><span class="p">:</span> <span class="t">Tune</span>
+  <span class="f">contrafacts</span><span class="p">:</span> <span class="p">[</span><span class="t">Tune</span><span class="p">!]!</span>
+  <span class="f">genre</span><span class="p">:</span> <span class="t">Genre</span><span class="p">!</span>
+  <span class="f">musicalKey</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">palo</span><span class="p">:</span> <span class="t">String</span>
+<span class="p">}</span>
 
-type Tune implements Piece @key(fields: &quot;id&quot;) {
-  id: ID!
-  title: String!
-  style: String
-  composer: Artist
-  contrafactOf: Tune
-  contrafacts: [Tune!]!
-  genre: Genre!
-  musicalKey: String
-}
+<span class="k">type</span> <span class="t">Artist</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">composedPieces</span><span class="p">:</span> <span class="p">[</span><span class="t">Piece</span><span class="p">!]!</span>
+  <span class="f">composedWorks</span><span class="p">:</span> <span class="p">[</span><span class="t">Work</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Artist @key(fields: &quot;id&quot;) {
-  id: ID!
-  composedPieces: [Piece!]!
-  composedWorks: [Work!]!
-}
-
-type Query {
-  piece(
-    id: ID!
-  ): Piece
-  pieces(
-    musicalKey: String
-  ): [Piece!]!
-  tune(
-    id: ID!
-  ): Tune
-  tunes: [Tune!]!
-  work(
-    id: ID!
-  ): Work
-  works(
-    composer: ID
-  ): [Work!]!
-}
+<span class="k">type</span> <span class="t">Query</span> <span class="p">{</span>
+  <span class="f">piece</span><span class="p">(</span>
+    <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="p">):</span> <span class="t">Piece</span>
+  <span class="f">pieces</span><span class="p">(</span>
+    <span class="f">musicalKey</span><span class="p">:</span> <span class="t">String</span>
+  <span class="p">):</span> <span class="p">[</span><span class="t">Piece</span><span class="p">!]!</span>
+  <span class="f">tune</span><span class="p">(</span>
+    <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="p">):</span> <span class="t">Tune</span>
+  <span class="f">tunes</span><span class="p">:</span> <span class="p">[</span><span class="t">Tune</span><span class="p">!]!</span>
+  <span class="f">work</span><span class="p">(</span>
+    <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="p">):</span> <span class="t">Work</span>
+  <span class="f">works</span><span class="p">(</span>
+    <span class="f">composer</span><span class="p">:</span> <span class="t">ID</span>
+  <span class="p">):</span> <span class="p">[</span><span class="t">Work</span><span class="p">!]!</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
+  </section>
+  <section class="card">
+    <h2><span class="dot"></span>discography <span class="port">:4003</span></h2>
+    <p class="owns">Albums, recordings, credits; contributes recordings to Piece.</p>
+    <pre><code><span class="k">extend</span> <span class="k">schema</span> <span class="d">@link</span><span class="p">(</span><span class="f">url</span><span class="p">:</span> <span class="s">&quot;https://specs.apollo.dev/federation/v2.3&quot;</span><span class="p">,</span> <span class="f">import</span><span class="p">:</span> <span class="p">[</span><span class="s">&quot;@key&quot;</span><span class="p">,</span> <span class="s">&quot;@interfaceObject&quot;</span><span class="p">])</span>
 
-    <section class="card">
-      <h2><span class="dot"></span>discography <span class="port">:4003</span></h2>
-      <pre><code>extend schema @link(url: &quot;https://specs.apollo.dev/federation/v2.3&quot;, import: [&quot;@key&quot;, &quot;@interfaceObject&quot;])
+<span class="k">type</span> <span class="t">Album</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">title</span><span class="p">:</span> <span class="t">String</span><span class="p">!</span>
+  <span class="f">year</span><span class="p">:</span> <span class="t">Int</span>
+  <span class="f">label</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">leaders</span><span class="p">:</span> <span class="p">[</span><span class="t">Artist</span><span class="p">!]!</span>
+  <span class="f">credits</span><span class="p">:</span> <span class="p">[</span><span class="t">Credit</span><span class="p">!]!</span>
+  <span class="f">tracks</span><span class="p">:</span> <span class="p">[</span><span class="t">Recording</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Album @key(fields: &quot;id&quot;) {
-  id: ID!
-  title: String!
-  year: Int
-  label: String
-  leaders: [Artist!]!
-  credits: [Credit!]!
-  tracks: [Recording!]!
-}
+<span class="k">type</span> <span class="t">Credit</span> <span class="p">{</span>
+  <span class="f">artist</span><span class="p">:</span> <span class="t">Artist</span><span class="p">!</span>
+  <span class="f">role</span><span class="p">:</span> <span class="t">String</span>
+<span class="p">}</span>
 
-type Credit {
-  artist: Artist!
-  role: String
-}
+<span class="k">type</span> <span class="t">Recording</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">piece</span><span class="p">:</span> <span class="t">Piece</span><span class="p">!</span>
+  <span class="f">album</span><span class="p">:</span> <span class="t">Album</span>
+  <span class="f">performers</span><span class="p">:</span> <span class="p">[</span><span class="t">Artist</span><span class="p">!]!</span>
+  <span class="f">performanceKey</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">palo</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">idiom</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">source</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">notes</span><span class="p">:</span> <span class="t">String</span>
+  <span class="f">bpm</span><span class="p">:</span> <span class="t">Int</span>
+<span class="p">}</span>
 
-type Recording @key(fields: &quot;id&quot;) {
-  id: ID!
-  piece: Piece!
-  album: Album
-  performers: [Artist!]!
-  performanceKey: String
-  source: String
-  notes: String
-  bpm: Int
-}
+<span class="k">type</span> <span class="t">Piece</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="d">@interfaceObject</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">recordings</span><span class="p">:</span> <span class="p">[</span><span class="t">Recording</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Piece @key(fields: &quot;id&quot;) @interfaceObject {
-  id: ID!
-  recordings: [Recording!]!
-}
+<span class="k">type</span> <span class="t">Artist</span> <span class="d">@key</span><span class="p">(</span><span class="f">fields</span><span class="p">:</span> <span class="s">&quot;id&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="f">albums</span><span class="p">:</span> <span class="p">[</span><span class="t">Album</span><span class="p">!]!</span>
+  <span class="f">recordings</span><span class="p">(</span>
+    <span class="f">piece</span><span class="p">:</span> <span class="t">ID</span>
+  <span class="p">):</span> <span class="p">[</span><span class="t">Recording</span><span class="p">!]!</span>
+<span class="p">}</span>
 
-type Artist @key(fields: &quot;id&quot;) {
-  id: ID!
-  albums: [Album!]!
-  recordings(
-    piece: ID
-  ): [Recording!]!
-}
-
-type Query {
-  album(
-    id: ID!
-  ): Album
-  albums: [Album!]!
-}
+<span class="k">type</span> <span class="t">Query</span> <span class="p">{</span>
+  <span class="f">album</span><span class="p">(</span>
+    <span class="f">id</span><span class="p">:</span> <span class="t">ID</span><span class="p">!</span>
+  <span class="p">):</span> <span class="t">Album</span>
+  <span class="f">albums</span><span class="p">:</span> <span class="p">[</span><span class="t">Album</span><span class="p">!]!</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-
-  <div class="section-title">Concept Queries</div>
-  
-    <section class="card">
-      <h3>piece across genres</h3>
-      <pre><code>query AdagioAcrossGenres {
-  piece(id: &quot;concierto-de-aranjuez-ii-adagio&quot;) {
-    title
-    genre
-    ... on Movement {
-      work {
-        title
-        composer {
-          name
-        }
-      }
-    }
-    recordings {
-      album {
-        title
-        year
-        label
-      }
-      source
-      notes
-      performers {
-        name
-        instruments
-        styles
-      }
-    }
-  }
-}
+  </section>
+  <div class="section-title">Concept queries</div>
+  <section class="card">
+    <h3>01 &middot; piece across genres</h3>
+    <pre><code><span class="k">query</span> <span class="t">AdagioAcrossGenres</span> <span class="p">{</span>
+  <span class="f">piece</span><span class="p">(</span><span class="f">id</span><span class="p">:</span> <span class="s">&quot;concierto-de-aranjuez-ii-adagio&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="f">title</span>
+    <span class="f">genre</span>
+    <span class="p">...</span> <span class="k">on</span> <span class="t">Movement</span> <span class="p">{</span>
+      <span class="f">work</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">composer</span> <span class="p">{</span>
+          <span class="f">name</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="f">recordings</span> <span class="p">{</span>
+      <span class="f">album</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">year</span>
+        <span class="f">label</span>
+      <span class="p">}</span>
+      <span class="f">source</span>
+      <span class="f">notes</span>
+      <span class="f">performers</span> <span class="p">{</span>
+        <span class="f">name</span>
+        <span class="f">instruments</span>
+        <span class="f">styles</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-    <section class="card">
-      <h3>crossover artist</h3>
-      <pre><code>query CrossoverArtist {
-  artist(id: &quot;tomatito&quot;) {
-    name
-    instruments
-    styles
-    bio
-    composedPieces {
-      title
-      genre
-    }
-    recordings {
-      piece {
-        title
-        genre
-        ... on Movement {
-          work {
-            composer {
-              name
-            }
-          }
-        }
-      }
-      album {
-        title
-        year
-      }
-      source
-    }
-  }
-}
+  </section>
+  <section class="card">
+    <h3>02 &middot; crossover artist</h3>
+    <pre><code><span class="k">query</span> <span class="t">CrossoverArtist</span> <span class="p">{</span>
+  <span class="f">artist</span><span class="p">(</span><span class="f">id</span><span class="p">:</span> <span class="s">&quot;tomatito&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="f">name</span>
+    <span class="f">instruments</span>
+    <span class="f">styles</span>
+    <span class="f">bio</span>
+    <span class="f">composedPieces</span> <span class="p">{</span>
+      <span class="f">title</span>
+      <span class="f">genre</span>
+    <span class="p">}</span>
+    <span class="f">recordings</span> <span class="p">{</span>
+      <span class="f">piece</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">genre</span>
+        <span class="p">...</span> <span class="k">on</span> <span class="t">Movement</span> <span class="p">{</span>
+          <span class="f">work</span> <span class="p">{</span>
+            <span class="f">composer</span> <span class="p">{</span>
+              <span class="f">name</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="f">album</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">year</span>
+      <span class="p">}</span>
+      <span class="f">source</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-    <section class="card">
-      <h3>contrafact walk</h3>
-      <pre><code>query AllTheThingsYouAreFamily {
-  tune(id: &quot;all-the-things-you-are&quot;) {
-    title
-    composer {
-      name
-    }
-    contrafacts {
-      title
-      composer {
-        name
-      }
-      recordings {
-        performers {
-          name
-        }
-        album {
-          title
-          year
-        }
-      }
-    }
-  }
-}
+  </section>
+  <section class="card">
+    <h3>03 &middot; contrafact walk</h3>
+    <pre><code><span class="k">query</span> <span class="t">AllTheThingsYouAreFamily</span> <span class="p">{</span>
+  <span class="f">tune</span><span class="p">(</span><span class="f">id</span><span class="p">:</span> <span class="s">&quot;all-the-things-you-are&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="f">title</span>
+    <span class="f">composer</span> <span class="p">{</span>
+      <span class="f">name</span>
+    <span class="p">}</span>
+    <span class="f">contrafacts</span> <span class="p">{</span>
+      <span class="f">title</span>
+      <span class="f">composer</span> <span class="p">{</span>
+        <span class="f">name</span>
+      <span class="p">}</span>
+      <span class="f">recordings</span> <span class="p">{</span>
+        <span class="f">performers</span> <span class="p">{</span>
+          <span class="f">name</span>
+        <span class="p">}</span>
+        <span class="f">album</span> <span class="p">{</span>
+          <span class="f">title</span>
+          <span class="f">year</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-    <section class="card">
-      <h3>album deep dive</h3>
-      <pre><code>query AlbumDeepDive {
-  album(id: &quot;zyryab-album&quot;) {
-    title
-    year
-    label
-    leaders {
-      name
-    }
-    credits {
-      artist {
-        name
-        instruments
-        styles
-      }
-      role
-    }
-    tracks {
-      piece {
-        title
-        genre
-        ... on Tune {
-          composer {
-            name
-          }
-        }
-      }
-      performanceKey
-    }
-  }
-}
+  </section>
+  <section class="card">
+    <h3>04 &middot; album deep dive</h3>
+    <pre><code><span class="k">query</span> <span class="t">AlbumDeepDive</span> <span class="p">{</span>
+  <span class="f">album</span><span class="p">(</span><span class="f">id</span><span class="p">:</span> <span class="s">&quot;zyryab-album&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="f">title</span>
+    <span class="f">year</span>
+    <span class="f">label</span>
+    <span class="f">leaders</span> <span class="p">{</span>
+      <span class="f">name</span>
+    <span class="p">}</span>
+    <span class="f">credits</span> <span class="p">{</span>
+      <span class="f">artist</span> <span class="p">{</span>
+        <span class="f">name</span>
+        <span class="f">instruments</span>
+        <span class="f">styles</span>
+      <span class="p">}</span>
+      <span class="f">role</span>
+    <span class="p">}</span>
+    <span class="f">tracks</span> <span class="p">{</span>
+      <span class="f">piece</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">genre</span>
+        <span class="p">...</span> <span class="k">on</span> <span class="t">Tune</span> <span class="p">{</span>
+          <span class="f">composer</span> <span class="p">{</span>
+            <span class="f">name</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="f">performanceKey</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-    <section class="card">
-      <h3>ensemble hop</h3>
-      <pre><code>query QuintetOleo {
-  artist(id: &quot;miles-davis-quintet&quot;) {
-    name
-    kind
-    recordings(piece: &quot;oleo&quot;) {
-      album {
-        title
-        year
-      }
-    }
-    members {
-      role
-      member {
-        name
-        recordings(piece: &quot;oleo&quot;) {
-          album {
-            title
-            year
-          }
-          performers {
-            name
-          }
-        }
-      }
-    }
-  }
-}
+  </section>
+  <section class="card">
+    <h3>05 &middot; ensemble hop</h3>
+    <pre><code><span class="k">query</span> <span class="t">QuintetOleo</span> <span class="p">{</span>
+  <span class="f">artist</span><span class="p">(</span><span class="f">id</span><span class="p">:</span> <span class="s">&quot;miles-davis-quintet&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="f">name</span>
+    <span class="f">kind</span>
+    <span class="f">recordings</span><span class="p">(</span><span class="f">piece</span><span class="p">:</span> <span class="s">&quot;oleo&quot;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="f">album</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">year</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="f">members</span> <span class="p">{</span>
+      <span class="f">role</span>
+      <span class="f">member</span> <span class="p">{</span>
+        <span class="f">name</span>
+        <span class="f">recordings</span><span class="p">(</span><span class="f">piece</span><span class="p">:</span> <span class="s">&quot;oleo&quot;</span><span class="p">)</span> <span class="p">{</span>
+          <span class="f">album</span> <span class="p">{</span>
+            <span class="f">title</span>
+            <span class="f">year</span>
+          <span class="p">}</span>
+          <span class="f">performers</span> <span class="p">{</span>
+            <span class="f">name</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-    <section class="card">
-      <h3>pieces in e minor</h3>
-      <pre><code>query EverythingInEMinor {
-  pieces(musicalKey: &quot;E minor&quot;) {
-    __typename
-    title
-    genre
-    ... on Movement {
-      work {
-        title
-        catalogNumber
-      }
-    }
-    ... on Tune {
-      composer {
-        name
-      }
-    }
-    recordings {
-      performers {
-        name
-      }
-      album {
-        title
-      }
-      source
-    }
-  }
-}
+  </section>
+  <section class="card">
+    <h3>06 &middot; pieces in e minor</h3>
+    <pre><code><span class="k">query</span> <span class="t">EverythingInEMinor</span> <span class="p">{</span>
+  <span class="f">pieces</span><span class="p">(</span><span class="f">musicalKey</span><span class="p">:</span> <span class="s">&quot;E minor&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="t">__typename</span>
+    <span class="f">title</span>
+    <span class="f">genre</span>
+    <span class="p">...</span> <span class="k">on</span> <span class="t">Movement</span> <span class="p">{</span>
+      <span class="f">work</span> <span class="p">{</span>
+        <span class="f">title</span>
+        <span class="f">catalogNumber</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">...</span> <span class="k">on</span> <span class="t">Tune</span> <span class="p">{</span>
+      <span class="f">composer</span> <span class="p">{</span>
+        <span class="f">name</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="f">recordings</span> <span class="p">{</span>
+      <span class="f">performers</span> <span class="p">{</span>
+        <span class="f">name</span>
+      <span class="p">}</span>
+      <span class="f">album</span> <span class="p">{</span>
+        <span class="f">title</span>
+      <span class="p">}</span>
+      <span class="f">source</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-    </section>
-
-  <div class="section-title">Practice Queries — Core Use Case</div>
-
-    <section class="card">
-      <h3>who played autumn leaves</h3>
-      <pre><code>query WhoPlayedAutumnLeaves {
-  piece(id: &quot;autumn-leaves&quot;) {
-    title
-    recordings {
-      album {
-        id
-        title
-        year
-        leaders {
-          name
-        }
-      }
-      source
-    }
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>who recorded bwv 996 gigue</h3>
-      <pre><code>query WhoRecordedBWV996Gigue {
-  piece(id: &quot;bwv-996-gigue&quot;) {
-    title
-    recordings {
-      album {
-        id
-        title
-        year
-        leaders {
-          name
-        }
-      }
-      source
-    }
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>click into an album</h3>
-      <pre><code>query AlbumFromRecording {
-  album(id: &quot;portrait-in-jazz&quot;) {
-    title
-    year
-    label
-    leaders {
-      name
-    }
-    credits {
-      artist {
-        name
-      }
-      role
-    }
-    tracks {
-      piece {
-        title
-      }
-    }
-  }
-}
-</code></pre>
-    </section>
-
-  <div class="section-title">Practice Queries — Warm-ups</div>
-
-    <section class="card">
-      <h3>list every tune</h3>
-      <pre><code>query AllTunes {
-  tunes {
-    id
-    title
-    genre
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>list every album</h3>
-      <pre><code>query AllAlbums {
-  albums {
-    id
-    title
-    year
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>look up one artist</h3>
-      <pre><code>query LookUpArtist {
-  artist(id: &quot;bill-evans&quot;) {
-    name
-    kind
-    instruments
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>filter artists by instrument</h3>
-      <pre><code>query GuitaristsOnly {
-  artists(instrument: &quot;guitar&quot;) {
-    name
-  }
-}
-</code></pre>
-    </section>
-
-    <section class="card">
-      <h3>one work and its movements</h3>
-      <pre><code>query WorkAndMovements {
-  work(id: &quot;bwv-996&quot;) {
-    title
-    catalogNumber
-    movements {
-      title
-      position
-    }
-  }
-}
-</code></pre>
-    </section>
-
+  </section>
 </div>
 </body>
 </html>

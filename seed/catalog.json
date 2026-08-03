@@ -76,7 +76,7 @@
    "id": "bwv-1001-adagio",
    "workId": "bwv-1001",
    "title": "Adagio",
-   "position": null,
+   "position": 1,
    "musicalKey": "G minor",
    "genre": "CLASSICAL"
   },
@@ -84,15 +84,7 @@
    "id": "bwv-1001-fuga",
    "workId": "bwv-1001",
    "title": "Fuga",
-   "position": null,
-   "musicalKey": "G minor",
-   "genre": "CLASSICAL"
-  },
-  {
-   "id": "bwv-1001-presto",
-   "workId": "bwv-1001",
-   "title": "Presto",
-   "position": null,
+   "position": 2,
    "musicalKey": "G minor",
    "genre": "CLASSICAL"
   },
@@ -100,7 +92,15 @@
    "id": "bwv-1001-siciliana",
    "workId": "bwv-1001",
    "title": "Siciliana",
-   "position": null,
+   "position": 3,
+   "musicalKey": "G minor",
+   "genre": "CLASSICAL"
+  },
+  {
+   "id": "bwv-1001-presto",
+   "workId": "bwv-1001",
+   "title": "Presto",
+   "position": 4,
    "musicalKey": "G minor",
    "genre": "CLASSICAL"
   },
@@ -108,7 +108,7 @@
    "id": "bwv-1043-i-vivace",
    "workId": "bwv-1043",
    "title": "I. Vivace",
-   "position": null,
+   "position": 1,
    "musicalKey": "D minor",
    "genre": "CLASSICAL"
   },
@@ -116,7 +116,7 @@
    "id": "bwv-1047-i-allegro",
    "workId": "bwv-1047",
    "title": "I. (Allegro)",
-   "position": null,
+   "position": 1,
    "musicalKey": "F major",
    "genre": "CLASSICAL"
   },
@@ -124,7 +124,7 @@
    "id": "bwv-1047-ii-andante",
    "workId": "bwv-1047",
    "title": "II. Andante",
-   "position": null,
+   "position": 2,
    "musicalKey": "D minor",
    "genre": "CLASSICAL"
   },
@@ -169,42 +169,10 @@
    "genre": "CLASSICAL"
   },
   {
-   "id": "bwv-996-allemande",
-   "workId": "bwv-996",
-   "title": "Allemande",
-   "position": null,
-   "musicalKey": "E minor",
-   "genre": "CLASSICAL"
-  },
-  {
-   "id": "bwv-996-bourree",
-   "workId": "bwv-996",
-   "title": "Bourrée",
-   "position": null,
-   "musicalKey": "E minor",
-   "genre": "CLASSICAL"
-  },
-  {
-   "id": "bwv-996-courante",
-   "workId": "bwv-996",
-   "title": "Courante",
-   "position": null,
-   "musicalKey": "E minor",
-   "genre": "CLASSICAL"
-  },
-  {
-   "id": "bwv-996-gigue",
-   "workId": "bwv-996",
-   "title": "Gigue",
-   "position": null,
-   "musicalKey": "E minor",
-   "genre": "CLASSICAL"
-  },
-  {
    "id": "bwv-996-praeludium",
    "workId": "bwv-996",
    "title": "Praeludium",
-   "position": null,
+   "position": 1,
    "musicalKey": "E minor",
    "genre": "CLASSICAL"
   },
@@ -212,7 +180,23 @@
    "id": "bwv-996-presto",
    "workId": "bwv-996",
    "title": "Presto",
-   "position": null,
+   "position": 2,
+   "musicalKey": "E minor",
+   "genre": "CLASSICAL"
+  },
+  {
+   "id": "bwv-996-allemande",
+   "workId": "bwv-996",
+   "title": "Allemande",
+   "position": 3,
+   "musicalKey": "E minor",
+   "genre": "CLASSICAL"
+  },
+  {
+   "id": "bwv-996-courante",
+   "workId": "bwv-996",
+   "title": "Courante",
+   "position": 4,
    "musicalKey": "E minor",
    "genre": "CLASSICAL"
   },
@@ -220,7 +204,23 @@
    "id": "bwv-996-sarabande",
    "workId": "bwv-996",
    "title": "Sarabande",
-   "position": null,
+   "position": 5,
+   "musicalKey": "E minor",
+   "genre": "CLASSICAL"
+  },
+  {
+   "id": "bwv-996-bourree",
+   "workId": "bwv-996",
+   "title": "Bourrée",
+   "position": 6,
+   "musicalKey": "E minor",
+   "genre": "CLASSICAL"
+  },
+  {
+   "id": "bwv-996-gigue",
+   "workId": "bwv-996",
+   "title": "Gigue",
+   "position": 7,
    "musicalKey": "E minor",
    "genre": "CLASSICAL"
   },

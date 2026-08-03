@@ -171,7 +171,9 @@ function extractLinks(cell: string): string[] {
   let m: RegExpExecArray | null;
   while ((m = re.exec(cell)) !== null) {
     if (m[1] === "!") continue; // embed (PDFs etc.)
-    let target = m[2];
+    // Inside a markdown table the alias pipe is escaped ([[Malagueña\|Malagueñas]]),
+    // so unescape before splitting or the backslash survives into the target.
+    let target = m[2].replace(/\\\|/g, "|");
     target = target.split("|")[0];
     const segs = target.split("/");
     const name = norm(segs[segs.length - 1]);
@@ -696,12 +698,23 @@ for (const p of mdFiles(worksDir)) {
       orderCounter.set(workId, position + 1);
     }
   }
+  // An explicit `position:` in the movement's frontmatter wins over both the
+  // master index and the roman-numeral fallback. The master index is generated
+  // alphabetically from the file system, so it cannot carry performance order;
+  // and suite movements (Allemande, Gigue) have no numeral to fall back on.
+  const fmPos =
+    typeof fm.position === "number"
+      ? fm.position
+      : typeof fm.position === "string" && /^\d+$/.test(fm.position.trim())
+        ? parseInt(fm.position.trim(), 10)
+        : null;
+
   const id = `${workId}-${slug(title)}`;
   movements.set(id, {
     id,
     workId,
     title,
-    position,
+    position: fmPos ?? position,
     musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
     genre: "CLASSICAL",
   });
