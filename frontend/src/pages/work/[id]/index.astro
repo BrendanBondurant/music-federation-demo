@@ -1,0 +1,132 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PieceCard from '../../../components/PieceCard.astro';
+import { gql } from '../../../lib/api';
+import { WORK_PAGE } from '../../../lib/queries';
+import { plural } from '../../../lib/format';
+import type { RecordingRow } from '../../../lib/types';
+
+interface WorkData {
+  work: {
+    id: string;
+    title: string;
+    catalogNumber: string | null;
+    composer: { id: string; name: string } | null;
+    movements: {
+      id: string;
+      title: string;
+      position: number | null;
+      musicalKey: string | null;
+      recordings: RecordingRow[];
+    }[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const variables = { id };
+const data = await gql<WorkData>(WORK_PAGE, variables);
+const work = data.work;
+if (!work) Astro.response.status = 404;
+
+const movements = work?.movements ?? [];
+// Null position is real: shown in vault order with an asterisk, never a
+// made-up number.
+const ordinal = (m: { position: number | null }, i: number) =>
+  m.position != null ? String(m.position) : `${i + 1}*`;
+const hasStar = movements.some((m) => m.position == null);
+const single = movements.length === 1;
+
+// Who recorded this work, pooled across every movement — the primary view.
+const perfMap = new Map<
+  string,
+  { name: string; recs: number; movementIds: Set<string> }
+>();
+movements.forEach((m) => {
+  m.recordings.forEach((r) => {
+    r.performers.forEach((p) => {
+      const entry = perfMap.get(p.id) ?? { name: p.name, recs: 0, movementIds: new Set() };
+      entry.recs += 1;
+      entry.movementIds.add(m.id);
+      perfMap.set(p.id, entry);
+    });
+  });
+});
+const performers = [...perfMap.entries()].sort((a, b) => b[1].recs - a[1].recs);
+---
+
+<Base
+  title={work?.title ?? 'Work not found'}
+  trailLabel={work?.title ?? id}
+  trailSubgraph="catalog"
+  query={WORK_PAGE}
+  variables={variables}
+>
+  {
+    !work ? (
+      <div class="empty-state">
+        No work found for id <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">
+          Work{work.catalogNumber && work.catalogNumber !== work.title ? ` · ${work.catalogNumber}` : ''}
+        </div>
+        <h1 class="page-title">{work.title}</h1>
+        <div class="kv-list">
+          {work.composer && (
+            <span>
+              <b>Composer</b> <a href={`/artist/${work.composer.id}`}>{work.composer.name}</a>
+            </span>
+          )}
+          <span>
+            <b>Movements</b> {movements.length}
+          </span>
+        </div>
+        {single ? (
+          <div class="note">This work has a single movement — {movements[0].title}.</div>
+        ) : (
+          hasStar && (
+            <div class="note">
+              * — no <code>position</code> in the vault for one or more movements; shown in vault
+              order rather than a made-up number.
+            </div>
+          )
+        )}
+        <section class="block">
+          <h3>
+            Recorded by <span class="count">{performers.length}</span>
+          </h3>
+          {performers.length ? (
+            <div class="card-grid">
+              {performers.map(([pid, p]) => (
+                <PieceCard
+                  href={`/work/${work.id}/performer/${pid}`}
+                  title={p.name}
+                  meta={
+                    p.movementIds.size > 1
+                      ? `${p.movementIds.size} movements`
+                      : plural(p.recs, 'recording')
+                  }
+                />
+              ))}
+            </div>
+          ) : (
+            <div class="empty-state">No recordings tracked for this work yet.</div>
+          )}
+        </section>
+        {movements.length > 1 && (
+          <section class="block">
+            <h3>Movements</h3>
+            <div class="facet-row">
+              {movements.map((m, i) => (
+                <a href={`/movement/${m.id}`}>
+                  {ordinal(m, i)}. {m.title}
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+      </>
+    )
+  }
+</Base>

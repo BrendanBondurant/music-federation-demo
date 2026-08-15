@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecordingsTable from '../../components/RecordingsTable.astro';
+import { gql } from '../../lib/api';
+import { PALO_DETAIL } from '../../lib/queries';
+import { plural } from '../../lib/format';
+import type { Genre, RecordingRow } from '../../lib/types';
+
+interface PaloData {
+  tunes: {
+    id: string;
+    title: string;
+    genre: Genre;
+    palo: string | null;
+    recordings: RecordingRow[];
+  }[];
+}
+
+const raw = Astro.params.palo ?? '';
+const isNone = raw === 'none';
+const paloName = isNone ? null : decodeURIComponent(raw);
+
+// No server-side palo argument exists on Query.tunes today — fetched once,
+// filtered here, same caveat as musicalKey.
+const data = await gql<PaloData>(PALO_DETAIL);
+const flamenco = data.tunes.filter((t) => t.genre === 'FLAMENCO');
+const tunes = flamenco
+  .filter((t) => (isNone ? t.palo == null : t.palo === paloName))
+  .sort((a, b) => a.title.localeCompare(b.title));
+if (!isNone && tunes.length === 0) Astro.response.status = 404;
+
+// Pool every recording across every tune under this palo into one table,
+// with a piece column since more than one tune feeds it.
+const pooled: RecordingRow[] = tunes.flatMap((t) =>
+  t.recordings.map((r) => ({ ...r, piece: { __typename: 'Tune' as const, id: t.id, title: t.title } })),
+);
+
+const displayName = isNone ? 'No palo recorded' : paloName!;
+---
+
+<Base
+  title={displayName}
+  trailLabel={displayName}
+  trailSubgraph="catalog"
+  query={PALO_DETAIL}
+>
+  {
+    tunes.length === 0 && !isNone ? (
+      <div class="empty-state">
+        No flamenco tunes tagged with palo <code>{displayName}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">Flamenco · palo</div>
+        <h1 class="page-title">{displayName}</h1>
+        <p class="subtitle">
+          {plural(tunes.length, 'tune')} · {plural(pooled.length, 'recording')}.
+        </p>
+        {isNone && (
+          <div class="note">
+            These {tunes.length} tunes are tagged flamenco but carry no palo in the vault — a
+            tagging gap, not a design choice to hide them.
+          </div>
+        )}
+        <RecordingsTable
+          recordings={pooled}
+          pieceColumn={true}
+          emptyLabel="No recordings tracked for these tunes yet."
+        />
+      </>
+    )
+  }
+</Base>

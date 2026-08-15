@@ -1,0 +1,247 @@
+---
+interface Props {
+  title: string;
+  /** Trail hop for this page: label + the subgraph that owns the page's root. */
+  trailLabel: string;
+  trailSubgraph: 'artists' | 'catalog' | 'discography';
+  /** The operation this page ran, for the query-view drawer. */
+  query?: string;
+  variables?: Record<string, unknown>;
+  activeGenre?: string;
+}
+const { title, trailLabel, trailSubgraph, query, variables, activeGenre } = Astro.props;
+const pageOp = { query: query ?? null, variables: variables ?? null };
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · whoplayedit.com</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/brand/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/brand/favicon-16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site">
+      <div class="header-row">
+        <a href="/" class="wordmark">whoplayedit<span>.com</span></a>
+        <div class="search-wrap">
+          <input type="text" id="search-input" placeholder="Find a tune or work…" autocomplete="off" />
+          <div class="search-results" id="search-results"></div>
+        </div>
+        <nav class="genres">
+          <a href="/genre/jazz" class={activeGenre === 'jazz' ? 'active' : ''}>Jazz</a>
+          <a href="/genre/classical" class={activeGenre === 'classical' ? 'active' : ''}>Classical</a>
+          <a href="/genre/flamenco" class={activeGenre === 'flamenco' ? 'active' : ''}>Flamenco</a>
+          <a href="/genre/bluegrass" class={activeGenre === 'bluegrass' ? 'active' : ''}>Bluegrass</a>
+        </nav>
+        <a class="surprise" href="/api/surprise">Surprise me</a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site">
+      <p>
+        Rendered live from three federated GraphQL subgraphs — artists, catalog, discography —
+        joined by a Cosmo Router. No Apollo packages anywhere. The query view shows the
+        router's actual plan for the page you're on.
+      </p>
+      <p class="byline">
+        <a href="https://brendanbondurant.com" aria-label="brendan bondurant">
+          <img src="/brand/wordmark-inline-on-light.svg" alt="brendan bondurant" width="260" height="34" />
+        </a>
+      </p>
+    </footer>
+
+    <button class="qv-toggle" id="qv-toggle">⟨/⟩ Query view</button>
+    <div class="qv-drawer" id="qv-drawer">
+      <h4><span>Query view</span><button class="qv-close" id="qv-close">✕</button></h4>
+      <div id="qv-body"><p class="qv-note">Open on a page that ran a query.</p></div>
+    </div>
+
+    <script type="application/json" id="page-op" set:html={JSON.stringify(pageOp)} />
+
+    <script>
+      // ---------- search ----------
+      const input = document.getElementById('search-input') as HTMLInputElement | null;
+      const results = document.getElementById('search-results');
+      let index: { title: string; kind: string; href: string; n: number }[] | null = null;
+      const fold = (s: string) =>
+        s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+      async function loadIndex() {
+        if (index) return index;
+        const res = await fetch('/api/search-index.json');
+        index = await res.json();
+        return index!;
+      }
+
+      input?.addEventListener('focus', () => void loadIndex());
+      input?.addEventListener('input', async () => {
+        if (!results) return;
+        const q = fold(input.value.trim());
+        if (!q) {
+          results.classList.remove('open');
+          results.replaceChildren();
+          return;
+        }
+        const idx = await loadIndex();
+        const matches = idx
+          .filter((s) => fold(s.title).includes(q))
+          .sort((a, b) => b.n - a.n)
+          .slice(0, 12);
+        results.replaceChildren(
+          ...(matches.length
+            ? matches.map((m) => {
+                const a = document.createElement('a');
+                a.className = 'res';
+                a.href = m.href;
+                const t = document.createElement('span');
+                t.textContent = m.title;
+                const k = document.createElement('span');
+                k.className = 'kind';
+                k.textContent = `${m.kind} · ${m.n} rec.`;
+                a.append(t, k);
+                return a;
+              })
+            : [
+                (() => {
+                  const d = document.createElement('div');
+                  d.className = 'res';
+                  d.innerHTML = '<span class="muted">No matches</span>';
+                  return d;
+                })(),
+              ]),
+        );
+        results.classList.add('open');
+      });
+      document.addEventListener('click', (e) => {
+        if (results && input && !results.contains(e.target as Node) && e.target !== input) {
+          results.classList.remove('open');
+        }
+      });
+
+      // ---------- query view drawer: the router's real plan ----------
+      const drawer = document.getElementById('qv-drawer');
+      const qvBody = document.getElementById('qv-body');
+      let planLoaded = false;
+
+      function fanoutItem(subgraph: string, text: string) {
+        const div = document.createElement('div');
+        div.className = 'fanout-item';
+        const dot = document.createElement('span');
+        dot.className = `dot ${subgraph}`;
+        const label = document.createElement('div');
+        const b = document.createElement('b');
+        b.textContent = subgraph;
+        label.append(b, ` — ${text}`);
+        div.append(dot, label);
+        return div;
+      }
+
+      // Walk the router's plan tree and flatten every fetch node into
+      // "which subgraph, fetching what, after which step".
+      function collectFetches(node: any, out: any[] = []) {
+        if (!node || typeof node !== 'object') return out;
+        if (node.fetch) out.push(node.fetch);
+        for (const child of node.children ?? []) collectFetches(child, out);
+        return out;
+      }
+
+      async function loadPlan() {
+        const opEl = document.getElementById('page-op');
+        if (!qvBody || !opEl?.textContent) return;
+        const op = JSON.parse(opEl.textContent);
+        if (!op.query) {
+          qvBody.innerHTML = '<p class="qv-note">This page didn’t run a GraphQL operation.</p>';
+          return;
+        }
+        const pre = document.createElement('pre');
+        pre.textContent = op.query.trim();
+        qvBody.replaceChildren(pre);
+
+        try {
+          const res = await fetch('/api/graphql', {
+            method: 'POST',
+            headers: {
+              'content-type': 'application/json',
+              'x-wg-include-query-plan': 'true',
+            },
+            body: JSON.stringify({ query: op.query, variables: op.variables }),
+          });
+          const body = await res.json();
+          const plan = body?.extensions?.queryPlan;
+          if (!plan) {
+            const note = document.createElement('p');
+            note.className = 'qv-note';
+            note.textContent =
+              'No query plan in the response — the router only exposes plans in dev mode (npm start runs it with DEV_MODE=true).';
+            qvBody.append(note);
+            return;
+          }
+          const fanout = document.createElement('div');
+          fanout.className = 'fanout';
+          for (const f of collectFetches(plan)) {
+            const what =
+              f.kind === 'Entity' || f.kind === 'BatchEntity'
+                ? `entity fetch at ${f.path || 'root'} (${(f.representations ?? [])
+                    .map((r: any) => r.typeName)
+                    .join(', ') || 'entities'})`
+                : 'root fetch';
+            const after = f.dependsOnFetchIds?.length
+              ? `, after step ${f.dependsOnFetchIds.join(' and ')}`
+              : '';
+            fanout.append(fanoutItem(f.subgraphName, `step ${f.fetchId}: ${what}${after}`));
+          }
+          qvBody.append(fanout);
+
+          const details = document.createElement('details');
+          const summary = document.createElement('summary');
+          summary.textContent = 'Raw plan from the router';
+          const rawPre = document.createElement('pre');
+          rawPre.textContent = JSON.stringify(plan, null, 2);
+          details.append(summary, rawPre);
+          qvBody.append(details);
+
+          const note = document.createElement('p');
+          note.className = 'qv-note';
+          note.textContent =
+            'This is the Cosmo Router’s actual plan for this page’s operation, fetched live with X-WG-Include-Query-Plan — not a hand-written diagram.';
+          qvBody.append(note);
+        } catch {
+          const note = document.createElement('p');
+          note.className = 'qv-note';
+          note.textContent = 'Could not reach the router for a plan. Is the backend up?';
+          qvBody.append(note);
+        }
+      }
+
+      document.getElementById('qv-toggle')?.addEventListener('click', () => {
+        drawer?.classList.add('open');
+        if (!planLoaded) {
+          planLoaded = true;
+          void loadPlan();
+        }
+      });
+      document.getElementById('qv-close')?.addEventListener('click', () => {
+        drawer?.classList.remove('open');
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

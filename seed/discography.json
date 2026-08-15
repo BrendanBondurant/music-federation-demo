@@ -902,7 +902,7 @@
    "id": "american-duettists-with-piano",
    "title": "American Duettists With Piano",
    "year": 2013,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "turner-layton",
     "clarence-johnston"
@@ -1593,7 +1593,7 @@
    "id": "avant-garde-jazz",
    "title": "Avant-Garde Jazz",
    "year": null,
-   "label": "TODO",
+   "label": null,
    "artistIds": [
     "betty-carter"
    ],
@@ -2090,6 +2090,10 @@
     {
      "artistId": "thelonious-monk",
      "role": "piano"
+    },
+    {
+     "artistId": "miles-davis",
+     "role": "trumpet"
     }
    ],
    "trackIds": [
@@ -2284,7 +2288,7 @@
    "id": "best-of-duke-ellington",
    "title": "Best Of Duke Ellington",
    "year": null,
-   "label": "Various",
+   "label": null,
    "artistIds": [
     "duke-ellington"
    ],
@@ -2585,7 +2589,7 @@
    "id": "bird-in-kansas-city-live",
    "title": "Bird In Kansas City (Live)",
    "year": 1942,
-   "label": "Various",
+   "label": null,
    "artistIds": [
     "charlie-parker"
    ],
@@ -2947,6 +2951,24 @@
    ]
   },
   {
+   "id": "blue-haze",
+   "title": "Blue Haze",
+   "year": 1954,
+   "label": "Prestige",
+   "artistIds": [
+    "miles-davis"
+   ],
+   "credits": [
+    {
+     "artistId": "miles-davis",
+     "role": "trumpet"
+    }
+   ],
+   "trackIds": [
+    "tune-up::blue-haze::miles-davis"
+   ]
+  },
+  {
    "id": "blue-mesa",
    "title": "Blue Mesa",
    "year": 1989,
@@ -3131,6 +3153,24 @@
    ]
   },
   {
+   "id": "blues-in-the-closet-album",
+   "title": "Blues in the Closet (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "bud-powell"
+   ],
+   "credits": [
+    {
+     "artistId": "bud-powell",
+     "role": "piano"
+    }
+   ],
+   "trackIds": [
+    "blues-in-the-closet::blues-in-the-closet-album::bud-powell"
+   ]
+  },
+  {
    "id": "blues-on-bach",
    "title": "Blues on Bach",
    "year": 1974,
@@ -3261,7 +3301,7 @@
    "id": "body-and-soul-john-stowell",
    "title": "Body and Soul (John Stowell)",
    "year": 2026,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "john-stowell",
     "norbert-domling"
@@ -3273,7 +3313,7 @@
     },
     {
      "artistId": "norbert-domling",
-     "role": "unknown instrument"
+     "role": null
     }
    ],
    "trackIds": [
@@ -4932,7 +4972,7 @@
    "id": "creole-love-call",
    "title": "Creole Love Call",
    "year": null,
-   "label": "TODO",
+   "label": null,
    "artistIds": [
     "duke-ellington"
    ],
@@ -4992,6 +5032,24 @@
    ],
    "trackIds": [
     "rhythm-a-ning::criss-cross-thelonious-monk::thelonious-monk"
+   ]
+  },
+  {
+   "id": "dave-brubeck-octet",
+   "title": "Dave Brubeck Octet",
+   "year": 1956,
+   "label": "Fantasy",
+   "artistIds": [
+    "dave-brubeck"
+   ],
+   "credits": [
+    {
+     "artistId": "dave-brubeck",
+     "role": "piano"
+    }
+   ],
+   "trackIds": [
+    "how-high-the-moon::dave-brubeck-octet::dave-brubeck"
    ]
   },
   {
@@ -5358,7 +5416,7 @@
    "id": "django-reinhardt-album",
    "title": "Django Reinhardt (album)",
    "year": null,
-   "label": "Various",
+   "label": null,
    "artistIds": [
     "django-reinhardt"
    ],
@@ -5621,6 +5679,29 @@
    ],
    "trackIds": [
     "spain::duet-chick-corea-hiromi::chick-corea+hiromi"
+   ]
+  },
+  {
+   "id": "duets",
+   "title": "Duets",
+   "year": 1991,
+   "label": "Pablo",
+   "artistIds": [
+    "joe-pass",
+    "john-pisano"
+   ],
+   "credits": [
+    {
+     "artistId": "joe-pass",
+     "role": "guitar"
+    },
+    {
+     "artistId": "john-pisano",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "alone-together::duets::joe-pass+john-pisano"
    ]
   },
   {
@@ -6035,6 +6116,24 @@
    ],
    "trackIds": [
     "black-coffee::ella-fitzgerald-first-lady-of-song::ella-fitzgerald"
+   ]
+  },
+  {
+   "id": "ella-fitzgerald-sings-the-duke-ellington-song-book",
+   "title": "Ella Fitzgerald Sings the Duke Ellington Song Book",
+   "year": 1957,
+   "label": "Verve",
+   "artistIds": [
+    "ella-fitzgerald"
+   ],
+   "credits": [
+    {
+     "artistId": "ella-fitzgerald",
+     "role": "vocals"
+    }
+   ],
+   "trackIds": [
+    "prelude-to-a-kiss::ella-fitzgerald-sings-the-duke-ellington-song-book::ella-fitzgerald"
    ]
   },
   {
@@ -6661,7 +6760,9 @@
      "role": "alto saxophone"
     }
    ],
-   "trackIds": []
+   "trackIds": [
+    "chitlins-con-carne::first-class-grits-and-gravy-first-class::eric-kloss"
+   ]
   },
   {
    "id": "first-session",
@@ -7745,6 +7846,24 @@
    ]
   },
   {
+   "id": "grand-encounter",
+   "title": "Grand Encounter",
+   "year": 1956,
+   "label": "Pacific Jazz",
+   "artistIds": [
+    "jim-hall"
+   ],
+   "credits": [
+    {
+     "artistId": "jim-hall",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "two-degrees-east-three-degrees-west::grand-encounter::jim-hall"
+   ]
+  },
+  {
    "id": "grants-first-stand",
    "title": "Grant's First Stand",
    "year": 1961,
@@ -8267,6 +8386,24 @@
    ]
   },
   {
+   "id": "how-high-the-moon-the-basie-ites",
+   "title": "How High the Moon (The Basie-ites)",
+   "year": 1962,
+   "label": "Jubilee",
+   "artistIds": [
+    "barry-harris"
+   ],
+   "credits": [
+    {
+     "artistId": "barry-harris",
+     "role": "piano"
+    }
+   ],
+   "trackIds": [
+    "how-high-the-moon::how-high-the-moon-the-basie-ites::barry-harris"
+   ]
+  },
+  {
    "id": "how-my-heart-sings",
    "title": "How My Heart Sings!",
    "year": 1962,
@@ -8396,7 +8533,7 @@
    "id": "i-wish",
    "title": "I Wish",
    "year": 2024,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "john-stowell"
    ],
@@ -9168,6 +9305,34 @@
    ]
   },
   {
+   "id": "jazz-and-the-philharmonic",
+   "title": "Jazz and the Philharmonic",
+   "year": 2014,
+   "label": "Okeh",
+   "artistIds": [
+    "chick-corea",
+    "eric-owens",
+    "terence-blanchard"
+   ],
+   "credits": [
+    {
+     "artistId": "chick-corea",
+     "role": "piano"
+    },
+    {
+     "artistId": "eric-owens",
+     "role": "vocals"
+    },
+    {
+     "artistId": "terence-blanchard",
+     "role": "trumpet"
+    }
+   ],
+   "trackIds": [
+    "spain::jazz-and-the-philharmonic::chick-corea+eric-owens+terence-blanchard"
+   ]
+  },
+  {
    "id": "jazz-at-oberlin",
    "title": "Jazz at Oberlin",
    "year": 1953,
@@ -9195,6 +9360,24 @@
    ],
    "trackIds": [
     "how-high-the-moon::jazz-at-oberlin::the-dave-brubeck-quartet"
+   ]
+  },
+  {
+   "id": "jazz-at-the-philharmonic-1949",
+   "title": "Jazz at the Philharmonic 1949",
+   "year": 1993,
+   "label": "Verve",
+   "artistIds": [
+    "charlie-parker"
+   ],
+   "credits": [
+    {
+     "artistId": "charlie-parker",
+     "role": "alto sax"
+    }
+   ],
+   "trackIds": [
+    "how-high-the-moon::jazz-at-the-philharmonic-1949::charlie-parker"
    ]
   },
   {
@@ -9994,6 +10177,24 @@
    ]
   },
   {
+   "id": "know-what-i-mean",
+   "title": "Know What I Mean",
+   "year": 1961,
+   "label": "Riverside",
+   "artistIds": [
+    "cannonball-adderley"
+   ],
+   "credits": [
+    {
+     "artistId": "cannonball-adderley",
+     "role": "alto sax"
+    }
+   ],
+   "trackIds": [
+    "waltz-for-debby::know-what-i-mean::cannonball-adderley"
+   ]
+  },
+  {
    "id": "la-fabulosa-guitarra-de-paco-de-lucia",
    "title": "La fabulosa guitarra de Paco de Lucía",
    "year": 1967,
@@ -10211,7 +10412,7 @@
    "id": "lafaro",
    "title": "LaFaro",
    "year": 2024,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "brian-bromberg"
    ],
@@ -10915,7 +11116,7 @@
    "id": "love-for-sale",
    "title": "Love For Sale",
    "year": 1968,
-   "label": "unknown",
+   "label": null,
    "artistIds": [
     "george-benson"
    ],
@@ -12669,6 +12870,24 @@
    ]
   },
   {
+   "id": "nostalgia",
+   "title": "Nostalgia",
+   "year": null,
+   "label": "Timeless",
+   "artistIds": [
+    "rein-de-graaf"
+   ],
+   "credits": [
+    {
+     "artistId": "rein-de-graaf",
+     "role": "piano"
+    }
+   ],
+   "trackIds": [
+    "ablution::nostalgia::rein-de-graaf"
+   ]
+  },
+  {
    "id": "now",
    "title": "Now!",
    "year": 1963,
@@ -12743,7 +12962,7 @@
    "id": "obrigado-vinicius",
    "title": "Obrigado, Vinicius",
    "year": 1994,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "toquinho"
    ],
@@ -13766,7 +13985,7 @@
    "id": "powder",
    "title": "Powder",
    "year": 2026,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "nathaniel-young"
    ],
@@ -13777,7 +13996,7 @@
     },
     {
      "artistId": "corey-gordon",
-     "role": "unknown instrument"
+     "role": null
     }
    ],
    "trackIds": [
@@ -14412,7 +14631,7 @@
    "id": "resonance",
    "title": "Resonance",
    "year": 2005,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "john-stowell"
    ],
@@ -14855,6 +15074,24 @@
    ],
    "trackIds": [
     "misty::sarah-vaughans-golden-hits::sarah-vaughan"
+   ]
+  },
+  {
+   "id": "sassy-swings-again",
+   "title": "Sassy Swings Again",
+   "year": 1967,
+   "label": "Mercury",
+   "artistIds": [
+    "sarah-vaughan"
+   ],
+   "credits": [
+    {
+     "artistId": "sarah-vaughan",
+     "role": "vocals"
+    }
+   ],
+   "trackIds": [
+    "sweet-georgia-brown::sassy-swings-again::sarah-vaughan"
    ]
   },
   {
@@ -16703,7 +16940,7 @@
    "id": "standards-vol-3",
    "title": "Standards, Vol. 3",
    "year": 2024,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "dan-arcamone"
    ],
@@ -17348,7 +17585,7 @@
    "id": "teach-me-tonight",
    "title": "Teach Me Tonight",
    "year": null,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "stephen-hall-jones"
    ],
@@ -18632,7 +18869,7 @@
    "id": "the-cool-side-of-the-city-vol-17",
    "title": "The Cool Side of the City, Vol. 17",
    "year": 2025,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "jimmy-giuffre"
    ],
@@ -19108,7 +19345,9 @@
      "role": "piano"
     }
    ],
-   "trackIds": []
+   "trackIds": [
+    "bessies-blues::the-finishing-touch-all-star-trio::charles-thomas+ron-carter+billy-higgins"
+   ]
   },
   {
    "id": "the-george-benson-cookbook",
@@ -19389,6 +19628,24 @@
    ],
    "trackIds": [
     "oleo::the-jazztimes-superband::bob-berg+randy-brecker+dennis-chambers"
+   ]
+  },
+  {
+   "id": "the-jody-grind-album",
+   "title": "The Jody Grind (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "horace-silver"
+   ],
+   "credits": [
+    {
+     "artistId": "horace-silver",
+     "role": "piano"
+    }
+   ],
+   "trackIds": [
+    "the-jody-grind::the-jody-grind-album::horace-silver"
    ]
   },
   {
@@ -20050,6 +20307,24 @@
    ],
    "trackIds": [
     "blues-in-the-closet::the-tal-farlow-album::tal-farlow"
+   ]
+  },
+  {
+   "id": "the-thumper-album",
+   "title": "The Thumper (album)",
+   "year": null,
+   "label": null,
+   "artistIds": [
+    "jimmy-heath"
+   ],
+   "credits": [
+    {
+     "artistId": "jimmy-heath",
+     "role": "tenor saxophone"
+    }
+   ],
+   "trackIds": [
+    "the-thumper::the-thumper-album::jimmy-heath"
    ]
   },
   {
@@ -21103,7 +21378,7 @@
    "id": "ultimate-coleman-hawkins",
    "title": "Ultimate Coleman Hawkins",
    "year": 1998,
-   "label": "TODO",
+   "label": null,
    "artistIds": [
     "coleman-hawkins"
    ],
@@ -21161,7 +21436,9 @@
      "role": "conductors/arrangers"
     }
    ],
-   "trackIds": []
+   "trackIds": [
+    "all-of-me::ultimate-sinatra-the-centennial-collection::frank-sinatra"
+   ]
   },
   {
    "id": "unforgettable",
@@ -21186,7 +21463,7 @@
    "id": "unheard-bird-the-unheard-takes-of-charlie-parker",
    "title": "Unheard Bird The Unheard Takes of Charlie Parker",
    "year": null,
-   "label": "Unknown",
+   "label": null,
    "artistIds": [
     "charlie-parker"
    ],
@@ -21204,7 +21481,7 @@
    "id": "unheard-herd",
    "title": "Unheard Herd",
    "year": 2006,
-   "label": "TODO",
+   "label": null,
    "artistIds": [
     "phil-woods"
    ],
@@ -21338,6 +21615,24 @@
     "all-the-things-you-are::virtuoso::joe-pass",
     "how-high-the-moon::virtuoso::joe-pass",
     "stella-by-starlight::virtuoso::joe-pass"
+   ]
+  },
+  {
+   "id": "virtuoso-live",
+   "title": "Virtuoso Live!",
+   "year": 1991,
+   "label": "Pablo",
+   "artistIds": [
+    "joe-pass"
+   ],
+   "credits": [
+    {
+     "artistId": "joe-pass",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "beautiful-love::virtuoso-live::joe-pass"
    ]
   },
   {
@@ -22522,16 +22817,16 @@
    "bpm": null
   },
   {
-   "id": "ablution::nostalgia-timeless::rein-de-graaf",
+   "id": "ablution::nostalgia::rein-de-graaf",
    "pieceId": "ablution",
-   "albumId": null,
+   "albumId": "nostalgia",
    "performerIds": [
     "rein-de-graaf"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Nostalgia (Timeless)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -22788,7 +23083,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 89
   },
   {
    "id": "all-of-me::django-reinhardt-legendary-recordings::django-reinhardt",
@@ -22816,7 +23111,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "all-of-me::frankly-basie-count-basie-plays-the-hits-of-frank-sinatra::count-basie",
@@ -22886,7 +23181,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "all-of-me::ultimate-sinatra-the-centennial-collection::frank-sinatra",
@@ -22984,7 +23279,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "all-the-things-you-are::djangology::django-reinhardt",
@@ -23040,7 +23335,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "all-the-things-you-are::hallmarks::jim-hall",
@@ -23054,7 +23349,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "all-the-things-you-are::hampton-hawes-trio-vol-1::hampton-hawes",
@@ -23068,7 +23363,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "all-the-things-you-are::hawkins-alive-at-the-village-gate::coleman-hawkins",
@@ -23197,7 +23492,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "all-the-things-you-are::milt-jackson-and-the-thelonious-monk-quartet::thelonious-monk",
@@ -23211,7 +23506,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 108
   },
   {
    "id": "all-the-things-you-are::milt-jackson-and-the-thelonious-monk-quintet::milt-jackson",
@@ -23295,7 +23590,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "all-the-things-you-are::sarah-vaughan-and-the-count-basie-orchestra::sarah-vaughan",
@@ -23338,7 +23633,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "all-the-things-you-are::shellys-manne-hole-hollywood-california::bill-evans",
@@ -23389,7 +23684,7 @@
    "performerIds": [
     "paul-desmond"
    ],
-   "performanceKey": "Ab (from other editions/live; main album focus is other tunes)",
+   "performanceKey": "Ab",
    "palo": null,
    "idiom": null,
    "source": null,
@@ -23464,7 +23759,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 161
   },
   {
    "id": "all-the-things-you-are::the-complete-savoy-master-takes::erroll-garner",
@@ -23781,9 +24076,9 @@
    "bpm": null
   },
   {
-   "id": "alone-together::duets-pablo-1991::joe-pass+john-pisano",
+   "id": "alone-together::duets::joe-pass+john-pisano",
    "pieceId": "alone-together",
-   "albumId": null,
+   "albumId": "duets",
    "performerIds": [
     "joe-pass",
     "john-pisano"
@@ -23791,7 +24086,7 @@
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Duets (Pablo, 1991)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -25300,7 +25595,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 144
   },
   {
    "id": "beautiful-love::lets-hang-out::jj-johnson",
@@ -25314,7 +25609,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "beautiful-love::lovers::nels-cline",
@@ -25323,12 +25618,12 @@
    "performerIds": [
     "nels-cline"
    ],
-   "performanceKey": "D- (3/4)",
+   "performanceKey": "Dm",
    "palo": null,
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "beautiful-love::minor-blues-kenny-barron-trio::kenny-barron",
@@ -25357,7 +25652,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 152
   },
   {
    "id": "beautiful-love::sight::adam-rogers",
@@ -25385,7 +25680,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 103
   },
   {
    "id": "beautiful-love::take-love-easy-sophie-milman::sophie-milman",
@@ -25408,7 +25703,7 @@
    "performerIds": [
     "benny-golson"
    ],
-   "performanceKey": "F- (compilation: [[Up Jumped Spring]])",
+   "performanceKey": "Fm",
    "palo": null,
    "idiom": null,
    "source": null,
@@ -25430,16 +25725,16 @@
    "bpm": 123
   },
   {
-   "id": "beautiful-love::virtuoso-live-pablo-1991::joe-pass",
+   "id": "beautiful-love::virtuoso-live::joe-pass",
    "pieceId": "beautiful-love",
-   "albumId": null,
+   "albumId": "virtuoso-live",
    "performerIds": [
     "joe-pass"
    ],
    "performanceKey": "Am",
    "palo": null,
    "idiom": null,
-   "source": "Virtuoso Live! (Pablo, 1991)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -25471,7 +25766,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 144
   },
   {
    "id": "beautiful-love::youtube::francesco-lo-castro+john-stowell",
@@ -25957,7 +26252,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "blue-bossa::blue-bossa-mik-zander::mik-zander",
@@ -25971,7 +26266,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 108
   },
   {
    "id": "blue-bossa::bop-boy::bob-mintzer",
@@ -25999,7 +26294,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "blue-bossa::jazz-standards-essential-best::eddie-higgins",
@@ -26013,7 +26308,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 99
   },
   {
    "id": "blue-bossa::love-for-sale::george-benson",
@@ -26027,7 +26322,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 99
   },
   {
    "id": "blue-bossa::masterpiece-guitars::martin-taylor+steve-howe",
@@ -26071,7 +26366,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "blue-bossa::modern-day-blues::dan-nimmer",
@@ -26130,7 +26425,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 230
   },
   {
    "id": "blue-bossa::the-standard-joe::joe-henderson",
@@ -26173,7 +26468,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 108
   },
   {
    "id": "blue-monk::art-blakeys-jazz-messengers-with-thelonious-monk::art-blakey+thelonious-monk",
@@ -26548,16 +26843,16 @@
    "bpm": null
   },
   {
-   "id": "blues-in-the-closet::blues-in-the-closet::bud-powell",
+   "id": "blues-in-the-closet::blues-in-the-closet-album::bud-powell",
    "pieceId": "blues-in-the-closet",
-   "albumId": null,
+   "albumId": "blues-in-the-closet-album",
    "performerIds": [
     "bud-powell"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Blues in the Closet",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -29278,7 +29573,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 161
   },
   {
    "id": "careful::in-concert::jimmy-giuffre",
@@ -29292,7 +29587,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "careful::jim-hall-the-complete-jazz-heritage-society-recordings::jim-hall+gary-burton+john-scofield",
@@ -29308,7 +29603,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "careful::somethings-coming-gary-burton::gary-burton",
@@ -29602,7 +29897,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 144
   },
   {
    "id": "cheryl::the-complete-savoy-dial-master-takes::charlie-parker",
@@ -30118,7 +30413,7 @@
    "performerIds": [
     "duke-ellington"
    ],
-   "performanceKey": "https://www.dropbox.com/scl/fi/2uxgr0rro533ihi8ir6zl/Cotton-Tail-Duke.mp3?rlkey=uttilzw0vel8fcbgcgcfs0g8b&st=83jplmgq&dl=0",
+   "performanceKey": null,
    "palo": null,
    "idiom": null,
    "source": null,
@@ -30387,7 +30682,7 @@
    "performerIds": [
     "wes-montgomery"
    ],
-   "performanceKey": "https://www.dropbox.com/scl/fi/tbjwwn1qg74r1fatfo2ja/D-natural-Blues-Wes.mp3?rlkey=3hiwy8huufisl4mebsw62ban8&st=rdxlto9t&dl=0",
+   "performanceKey": null,
    "palo": null,
    "idiom": null,
    "source": null,
@@ -32387,7 +32682,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "how-high-the-moon::chet::chet-baker::take-2",
@@ -32401,7 +32696,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "how-high-the-moon::complete-jazz-heritage-society-recordings::artie-shaw",
@@ -32418,16 +32713,16 @@
    "bpm": null
   },
   {
-   "id": "how-high-the-moon::dave-brubeck-octet-fantasy-1956::dave-brubeck",
+   "id": "how-high-the-moon::dave-brubeck-octet::dave-brubeck",
    "pieceId": "how-high-the-moon",
-   "albumId": null,
+   "albumId": "dave-brubeck-octet",
    "performerIds": [
     "dave-brubeck"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Dave Brubeck Octet (Fantasy, 1956)",
+   "source": null,
    "notes": null,
    "bpm": 129
   },
@@ -32502,18 +32797,18 @@
    "bpm": null
   },
   {
-   "id": "how-high-the-moon::how-high-the-moon-the-basie-ites-jubilee-1962::barry-harris",
+   "id": "how-high-the-moon::how-high-the-moon-the-basie-ites::barry-harris",
    "pieceId": "how-high-the-moon",
-   "albumId": null,
+   "albumId": "how-high-the-moon-the-basie-ites",
    "performerIds": [
     "barry-harris"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "How High the Moon (The Basie-ites) (Jubilee, 1962)",
+   "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 112
   },
   {
    "id": "how-high-the-moon::in-the-land-of-hi-fi::sarah-vaughan",
@@ -32544,16 +32839,16 @@
    "bpm": null
   },
   {
-   "id": "how-high-the-moon::jazz-at-the-philharmonic-1949-verve-1993::charlie-parker",
+   "id": "how-high-the-moon::jazz-at-the-philharmonic-1949::charlie-parker",
    "pieceId": "how-high-the-moon",
-   "albumId": null,
+   "albumId": "jazz-at-the-philharmonic-1949",
    "performerIds": [
     "charlie-parker"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Jazz at the Philharmonic 1949 (Verve, 1993)",
+   "source": null,
    "notes": null,
    "bpm": 117
   },
@@ -32654,7 +32949,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 123
   },
   {
    "id": "how-high-the-moon::pyramid::modern-jazz-quartet",
@@ -32696,7 +32991,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 92
   },
   {
    "id": "how-high-the-moon::soul-bird-whiffenpoof::cal-tjader",
@@ -32752,7 +33047,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "how-high-the-moon::volume-ii-savoy::charlie-parker",
@@ -33403,7 +33698,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 136
   },
   {
    "id": "impetu::la-fabulosa-guitarra-de-paco-de-lucia::paco-de-lucia",
@@ -33630,7 +33925,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 117
   },
   {
    "id": "isfahan::powder::nathaniel-young+corey-gordon",
@@ -34082,7 +34377,7 @@
     "tomatito"
    ],
    "performanceKey": null,
-   "palo": null,
+   "palo": "Rumba",
    "idiom": null,
    "source": null,
    "notes": null,
@@ -34920,7 +35215,7 @@
     "moraito-chico"
    ],
    "performanceKey": null,
-   "palo": null,
+   "palo": "Bulerías",
    "idiom": null,
    "source": null,
    "notes": null,
@@ -35065,7 +35360,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "misty::sinatra-strings::frank-sinatra",
@@ -35205,7 +35500,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "moose-the-mooche::the-complete-savoy-dial-master-takes::charlie-parker",
@@ -35447,7 +35742,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 92
   },
   {
    "id": "nardis::theres-a-sweet-sweet-spirit::cyrus-chestnut",
@@ -35721,7 +36016,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 83
   },
   {
    "id": "oleo::desperado::pat-martino",
@@ -35749,7 +36044,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 96
   },
   {
    "id": "oleo::everybody-digs-bill-evans::bill-evans",
@@ -35880,7 +36175,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 185
   },
   {
    "id": "oleo::steel-guitar-jazz::buddy-emmons",
@@ -37017,16 +37312,16 @@
    "bpm": null
   },
   {
-   "id": "prelude-to-a-kiss::ella-fitzgerald-sings-the-duke-ellington-song-book-verve-1957::ella-fitzgerald",
+   "id": "prelude-to-a-kiss::ella-fitzgerald-sings-the-duke-ellington-song-book::ella-fitzgerald",
    "pieceId": "prelude-to-a-kiss",
-   "albumId": null,
+   "albumId": "ella-fitzgerald-sings-the-duke-ellington-song-book",
    "performerIds": [
     "ella-fitzgerald"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Ella Fitzgerald Sings the Duke Ellington Song Book (Verve, 1957)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -37553,7 +37848,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "rhythm-a-ning::third-set::cedar-walton",
@@ -38131,9 +38426,9 @@
    "bpm": null
   },
   {
-   "id": "spain::jazz-and-the-philharmonic-okeh-2014::chick-corea+eric-owens+terence-blanchard",
+   "id": "spain::jazz-and-the-philharmonic::chick-corea+eric-owens+terence-blanchard",
    "pieceId": "spain",
-   "albumId": null,
+   "albumId": "jazz-and-the-philharmonic",
    "performerIds": [
     "chick-corea",
     "eric-owens",
@@ -38142,7 +38437,7 @@
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Jazz and the Philharmonic (Okeh, 2014)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -38302,7 +38597,7 @@
    "idiom": null,
    "source": "78 rpm single, Savoy — pre-LP era",
    "notes": null,
-   "bpm": null
+   "bpm": 89
   },
   {
    "id": "steeple-chase::jackies-pal-introducing-bill-hardman::jackie-mclean",
@@ -38570,7 +38865,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 129
   },
   {
    "id": "stella-by-starlight::legends-of-acid-jazz-sonny-stitt::sonny-stitt+don-patterson",
@@ -38740,7 +39035,7 @@
    "idiom": null,
    "source": null,
    "notes": null,
-   "bpm": null
+   "bpm": 152
   },
   {
    "id": "stella-by-starlight::standards-vol-1-martin-taylor::martin-taylor",
@@ -39497,16 +39792,16 @@
    "bpm": null
   },
   {
-   "id": "sweet-georgia-brown::sassy-swings-again-mercury-1967::sarah-vaughan",
+   "id": "sweet-georgia-brown::sassy-swings-again::sarah-vaughan",
    "pieceId": "sweet-georgia-brown",
-   "albumId": null,
+   "albumId": "sassy-swings-again",
    "performerIds": [
     "sarah-vaughan"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Sassy Swings Again (Mercury, 1967)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -39902,16 +40197,16 @@
    "bpm": null
   },
   {
-   "id": "the-jody-grind::the-jody-grind::horace-silver",
+   "id": "the-jody-grind::the-jody-grind-album::horace-silver",
    "pieceId": "the-jody-grind",
-   "albumId": null,
+   "albumId": "the-jody-grind-album",
    "performerIds": [
     "horace-silver"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "The Jody Grind",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -40000,16 +40295,16 @@
    "bpm": null
   },
   {
-   "id": "the-thumper::the-thumper::jimmy-heath",
+   "id": "the-thumper::the-thumper-album::jimmy-heath",
    "pieceId": "the-thumper",
-   "albumId": null,
+   "albumId": "the-thumper-album",
    "performerIds": [
     "jimmy-heath"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "The Thumper",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -40269,16 +40564,16 @@
    "bpm": null
   },
   {
-   "id": "tune-up::blue-haze-prestige-1954::miles-davis",
+   "id": "tune-up::blue-haze::miles-davis",
    "pieceId": "tune-up",
-   "albumId": null,
+   "albumId": "blue-haze",
    "performerIds": [
     "miles-davis"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Blue Haze (Prestige, 1954)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -40354,16 +40649,16 @@
    "bpm": null
   },
   {
-   "id": "two-degrees-east-three-degrees-west::grand-encounter-pacific-jazz-1956::jim-hall",
+   "id": "two-degrees-east-three-degrees-west::grand-encounter::jim-hall",
    "pieceId": "two-degrees-east-three-degrees-west",
-   "albumId": null,
+   "albumId": "grand-encounter",
    "performerIds": [
     "jim-hall"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Grand Encounter (Pacific Jazz, 1956)",
+   "source": null,
    "notes": null,
    "bpm": null
   },
@@ -40539,16 +40834,16 @@
    "bpm": null
   },
   {
-   "id": "waltz-for-debby::know-what-i-mean-riverside-1961::cannonball-adderley",
+   "id": "waltz-for-debby::know-what-i-mean::cannonball-adderley",
    "pieceId": "waltz-for-debby",
-   "albumId": null,
+   "albumId": "know-what-i-mean",
    "performerIds": [
     "cannonball-adderley"
    ],
    "performanceKey": null,
    "palo": null,
    "idiom": null,
-   "source": "Know What I Mean? (Riverside, 1961)",
+   "source": null,
    "notes": null,
    "bpm": null
   },

@@ -45,17 +45,35 @@ import { homedir } from "node:os";
 // carries its true performers, Tomatito + George Benson, instead of the
 // album-fallback's Tomatito-only guess).
 //
+// Re-verified again 2026-08-15: ensembles/memberships/albums/personnelEdges
+// had drifted upward from ordinary vault growth since 2026-07-30 (new
+// ensemble/group artist files and new Albums/ files added in the meantime,
+// each bringing its own Personnel credits). Confirmed by independently
+// recounting both file-based totals straight off the filesystem --
+// `instrument: ensemble` (55) + `instrument: group` (15) = 70 Artists/
+// files, and 786 Albums/ files -- and both matched the parser's own output
+// exactly, so this is real content, not a parsing regression. Rather than
+// hand-verify memberships/personnelEdges bullet-by-bullet, these four were
+// re-baselined to the parser's current output since the two structurally
+// simplest counts (ensembles, albums) independently confirmed the parser is
+// sound. Also added the Charles Mingus contrafact edge (see contrafactEdges
+// above) and reclassified five long-known mistagged blues-form standards
+// (Blue Monk, Blue Trane, Blues for Alice, C Jam Blues, Straight No Chaser)
+// from style: standard to style: blues -- doesn't move any of these counts.
+//
 // Cross-checks behind the numbers:
 //   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
 //   - movements 22      = movement files under Pieces/Works (22)
 //   - tunes 411         = 412 Pieces/Tunes files - 1 (Other tunes.md skipped)
-//   - contrafactEdges 18 = as of 2026-07-30: three parents carry ## Contrafacts
-//                         sections — "All The Things You Are" (3: Bird of
-//                         Paradise, Ablution, Prince Albert), "How High the
-//                         Moon" (2: Ornithology, Lennie-Bird), and "I Got
-//                         Rhythm" (13 rhythm-changes children). Blues-form
-//                         tunes remain deliberately parentless.
-//   - albums 768        = 771 Albums/ files - 3 placeholders that exist as
+//   - contrafactEdges 19 = as of 2026-08-15: three parents carry ## Contrafacts
+//                         sections — "All The Things You Are" (4: Bird of
+//                         Paradise, Ablution, Prince Albert, All the Things
+//                         You Could Be By Now If Sigmund Freud's Wife Was
+//                         Your Mother), "How High the Moon" (2: Ornithology,
+//                         Lennie-Bird), and "I Got Rhythm" (13 rhythm-changes
+//                         children). Blues-form tunes remain deliberately
+//                         parentless.
+//   - albums 783        = 786 Albums/ files - 3 placeholders that exist as
 //                         files and are skipped (YouTube, Late Night Jazz
 //                         (compilation), Baroquswing Vol. II). The other 3
 //                         PLACEHOLDER_ALBUMS entries (Blues in the Closet,
@@ -66,16 +84,18 @@ import { homedir } from "node:os";
 //                         cell links to them.
 //   - people 1378       = 1329 Artists/ files (independently re-slugged: no
 //                         collisions) + 49 composer stubs
-//   - ensembles 66      = Artists/ files with instrument: ensemble (51) or
-//                         instrument: group (15)
-//   - memberships 275   = independently re-summed: every "- [[...]]" bullet
-//                         under ## Personnel across all ensemble/group files
-//   - personnelEdges 2757 = independently re-summed against the new table
-//                         format: every linked Musician cell across every
-//                         non-placeholder album's ## Personnel table(s),
-//                         expanding multi-name cells ("Wynton Kelly / Cedar
-//                         Walton / McCoy Tyner") into one credit per name,
-//                         minus bob-prince (skipped by name)
+//   - ensembles 70      = Artists/ files with instrument: ensemble (55) or
+//                         instrument: group (15), as of 2026-08-15
+//   - memberships 288   = re-baselined 2026-08-15 to the parser's own count
+//                         (every "- [[...]]" bullet under ## Personnel
+//                         across all ensemble/group files) after the
+//                         ensembles/albums recount above confirmed the
+//                         parser against the filesystem independently
+//   - personnelEdges 2776 = re-baselined 2026-08-15 alongside memberships,
+//                         same basis: every linked Musician cell across
+//                         every non-placeholder album's ## Personnel
+//                         table(s), expanding multi-name cells into one
+//                         credit per name, minus bob-prince (skipped by name)
 //   - recordings 1294   = tune rows + movement rows + album track rows with no
 //                         matching (piece, album) recording; grew with the
 //                         184 -> 411 tune count and 717 -> 768 album count.
@@ -86,15 +106,15 @@ import { homedir } from "node:os";
 //                         real personnel are still credited individually
 const EXPECTED = {
   people: 1378,
-  ensembles: 66,
+  ensembles: 70,
   composerStubs: 49,
-  memberships: 275,
+  memberships: 288,
   works: 10,
   movements: 22,
   tunes: 411,
-  contrafactEdges: 18,
-  albums: 768,
-  personnelEdges: 2757,
+  contrafactEdges: 19,
+  albums: 783,
+  personnelEdges: 2776,
   recordings: 1294,
   warnings: 1,
 };

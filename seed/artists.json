@@ -2999,10 +2999,8 @@
   {
    "id": "classical-jazz-quartet",
    "name": "Classical Jazz Quartet",
-   "kind": "PERSON",
-   "instruments": [
-    "jazz quartet"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "Kenny Barron, Stefon Harris, Ron Carter, Lewis Nash. *Plays Bach* (2002).",
    "stub": false
@@ -6513,10 +6511,8 @@
   {
    "id": "jacques-loussier-trio",
    "name": "Jacques Loussier Trio",
-   "kind": "PERSON",
-   "instruments": [
-    "piano trio"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "French pianist Jacques Loussier's trio; the *Play Bach* series (from 1959) set Bach to swing.",
    "stub": false
@@ -8230,7 +8226,7 @@
   },
   {
    "id": "jose-jimenez-el-viejin",
-   "name": "José Jiménez \"[[El Viejín]]",
+   "name": "José Jiménez \\\"El Viejín\\\"",
    "kind": "PERSON",
    "instruments": [],
    "styles": [],
@@ -14040,10 +14036,8 @@
   {
    "id": "the-andrews-sisters",
    "name": "The Andrews Sisters",
-   "kind": "PERSON",
-   "instruments": [
-    "vocals"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -14150,10 +14144,8 @@
   {
    "id": "the-swingle-singers",
    "name": "The Swingle Singers",
-   "kind": "PERSON",
-   "instruments": [
-    "vocal ensemble"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "Ward Swingle's vocal group; scat-sung Bach on *Jazz Sebastian Bach* and, with the MJQ, on *Place Vendôme*.",
    "stub": false
@@ -15642,6 +15634,26 @@
    "role": "alto saxophone, flute"
   },
   {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "kenny-barron",
+   "role": "piano"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "lewis-nash",
+   "role": "drums"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "ron-carter",
+   "role": "bass"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "stefon-harris",
+   "role": "vibes, marimba"
+  },
+  {
    "groupId": "clayton-hamilton-jazz-orchestra",
    "memberId": "jeff-clayton",
    "role": "alto saxophone"
@@ -15790,6 +15802,21 @@
    "groupId": "i-pommeriggi-musicali-di-milano",
    "memberId": "renato-rivolta",
    "role": "conductor"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "christian-garros",
+   "role": "drums"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "jacques-loussier",
+   "role": "piano"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "pierre-michelot",
+   "role": "bass"
   },
   {
    "groupId": "jazz-at-lincoln-center-orchestra",
@@ -16307,6 +16334,21 @@
    "role": "tenor saxophone"
   },
   {
+   "groupId": "the-andrews-sisters",
+   "memberId": "laverne-andrews",
+   "role": "vocals"
+  },
+  {
+   "groupId": "the-andrews-sisters",
+   "memberId": "maxene-andrews",
+   "role": "vocals"
+  },
+  {
+   "groupId": "the-andrews-sisters",
+   "memberId": "patty-andrews",
+   "role": "vocals"
+  },
+  {
    "groupId": "the-bbc-dance-orchestra",
    "memberId": "henry-hall",
    "role": "conductor"
@@ -16505,6 +16547,21 @@
    "groupId": "the-stanley-brothers",
    "memberId": "ralph-stanley",
    "role": "banjo, vocals"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "daniel-humair",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "guy-pedersen",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "the-swingle-singers",
+   "role": "voices (8-voice ensemble; individual roster not documented in these notes)"
   },
   {
    "groupId": "thelonious-monk-quartet",

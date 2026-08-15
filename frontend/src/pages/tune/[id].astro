@@ -1,0 +1,102 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecordingsTable from '../../components/RecordingsTable.astro';
+import PieceCard from '../../components/PieceCard.astro';
+import { gql } from '../../lib/api';
+import { TUNE_PAGE } from '../../lib/queries';
+import { genreLabel } from '../../lib/format';
+import type { Genre, RecordingRow } from '../../lib/types';
+
+interface TuneData {
+  tune: {
+    id: string;
+    title: string;
+    style: string | null;
+    genre: Genre;
+    palo: string | null;
+    musicalKey: string | null;
+    composer: { id: string; name: string } | null;
+    contrafactOf: { id: string; title: string } | null;
+    contrafacts: { id: string; title: string }[];
+    recordings: RecordingRow[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const variables = { id };
+const data = await gql<TuneData>(TUNE_PAGE, variables);
+const tune = data.tune;
+if (!tune) Astro.response.status = 404;
+---
+
+<Base
+  title={tune?.title ?? 'Tune not found'}
+  trailLabel={tune?.title ?? id}
+  trailSubgraph="catalog"
+  query={TUNE_PAGE}
+  variables={variables}
+>
+  {
+    !tune ? (
+      <div class="empty-state">
+        No tune found for id <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">Tune</div>
+        <h1 class="page-title">{tune.title}</h1>
+        <div style="margin:0.4rem 0 0.7rem">
+          <span class="badge">{genreLabel(tune.genre)}</span>
+          {tune.style && <span class="badge outline">{tune.style}</span>}
+          {tune.palo && <span class="badge plum">{tune.palo}</span>}
+        </div>
+        {(tune.composer || tune.musicalKey) && (
+          <div class="kv-list">
+            {tune.composer && (
+              <span>
+                <b>Composer</b> <a href={`/artist/${tune.composer.id}`}>{tune.composer.name}</a>
+              </span>
+            )}
+            {tune.musicalKey && (
+              <span>
+                <b>Key</b> {tune.musicalKey}
+              </span>
+            )}
+          </div>
+        )}
+        {tune.contrafactOf && (
+          <section class="block">
+            <h3>Contrafact of</h3>
+            <p>
+              <a href={`/tune/${tune.contrafactOf.id}`}>{tune.contrafactOf.title}</a>
+            </p>
+          </section>
+        )}
+        {tune.contrafacts.length > 0 && (
+          <section class="block">
+            <h3>
+              Contrafacts of this tune <span class="count">{tune.contrafacts.length}</span>
+            </h3>
+            <div class="card-grid">
+              {tune.contrafacts
+                .slice()
+                .sort((a, b) => a.title.localeCompare(b.title))
+                .map((k) => (
+                  <PieceCard href={`/tune/${k.id}`} title={k.title} />
+                ))}
+            </div>
+          </section>
+        )}
+        <section class="block">
+          <h3>
+            Recordings <span class="count">{tune.recordings.length}</span>
+          </h3>
+          <RecordingsTable
+            recordings={tune.recordings}
+            emptyLabel="No recordings tracked for this tune."
+          />
+        </section>
+      </>
+    )
+  }
+</Base>

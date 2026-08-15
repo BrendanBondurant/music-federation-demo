@@ -1,0 +1,170 @@
+---
+import Base from '../../layouts/Base.astro';
+import PieceCard from '../../components/PieceCard.astro';
+import { gql } from '../../lib/api';
+import { GENRE_TUNES, CLASSICAL_WORKS, PALO_INDEX } from '../../lib/queries';
+import { GENRE_SLUGS, genreLabel, plural } from '../../lib/format';
+import type { Genre } from '../../lib/types';
+
+const slug = Astro.params.genre ?? '';
+const genre: Genre | undefined = GENRE_SLUGS[slug];
+if (!genre) return new Response(null, { status: 404 });
+
+// Classical isn't in Query.tunes at all — it's works and movements, its own
+// shape. Flamenco lands on a palo index, not a wall of 272 titles.
+let query = GENRE_TUNES;
+
+interface TuneRow {
+  id: string;
+  title: string;
+  genre: Genre;
+  style: string | null;
+  contrafactOf: { id: string; title: string } | null;
+  recordings: { id: string }[];
+}
+interface WorkRow {
+  id: string;
+  title: string;
+  catalogNumber: string | null;
+  composer: { id: string; name: string } | null;
+  movements: { id: string }[];
+}
+interface PaloRow {
+  id: string;
+  title: string;
+  genre: Genre;
+  palo: string | null;
+  recordings: { id: string }[];
+}
+
+let tunes: TuneRow[] = [];
+let works: WorkRow[] = [];
+let movementsN = 0;
+let palos: { name: string; tunes: number; recordings: number }[] = [];
+let noPalo: PaloRow[] = [];
+let flamencoN = 0;
+
+if (genre === 'CLASSICAL') {
+  query = CLASSICAL_WORKS;
+  const data = await gql<{ works: WorkRow[] }>(query);
+  works = data.works;
+  movementsN = works.reduce((n, w) => n + w.movements.length, 0);
+} else if (genre === 'FLAMENCO') {
+  query = PALO_INDEX;
+  const data = await gql<{ tunes: PaloRow[] }>(query);
+  const flamenco = data.tunes.filter((t) => t.genre === 'FLAMENCO');
+  flamencoN = flamenco.length;
+  const byPalo = new Map<string, PaloRow[]>();
+  for (const t of flamenco) {
+    if (!t.palo) {
+      noPalo.push(t);
+      continue;
+    }
+    byPalo.set(t.palo, [...(byPalo.get(t.palo) ?? []), t]);
+  }
+  palos = [...byPalo.entries()]
+    .map(([name, list]) => ({
+      name,
+      tunes: list.length,
+      recordings: list.reduce((n, t) => n + t.recordings.length, 0),
+    }))
+    .sort((a, b) => b.tunes - a.tunes);
+} else {
+  const data = await gql<{ tunes: TuneRow[] }>(query);
+  tunes = data.tunes
+    .filter((t) => t.genre === genre)
+    // Blues heads, rhythm changes, and every other contrafact family already
+    // have their own page reachable from the facet row below — drop their
+    // members here so a tune isn't listed twice.
+    .filter((t) => !(genre === 'JAZZ' && (t.style === 'blues' || t.contrafactOf)))
+    .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+const label = genreLabel(genre);
+---
+
+<Base
+  title={label}
+  trailLabel={label}
+  trailSubgraph="catalog"
+  query={query}
+  activeGenre={slug}
+>
+  {
+    genre === 'CLASSICAL' ? (
+      <>
+        <div class="eyebrow">Genre</div>
+        <h1 class="page-title">Classical</h1>
+        <p class="subtitle">
+          {works.length} works, {movementsN} movements. Two composers in the current vault.
+        </p>
+        <div class="card-grid">
+          {works.map((w) => (
+            <PieceCard
+              href={`/work/${w.id}`}
+              title={w.title}
+              meta={[
+                w.catalogNumber && w.catalogNumber !== w.title ? w.catalogNumber : null,
+                w.composer?.name ?? null,
+                plural(w.movements.length, 'movement'),
+              ]
+                .filter(Boolean)
+                .join(' · ')}
+            />
+          ))}
+        </div>
+      </>
+    ) : genre === 'FLAMENCO' ? (
+      <>
+        <div class="eyebrow">Genre · Flamenco</div>
+        <h1 class="page-title">Browse by palo</h1>
+        <p class="subtitle">
+          {palos.length} palos tagged across {flamencoN} tunes. This is how a flamenco listener
+          actually browses — not a wall of {flamencoN} titles.
+        </p>
+        <div class="palo-grid">
+          {palos.map((p) => (
+            <a class="palo-row" href={`/palo/${encodeURIComponent(p.name)}`}>
+              <span class="n">{p.name}</span>
+              <span class="c">
+                {plural(p.tunes, 'tune')} · {plural(p.recordings, 'recording')}
+              </span>
+            </a>
+          ))}
+          <a class="palo-row no-palo" href="/palo/none">
+            <span class="n">No palo recorded</span>
+            <span class="c">{plural(noPalo.length, 'tune')}</span>
+          </a>
+        </div>
+      </>
+    ) : (
+      <>
+        <div class="eyebrow">Genre</div>
+        <h1 class="page-title">{label}</h1>
+        <p class="subtitle">{plural(tunes.length, 'tune')}.</p>
+        {genre === 'JAZZ' && (
+          <div class="facet-row">
+            <a href="/blues-heads">Blues heads</a>
+            <a href="/rhythm-changes">Rhythm changes</a>
+            <a href="/contrafacts">Contrafact families</a>
+          </div>
+        )}
+        {genre === 'BLUEGRASS' && (
+          <div class="note">
+            The vault has exactly one tagged bluegrass tune right now. This page is honest about
+            that rather than hiding behind an empty grid.
+          </div>
+        )}
+        <div class="card-grid">
+          {tunes.map((t) => (
+            <PieceCard
+              href={`/tune/${t.id}`}
+              title={t.title}
+              meta={plural(t.recordings.length, 'recording')}
+            />
+          ))}
+        </div>
+      </>
+    )
+  }
+</Base>

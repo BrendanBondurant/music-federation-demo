@@ -122,8 +122,11 @@ in the same format: what I needed, what the docs said, what worked.
   extends `Recording` on its synthetic id — that id exists precisely so a later
   subgraph can hang per-recording data off it — and a media subgraph owning
   audio files and lead-sheet PDFs. A new subgraph owns its own entities and
-  extends on shared keys; it never duplicates identity. Don't add auth,
-  subscriptions, or a frontend unless asked.
+  extends on shared keys; it never duplicates identity. Don't add auth or
+  subscriptions unless asked. The frontend *was* asked for and lives in
+  `frontend/` (Astro, plain-fetch GraphQL client — see `frontend/README.md`);
+  it is in scope and bound by the same no-Apollo and nulls-are-real rules as
+  everything else here.
 
 ## Before you finish
 

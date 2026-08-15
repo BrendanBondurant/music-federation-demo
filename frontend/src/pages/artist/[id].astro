@@ -1,0 +1,264 @@
+---
+import Base from '../../layouts/Base.astro';
+import PieceCard from '../../components/PieceCard.astro';
+import { gql } from '../../lib/api';
+import { ARTIST_PAGE } from '../../lib/queries';
+import { pieceDisplay, pieceHref } from '../../lib/format';
+import type { ArtistRef, PieceRef } from '../../lib/types';
+
+interface ArtistData {
+  artist: {
+    id: string;
+    name: string;
+    kind: 'PERSON' | 'ENSEMBLE';
+    instruments: string[];
+    styles: string[];
+    bio: string | null;
+    members: { member: ArtistRef; role: string | null }[];
+    memberOf: { group: ArtistRef; role: string | null }[];
+    composedPieces: PieceRef[];
+    composedWorks: { id: string; title: string }[];
+    recordings: {
+      id: string;
+      palo: string | null;
+      idiom: string | null;
+      source: string | null;
+      piece: PieceRef;
+      album: { id: string; title: string; year: number | null } | null;
+    }[];
+    albums: {
+      id: string;
+      title: string;
+      year: number | null;
+      tracks: { id: string; piece: PieceRef }[];
+    }[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const variables = { id };
+const data = await gql<ArtistData>(ARTIST_PAGE, variables);
+const artist = data.artist;
+if (!artist) Astro.response.status = 404;
+
+// The sideman fix (fix-list §1). Album credits are per-album personnel, not
+// per-track — someone credited on an album isn't necessarily on every cut.
+// So the page has two honestly-labelled sections instead of one wrong one:
+//   1. "Credited as a performer" — the per-take table, only when nonempty.
+//   2. "Tunes on records X played on" — derived from Artist.albums →
+//      Album.tracks, explicitly album-level, takes they're already named on
+//      filtered out so nothing repeats.
+const creditedRecs = artist?.recordings ?? [];
+const creditedPieceIds = new Set(creditedRecs.map((r) => r.piece.id));
+const derived = new Map<string, { piece: PieceRef; albums: { id: string; title: string }[] }>();
+for (const al of artist?.albums ?? []) {
+  for (const t of al.tracks) {
+    if (creditedPieceIds.has(t.piece.id)) continue;
+    const entry = derived.get(t.piece.id) ?? { piece: t.piece, albums: [] };
+    if (!entry.albums.some((a) => a.id === al.id)) entry.albums.push({ id: al.id, title: al.title });
+    derived.set(t.piece.id, entry);
+  }
+}
+
+// Movements of composed works show through composedWorks; composedPieces
+// also lists them, so keep only tunes here to avoid double-listing.
+const composedTunes = (artist?.composedPieces ?? []).filter((p) => p.__typename === 'Tune');
+const composedWorks = artist?.composedWorks ?? [];
+
+const nothingTracked =
+  artist &&
+  !creditedRecs.length &&
+  !derived.size &&
+  !artist.albums.length &&
+  !composedTunes.length &&
+  !composedWorks.length &&
+  !artist.members.length &&
+  !artist.memberOf.length;
+---
+
+<Base
+  title={artist?.name ?? 'Artist not found'}
+  trailLabel={artist?.name ?? id}
+  trailSubgraph="artists"
+  query={ARTIST_PAGE}
+  variables={variables}
+>
+  {
+    !artist ? (
+      <div class="empty-state">
+        No artist found for id <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">{artist.kind === 'ENSEMBLE' ? 'Ensemble' : 'Artist'}</div>
+        <h1 class="page-title">{artist.name}</h1>
+        {artist.bio && <p class="subtitle">{artist.bio}</p>}
+        {(artist.instruments.length > 0 || artist.styles.length > 0) && (
+          <div class="kv-list">
+            {artist.instruments.length > 0 && (
+              <span>
+                <b>Instruments</b> {artist.instruments.join(', ')}
+              </span>
+            )}
+            {artist.styles.length > 0 && (
+              <span>
+                <b>Styles</b> {artist.styles.join(', ')}
+              </span>
+            )}
+          </div>
+        )}
+        <div class="kv-list">
+          <span>
+            <b>Credited takes</b> {creditedRecs.length}
+          </span>
+        </div>
+
+        {nothingTracked ? (
+          <div class="empty-state">
+            Nothing tracked for {artist.name} yet — no recordings, albums, or memberships in the
+            current vault.
+          </div>
+        ) : (
+          <>
+            {artist.kind === 'ENSEMBLE' && artist.members.length > 0 && (
+              <section class="block">
+                <h3>
+                  Members <span class="count">{artist.members.length}</span>
+                </h3>
+                <p>
+                  {artist.members.map((m, i) => (
+                    <span>{i > 0 && ', '}<a href={`/artist/${m.member.id}`}>{m.member.name}</a>{m.role && <span class="muted"> ({m.role})</span>}</span>
+                  ))}
+                </p>
+              </section>
+            )}
+            {artist.memberOf.length > 0 && (
+              <section class="block">
+                <h3>Member of</h3>
+                <p>
+                  {artist.memberOf.map((m, i) => (
+                    <span>{i > 0 && ', '}<a href={`/artist/${m.group.id}`}>{m.group.name}</a>{m.role && <span class="muted"> ({m.role})</span>}</span>
+                  ))}
+                </p>
+              </section>
+            )}
+
+            {creditedRecs.length > 0 && (
+              <section class="block">
+                <h3>
+                  Credited as a performer <span class="count">{creditedRecs.length}</span>
+                </h3>
+                <table class="data">
+                  <thead>
+                    <tr>
+                      <th>Piece</th>
+                      <th>Album / source</th>
+                      <th>Year</th>
+                      <th>Tags</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {creditedRecs.map((r) => (
+                      <tr>
+                        <td>
+                          <a href={pieceHref(r.piece)}>{pieceDisplay(r.piece)}</a>
+                        </td>
+                        <td>
+                          {r.album ? (
+                            <a href={`/album/${r.album.id}`}>{r.album.title}</a>
+                          ) : r.source ? (
+                            <span class="source-text" title={r.source}>{r.source}</span>
+                          ) : (
+                            <span class="muted">source unknown</span>
+                          )}
+                        </td>
+                        <td>{r.album ? r.album.year ?? <span class="muted">year unknown</span> : ''}</td>
+                        <td>
+                          {r.idiom && <span class="badge">{r.idiom}</span>}
+                          {r.palo && <span class="badge outline">{r.palo}</span>}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </section>
+            )}
+
+            {derived.size > 0 && (
+              <section class="block">
+                <h3>
+                  Tunes on records {artist.name} played on{' '}
+                  <span class="count">{derived.size}</span>
+                </h3>
+                <div class="note">
+                  Derived from album-level personnel credits, not a per-track credit — the vault
+                  doesn't record who plays on which specific cut of an album. Labelled at the
+                  granularity the data actually supports.
+                </div>
+                <table class="data">
+                  <thead>
+                    <tr>
+                      <th>Piece</th>
+                      <th>Via album</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[...derived.values()].map(({ piece, albums }) => (
+                      <tr>
+                        <td>
+                          <a href={pieceHref(piece)}>{pieceDisplay(piece)}</a>
+                        </td>
+                        <td>
+                          {albums.map((al, i) => (
+                            <span>{i > 0 && ', '}<a href={`/album/${al.id}`}>{al.title}</a></span>
+                          ))}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </section>
+            )}
+
+            {artist.albums.length > 0 && (
+              <section class="block">
+                <h3>
+                  Albums <span class="count">{artist.albums.length}</span>
+                </h3>
+                <div class="card-grid">
+                  {artist.albums
+                    .slice()
+                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .map((al) => (
+                      <PieceCard
+                        href={`/album/${al.id}`}
+                        title={al.title}
+                        meta={al.year != null ? String(al.year) : 'year unknown'}
+                      />
+                    ))}
+                </div>
+              </section>
+            )}
+
+            {(composedTunes.length > 0 || composedWorks.length > 0) && (
+              <section class="block">
+                <h3>
+                  Composer credits{' '}
+                  <span class="count">{composedTunes.length + composedWorks.length}</span>
+                </h3>
+                <div class="card-grid">
+                  {composedTunes.map((p) => (
+                    <PieceCard href={pieceHref(p)} title={pieceDisplay(p)} />
+                  ))}
+                  {composedWorks.map((w) => (
+                    <PieceCard href={`/work/${w.id}`} title={w.title} />
+                  ))}
+                </div>
+              </section>
+            )}
+          </>
+        )}
+      </>
+    )
+  }
+</Base>

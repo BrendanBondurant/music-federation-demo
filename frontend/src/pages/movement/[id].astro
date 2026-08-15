@@ -1,0 +1,98 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecordingsTable from '../../components/RecordingsTable.astro';
+import { gql } from '../../lib/api';
+import { MOVEMENT_PAGE } from '../../lib/queries';
+import { genreLabel } from '../../lib/format';
+import type { Genre, RecordingRow } from '../../lib/types';
+
+interface MovementData {
+  piece: {
+    __typename: 'Tune' | 'Movement';
+    id: string;
+    title: string;
+    genre: Genre;
+    musicalKey: string | null;
+    position?: number | null;
+    work?: {
+      id: string;
+      title: string;
+      catalogNumber: string | null;
+      composer: { id: string; name: string } | null;
+    };
+    recordings: RecordingRow[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const variables = { id };
+const data = await gql<MovementData>(MOVEMENT_PAGE, variables);
+const piece = data.piece;
+
+// This route is for movements; a tune id lands on its tune page instead.
+if (piece && piece.__typename === 'Tune') return Astro.redirect(`/tune/${piece.id}`, 301);
+const movement = piece?.__typename === 'Movement' ? piece : null;
+if (!movement) Astro.response.status = 404;
+
+// Two movements are both titled "Presto" — a movement always displays as
+// Work — Movement, never a bare title.
+const display = movement?.work ? `${movement.work.title} — ${movement.title}` : movement?.title;
+const hasIdiom = movement?.recordings.some((r) => r.idiom) ?? false;
+---
+
+<Base
+  title={display ?? 'Movement not found'}
+  trailLabel={display ?? id}
+  trailSubgraph="catalog"
+  query={MOVEMENT_PAGE}
+  variables={variables}
+>
+  {
+    !movement ? (
+      <div class="empty-state">
+        No movement found for id <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">
+          Movement
+          {movement.work && (
+            <>
+              {' · from '}
+              <a href={`/work/${movement.work.id}`}>{movement.work.title}</a>
+            </>
+          )}
+        </div>
+        <h1 class="page-title">{display}</h1>
+        <div style="margin:0.4rem 0 0.7rem">
+          <span class="badge">{genreLabel(movement.genre)}</span>
+          {movement.musicalKey && <span class="badge outline">{movement.musicalKey}</span>}
+        </div>
+        {movement.work?.composer && (
+          <div class="kv-list">
+            <span>
+              <b>Composer</b>{' '}
+              <a href={`/artist/${movement.work.composer.id}`}>{movement.work.composer.name}</a>
+            </span>
+          </div>
+        )}
+        {hasIdiom && (
+          <div class="note">
+            Idiom is tagged per recording, not per piece — this movement stays{' '}
+            <span class="badge">{genreLabel(movement.genre)}</span> even though some recordings of
+            it clearly aren't.
+          </div>
+        )}
+        <section class="block">
+          <h3>
+            Recordings <span class="count">{movement.recordings.length}</span>
+          </h3>
+          <RecordingsTable
+            recordings={movement.recordings}
+            emptyLabel="No recordings tracked for this movement."
+          />
+        </section>
+      </>
+    )
+  }
+</Base>
