@@ -23,13 +23,7 @@ const album = data.album;
 if (!album) Astro.response.status = 404;
 ---
 
-<Base
-  title={album?.title ?? 'Album not found'}
-  trailLabel={album?.title ?? id}
-  trailSubgraph="discography"
-  query={ALBUM_PAGE}
-  variables={variables}
->
+<Base title={album?.title ?? 'Album not found'}>
   {
     !album ? (
       <div class="empty-state">
@@ -66,17 +60,14 @@ if (!album) Astro.response.status = 404;
               </tbody>
             </table>
           ) : (
-            <div class="empty-state">No personnel section in the vault for this album.</div>
+            <div class="empty-state">No personnel recorded for this album.</div>
           )}
         </section>
         <section class="block">
           <h3>
             Tracks <span class="count">{album.tracks.length}</span>
           </h3>
-          <div class="note">
-            Partial — this only lists pieces actually tracked in the vault, not the full physical
-            album.
-          </div>
+          <div class="note">Partial — tracked pieces only, not the full album.</div>
           <table class="data">
             <thead>
               <tr>

@@ -61,6 +61,23 @@ import { homedir } from "node:os";
 // (Blue Monk, Blue Trane, Blues for Alice, C Jam Blues, Straight No Chaser)
 // from style: standard to style: blues -- doesn't move any of these counts.
 //
+// Second pass 2026-08-15, after Brendan's overnight vault update: the parser
+// first reported large drift (albums 1022, people 1416, ensembles 104,
+// recordings 2016), all of it traced to iCloud-style " 2.md" conflict copies
+// -- 230 albums, 38 artists, 16 movements, each verified byte-identical to
+// its original apart from link style (originals carry absolute-path links
+// from the Obsidian link-format flip; the copies keep short links). With
+// Brendan's OK the copies were moved to _meta/_to_delete/, NOT parsed
+// around. Five same-glob files are real titles ending in "2" (e.g. In
+// Washington D.C. 1956, Vol. 2) and stayed put. After the cleanup every
+// count returned to the 2026-08-15 baseline except three, which trace to 9
+// genuinely new Albums/ files (Les Liaisons Dangereuses 1961, Paco and John
+// Live at Montreux 1988, Tiffany Transcriptions Vol. 6, The Quartet Live
+// Chicago 1983, ...): albums 783 -> 792 (795 files - 3 placeholders,
+// recounted off the filesystem), personnelEdges 2776 -> 2812, recordings
+// 1294 -> 1313. The same vault pass retagged 18 more blues-form tunes to
+// style: blues (44 -> 62) -- content only, no count moves.
+//
 // Cross-checks behind the numbers:
 //   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
 //   - movements 22      = movement files under Pieces/Works (22)
@@ -73,7 +90,7 @@ import { homedir } from "node:os";
 //                         Lennie-Bird), and "I Got Rhythm" (13 rhythm-changes
 //                         children). Blues-form tunes remain deliberately
 //                         parentless.
-//   - albums 783        = 786 Albums/ files - 3 placeholders that exist as
+//   - albums 792        = 795 Albums/ files - 3 placeholders that exist as
 //                         files and are skipped (YouTube, Late Night Jazz
 //                         (compilation), Baroquswing Vol. II). The other 3
 //                         PLACEHOLDER_ALBUMS entries (Blues in the Closet,
@@ -91,16 +108,19 @@ import { homedir } from "node:os";
 //                         across all ensemble/group files) after the
 //                         ensembles/albums recount above confirmed the
 //                         parser against the filesystem independently
-//   - personnelEdges 2776 = re-baselined 2026-08-15 alongside memberships,
+//   - personnelEdges 2812 = re-baselined 2026-08-15 alongside memberships,
 //                         same basis: every linked Musician cell across
 //                         every non-placeholder album's ## Personnel
 //                         table(s), expanding multi-name cells into one
-//                         credit per name, minus bob-prince (skipped by name)
-//   - recordings 1294   = tune rows + movement rows + album track rows with no
+//                         credit per name, minus bob-prince (skipped by name);
+//                         +36 in the second 2026-08-15 pass from the 9 new
+//                         albums' Personnel tables
+//   - recordings 1313   = tune rows + movement rows + album track rows with no
 //                         matching (piece, album) recording; grew with the
-//                         184 -> 411 tune count and 717 -> 768 album count.
-//                         No independent hand recount -- verified via the
-//                         referential-integrity gate only.
+//                         184 -> 411 tune count and 717 -> 768 album count;
+//                         +19 in the second 2026-08-15 pass from the 9 new
+//                         albums' track rows. No independent hand recount --
+//                         verified via the referential-integrity gate only.
 //   - warnings 1        = "Ralph Lalama & His Manhattan All Stars" (Feelin'
 //                         and Dealin') has no Artists/ file of its own; the
 //                         real personnel are still credited individually
@@ -113,9 +133,9 @@ const EXPECTED = {
   movements: 22,
   tunes: 411,
   contrafactEdges: 19,
-  albums: 783,
-  personnelEdges: 2776,
-  recordings: 1294,
+  albums: 792,
+  personnelEdges: 2812,
+  recordings: 1313,
   warnings: 1,
 };
 

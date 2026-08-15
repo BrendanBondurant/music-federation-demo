@@ -13,13 +13,7 @@ const children = data.tunes
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<Base
-  title="Rhythm changes"
-  trailLabel="Rhythm changes"
-  trailSubgraph="catalog"
-  query={GENRE_TUNES}
-  activeGenre="jazz"
->
+<Base title="Rhythm changes" activeGenre="jazz">
   <div class="eyebrow">Jazz · form family</div>
   <h1 class="page-title">Rhythm changes</h1>
   <p class="subtitle">

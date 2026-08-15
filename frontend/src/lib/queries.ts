@@ -1,6 +1,4 @@
-// Page-level operations, written against the composed SDL. Each page hands
-// its operation (plus variables) to the query-view drawer, which re-runs it
-// with X-WG-Include-Query-Plan to show the router's real plan.
+// Page-level operations, written against the composed SDL.
 
 export const LANDING = /* GraphQL */ `
   query Landing {

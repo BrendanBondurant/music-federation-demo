@@ -29,13 +29,7 @@ const tune = data.tune;
 if (!tune) Astro.response.status = 404;
 ---
 
-<Base
-  title={tune?.title ?? 'Tune not found'}
-  trailLabel={tune?.title ?? id}
-  trailSubgraph="catalog"
-  query={TUNE_PAGE}
-  variables={variables}
->
+<Base title={tune?.title ?? 'Tune not found'}>
   {
     !tune ? (
       <div class="empty-state">

@@ -40,13 +40,7 @@ const artistName =
 if (!work || rows.length === 0) Astro.response.status = 404;
 ---
 
-<Base
-  title={work ? `${artistName} · ${work.title}` : 'Not found'}
-  trailLabel={artistName}
-  trailSubgraph="artists"
-  query={WORK_PAGE}
-  variables={variables}
->
+<Base title={work ? `${artistName} · ${work.title}` : 'Not found'}>
   {
     !work || rows.length === 0 ? (
       <div class="empty-state">

@@ -30,19 +30,16 @@ with a `GRAPHQL_ENDPOINT` env var.
 - One route per entity: tune, movement, work (plus per-performer view),
   album, artist, palo, genre — and the jazz form-family facets
   (contrafacts, rhythm changes, blues heads).
-- The query-view drawer re-runs the page's operation with
-  `X-WG-Include-Query-Plan` and renders the router's real plan — it's the
-  live version of the mockup's hand-written teaching panel (dev mode only).
-- The trail in the header is the route you took this session, each hop
-  tinted by the subgraph that owns it.
+- No GraphQL tooling in the UI. The frontend is presented as a production
+  app: inspect query plans against the router directly (send
+  `X-WG-Include-Query-Plan` with any operation in `src/lib/queries.ts`).
 - Design tokens come from the personal-brand identity guide; layout is
-  ported from the approved static mockup. Gold appears only on the dark
-  query-view drawer — it's illegible on paper.
+  ported from the approved static mockup.
 
 ## Honesty rules carried over from the backend
 
 Nulls are real. Missing years read "year unknown"; recordings without an
 album show their free-text `source`; album track lists are labelled partial;
 artist pages split per-take credits from album-level credits (the sideman
-fix, fix-list §1); movements always display as Work — Movement; the
-blues-heads facet is marked known-incomplete until the vault tagging sweep.
+fix, fix-list §1); movements always display as Work — Movement. The UI states
+what the data shows and skips commentary about the data.

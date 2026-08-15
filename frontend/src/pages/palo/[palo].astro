@@ -38,12 +38,7 @@ const pooled: RecordingRow[] = tunes.flatMap((t) =>
 const displayName = isNone ? 'No palo recorded' : paloName!;
 ---
 
-<Base
-  title={displayName}
-  trailLabel={displayName}
-  trailSubgraph="catalog"
-  query={PALO_DETAIL}
->
+<Base title={displayName}>
   {
     tunes.length === 0 && !isNone ? (
       <div class="empty-state">
@@ -57,10 +52,7 @@ const displayName = isNone ? 'No palo recorded' : paloName!;
           {plural(tunes.length, 'tune')} · {plural(pooled.length, 'recording')}.
         </p>
         {isNone && (
-          <div class="note">
-            These {tunes.length} tunes are tagged flamenco but carry no palo in the vault — a
-            tagging gap, not a design choice to hide them.
-          </div>
+          <div class="note">Flamenco tunes with no palo recorded yet.</div>
         )}
         <RecordingsTable
           recordings={pooled}

@@ -54,13 +54,7 @@ movements.forEach((m) => {
 const performers = [...perfMap.entries()].sort((a, b) => b[1].recs - a[1].recs);
 ---
 
-<Base
-  title={work?.title ?? 'Work not found'}
-  trailLabel={work?.title ?? id}
-  trailSubgraph="catalog"
-  query={WORK_PAGE}
-  variables={variables}
->
+<Base title={work?.title ?? 'Work not found'}>
   {
     !work ? (
       <div class="empty-state">
@@ -86,10 +80,7 @@ const performers = [...perfMap.entries()].sort((a, b) => b[1].recs - a[1].recs);
           <div class="note">This work has a single movement — {movements[0].title}.</div>
         ) : (
           hasStar && (
-            <div class="note">
-              * — no <code>position</code> in the vault for one or more movements; shown in vault
-              order rather than a made-up number.
-            </div>
+            <div class="note">* — order not recorded for one or more movements; listed as found.</div>
           )
         )}
         <section class="block">

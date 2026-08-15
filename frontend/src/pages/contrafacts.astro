@@ -18,18 +18,11 @@ for (const t of data.tunes) {
 const sorted = [...families.entries()].sort((a, b) => b[1].length - a[1].length);
 ---
 
-<Base
-  title="Contrafact families"
-  trailLabel="Contrafact families"
-  trailSubgraph="catalog"
-  query={GENRE_TUNES}
-  activeGenre="jazz"
->
+<Base title="Contrafact families" activeGenre="jazz">
   <div class="eyebrow">Jazz · form family</div>
   <h1 class="page-title">Contrafact families</h1>
   <p class="subtitle">
-    {sorted.length} families linked in the current vault. Everything else has no contrafact
-    edge yet — sparse by data, not by design.
+    {sorted.length} families, grouped by the tune whose changes they borrow.
   </p>
   {
     sorted.map(([parentId, kids]) => (

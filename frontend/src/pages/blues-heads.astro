@@ -21,16 +21,10 @@ const tunes = data.tunes
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<Base
-  title="Blues heads"
-  trailLabel="Blues heads"
-  trailSubgraph="catalog"
-  query={GENRE_TUNES}
-  activeGenre="jazz"
->
+<Base title="Blues heads" activeGenre="jazz">
   <div class="eyebrow">Jazz · form family</div>
   <h1 class="page-title">Blues heads</h1>
-  <p class="subtitle">{plural(tunes.length, 'tune')} tagged <code>style: blues</code>.</p>
+  <p class="subtitle">{plural(tunes.length, 'blues-form tune')}.</p>
   <div class="card-grid">
     {tunes.map((t) => (
       <PieceCard

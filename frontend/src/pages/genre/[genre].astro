@@ -83,20 +83,14 @@ if (genre === 'CLASSICAL') {
 const label = genreLabel(genre);
 ---
 
-<Base
-  title={label}
-  trailLabel={label}
-  trailSubgraph="catalog"
-  query={query}
-  activeGenre={slug}
->
+<Base title={label} activeGenre={slug}>
   {
     genre === 'CLASSICAL' ? (
       <>
         <div class="eyebrow">Genre</div>
         <h1 class="page-title">Classical</h1>
         <p class="subtitle">
-          {works.length} works, {movementsN} movements. Two composers in the current vault.
+          {works.length} works, {movementsN} movements.
         </p>
         <div class="card-grid">
           {works.map((w) => (
@@ -119,8 +113,7 @@ const label = genreLabel(genre);
         <div class="eyebrow">Genre · Flamenco</div>
         <h1 class="page-title">Browse by palo</h1>
         <p class="subtitle">
-          {palos.length} palos tagged across {flamencoN} tunes. This is how a flamenco listener
-          actually browses — not a wall of {flamencoN} titles.
+          {palos.length} palos across {flamencoN} tunes.
         </p>
         <div class="palo-grid">
           {palos.map((p) => (
@@ -147,12 +140,6 @@ const label = genreLabel(genre);
             <a href="/blues-heads">Blues heads</a>
             <a href="/rhythm-changes">Rhythm changes</a>
             <a href="/contrafacts">Contrafact families</a>
-          </div>
-        )}
-        {genre === 'BLUEGRASS' && (
-          <div class="note">
-            The vault has exactly one tagged bluegrass tune right now. This page is honest about
-            that rather than hiding behind an empty grid.
           </div>
         )}
         <div class="card-grid">

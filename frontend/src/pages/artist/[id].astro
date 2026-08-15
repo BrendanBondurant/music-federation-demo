@@ -76,13 +76,7 @@ const nothingTracked =
   !artist.memberOf.length;
 ---
 
-<Base
-  title={artist?.name ?? 'Artist not found'}
-  trailLabel={artist?.name ?? id}
-  trailSubgraph="artists"
-  query={ARTIST_PAGE}
-  variables={variables}
->
+<Base title={artist?.name ?? 'Artist not found'}>
   {
     !artist ? (
       <div class="empty-state">
@@ -115,8 +109,7 @@ const nothingTracked =
 
         {nothingTracked ? (
           <div class="empty-state">
-            Nothing tracked for {artist.name} yet — no recordings, albums, or memberships in the
-            current vault.
+            Nothing tracked for {artist.name} yet — no recordings, albums, or memberships.
           </div>
         ) : (
           <>
@@ -191,9 +184,7 @@ const nothingTracked =
                   <span class="count">{derived.size}</span>
                 </h3>
                 <div class="note">
-                  Derived from album-level personnel credits, not a per-track credit — the vault
-                  doesn't record who plays on which specific cut of an album. Labelled at the
-                  granularity the data actually supports.
+                  From album personnel credits — who plays on each specific cut isn't recorded.
                 </div>
                 <table class="data">
                   <thead>

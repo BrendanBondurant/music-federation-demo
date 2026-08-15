@@ -18,12 +18,11 @@ const worksN = data.works.length;
 const movementsN = data.works.reduce((n, w) => n + w.movements.length, 0);
 ---
 
-<Base title="Pick a genre" trailLabel="Home" trailSubgraph="catalog" query={LANDING}>
+<Base title="Pick a genre">
   <div class="eyebrow">Pick a genre</div>
   <h1 class="page-title">What do you want to listen for?</h1>
   <p class="subtitle">
-    Every tune, work, movement, album, recording, and artist in the vault, live from the
-    federated graph — nothing sampled down.
+    Every tune, work, movement, album, recording, and artist in the collection.
   </p>
   <div class="genre-cards">
     <a class="genre-card" href="/genre/jazz">
@@ -43,7 +42,7 @@ const movementsN = data.works.reduce((n, w) => n + w.movements.length, 0);
     </a>
     <a class="genre-card thin" href="/genre/bluegrass">
       <h4>Bluegrass</h4>
-      <div class="m">{bluegrassN} tune so far — this corner of the vault is thin</div>
+      <div class="m">{bluegrassN} tune so far</div>
     </a>
   </div>
 </Base>

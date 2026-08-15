@@ -1751,6 +1751,30 @@
    ]
   },
   {
+   "id": "bach-lute-suites-nos-1-3",
+   "title": "Bach - Lute Suites Nos. 1 & 3",
+   "year": 1966,
+   "label": "RCA Victor Red Seal",
+   "artistIds": [
+    "julian-bream"
+   ],
+   "credits": [
+    {
+     "artistId": "julian-bream",
+     "role": "guitar"
+    }
+   ],
+   "trackIds": [
+    "bwv-996-praeludium::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-presto::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-allemande::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-courante::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-sarabande::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-bourree::bach-lute-suites-nos-1-3::julian-bream",
+    "bwv-996-gigue::bach-lute-suites-nos-1-3::julian-bream"
+   ]
+  },
+  {
    "id": "bach-luvre-de-luth",
    "title": "Bach - L'Œuvre de Luth",
    "year": null,
@@ -1937,6 +1961,27 @@
     "bwv-1001-fuga::bach-sonatas-partitas-for-solo-violin-vol-2::isabelle-faust",
     "bwv-1001-adagio::bach-sonatas-partitas-for-solo-violin-vol-2::isabelle-faust",
     "bwv-1001-siciliana::bach-sonatas-partitas-for-solo-violin-vol-2::isabelle-faust"
+   ]
+  },
+  {
+   "id": "bach-sonatas-partitas-for-solo-violin-vol-3",
+   "title": "Bach - Sonatas & Partitas for Solo Violin, Vol. 3",
+   "year": 2012,
+   "label": "Harmonia Mundi",
+   "artistIds": [
+    "isabelle-faust"
+   ],
+   "credits": [
+    {
+     "artistId": "isabelle-faust",
+     "role": "violin"
+    }
+   ],
+   "trackIds": [
+    "bwv-1001-presto::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+    "bwv-1001-fuga::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+    "bwv-1001-adagio::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+    "bwv-1001-siciliana::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust"
    ]
   },
   {
@@ -5495,6 +5540,29 @@
    ]
   },
   {
+   "id": "djangologie-vol5-1938",
+   "title": "Djangologie Vol.5 - 1938",
+   "year": 1970,
+   "label": "Pathé / Parlophone (France)",
+   "artistIds": [
+    "django-reinhardt"
+   ],
+   "credits": [
+    {
+     "artistId": "django-reinhardt",
+     "role": "guitar"
+    },
+    {
+     "artistId": "stephane-grappelli",
+     "role": "violin"
+    }
+   ],
+   "trackIds": [
+    "st-louis-blues::djangologie-vol5-1938::django-reinhardt",
+    "sweet-georgia-brown::djangologie-vol5-1938::django-reinhardt"
+   ]
+  },
+  {
    "id": "djangology",
    "title": "Djangology",
    "year": 1961,
@@ -8954,6 +9022,36 @@
    ]
   },
   {
+   "id": "in-washington-dc-1956-vol-3",
+   "title": "In Washington D.C. 1956, Vol. 3",
+   "year": 1997,
+   "label": "Debut/Fantasy archival release",
+   "artistIds": [
+    "lester-young"
+   ],
+   "credits": [
+    {
+     "artistId": "lester-young",
+     "role": "tenor saxophone"
+    },
+    {
+     "artistId": "bill-potts",
+     "role": "piano"
+    },
+    {
+     "artistId": "george-duvivier",
+     "role": "bass"
+    },
+    {
+     "artistId": "jim-lucht",
+     "role": "drums"
+    }
+   ],
+   "trackIds": [
+    "lester-leaps-in::in-washington-dc-1956-vol-3::lester-young"
+   ]
+  },
+  {
    "id": "indigos",
    "title": "Indigos",
    "year": 1958,
@@ -10588,6 +10686,40 @@
    ],
    "trackIds": [
     "rhythm-a-ning::les-liaisons-dangereuses-1960::barney-wilen"
+   ]
+  },
+  {
+   "id": "les-liaisons-dangereuses-1961",
+   "title": "Les Liaisons Dangereuses 1961",
+   "year": 1959,
+   "label": "Sam Records",
+   "artistIds": [
+    "thelonious-monk"
+   ],
+   "credits": [
+    {
+     "artistId": "thelonious-monk",
+     "role": "piano"
+    },
+    {
+     "artistId": "barney-wilen",
+     "role": "tenor saxophone"
+    },
+    {
+     "artistId": "kenny-clarke",
+     "role": "drums"
+    },
+    {
+     "artistId": "sam-jones",
+     "role": "bass"
+    },
+    {
+     "artistId": "art-taylor",
+     "role": "drums"
+    }
+   ],
+   "trackIds": [
+    "rhythm-a-ning::les-liaisons-dangereuses-1961::thelonious-monk"
    ]
   },
   {
@@ -13425,6 +13557,29 @@
    ]
   },
   {
+   "id": "paco-and-john-live-at-montreux-1988",
+   "title": "Paco and John - Live at Montreux 1988",
+   "year": 2016,
+   "label": "Eagle Rock Entertainment",
+   "artistIds": [
+    "paco-de-lucia",
+    "john-mclaughlin"
+   ],
+   "credits": [
+    {
+     "artistId": "paco-de-lucia",
+     "role": "acoustic guitar"
+    },
+    {
+     "artistId": "john-mclaughlin",
+     "role": "acoustic guitar"
+    }
+   ],
+   "trackIds": [
+    "spain::paco-and-john-live-at-montreux-1988::paco-de-lucia+john-mclaughlin"
+   ]
+  },
+  {
    "id": "page-one",
    "title": "Page One",
    "year": 1963,
@@ -13979,6 +14134,34 @@
    ],
    "trackIds": [
     "i-should-care::portraits-at-the-penthouse-live-in-portland-1977::bill-evans"
+   ]
+  },
+  {
+   "id": "portraits-at-the-penthouse-live-in-portland-1978",
+   "title": "Portraits at the Penthouse Live in Portland 1978",
+   "year": 1977,
+   "label": "Gambit",
+   "artistIds": [
+    "bill-evans",
+    "eddie-gomez",
+    "eliot-zigmund"
+   ],
+   "credits": [
+    {
+     "artistId": "bill-evans",
+     "role": "piano"
+    },
+    {
+     "artistId": "eddie-gomez",
+     "role": "bass"
+    },
+    {
+     "artistId": "eliot-zigmund",
+     "role": "drums"
+    }
+   ],
+   "trackIds": [
+    "i-should-care::portraits-at-the-penthouse-live-in-portland-1978::bill-evans+eddie-gomez+eliot-zigmund"
    ]
   },
   {
@@ -20071,6 +20254,36 @@
    ]
   },
   {
+   "id": "the-quartet-live-chicago-1983",
+   "title": "The Quartet Live Chicago 1983",
+   "year": 2021,
+   "label": "Resonance",
+   "artistIds": [
+    "mccoy-tyner"
+   ],
+   "credits": [
+    {
+     "artistId": "mccoy-tyner",
+     "role": "piano"
+    },
+    {
+     "artistId": "freddie-hubbard",
+     "role": "trumpet"
+    },
+    {
+     "artistId": "ron-carter",
+     "role": "bass"
+    },
+    {
+     "artistId": "tony-williams",
+     "role": "drums"
+    }
+   ],
+   "trackIds": [
+    "rhythm-a-ning::the-quartet-live-chicago-1983::mccoy-tyner"
+   ]
+  },
+  {
    "id": "the-roost-sessions-bud-powell",
    "title": "The Roost Sessions (Bud Powell)",
    "year": 1957,
@@ -20922,6 +21135,76 @@
    "trackIds": [
     "woodchoppers-ball::tiffany-transcriptions-vol-5::bob-wills-his-texas-playboys",
     "woodchoppers-ball::tiffany-transcriptions-vol-5::bob-wills-his-texas-playboys::take-2"
+   ]
+  },
+  {
+   "id": "tiffany-transcriptions-vol-6",
+   "title": "Tiffany Transcriptions, Vol. 6",
+   "year": 1986,
+   "label": "Kaleidoscope",
+   "artistIds": [
+    "bob-wills-his-texas-playboys"
+   ],
+   "credits": [
+    {
+     "artistId": "bob-wills",
+     "role": "fiddle, vocals"
+    },
+    {
+     "artistId": "tommy-duncan",
+     "role": "lead vocals"
+    },
+    {
+     "artistId": "joe-holley",
+     "role": "fiddle"
+    },
+    {
+     "artistId": "louis-tierney",
+     "role": "fiddle, saxophone"
+    },
+    {
+     "artistId": "millard-kelso",
+     "role": "piano"
+    },
+    {
+     "artistId": "alex-brashear",
+     "role": "trumpet"
+    },
+    {
+     "artistId": "herb-remington",
+     "role": "steel guitar"
+    },
+    {
+     "artistId": "lester-junior-barnard",
+     "role": "electric guitar"
+    },
+    {
+     "artistId": "johnny-cuviello",
+     "role": "drums"
+    },
+    {
+     "artistId": "luke-wills",
+     "role": "bass"
+    },
+    {
+     "artistId": "dean-mckinney",
+     "role": "vocals"
+    },
+    {
+     "artistId": "evelyn-mckinney",
+     "role": "vocals"
+    },
+    {
+     "artistId": "lester-barnard",
+     "role": "guitar"
+    },
+    {
+     "artistId": "bob-wills-his-texas-playboys",
+     "role": "group"
+    }
+   ],
+   "trackIds": [
+    "woodchoppers-ball::tiffany-transcriptions-vol-6::bob-wills-his-texas-playboys"
    ]
   },
   {
@@ -27483,6 +27766,20 @@
    "bpm": null
   },
   {
+   "id": "bwv-1001-adagio::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+   "pieceId": "bwv-1001-adagio",
+   "albumId": "bach-sonatas-partitas-for-solo-violin-vol-3",
+   "performerIds": [
+    "isabelle-faust"
+   ],
+   "performanceKey": "G minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-1001-adagio::bach-sonatas-partitas-for-solo-violin::arthur-grumiaux",
    "pieceId": "bwv-1001-adagio",
    "albumId": "bach-sonatas-partitas-for-solo-violin",
@@ -27640,6 +27937,20 @@
    "id": "bwv-1001-fuga::bach-sonatas-partitas-for-solo-violin-vol-2::isabelle-faust",
    "pieceId": "bwv-1001-fuga",
    "albumId": "bach-sonatas-partitas-for-solo-violin-vol-2",
+   "performerIds": [
+    "isabelle-faust"
+   ],
+   "performanceKey": "G minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "bwv-1001-fuga::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+   "pieceId": "bwv-1001-fuga",
+   "albumId": "bach-sonatas-partitas-for-solo-violin-vol-3",
    "performerIds": [
     "isabelle-faust"
    ],
@@ -27833,6 +28144,20 @@
    "bpm": 136
   },
   {
+   "id": "bwv-1001-presto::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+   "pieceId": "bwv-1001-presto",
+   "albumId": "bach-sonatas-partitas-for-solo-violin-vol-3",
+   "performerIds": [
+    "isabelle-faust"
+   ],
+   "performanceKey": "G minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-1001-presto::bach-sonatas-partitas-for-solo-violin::arthur-grumiaux",
    "pieceId": "bwv-1001-presto",
    "albumId": "bach-sonatas-partitas-for-solo-violin",
@@ -28004,6 +28329,20 @@
    "id": "bwv-1001-siciliana::bach-sonatas-partitas-for-solo-violin-vol-2::isabelle-faust",
    "pieceId": "bwv-1001-siciliana",
    "albumId": "bach-sonatas-partitas-for-solo-violin-vol-2",
+   "performerIds": [
+    "isabelle-faust"
+   ],
+   "performanceKey": "G minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "bwv-1001-siciliana::bach-sonatas-partitas-for-solo-violin-vol-3::isabelle-faust",
+   "pieceId": "bwv-1001-siciliana",
+   "albumId": "bach-sonatas-partitas-for-solo-violin-vol-3",
    "performerIds": [
     "isabelle-faust"
    ],
@@ -28284,6 +28623,20 @@
    "bpm": 152
   },
   {
+   "id": "bwv-996-allemande::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-allemande",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-996-allemande::bach-luvre-de-luth::hopkinson-smith",
    "pieceId": "bwv-996-allemande",
    "albumId": "bach-luvre-de-luth",
@@ -28436,6 +28789,20 @@
    "source": null,
    "notes": null,
    "bpm": 136
+  },
+  {
+   "id": "bwv-996-bourree::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-bourree",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
   },
   {
    "id": "bwv-996-bourree::bach-luvre-de-luth::hopkinson-smith",
@@ -28592,6 +28959,20 @@
    "bpm": 152
   },
   {
+   "id": "bwv-996-courante::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-courante",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-996-courante::bach-luvre-de-luth::hopkinson-smith",
    "pieceId": "bwv-996-courante",
    "albumId": "bach-luvre-de-luth",
@@ -28744,6 +29125,20 @@
    "source": null,
    "notes": null,
    "bpm": 144
+  },
+  {
+   "id": "bwv-996-gigue::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-gigue",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
   },
   {
    "id": "bwv-996-gigue::bach-luvre-de-luth::hopkinson-smith",
@@ -28900,6 +29295,20 @@
    "bpm": 144
   },
   {
+   "id": "bwv-996-praeludium::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-praeludium",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-996-praeludium::bach-luvre-de-luth::hopkinson-smith",
    "pieceId": "bwv-996-praeludium",
    "albumId": "bach-luvre-de-luth",
@@ -29054,6 +29463,20 @@
    "bpm": 144
   },
   {
+   "id": "bwv-996-presto::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-presto",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "bwv-996-presto::bach-luvre-de-luth::hopkinson-smith",
    "pieceId": "bwv-996-presto",
    "albumId": "bach-luvre-de-luth",
@@ -29206,6 +29629,20 @@
    "source": null,
    "notes": null,
    "bpm": 136
+  },
+  {
+   "id": "bwv-996-sarabande::bach-lute-suites-nos-1-3::julian-bream",
+   "pieceId": "bwv-996-sarabande",
+   "albumId": "bach-lute-suites-nos-1-3",
+   "performerIds": [
+    "julian-bream"
+   ],
+   "performanceKey": "E minor",
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
   },
   {
    "id": "bwv-996-sarabande::bach-luvre-de-luth::hopkinson-smith",
@@ -33616,6 +34053,22 @@
    "bpm": null
   },
   {
+   "id": "i-should-care::portraits-at-the-penthouse-live-in-portland-1978::bill-evans+eddie-gomez+eliot-zigmund",
+   "pieceId": "i-should-care",
+   "albumId": "portraits-at-the-penthouse-live-in-portland-1978",
+   "performerIds": [
+    "bill-evans",
+    "eddie-gomez",
+    "eliot-zigmund"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "i-should-care::solo-barry-harris::barry-harris",
    "pieceId": "i-should-care",
    "albumId": "solo-barry-harris",
@@ -34557,6 +35010,20 @@
    "id": "lester-leaps-in::in-washington-dc-1956-vol-2::lester-young",
    "pieceId": "lester-leaps-in",
    "albumId": "in-washington-dc-1956-vol-2",
+   "performerIds": [
+    "lester-young"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "lester-leaps-in::in-washington-dc-1956-vol-3::lester-young",
+   "pieceId": "lester-leaps-in",
+   "albumId": "in-washington-dc-1956-vol-3",
    "performerIds": [
     "lester-young"
    ],
@@ -37735,6 +38202,20 @@
    "bpm": null
   },
   {
+   "id": "rhythm-a-ning::les-liaisons-dangereuses-1961::thelonious-monk",
+   "pieceId": "rhythm-a-ning",
+   "albumId": "les-liaisons-dangereuses-1961",
+   "performerIds": [
+    "thelonious-monk"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "rhythm-a-ning::lines-of-oppression::ari-hoenig",
    "pieceId": "rhythm-a-ning",
    "albumId": "lines-of-oppression",
@@ -37827,6 +38308,20 @@
    "albumId": "the-quartet-live-chicago-1982",
    "performerIds": [
     "freddie-hubbard"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "rhythm-a-ning::the-quartet-live-chicago-1983::mccoy-tyner",
+   "pieceId": "rhythm-a-ning",
+   "albumId": "the-quartet-live-chicago-1983",
+   "performerIds": [
+    "mccoy-tyner"
    ],
    "performanceKey": null,
    "palo": null,
@@ -38471,6 +38966,21 @@
    "bpm": null
   },
   {
+   "id": "spain::paco-and-john-live-at-montreux-1988::paco-de-lucia+john-mclaughlin",
+   "pieceId": "spain",
+   "albumId": "paco-and-john-live-at-montreux-1988",
+   "performerIds": [
+    "paco-de-lucia",
+    "john-mclaughlin"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "spain::rendezvous-in-new-york::chick-corea+gonzalo-rubalcaba",
    "pieceId": "spain",
    "albumId": "rendezvous-in-new-york",
@@ -38519,6 +39029,20 @@
    "id": "st-louis-blues::djangologie-vol5-1937::django-reinhardt",
    "pieceId": "st-louis-blues",
    "albumId": "djangologie-vol5-1937",
+   "performerIds": [
+    "django-reinhardt"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "st-louis-blues::djangologie-vol5-1938::django-reinhardt",
+   "pieceId": "st-louis-blues",
+   "albumId": "djangologie-vol5-1938",
    "performerIds": [
     "django-reinhardt"
    ],
@@ -39792,6 +40316,20 @@
    "bpm": null
   },
   {
+   "id": "sweet-georgia-brown::djangologie-vol5-1938::django-reinhardt",
+   "pieceId": "sweet-georgia-brown",
+   "albumId": "djangologie-vol5-1938",
+   "performerIds": [
+    "django-reinhardt"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
    "id": "sweet-georgia-brown::sassy-swings-again::sarah-vaughan",
    "pieceId": "sweet-georgia-brown",
    "albumId": "sassy-swings-again",
@@ -40935,6 +41473,20 @@
    "id": "woodchoppers-ball::tiffany-transcriptions-vol-5::bob-wills-his-texas-playboys::take-2",
    "pieceId": "woodchoppers-ball",
    "albumId": "tiffany-transcriptions-vol-5",
+   "performerIds": [
+    "bob-wills-his-texas-playboys"
+   ],
+   "performanceKey": null,
+   "palo": null,
+   "idiom": null,
+   "source": null,
+   "notes": null,
+   "bpm": null
+  },
+  {
+   "id": "woodchoppers-ball::tiffany-transcriptions-vol-6::bob-wills-his-texas-playboys",
+   "pieceId": "woodchoppers-ball",
+   "albumId": "tiffany-transcriptions-vol-6",
    "performerIds": [
     "bob-wills-his-texas-playboys"
    ],

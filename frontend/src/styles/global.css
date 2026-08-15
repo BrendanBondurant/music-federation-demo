@@ -23,14 +23,7 @@
   --ink-faint: var(--warm-grey);
   --line: color-mix(in srgb, var(--warm-grey) 38%, var(--paper));
   --plum-tint: color-mix(in srgb, var(--plum) 12%, var(--paper));
-  --fretboard-ink: color-mix(in srgb, var(--paper) 92%, var(--fretboard));
-  --fretboard-line: color-mix(in srgb, var(--paper) 22%, var(--fretboard));
   --hatch: repeating-linear-gradient(135deg, var(--paper-3) 0 6px, var(--paper-2) 6px 12px);
-
-  /* one dot per subgraph, all three straight from the token table */
-  --sg-artists: var(--slate);
-  --sg-catalog: var(--plum);
-  --sg-discography: var(--fretboard);
 }
 
 * { box-sizing: border-box; }
@@ -220,56 +213,6 @@ table.data tr:hover td { background: var(--paper-2); }
 .palo-row .n { font-family: "Newsreader", serif; font-size: 1.02rem; }
 .palo-row .c { font-size: 0.78rem; color: var(--ink-faint); white-space: nowrap; }
 .palo-row.no-palo { background: var(--hatch); border-style: dashed; }
-
-/* ---------- query view drawer (fretboard brown, gold lives here) ---------- */
-.qv-toggle {
-  position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 40;
-  background: var(--fretboard); color: var(--fretboard-ink);
-  border: 1px solid var(--fretboard-line); border-radius: 999px;
-  padding: 0.55rem 1rem; font-size: 0.82rem;
-}
-.qv-toggle:hover { color: var(--gold); }
-.qv-drawer {
-  position: fixed; right: 0; top: 0; bottom: 0; width: min(440px, 92vw);
-  background: var(--fretboard); color: var(--fretboard-ink);
-  transform: translateX(100%); transition: transform 0.22s ease;
-  z-index: 50; overflow-y: auto; border-left: 1px solid var(--fretboard-line);
-  padding: 1.25rem 1.15rem 3rem;
-}
-.qv-drawer.open { transform: translateX(0); }
-.qv-drawer h4 {
-  color: var(--gold); font-size: 0.95rem; margin-bottom: 0.7rem;
-  display: flex; justify-content: space-between; align-items: center;
-}
-.qv-close { background: none; border: none; color: var(--fretboard-ink); font-size: 1.1rem; opacity: 0.7; }
-.qv-close:hover { opacity: 1; }
-.qv-drawer pre {
-  background: color-mix(in srgb, var(--fretboard) 88%, var(--paper));
-  border: 1px solid var(--fretboard-line); border-radius: 6px;
-  padding: 0.8rem; font-size: 0.78rem; overflow-x: auto; color: var(--fretboard-ink);
-  font-family: "SF Mono", Menlo, Consolas, monospace; line-height: 1.5;
-  white-space: pre-wrap; word-break: break-word;
-}
-.qv-drawer .fanout { margin-top: 1rem; }
-.qv-drawer .fanout-item {
-  display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.8rem;
-  margin-bottom: 0.55rem; color: var(--fretboard-ink);
-}
-.qv-drawer .fanout-item .dot {
-  width: 9px; height: 9px; border-radius: 50%; margin-top: 0.3rem; flex-shrink: 0;
-  border: 1px solid var(--fretboard-ink);
-}
-.qv-drawer .fanout-item b { color: var(--gold); font-weight: 600; }
-.qv-note {
-  font-size: 0.76rem; color: color-mix(in srgb, var(--fretboard-ink) 65%, var(--fretboard));
-  margin-top: 1rem; border-top: 1px solid var(--fretboard-line); padding-top: 0.8rem;
-}
-.qv-drawer details { margin-top: 1rem; font-size: 0.78rem; }
-.qv-drawer summary { cursor: pointer; color: var(--gold); }
-
-.dot.catalog { background: var(--sg-catalog); }
-.dot.discography { background: var(--sg-discography); }
-.dot.artists { background: var(--sg-artists); }
 
 /* ---------- footer ---------- */
 footer.site {

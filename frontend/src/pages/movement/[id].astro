@@ -37,16 +37,9 @@ if (!movement) Astro.response.status = 404;
 // Two movements are both titled "Presto" — a movement always displays as
 // Work — Movement, never a bare title.
 const display = movement?.work ? `${movement.work.title} — ${movement.title}` : movement?.title;
-const hasIdiom = movement?.recordings.some((r) => r.idiom) ?? false;
 ---
 
-<Base
-  title={display ?? 'Movement not found'}
-  trailLabel={display ?? id}
-  trailSubgraph="catalog"
-  query={MOVEMENT_PAGE}
-  variables={variables}
->
+<Base title={display ?? 'Movement not found'}>
   {
     !movement ? (
       <div class="empty-state">
@@ -74,13 +67,6 @@ const hasIdiom = movement?.recordings.some((r) => r.idiom) ?? false;
               <b>Composer</b>{' '}
               <a href={`/artist/${movement.work.composer.id}`}>{movement.work.composer.name}</a>
             </span>
-          </div>
-        )}
-        {hasIdiom && (
-          <div class="note">
-            Idiom is tagged per recording, not per piece — this movement stays{' '}
-            <span class="badge">{genreLabel(movement.genre)}</span> even though some recordings of
-            it clearly aren't.
           </div>
         )}
         <section class="block">
