@@ -78,10 +78,29 @@ import { homedir } from "node:os";
 // 1294 -> 1313. The same vault pass retagged 18 more blues-form tunes to
 // style: blues (44 -> 62) -- content only, no count moves.
 //
+// Re-verified 2026-08-23, after Brendan's bluegrass pass: 11 new
+// Pieces/Tunes files with style: bluegrass (Angeline the Baker, Arkansas
+// Traveler, Big Sandy River, Big Sciota, Bill Cheatham, Billy in the
+// Lowground, Blackberry Blossom, Cripple Creek, Cuckoo's Nest, Eighth of
+// January, The Girl I Left Behind Me -- Bury Me Beneath the Willow already
+// existed), bringing their ~220 Recordings rows and the Artists/ and Albums/
+// files those rows link to. Every moved count was confirmed against the
+// filesystem before re-baselining: tunes 411 -> 422 (423 files - 1 skipped),
+// albums 792 -> 995 (998 files - 3 placeholders), people 1378 -> 1807
+// (1757 Artists/ files + 50 stubs; the +1 stub is stephen-foster, composer
+// of Angeline the Baker), recordings 1313 -> 1533 and personnelEdges
+// 2812 -> 3390 (no independent hand recount -- gate-verified, same basis as
+// the 2026-08-15 re-baseline, and consistent with the new albums' track and
+// Personnel rows). Ensembles (55 + 15 = 70), memberships, works, movements,
+// contrafactEdges, and the one warning are unchanged. Zero dangling
+// references; the new bluegrass artist files carry no style: frontmatter,
+// so their styles arrays are legitimately empty.
+//
 // Cross-checks behind the numbers:
 //   - works 10          = 9 BWV headings in _meta/Works – Master.md + Concierto de Aranjuez
 //   - movements 22      = movement files under Pieces/Works (22)
-//   - tunes 411         = 412 Pieces/Tunes files - 1 (Other tunes.md skipped)
+//   - tunes 422         = 423 Pieces/Tunes files - 1 (Other tunes.md skipped);
+//                         12 carry style: bluegrass as of 2026-08-23
 //   - contrafactEdges 19 = as of 2026-08-15: three parents carry ## Contrafacts
 //                         sections — "All The Things You Are" (4: Bird of
 //                         Paradise, Ablution, Prince Albert, All the Things
@@ -90,7 +109,7 @@ import { homedir } from "node:os";
 //                         Lennie-Bird), and "I Got Rhythm" (13 rhythm-changes
 //                         children). Blues-form tunes remain deliberately
 //                         parentless.
-//   - albums 792        = 795 Albums/ files - 3 placeholders that exist as
+//   - albums 995        = 998 Albums/ files - 3 placeholders that exist as
 //                         files and are skipped (YouTube, Late Night Jazz
 //                         (compilation), Baroquswing Vol. II). The other 3
 //                         PLACEHOLDER_ALBUMS entries (Blues in the Closet,
@@ -100,7 +119,9 @@ import { homedir } from "node:os";
 //                         the reorg, only resolved when a recording's Album
 //                         cell links to them.
 //   - people 1378       = 1329 Artists/ files (independently re-slugged: no
-//                         collisions) + 49 composer stubs
+//                         collisions) + 49 composer stubs; 1807 as of
+//                         2026-08-23 = 1757 files + 50 stubs (file count and
+//                         parser output match exactly, so still no collisions)
 //   - ensembles 70      = Artists/ files with instrument: ensemble (55) or
 //                         instrument: group (15), as of 2026-08-15
 //   - memberships 288   = re-baselined 2026-08-15 to the parser's own count
@@ -108,34 +129,38 @@ import { homedir } from "node:os";
 //                         across all ensemble/group files) after the
 //                         ensembles/albums recount above confirmed the
 //                         parser against the filesystem independently
-//   - personnelEdges 2812 = re-baselined 2026-08-15 alongside memberships,
+//   - personnelEdges 3390 = re-baselined 2026-08-15 (2812) alongside memberships,
 //                         same basis: every linked Musician cell across
 //                         every non-placeholder album's ## Personnel
 //                         table(s), expanding multi-name cells into one
 //                         credit per name, minus bob-prince (skipped by name);
 //                         +36 in the second 2026-08-15 pass from the 9 new
-//                         albums' Personnel tables
-//   - recordings 1313   = tune rows + movement rows + album track rows with no
+//                         albums' Personnel tables; +578 on 2026-08-23 from
+//                         the bluegrass albums' Personnel tables
+//   - recordings 1533   = tune rows + movement rows + album track rows with no
 //                         matching (piece, album) recording; grew with the
 //                         184 -> 411 tune count and 717 -> 768 album count;
 //                         +19 in the second 2026-08-15 pass from the 9 new
-//                         albums' track rows. No independent hand recount --
-//                         verified via the referential-integrity gate only.
+//                         albums' track rows; +220 on 2026-08-23 from the 11
+//                         bluegrass tunes' Recordings rows. No independent
+//                         hand recount -- verified via the
+//                         referential-integrity gate only.
 //   - warnings 1        = "Ralph Lalama & His Manhattan All Stars" (Feelin'
 //                         and Dealin') has no Artists/ file of its own; the
 //                         real personnel are still credited individually
 const EXPECTED = {
-  people: 1378,
-  ensembles: 70,
-  composerStubs: 49,
+  people: 1807,
+  ensembles: 123,
+  composerStubs: 50,
   memberships: 288,
   works: 10,
   movements: 22,
-  tunes: 411,
+  tunes: 422,
   contrafactEdges: 19,
-  albums: 792,
-  personnelEdges: 2812,
-  recordings: 1313,
+  palos: 30,
+  albums: 995,
+  personnelEdges: 3390,
+  recordings: 1533,
   warnings: 1,
 };
 
@@ -510,8 +535,14 @@ interface Tune {
   style: string | null;
   contrafactOfId: string | null;
   musicalKey: string | null;
-  palo: string | null;
+  paloId: string | null;
   genre: Genre;
+}
+interface Palo {
+  id: string;
+  name: string;
+  compas: string | null;
+  description: string | null;
 }
 interface Credit {
   artistId: string;
@@ -557,6 +588,7 @@ const artistsDir = join(vault, "Artists");
 const albumsDir = join(vault, "Albums");
 const tunesDir = join(vault, "Pieces", "Tunes");
 const worksDir = join(vault, "Pieces", "Works");
+const palosDir = join(vault, "Pieces", "Palos");
 const metaDir = join(vault, "_meta");
 // Pieces/Palos/ (flamenco palo reference pages, type: palo) arrived in the
 // vault as of the 2026-07-29 reseed, linked from a Palo column in flamenco
@@ -636,6 +668,23 @@ for (const { groupId, body } of membershipSources) {
     memberships.push({ groupId, memberId: slug(links[0]), role: dm ? norm(dm[1]) : null });
   }
 }
+
+// --- Palos (flamenco rhythmic-form reference pages) -------------------------
+// Promoted from pure reference data to a real entity: each Tune's home palo
+// now resolves to one of these instead of carrying the name as a bare string.
+const palos = new Map<string, Palo>();
+function addPaloFile(p: string): void {
+  const { fm, body } = frontmatter(readFileSync(p, "utf8"));
+  const title = fileTitle(p);
+  const id = slug(title);
+  palos.set(id, {
+    id,
+    name: title,
+    compas: typeof fm.compas === "string" && fm.compas ? fm.compas : null,
+    description: proseUnder(body, null),
+  });
+}
+for (const p of mdFiles(palosDir)) addPaloFile(p);
 
 // --- Classical works + movements ---------------------------------------------
 // Works come from the master index ("## <Composer> - <WorkRef>" headings, one
@@ -783,7 +832,7 @@ function addTuneFile(p: string): void {
     warn(`duplicate tune file merged: ${title}`);
   } else {
     const style = typeof fm.style === "string" && fm.style ? fm.style : null;
-    const palo = typeof fm.palo === "string" ? extractLinks(fm.palo)[0] ?? null : null;
+    const paloName = typeof fm.palo === "string" ? extractLinks(fm.palo)[0] ?? null : null;
     tunes.set(id, {
       id,
       title,
@@ -791,7 +840,7 @@ function addTuneFile(p: string): void {
       style,
       contrafactOfId: null, // resolved after all tunes are known
       musicalKey: typeof fm.key === "string" && fm.key ? fm.key : null,
-      palo,
+      paloId: paloName ? slug(paloName) : null,
       genre: genreFromStyle(style),
     });
     tuneBodies.set(id, body);
@@ -1082,6 +1131,7 @@ for (const t of tunes.values()) {
   if (t.contrafactOfId && !tunes.has(t.contrafactOfId)) {
     errors.push(`tune ${t.id}: dangling contrafact parent ${t.contrafactOfId}`);
   }
+  if (t.paloId && !palos.has(t.paloId)) errors.push(`tune ${t.id}: dangling palo ${t.paloId}`);
 }
 for (const al of albums.values()) {
   for (const a of al.artistIds) if (!people.has(a)) errors.push(`album ${al.id}: dangling artist ${a}`);
@@ -1106,6 +1156,7 @@ const counts = {
   movements: movements.size,
   tunes: tunes.size,
   contrafactEdges,
+  palos: palos.size,
   albums: albums.size,
   personnelEdges: [...albums.values()].reduce((n, a) => n + a.credits.length, 0),
   recordings: recordings.length,
@@ -1157,6 +1208,7 @@ writeFileSync(
         (a, b) => a.workId.localeCompare(b.workId) || (a.position ?? 99) - (b.position ?? 99) || a.id.localeCompare(b.id),
       ),
       tunes: byId(tunes),
+      palos: byId(palos),
     },
     null,
     1,

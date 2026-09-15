@@ -33,7 +33,7 @@ interface PaloRow {
   id: string;
   title: string;
   genre: Genre;
-  palo: string | null;
+  palo: { id: string; name: string } | null;
   recordings: { id: string }[];
 }
 
@@ -60,7 +60,8 @@ if (genre === 'CLASSICAL') {
       noPalo.push(t);
       continue;
     }
-    byPalo.set(t.palo, [...(byPalo.get(t.palo) ?? []), t]);
+    const paloName = t.palo.name;
+    byPalo.set(paloName, [...(byPalo.get(paloName) ?? []), t]);
   }
   palos = [...byPalo.entries()]
     .map(([name, list]) => ({

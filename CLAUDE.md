@@ -63,7 +63,8 @@ If a change helps one job and hurts the other, stop and flag it.
   the shared `@key`. Same-name traps (the tune "Night Train" vs. the albums)
   must resolve by id, never by comparing display names. `Movement` and `Tune`
   ids must never collide — they share the `Piece` key, and the seeder gates it.
-- **Nulls are real.** ~40 albums legitimately have no year/label. Never coerce a
+- **Nulls are real.** ~250 albums legitimately have no year/label (most of the
+  2026-08-23 bluegrass batch carries neither). Never coerce a
   real null to a placeholder to make output look tidy. Placeholder albums
   (`YouTube`, `Late Night Jazz (compilation)`, `Baroquswing Vol. II`) are not
   emitted; their recordings keep a null `album` and carry the placeholder name

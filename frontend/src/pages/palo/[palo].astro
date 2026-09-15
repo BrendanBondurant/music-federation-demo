@@ -11,7 +11,7 @@ interface PaloData {
     id: string;
     title: string;
     genre: Genre;
-    palo: string | null;
+    palo: { id: string; name: string } | null;
     recordings: RecordingRow[];
   }[];
 }
@@ -25,7 +25,7 @@ const paloName = isNone ? null : decodeURIComponent(raw);
 const data = await gql<PaloData>(PALO_DETAIL);
 const flamenco = data.tunes.filter((t) => t.genre === 'FLAMENCO');
 const tunes = flamenco
-  .filter((t) => (isNone ? t.palo == null : t.palo === paloName))
+  .filter((t) => (isNone ? t.palo == null : t.palo?.name === paloName))
   .sort((a, b) => a.title.localeCompare(b.title));
 if (!isNone && tunes.length === 0) Astro.response.status = 404;
 

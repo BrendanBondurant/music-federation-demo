@@ -13,7 +13,7 @@ interface TuneData {
     title: string;
     style: string | null;
     genre: Genre;
-    palo: string | null;
+    palo: { id: string; name: string } | null;
     musicalKey: string | null;
     composer: { id: string; name: string } | null;
     contrafactOf: { id: string; title: string } | null;
@@ -42,7 +42,7 @@ if (!tune) Astro.response.status = 404;
         <div style="margin:0.4rem 0 0.7rem">
           <span class="badge">{genreLabel(tune.genre)}</span>
           {tune.style && <span class="badge outline">{tune.style}</span>}
-          {tune.palo && <span class="badge plum">{tune.palo}</span>}
+          {tune.palo && <span class="badge plum">{tune.palo.name}</span>}
         </div>
         {(tune.composer || tune.musicalKey) && (
           <div class="kv-list">

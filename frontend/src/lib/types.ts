@@ -34,12 +34,17 @@ export interface RecordingRow {
   piece?: PieceRef;
 }
 
+export interface PaloRef {
+  id: string;
+  name: string;
+}
+
 export interface TuneCard {
   id: string;
   title: string;
   genre: Genre;
   style?: string | null;
-  palo?: string | null;
+  palo?: PaloRef | null;
   contrafactOf?: { id: string; title: string } | null;
   recordings: { id: string }[];
 }

@@ -41,7 +41,7 @@ export const PALO_INDEX = /* GraphQL */ `
       id
       title
       genre
-      palo
+      palo { id name }
       recordings { id }
     }
   }
@@ -53,7 +53,7 @@ export const PALO_DETAIL = /* GraphQL */ `
       id
       title
       genre
-      palo
+      palo { id name }
       recordings {
         id
         palo
@@ -73,7 +73,7 @@ export const TUNE_PAGE = /* GraphQL */ `
       title
       style
       genre
-      palo
+      palo { id name }
       musicalKey
       composer { id name }
       contrafactOf { id title }
