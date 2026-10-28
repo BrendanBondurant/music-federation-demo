@@ -63,7 +63,8 @@ If a change helps one job and hurts the other, stop and flag it.
   the shared `@key`. Same-name traps (the tune "Night Train" vs. the albums)
   must resolve by id, never by comparing display names. `Movement` and `Tune`
   ids must never collide — they share the `Piece` key, and the seeder gates it.
-- **Nulls are real.** ~40 albums legitimately have no year/label. Never coerce a
+- **Nulls are real.** ~250 albums legitimately have no year/label (most of the
+  2026-08-23 bluegrass batch carries neither). Never coerce a
   real null to a placeholder to make output look tidy. Placeholder albums
   (`YouTube`, `Late Night Jazz (compilation)`, `Baroquswing Vol. II`) are not
   emitted; their recordings keep a null `album` and carry the placeholder name
@@ -122,8 +123,11 @@ in the same format: what I needed, what the docs said, what worked.
   extends `Recording` on its synthetic id — that id exists precisely so a later
   subgraph can hang per-recording data off it — and a media subgraph owning
   audio files and lead-sheet PDFs. A new subgraph owns its own entities and
-  extends on shared keys; it never duplicates identity. Don't add auth,
-  subscriptions, or a frontend unless asked.
+  extends on shared keys; it never duplicates identity. Don't add auth or
+  subscriptions unless asked. The frontend *was* asked for and lives in
+  `frontend/` (Astro, plain-fetch GraphQL client — see `frontend/README.md`);
+  it is in scope and bound by the same no-Apollo and nulls-are-real rules as
+  everything else here.
 
 ## Before you finish
 

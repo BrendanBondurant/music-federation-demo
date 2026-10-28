@@ -1,0 +1,94 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { gql } from '../../../../lib/api';
+import { WORK_PAGE } from '../../../../lib/queries';
+import type { RecordingRow } from '../../../../lib/types';
+
+interface WorkData {
+  work: {
+    id: string;
+    title: string;
+    movements: {
+      id: string;
+      title: string;
+      position: number | null;
+      recordings: RecordingRow[];
+    }[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const artistId = Astro.params.artistId ?? '';
+const variables = { id };
+const data = await gql<WorkData>(WORK_PAGE, variables);
+const work = data.work;
+
+// Filtered down to one performer after the fetch — there's no per-performer
+// facet on the work server-side.
+const rows =
+  work?.movements.flatMap((m, i) =>
+    m.recordings
+      .filter((r) => r.performers.some((p) => p.id === artistId))
+      .map((r) => ({
+        movement: m,
+        ordinal: m.position != null ? String(m.position) : `${i + 1}*`,
+        rec: r,
+      })),
+  ) ?? [];
+const artistName =
+  rows[0]?.rec.performers.find((p) => p.id === artistId)?.name ?? artistId;
+if (!work || rows.length === 0) Astro.response.status = 404;
+---
+
+<Base title={work ? `${artistName} · ${work.title}` : 'Not found'}>
+  {
+    !work || rows.length === 0 ? (
+      <div class="empty-state">
+        Nothing tracked for <code>{artistId}</code> on <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">
+          Work · <a href={`/work/${work.id}`}>{work.title}</a>
+        </div>
+        <h1 class="page-title">{artistName}</h1>
+        <p class="subtitle">
+          Movements of {work.title} recorded by this artist ·{' '}
+          <a href={`/artist/${artistId}`}>full artist page</a>
+        </p>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Movement</th>
+              <th>Album / source</th>
+              <th>Year</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(({ movement, ordinal, rec }) => (
+              <tr>
+                <td>
+                  <a href={`/movement/${movement.id}`}>
+                    {ordinal}. {movement.title}
+                  </a>
+                </td>
+                <td>
+                  {rec.album ? (
+                    <a href={`/album/${rec.album.id}`}>{rec.album.title}</a>
+                  ) : rec.source ? (
+                    <span class="source-text" title={rec.source}>{rec.source}</span>
+                  ) : (
+                    <span class="muted">source unknown</span>
+                  )}
+                </td>
+                <td>{rec.album ? rec.album.year ?? <span class="muted">year unknown</span> : ''}</td>
+                <td>{rec.idiom && <span class="badge">{rec.idiom}</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )
+  }
+</Base>

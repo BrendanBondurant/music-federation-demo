@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import { gql } from '../../lib/api';
+import { ALBUM_PAGE } from '../../lib/queries';
+import { pieceDisplay, pieceHref } from '../../lib/format';
+import type { ArtistRef, PieceRef } from '../../lib/types';
+
+interface AlbumData {
+  album: {
+    id: string;
+    title: string;
+    year: number | null;
+    label: string | null;
+    credits: { artist: ArtistRef; role: string | null }[];
+    tracks: { id: string; piece: PieceRef; performers: ArtistRef[] }[];
+  } | null;
+}
+
+const id = Astro.params.id ?? '';
+const variables = { id };
+const data = await gql<AlbumData>(ALBUM_PAGE, variables);
+const album = data.album;
+if (!album) Astro.response.status = 404;
+---
+
+<Base title={album?.title ?? 'Album not found'}>
+  {
+    !album ? (
+      <div class="empty-state">
+        No album found for id <code>{id}</code>.
+      </div>
+    ) : (
+      <>
+        <div class="eyebrow">Album{album.label ? ` · ${album.label}` : ''}</div>
+        <h1 class="page-title">{album.title}</h1>
+        <p class="subtitle">
+          {album.year ?? <span class="muted">year unknown</span>}
+        </p>
+        <section class="block">
+          <h3>
+            Personnel <span class="count">{album.credits.length}</span>
+          </h3>
+          {album.credits.length ? (
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Artist</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                {album.credits.map((c) => (
+                  <tr>
+                    <td>
+                      <a href={`/artist/${c.artist.id}`}>{c.artist.name}</a>
+                    </td>
+                    <td>{c.role ?? <span class="muted">role unknown</span>}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <div class="empty-state">No personnel recorded for this album.</div>
+          )}
+        </section>
+        <section class="block">
+          <h3>
+            Tracks <span class="count">{album.tracks.length}</span>
+          </h3>
+          <div class="note">Partial — tracked pieces only, not the full album.</div>
+          <table class="data">
+            <thead>
+              <tr>
+                <th>Piece</th>
+                <th>Performers on this take</th>
+              </tr>
+            </thead>
+            <tbody>
+              {album.tracks.map((t) => (
+                <tr>
+                  <td>
+                    <a href={pieceHref(t.piece)}>{pieceDisplay(t.piece)}</a>
+                  </td>
+                  <td>
+                    {t.performers.length ? (
+                      t.performers.map((p, i) => (
+                        <span>{i > 0 && ', '}<a href={`/artist/${p.id}`}>{p.name}</a></span>
+                      ))
+                    ) : (
+                      <span class="muted">unknown</span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      </>
+    )
+  }
+</Base>

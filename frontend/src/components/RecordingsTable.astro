@@ -1,0 +1,69 @@
+---
+import type { RecordingRow } from '../lib/types';
+import { pieceDisplay, pieceHref } from '../lib/format';
+
+interface Props {
+  recordings: RecordingRow[];
+  /** Show a leading piece column (palo pages, artist pages pool many pieces). */
+  pieceColumn?: boolean;
+  emptyLabel?: string;
+}
+const { recordings, pieceColumn = false, emptyLabel = 'No recordings tracked for this yet.' } = Astro.props;
+---
+
+<table class="data">
+  <thead>
+    <tr>
+      {pieceColumn && <th>Piece</th>}
+      <th>Performers</th>
+      <th>Album / source</th>
+      <th>Year</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      recordings.length === 0 ? (
+        <tr>
+          <td colspan={pieceColumn ? 5 : 4}>
+            <span class="muted">{emptyLabel}</span>
+          </td>
+        </tr>
+      ) : (
+        recordings.map((r) => (
+          <tr>
+            {pieceColumn && (
+              <td>
+                {r.piece ? <a href={pieceHref(r.piece)}>{pieceDisplay(r.piece)}</a> : <span class="muted">unknown</span>}
+              </td>
+            )}
+            <td>
+              {r.performers.length ? (
+                r.performers.map((p, i) => (
+                  <span>{i > 0 && ', '}<a href={`/artist/${p.id}`}>{p.name}</a></span>
+                ))
+              ) : (
+                <span class="muted">unknown</span>
+              )}
+            </td>
+            <td>
+              {r.album ? (
+                <a href={`/album/${r.album.id}`}>{r.album.title}</a>
+              ) : r.source ? (
+                <span class="source-text" title={r.source}>{r.source}</span>
+              ) : (
+                <span class="muted">source unknown</span>
+              )}
+            </td>
+            <td>{r.album ? r.album.year ?? <span class="muted">year unknown</span> : ''}</td>
+            <td>
+              {r.idiom && <span class="badge">{r.idiom}</span>}
+              {r.palo && <span class="badge outline">{r.palo}</span>}
+              {r.performanceKey && <span class="badge outline">{r.performanceKey}</span>}
+            </td>
+          </tr>
+        ))
+      )
+    }
+  </tbody>
+</table>

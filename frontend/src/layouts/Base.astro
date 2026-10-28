@@ -1,0 +1,121 @@
+---
+interface Props {
+  title: string;
+  activeGenre?: string;
+}
+const { title, activeGenre } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · whoplayedit.com</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/brand/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/brand/favicon-16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site">
+      <div class="header-row">
+        <a href="/" class="wordmark">whoplayedit<span>.com</span></a>
+        <div class="search-wrap">
+          <input type="text" id="search-input" placeholder="Find a tune or work…" autocomplete="off" />
+          <div class="search-results" id="search-results"></div>
+        </div>
+        <nav class="genres">
+          <a href="/genre/jazz" class={activeGenre === 'jazz' ? 'active' : ''}>Jazz</a>
+          <a href="/genre/classical" class={activeGenre === 'classical' ? 'active' : ''}>Classical</a>
+          <a href="/genre/flamenco" class={activeGenre === 'flamenco' ? 'active' : ''}>Flamenco</a>
+          <a href="/genre/bluegrass" class={activeGenre === 'bluegrass' ? 'active' : ''}>Bluegrass</a>
+        </nav>
+        <a class="surprise" href="/api/surprise">Surprise me</a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site">
+      <p class="byline">
+        <a href="https://brendanbondurant.com" aria-label="brendan bondurant">
+          <img src="/brand/wordmark-inline-on-light.svg" alt="brendan bondurant" width="260" height="34" />
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      // ---------- search ----------
+      const input = document.getElementById('search-input') as HTMLInputElement | null;
+      const results = document.getElementById('search-results');
+      let index: { title: string; kind: string; href: string; n: number }[] | null = null;
+      const fold = (s: string) =>
+        s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+      async function loadIndex() {
+        if (index) return index;
+        const res = await fetch('/api/search-index.json');
+        index = await res.json();
+        return index!;
+      }
+
+      input?.addEventListener('focus', () => void loadIndex());
+      input?.addEventListener('input', async () => {
+        if (!results) return;
+        const q = fold(input.value.trim());
+        if (!q) {
+          results.classList.remove('open');
+          results.replaceChildren();
+          return;
+        }
+        const idx = await loadIndex();
+        const matches = idx
+          .filter((s) => fold(s.title).includes(q))
+          .sort((a, b) => b.n - a.n)
+          .slice(0, 12);
+        results.replaceChildren(
+          ...(matches.length
+            ? matches.map((m) => {
+                const a = document.createElement('a');
+                a.className = 'res';
+                a.href = m.href;
+                const t = document.createElement('span');
+                t.textContent = m.title;
+                const k = document.createElement('span');
+                k.className = 'kind';
+                k.textContent = `${m.kind} · ${m.n} rec.`;
+                a.append(t, k);
+                return a;
+              })
+            : [
+                (() => {
+                  const d = document.createElement('div');
+                  d.className = 'res';
+                  d.innerHTML = '<span class="muted">No matches</span>';
+                  return d;
+                })(),
+              ]),
+        );
+        results.classList.add('open');
+      });
+      document.addEventListener('click', (e) => {
+        if (results && input && !results.contains(e.target as Node) && e.target !== input) {
+          results.classList.remove('open');
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

@@ -2,7 +2,8 @@
 
 Friction found while building this demo against the Cosmo docs (the
 `docs-website` repo; entries 1-6 as of 2026-07-03, entries 7-8 as of
-2026-07-14). Format: what I needed, what the docs said, what actually worked.
+2026-07-14, entry 9 as of 2026-08-15). Format: what I needed, what the docs
+said, what actually worked.
 
 ## 1. Local composition + Docker router is not documented end to end
 
@@ -136,6 +137,29 @@ arrives. Convenient for incremental publishing, surprising for anyone
 expecting parity with the same-subgraph error case. One sentence on the index
 row (or the future `@interfaceObject` page) stating this is intentional would
 settle whether it can be relied on.
+
+## 9. X-WG-Include-Query-Plan is silently a no-op outside dev mode, and the plan JSON is undocumented
+
+**Needed (2026-08-15, building the frontend's query-view drawer):** the
+router's query plan for the current page's operation, fetched
+programmatically, so the drawer renders the real fan-out instead of a
+hand-written diagram.
+
+**Docs:** `router/query-plan.mdx` says to include the `X-WG-Include-Query-Plan`
+header to receive the plan in the `extensions` field. No preconditions are
+mentioned, and nothing documents the shape of what comes back.
+
+**Observed (router 0.340.0, local):** with `DEV_MODE=true` the header works as
+described. Without it, the same request succeeds and the header is silently
+ignored — data comes back, `extensions` is just absent. No error, no hint.
+That settles entry 4's assumption for this feature: query plans are gated on
+dev mode, and the gating is invisible. The plan JSON itself
+(`kind: Sequence/Single`, `fetch.kind: Single/Entity`, `subgraphName`,
+`fetchId`, `dependsOnFetchIds`, `representations[].typeName`, nested
+`children`) had to be reversed from live responses; the frontend's drawer
+walks that shape, so a change to it will break the drawer silently. One
+paragraph on the query-plan page — "requires dev mode, here's a sample
+response" — would cover both.
 
 ## Non-gaps worth recording
 

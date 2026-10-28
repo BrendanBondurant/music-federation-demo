@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import PieceCard from '../components/PieceCard.astro';
+import { gql } from '../lib/api';
+import { GENRE_TUNES } from '../lib/queries';
+import { plural } from '../lib/format';
+import type { TuneCard } from '../lib/types';
+
+// Generic family walk: group every tune by its contrafactOf parent. Works
+// unchanged for all three linked families today and any future one.
+const data = await gql<{ tunes: TuneCard[] }>(GENRE_TUNES);
+const byId = new Map(data.tunes.map((t) => [t.id, t]));
+const families = new Map<string, TuneCard[]>();
+for (const t of data.tunes) {
+  if (!t.contrafactOf) continue;
+  families.set(t.contrafactOf.id, [...(families.get(t.contrafactOf.id) ?? []), t]);
+}
+const sorted = [...families.entries()].sort((a, b) => b[1].length - a[1].length);
+---
+
+<Base title="Contrafact families" activeGenre="jazz">
+  <div class="eyebrow">Jazz · form family</div>
+  <h1 class="page-title">Contrafact families</h1>
+  <p class="subtitle">
+    {sorted.length} families, grouped by the tune whose changes they borrow.
+  </p>
+  {
+    sorted.map(([parentId, kids]) => (
+      <section class="block">
+        <h3>
+          <a href={`/tune/${parentId}`}>{byId.get(parentId)?.title ?? parentId}</a>{' '}
+          <span class="count">— {plural(kids.length, 'contrafact')}</span>
+        </h3>
+        <div class="card-grid">
+          {kids
+            .slice()
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map((k) => (
+              <PieceCard href={`/tune/${k.id}`} title={k.title} />
+            ))}
+        </div>
+      </section>
+    ))
+  }
+</Base>

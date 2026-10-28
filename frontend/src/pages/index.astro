@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { gql } from '../lib/api';
+import { LANDING } from '../lib/queries';
+import type { Genre } from '../lib/types';
+
+interface Data {
+  tunes: { id: string; genre: Genre }[];
+  works: { id: string; movements: { id: string }[] }[];
+}
+const data = await gql<Data>(LANDING);
+
+const count = (g: Genre) => data.tunes.filter((t) => t.genre === g).length;
+const jazzN = count('JAZZ');
+const flamencoN = count('FLAMENCO');
+const bluegrassN = count('BLUEGRASS');
+const worksN = data.works.length;
+const movementsN = data.works.reduce((n, w) => n + w.movements.length, 0);
+---
+
+<Base title="Pick a genre">
+  <div class="eyebrow">Pick a genre</div>
+  <h1 class="page-title">What do you want to listen for?</h1>
+  <p class="subtitle">
+    Every tune, work, movement, album, recording, and artist in the collection.
+  </p>
+  <div class="genre-cards">
+    <a class="genre-card" href="/genre/jazz">
+      <div class="rosette r-jazz"></div>
+      <h4>Jazz</h4>
+      <div class="m">{jazzN} tunes · standards, blues heads, contrafact families</div>
+    </a>
+    <a class="genre-card" href="/genre/classical">
+      <div class="rosette r-classical"></div>
+      <h4>Classical</h4>
+      <div class="m">{worksN} works · {movementsN} movements · Bach &amp; Rodrigo</div>
+    </a>
+    <a class="genre-card" href="/genre/flamenco">
+      <div class="rosette r-flamenco"></div>
+      <h4>Flamenco</h4>
+      <div class="m">{flamencoN} tunes · browse by palo</div>
+    </a>
+    <a class="genre-card thin" href="/genre/bluegrass">
+      <h4>Bluegrass</h4>
+      <div class="m">{bluegrassN} tunes · fiddle tunes &amp; old-time</div>
+    </a>
+  </div>
+</Base>

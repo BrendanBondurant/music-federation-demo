@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import PieceCard from '../components/PieceCard.astro';
+import { gql } from '../lib/api';
+import { GENRE_TUNES } from '../lib/queries';
+import { plural } from '../lib/format';
+import type { Genre } from '../lib/types';
+
+interface Data {
+  tunes: {
+    id: string;
+    title: string;
+    genre: Genre;
+    style: string | null;
+    recordings: { id: string }[];
+  }[];
+}
+const data = await gql<Data>(GENRE_TUNES);
+const tunes = data.tunes
+  .filter((t) => t.style === 'blues')
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<Base title="Blues heads" activeGenre="jazz">
+  <div class="eyebrow">Jazz · form family</div>
+  <h1 class="page-title">Blues heads</h1>
+  <p class="subtitle">{plural(tunes.length, 'blues-form tune')}.</p>
+  <div class="card-grid">
+    {tunes.map((t) => (
+      <PieceCard
+        href={`/tune/${t.id}`}
+        title={t.title}
+        meta={plural(t.recordings.length, 'recording')}
+      />
+    ))}
+  </div>
+</Base>

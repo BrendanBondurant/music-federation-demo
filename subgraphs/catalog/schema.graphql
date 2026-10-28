@@ -82,8 +82,26 @@ type Tune implements Piece @key(fields: "id") {
   genre: Genre!
   "Home key as written ('E minor'). Set on only a few tunes; performance keys live on recordings."
   musicalKey: String
-  "Home palo (flamenco rhythmic form) as written, e.g. 'Rondeña'. Null for non-flamenco tunes and untagged ones."
-  palo: String
+  "Home palo (flamenco rhythmic form). Null for non-flamenco tunes and untagged ones."
+  palo: Palo
+}
+
+"""
+A flamenco rhythmic form / meter family (bulerías, tangos, soleá...) -- the
+flamenco equivalent of a jazz tune's form. Reference data promoted to a real
+entity: every flamenco Tune's home palo resolves to one of these.
+"""
+type Palo @key(fields: "id") {
+  "Slug id derived from the palo's canonical name."
+  id: ID!
+  "Canonical name, e.g. 'Bulerías'."
+  name: String!
+  "Rhythmic meter as written ('12', '4', '6/8', '3/4', 'free', 'varies'). Null when not noted."
+  compas: String
+  "Short description of the palo's character. Null when the source has none."
+  description: String
+  "Tunes whose home palo is this one."
+  tunes: [Tune!]!
 }
 
 """
@@ -118,6 +136,13 @@ type Query {
   ): Tune
   "Every tune in the catalog."
   tunes: [Tune!]!
+  "Look up one palo by slug id. Null when no palo has that id."
+  palo(
+    "Slug id of the palo to fetch, e.g. 'bulerias'."
+    id: ID!
+  ): Palo
+  "Every palo in the catalog."
+  palos: [Palo!]!
   "Look up one work by id ('bwv-1001', 'concierto-de-aranjuez'). Null when not found."
   work(
     "Work id to fetch."

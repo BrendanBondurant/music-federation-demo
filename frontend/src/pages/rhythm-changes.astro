@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import PieceCard from '../components/PieceCard.astro';
+import { gql } from '../lib/api';
+import { GENRE_TUNES } from '../lib/queries';
+import { plural } from '../lib/format';
+import type { TuneCard } from '../lib/types';
+
+const data = await gql<{ tunes: TuneCard[] }>(GENRE_TUNES);
+const parent = data.tunes.find((t) => t.id === 'i-got-rhythm');
+const children = data.tunes
+  .filter((t) => t.contrafactOf?.id === 'i-got-rhythm')
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<Base title="Rhythm changes" activeGenre="jazz">
+  <div class="eyebrow">Jazz · form family</div>
+  <h1 class="page-title">Rhythm changes</h1>
+  <p class="subtitle">
+    {children.length} tunes built on the changes to{' '}
+    <a href="/tune/i-got-rhythm">{parent?.title ?? 'I Got Rhythm'}</a>.
+  </p>
+  <div class="card-grid">
+    {children.map((t) => (
+      <PieceCard
+        href={`/tune/${t.id}`}
+        title={t.title}
+        meta={plural(t.recordings.length, 'recording')}
+      />
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,22 @@
+# Router config for the file-provider watch exercise.
+#
+# `-v "$PWD:/config:ro"` makes router-config.json VISIBLE to the router.
+# `watch: true` below is what makes the router look at it again after boot.
+# Those are two different things, which is the whole point of the exercise.
+#
+# Without this file, the router reads the execution config once at startup and
+# never returns to it. It says so at boot:
+#   "Static execution config provided. Polling and watching is disabled."
+#
+# Note: `watch_config` is a DIFFERENT setting. It watches this file, the
+# router's own config.yaml. `execution_config.file.watch` watches the composed
+# graph. Same word, different owner.
+#
+# Docs: router/deployment/config-hot-reload.mdx, router/configuration.mdx §Execution Config
+version: "1"
+
+execution_config:
+  file:
+    path: "/config/router-config.json"
+    watch: true
+    watch_interval: "1s"

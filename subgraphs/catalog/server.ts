@@ -12,9 +12,9 @@ import {
   indexById,
   type EntityReference,
 } from "../lib/subgraph.js";
-import type { Movement, Tune, Work } from "../lib/seed-types.js";
+import type { Movement, Palo, Tune, Work } from "../lib/seed-types.js";
 
-const { sdl, seed } = loadSubgraph<{ works: Work[]; movements: Movement[]; tunes: Tune[] }>(
+const { sdl, seed } = loadSubgraph<{ works: Work[]; movements: Movement[]; tunes: Tune[]; palos: Palo[] }>(
   import.meta.dirname,
   "catalog.json",
 );
@@ -22,6 +22,7 @@ const { sdl, seed } = loadSubgraph<{ works: Work[]; movements: Movement[]; tunes
 const workById = indexById(seed.works);
 const movementById = indexById(seed.movements);
 const tuneById = indexById(seed.tunes);
+const paloById = indexById(seed.palos);
 
 const movementsByWork = new Map<string, Movement[]>();
 for (const m of seed.movements) {
@@ -38,6 +39,10 @@ for (const w of seed.works) {
 const contrafactsByParent = new Map<string, Tune[]>();
 for (const t of seed.tunes) {
   if (t.contrafactOfId) pushInto(contrafactsByParent, t.contrafactOfId, t);
+}
+const tunesByPalo = new Map<string, Tune[]>();
+for (const t of seed.tunes) {
+  if (t.paloId) pushInto(tunesByPalo, t.paloId, t);
 }
 
 // A Piece is a Movement or a Tune; ids never collide (the seeder gates it).
@@ -58,7 +63,7 @@ startSubgraph({
   name: "catalog",
   port: 4002,
   sdl,
-  entityTypes: ["Artist", "Work", "Movement", "Tune"],
+  entityTypes: ["Artist", "Work", "Movement", "Tune", "Palo"],
   // The router sends concrete refs (Movement, Tune, Work, Artist) and, for the
   // entity interface, Piece refs coming from the discography's @interfaceObject.
   // A Piece ref resolves to whichever concrete piece owns the id.
@@ -73,6 +78,8 @@ startSubgraph({
         return withType(null, tuneById.get(id));
       case "Work":
         return workById.get(id) ?? null;
+      case "Palo":
+        return paloById.get(id) ?? null;
       case "Artist":
         return entityRef("Artist", id);
       default:
@@ -89,6 +96,8 @@ startSubgraph({
       work: (_: unknown, args: { id: string }) => workById.get(args.id) ?? null,
       works: (_: unknown, args: { composer?: string | null }) =>
         args.composer ? (worksByComposer.get(args.composer) ?? []) : seed.works,
+      palo: (_: unknown, args: { id: string }) => paloById.get(args.id) ?? null,
+      palos: () => seed.palos,
     },
     Piece: {
       __resolveType: (obj: { __typename: string }) => obj.__typename,
@@ -105,6 +114,10 @@ startSubgraph({
       contrafactOf: (t: Tune) =>
         t.contrafactOfId ? must(tuneById.get(t.contrafactOfId), `Tune ${t.contrafactOfId}`) : null,
       contrafacts: (t: Tune) => contrafactsByParent.get(t.id) ?? [],
+      palo: (t: Tune) => (t.paloId ? must(paloById.get(t.paloId), `Palo ${t.paloId}`) : null),
+    },
+    Palo: {
+      tunes: (p: Palo) => tunesByPalo.get(p.id) ?? [],
     },
     Artist: {
       composedPieces: (a: { id: string }) => [

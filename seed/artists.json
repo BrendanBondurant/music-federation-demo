@@ -1,6 +1,24 @@
 {
  "people": [
   {
+   "id": "2nd-south-carolina-string-band",
+   "name": "2nd South Carolina String Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "97th-regimental-string-band",
+   "name": "97th Regimental String Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "a-humanes",
    "name": "A. Humanes",
    "kind": "PERSON",
@@ -25,10 +43,43 @@
    "stub": false
   },
   {
+   "id": "aaron-mcdaris",
+   "name": "Aaron McDaris",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "acoustic-jazz-quartet",
    "name": "Acoustic Jazz Quartet",
    "kind": "ENSEMBLE",
    "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "adam-aijala",
+   "name": "Adam Aijala",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "adam-hurt",
+   "name": "Adam Hurt",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
    "styles": [],
    "bio": null,
    "stub": false
@@ -47,6 +98,17 @@
   {
    "id": "adam-rogers",
    "name": "Adam Rogers",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "adam-schlenker",
+   "name": "Adam Schlenker",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -252,6 +314,50 @@
    "stub": false
   },
   {
+   "id": "alan-lomax",
+   "name": "Alan Lomax",
+   "kind": "PERSON",
+   "instruments": [
+    "field recordist"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "alan-munde",
+   "name": "Alan Munde",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "alan-obryant",
+   "name": "Alan O'Bryant",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "alan-reed",
+   "name": "Alan Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "albert-casey",
    "name": "Albert Casey",
    "kind": "PERSON",
@@ -291,6 +397,15 @@
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "alec-askew",
+   "name": "Alec Askew",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -340,6 +455,17 @@
    "stub": false
   },
   {
+   "id": "alexander-skip-spence",
+   "name": "Alexander 'Skip' Spence",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "alexis-cole",
    "name": "Alexis Cole",
    "kind": "PERSON",
@@ -359,6 +485,17 @@
    ],
    "styles": [],
    "bio": "Drummer, longtime member of the Jazz at Lincoln Center Orchestra.",
+   "stub": false
+  },
+  {
+   "id": "allison-de-groot",
+   "name": "Allison de Groot",
+   "kind": "PERSON",
+   "instruments": [
+    "clawhammer banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -395,6 +532,37 @@
    "stub": false
   },
   {
+   "id": "aly-bain",
+   "name": "Aly Bain",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "amanda-smith",
+   "name": "Amanda Smith",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "amberson",
+   "name": "Amberson",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "american-patchwork-quartet",
    "name": "American Patchwork Quartet",
    "kind": "ENSEMBLE",
@@ -426,11 +594,33 @@
    "stub": false
   },
   {
+   "id": "andrea-verga",
+   "name": "Andrea Verga",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "andrew-ackers",
    "name": "Andrew Ackers",
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "andy-maize",
+   "name": "Andy Maize",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
    ],
    "styles": [],
    "bio": null,
@@ -483,6 +673,15 @@
    "stub": false
   },
   {
+   "id": "angela-autumn",
+   "name": "Angela Autumn",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "angela-bautista",
    "name": "Ángela Bautista",
    "kind": "PERSON",
@@ -513,6 +712,15 @@
    "instruments": [
     "vocals"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "anthemnations",
+   "name": "AnthemNations",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -677,6 +885,17 @@
    "stub": false
   },
   {
+   "id": "aoife-odonovan",
+   "name": "Aoife O'Donovan",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ap-carter",
    "name": "A.P. Carter",
    "kind": "PERSON",
@@ -697,6 +916,15 @@
    "styles": [
     "flamenco"
    ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "archie-churchill-moss",
+   "name": "Archie Churchill-Moss",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
    "bio": null,
    "stub": false
   },
@@ -739,6 +967,17 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "arnold-watson",
+   "name": "Arnold Watson",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -886,6 +1125,24 @@
    "stub": false
   },
   {
+   "id": "ashley-hutchings",
+   "name": "Ashley Hutchings",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "asleep-at-the-wheel",
+   "name": "Asleep At The Wheel",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "astrud-gilberto",
    "name": "Astrud Gilberto",
    "kind": "PERSON",
@@ -1027,6 +1284,26 @@
    "stub": false
   },
   {
+   "id": "barry-bales",
+   "name": "Barry Bales",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "barry-dransfield",
+   "name": "Barry Dransfield",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "barry-harris",
    "name": "Barry Harris",
    "kind": "PERSON",
@@ -1056,6 +1333,37 @@
    "stub": false
   },
   {
+   "id": "barry-reed",
+   "name": "Barry Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bela-fleck",
+   "name": "Béla Fleck",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bela-fleck-and-the-flecktones",
+   "name": "Béla Fleck and the Flecktones",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ben-bernie-maceo-pinkard-kenneth-casey",
    "name": "Ben Bernie, Maceo Pinkard, Kenneth Casey",
    "kind": "PERSON",
@@ -1070,6 +1378,50 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ben-eldridge",
+   "name": "Ben Eldridge",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ben-everhart",
+   "name": "Ben Everhart",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ben-helson",
+   "name": "Ben Helson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ben-kaufmann",
+   "name": "Ben Kaufmann",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -1173,6 +1525,17 @@
    "stub": false
   },
   {
+   "id": "benny-bleu",
+   "name": "Benny Bleu",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "benny-golson",
    "name": "Benny Golson",
    "kind": "PERSON",
@@ -1255,6 +1618,17 @@
    "stub": false
   },
   {
+   "id": "benton-flippen",
+   "name": "Benton Flippen",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "bernardo-parrilla",
    "name": "Bernardo Parrilla",
    "kind": "PERSON",
@@ -1275,6 +1649,17 @@
    "styles": [],
    "bio": null,
    "stub": true
+  },
+  {
+   "id": "beth-williams-hartness",
+   "name": "Beth Williams Hartness",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "bette-midler",
@@ -1334,6 +1719,17 @@
    "stub": false
   },
   {
+   "id": "bill-emerson",
+   "name": "Bill Emerson",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "bill-evans",
    "name": "Bill Evans",
    "kind": "PERSON",
@@ -1387,6 +1783,39 @@
    "styles": [
     "hard bop"
    ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bill-keith",
+   "name": "Bill Keith",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bill-monroe",
+   "name": "Bill Monroe",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bill-nershi",
+   "name": "Bill Nershi",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
    "bio": null,
    "stub": false
   },
@@ -1576,6 +2005,17 @@
    "stub": false
   },
   {
+   "id": "billy-joe-foster",
+   "name": "Billy Joe Foster",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "billy-may",
    "name": "Billy May",
    "kind": "PERSON",
@@ -1592,6 +2032,17 @@
    "kind": "PERSON",
    "instruments": [
     "tenor sax"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "billy-ray-lathum",
+   "name": "Billy Ray Lathum",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -1622,6 +2073,17 @@
   {
    "id": "bireli-lagrene",
    "name": "Biréli Lagrène",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bjorn-eriksson",
+   "name": "Bjorn Eriksson",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -1664,10 +2126,30 @@
    "stub": false
   },
   {
+   "id": "blueridge-mountain-bluegrass-band",
+   "name": "Blueridge Mountain Bluegrass Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "bo-brown",
    "name": "Bo Brown",
    "kind": "PERSON",
    "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bob-beeman",
+   "name": "Bob Beeman",
+   "kind": "PERSON",
+   "instruments": [
+    "tambourine"
+   ],
    "styles": [],
    "bio": null,
    "stub": false
@@ -1684,11 +2166,33 @@
    "stub": false
   },
   {
+   "id": "bob-black",
+   "name": "Bob Black",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "bob-brookmeyer",
    "name": "Bob Brookmeyer",
    "kind": "PERSON",
    "instruments": [
     "valve trombone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bob-carlin",
+   "name": "Bob Carlin",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -1924,6 +2428,28 @@
    "stub": true
   },
   {
+   "id": "bookmiller-shannon",
+   "name": "Bookmiller Shannon",
+   "kind": "PERSON",
+   "instruments": [
+    "5-string banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "brad-bulla",
+   "name": "Brad Bulla",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "brad-mehldau",
    "name": "Brad Mehldau",
    "kind": "PERSON",
@@ -1935,11 +2461,33 @@
    "stub": false
   },
   {
+   "id": "brandon-bankes",
+   "name": "Brandon Bankes",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "brandon-lee",
    "name": "Brandon Lee",
    "kind": "PERSON",
    "instruments": [
     "trumpet"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "brandon-rickman",
+   "name": "Brandon Rickman",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -2030,6 +2578,28 @@
    "stub": false
   },
   {
+   "id": "bryan-mantia",
+   "name": "Bryan Mantia",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bryan-sutton",
+   "name": "Bryan Sutton",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "buck-clayton",
    "name": "Buck Clayton",
    "kind": "PERSON",
@@ -2069,6 +2639,17 @@
    "name": "Bud Powell Trio",
    "kind": "ENSEMBLE",
    "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "bud-reed",
+   "name": "Bud Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
    "styles": [],
    "bio": null,
    "stub": false
@@ -2151,6 +2732,17 @@
    "stub": false
   },
   {
+   "id": "buddy-harman",
+   "name": "Buddy Harman",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "buddy-montgomery",
    "name": "Buddy Montgomery",
    "kind": "PERSON",
@@ -2167,6 +2759,28 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "buddy-spurlock",
+   "name": "Buddy Spurlock",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "buffy-sainte-marie",
+   "name": "Buffy Sainte-Marie",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
    ],
    "styles": [],
    "bio": null,
@@ -2211,6 +2825,17 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "byron-berline",
+   "name": "Byron Berline",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -2443,6 +3068,17 @@
    "stub": false
   },
   {
+   "id": "cathy-jordan",
+   "name": "Cathy Jordan",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "cecil-payne",
    "name": "Cecil Payne",
    "kind": "PERSON",
@@ -2471,6 +3107,24 @@
    "instruments": [
     "piano"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "chad-manning",
+   "name": "Chad Manning",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "chad-ritchie",
+   "name": "Chad Ritchie",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -2612,6 +3266,17 @@
    "stub": false
   },
   {
+   "id": "charlie-collins",
+   "name": "Charlie Collins",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "charlie-fowlkes",
    "name": "Charlie Fowlkes",
    "kind": "PERSON",
@@ -2650,6 +3315,17 @@
    "kind": "PERSON",
    "instruments": [
     "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "charlie-mccoy",
+   "name": "Charlie McCoy",
+   "kind": "PERSON",
+   "instruments": [
+    "harmonica"
    ],
    "styles": [],
    "bio": null,
@@ -2698,6 +3374,17 @@
    "stub": false
   },
   {
+   "id": "charlie-rosser",
+   "name": "Charlie Rosser",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "charlie-rouse",
    "name": "Charlie Rouse",
    "kind": "PERSON",
@@ -2725,6 +3412,17 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "chet-atkins",
+   "name": "Chet Atkins",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -2885,6 +3583,26 @@
    "stub": false
   },
   {
+   "id": "christopher-hedge",
+   "name": "Christopher Hedge",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "chronicles-and-ballads",
+   "name": "Chronicles and Ballads",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "chucho-valdes",
    "name": "Chucho Valdés",
    "kind": "PERSON",
@@ -2953,6 +3671,26 @@
    "stub": false
   },
   {
+   "id": "ciaran-algar",
+   "name": "Ciaran Algar",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "clancey-ferguson",
+   "name": "Clancey Ferguson",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "clare-fischer",
    "name": "Clare Fischer",
    "kind": "PERSON",
@@ -2999,10 +3737,8 @@
   {
    "id": "classical-jazz-quartet",
    "name": "Classical Jazz Quartet",
-   "kind": "PERSON",
-   "instruments": [
-    "jazz quartet"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "Kenny Barron, Stefon Harris, Ron Carter, Lewis Nash. *Plays Bach* (2002).",
    "stub": false
@@ -3030,6 +3766,17 @@
    "stub": false
   },
   {
+   "id": "clay-jones",
+   "name": "Clay Jones",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "clay-ross",
    "name": "Clay Ross",
    "kind": "PERSON",
@@ -3044,6 +3791,15 @@
    "id": "clayton-hamilton-jazz-orchestra",
    "name": "Clayton-Hamilton Jazz Orchestra",
    "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "cleek-schrey",
+   "name": "Cleek Schrey",
+   "kind": "PERSON",
    "instruments": [],
    "styles": [],
    "bio": null,
@@ -3078,6 +3834,15 @@
    "instruments": [
     "tenor saxophone"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "clover-lynn",
+   "name": "Clover-Lynn",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -3164,6 +3929,17 @@
    "stub": false
   },
   {
+   "id": "corey-dimario",
+   "name": "Corey DiMario",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "corey-gordon",
    "name": "Corey Gordon",
    "kind": "PERSON",
@@ -3195,6 +3971,15 @@
    "stub": false
   },
   {
+   "id": "craig-duncan",
+   "name": "Craig Duncan",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "craig-fundyga",
    "name": "Craig Fundyga",
    "kind": "PERSON",
@@ -3212,6 +3997,15 @@
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "crooked-still",
+   "name": "Crooked Still",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -3239,11 +4033,33 @@
    "stub": false
   },
   {
+   "id": "curly-ray-cline",
+   "name": "Curly Ray Cline",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "curly-russell",
    "name": "Curly Russell",
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "curly-seckler",
+   "name": "Curly Seckler",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
    ],
    "styles": [],
    "bio": null,
@@ -3316,6 +4132,28 @@
    "stub": false
   },
   {
+   "id": "dan-crary",
+   "name": "Dan Crary",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dan-mitchell",
+   "name": "Dan Mitchell",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "dan-nimmer",
    "name": "Dan Nimmer",
    "kind": "PERSON",
@@ -3349,11 +4187,55 @@
    "stub": false
   },
   {
+   "id": "dana-cupp",
+   "name": "Dana Cupp",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "daniel-carwile",
+   "name": "Daniel Carwile",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "daniel-humair",
    "name": "Daniel Humair",
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-barnes",
+   "name": "Danny Barnes",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-jones",
+   "name": "Danny Jones",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
    ],
    "styles": [],
    "bio": null,
@@ -3376,6 +4258,79 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-rogers",
+   "name": "Danny Rogers",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-smith",
+   "name": "Danny Smith",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-smith-friends",
+   "name": "Danny Smith & Friends",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "danny-thompson",
+   "name": "Danny Thompson",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "darol-anger",
+   "name": "Darol Anger",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "darrin-vincent",
+   "name": "Darrin Vincent",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "daryl-mosley",
+   "name": "Daryl Mosley",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -3426,6 +4381,28 @@
    "stub": false
   },
   {
+   "id": "dave-goss",
+   "name": "Dave Goss",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dave-johnston",
+   "name": "Dave Johnston",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "dave-kennedy",
    "name": "Dave Kennedy",
    "kind": "PERSON",
@@ -3454,6 +4431,15 @@
    "instruments": [
     "tenor & soprano sax"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dave-mattacks",
+   "name": "Dave Mattacks",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -3503,11 +4489,75 @@
    "stub": false
   },
   {
+   "id": "david-algeo-smith",
+   "name": "David Algeo Smith",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "david-bowler",
    "name": "David Bowler",
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-brewer",
+   "name": "David Brewer",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-bromberg",
+   "name": "David Bromberg",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-crow",
+   "name": "David Crow",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-elson",
+   "name": "David Elson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-grier",
+   "name": "David Grier",
+   "kind": "PERSON",
+   "instruments": [
+    "lead guitar"
    ],
    "styles": [],
    "bio": null,
@@ -3525,8 +4575,28 @@
    "stub": false
   },
   {
+   "id": "david-grisman-quintet",
+   "name": "David Grisman Quintet",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "david-holt",
    "name": "David Holt",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-johnson",
+   "name": "David Johnson",
    "kind": "PERSON",
    "instruments": [
     "banjo"
@@ -3541,6 +4611,28 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-parmley",
+   "name": "David Parmley",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-reed",
+   "name": "David Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -3563,6 +4655,17 @@
    "kind": "PERSON",
    "instruments": [
     "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "david-talbot",
+   "name": "David Talbot",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -3644,6 +4747,17 @@
    "stub": false
   },
   {
+   "id": "dennis-crouch",
+   "name": "Dennis Crouch",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "dennis-irwin",
    "name": "Dennis Irwin",
    "kind": "PERSON",
@@ -3661,6 +4775,15 @@
    "instruments": [
     "guitar"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "derek-warfield",
+   "name": "Derek Warfield",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -3695,6 +4818,28 @@
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dick-burnett",
+   "name": "Dick Burnett",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dick-fegy",
+   "name": "Dick Fegy",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -3741,6 +4886,17 @@
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "dirk-powell",
+   "name": "Dirk Powell",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -3810,6 +4966,15 @@
    "instruments": [
     "guitar"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "doc-watson-family",
+   "name": "Doc Watson Family",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -3927,6 +5092,17 @@
    "stub": false
   },
   {
+   "id": "don-rigsby",
+   "name": "Don Rigsby",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "don-sebesky",
    "name": "Don Sebesky",
    "kind": "PERSON",
@@ -3997,6 +5173,26 @@
   {
    "id": "dorothy-jo-hope",
    "name": "Dorothy Jo Hope",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "doug-journigan",
+   "name": "Doug Journigan",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "doug-mckelway",
+   "name": "Doug McKelway",
    "kind": "PERSON",
    "instruments": [
     "banjo"
@@ -4129,8 +5325,41 @@
    "stub": false
   },
   {
+   "id": "earl-scruggs",
+   "name": "Earl Scruggs",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "earl-taylor",
+   "name": "Earl Taylor",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "eberhard-weber",
    "name": "Eberhard Weber",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ebo-walker",
+   "name": "Ebo Walker",
    "kind": "PERSON",
    "instruments": [
     "bass"
@@ -4345,6 +5574,17 @@
    "stub": false
   },
   {
+   "id": "edgar-meyer",
+   "name": "Edgar Meyer",
+   "kind": "PERSON",
+   "instruments": [
+    "acoustic bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "edgar-sampson",
    "name": "Edgar Sampson",
    "kind": "PERSON",
@@ -4507,6 +5747,17 @@
    "stub": false
   },
   {
+   "id": "ellen-carlson",
+   "name": "Ellen Carlson",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "elliot-mason",
    "name": "Elliot Mason",
    "kind": "PERSON",
@@ -4553,6 +5804,15 @@
    "stub": false
   },
   {
+   "id": "emily-spencer",
+   "name": "Emily Spencer",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "emmet-cohen",
    "name": "Emmet Cohen",
    "kind": "PERSON",
@@ -4575,11 +5835,44 @@
    "stub": false
   },
   {
+   "id": "emory-gordy-jr",
+   "name": "Emory Gordy Jr.",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "emory-lester",
+   "name": "Emory Lester",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "enrico-pieranunzi",
    "name": "Enrico Pieranunzi",
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "eric-darling",
+   "name": "Eric Darling",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -4650,10 +5943,43 @@
    "stub": false
   },
   {
+   "id": "eric-skye",
+   "name": "Eric Skye",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "eric-thompson",
+   "name": "Eric Thompson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "eric-weissberg",
    "name": "Eric Weissberg",
    "kind": "PERSON",
    "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "eric-white",
+   "name": "Eric White",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
    "styles": [],
    "bio": null,
    "stub": false
@@ -4782,6 +6108,17 @@
    "stub": false
   },
   {
+   "id": "etta-baker",
+   "name": "Etta Baker",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "etta-james",
    "name": "Etta James",
    "kind": "PERSON",
@@ -4804,11 +6141,31 @@
    "stub": false
   },
   {
+   "id": "evan-carson",
+   "name": "Evan Carson",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "evelyn-mckinney",
    "name": "Evelyn McKinney",
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "everett-alan-lilly",
+   "name": "Everett Alan Lilly",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -4839,6 +6196,26 @@
    "stub": false
   },
   {
+   "id": "falu",
+   "name": "Falu",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "falu-shah",
+   "name": "Falu Shah",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "farruquito",
    "name": "Farruquito",
    "kind": "PERSON",
@@ -4848,6 +6225,15 @@
    "styles": [
     "flamenco"
    ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "father-timothy",
+   "name": "Father Timothy",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
    "bio": null,
    "stub": false
   },
@@ -4885,6 +6271,24 @@
    "stub": false
   },
   {
+   "id": "fireball-mail",
+   "name": "Fireball Mail",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "flatt-scruggs",
+   "name": "Flatt & Scruggs",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "fleecie-moore",
    "name": "Fleecie Moore",
    "kind": "PERSON",
@@ -4905,6 +6309,28 @@
    "stub": false
   },
   {
+   "id": "floyd-cramer",
+   "name": "Floyd Cramer",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "forrest-oconnor",
+   "name": "Forrest O'Connor",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "francesco-lo-castro",
    "name": "Francesco Lo Castro",
    "kind": "PERSON",
@@ -4917,7 +6343,7 @@
   },
   {
    "id": "francisco-rodriguez-lico",
-   "name": "Francisco Rodríguez \\\"Lico\\\"",
+   "name": "Francisco Rodríguez \"Lico",
    "kind": "PERSON",
    "instruments": [],
    "styles": [],
@@ -5088,6 +6514,17 @@
    "stub": false
   },
   {
+   "id": "frank-poindexter",
+   "name": "Frank Poindexter",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "frank-sinatra",
    "name": "Frank Sinatra",
    "kind": "PERSON",
@@ -5121,6 +6558,17 @@
    "stub": false
   },
   {
+   "id": "frank-wakefield",
+   "name": "Frank Wakefield",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "frank-wess",
    "name": "Frank Wess",
    "kind": "PERSON",
@@ -5137,6 +6585,26 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "fred-carter-jr",
+   "name": "Fred Carter Jr.",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "fred-ewers",
+   "name": "Fred Ewers",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -5220,12 +6688,32 @@
    "stub": false
   },
   {
+   "id": "gaither-carlton",
+   "name": "Gaither Carlton",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "gal-costa",
    "name": "Gal Costa",
    "kind": "PERSON",
    "instruments": [
     "vocals"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "garden-variety-string-band",
+   "name": "Garden Variety String Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -5308,6 +6796,17 @@
    "stub": false
   },
   {
+   "id": "gene-bowlin",
+   "name": "Gene Bowlin",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "gene-byrd",
    "name": "Gene Byrd",
    "kind": "PERSON",
@@ -5374,6 +6873,15 @@
    "stub": false
   },
   {
+   "id": "geoff-lakeman",
+   "name": "Geoff Lakeman",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "george-benson",
    "name": "George Benson",
    "kind": "PERSON",
@@ -5421,6 +6929,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "george-jackson",
+   "name": "George Jackson",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -5634,6 +7153,28 @@
    "stub": false
   },
   {
+   "id": "glenn-lawson",
+   "name": "Glenn Lawson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "glenn-zankey",
+   "name": "Glenn Zankey",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "gonzalo-rubalcaba",
    "name": "Gonzalo Rubalcaba",
    "kind": "PERSON",
@@ -5667,6 +7208,17 @@
    "stub": false
   },
   {
+   "id": "gordon-terry",
+   "name": "Gordon Terry",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "gori-carmona",
    "name": "Gori Carmona",
    "kind": "PERSON",
@@ -5676,7 +7228,7 @@
    "styles": [
     "flamenco"
    ],
-   "bio": "Also a co-writer, with María Rosa García, of \"Tú Eres Mío\" on [[Gitana Soy (album)]].",
+   "bio": "Also a co-writer, with María Rosa García, of \"Tú Eres Mío\" on [[Personal/Music/Albums/Gitana Soy (album)]].",
    "stub": false
   },
   {
@@ -5700,12 +7252,32 @@
    "stub": false
   },
   {
+   "id": "grady-martin",
+   "name": "Grady Martin",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "grady-tate",
    "name": "Grady Tate",
    "kind": "PERSON",
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "graham-coe",
+   "name": "Graham Coe",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -5753,6 +7325,24 @@
    "stub": false
   },
   {
+   "id": "great-american-taxi",
+   "name": "Great American Taxi",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "green-mountain-bluegrass-band",
+   "name": "Green Mountain Bluegrass Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "greg-gisbert",
    "name": "Greg Gisbert",
    "kind": "PERSON",
@@ -5780,6 +7370,17 @@
    "kind": "PERSON",
    "instruments": [
     "alto sax"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "gregory-liszt",
+   "name": "Gregory Liszt",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -5819,6 +7420,15 @@
    "styles": [
     "flamenco"
    ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "guerin-bridge-road",
+   "name": "Guerin Bridge Road",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
    "bio": null,
    "stub": false
   },
@@ -5898,6 +7508,37 @@
    "stub": false
   },
   {
+   "id": "hank-williams",
+   "name": "Hank Williams",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "hannah-hendrickson",
+   "name": "Hannah Hendrickson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "harley-allen",
+   "name": "Harley Allen",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "harold-danko",
    "name": "Harold Danko",
    "kind": "PERSON",
@@ -5953,6 +7594,15 @@
    "stub": false
   },
   {
+   "id": "harrowind",
+   "name": "Harrowind",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "harry-carney",
    "name": "Harry Carney",
    "kind": "PERSON",
@@ -6002,6 +7652,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "hayes-griffin",
+   "name": "Hayes Griffin",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -6099,6 +7760,17 @@
    "kind": "PERSON",
    "instruments": [
     "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "herb-pedersen",
+   "name": "Herb Pedersen",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -6230,6 +7902,15 @@
    "stub": false
   },
   {
+   "id": "hot-rize",
+   "name": "Hot Rize",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "houston-person",
    "name": "Houston Person",
    "kind": "PERSON",
@@ -6285,6 +7966,15 @@
    "stub": false
   },
   {
+   "id": "howard-naughton",
+   "name": "Howard Naughton",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "howard-roberts",
    "name": "Howard Roberts",
    "kind": "PERSON",
@@ -6331,12 +8021,34 @@
    "stub": false
   },
   {
+   "id": "hunter-berry",
+   "name": "Hunter Berry",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "i-pommeriggi-musicali-di-milano",
    "name": "I Pommeriggi Musicali di Milano",
    "kind": "ENSEMBLE",
    "instruments": [],
    "styles": [],
-   "bio": "Milan chamber orchestra (I Pomeriggi Musicali, founded 1945). Plays the three-part orchestral title suite on John McLaughlin's [[Thieves & Poets]].",
+   "bio": "Milan chamber orchestra (I Pomeriggi Musicali, founded 1945). Plays the three-part orchestral title suite on John McLaughlin's [[Personal/Music/Albums/Thieves & Poets]].",
+   "stub": false
+  },
+  {
+   "id": "ian-simpson",
+   "name": "Ian Simpson",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6419,12 +8131,32 @@
    "stub": false
   },
   {
+   "id": "jack-cooke",
+   "name": "Jack Cooke",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jack-dejohnette",
    "name": "Jack DeJohnette",
    "kind": "PERSON",
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jack-jezioro",
+   "name": "Jack Jezioro",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -6476,6 +8208,17 @@
    "stub": false
   },
   {
+   "id": "jack-tottle",
+   "name": "Jack Tottle",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jackie-mclean",
    "name": "Jackie McLean",
    "kind": "PERSON",
@@ -6513,12 +8256,30 @@
   {
    "id": "jacques-loussier-trio",
    "name": "Jacques Loussier Trio",
-   "kind": "PERSON",
-   "instruments": [
-    "piano trio"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "French pianist Jacques Loussier's trio; the *Play Bach* series (from 1959) set Bach to swing.",
+   "stub": false
+  },
+  {
+   "id": "jake-armerding",
+   "name": "Jake Armerding",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jake-eddy",
+   "name": "Jake Eddy",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -6528,6 +8289,26 @@
    "instruments": [
     "fiddle"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jake-tullock",
+   "name": "Jake Tullock",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "james-aula",
+   "name": "James Aula",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -6599,6 +8380,15 @@
    "stub": false
   },
   {
+   "id": "jamie-francis",
+   "name": "Jamie Francis",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jan-johansson",
    "name": "Jan Johansson",
    "kind": "PERSON",
@@ -6654,6 +8444,28 @@
    "stub": false
   },
   {
+   "id": "jason-jaros",
+   "name": "Jason Jaros",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jason-romero",
+   "name": "Jason Romero",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jason-vieaux",
    "name": "Jason Vieaux",
    "kind": "PERSON",
@@ -6702,6 +8514,17 @@
    "stub": false
   },
   {
+   "id": "jay-bradberry",
+   "name": "Jay Bradberry",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jay-brandford",
    "name": "Jay Brandford",
    "kind": "PERSON",
@@ -6724,6 +8547,26 @@
    "stub": false
   },
   {
+   "id": "jay-ungar",
+   "name": "Jay Ungar",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jaywalkers",
+   "name": "Jaywalkers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jazz-at-lincoln-center-orchestra",
    "name": "Jazz at Lincoln Center Orchestra",
    "kind": "ENSEMBLE",
@@ -6738,6 +8581,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jd-crowe",
+   "name": "J.D. Crowe",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -6777,6 +8631,17 @@
    "stub": false
   },
   {
+   "id": "jeff-austin",
+   "name": "Jeff Austin",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jeff-clayton",
    "name": "Jeff Clayton",
    "kind": "PERSON",
@@ -6794,6 +8659,15 @@
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jeff-hanna",
+   "name": "Jeff Hanna",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -6837,6 +8711,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jeff-troxel",
+   "name": "Jeff Troxel",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -6918,6 +8803,50 @@
    "stub": false
   },
   {
+   "id": "jerry-douglas",
+   "name": "Jerry Douglas",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jerry-garcia",
+   "name": "Jerry Garcia",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jerry-rivers",
+   "name": "Jerry Rivers",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jerry-sutton",
+   "name": "Jerry Sutton",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jess-stacy",
    "name": "Jess Stacy",
    "kind": "PERSON",
@@ -6951,6 +8880,17 @@
    "stub": false
   },
   {
+   "id": "jim-buchanan",
+   "name": "Jim Buchanan",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jim-hall",
    "name": "Jim Hall",
    "kind": "PERSON",
@@ -6973,12 +8913,41 @@
    "stub": false
   },
   {
+   "id": "jim-ibbotson",
+   "name": "Jim Ibbotson",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jim-lucht",
    "name": "Jim Lucht",
    "kind": "PERSON",
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jim-mccall",
+   "name": "Jim McCall",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jim-nunally",
+   "name": "Jim Nunally",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -6995,12 +8964,32 @@
    "stub": false
   },
   {
+   "id": "jim-sutherland",
+   "name": "Jim Sutherland",
+   "kind": "PERSON",
+   "instruments": [
+    "percussion"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jim-tomlinson",
    "name": "Jim Tomlinson",
    "kind": "PERSON",
    "instruments": [
     "tenor sax"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jimmie-fadden",
+   "name": "Jimmie Fadden",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -7041,6 +9030,17 @@
   {
    "id": "jimmy-bruno",
    "name": "Jimmy Bruno",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jimmy-bryant",
+   "name": "Jimmy Bryant",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -7145,6 +9145,17 @@
    "stub": false
   },
   {
+   "id": "jimmy-gaudreau",
+   "name": "Jimmy Gaudreau",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "jimmy-giuffre",
    "name": "Jimmy Giuffre",
    "kind": "PERSON",
@@ -7185,6 +9196,17 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jimmy-martin",
+   "name": "Jimmy Martin",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -7284,7 +9306,7 @@
    "styles": [
     "flamenco"
    ],
-   "bio": "No fuller name given in the source credit. Credited for palmas, coros, and as a co-writer on several tracks of [[Gitana Soy (album)]].",
+   "bio": "No fuller name given in the source credit. Credited for palmas, coros, and as a co-writer on several tracks of [[Personal/Music/Albums/Gitana Soy (album)]].",
    "stub": false
   },
   {
@@ -7405,6 +9427,17 @@
    "stub": false
   },
   {
+   "id": "joe-brown",
+   "name": "Joe Brown",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "joe-chambers",
    "name": "Joe Chambers",
    "kind": "PERSON",
@@ -7443,6 +9476,28 @@
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joe-craven",
+   "name": "Joe Craven",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joe-ewers",
+   "name": "Joe Ewers",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -7607,6 +9662,17 @@
    "stub": false
   },
   {
+   "id": "joe-stuart",
+   "name": "Joe Stuart",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "joe-temperley",
    "name": "Joe Temperley",
    "kind": "PERSON",
@@ -7623,6 +9689,26 @@
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joe-weed",
+   "name": "Joe Weed",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joe-whitney",
+   "name": "Joe Whitney",
+   "kind": "PERSON",
+   "instruments": [
+    "flute"
    ],
    "styles": [],
    "bio": null,
@@ -7700,6 +9786,17 @@
    "kind": "PERSON",
    "instruments": [
     "organ"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "johan-heldenbergh",
+   "name": "Johan Heldenbergh",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -7816,6 +9913,26 @@
    "stub": false
   },
   {
+   "id": "john-hartford",
+   "name": "John Hartford",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "john-herrmann",
+   "name": "John Herrmann",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "john-hicks",
    "name": "John Hicks",
    "kind": "PERSON",
@@ -7833,6 +9950,37 @@
    "instruments": [
     "bass"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "john-kahn",
+   "name": "John Kahn",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "john-kane",
+   "name": "John Kane",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "john-kirkpatrick",
+   "name": "John Kirkpatrick",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -7860,11 +10008,31 @@
    "stub": false
   },
   {
+   "id": "john-mceuen",
+   "name": "John McEuen",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "john-mclaughlin",
    "name": "John McLaughlin",
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "john-miller",
+   "name": "John Miller",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -8038,6 +10206,17 @@
    "stub": false
   },
   {
+   "id": "johnny-gimble",
+   "name": "Johnny Gimble",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "johnny-griffin",
    "name": "Johnny Griffin",
    "kind": "PERSON",
@@ -8129,6 +10308,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "jon-carroll",
+   "name": "Jon Carroll",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
    ],
    "styles": [],
    "bio": null,
@@ -8230,7 +10420,7 @@
   },
   {
    "id": "jose-jimenez-el-viejin",
-   "name": "José Jiménez \"[[El Viejín]]",
+   "name": "José Jiménez \"El Viejín",
    "kind": "PERSON",
    "instruments": [],
    "styles": [],
@@ -8288,6 +10478,35 @@
    "stub": false
   },
   {
+   "id": "joseph-carroll",
+   "name": "Joseph Carroll",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joseph-decosimo",
+   "name": "Joseph Decosimo",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "joseph-hebert",
+   "name": "Joseph Hébert",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "joseph-kosma",
    "name": "Joseph Kosma",
    "kind": "PERSON",
@@ -8308,12 +10527,65 @@
    "stub": false
   },
   {
+   "id": "josh-graves",
+   "name": "Josh Graves",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "josh-hartman",
+   "name": "Josh Hartman",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "josh-mercado",
    "name": "Josh Mercado",
    "kind": "PERSON",
    "instruments": [
     "trumpet"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "josh-rabie",
+   "name": "Josh Rabie",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "josh-turknett",
+   "name": "Josh Turknett",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "josh-turknett-and-the-chillgrass-project",
+   "name": "Josh Turknett and the Chillgrass Project",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -8405,7 +10677,7 @@
    "styles": [
     "flamenco"
    ],
-   "bio": "Voice; wrote the lyrics for \"Musica En El Aire\" on [[Morao y Oro]].",
+   "bio": "Voice; wrote the lyrics for \"Musica En El Aire\" on [[Personal/Music/Albums/Morao y Oro]].",
    "stub": false
   },
   {
@@ -8488,6 +10760,15 @@
    "stub": false
   },
   {
+   "id": "julian-smedley",
+   "name": "Julian Smedley",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "juliano-vidal",
    "name": "Juliano Vidal",
    "kind": "PERSON",
@@ -8535,6 +10816,17 @@
    "kind": "PERSON",
    "instruments": [
     "reeds"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "justin-rayner",
+   "name": "Justin Rayner",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -8618,11 +10910,53 @@
    "stub": false
   },
   {
+   "id": "keith-little",
+   "name": "Keith Little",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "keith-lowe",
+   "name": "Keith Lowe",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "keith-moseley",
+   "name": "Keith Moseley",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "kelly-martin",
    "name": "Kelly Martin",
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ken-seaman",
+   "name": "Ken Seaman",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -8645,6 +10979,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "kenny-baker",
+   "name": "Kenny Baker",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -8757,6 +11102,17 @@
    "stub": false
   },
   {
+   "id": "kenny-malone",
+   "name": "Kenny Malone",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "kenny-napper",
    "name": "Kenny Napper",
    "kind": "PERSON",
@@ -8773,6 +11129,26 @@
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "kenny-sears",
+   "name": "Kenny Sears",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "kenny-smith",
+   "name": "Kenny Smith",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -8828,6 +11204,17 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "kevin-wimmer",
+   "name": "Kevin Wimmer",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -8946,6 +11333,17 @@
    "stub": false
   },
   {
+   "id": "kyle-hollingsworth",
+   "name": "Kyle Hollingsworth",
+   "kind": "PERSON",
+   "instruments": [
+    "keyboards"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "kyle-poole",
    "name": "Kyle Poole",
    "kind": "PERSON",
@@ -9034,6 +11432,17 @@
    "stub": false
   },
   {
+   "id": "larry-rice",
+   "name": "Larry Rice",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "larry-shunk",
    "name": "Larry Shunk",
    "kind": "PERSON",
@@ -9084,6 +11493,15 @@
    "instruments": [
     "piano"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "laurel-hells-ramblers",
+   "name": "Laurel Hells Ramblers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -9155,6 +11573,15 @@
    "stub": false
   },
   {
+   "id": "lee-harvey-osmond",
+   "name": "Lee Harvey Osmond",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "lee-konitz",
    "name": "Lee Konitz",
    "kind": "PERSON",
@@ -9203,11 +11630,33 @@
    "stub": false
   },
   {
+   "id": "leo-kottke",
+   "name": "Leo Kottke",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "leo-wright",
    "name": "Leo Wright",
    "kind": "PERSON",
    "instruments": [
     "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "leonard-rutherford",
+   "name": "Leonard Rutherford",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -9258,8 +11707,28 @@
    "stub": false
   },
   {
+   "id": "les-thompson",
+   "name": "Les Thompson",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "lester-barnard",
    "name": "Lester Barnard",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lester-flatt",
+   "name": "Lester Flatt",
    "kind": "PERSON",
    "instruments": [
     "guitar"
@@ -9322,6 +11791,28 @@
    "stub": false
   },
   {
+   "id": "lidewij-de-vries",
+   "name": "Lidewij de Vries",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lightnin-chance",
+   "name": "Lightnin' Chance",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "lil-hardin-armstrong",
    "name": "Lil Hardin Armstrong",
    "kind": "PERSON",
@@ -9339,6 +11830,15 @@
    "instruments": [
     "bass"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "linda-cabe",
+   "name": "Linda Cabe",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -9377,12 +11877,41 @@
    "stub": false
   },
   {
+   "id": "lisa-silver",
+   "name": "Lisa Silver",
+   "kind": "PERSON",
+   "instruments": [
+    "violin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lizard-in-the-spring",
+   "name": "Lizard in the Spring",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "lloyd-davis",
    "name": "Lloyd Davis",
    "kind": "PERSON",
    "instruments": [
     "drums"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lonesome-river-band",
+   "name": "Lonesome River Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -9404,6 +11933,28 @@
    "kind": "PERSON",
    "instruments": [
     "trumpet"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lonnie-peerce",
+   "name": "Lonnie Peerce",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lonnie-robertson",
+   "name": "Lonnie Robertson",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -9522,6 +12073,26 @@
    "stub": false
   },
   {
+   "id": "lucille-williams",
+   "name": "Lucille Williams",
+   "kind": "PERSON",
+   "instruments": [
+    "double bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "lucius-smith",
+   "name": "Lucius Smith",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "luis-bacalov",
    "name": "Luis Bacalov",
    "kind": "PERSON",
@@ -9563,6 +12134,15 @@
    "instruments": [
     "bass"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "luke-richardson",
+   "name": "Luke Richardson",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -9789,6 +12369,26 @@
    "stub": false
   },
   {
+   "id": "marcy-marxer",
+   "name": "Marcy Marxer",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "margo-timmins",
+   "name": "Margo Timmins",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mari-angeles-fernandez-torres",
    "name": "Mari Ángeles Fernández Torres",
    "kind": "PERSON",
@@ -9835,11 +12435,55 @@
    "stub": false
   },
   {
+   "id": "mark-johnson",
+   "name": "Mark Johnson",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mark-oconnor",
+   "name": "Mark O'Connor",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mark-schatz",
+   "name": "Mark Schatz",
+   "kind": "PERSON",
+   "instruments": [
+    "frailing banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mark-taylor",
    "name": "Mark Taylor",
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mark-walmsley",
+   "name": "Mark Walmsley",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
    ],
    "styles": [],
    "bio": null,
@@ -9932,6 +12576,15 @@
    "stub": false
   },
   {
+   "id": "marty-stuart",
+   "name": "Marty Stuart",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mary-ford",
    "name": "Mary Ford",
    "kind": "PERSON",
@@ -9985,11 +12638,33 @@
    "stub": false
   },
   {
+   "id": "matt-opachick",
+   "name": "Matt Opachick",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "matt-perrine",
    "name": "Matt Perrine",
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "maura-dunst",
+   "name": "Maura Dunst",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -10135,6 +12810,26 @@
    "stub": false
   },
   {
+   "id": "meredith-mcintosh",
+   "name": "Meredith McIntosh",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "merle-watson",
+   "name": "Merle Watson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "michael-brecker",
    "name": "Michael Brecker",
    "kind": "PERSON",
@@ -10152,6 +12847,15 @@
    "instruments": [
     "fiddle"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "michael-connolly",
+   "name": "Michael Connolly",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -10192,11 +12896,55 @@
    "stub": false
   },
   {
+   "id": "michael-kang",
+   "name": "Michael Kang",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "michael-lira",
    "name": "Michael Lira",
    "kind": "PERSON",
    "instruments": [
     "double bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "michael-melford",
+   "name": "Michael Melford",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "michael-timmins",
+   "name": "Michael Timmins",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "michael-travis",
+   "name": "Michael Travis",
+   "kind": "PERSON",
+   "instruments": [
+    "drums"
    ],
    "styles": [],
    "bio": null,
@@ -10219,6 +12967,17 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mickey-harris",
+   "name": "Mickey Harris",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -10304,11 +13063,55 @@
    "stub": false
   },
   {
+   "id": "mike-compton",
+   "name": "Mike Compton",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-giverin",
+   "name": "Mike Giverin",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-hartgrove",
+   "name": "Mike Hartgrove",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mike-karn",
    "name": "Mike Karn",
    "kind": "PERSON",
    "instruments": [
     "double bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-kerin",
+   "name": "Mike Kerin",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -10326,6 +13129,26 @@
    "stub": false
   },
   {
+   "id": "mike-lilly",
+   "name": "Mike Lilly",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-paul",
+   "name": "Mike Paul",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mike-rogers",
    "name": "Mike Rogers",
    "kind": "PERSON",
@@ -10337,11 +13160,44 @@
    "stub": false
   },
   {
+   "id": "mike-scott",
+   "name": "Mike Scott",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-seeger",
+   "name": "Mike Seeger",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mike-stern",
    "name": "Mike Stern",
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "mike-vasich",
+   "name": "Mike Vasich",
+   "kind": "PERSON",
+   "instruments": [
+    "piano"
    ],
    "styles": [],
    "bio": null,
@@ -10374,6 +13230,15 @@
    "instruments": [
     "piano"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "miller-mcnay",
+   "name": "Miller McNay",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -10509,6 +13374,17 @@
    "stub": true
   },
   {
+   "id": "molly-mason",
+   "name": "Molly Mason",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "molly-tuttle",
    "name": "Molly Tuttle",
    "kind": "PERSON",
@@ -10599,7 +13475,7 @@
    "styles": [
     "flamenco"
    ],
-   "bio": "Manuel Moreno Junquera. Guitar credit on \"Tarde de Abril\" ([[Gitana Soy (album)]]); also honored by Tomatito's tribute tune [[A Manuel, Moraíto Chico]].",
+   "bio": "Manuel Moreno Junquera. Guitar credit on \"Tarde de Abril\" ([[Personal/Music/Albums/Gitana Soy (album)]]); also honored by Tomatito's tribute tune [[Personal/Music/Pieces/Tunes/A Manuel, Moraíto Chico]].",
    "stub": false
   },
   {
@@ -10654,6 +13530,15 @@
    "stub": false
   },
   {
+   "id": "muleskinner",
+   "name": "Muleskinner",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "mulgrew-miller",
    "name": "Mulgrew Miller",
    "kind": "PERSON",
@@ -10670,6 +13555,17 @@
    "kind": "PERSON",
    "instruments": [
     "trumpet"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nancy-blake",
+   "name": "Nancy Blake",
+   "kind": "PERSON",
+   "instruments": [
+    "cello"
    ],
    "styles": [],
    "bio": null,
@@ -10704,6 +13600,15 @@
    "instruments": [
     "banjo"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nashville-bluegrass-band",
+   "name": "Nashville Bluegrass Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -10751,11 +13656,31 @@
    "stub": false
   },
   {
+   "id": "nathan-hale-ancient-fifes-drums",
+   "name": "Nathan Hale Ancient Fifes & Drums",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "nathan-milstein",
    "name": "Nathan Milstein",
    "kind": "PERSON",
    "instruments": [
     "violin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nathan-zangmeister",
+   "name": "Nathan Zangmeister",
+   "kind": "PERSON",
+   "instruments": [
+    "washtub bass"
    ],
    "styles": [],
    "bio": null,
@@ -10852,11 +13777,62 @@
    "stub": false
   },
   {
+   "id": "nick-dumas",
+   "name": "Nick Dumas",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nick-gaudette",
+   "name": "Nick Gaudette",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nick-pynn",
+   "name": "Nick Pynn",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "nick-robbins",
    "name": "Nick Robbins",
    "kind": "PERSON",
    "instruments": [
     "synthesizer"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nickel-creek",
+   "name": "Nickel Creek",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "nico-druijf",
+   "name": "Nico Druijf",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -10909,11 +13885,31 @@
    "stub": false
   },
   {
+   "id": "nitty-gritty-dirt-band",
+   "name": "Nitty Gritty Dirt Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "noah-charles",
    "name": "Noah Charles",
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "noam-pikelny",
+   "name": "Noam Pikelny",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -10975,11 +13971,31 @@
    "stub": false
   },
   {
+   "id": "o-bardo-e-o-banjo",
+   "name": "O Bardo E O Banjo",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "octavio-bailly-jr",
    "name": "Octavio Bailly, Jr.",
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ola-belle-reed",
+   "name": "Ola Belle Reed",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -11197,6 +14213,28 @@
    "stub": false
   },
   {
+   "id": "pat-donohue",
+   "name": "Pat Donohue",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pat-enright",
+   "name": "Pat Enright",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "pat-martino",
    "name": "Pat Martino",
    "kind": "PERSON",
@@ -11258,6 +14296,15 @@
    "instruments": [
     "piano"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "paul-brown",
+   "name": "Paul Brown",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -11393,6 +14440,17 @@
    "stub": false
   },
   {
+   "id": "paul-warren",
+   "name": "Paul Warren",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "paul-webster-andre-previn",
    "name": "Paul Webster / Andre Previn",
    "kind": "PERSON",
@@ -11400,6 +14458,28 @@
    "styles": [],
    "bio": null,
    "stub": true
+  },
+  {
+   "id": "paul-williams",
+   "name": "Paul Williams",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "paul-yandell",
+   "name": "Paul Yandell",
+   "kind": "PERSON",
+   "instruments": [
+    "rhythm guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "paulinho-braga",
@@ -11638,11 +14718,33 @@
    "stub": false
   },
   {
+   "id": "pete-cooper",
+   "name": "Pete Cooper",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "pete-la-roca",
    "name": "Pete La Roca",
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pete-seeger",
+   "name": "Pete Seeger",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
    ],
    "styles": [],
    "bio": null,
@@ -11717,12 +14819,54 @@
    "stub": false
   },
   {
+   "id": "peter-rowan",
+   "name": "Peter Rowan",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "pharis-romero",
+   "name": "Pharis Romero",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "phil-easterbrook",
+   "name": "Phil Easterbrook",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "phil-harper",
    "name": "Phil Harper",
    "kind": "PERSON",
    "instruments": [
     "trumpet"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "phil-jamison",
+   "name": "Phil Jamison",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -11900,6 +15044,39 @@
    "styles": [
     "flamenco"
    ],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "r-carlos-nakai",
+   "name": "R. Carlos Nakai",
+   "kind": "PERSON",
+   "instruments": [
+    "Native American flute"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rachel-calvert",
+   "name": "Rachel Calvert",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rachel-eddy",
+   "name": "Rachel Eddy",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
    "bio": null,
    "stub": false
   },
@@ -12140,6 +15317,39 @@
    "stub": false
   },
   {
+   "id": "randy-davis",
+   "name": "Randy Davis",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "randy-jones",
+   "name": "Randy Jones",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "randy-sabien",
+   "name": "Randy Sabien",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "raul",
    "name": "Raúl",
    "kind": "PERSON",
@@ -12158,6 +15368,17 @@
    "kind": "PERSON",
    "instruments": [
     "congas"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ray-benson",
+   "name": "Ray Benson",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -12283,6 +15504,17 @@
    "stub": false
   },
   {
+   "id": "raymond-fairchild",
+   "name": "Raymond Fairchild",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "raymond-leppard",
    "name": "Raymond Leppard",
    "kind": "PERSON",
@@ -12293,6 +15525,17 @@
     "classical"
    ],
    "bio": "British conductor and harpsichordist known for reviving Baroque opera (Monteverdi, Cavalli); also conducted Wynton Marsalis's Baroque Music for Trumpets.",
+   "stub": false
+  },
+  {
+   "id": "rayna-gellert",
+   "name": "Rayna Gellert",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -12428,6 +15671,15 @@
    "stub": false
   },
   {
+   "id": "reminder",
+   "name": "Reminder",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "renato-rivolta",
    "name": "Renato Rivolta",
    "kind": "PERSON",
@@ -12455,6 +15707,37 @@
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rhiannon",
+   "name": "Rhiannon",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rhiannon-giddens",
+   "name": "Rhiannon Giddens",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rhonda-vincent",
+   "name": "Rhonda Vincent",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
    ],
    "styles": [],
    "bio": null,
@@ -12496,6 +15779,17 @@
    "stub": false
   },
   {
+   "id": "richard-greene",
+   "name": "Richard Greene",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "richard-rodgers",
    "name": "Richard Rodgers",
    "kind": "PERSON",
@@ -12503,6 +15797,15 @@
    "styles": [],
    "bio": null,
    "stub": true
+  },
+  {
+   "id": "richard-thompson",
+   "name": "Richard Thompson",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "richard-williams",
@@ -12549,6 +15852,17 @@
    "stub": false
   },
   {
+   "id": "rick-bradstreet",
+   "name": "Rick Bradstreet",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "rick-rosato",
    "name": "Rick Rosato",
    "kind": "PERSON",
@@ -12571,11 +15885,64 @@
    "stub": false
   },
   {
+   "id": "rickie-simpkins",
+   "name": "Rickie Simpkins",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ricky-skaggs",
    "name": "Ricky Skaggs",
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rina-rossi",
+   "name": "Rina Rossi",
+   "kind": "PERSON",
+   "instruments": [
+    "upright bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rising-appalachia",
+   "name": "Rising Appalachia",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rob-gateley",
+   "name": "Rob Gateley",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rob-walker",
+   "name": "Rob Walker",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -12610,6 +15977,15 @@
    "instruments": [
     "arranger/conductor"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rockridge-brothers",
+   "name": "Rockridge Brothers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -12723,6 +16099,17 @@
    "stub": false
   },
   {
+   "id": "roland-white",
+   "name": "Roland White",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "rolf-ericson",
    "name": "Rolf Ericson",
    "kind": "PERSON",
@@ -12811,6 +16198,17 @@
    "stub": false
   },
   {
+   "id": "ron-rice",
+   "name": "Ron Rice",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ronnie-ball",
    "name": "Ronnie Ball",
    "kind": "PERSON",
@@ -12822,11 +16220,44 @@
    "stub": false
   },
   {
+   "id": "ronnie-bowman",
+   "name": "Ronnie Bowman",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "ronnie-mccoury",
+   "name": "Ronnie McCoury",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ronnie-stephenson",
    "name": "Ronnie Stephenson",
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "rosa-lee-watson",
+   "name": "Rosa Lee Watson",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
    ],
    "styles": [],
    "bio": null,
@@ -12882,6 +16313,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "roy-lee-centers",
+   "name": "Roy Lee Centers",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -12945,6 +16387,28 @@
    "stub": false
   },
   {
+   "id": "rushad-eggleston",
+   "name": "Rushad Eggleston",
+   "kind": "PERSON",
+   "instruments": [
+    "cello"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "russ-barenberg",
+   "name": "Russ Barenberg",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "russ-freeman",
    "name": "Russ Freeman",
    "kind": "PERSON",
@@ -12978,6 +16442,17 @@
    "stub": false
   },
   {
+   "id": "ruud-spil",
+   "name": "Ruud Spil",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ryan-kisor",
    "name": "Ryan Kisor",
    "kind": "PERSON",
@@ -12986,6 +16461,17 @@
    ],
    "styles": [],
    "bio": "Trumpeter; won the 1990 Thelonious Monk International Jazz Trumpet Competition and later joined the Jazz at Lincoln Center Orchestra.",
+   "stub": false
+  },
+  {
+   "id": "ryan-thomson",
+   "name": "Ryan Thomson",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -13027,6 +16513,17 @@
    "kind": "PERSON",
    "instruments": [
     "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "sam-bush",
+   "name": "Sam Bush",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
    ],
    "styles": [],
    "bio": null,
@@ -13079,6 +16576,15 @@
    "stub": false
   },
   {
+   "id": "sam-kelly",
+   "name": "Sam Kelly",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "sam-wilkes",
    "name": "Sam Wilkes",
    "kind": "PERSON",
@@ -13121,6 +16627,26 @@
    "stub": true
   },
   {
+   "id": "sammy-shelor",
+   "name": "Sammy Shelor",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "samson-grisman",
+   "name": "Samson Grisman",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "sandro-haick",
    "name": "Sandro Haick",
    "kind": "PERSON",
@@ -13132,11 +16658,33 @@
    "stub": false
   },
   {
+   "id": "sandy-rothman",
+   "name": "Sandy Rothman",
+   "kind": "PERSON",
+   "instruments": [
+    "rhythm guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "sara-carter",
    "name": "Sara Carter",
    "kind": "PERSON",
    "instruments": [
     "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "sara-watkins",
+   "name": "Sara Watkins",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -13198,11 +16746,55 @@
    "stub": false
   },
   {
+   "id": "scott-phillips",
+   "name": "Scott Phillips",
+   "kind": "PERSON",
+   "instruments": [
+    "accordion"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "scott-robinson",
    "name": "Scott Robinson",
    "kind": "PERSON",
    "instruments": [
     "tenor saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "scott-thile",
+   "name": "Scott Thile",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "scott-vestal",
+   "name": "Scott Vestal",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "scotty-stoneman",
+   "name": "Scotty Stoneman",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
    ],
    "styles": [],
    "bio": null,
@@ -13225,6 +16817,17 @@
    "kind": "PERSON",
    "instruments": [
     "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "sean-watkins",
+   "name": "Sean Watkins",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -13297,6 +16900,17 @@
    "stub": false
   },
   {
+   "id": "shelly-oday",
+   "name": "Shelly O'Day",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "sherman-ferguson",
    "name": "Sherman Ferguson",
    "kind": "PERSON",
@@ -13336,6 +16950,15 @@
    "instruments": [
     "baroque violin"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "sid-hemphill",
+   "name": "Sid Hemphill",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -13388,6 +17011,15 @@
    "id": "smoky-mountain-dna",
    "name": "Smoky Mountain DNA",
    "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "smoky-mountain-strings",
+   "name": "Smoky Mountain Strings",
+   "kind": "PERSON",
    "instruments": [],
    "styles": [],
    "bio": null,
@@ -13552,6 +17184,17 @@
    "stub": false
   },
   {
+   "id": "speedy-west",
+   "name": "Speedy West",
+   "kind": "PERSON",
+   "instruments": [
+    "steel guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "spencer-williams",
    "name": "Spencer Williams",
    "kind": "PERSON",
@@ -13577,6 +17220,17 @@
    "kind": "PERSON",
    "instruments": [
     "sax"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stacy-phillips",
+   "name": "Stacy Phillips",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
    ],
    "styles": [],
    "bio": null,
@@ -13673,6 +17327,26 @@
    "stub": false
   },
   {
+   "id": "stephen-bennett",
+   "name": "Stephen Bennett",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stephen-foster",
+   "name": "Stephen Foster",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": true
+  },
+  {
    "id": "stephen-hall-jones",
    "name": "Stephen Hall-Jones",
    "kind": "PERSON",
@@ -13689,6 +17363,17 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stephen-weinstock",
+   "name": "Stephen Weinstock",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -13761,6 +17446,24 @@
    "stub": false
   },
   {
+   "id": "steve-mandell",
+   "name": "Steve Mandell",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "steve-rosen",
+   "name": "Steve Rosen",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "steve-swallow",
    "name": "Steve Swallow",
    "kind": "PERSON",
@@ -13810,6 +17513,37 @@
    "kind": "PERSON",
    "instruments": [
     "lead guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stones-river-ranch-boys",
+   "name": "Stones River Ranch Boys",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stuart-duncan",
+   "name": "Stuart Duncan",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "stuart-schulman",
+   "name": "Stuart Schulman",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
    ],
    "styles": [],
    "bio": null,
@@ -13895,6 +17629,17 @@
    "stub": false
   },
   {
+   "id": "tatiana-hargreaves",
+   "name": "Tatiana Hargreaves",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "ted-adams",
    "name": "Ted Adams",
    "kind": "PERSON",
@@ -13961,6 +17706,17 @@
    "stub": false
   },
   {
+   "id": "tennessee-ernie-ford",
+   "name": "Tennessee Ernie Ford",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "tenorio-jr",
    "name": "Tenorio Jr.",
    "kind": "PERSON",
@@ -14005,6 +17761,26 @@
    "stub": false
   },
   {
+   "id": "terry-mcmillan",
+   "name": "Terry McMillan",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tessa-nichols-meade",
+   "name": "Tessa Nichols-Meade",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "tete-montoliu",
    "name": "Tete Montoliu",
    "kind": "PERSON",
@@ -14040,10 +17816,35 @@
   {
    "id": "the-andrews-sisters",
    "name": "The Andrews Sisters",
-   "kind": "PERSON",
-   "instruments": [
-    "vocals"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-atkins-string-company",
+   "name": "The Atkins String Company",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-avett-brothers",
+   "name": "The Avett Brothers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-band-of-the-royal-military-school-of-music-kneller-hall",
+   "name": "The Band of the Royal Military School of Music, Kneller Hall",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -14058,8 +17859,26 @@
    "stub": false
   },
   {
+   "id": "the-bluegrass-patriots",
+   "name": "The Bluegrass Patriots",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "the-bollywood-strings",
    "name": "The Bollywood Strings",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-broken-circle-breakdown-bluegrass-band",
+   "name": "The Broken Circle Breakdown Bluegrass Band",
    "kind": "ENSEMBLE",
    "instruments": [],
    "styles": [],
@@ -14078,6 +17897,24 @@
   {
    "id": "the-carter-family",
    "name": "The Carter Family",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-clinch-mountain-boys",
+   "name": "The Clinch Mountain Boys",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-country-gentlemen",
+   "name": "The Country Gentlemen",
    "kind": "ENSEMBLE",
    "instruments": [],
    "styles": [],
@@ -14112,8 +17949,152 @@
    "stub": false
   },
   {
+   "id": "the-harlot-queens",
+   "name": "The Harlot Queens",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-jolly-rogers",
+   "name": "The Jolly Rogers",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "the-kenny-clarke-francy-boland-big-band",
    "name": "The Kenny Clarke-Francy Boland Big Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-kentucky-colonels",
+   "name": "The Kentucky Colonels",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-lost-boys",
+   "name": "The Lost Boys",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-mayfield-brothers",
+   "name": "The Mayfield Brothers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-morgantown-rounders",
+   "name": "The Morgantown Rounders",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-morris-on-band",
+   "name": "The Morris On Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-new-golden-ring",
+   "name": "The New Golden Ring",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-new-kentucky-colonels",
+   "name": "The New Kentucky Colonels",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-new-lost-city-ramblers",
+   "name": "The New Lost City Ramblers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-nutmeggers",
+   "name": "The Nutmeggers",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-oldtime-stringband",
+   "name": "The Oldtime Stringband",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-onlies",
+   "name": "The Onlies",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-orange-mighty-trio",
+   "name": "The Orange Mighty Trio",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-osborne-brothers",
+   "name": "The Osborne Brothers",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-rice-brothers",
+   "name": "The Rice Brothers",
    "kind": "ENSEMBLE",
    "instruments": [],
    "styles": [],
@@ -14148,14 +18129,57 @@
    "stub": false
   },
   {
+   "id": "the-stonemans",
+   "name": "The Stonemans",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-stoney-mountain-boys",
+   "name": "The Stoney Mountain Boys",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-string-cheese-incident",
+   "name": "The String Cheese Incident",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "the-swingle-singers",
    "name": "The Swingle Singers",
-   "kind": "PERSON",
-   "instruments": [
-    "vocal ensemble"
-   ],
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": "Ward Swingle's vocal group; scat-sung Bach on *Jazz Sebastian Bach* and, with the MJQ, on *Place Vendôme*.",
+   "stub": false
+  },
+  {
+   "id": "the-wayfarers",
+   "name": "The Wayfarers",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "the-westbound-rangers",
+   "name": "The Westbound Rangers",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
    "stub": false
   },
   {
@@ -14197,6 +18221,61 @@
    "kind": "PERSON",
    "instruments": [
     "piano"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tim-connell",
+   "name": "Tim Connell",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tim-crouch",
+   "name": "Tim Crouch",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tim-graves",
+   "name": "Tim Graves",
+   "kind": "PERSON",
+   "instruments": [
+    "dobro"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tim-obrien",
+   "name": "Tim O'Brien",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tim-stafford",
+   "name": "Tim Stafford",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
    ],
    "styles": [],
    "bio": null,
@@ -14253,6 +18332,24 @@
    "stub": false
   },
   {
+   "id": "titos-sompa",
+   "name": "Titos Sompa",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "toby-shaer",
+   "name": "Toby Shaer",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "todd-bashore",
    "name": "Todd Bashore",
    "kind": "PERSON",
@@ -14264,8 +18361,41 @@
    "stub": false
   },
   {
+   "id": "todd-phillips",
+   "name": "Todd Phillips",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "todd-smallie",
    "name": "Todd Smallie",
+   "kind": "PERSON",
+   "instruments": [
+    "bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tom-digiuseppe",
+   "name": "Tom DiGiuseppe",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tom-gray",
+   "name": "Tom Gray",
    "kind": "PERSON",
    "instruments": [
     "bass"
@@ -14291,6 +18421,17 @@
    "kind": "PERSON",
    "instruments": [
     "trombone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tom-wilson",
+   "name": "Tom Wilson",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
    ],
    "styles": [],
    "bio": null,
@@ -14389,6 +18530,17 @@
    "stub": false
   },
   {
+   "id": "ton-knol",
+   "name": "Ton Knol",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "tony-banda",
    "name": "Tony Banda",
    "kind": "PERSON",
@@ -14433,6 +18585,28 @@
    "stub": false
   },
   {
+   "id": "tony-furtado",
+   "name": "Tony Furtado",
+   "kind": "PERSON",
+   "instruments": [
+    "slide guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tony-polecastro",
+   "name": "Tony Polecastro",
+   "kind": "PERSON",
+   "instruments": [
+    "guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "tony-reedus",
    "name": "Tony Reedus",
    "kind": "PERSON",
@@ -14450,6 +18624,15 @@
    "instruments": [
     "guitar"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tony-rice-unit",
+   "name": "Tony Rice Unit",
+   "kind": "ENSEMBLE",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -14499,6 +18682,17 @@
    "stub": false
   },
   {
+   "id": "tracy-schwarz",
+   "name": "Tracy Schwarz",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "traditional",
    "name": "Traditional",
    "kind": "PERSON",
@@ -14506,6 +18700,53 @@
    "styles": [],
    "bio": null,
    "stub": true
+  },
+  {
+   "id": "travis-stuart",
+   "name": "Travis Stuart",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "trevor-mckenzie",
+   "name": "Trevor McKenzie",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "trevor-stuart",
+   "name": "Trevor Stuart",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "triple-fiddle",
+   "name": "Triple Fiddle",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "tristan-scroggins",
+   "name": "Tristan Scroggins",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
   },
   {
    "id": "triste-janero",
@@ -14561,6 +18802,17 @@
    "stub": false
   },
   {
+   "id": "tyler-andal",
+   "name": "Tyler Andal",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "tyrone-brown",
    "name": "Tyrone Brown",
    "kind": "PERSON",
@@ -14602,6 +18854,26 @@
    "instruments": [
     "guitar"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "uncle-homer-walker",
+   "name": "Uncle Homer Walker",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "uncle-muskrat",
+   "name": "Uncle Muskrat",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -14649,6 +18921,28 @@
    "stub": false
   },
   {
+   "id": "vassar-clements",
+   "name": "Vassar Clements",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "veerle-baetens",
+   "name": "Veerle Baetens",
+   "kind": "PERSON",
+   "instruments": [
+    "vocals"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "vernel-fournier",
    "name": "Vernel Fournier",
    "kind": "PERSON",
@@ -14665,6 +18959,17 @@
    "kind": "PERSON",
    "instruments": [
     "drums"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "vic-jordan",
+   "name": "Vic Jordan",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -14823,6 +19128,37 @@
    "stub": false
   },
   {
+   "id": "wade-ward",
+   "name": "Wade Ward",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "wagner-creoruska-junior",
+   "name": "Wagner Creoruska Junior",
+   "kind": "PERSON",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "walt-sarkees",
+   "name": "Walt Sarkees",
+   "kind": "PERSON",
+   "instruments": [
+    "acoustic bass"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "walter-bishop-jr",
    "name": "Walter Bishop Jr.",
    "kind": "PERSON",
@@ -14883,6 +19219,17 @@
    "kind": "PERSON",
    "instruments": [
     "tenor sax"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "wayne-benson",
+   "name": "Wayne Benson",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
    ],
    "styles": [],
    "bio": null,
@@ -15001,12 +19348,30 @@
    "stub": false
   },
   {
+   "id": "whitetop-mountain-band",
+   "name": "Whitetop Mountain Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "wilbur-ware",
    "name": "Wilbur Ware",
    "kind": "PERSON",
    "instruments": [
     "bass"
    ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "will-head",
+   "name": "Will Head",
+   "kind": "PERSON",
+   "instruments": [],
    "styles": [],
    "bio": null,
    "stub": false
@@ -15045,11 +19410,33 @@
    "stub": false
   },
   {
+   "id": "willie-mcdonald",
+   "name": "Willie McDonald",
+   "kind": "PERSON",
+   "instruments": [
+    "mandolin"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "willie-smith",
    "name": "Willie Smith",
    "kind": "PERSON",
    "instruments": [
     "alto saxophone"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "willow-osborne",
+   "name": "Willow Osborne",
+   "kind": "PERSON",
+   "instruments": [
+    "banjo"
    ],
    "styles": [],
    "bio": null,
@@ -15131,6 +19518,28 @@
    "stub": false
   },
   {
+   "id": "wyatt-peake",
+   "name": "Wyatt Peake",
+   "kind": "PERSON",
+   "instruments": [
+    "fiddle"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "wyatt-rice",
+   "name": "Wyatt Rice",
+   "kind": "PERSON",
+   "instruments": [
+    "rhythm guitar"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "wycliffe-gordon",
    "name": "Wycliffe Gordon",
    "kind": "PERSON",
@@ -15184,6 +19593,15 @@
    "stub": false
   },
   {
+   "id": "yonder-mountain-string-band",
+   "name": "Yonder Mountain String Band",
+   "kind": "ENSEMBLE",
+   "instruments": [],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
    "id": "yonrico-scott",
    "name": "Yonrico Scott",
    "kind": "PERSON",
@@ -15200,6 +19618,17 @@
    "kind": "PERSON",
    "instruments": [
     "tenor saxophone/flute/oboe and other reeds"
+   ],
+   "styles": [],
+   "bio": null,
+   "stub": false
+  },
+  {
+   "id": "zack-kline",
+   "name": "Zack Kline",
+   "kind": "PERSON",
+   "instruments": [
+    "violin"
    ],
    "styles": [],
    "bio": null,
@@ -15642,6 +20071,26 @@
    "role": "alto saxophone, flute"
   },
   {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "kenny-barron",
+   "role": "piano"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "lewis-nash",
+   "role": "drums"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "ron-carter",
+   "role": "bass"
+  },
+  {
+   "groupId": "classical-jazz-quartet",
+   "memberId": "stefon-harris",
+   "role": "vibes, marimba"
+  },
+  {
    "groupId": "clayton-hamilton-jazz-orchestra",
    "memberId": "jeff-clayton",
    "role": "alto saxophone"
@@ -15790,6 +20239,21 @@
    "groupId": "i-pommeriggi-musicali-di-milano",
    "memberId": "renato-rivolta",
    "role": "conductor"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "christian-garros",
+   "role": "drums"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "jacques-loussier",
+   "role": "piano"
+  },
+  {
+   "groupId": "jacques-loussier-trio",
+   "memberId": "pierre-michelot",
+   "role": "bass"
   },
   {
    "groupId": "jazz-at-lincoln-center-orchestra",
@@ -16307,6 +20771,21 @@
    "role": "tenor saxophone"
   },
   {
+   "groupId": "the-andrews-sisters",
+   "memberId": "laverne-andrews",
+   "role": "vocals"
+  },
+  {
+   "groupId": "the-andrews-sisters",
+   "memberId": "maxene-andrews",
+   "role": "vocals"
+  },
+  {
+   "groupId": "the-andrews-sisters",
+   "memberId": "patty-andrews",
+   "role": "vocals"
+  },
+  {
    "groupId": "the-bbc-dance-orchestra",
    "memberId": "henry-hall",
    "role": "conductor"
@@ -16505,6 +20984,21 @@
    "groupId": "the-stanley-brothers",
    "memberId": "ralph-stanley",
    "role": "banjo, vocals"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "daniel-humair",
+   "role": "drums"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "guy-pedersen",
+   "role": "bass"
+  },
+  {
+   "groupId": "the-swingle-singers",
+   "memberId": "the-swingle-singers",
+   "role": "voices (8-voice ensemble; individual roster not documented in these notes)"
   },
   {
    "groupId": "thelonious-monk-quartet",

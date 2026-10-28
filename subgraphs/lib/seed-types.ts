@@ -43,9 +43,20 @@ export interface Tune {
   style: string | null;
   contrafactOfId: string | null;
   musicalKey: string | null;
-  /** Flamenco rhythmic form as written ('Rondeña'). Null for non-flamenco / untagged. */
-  palo: string | null;
+  /** Home palo, resolved against Palo.id. Null for non-flamenco / untagged tunes. */
+  paloId: string | null;
   genre: Genre;
+}
+
+/** A flamenco rhythmic form / meter family (Pieces/Palos/), reference data promoted to a real entity. */
+export interface Palo {
+  id: string;
+  /** Canonical name, e.g. 'Bulerías'. */
+  name: string;
+  /** Rhythmic meter as written ('12', '4', '6/8', '3/4', 'free', 'varies'). Null when not noted. */
+  compas: string | null;
+  /** Short description of the palo's character. Null when the source has none. */
+  description: string | null;
 }
 
 export interface Credit {
